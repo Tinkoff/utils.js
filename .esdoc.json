@@ -1,0 +1,46 @@
+{
+    "source": "./src",
+    "destination": "docs/",
+    "excludes": [
+        "node_modules",
+        "docs",
+        "build"
+    ],
+    "plugins": [
+        {
+            "name": "./plugins/esdoc/curry.js"
+        },
+        {
+            "name": "esdoc-importpath-plugin",
+            "option": {
+                "replaces": [
+                    {
+                        "from": "^src/",
+                        "to": ""
+                    },
+                    {
+                        "from": "\\.js$",
+                        "to": ""
+                    }
+                ]
+            }
+        },
+        {
+            "name": "esdoc-standard-plugin",
+            "option": {
+                "test": {
+                    "source": "./",
+                    "includes": [
+                        "(__tests__).+\\.js$"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "esdoc-ecmascript-proposal-plugin",
+            "option": {
+                "all": true
+            }
+        }
+    ]
+}
