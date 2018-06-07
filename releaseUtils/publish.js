@@ -2,6 +2,6 @@
 const execa = require('execa');
 
 const publish = (dir, npmTag) =>
-    execa.shell(`npm publish ${dir} --tag ${npmTag}`);
+    execa.shell(`npm publish  --access public ${dir} --tag ${npmTag}`);
 
 module.exports = publish;
