@@ -29,7 +29,7 @@ const updateVersionInPkg = version => {
 };
 const copyRelationalFiles = (pathRootDir, buildPath) =>
     Promise.all(
-        ['package.json', '.npmignore', 'README.MD', 'LICENSE', 'CHANGELOG.md'].map(fileName =>
+        ['package.json', '.npmignore', 'README.MD', 'LICENSE', 'CHANGELOG.md', '.babelrc'].map(fileName =>
             fsExtra.copy(
                 path.join(pathRootDir, fileName),
                 path.join(buildPath, fileName)
