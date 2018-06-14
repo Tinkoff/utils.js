@@ -1,14 +1,14 @@
 # Tinkoff Utils
-JavaScript utility library for simplifying work with data, functions, promises, etc.
-The main goals of the library are modularity, functional style, performance, simplicity.
+JavaScript utility library with the primary task to simplify work with data, functions, promises, and more.
+The main goals of the library are modularity, functional style, performance, and simplicity. 
 
 ## Example
-Install
+Installation
 ```bash
 $ npm i --save @tinkoff/utils
 ```
 
-Used
+Usage
 ```javascript
 import pathOr from '@tinkoff/utils/object/pathOr';
 import compose from '@tinkoff/utils/function/compose';
@@ -22,38 +22,29 @@ const toLowerName = compose(
 const result = map(toLowerName)([{name: 'testA'}, {name: 'testb'}])
 ```
 
-## Library highlights
-- Each utility located in a separate file, in a directory corresponding to the structure of the library
-- Uses ES2015+
-- Performance is one of the main priority
-- Each utility solves strictly one problem
-- Utility is a pure function
-- Most of the utilities are automatically curried
-- The arguments to utilities are arranged to make it convenient for currying (the data to be operated is supplied last)
-- Each utility has its own doc written in JSDoc
-- Utilities covered with tests using Jest
-- Inspired by [Ramda](http://ramdajs.com)
+## Features
+- Modular structure: utilities are located each in its file, structured by type.
+- Written with performance in mind.
+- Suitable for functional programming: every utility is a pure function with the order of arguments, convenient for currying.
+- Modern codebase: project is written in ES2015+.
+- Safe and secure to use: every utility is documented and covered with tests.
 
 ## The structure of the library
-* `/array` - set to work with arrays or array-like objects
-* `/function` - set to work with functions (composition, currying, etc.), also set of simple functions (noop, T, F)
-* `/is` - set to check argument type or structure
-* `/object` - set to work with objects
-* `/promise` - set to work with promises
-* `/string` - set to work with strings
-* `/` - root contains utilities which don't satisfy any of the above categories or are universal
+* `/array`: a set of utilities to operate on arrays or array-like objects;
+* `/function`: a set of utilities to operate on functions (composition, currying and so on), also a set of simple functions (noop, T, F);
+* `/is`: a set of type-checking utilities;
+* `/object`: a set of utilities to operate on objects;
+* `/promise`: a set of promise utilities;
+* `/string`: a set of utilities to work with strings;
+* `/`: the root contains utilities that don't satisfy any of the above categories or are universal.
 
 ## Comparison with other libraries
-
-We compared with following libraries:
-* nodejs 8.5.0
-* webpack 4.8.3
+The comparison is between Tinkoff Utils and the following libraries:
 * lodash 4.7.14
 * ramda 0.22.1
-* @tinkoff/utils 1.0.0
 
 ### Benchmarks
-You can find benchmarks tests in `__benchmarks__` directory for specific util
+You can find benchmarks in the `__benchmarks__` directory.
 
 | Utility | Lodash | Ramda | Utils |
 | --- | --- | --- | --- |
@@ -65,14 +56,13 @@ You can find benchmarks tests in `__benchmarks__` directory for specific util
 | string/trim | 4,215,928 ops/sec | 1,034,655 ops/sec | 6,029,794 ops/sec |
 
 ### Bundle size
-Let's try to compare bundle size after bundling using webpack, if need to use only small bunch of utilites (see details [here](./__bundleSize__)):
-
+Bubdle size is compared to each other with the assumption that we need only a small subset of library methods (see details [here](./bundleSize)):
 | Library | Bundle size |
-| --- | ------ |
+| --- | --- |
 | import _ from 'lodash' | 70.1 kb |
 | import ... from 'lodash/...' | 21.8 kb |
 | import R from 'ramda' | 41.3 kb |
 | import ... from 'ramda/src/...' | 10 kb |
 | import ... from '@tinkoff/utils/...' | 2.32 kb |
 
-Detailed comparison with specific library see in [COMPARE.md](./COMPARE.md)
+The detailed comparison with specific library see [COMPARE.md](./COMPARE.md)
