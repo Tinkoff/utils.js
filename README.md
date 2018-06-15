@@ -1,4 +1,6 @@
 # Tinkoff Utils
+[![Build Status](https://travis-ci.org/TinkoffCreditSystems/utils.js.svg?branch=master)](https://travis-ci.org/TinkoffCreditSystems/utils.js)
+
 JavaScript utility library with the primary task to simplify work with data, functions, promises, and more.
 The main goals of the library are modularity, functional style, performance, and simplicity. 
 
