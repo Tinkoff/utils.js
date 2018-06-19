@@ -1,7 +1,7 @@
 # Comparison with other libraries
 
 ## [Ramda](http://ramdajs.com/)
-Ramda was a massive influence on Tinkoff Utils It borrowed the same functional programming approach, naming, and many other things. However, Tinkoff Utils doesn't provide placeholders, lenses and some other less popular stuff.
+Ramda was a huge inspiration for Tinkoff Utils! it has a lot of similarities with naming style, uses same functional programming approach and many other things, with lack of some less popular design ideas like `__` prefixes, lenses and etc
 
 | Ramda | Utils |
 | --- | ------ |
@@ -114,8 +114,8 @@ Ramda was a massive influence on Tinkoff Utils It borrowed the same functional p
 
 
 ## [Lodash](https://lodash.com/)
-Be careful when migrating from lodash to Utils:
-1. Check function signature, since Utils uses data as the last argument in contrast with lodash
+When migrating from lodash to Utils, keep in mind that –
+1. Lodash has different function signatures, since Utils uses data as the last argument in contrast with lodash
 1. Singular lodash methods can accept various argument types when Utils functions are focused and cohesive
 1. Some Lodash functions mutate passed arguments
 
