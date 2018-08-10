@@ -42,6 +42,23 @@ const copyRelationalFilesWithSpinner = () =>
         'Copying package files'
     );
 
+const copyTypesFiles = (pathRootDir, buildPath) =>
+    Promise.all(
+        ['array', 'function', 'object', 'is', 'promise', 'string', '.']
+            .map(target =>
+                fsExtra.copy(
+                    path.join(pathRootDir, 'src', target, 'index.d.ts'),
+                    path.join(buildPath, target, 'index.d.ts')
+                )
+            )
+    );
+
+const copyTypesFilesWithSpinner = () =>
+    withSpinner(
+        copyTypesFiles(pkgRoot, pkgBuildPath),
+        'Copying index.d.ts files'
+    );
+
 const publishWithSpinner = npmTag =>
     withSpinner(
         publish(pkgBuildPath, npmTag),
@@ -64,6 +81,7 @@ const release = async () => {
         .then(() => updateVersionInPkg(newVersion))
         .then(buildWithSpinner)
         .then(copyRelationalFilesWithSpinner)
+        .then(copyTypesFilesWithSpinner)
         .then(() => publishWithSpinner(npmTag))
         .then(cleanBuildPath)
         .then(() => console.log(chalk.blue('Package was published!')))
