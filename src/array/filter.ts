@@ -1,4 +1,4 @@
-import { filter } from 'ramda';
+import { filter, Filter, Dictionary } from 'ramda';
 import curryN from '../function/curryN';
 
 /**

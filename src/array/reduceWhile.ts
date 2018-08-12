@@ -1,4 +1,4 @@
-import { reduceWhile as ramdaReduceWhile } from 'ramda';
+import { reduceWhile as ramdaReduceWhile, CurriedFunction3, CurriedFunction2 } from 'ramda';
 import isNil from '../is/nil';
 import curryN from '../function/curryN';
 

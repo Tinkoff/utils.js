@@ -1,4 +1,4 @@
-import { zip } from 'ramda';
+import { zip, KeyValuePair } from 'ramda';
 import curryN from '../function/curryN';
 
 /**

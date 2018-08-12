@@ -1,4 +1,4 @@
-import { pathOr } from 'ramda';
+import { pathOr, CurriedFunction2 } from 'ramda';
 import curryN from '../function/curryN';
 import path from './path';
 

@@ -1,4 +1,4 @@
-import { map } from 'ramda';
+import { map, Functor } from 'ramda';
 import curryN from '../function/curryN';
 
 /**

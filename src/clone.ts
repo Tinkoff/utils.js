@@ -37,4 +37,4 @@ const clone = x => {
     }
 };
 
-export default clone as <T>(x: T) => T;;
+export default clone as <T>(x: T) => T;

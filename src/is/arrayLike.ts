@@ -26,7 +26,7 @@ export default test => {
         case test.length === 0:
             return true;
         case test.length > 0:
-            return has(0, test) && has(test.length - 1, test);
+            return has('0', test) && has(String(test.length - 1), test);
     }
 
     return false;

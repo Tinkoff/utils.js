@@ -1,4 +1,4 @@
-import { maxBy } from 'ramda';
+import { maxBy, CurriedFunction2 } from 'ramda';
 import curryN from '../function/curryN';
 
 /**

@@ -1,4 +1,7 @@
-import { curry } from 'ramda';
+import {
+  curry, CurriedTypeGuard6, CurriedTypeGuard5, CurriedTypeGuard4, CurriedTypeGuard3, CurriedTypeGuard2,
+  CurriedFunction6, CurriedFunction5, CurriedFunction4, CurriedFunction3, CurriedFunction2,
+} from 'ramda';
 import curryN from './curryN';
 
 /**

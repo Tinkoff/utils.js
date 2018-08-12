@@ -1,12 +1,13 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "es2018",
         "module": "commonjs",
-        "allowJs": true,
-        "jsx": "react",
+        "outDir": "ts_temp",
         "lib": [
-            "es2018"
-        ]
+            "es2018",
+            "dom"
+        ],
+        "declaration": true
     },
     "include": [
         "src/**/*"

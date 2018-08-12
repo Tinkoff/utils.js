@@ -1,4 +1,4 @@
-import { reduce } from 'ramda';
+import { reduce, Reduced } from 'ramda';
 import curryN from '../function/curryN';
 
 /**
