@@ -1,4 +1,3 @@
-import { range } from 'ramda';
 /**
  * Creates an array of numbers (positive and/or negative) progressing from
  * `start` up to, but not including, `end`. A step of `-1` is used if a negative
@@ -46,4 +45,4 @@ export default ((a, b, step) => {
     }
 
     return result;
-}) as typeof range
+}) as (a: number, b, step) => number[];

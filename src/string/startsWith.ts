@@ -1,4 +1,3 @@
-import { startsWith } from 'ramda';
 import curryN from '../function/curryN';
 
 /**
@@ -12,4 +11,9 @@ import curryN from '../function/curryN';
  *      startsWith('a', 'abc')                //=> true
  *      startsWith('b', 'abc')                //=> false
  */
-export default curryN(2, (prefix = '', str = '') => str.slice(0, prefix.length) === prefix) as typeof startsWith
+export default curryN(2, (prefix = '', str = '') => str.slice(0, prefix.length) === prefix) as startsWith
+
+interface startsWith {
+  (prefix: string, str: string): boolean;
+  (prefix: string): (str: string) => boolean;
+}

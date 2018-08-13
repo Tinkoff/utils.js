@@ -1,4 +1,4 @@
-import { reduceWhile as ramdaReduceWhile, CurriedFunction3, CurriedFunction2 } from 'ramda';
+import * as R from 'ramda';
 import isNil from '../is/nil';
 import curryN from '../function/curryN';
 
@@ -40,4 +40,4 @@ function reduceWhile(pred, fn, acc, arr) { // eslint-disable-line max-params
     return acc;
 }
 
-export default curryN(4, reduceWhile) as typeof ramdaReduceWhile
+export default curryN(4, reduceWhile) as typeof R.reduceWhile

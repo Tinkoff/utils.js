@@ -1,4 +1,3 @@
-import { any } from 'ramda';
 import curryN from '../function/curryN';
 
 /**
@@ -25,4 +24,9 @@ export default curryN(2, (fn, obj = {}) => {
         }
     }
     return false;
-}) as typeof any
+}) as anyFn
+
+interface anyFn {
+    <T>(fn: (a: T) => boolean, list: Object): boolean;
+    <T>(fn: (a: T) => boolean): (list: Object) => boolean;
+}

@@ -26,6 +26,7 @@ export default curryN(3, (condition, onTrue, onFalse) =>
 type func<TR = any> = (...args) => TR;
 interface ifElse {
     <TTrue, TFalse>(condition: func, onTrue: func<TTrue>, onFalse: func<TFalse>): TTrue | TFalse;
+    <TTrue, TFalse>(condition: func, onTrue: func<TTrue>): (onFalse: func<TFalse>) => TTrue | TFalse;
     <TTrue, TFalse>(condition: func): (onTrue: func<TTrue>, onFalse: func<TFalse>) => TTrue | TFalse;
     <TTrue, TFalse>(condition: func): (onTrue: func<TTrue>) => (onFalse: func<TFalse>) => TTrue | TFalse;
 }

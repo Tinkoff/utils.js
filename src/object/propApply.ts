@@ -18,7 +18,6 @@ export default curryN(3, (propName, fn, obj) =>
     fn(prop(propName, obj))
 ) as propApply;
 
-
 interface propApply {
     <R>(propName: string, fn: (arg: ReturnType<typeof prop>) => R, obj): R;
     <R>(propName: string): (fn: (arg: ReturnType<typeof prop>) => R, obj) => R;

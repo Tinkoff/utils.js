@@ -1,4 +1,3 @@
-import { propOr } from 'ramda';
 import curryN from '../function/curryN';
 import prop from './prop';
 
@@ -25,4 +24,10 @@ export default curryN(3, (propName, value, obj) => {
     const v = prop(propName, obj);
 
     return v != null ? v : value;
-}) as typeof propOr
+}) as propOr
+
+interface propOr {
+    <T, U, V>(p: string, val: T, obj: U): V;
+    <T>(p: string, val: T): <U, V>(obj: U) => V;
+    <T>(p: string): <U, V>(val: T, obj: U) => V;
+}

@@ -1,4 +1,3 @@
-import { filter, Filter, Dictionary } from 'ramda';
 import curryN from '../function/curryN';
 
 /**
@@ -25,4 +24,9 @@ export default curryN(2, (fn, arr = []) => {
     }
 
     return result;
-}) as typeof filter
+}) as filter
+
+interface filter {
+    <TValue>(fn: (value: TValue, i: number, arr: TValue[]) => any, arr?: TValue[]): TValue[];
+    <TValue>(fn: (value: TValue, i: number, arr: TValue[]) => any): (arr?: TValue[]) => TValue[];
+}

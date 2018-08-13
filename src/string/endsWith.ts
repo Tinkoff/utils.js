@@ -1,4 +1,3 @@
-import { endsWith } from 'ramda';
 import curryN from '../function/curryN';
 
 /**
@@ -12,4 +11,9 @@ import curryN from '../function/curryN';
  *      endsWith('c', 'abc')                //=> true
  *      endsWith('b', 'abc')                //=> false
  */
-export default curryN(2, (postfix = '', str = '') => str.slice(-postfix.length) === postfix) as typeof endsWith
+export default curryN(2, (postfix = '', str = '') => str.slice(-postfix.length) === postfix) as endsWith
+
+interface endsWith {
+  (postfix: string, str: string): boolean;
+  (postfix: string): (str: string) => boolean;
+}

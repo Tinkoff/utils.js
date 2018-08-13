@@ -7,9 +7,9 @@
  *
  * shuffle([1, 2, 3, 4]); // => [4, 1, 3, 2]
  */
-export default (arr = []) => {
+export default <T>(arr = [] as T[]) => {
     const len = arr.length;
-    const result = new Array(len);
+    const result = new Array(len) as T[];
 
     for (let i = 0; i < len; i++) {
         const rand = Math.floor(Math.random() * i);

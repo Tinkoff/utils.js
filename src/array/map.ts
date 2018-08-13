@@ -1,4 +1,3 @@
-import { map, Functor } from 'ramda';
 import curryN from '../function/curryN';
 
 /**
@@ -23,4 +22,9 @@ export default curryN(2, (fn, arr = []) => {
     }
 
     return result;
-}) as typeof map
+}) as map
+
+interface map {
+    <TItem, R>(fn: (item: TItem, i: number, arr: TItem[]) => R, arr: TItem[]): R[];
+    <TItem, R>(fn: (item: TItem, i: number, arr: TItem[]) => R): (arr: TItem[]) => R[];
+}

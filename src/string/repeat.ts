@@ -1,4 +1,3 @@
-import { repeat } from 'ramda';
 import curryN from '../function/curryN';
 import isString from '../is/string';
 /**
@@ -22,4 +21,9 @@ export default curryN(2, (n = 0, value) => {
     }
 
     return result;
-}) as typeof repeat
+}) as repeat
+
+interface repeat {
+    <T>(n: number, a: T): T[];
+    <T>(n: number): (a: T) => T[];
+}

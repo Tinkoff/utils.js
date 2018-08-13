@@ -1,4 +1,3 @@
-import { reject, Filter, Dictionary } from 'ramda';
 import curryN from '../function/curryN';
 
 /**
@@ -25,4 +24,9 @@ export default curryN(2, (fn, arr = []) => {
     }
 
     return result;
-}) as typeof reject
+}) as reject
+
+interface reject {
+    <TItem>(fn: (item: TItem, i: number, arr: TItem[]) => any, arr?: TItem[]): TItem[];
+    <TItem>(fn: (item: TItem, i: number, arr: TItem[]) => any): (arr?: TItem[]) => TItem[];
+}

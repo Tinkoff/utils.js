@@ -1,4 +1,3 @@
-import { map, Functor } from 'ramda';
 import curryN from '../function/curryN';
 
 /**
@@ -23,4 +22,13 @@ export default curryN(2, (fn, obj = {}) => {
     }
 
     return result;
-}) as typeof map
+}) as map
+
+interface map {
+    <TKey extends keyof TObj, TValue, TObj>(
+        fn: (value: TObj[TKey], key: TKey, obj: TObj) => TValue,
+        obj: TObj
+    ): Record<TKey, TValue>;
+    <TKey extends keyof TObj, TValue, TObj>(fn: (value: TObj[TKey], key: TKey, obj: TObj) => TValue):
+        (obj: TObj) => Record<TKey, TValue>;
+}

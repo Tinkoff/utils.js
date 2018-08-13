@@ -1,4 +1,3 @@
-import { pathOr, CurriedFunction2 } from 'ramda';
 import curryN from '../function/curryN';
 import path from './path';
 
@@ -19,4 +18,10 @@ export default curryN(3, (paths = [], value, obj = {}) => {
     const v = path(paths, obj);
 
     return v != null ? v : value;
-}) as typeof pathOr
+}) as pathOr
+
+interface pathOr {
+    (paths: ReadonlyArray<(number | string)>, defaultValue, obj?): any;
+    (paths: ReadonlyArray<(number | string)>): (defaultValue, obj?) => any;
+    (paths: ReadonlyArray<(number | string)>): (defaultValue) => (obj?) => any;
+}

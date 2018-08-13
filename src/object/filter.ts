@@ -1,4 +1,4 @@
-import { filter, Filter, Dictionary } from 'ramda';
+import * as R from 'ramda';
 import curryN from '../function/curryN';
 import objectKeys from './keys';
 
@@ -29,4 +29,4 @@ export default curryN(2, (fn, obj = {}) => {
     }
 
     return result;
-}) as typeof filter
+}) as typeof R.filter

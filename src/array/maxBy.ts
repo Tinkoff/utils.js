@@ -1,4 +1,3 @@
-import { maxBy, CurriedFunction2 } from 'ramda';
 import curryN from '../function/curryN';
 
 /**
@@ -28,4 +27,9 @@ export default curryN(2, (fn, arr = []) => {
     }
 
     return result;
-}) as typeof maxBy
+}) as maxBy
+
+interface maxBy {
+    <TItem, R>(fn: (item: TItem, i: number, arr: TItem[]) => R, arr: TItem[]): TItem;
+    <TItem, R>(fn: (item: TItem, i: number, arr: TItem[]) => R): (arr: TItem[]) => TItem;
+}

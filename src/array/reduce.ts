@@ -1,4 +1,4 @@
-import { reduce, Reduced } from 'ramda';
+import * as R from 'ramda';
 import curryN from '../function/curryN';
 
 /**
@@ -26,4 +26,4 @@ export default curryN(3, (fn, acc, arr = []) => {
     }
 
     return acc;
-}) as typeof reduce
+}) as typeof R.reduce
