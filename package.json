@@ -6,7 +6,7 @@
     "release": "node ./releaseUtils/index.js",
     "benchmark": "node runBenchmark.js",
     "prebenchmark": "npm install --no-save lodash ramda lazy.js underscore",
-    "docs": "esdoc",
+    "docs": "node ./generate/docs/index.js",
     "test": "jest --coverage",
     "test:ci": "npm run test && cat ./coverage/lcov.info | coveralls"
   },
@@ -36,6 +36,7 @@
     "esdoc-standard-plugin": "^1.0.0",
     "execa": "^0.10.0",
     "fs-extra": "^6.0.1",
+    "gh-pages": "^1.2.0",
     "inquirer": "^5.2.0",
     "jest": "^23.0.0",
     "ora": "^2.1.0",
