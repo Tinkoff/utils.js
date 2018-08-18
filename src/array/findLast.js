@@ -19,7 +19,7 @@ export default curry((fn, list) => {
     let idx = list.length - 1;
 
     while (idx >= 0) {
-        if (fn(list[idx])) {
+        if (fn(list[idx], idx, list)) {
             return list[idx];
         }
 
