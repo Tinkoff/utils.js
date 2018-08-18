@@ -52,6 +52,19 @@ $ npm run benchmark
 | object/path | 12,023,128 ops/sec | 8,894,639 ops/sec | 7,587,076 ops/sec |
 | string/trim | 4,215,928 ops/sec | 1,034,655 ops/sec | 6,029,794 ops/sec |
 
+## Browser support
+
+- Chrome >= 40
+- Firefox >= 52
+- Edge >= 14
+- IE >= 11
+- Safari >= 10
+- iOS >= 10
+- Android >= 4.4
+
+## Node support
+- 6.4.0 and higher
+
 ## Bundle size
 | Library | Bundle size |
 | --- | --- |
