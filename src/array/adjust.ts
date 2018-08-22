@@ -1,4 +1,4 @@
-import { adjust } from 'ramda';
+import { adjust } from '../typings/types';
 import curryN from '../function/curryN';
 import concat from './concat';
 

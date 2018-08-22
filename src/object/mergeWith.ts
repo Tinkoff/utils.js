@@ -1,4 +1,4 @@
-import { mergeWith } from 'ramda';
+import { mergeWith } from '../typings/types';
 import curryN from '../function/curryN';
 import objectKeys from './keys';
 

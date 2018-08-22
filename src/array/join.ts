@@ -1,4 +1,4 @@
-import { join } from 'ramda';
+import { join } from '../typings/types';
 import curryN from '../function/curryN';
 import isArray from '../is/array';
 

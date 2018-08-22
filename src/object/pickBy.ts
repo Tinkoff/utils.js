@@ -1,4 +1,4 @@
-import { pickBy } from 'ramda';
+import { pickBy } from '../typings/types';
 import curryN from '../function/curryN';
 
 /**

@@ -1,4 +1,4 @@
-import { head } from 'ramda';
+import { head } from '../typings/types';
 /**
  * Returns the first element of the given array.
  *

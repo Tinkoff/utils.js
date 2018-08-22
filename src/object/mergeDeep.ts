@@ -1,4 +1,4 @@
-import { mergeDeepLeft } from 'ramda';
+import { mergeDeepLeft } from '../typings/types';
 import curryN from '../function/curryN';
 import isPlainObject from '../is/plainObject';
 import isArray from '../is/array';

@@ -1,4 +1,4 @@
-import { toString } from 'ramda';
+import { toString } from '../typings/types';
 /**
  * Converts `value` to a string. An empty string is returned for `null`
  * and `undefined` values.

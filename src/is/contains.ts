@@ -1,4 +1,4 @@
-import { contains as ramdaContains } from 'ramda';
+import { contains as ramdaContains } from '../typings/types';
 import equals from './equal';
 import curryN from '../function/curryN';
 

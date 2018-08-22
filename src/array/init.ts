@@ -1,4 +1,4 @@
-import { init } from 'ramda';
+import { init } from '../typings/types';
 /**
  * Returns all but the last element of the given list or string.
  *

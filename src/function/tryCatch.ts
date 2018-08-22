@@ -1,4 +1,4 @@
-import { tryCatch } from 'ramda';
+import { tryCatch } from '../typings/types';
 import curryN from './curryN';
 
 /**

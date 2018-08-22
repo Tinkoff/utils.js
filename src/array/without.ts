@@ -1,4 +1,4 @@
-import { without } from 'ramda';
+import { without } from '../typings/types';
 import reject from './reject';
 import curryN from '../function/curryN';
 import flip from '../function/flip';

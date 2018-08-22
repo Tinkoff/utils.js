@@ -1,4 +1,4 @@
-import { sum } from 'ramda';
+import { sum } from '../typings/types';
 /**
  * Adds together all the elements of a list.
  *

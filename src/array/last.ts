@@ -1,4 +1,4 @@
-import { last } from 'ramda';
+import { last } from '../typings/types';
 /**
  * Returns the last element of the given array.
  *

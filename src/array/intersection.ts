@@ -1,4 +1,4 @@
-import { intersection } from 'ramda';
+import { intersection } from '../typings/types';
 import curryN from '../function/curryN';
 
 /**

@@ -1,4 +1,4 @@
-import { update } from 'ramda';
+import { update } from '../typings/types';
 import adjust from './adjust';
 import curryN from '../function/curryN';
 import always from '../function/always';

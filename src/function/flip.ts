@@ -1,4 +1,4 @@
-import { flip } from 'ramda';
+import { flip } from '../typings/types';
 import curryN from './curryN';
 /**
  * Returns a new function much like the supplied one, except that the first two

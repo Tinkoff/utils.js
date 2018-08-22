@@ -1,4 +1,4 @@
-import { curryN } from 'ramda';
+import { curryN } from '../typings/types';
 /**
  * Returns a curried equivalent of the provided function, with the specified
  * arity. If `g` is `curryN(3, f)`, the

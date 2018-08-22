@@ -1,4 +1,4 @@
-import { when } from 'ramda';
+import { when } from '../typings/types';
 import curryN from './curryN';
 
 /**

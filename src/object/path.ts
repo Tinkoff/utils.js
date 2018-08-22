@@ -1,4 +1,4 @@
-import { path } from 'ramda';
+import { path } from '../typings/types';
 import curryN from '../function/curryN';
 
 /**

@@ -1,4 +1,4 @@
-import { remove } from 'ramda';
+import { remove } from '../typings/types';
 import curryN from '../function/curryN';
 /**
  * Removes the sub-list of `list` starting at index `start` and containing

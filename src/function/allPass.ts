@@ -1,4 +1,4 @@
-import { allPass } from 'ramda';
+import { allPass } from '../typings/types';
 import curryN from './curryN';
 
 /**

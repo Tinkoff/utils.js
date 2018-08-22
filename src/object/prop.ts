@@ -1,4 +1,4 @@
-import { prop } from 'ramda';
+import { prop } from '../typings/types';
 import curryN from '../function/curryN';
 /**
  * Returns a function that when supplied an object returns the indicated

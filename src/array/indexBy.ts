@@ -1,4 +1,4 @@
-import { indexBy } from 'ramda';
+import { indexBy } from '../typings/types';
 import curryN from '../function/curryN';
 
 /**

@@ -1,4 +1,4 @@
-import { drop } from 'ramda';
+import { drop } from '../typings/types';
 import slice from './slice';
 import curryN from '../function/curryN';
 /**

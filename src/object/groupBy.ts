@@ -1,4 +1,4 @@
-import { groupBy } from 'ramda';
+import { groupBy } from '../typings/types';
 import curryN from '../function/curryN';
 import objectKeys from './keys';
 

@@ -1,4 +1,4 @@
-import { complement } from 'ramda';
+import { complement } from '../typings/types';
 /**
  * Takes a function `f` and returns a function `g` such that if called with the same arguments
  * when `f` returns a "truthy" value, `g` returns `false` and when `f` returns a "falsy" value `g` returns `true`.

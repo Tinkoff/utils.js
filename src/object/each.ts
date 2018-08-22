@@ -1,4 +1,4 @@
-import { forEachObjIndexed } from 'ramda';
+import { forEachObjIndexed } from '../typings/types';
 import curryN from '../function/curryN';
 
 /**

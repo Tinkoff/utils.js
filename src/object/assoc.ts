@@ -1,4 +1,4 @@
-import { assoc } from 'ramda';
+import { assoc } from '../typings/types';
 import curryN from '../function/curryN';
 
 /**

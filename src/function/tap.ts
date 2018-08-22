@@ -1,4 +1,4 @@
-import { tap } from 'ramda';
+import { tap } from '../typings/types';
 import curryN from './curryN';
 
 /**

@@ -1,4 +1,4 @@
-import { difference } from 'ramda';
+import { difference } from '../typings/types';
 import curryN from '../function/curryN';
 
 /**

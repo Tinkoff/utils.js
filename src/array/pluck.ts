@@ -1,4 +1,4 @@
-import { pluck } from 'ramda';
+import { pluck } from '../typings/types';
 import curryN from '../function/curryN';
 import path from '../object/path';
 import map from './map';

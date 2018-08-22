@@ -1,4 +1,4 @@
-import { reverse } from 'ramda';
+import { reverse } from '../typings/types';
 import isString from '../is/string';
 
 /**

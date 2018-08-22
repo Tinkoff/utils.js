@@ -1,4 +1,4 @@
-import * as R from 'ramda';
+import * as R from '../typings/types';
 /**
  * Creates a new object from a list key-value pairs. If a key appears in
  * multiple pairs, the rightmost pair is included in the object.

@@ -1,4 +1,4 @@
-import { equals } from 'ramda';
+import { equals } from '../typings/types';
 import curry from '../function/curry';
 import isArray from './array';
 

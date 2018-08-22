@@ -1,4 +1,4 @@
-import * as R from 'ramda';
+import * as R from '../typings/types';
 import curryN from '../function/curryN';
 import objectKeys from './keys';
 

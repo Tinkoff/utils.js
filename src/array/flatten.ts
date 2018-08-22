@@ -1,4 +1,4 @@
-import { flatten as ramdaFlatten } from 'ramda';
+import { flatten as ramdaFlatten } from '../typings/types';
 import isArrayLike from '../is/arrayLike';
 /**
  * Returns a new list by pulling every item out of it (and all its sub-arrays)

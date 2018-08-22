@@ -1,4 +1,4 @@
-import { dropLast } from 'ramda';
+import { dropLast } from '../typings/types';
 import curryN from '../function/curryN';
 import take from './take';
 

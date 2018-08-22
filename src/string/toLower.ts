@@ -1,4 +1,4 @@
-import { toLower } from 'ramda';
+import { toLower } from '../typings/types';
 /**
  * Returns the lower case version of a string.
  *

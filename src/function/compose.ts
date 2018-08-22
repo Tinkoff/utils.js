@@ -1,4 +1,4 @@
-import { compose } from 'ramda';
+import { compose } from '../typings/types';
 /**
  * Performs right-to-left function composition. The rightmost function may have
  * any arity; the remaining functions must be unary.

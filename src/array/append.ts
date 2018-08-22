@@ -1,4 +1,4 @@
-import { append } from 'ramda';
+import { append } from '../typings/types';
 import concat from './concat';
 import curryN from '../function/curryN';
 

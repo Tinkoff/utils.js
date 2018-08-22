@@ -1,4 +1,4 @@
-import { tail } from 'ramda';
+import { tail } from '../typings/types';
 /**
  * Returns all but the first element of the given array.
  *

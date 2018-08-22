@@ -1,4 +1,4 @@
-import { objOf } from 'ramda';
+import { objOf } from '../typings/types';
 import curryN from '../function/curryN';
 
 /**

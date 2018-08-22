@@ -1,4 +1,4 @@
-import { zipWith } from 'ramda';
+import { zipWith } from '../typings/types';
 import curryN from '../function/curryN';
 
 /**

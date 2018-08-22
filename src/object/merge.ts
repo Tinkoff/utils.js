@@ -1,4 +1,4 @@
-import { merge } from 'ramda';
+import { merge } from '../typings/types';
 import curryN from '../function/curryN';
 
 /**

@@ -1,4 +1,4 @@
-import { cond } from 'ramda';
+import { cond } from '../typings/types';
 /**
  * Returns a function, `fn`, which encapsulates if/else-if/else logic.
  * `cond` takes a list of [predicate, transform] pairs. All of the arguments

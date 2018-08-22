@@ -1,4 +1,4 @@
-import { sortBy } from 'ramda';
+import { sortBy } from '../typings/types';
 import curryN from '../function/curryN';
 
 /**

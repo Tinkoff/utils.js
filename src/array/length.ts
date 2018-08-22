@@ -1,4 +1,4 @@
-import { length } from 'ramda';
+import { length } from '../typings/types';
 /**
  * Returns the number of elements in the array by returning `arr.length`.
  *

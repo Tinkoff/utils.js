@@ -1,4 +1,4 @@
-import { toPairs } from 'ramda';
+import { toPairs } from '../typings/types';
 import objKeys from './keys';
 /**
  * Converts an object into an array of key, value arrays. Only the object's

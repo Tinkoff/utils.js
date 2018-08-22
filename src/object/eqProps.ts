@@ -1,4 +1,4 @@
-import { eqProps } from 'ramda';
+import { eqProps } from '../typings/types';
 import curryN from '../function/curryN';
 
 /**

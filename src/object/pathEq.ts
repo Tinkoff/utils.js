@@ -1,4 +1,4 @@
-import { pathEq, CurriedFunction2 } from 'ramda';
+import { pathEq, CurriedFunction2 } from '../typings/types';
 import curryN from '../function/curryN';
 import path from './path';
 

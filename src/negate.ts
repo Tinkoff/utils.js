@@ -1,4 +1,3 @@
-import { negate } from 'ramda';
 /**
  * Negates its argument.
  *

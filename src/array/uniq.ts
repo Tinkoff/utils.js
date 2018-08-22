@@ -1,4 +1,4 @@
-import { uniq } from 'ramda';
+import { uniq } from '../typings/types';
 /**
  * Returns unique items in array
  *

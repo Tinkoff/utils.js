@@ -1,4 +1,4 @@
-import { nth } from 'ramda';
+import { nth } from '../typings/types';
 import curryN from '../function/curryN';
 
 /**

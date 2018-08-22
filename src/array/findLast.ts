@@ -1,4 +1,4 @@
-import { findLast } from 'ramda';
+import { findLast } from '../typings/types';
 import curry from '../function/curry';
 
 /**

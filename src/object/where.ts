@@ -1,4 +1,4 @@
-import { where } from 'ramda';
+import { where } from '../typings/types';
 import curryN from '../function/curryN';
 import has from './has';
 

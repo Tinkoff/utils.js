@@ -1,4 +1,4 @@
-import { type } from 'ramda';
+import { type } from './typings/types';
 /**
  * Gives a single-word string description of the (native) type of a value,
  * returning such answers as 'Object', 'Number', 'Array', or 'Null'. Does not

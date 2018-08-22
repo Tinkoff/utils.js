@@ -1,4 +1,4 @@
-import { uniqBy } from 'ramda';
+import { uniqBy } from '../typings/types';
 import curryN from '../function/curryN';
 
 /**

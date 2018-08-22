@@ -1,4 +1,4 @@
-import { toUpper } from 'ramda';
+import { toUpper } from '../typings/types';
 /**
  * Returns the upper case version of a string.
  *

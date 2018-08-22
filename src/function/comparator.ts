@@ -1,4 +1,4 @@
-import { comparator } from 'ramda';
+import { comparator } from '../typings/types';
 /**
  * Makes a comparator function out of a function that reports whether the first
  * element is less than the second.

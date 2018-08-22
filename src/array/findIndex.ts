@@ -1,4 +1,4 @@
-import { findIndex } from 'ramda';
+import { findIndex } from '../typings/types';
 import curryN from '../function/curryN';
 
 /**

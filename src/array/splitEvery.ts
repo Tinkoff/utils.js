@@ -1,4 +1,4 @@
-import { splitEvery } from 'ramda';
+import { splitEvery } from '../typings/types';
 import curryN from '../function/curryN';
 
 /*

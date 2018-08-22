@@ -1,4 +1,4 @@
-import { omit } from 'ramda';
+import { omit } from '../typings/types';
 import curryN from '../function/curryN';
 import objectKeys from './keys';
 

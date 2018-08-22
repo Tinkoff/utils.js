@@ -1,4 +1,4 @@
-import * as R from 'ramda';
+import * as R from '../typings/types';
 import isNil from '../is/nil';
 import curryN from '../function/curryN';
 

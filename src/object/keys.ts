@@ -1,4 +1,4 @@
-import { keys } from 'ramda';
+import { keys } from '../typings/types';
 import isObject from '../is/object';
 
 /**

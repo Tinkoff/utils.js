@@ -1,4 +1,4 @@
-import { trim } from 'ramda';
+import { trim } from '../typings/types';
 /**
  * Removes leading and trailing whitespace from `str`.
  *

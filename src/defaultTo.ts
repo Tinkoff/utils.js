@@ -1,4 +1,4 @@
-import { defaultTo } from 'ramda';
+import { defaultTo } from './typings/types';
 import curryN from './function/curryN';
 
 /**

@@ -1,4 +1,4 @@
-import { dropWhile } from 'ramda';
+import { dropWhile } from '../typings/types';
 import curryN from '../function/curryN';
 
 /**

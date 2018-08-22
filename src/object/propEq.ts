@@ -1,4 +1,4 @@
-import { propEq } from 'ramda';
+import { propEq } from '../typings/types';
 import curryN from '../function/curryN';
 import prop from './prop';
 

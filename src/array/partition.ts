@@ -1,4 +1,4 @@
-import { partition } from 'ramda';
+import { partition } from '../typings/types';
 import curryN from '../function/curryN';
 
 /**
