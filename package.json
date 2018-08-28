@@ -8,7 +8,7 @@
     "prebenchmark": "npm install --no-save lodash ramda lazy.js underscore",
     "docs": "esdoc",
     "test": "jest --coverage",
-    "test:ci": "npm run test && cat ./coverage/lcov.info | coveralls"
+    "test:ci": "npm run test -- --maxWorkers=4 && cat ./coverage/lcov.info | coveralls"
   },
   "description": "Fast, small and purely functional utility library",
   "repository": "https://github.com/TinkoffCreditSystems/utils.js",
