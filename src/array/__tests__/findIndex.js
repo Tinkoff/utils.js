@@ -6,4 +6,15 @@ describe('utils/array/findIndex', () => {
         expect(findIndex(a => a % 2 === 0)([1, 2, 3, 4])).toBe(1);
         expect(findIndex(a => a > 100, [1, 2, 3])).toBe(-1);
     });
+
+    it('test callback parameters', () => {
+        const fn = jest.fn();
+        const arr = [1, 2, 3];
+
+        findIndex(fn, arr);
+
+        expect(fn).toHaveBeenCalledWith(1, 0, arr);
+        expect(fn).toHaveBeenCalledWith(2, 1, arr);
+        expect(fn).toHaveBeenCalledWith(3, 2, arr);
+    });
 });
