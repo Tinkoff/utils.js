@@ -11,12 +11,15 @@ describe('utils/function/throttleEnd', () => {
         throttled.call({ a: 1 }, 1, 2);
         throttled.call({ a: 2 }, 3, 4);
         throttled.call({ a: 3 }, 5, 6);
+
         expect(f.mock.calls).toHaveLength(0);
         jest.runAllTimers();
         expect(f.mock.calls).toHaveLength(1);
-        expect(f).toBeCalledWith(1, 2);
-        expect(context).toEqual({ a: 1 });
+        expect(f).toBeCalledWith(5, 6);
+        expect(context).toEqual({ a: 3 });
+
         throttled.call({ a: 4 }, 7);
+
         expect(f.mock.calls).toHaveLength(1);
         jest.runAllTimers();
         expect(f.mock.calls).toHaveLength(2);
