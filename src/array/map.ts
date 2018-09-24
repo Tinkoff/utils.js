@@ -1,4 +1,5 @@
 import curryN from '../function/curryN';
+import { map } from '../typings/types';
 
 /**
  * Creates an array of values by running each element in list through fn. The fn is invoked with three arguments:
@@ -22,9 +23,4 @@ export default curryN(2, (fn, arr = []) => {
     }
 
     return result;
-}) as map
-
-interface map {
-    <TItem, R>(fn: (item: TItem, i: number, arr: TItem[]) => R, arr: TItem[]): R[];
-    <TItem, R>(fn: (item: TItem, i: number, arr: TItem[]) => R): (arr: TItem[]) => R[];
-}
+}) as typeof map

@@ -1,4 +1,5 @@
 import curryN from '../function/curryN';
+import { template } from '../typings/types';
 
 /**
  * Replaces string keywords with provided values
@@ -14,9 +15,4 @@ export default curryN(2, (replacements = {}, str = '') => str.replace(/%\{.+?\}/
     const replacementKey = match.replace(/\W/g, '');
 
     return replacements[replacementKey];
-})) as template
-
-interface template {
-    (replacements: object, str?: string): string;
-    (replacements: object): (str?: string) => string;
-}
+})) as typeof template

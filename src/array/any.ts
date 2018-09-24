@@ -1,4 +1,4 @@
-import { any as ramdaAny } from '../typings/types';
+import { any } from '../typings/types';
 import curryN from '../function/curryN';
 
 /**
@@ -24,4 +24,4 @@ export default curryN(2, (fn, arr = []) => {
     }
 
     return false;
-}) as typeof ramdaAny
+}) as typeof any

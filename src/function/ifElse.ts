@@ -1,4 +1,5 @@
 import curryN from './curryN';
+import { ifElse } from '../typings/types';
 
 /**
  * Creates a function that will process either the `onTrue` or the `onFalse`
@@ -21,12 +22,4 @@ import curryN from './curryN';
  */
 export default curryN(3, (condition, onTrue, onFalse) =>
     (...args) => (condition(...args) ? onTrue(...args) : onFalse(...args))
-) as ifElse;
-
-type func<TR = any> = (...args) => TR;
-interface ifElse {
-    <TTrue, TFalse>(condition: func, onTrue: func<TTrue>, onFalse: func<TFalse>): TTrue | TFalse;
-    <TTrue, TFalse>(condition: func, onTrue: func<TTrue>): (onFalse: func<TFalse>) => TTrue | TFalse;
-    <TTrue, TFalse>(condition: func): (onTrue: func<TTrue>, onFalse: func<TFalse>) => TTrue | TFalse;
-    <TTrue, TFalse>(condition: func): (onTrue: func<TTrue>) => (onFalse: func<TFalse>) => TTrue | TFalse;
-}
+) as typeof ifElse;

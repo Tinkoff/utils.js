@@ -1,5 +1,6 @@
 import curryN from '../function/curryN';
 import path from './path';
+import { pathOr } from '../typings/types';
 
 /**
  * If the given, non-null object has a value at the given path, returns the
@@ -18,10 +19,4 @@ export default curryN(3, (paths = [], value, obj = {}) => {
     const v = path(paths, obj);
 
     return v != null ? v : value;
-}) as pathOr
-
-interface pathOr {
-    (paths: ReadonlyArray<(number | string)>, defaultValue, obj?): any;
-    (paths: ReadonlyArray<(number | string)>): (defaultValue, obj?) => any;
-    (paths: ReadonlyArray<(number | string)>): (defaultValue) => (obj?) => any;
-}
+}) as typeof pathOr

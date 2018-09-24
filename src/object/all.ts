@@ -1,4 +1,5 @@
 import curryN from '../function/curryN';
+import { allObject } from '../typings/types';
 
 /**
  * Tests whether every [key, value] pair in the object passes the test implemented by the provided function.
@@ -25,9 +26,4 @@ export default curryN(2, (fn, obj = {}) => {
         }
     }
     return true;
-}) as all
-
-interface all {
-    <T>(fn: (a: T) => boolean, list: Object): boolean;
-    <T>(fn: (a: T) => boolean): (list: Object) => boolean;
-}
+}) as typeof allObject

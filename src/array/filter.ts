@@ -1,4 +1,5 @@
 import curryN from '../function/curryN';
+import { filter } from '../typings/types';
 
 /**
  * Takes a predicate and a "arr", and returns a new array of the
@@ -24,9 +25,4 @@ export default curryN(2, (fn, arr = []) => {
     }
 
     return result;
-}) as filter
-
-interface filter {
-    <TValue>(fn: (value: TValue, i: number, arr: TValue[]) => any, arr?: TValue[]): TValue[];
-    <TValue>(fn: (value: TValue, i: number, arr: TValue[]) => any): (arr?: TValue[]) => TValue[];
-}
+}) as typeof filter

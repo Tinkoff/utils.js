@@ -1,3 +1,5 @@
+import { once } from '../typings/types';
+
 /**
  * Accepts a function `fn` and returns a function that guards invocation of
  * `fn` such that `fn` can only ever be called once, no matter how many times
@@ -26,9 +28,4 @@ export default (fn => {
 
         return result;
     };
-}) as once;
-
-interface once {
-    <T>(fn: (...a: any[]) => T): (...a: any[]) => T;
-    <T>(fn: (...a: any[]) => T): (...a: any[]) => T;
-}
+}) as typeof once;

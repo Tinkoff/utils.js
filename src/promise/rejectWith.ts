@@ -1,4 +1,5 @@
 import curryN from '../function/curryN';
+import { rejectWith } from '../typings/types';
 
 /**
  * Returns a promise that rejects with a value returned
@@ -12,9 +13,4 @@ import curryN from '../function/curryN';
  */
 export default curryN(2, (func, ...payload) => {
     return Promise.reject(func(...payload));
-}) as rejectWith;
-
-interface rejectWith {
-    <TResult>(func: (...args) => TResult, ...payload): Promise<TResult>
-    <TResult>(func: (...args) => TResult): (...payload) => Promise<TResult>
-}
+}) as typeof rejectWith;

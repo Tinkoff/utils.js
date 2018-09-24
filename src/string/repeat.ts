@@ -1,5 +1,7 @@
 import curryN from '../function/curryN';
 import isString from '../is/string';
+import { repeatString } from '../typings/types';
+
 /**
  * Returns a string containing a repeated identical value.
  *
@@ -21,9 +23,4 @@ export default curryN(2, (n = 0, value) => {
     }
 
     return result;
-}) as repeat
-
-interface repeat {
-    <T>(n: number, a: T): T[];
-    <T>(n: number): (a: T) => T[];
-}
+}) as typeof repeatString

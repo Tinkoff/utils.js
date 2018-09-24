@@ -182,6 +182,17 @@ declare namespace R {
     '@@transducer/reduced': true;
   }
 
+  interface path {
+    <T>(path: Path, obj: any): T | undefined;
+    <T>(path: Path): (obj: any) => T | undefined;
+  }
+
+  interface prop {
+    <P extends keyof T, T>(p: P, obj: T): T[P];
+    <P extends string>(p: P): <T>(obj: Record<P, T>) => T;
+    <P extends string, T>(p: P): (obj: Record<P, T>) => T;
+  }
+
   interface Static {
     /**
      * Adds two numbers (or strings). Equivalent to a + b but curried.
@@ -664,12 +675,10 @@ declare namespace R {
     empty<T>(x: T): T;
 
     /**
-     * Checks if a list ends with the provided values
+     * Checks if a string ends with the provided values
      */
-    endsWith(a: string, list: string): boolean;
-    endsWith(a: string): (list: string) => boolean;
-    endsWith<T>(a: T | ReadonlyArray<T>, list: ReadonlyArray<T>): boolean;
-    endsWith<T>(a: T | ReadonlyArray<T>): (list: ReadonlyArray<T>) => boolean;
+    endsWith(postfix: string, str: string): boolean;
+    endsWith(postfix: string): (str: string) => boolean;
 
     /**
      * Takes a function and two values in its domain and returns true if the values map to the same value in the
@@ -707,9 +716,12 @@ declare namespace R {
     /**
      * Returns a new list containing only those items that match a given predicate function. The predicate function is passed one argument: (value).
      */
-    filter<T>(fn: (value: T) => boolean): Filter<T>;
-    filter<T>(fn: (value: T) => boolean, list: ReadonlyArray<T>): T[];
-    filter<T>(fn: (value: T) => boolean, obj: Dictionary<T>): Dictionary<T>;
+    filterObj<T>(fn: (value: T) => boolean): Filter<T>;
+    filterObj<T>(fn: (value: T) => boolean, obj: Dictionary<T>): Dictionary<T>;
+
+    filter<TValue>(fn: (value: TValue, i: number, arr: TValue[]) => any, arr?: TValue[]): TValue[];
+    filter<TValue>(fn: (value: TValue, i: number, arr: TValue[]) => any): (arr?: TValue[]) => TValue[];
+
 
     /**
      * Returns the first element of the list which matches the predicate, or `undefined` if no
@@ -835,7 +847,11 @@ declare namespace R {
      * Creates a function that will process either the onTrue or the onFalse function depending upon the result
      * of the condition predicate.
      */
-    ifElse(fn: Pred, onTrue: Arity1Fn, onFalse: Arity1Fn): Arity1Fn;
+    ifElse<TTrue, TFalse>(condition: func, onTrue: func<TTrue>, onFalse: func<TFalse>): TTrue | TFalse;
+    ifElse<TTrue, TFalse>(condition: func, onTrue: func<TTrue>): (onFalse: func<TFalse>) => TTrue | TFalse;
+    ifElse<TTrue, TFalse>(condition: func): (onTrue: func<TTrue>, onFalse: func<TFalse>) => TTrue | TFalse;
+    ifElse<TTrue, TFalse>(condition: func): (onTrue: func<TTrue>) => (onFalse: func<TFalse>) => TTrue | TFalse;
+
 
     /**
      * Increments its argument.
@@ -1049,12 +1065,16 @@ declare namespace R {
     /**
      * Returns a new list, constructed by applying the supplied function to every element of the supplied list.
      */
-    map<T, U>(fn: (x: T) => U, list: ReadonlyArray<T>): U[];
-    map<T, U>(fn: (x: T) => U): (list: ReadonlyArray<T>) => U[];
-    map<T, U>(fn: (x: T[keyof T & keyof U]) => U[keyof T & keyof U], list: T): U;
-    map<T, U>(fn: (x: T[keyof T & keyof U]) => U[keyof T & keyof U]): (list: T) => U;
-    map<T, U>(fn: (x: T) => U, obj: Functor<T>): Functor<U>; // used in functors
-    map<T, U>(fn: (x: T) => U): (obj: Functor<T>) => Functor<U>; // used in functors
+    map<TItem, R>(fn: (item: TItem, i: number, arr: TItem[]) => R, arr: TItem[]): R[];
+    map<TItem, R>(fn: (item: TItem, i: number, arr: TItem[]) => R): (arr: TItem[]) => R[];
+
+    mapObject<TKey extends keyof TObj, TValue, TObj>(
+      fn: (value: TObj[TKey], key: TKey, obj: TObj) => TValue,
+      obj: TObj
+    ): Record<TKey, TValue>;
+    mapObject<TKey extends keyof TObj, TValue, TObj>(fn: (value: TObj[TKey], key: TKey, obj: TObj) => TValue):
+      (obj: TObj) => Record<TKey, TValue>;
+
     /**
      * The mapAccum function behaves like a combination of map and reduce.
      */
@@ -1110,9 +1130,8 @@ declare namespace R {
      * Takes a function and two values, and returns whichever value produces
      * the larger result when passed to the provided function.
      */
-    maxBy<T>(keyFn: (a: T) => Ord, a: T, b: T): T;
-    maxBy<T>(keyFn: (a: T) => Ord, a: T): (b: T) => T;
-    maxBy<T>(keyFn: (a: T) => Ord): CurriedFunction2<T, T, T>;
+    maxBy<TItem, R>(fn: (item: TItem, i: number, arr: TItem[]) => R, arr: TItem[]): TItem;
+    maxBy<TItem, R>(fn: (item: TItem, i: number, arr: TItem[]) => R): (arr: TItem[]) => TItem;
 
     /**
      * Returns the mean of the given list of numbers.
@@ -1298,7 +1317,6 @@ declare namespace R {
      * called once, no matter how many times the returned function is invoked. The first value calculated is
      * returned in subsequent invocations.
      */
-    once(fn: (...a: any[]) => any): (...a: any[]) => any;
     once<T>(fn: (...a: any[]) => T): (...a: any[]) => T;
 
     /**
@@ -1371,8 +1389,7 @@ declare namespace R {
     /**
      * Retrieve the value at a given path.
      */
-    path<T>(path: Path, obj: any): T | undefined;
-    path<T>(path: Path): (obj: any) => T | undefined;
+    path: path;
 
     /**
      * Determines whether a nested path on an object has a specific value,
@@ -1386,9 +1403,9 @@ declare namespace R {
      * If the given, non-null object has a value at the given path, returns the value at that path.
      * Otherwise returns the provided default value.
      */
-    pathOr<T>(defaultValue: T, path: Path, obj: any): any;
-    pathOr<T>(defaultValue: T, path: Path): (obj: any) => any;
-    pathOr<T>(defaultValue: T): CurriedFunction2<Path, any, any>;
+    pathOr(paths: ReadonlyArray<(number | string)>, defaultValue, obj?): any;
+    pathOr(paths: ReadonlyArray<(number | string)>): (defaultValue, obj?) => any;
+    pathOr(paths: ReadonlyArray<(number | string)>): (defaultValue) => (obj?) => any;
 
     /**
      * Returns true if the specified object property at given path satisfies the given predicate; false otherwise.
@@ -1740,9 +1757,7 @@ declare namespace R {
     /**
      * Returns a function that when supplied an object returns the indicated property of that object, if it exists.
      */
-    prop<P extends keyof T, T>(p: P, obj: T): T[P];
-    prop<P extends string>(p: P): <T>(obj: Record<P, T>) => T;
-    prop<P extends string, T>(p: P): (obj: Record<P, T>) => T;
+    prop: prop;
 
     /**
      * Determines whether the given property of an object has a specific
@@ -1770,9 +1785,9 @@ declare namespace R {
      * If the given, non-null object has an own property with the specified name, returns the value of that property.
      * Otherwise returns the provided default value.
      */
-    propOr<T, U, V>(val: T, p: string, obj: U): V;
-    propOr<T>(val: T, p: string): <U, V>(obj: U) => V;
-    propOr<T>(val: T): <U, V>(p: string, obj: U) => V;
+    propOr<T, U, V>(p: string, val: T, obj: U): V;
+    propOr<T>(p: string, val: T): <U, V>(obj: U) => V;
+    propOr<T>(p: string): <U, V>(val: T, obj: U) => V;
 
     /**
      * Returns the value at the specified property.
@@ -1806,6 +1821,11 @@ declare namespace R {
     reduce<T, TResult>(fn: (acc: TResult, elem: T) => TResult | Reduced<TResult>, acc: TResult, list: ReadonlyArray<T>): TResult;
     reduce<T, TResult>(fn: (acc: TResult, elem: T) => TResult | Reduced<TResult>): (acc: TResult, list: ReadonlyArray<T>) => TResult;
     reduce<T, TResult>(fn: (acc: TResult, elem: T) => TResult | Reduced<TResult>, acc: TResult): (list: ReadonlyArray<T>) => TResult;
+
+    reduceObject<TObj, TKey extends keyof TObj, TAcc, TResult>(fn: (acc: TAcc, value: TObj[TKey], TKey) => TResult, acc: TAcc, obj: TObj): TResult;
+    reduceObject<TObj, TKey extends keyof TObj, TAcc, TResult>(fn: (acc: TAcc, value: TObj[TKey], TKey) => TResult, acc: TAcc): (obj: TObj) => TResult;
+    reduceObject<TObj, TKey extends keyof TObj, TAcc, TResult>(fn: (acc: TAcc, value: TObj[TKey], TKey) => TResult): (acc: TAcc, obj: TObj) => TResult;
+    reduceObject<TObj, TKey extends keyof TObj, TAcc, TResult>(fn: (acc: TAcc, value: TObj[TKey], TKey) => TResult): (acc: TAcc) => (obj: TObj) => TResult;
 
     /**
      * Groups the elements of the list according to the result of calling the String-returning function keyFn on each
@@ -1847,9 +1867,8 @@ declare namespace R {
      * Similar to `filter`, except that it keeps only values for which the given predicate
      * function returns falsy.
      */
-    reject<T>(fn: (value: T) => boolean): Filter<T>;
-    reject<T>(fn: (value: T) => boolean, list: ReadonlyArray<T>): T[];
-    reject<T>(fn: (value: T) => boolean, obj: Dictionary<T>): Dictionary<T>;
+    reject<TItem>(fn: (item: TItem, i: number, arr: TItem[]) => any, arr?: TItem[]): TItem[];
+    reject<TItem>(fn: (item: TItem, i: number, arr: TItem[]) => any): (arr?: TItem[]) => TItem[];
 
     /**
      * Removes the sub-list of `list` starting at index `start` and containing `count` elements.
@@ -1861,8 +1880,11 @@ declare namespace R {
     /**
      * Returns a fixed list of size n containing a specified identical value.
      */
-    repeat<T>(a: T, n: number): T[];
-    repeat<T>(a: T): (n: number) => T[];
+    repeat<T>(n: number, a: T): T[];
+    repeat(n: number): <T>(a: T) => T[];
+
+    repeatString(n: number, a): string;
+    repeatString(n: number): (a) => string;
 
     /**
      * Replace a substring or regex match in a string with a replacement.
@@ -1970,8 +1992,6 @@ declare namespace R {
      */
     startsWith(a: string, list: string): boolean;
     startsWith(a: string): (list: string) => boolean;
-    startsWith<T>(a: T | ReadonlyArray<T>, list: ReadonlyArray<T>): boolean;
-    startsWith<T>(a: T | ReadonlyArray<T>): (list: ReadonlyArray<T>) => boolean;
 
     /**
      * Subtracts two numbers. Equivalent to `a - b` but curried.
@@ -2345,7 +2365,79 @@ declare namespace R {
     zipWith<T, U, TResult>(fn: (x: T, y: U) => TResult, list1: ReadonlyArray<T>, list2: ReadonlyArray<U>): TResult[];
     zipWith<T, U, TResult>(fn: (x: T, y: U) => TResult, list1: ReadonlyArray<T>): (list2: ReadonlyArray<U>) => TResult[];
     zipWith<T, U, TResult>(fn: (x: T, y: U) => TResult): (list1: ReadonlyArray<T>, list2: ReadonlyArray<U>) => TResult[];
+
+    each<TItem>(
+      fn: (item: TItem, index: number, arr: TItem[]) => void,
+      arr?: TItem[]
+    ): void;
+    each<TItem>(
+      fn: (item: TItem, index: number, arr: TItem[]) => void
+    ): (arr?: TItem[]) => void;
+
+    includes<TValue>(value: TValue, array: TValue[]): boolean;
+    includes<TValue>(value: TValue): (array: TValue[]) => boolean;
+
+    takeRightWhile<TType extends string | any[]>(fn: (item: TType[0]) => any, item?: TType): TType;
+    takeRightWhile<TType extends string | any[]>(fn: (item: TType[0]) => any): (item?: TType) => TType;
+
+    applyOrReturn<TFunc, T>(args, func: T): T extends (...args) => any ? ReturnType<T> : T;
+    applyOrReturn(args): <TFunc, T>(func: T) => T extends (...args) => any ? ReturnType<T> : T;
+
+    debounce<TFunc>(wait: number, fn: TFunc): Function & { cancel: Function };
+    debounce(wait: number): <TFunc>(fn: TFunc) => Function & { cancel: Function };
+
+    throttle<TFunc extends (...args) => any>(wait: number, fn: TFunc): void;
+    throttle(wait: number): <TFunc extends (...args) => any>(fn: TFunc) => void;
+
+    throttleEnd<TFunc extends (...args) => any>(wait: number, fn: TFunc): void;
+    throttleEnd(wait: number): <TFunc extends (...args) => any>(fn: TFunc) => void;
+
+    updatePropertyValue<T, TProp extends string, TValue>(propertyName: TProp, propertyValue: TValue, obj: T): T & { [key in TProp]: TValue };
+    updatePropertyValue<T, TProp extends string, TValue>(propertyName: TProp): (propertyValue: TValue, obj: T) => T & { [key in TProp]: TValue };
+
+    allObject<T>(fn: (a: T) => boolean, list: Object): boolean;
+    allObject<T>(fn: (a: T) => boolean): (list: Object) => boolean;
+
+    anyObject<T>(fn: (a: T) => boolean, list: Object): boolean;
+    anyObject<T>(fn: (a: T) => boolean): (list: Object) => boolean;
+
+    findKey<T>(fn: (value: T, key: string, obj: Record<string, T>) => any, obj: Record<string, T>): string;
+    findKey<T>(fn: (value: T, key: string, obj: Record<string, T>) => any): (obj: Record<string, T>) => string;
+
+    keyBy<T, R>(
+      fn: (value: T, key: string, obj: Record<string, T>) => R,
+      obj?: Record<string, T>
+    ): Record<string, R>;
+
+    keyBy<T, R>(fn: (value: T, key: string, obj: Record<string, T>) => R):
+      (obj?: Record<string, T>) => Record<string, R>;
+
+    pathApply<R>(paths: string[], fn: (arg: ReturnType<path>) => R, obj?): R;
+    pathApply<R>(paths: string[]): (fn: (arg: ReturnType<path>) => R, obj?) => R;
+    pathApply<R>(paths: string[]): (fn: (arg: ReturnType<path>) => R) => (obj?) => R;
+
+    pathSet(paths: string[], value, obj: Record<string, any>): Record<string, any>;
+    pathSet(paths: string[]): (value, obj: Record<string, any>) => Record<string, any>;
+    pathSet(paths: string[]): (value) => (obj: Record<string, any>) => Record<string, any>;
+
+    propApply<R>(propName: string, fn: (arg: ReturnType<prop>) => R, obj): R;
+    propApply<R>(propName: string): (fn: (arg: ReturnType<prop>) => R, obj) => R;
+    propApply<R>(propName: string): (fn: (arg: ReturnType<prop>) => R) => (obj) => R;
+
+    rejectWith<TResult>(func: (...args) => TResult, ...payload): Promise<TResult>
+    rejectWith<TResult>(func: (...args) => TResult): (...payload) => Promise<TResult>
+
+    resolveWith<TResult>(func: (...args) => TResult, ...payload): Promise<TResult>
+    resolveWith<TResult>(func: (...args) => TResult): (...payload) => Promise<TResult>
+
+    tapPromise<T>(fn: (a: T) => any, value: T): Promise<T>;
+    tapPromise<T>(fn: (a: T) => any): (value: T) => Promise<T>;
+
+    template(replacements: object, str?: string): string;
+    template(replacements: object): (str?: string) => string;
   }
 }
+
+type func<TR = any> = (...args) => TR;
 
 export = R;

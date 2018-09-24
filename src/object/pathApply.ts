@@ -1,5 +1,6 @@
 import curryN from '../function/curryN';
 import path from './path';
+import { pathApply } from '../typings/types';
 
 /**
  * Returns the result of `fn` with given value at `path`.
@@ -16,10 +17,4 @@ import path from './path';
  */
 export default curryN(3, (paths = [], fn, obj = {}) =>
     fn(path(paths, obj))
-) as pathApply;
-
-interface pathApply {
-    <R>(paths: string[], fn: (arg: ReturnType<typeof path>) => R, obj?): R;
-    <R>(paths: string[]): (fn: (arg: ReturnType<typeof path>) => R, obj?) => R;
-    <R>(paths: string[]): (fn: (arg: ReturnType<typeof path>) => R) => (obj?) => R;
-}
+) as typeof pathApply;

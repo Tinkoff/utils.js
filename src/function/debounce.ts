@@ -1,4 +1,5 @@
 import curryN from './curryN';
+import { debounce } from '../typings/types';
 
 /**
  * Creates a debounced function that delays invoking `func` until after `wait`
@@ -24,9 +25,4 @@ export default curryN(2, (wait, fn) => {
     (f as any).cancel = () => clearTimeout(timeout);
 
     return f;
-}) as debounce
-
-interface debounce {
-    <TFunc>(wait: number, fn: TFunc): Function & { cancel: Function };
-    (wait: number): <TFunc>(fn: TFunc) => Function & { cancel: Function };
-}
+}) as typeof debounce

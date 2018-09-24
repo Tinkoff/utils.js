@@ -1,4 +1,5 @@
 import curryN from './curryN';
+import { throttleEnd } from '../typings/types';
 
 /**
  * Creates a throttled function that only invokes `fn` at most once per
@@ -28,9 +29,4 @@ export default curryN(2, (wait, fn) => {
 
         lastCalled = now;
     };
-}) as throttleEnd
-
-interface throttleEnd {
-    <TFunc extends (...args) => any>(wait: number, fn: TFunc): void;
-    (wait: number): <TFunc extends (...args) => any>(fn: TFunc) => void;
-}
+}) as typeof throttleEnd

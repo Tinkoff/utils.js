@@ -1,4 +1,5 @@
 import curryN from '../function/curryN';
+import { reject } from '../typings/types';
 
 /**
  * Takes a predicate and a "arr", and returns a new array of the
@@ -24,9 +25,4 @@ export default curryN(2, (fn, arr = []) => {
     }
 
     return result;
-}) as reject
-
-interface reject {
-    <TItem>(fn: (item: TItem, i: number, arr: TItem[]) => any, arr?: TItem[]): TItem[];
-    <TItem>(fn: (item: TItem, i: number, arr: TItem[]) => any): (arr?: TItem[]) => TItem[];
-}
+}) as typeof reject

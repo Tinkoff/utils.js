@@ -1,4 +1,4 @@
-import * as R from '../typings/types';
+import * as types from '../typings/types';
 import isNil from '../is/nil';
 import curryN from '../function/curryN';
 
@@ -40,4 +40,4 @@ function reduceWhile(pred, fn, acc, arr) { // eslint-disable-line max-params
     return acc;
 }
 
-export default curryN(4, reduceWhile) as typeof R.reduceWhile
+export default curryN(4, reduceWhile) as typeof types.reduceWhile

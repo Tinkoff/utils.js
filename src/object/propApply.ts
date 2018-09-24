@@ -1,5 +1,6 @@
 import curryN from '../function/curryN';
 import prop from './prop';
+import { propApply } from '../typings/types';
 
 /**
  * Returns the result of `fn` with value of property in `obj`.
@@ -16,10 +17,4 @@ import prop from './prop';
  */
 export default curryN(3, (propName, fn, obj) =>
     fn(prop(propName, obj))
-) as propApply;
-
-interface propApply {
-    <R>(propName: string, fn: (arg: ReturnType<typeof prop>) => R, obj): R;
-    <R>(propName: string): (fn: (arg: ReturnType<typeof prop>) => R, obj) => R;
-    <R>(propName: string): (fn: (arg: ReturnType<typeof prop>) => R) => (obj) => R;
-}
+) as typeof propApply;

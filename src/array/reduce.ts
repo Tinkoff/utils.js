@@ -1,4 +1,4 @@
-import * as R from '../typings/types';
+import { reduce } from '../typings/types';
 import curryN from '../function/curryN';
 
 /**
@@ -26,4 +26,4 @@ export default curryN(3, (fn, acc, arr = []) => {
     }
 
     return acc;
-}) as typeof R.reduce
+}) as typeof reduce

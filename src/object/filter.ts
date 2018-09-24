@@ -1,4 +1,4 @@
-import * as R from '../typings/types';
+import { filterObj } from '../typings/types';
 import curryN from '../function/curryN';
 import objectKeys from './keys';
 
@@ -29,4 +29,4 @@ export default curryN(2, (fn, obj = {}) => {
     }
 
     return result;
-}) as typeof R.filter
+}) as typeof filterObj

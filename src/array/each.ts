@@ -1,4 +1,5 @@
 import curryN from '../function/curryN';
+import { each } from '../typings/types';
 
 /**
  * Iterate over an input `list`, calling a provided function `fn` for each
@@ -18,14 +19,5 @@ export default curryN(2, (fn, arr = []) => {
   for (let i = 0; i < arr.length; i++) {
     fn(arr[i], i, arr);
   }
-}) as each
+}) as typeof each
 
-interface each {
-  <TItem>(
-    fn: (item: TItem, index: number, arr: TItem[]) => void,
-    arr?: TItem[]
-  ): void;
-  <TItem>(
-    fn: (item: TItem, index: number, arr: TItem[]) => void
-  ): (arr?: TItem[]) => void;
-}

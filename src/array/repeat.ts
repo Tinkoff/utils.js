@@ -1,4 +1,5 @@
 import curryN from '../function/curryN';
+import { repeat } from '../typings/types';
 
 /**
  * Returns a fixed list of size `n` containing a specified identical value.
@@ -22,9 +23,4 @@ export default curryN(2, (n = 0, value) => {
     }
 
     return result;
-}) as repeat
-
-interface repeat {
-    <T>(n: number, a: T): T[];
-    (n: number): <T>(a: T) => T[];
-}
+}) as typeof repeat

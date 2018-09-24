@@ -1,4 +1,5 @@
 import curryN from './curryN';
+import { updatePropertyValue } from '../typings/types';
 
 /**
  * A function to change value by property name in object.
@@ -25,9 +26,4 @@ export default curryN(2, (propertyName, propertyValue, obj) => {
     Object.defineProperty(obj, propertyName, descriptor);
 
     return obj;
-}) as updatePropertyValue;
-
-interface updatePropertyValue {
-    <T, TProp extends string, TValue>(propertyName: TProp, propertyValue: TValue, obj: T): T & { [key in TProp]: TValue };
-    <T, TProp extends string, TValue>(propertyName: TProp): (propertyValue: TValue, obj: T) => T & { [key in TProp]: TValue };
-}
+}) as typeof updatePropertyValue;

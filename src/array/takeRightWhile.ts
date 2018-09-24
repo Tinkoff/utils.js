@@ -1,5 +1,5 @@
 import curryN from '../function/curryN';
-
+import { takeRightWhile } from '../typings/types';
 /**
  * Returns a new array|string containing the last `n` elements of a given array|string, passing
  * each value to the supplied predicate function, and terminating when the
@@ -23,9 +23,4 @@ export default curryN(2, (fn, arr = []) => {
     }
 
     return arr.slice(i + 1);
-}) as takeRightWhile
-
-interface takeRightWhile {
-    <TType extends string | any[]>(fn: (item: TType[0]) => any, item?: TType): TType;
-    <TType extends string | any[]>(fn: (item: TType[0]) => any): (item?: TType) => TType;
-}
+}) as typeof takeRightWhile
