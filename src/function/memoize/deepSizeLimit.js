@@ -26,20 +26,14 @@ export default curryN(2, (maxSize, fn) =>
 );
 
 function createSizedCache(maxSize) {
-    const obj = {};
-    const cache = createCacheFrom(obj);
-    const originalSetFn = cache.set;
+    const cache = new Map();
 
     cache.set = (...args) => {
-    // flush cache if size reached the limit
-        const keys = Object.keys(obj);
-
-        if (keys.length >= maxSize) {
-            keys.forEach(key => {
-                delete obj[key];
-            });
+        // flush cache if size reached the limit
+        if (cache.size >= maxSize) {
+            cache.clear();
         }
-        return originalSetFn.call(cache, ...args);
+        return Map.prototype.set.call(cache, ...args);
     };
     return cache;
 }
