@@ -9,6 +9,8 @@ import curryN from './curryN';
  */
 export default curryN(2, (wait, fn) => {
     let lastCalled;
+    let lastArgs;
+    let lastThis;
     let timeout;
 
     return function(...args) {
@@ -21,11 +23,13 @@ export default curryN(2, (wait, fn) => {
             fn.apply(this, args);
         } else if (!timeout) {
             timeout = setTimeout(() => {
-                fn.apply(this, args);
+                fn.apply(lastThis, lastArgs);
                 timeout = null;
             }, wait);
         }
 
         lastCalled = now;
+        lastArgs = args;
+        lastThis = this;
     };
 });
