@@ -14,14 +14,14 @@ describe('src/memoize/deepSizeLimit', () => {
     it('with multiple deep equally objects get cache', () => {
         const { fn, memoizedFn } = prepare();
 
-        memoizedFn({});
-        memoizedFn({});
+        memoizedFn({}, [1, 2 ,3]);
+        memoizedFn({}, [1, 2, 3]);
         expect(fn).toHaveBeenCalledTimes(1);
         memoizedFn({ test: 1 });
-        memoizedFn({});
+        memoizedFn({}, [1, 2, 3]);
         expect(fn).toHaveBeenCalledTimes(2);
         memoizedFn({ test: 2 });
-        memoizedFn({});
+        memoizedFn({}, [1, 2, 3]);
         expect(fn).toHaveBeenCalledTimes(4);
     });
 });

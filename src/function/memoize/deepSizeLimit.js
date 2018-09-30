@@ -10,7 +10,7 @@ import curryN from '../curryN';
  * @returns {Function} fn
  * @example
  *     const addFlag = obj => ({...obj, flag: true });
- *     const memoize = memoizeWeak(2, addFlag));
+ *     const memoize = memoizeDeepSizeLimit(2, addFlag));
  *     memoize({test: 2}); // from addFlag call
  *     memoize({test: 2}); // from cache
  *     memoize({test: 3}); //from addFlag call
@@ -18,11 +18,11 @@ import curryN from '../curryN';
  *     memoize({test: 2}); // from addFlag call (memory was cleared)
  */
 export default curryN(2, (maxSize, fn) =>
-  memoizeWith(
-    () => createSizedCache(maxSize),
-    (...args) => JSON.stringify(args),
-    fn
-  )
+    memoizeWith(
+        () => createSizedCache(maxSize),
+        (...args) => JSON.stringify(args),
+        fn
+    )
 );
 
 function createSizedCache(maxSize) {

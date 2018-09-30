@@ -43,7 +43,7 @@ const memoizeWith = curryN(3, (getCache, hasher, fn) => {
     };
 });
 
-export const createCacheFrom = (obj = {}) => {
+export const createCacheFrom = (obj = Object.create(null)) => {
     return {
         get(key) {
             return obj[key];

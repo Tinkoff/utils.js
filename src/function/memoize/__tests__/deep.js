@@ -32,7 +32,7 @@ describe('src/memoize/deep', () => {
             expect(fn).toHaveBeenCalledTimes(2);
         });
     });
-    describe('with multi primitive argument', () => {
+    describe('with multiple primitive argument', () => {
         it('returns cached value', () => {
             const { memoizedFn, fn } = prepare();
 
@@ -47,11 +47,11 @@ describe('src/memoize/deep', () => {
         });
     });
 
-    describe('with multple non-primitive arguments', () => {
+    describe('with multiple non-primitive arguments', () => {
         it('returns cache for deep equally objects', () => {
             const { fn, memoizedFn } = prepare();
 
-            expect(memoizedFn({})).toBe(memoizedFn({}));
+            expect(memoizedFn({}, [1, 2, 3])).toBe(memoizedFn({}, [1, 2, 3]));
             expect(fn).toHaveBeenCalledTimes(1);
         });
         it('returns not cached value for deep not equall objects', () => {

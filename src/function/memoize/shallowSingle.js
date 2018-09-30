@@ -11,7 +11,7 @@ import identity from '../identity';
  * @returns {Function}
  * @example
  *     const addFlag = obj => ({...obj, flag: true });
- *     const memoize = memoizeWeak(addFlag));
+ *     const memoize = memoizeShallowSingle(addFlag));
  *     const test = {test: 1};
  *     memoize(test); // from addFlag call
  *     memoize({test: 1}); // from addFlag call
