@@ -6,10 +6,15 @@ const chalk = require('chalk');
 const { promptVersion } = require('./prompt');
 const build = require('./build');
 const publish = require('./publish');
+const recursiveReadSync = require('recursive-readdir-sync');
 
 const pkgRoot = path.join(__dirname, '../');
-const pkgBuildPath = path.join(pkgRoot, '/build');
+const buildDir = 'build';
+const pkgBuildPath = path.join(pkgRoot, buildDir);
 const pkgJSONPath = path.join(pkgRoot, 'package.json');
+const tsTemp = JSON.parse(
+    fsExtra.readFileSync(path.join(pkgRoot, 'tsconfig.json'))
+).compilerOptions.outDir;
 
 const withSpinner = (promise, text) => {
     ora.promise(promise, {
@@ -17,7 +22,7 @@ const withSpinner = (promise, text) => {
     });
     return promise;
 };
-const cleanBuildPath = () => fsExtra.remove(pkgBuildPath);
+const cleanBuildPath = () => Promise.all([fsExtra.remove(pkgBuildPath), fsExtra.remove(tsTemp)]);
 const updateVersionInPkg = version => {
     const prevPkgData = require(pkgJSONPath);
 
@@ -42,6 +47,23 @@ const copyRelationalFilesWithSpinner = () =>
         'Copying package files'
     );
 
+const copyDeclarationFiles = (pathRootDir, buildPath) =>
+    Promise.all(
+        recursiveReadSync(path.join(pkgRoot, tsTemp))
+            .filter(fileName => fileName.endsWith(".d.ts"))
+            .map(fileName =>
+                fsExtra.copy(
+                    fileName,
+                    fileName.replace(tsTemp, buildDir)
+                )
+            )
+    );
+const copyDeclarationFilesWithSpinner = () =>
+    withSpinner(
+        copyDeclarationFiles(pkgRoot, pkgBuildPath),
+        'Copying declaration files'
+    );
+
 const publishWithSpinner = npmTag =>
     withSpinner(
         publish(pkgBuildPath, npmTag),
@@ -49,7 +71,7 @@ const publishWithSpinner = npmTag =>
     );
 
 const buildWithSpinner = () =>
-    withSpinner(build(pkgBuildPath), 'Compiling package');
+    withSpinner(build(pkgBuildPath, tsTemp), 'Compiling package');
 
 const release = async () => {
     const { name: pkgName, version: currentVersion } = require(pkgJSONPath);
@@ -63,6 +85,7 @@ const release = async () => {
         .then(cleanBuildPath)
         .then(() => updateVersionInPkg(newVersion))
         .then(buildWithSpinner)
+        .then(copyDeclarationFilesWithSpinner)
         .then(copyRelationalFilesWithSpinner)
         .then(() => publishWithSpinner(npmTag))
         .then(cleanBuildPath)
