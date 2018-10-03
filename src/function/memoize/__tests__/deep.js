@@ -25,7 +25,7 @@ describe('src/memoize/deep', () => {
             expect(fn).toHaveBeenCalledTimes(2);
         });
 
-        it('returns not cached value for shallow equally string and number arguments', () => {
+        it('returns not cached value for strict equally string and number arguments', () => {
             const { fn, memoizedFn } = prepare();
 
             expect(memoizedFn(1)).not.toBe(memoizedFn('1'));
