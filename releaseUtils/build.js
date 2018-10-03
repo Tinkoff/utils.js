@@ -1,9 +1,13 @@
 /* eslint-disable import/no-commonjs, global-require */
 const execa = require('execa');
 
-const build = buildDir =>
+const build = (buildDir, tsTemp) =>
     execa.shell(
-        `npx babel --ignore __benchmarks__,__tests__ ./src -d ${buildDir}`
-    );
+        `tsc -p tsconfig.json`
+    ).then(() => (
+        execa.shell(
+            `npx babel ./${tsTemp} -d ${buildDir}`
+        )
+    ));
 
 module.exports = build;
