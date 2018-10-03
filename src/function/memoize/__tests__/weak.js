@@ -1,6 +1,6 @@
 import memoize from '../weak';
 
-describe('src/memoize/memoizeShallowSingleNonPrimitive', () => {
+describe('src/memoize/weak', () => {
     const prepare = () => {
         const fn = jest.fn();
         const memoizedFn = memoize(fn);

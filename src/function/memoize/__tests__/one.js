@@ -1,6 +1,6 @@
 import memoizeOne from '../one';
 
-describe('memoizeOne', () => {
+describe('src/function/memoize/one', () => {
     describe('default equality function', () => {
         const prepare = () => {
             const fn = jest.fn((...args) => args);

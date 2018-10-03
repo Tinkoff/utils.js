@@ -1,4 +1,4 @@
-import memoizeWith, { createCacheFrom } from './with';
+import memoizeWith from './with';
 import curryN from '../curryN';
 
 /**

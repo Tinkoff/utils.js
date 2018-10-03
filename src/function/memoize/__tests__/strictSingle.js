@@ -1,9 +1,9 @@
-import memoizeShallow from '../shallowSingle';
+import memoizeStrict from '../strictSingleSingle';
 
-describe('src/memoize/shallowSingle', () => {
+describe('src/memoize/strictSingle', () => {
     const prepare = () => {
         const fn = jest.fn();
-        const memoizedFn = memoizeShallow(fn);
+        const memoizedFn = memoizeStrict(fn);
 
         return {
             fn,
