@@ -17,15 +17,9 @@ import curry from '../function/curry';
  *      findLast(propEq('a', 4))(xs); //=> undefined
  */
 export default curry((fn, list: ReadonlyArray<any>) => {
-    let idx = list.length - 1;
-
-    while (idx >= 0) {
-        if (fn(list[idx])) {
-            return list[idx];
+    for (let i = list.length - 1; i >= 0; i--) {
+        if (fn(list[i], i, list)) {
+            return list[i];
         }
-
-        idx -= 1;
     }
-
-    return undefined;
-}) as typeof findLast
+}) as typeof findLast;

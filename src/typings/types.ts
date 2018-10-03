@@ -741,8 +741,8 @@ declare namespace R {
      * Returns the last element of the list which matches the predicate, or `undefined` if no
      * element matches.
      */
-    findLast<T>(fn: (a: T) => boolean, list: ReadonlyArray<T>): T | undefined;
-    findLast<T>(fn: (a: T) => boolean): (list: ReadonlyArray<T>) => T | undefined;
+    findLast<T>(fn: (a: T, index: number, list: ReadonlyArray<T>) => boolean, list: ReadonlyArray<T>): T | undefined;
+    findLast<T>(fn: (a: T, index: number, list: ReadonlyArray<T>) => boolean): (list: ReadonlyArray<T>) => T | undefined;
 
     /**
      * Returns the index of the last element of the list which matches the predicate, or

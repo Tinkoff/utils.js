@@ -17,7 +17,7 @@ import curryN from '../function/curryN';
  */
 export default curryN(2, (fn, arr = []) => {
     for (let i = 0; i < arr.length; i++) {
-        if (fn(arr[i])) {
+        if (fn(arr[i], i, arr)) {
             return i;
         }
     }
