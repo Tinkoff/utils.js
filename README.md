@@ -16,13 +16,13 @@ $ npm install @tinkoff/utils
 - Modern codebase
 
 ## Structure of the library
-* [`/object`](./src/object) – for objects
-* [`/string`](./src/string) – for strings
-* [`/promise`](./src/promise) – for promises
-* [`/array`](./src/array) – for arrays or array-like objects
-* [`/function`](./src/function) – for functions – composition, currying and so on, also a set of simple functions (noop, T, F)
-* [`/is`](./src/is) – set of type checking methods
-* [`/`](./src) – root contains utilities which don't satisfy any of the above categories or are universal
+* [`/object`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src/object) – for objects
+* [`/string`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src/string) – for strings
+* [`/promise`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src/promise) – for promises
+* [`/array`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src/array) – for arrays or array-like objects
+* [`/function`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src/function) – for functions – composition, currying and so on, also a set of simple functions (noop, T, F)
+* [`/is`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src/is) – set of type checking methods
+* [`/`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src) – root contains utilities which don't satisfy any of the above categories or are universal
 
 ## Usage
 ```js
@@ -61,4 +61,4 @@ $ npm run benchmark
 | import ... from 'ramda/src/...' | 10 kb |
 | import ... from '@tinkoff/utils/...' | 2.32 kb |
 
-For detailed comparison with specific libraries see [COMPARE.md](./COMPARE.md)
+For detailed comparison with specific libraries see [COMPARE.md](https://github.com/TinkoffCreditSystems/utils.js/tree/master/COMPARE.md)
