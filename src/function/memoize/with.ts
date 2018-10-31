@@ -25,7 +25,31 @@ import curryN from '../curryN';
  *      const sum = add(1,4); // from original add call
  *      const sum = add(1,3); // from cache
  */
-const memoizeWith = curryN(3, (getCache, hasher, fn) => {
+
+interface Cache {
+    get: (key) => any;
+    has: (key) => any;
+    set: (key, value) => any | this | undefined;
+}
+
+interface GetCache {
+    (): Cache
+}
+
+interface MemoizeFn{
+    (fn: Function): any;
+}
+interface MemoizeHasher {
+    (hasher: Function): MemoizeFn,
+    (hasher: Function, fn: Function): any
+}
+interface MemoizeWith {
+    (getCache: GetCache): MemoizeHasher;
+    (getCache: GetCache, hasher: Function): Function;
+    (getCache: GetCache, hasher: Function, fn: Function): any;
+}
+
+const memoizeWith:MemoizeWith = curryN(3, (getCache: GetCache, hasher: Function, fn: Function) => {
     const cache = getCache();
 
     return (...args) => {
@@ -43,17 +67,23 @@ const memoizeWith = curryN(3, (getCache, hasher, fn) => {
     };
 });
 
-export const createCacheFrom = (obj = Object.create(null)) => {
+interface AccumulatorObject {
+    [key: string]: any
+}
+
+export const createCache = (
+    accumulatorObject:AccumulatorObject = Object.create(null)
+): Cache => {
     return {
         get(key) {
-            return obj[key];
+            return accumulatorObject[key];
         },
         set(key, value) {
-            obj[key] = value;
+            accumulatorObject[key] = value;
             return this;
         },
         has(key) {
-            return key in obj;
+            return key in accumulatorObject;
         }
     };
 };

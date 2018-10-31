@@ -1,4 +1,4 @@
-import memoizeStrict from '../strictSingleSingle';
+import memoizeStrict from '../strictSingle';
 
 describe('src/memoize/strictSingle', () => {
     const prepare = () => {

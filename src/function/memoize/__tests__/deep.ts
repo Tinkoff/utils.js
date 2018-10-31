@@ -56,7 +56,7 @@ describe('src/memoize/deep', () => {
         });
         it('returns not cached value for deep not equall objects', () => {
             const { fn, memoizedFn } = prepare();
-            const obj = {};
+            const obj = { test: undefined };
             const firstResult = memoizedFn(obj);
 
             obj.test = 2;

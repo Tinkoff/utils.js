@@ -1,4 +1,4 @@
-import memoizeWith, { createCacheFrom } from './with';
+import memoizeWith, { createCache } from './with';
 
 /**
  * Memoize function with multiply arguments of any type.
@@ -15,4 +15,4 @@ import memoizeWith, { createCacheFrom } from './with';
  *     test.id = 123;
  *     memoize(test); // from addFlag call
  */
-export default memoizeWith(createCacheFrom, (...args) => JSON.stringify(args));
+export default memoizeWith(createCache, (...args) => JSON.stringify(args));
