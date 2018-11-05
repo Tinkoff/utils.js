@@ -13,13 +13,19 @@ import objectKeys from './keys';
  *      omit(['a', 'd'], {a: 1, b: 2, c: 3, d: 4}); //=> {b: 2, c: 3}
  */
 export default curryN(2, (props = [], obj = {}) => {
+    const propsSet = Object.create(null);
+
+    for (let i = 0; i < props.length; i++) {
+        propsSet[props[i]] = true;
+    }
+
     const result = {};
     const keys = objectKeys(obj);
 
     for (let i = 0; i < keys.length; i++) {
         const prop = keys[i];
 
-        if (props.indexOf(prop) === -1) {
+        if (!propsSet[prop]) {
             result[prop] = obj[prop];
         }
     }
