@@ -15,7 +15,7 @@ import equal from '../../is/equal';
  *     memoize(1,2) // from addFlag call,
  *     memoize(1) // from addFlag call, cache was flashed on previous step
  */
-export default function(fn, isEqual = equal) {
+export default function(fn, isEqual: (a, b) => boolean = equal) {
     let lastArgs = [];
     let lastResult;
     let alreadyCalled = false;
