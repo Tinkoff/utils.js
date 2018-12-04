@@ -1,3 +1,12 @@
+## [Unreleased]
++ add typings
++ move docs to branch gh-pages
++ add memoize functions
++ fix bug with `omit` string conversion
++ remove utils/is/not
++ remove sanitize
++ fix function/throttleEnd
+
 ## 1.0.2
 + Update docs and license
 
