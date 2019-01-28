@@ -6,6 +6,7 @@
 + remove utils/is/not
 + remove sanitize
 + fix function/throttleEnd
++ fix array/shuffle random generator
 
 ## 1.0.2
 + Update docs and license
