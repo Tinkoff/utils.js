@@ -34,7 +34,7 @@ const updateVersionInPkg = version => {
 };
 const copyRelationalFiles = (pathRootDir, buildPath) =>
     Promise.all(
-        ['package.json', '.npmignore', 'README.MD', 'LICENSE', 'CHANGELOG.md', '.babelrc'].map(fileName =>
+        ['package.json', '.npmignore', 'README.MD', 'LICENSE', 'CHANGELOG.md'].map(fileName =>
             fsExtra.copy(
                 path.join(pathRootDir, fileName),
                 path.join(buildPath, fileName)
@@ -50,7 +50,7 @@ const copyRelationalFilesWithSpinner = () =>
 const copyDeclarationFiles = (pathRootDir, buildPath) =>
     Promise.all(
         recursiveReadSync(path.join(pkgRoot, tsTemp))
-            .filter(fileName => fileName.endsWith(".d.ts"))
+            .filter(fileName => fileName.endsWith('.d.ts'))
             .map(fileName =>
                 fsExtra.copy(
                     fileName,

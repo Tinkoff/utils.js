@@ -1,26 +1,21 @@
 {
   "presets": [
     [
-      "env",
+      "@babel/preset-env",
       {
         "loose": true,
-        "exclude": [
-          "transform-es2015-typeof-symbol"
-        ],
         "targets": {
-          "browsers": {
-            "chrome": 28,
-            "safari": 6,
-            "firefox": 28,
-            "opera": 32,
-            "ie": 11
-          }
+          "chrome": 28,
+          "safari": 6,
+          "firefox": 28,
+          "opera": 32,
+          "ie": 11
         }
       }
     ],
-    "react"
+    "@babel/preset-react"
   ],
   "plugins": [
-    "transform-object-rest-spread"
+    "@babel/plugin-proposal-object-rest-spread"
   ]
 }
