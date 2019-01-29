@@ -8,6 +8,4 @@
  * isFunction(() => {}); // => true
  * isFunction(null); // => false
  */
-export default (
-    test => typeof test === 'function'
-) as (arg) => arg is Function;
+export default (test: any): test is Function => typeof test === 'function';

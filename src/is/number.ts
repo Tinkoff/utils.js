@@ -8,6 +8,5 @@
  * isNumber(5); // => true
  * isNumber(null); // => false
  */
-export default (test =>
-    typeof test === 'number' || test instanceof Number
-) as (arg) => arg is number;
+export default (test: any): test is number =>
+    typeof test === 'number' || test instanceof Number;

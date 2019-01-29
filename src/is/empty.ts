@@ -18,7 +18,7 @@ import isObject from './object';
  * isEmpty({ a: 5 }); // => false
  * isEmpty([1]); // => false
  */
-export default test => {
+export default (test: any): boolean => {
     switch (true) {
         case isNil(test):
             return true;
@@ -31,4 +31,4 @@ export default test => {
     }
 
     return false;
-}
+};

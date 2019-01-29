@@ -1,4 +1,3 @@
-import { flatten as ramdaFlatten } from '../typings/types';
 import isArrayLike from '../is/arrayLike';
 /**
  * Returns a new list by pulling every item out of it (and all its sub-arrays)
@@ -11,7 +10,7 @@ import isArrayLike from '../is/arrayLike';
  *      flatten([1, 2, [3, 4], 5, [6, [7, 8, [9, [10, 11], 12]]]]);
  *      //=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
  */
-const flatten = (arr = []) => {
+const flatten = <T>(arr: ArrayLike<T> = []) => {
     const result = [];
 
     for (let i = 0; i < arr.length; i++) {
@@ -31,4 +30,4 @@ const flatten = (arr = []) => {
     return result;
 };
 
-export default flatten as typeof ramdaFlatten
+export default flatten;

@@ -1,4 +1,3 @@
-import { equals } from '../typings/types';
 import curry from '../function/curry';
 import isArray from './array';
 
@@ -32,7 +31,12 @@ const isEqualObjects = (test1, test2) => {
     for (let i = 0; i < len; i++) {
         const key = keys[i];
 
-        if (!(Object.prototype.hasOwnProperty.call(test2, key) && isEqual(test1[key], test2[key]))) {
+        if (
+            !(
+                Object.prototype.hasOwnProperty.call(test2, key) &&
+                isEqual(test1[key], test2[key])
+            )
+        ) {
             return false;
         }
     }
@@ -53,15 +57,17 @@ const isEqualObjects = (test1, test2) => {
  *      isEqual([1, 2, 3], [1, 2, 3]); //=> true
  *      isEqual({ a: { b: 1 }}, { a: { b: 1 }}); //=> true
  */
-const isEqual = (test1, test2) => {
+const isEqual = (test1: any, test2: any): boolean => {
     if (test1 === test2) {
         return true;
     }
 
-    if (typeof test1 !== typeof test2
-        || test1 !== Object(test1)
-        || !test1
-        || !test2) {
+    if (
+        typeof test1 !== typeof test2 ||
+        test1 !== Object(test1) ||
+        !test1 ||
+        !test2
+    ) {
         return false;
     }
 
@@ -71,12 +77,14 @@ const isEqual = (test1, test2) => {
 
     const test1ToString = Object.prototype.toString.call(test1);
 
-    if (test1ToString === '[object Object]'
-        && Object.prototype.toString.call(test2) === test1ToString) {
+    if (
+        test1ToString === '[object Object]' &&
+        Object.prototype.toString.call(test2) === test1ToString
+    ) {
         return isEqualObjects(test1, test2);
     }
 
     return isEqualNativeTypes(test1, test2);
 };
 
-export default curry(isEqual) as typeof equals;
+export default curry(isEqual);

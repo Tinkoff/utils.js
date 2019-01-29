@@ -10,4 +10,4 @@
  * isNil(''); // => false
  * isNil(5); // => false
  */
-export default test => test == null;
+export default (test: any): test is null | undefined => test == null;
