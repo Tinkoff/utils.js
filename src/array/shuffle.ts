@@ -12,7 +12,7 @@ export default <T>(arr = [] as T[]) => {
     const result = new Array(len) as T[];
 
     for (let i = 0; i < len; i++) {
-        const rand = Math.floor(Math.random() * i);
+        const rand = Math.floor(Math.random() * (i + 1));
 
         if (rand !== i) {
             result[i] = result[rand];
