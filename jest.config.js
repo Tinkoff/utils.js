@@ -3,21 +3,21 @@ module.exports = {
     timers: 'fake',
     testURL: 'http://localhost/',
     transform: {
-        "^.+\\.tsx?$": "ts-jest",
-        "^.+\\.jsx?$": "babel-jest",
+        '^.+\\.tsx?$': 'ts-jest',
+        '^.+\\.jsx?$': 'babel-jest'
     },
     globals: {
-        "ts-jest": {
+        'ts-jest': {
             useBabelrc: true,
-            tsConfigFile: "tsconfig.json"
+            tsConfigFile: 'tsconfig.json'
         }
     },
     testMatch: [
-        "**/__tests__/*.+(ts|tsx|js|jsx)"
+        '**/__tests__/*.+(ts|tsx|js|jsx)'
     ],
-    "moduleFileExtensions": [
-        "ts",
-        "tsx",
-        "js"
+    moduleFileExtensions: [
+        'ts',
+        'tsx',
+        'js'
     ]
 };

@@ -3,7 +3,7 @@ const execa = require('execa');
 
 const build = (buildDir, tsTemp) =>
     execa.shell(
-        `tsc -p tsconfig.json`
+        'tsc -p tsconfig.json'
     ).then(() => (
         execa.shell(
             `npx babel ./${tsTemp} -d ${buildDir}`
