@@ -15,10 +15,10 @@ import { maxBy } from '../typings/types';
  *
  */
 export default curryN(2, (fn, arr = []) => {
-    let result = arr[0];
-    let max = fn(result, 0, arr);
+    let result;
+    let max = -Infinity;
 
-    for (let i = 1; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         const computed = fn(arr[i], i, arr);
 
         if (computed > max) {
