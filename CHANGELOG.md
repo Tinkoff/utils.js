@@ -3,7 +3,8 @@
 + move docs to branch gh-pages
 + add memoize functions
 + fix bug with `omit` string conversion
-+ remove utils/is/not
++ remove is/not
++ remove is/contains
 + remove sanitize
 + fix function/throttleEnd
 

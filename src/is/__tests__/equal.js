@@ -36,6 +36,7 @@ describe('utils/is/equal', () => {
         expect(isEqual({ a: undefined }, { b: undefined })).toBe(false);
         expect(isEqual({}, null)).toBe(false);
         expect(isEqual({ a: 1, b: undefined }, { a: 1, c: 2 })).toBe(false);
+        expect(isEqual({ a: 1 }, { a: 1, b: 2 })).toBe(false);
     });
 
     it('different types', () => {

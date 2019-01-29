@@ -3,6 +3,10 @@ import composeP from '../composeP';
 describe('utils/function/composeP', () => {
     const appendP = y => x => Promise.resolve(x * 10 + y);
 
+    it('should throw error when no arguments passed', () => {
+        expect(() => composeP()).toThrow('composeP requires at least one argument');
+    });
+
     it('should compose promise-returning functions', async () => {
         expect(await composeP(
             appendP(2)
@@ -28,6 +32,7 @@ describe('utils/function/composeP', () => {
             appendP(2)
         )(1)).toBe(1234567);
     });
+
     it('should be composable', () => {
         const comp1 = composeP(
             appendP(4),
