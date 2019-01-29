@@ -9,4 +9,13 @@ describe('utils/object/pathSet', () => {
 
         expect(pathSet(['a'], 12, obj)).not.toBe(obj);
     });
+
+    it('should properly handle nested objects', () => {
+        const obj = { a: { b: { c: 3 } } };
+
+        const res = pathSet(['a', 'b', 'c'], 'hello', obj);
+
+        expect(obj.a.b.c).toBe(3);
+        expect(res).toEqual({ a: { b: { c: 'hello' } } });
+    });
 });

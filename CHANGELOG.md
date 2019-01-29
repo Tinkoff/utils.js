@@ -4,7 +4,8 @@
 + add memoize functions
 + upgrade to babel@7
 + fix bug with `omit` string conversion
-+ remove utils/is/not
++ remove is/not
++ remove is/contains
 + remove sanitize
 + fix function/throttleEnd
 + fix array/shuffle random generator

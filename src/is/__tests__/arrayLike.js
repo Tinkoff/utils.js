@@ -9,5 +9,6 @@ describe('utils/is/arrayLike', () => {
         expect(isArrayLike({ length: 0 })).toBe(true);
         expect(isArrayLike({ length: 10 })).toBe(false);
         expect(isArrayLike({ 0: 5, 9: 3, length: 10 })).toBe(true);
+        expect(isArrayLike({ nodeType: 1 })).toBe(false);
     });
 });

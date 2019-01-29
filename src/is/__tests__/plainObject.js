@@ -10,5 +10,6 @@ describe('utils/is/plainObject', () => {
         expect(isPlainObject(5)).toBe(false);
         expect(isPlainObject('')).toBe(false);
         expect(isPlainObject(null)).toBe(false);
+        expect(isPlainObject(Object.create(null))).toBe(true);
     });
 });
