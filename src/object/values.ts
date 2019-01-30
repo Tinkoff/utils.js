@@ -1,5 +1,8 @@
-import { values } from '../typings/types';
 import objectKeys from './keys';
+
+interface Values {
+    <T extends object, K extends keyof T>(obj: T): Array<T[K]>;
+}
 
 /**
  * Returns a list of all the enumerable own properties of the supplied object.
@@ -12,7 +15,7 @@ import objectKeys from './keys';
  *
  *      values({a: 1, b: 2, c: 3}); //=> [1, 2, 3]
  */
-export default (obj => {
+export default ((obj) => {
     const keys = objectKeys(obj);
     const len = keys.length;
     const values = new Array(len);
@@ -22,4 +25,4 @@ export default (obj => {
     }
 
     return values;
-}) as typeof values
+}) as Values;

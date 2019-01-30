@@ -1,5 +1,19 @@
-import { zipWith } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface ZipWith {
+    <T, U, TResult>(
+        fn: (x: T, y: U) => TResult,
+        list1: ReadonlyArray<T>,
+        list2: ReadonlyArray<U>
+    ): TResult[];
+    <T, U, TResult>(fn: (x: T, y: U) => TResult, list1: ReadonlyArray<T>): (
+        list2: ReadonlyArray<U>
+    ) => TResult[];
+    <T, U, TResult>(fn: (x: T, y: U) => TResult): (
+        list1: ReadonlyArray<T>,
+        list2: ReadonlyArray<U>
+    ) => TResult[];
+}
 
 /**
  * Creates a new list out of the two supplied by applying the function to each
@@ -28,4 +42,4 @@ export default curryN(3, (fn, a = [], b = []) => {
     }
 
     return result;
-}) as typeof zipWith
+}) as ZipWith;

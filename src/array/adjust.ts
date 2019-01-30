@@ -1,6 +1,13 @@
-import { adjust } from '../typings/types';
 import curryN from '../function/curryN';
 import concat from './concat';
+
+interface Adjust {
+    <T>(fn: (a: T) => T, index: number, list: ReadonlyArray<T>): T[];
+    <T>(fn: (a: T) => T, index: number): (list: ReadonlyArray<T>) => T[];
+    <T>(fn: (a: T) => T): (index: number) => (list: ReadonlyArray<T>) => T[];
+    <T>(fn: (a: T) => T): (index: number, list: ReadonlyArray<T>) => T[];
+}
+
 
 /**
  * Applies a function to the value at the given index of an array, returning a
@@ -20,7 +27,6 @@ import concat from './concat';
  *      adjust(add(10), 1, [1, 2, 3]);     //=> [1, 12, 3]
  *      adjust(add(10))(1)([1, 2, 3]);     //=> [1, 12, 3]
  */
-
 export default curryN(3, (fn, idx, list) => {
     if (idx >= list.length || idx < -list.length) {
         return list;
@@ -32,4 +38,4 @@ export default curryN(3, (fn, idx, list) => {
 
     result[index] = fn(list[index]);
     return result;
-}) as typeof adjust
+}) as Adjust;

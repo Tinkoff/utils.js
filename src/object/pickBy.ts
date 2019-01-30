@@ -1,5 +1,10 @@
-import { pickBy } from '../typings/types';
 import curryN from '../function/curryN';
+import { ObjPred } from '../typings/types';
+
+interface PickBy {
+    <T, U>(pred: ObjPred, obj: T): U;
+    (pred: ObjPred): <T, U>(obj: T) => U;
+}
 
 /**
  * Returns a partial copy of an object containing only the keys with `fn` predicate returns true
@@ -21,4 +26,4 @@ export default curryN(2, (fn, obj = {}) => {
     }
 
     return result;
-}) as typeof pickBy
+}) as PickBy;

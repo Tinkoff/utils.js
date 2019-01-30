@@ -1,5 +1,14 @@
 import curryN from '../function/curryN';
-import { findKey } from '../typings/types';
+
+interface FindKey {
+    <T>(
+        fn: (value: T, key: string, obj: Record<string, T>) => any,
+        obj: Record<string, T>
+    ): string;
+    <T>(fn: (value: T, key: string, obj: Record<string, T>) => any): (
+        obj: Record<string, T>
+    ) => string;
+}
 
 /**
  * Returns first key in `obj` satisfied to `fn`, or undefined if there is no such keys
@@ -22,4 +31,4 @@ export default curryN(2, (fn, obj = {}) => {
             }
         }
     }
-}) as typeof findKey
+}) as FindKey;

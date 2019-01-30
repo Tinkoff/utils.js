@@ -1,5 +1,9 @@
 import curryN from '../function/curryN';
-import { startsWith } from '../typings/types';
+
+interface StartsWith {
+    (a: string, list: string): boolean;
+    (a: string): (list: string) => boolean;
+}
 
 /**
  * Checks if a string starts with the provided prefix
@@ -12,4 +16,7 @@ import { startsWith } from '../typings/types';
  *      startsWith('a', 'abc')                //=> true
  *      startsWith('b', 'abc')                //=> false
  */
-export default curryN(2, (prefix = '', str = '') => str.slice(0, prefix.length) === prefix) as typeof startsWith
+export default curryN(
+    2,
+    (prefix = '', str = '') => str.slice(0, prefix.length) === prefix
+) as StartsWith;

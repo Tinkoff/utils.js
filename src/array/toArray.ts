@@ -10,7 +10,7 @@ import isArrayLike from '../is/arrayLike';
  *      toArray(5) // => [5]
  *      toArray('test') // => ['test']
  */
-export default (val => {
+export default ((val) => {
     if (isArray(val)) {
         return val;
     }
@@ -20,4 +20,6 @@ export default (val => {
     }
 
     return [val];
-}) as <T, V>(v: T) => T extends Array<any> ? T : T extends ArrayLike<V> ? V[] : [T];
+}) as <T, V>(
+    v: T
+) => T extends Array<any> ? T : T extends ArrayLike<V> ? V[] : [T];

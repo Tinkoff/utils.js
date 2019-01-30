@@ -1,5 +1,9 @@
 import curryN from './curryN';
-import { throttleEnd } from '../typings/types';
+
+interface ThrottleEnd {
+    <TFunc extends (...args) => any>(wait: number, fn: TFunc): void;
+    (wait: number): <TFunc extends (...args) => any>(fn: TFunc) => void;
+}
 
 /**
  * Creates a throttled function that only invokes `fn` at most once per
@@ -14,7 +18,7 @@ export default curryN(2, (wait, fn) => {
     let lastThis;
     let timeout;
 
-    return function (...args) {
+    return function(...args) {
         const now = Date.now();
         const diff = lastCalled + wait - now;
 
@@ -33,4 +37,4 @@ export default curryN(2, (wait, fn) => {
         lastArgs = args;
         lastThis = this;
     };
-}) as typeof throttleEnd
+}) as ThrottleEnd;

@@ -1,5 +1,13 @@
-import { splitEvery } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface SplitEvery {
+    <T>(a: number, list: ReadonlyArray<T>): T[][];
+    (a: number, list: string): string[];
+    (a: number): {
+        (list: string): string[];
+        <T>(list: ReadonlyArray<T>): T[][];
+    };
+}
 
 /*
  * Splits a collection into slices of the specified length
@@ -18,4 +26,4 @@ export default curryN(2, (length, arr) => {
     }
 
     return result;
-}) as typeof splitEvery
+}) as SplitEvery;

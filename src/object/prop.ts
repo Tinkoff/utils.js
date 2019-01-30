@@ -1,5 +1,11 @@
-import { prop } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface Prop {
+    <P extends keyof T, T>(p: P, obj: T): T[P];
+    <P extends string>(p: P): <T>(obj: Record<P, T>) => T;
+    <P extends string, T>(p: P): (obj: Record<P, T>) => T;
+}
+
 /**
  * Returns a function that when supplied an object returns the indicated
  * property of that object, if it exists.
@@ -15,4 +21,4 @@ import curryN from '../function/curryN';
  */
 export default curryN(2, (prop, obj) =>
     obj != null ? obj[prop] : undefined
-) as typeof prop
+) as Prop;

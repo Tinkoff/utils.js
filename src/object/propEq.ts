@@ -1,6 +1,14 @@
-import { propEq } from '../typings/types';
 import curryN from '../function/curryN';
 import prop from './prop';
+
+interface PropEq {
+    <T>(name: string | number, val: T, obj: any): boolean;
+    <T>(name: string | number, val: T): (obj: any) => boolean;
+    (name: string | number): {
+        <T>(val: T, obj: any): boolean;
+        <T>(val: T): (obj: any) => boolean;
+    };
+}
 
 /**
  * Returns `true` if the specified object property is equal to the given value; `false` otherwise.
@@ -19,4 +27,7 @@ import prop from './prop';
  *      var hasBrownHair = propEq('hair', 'brown');
  *      filter(hasBrownHair, kids); //=> [fred, rusty]
  */
-export default curryN(3, (propName, value, obj) => prop(propName, obj) === value) as typeof propEq
+export default curryN(
+    3,
+    (propName, value, obj) => prop(propName, obj) === value
+) as PropEq;

@@ -1,4 +1,3 @@
-import { trim } from '../typings/types';
 /**
  * Removes leading and trailing whitespace from `str`.
  *
@@ -9,6 +8,4 @@ import { trim } from '../typings/types';
  * trim('  abc  '); // => 'abc'
  *
  */
-export default (
-  (str = '') => str.toString().trim() || ''
-) as typeof trim
+export default (str = '') => str.toString().trim() || '';

@@ -1,5 +1,9 @@
-import { forEachObjIndexed } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface EachObj {
+    <T>(fn: (value: T[keyof T], key: keyof T, obj: T) => void, obj: T): T;
+    <T>(fn: (value: T[keyof T], key: keyof T, obj: T) => void): (obj: T) => T;
+}
 
 /**
  * Iterate over an input `object`, calling a provided function `fn` for each
@@ -21,4 +25,4 @@ export default curryN(2, (fn, obj = {}) => {
             fn(obj[key], key, obj);
         }
     }
-}) as typeof forEachObjIndexed
+}) as EachObj;

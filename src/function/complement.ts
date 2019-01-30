@@ -1,4 +1,7 @@
-import { complement } from '../typings/types';
+interface Complement {
+    (pred: (...args: any[]) => boolean): (...args: any[]) => boolean;
+}
+
 /**
  * Takes a function `f` and returns a function `g` such that if called with the same arguments
  * when `f` returns a "truthy" value, `g` returns `false` and when `f` returns a "falsy" value `g` returns `true`.
@@ -13,6 +16,4 @@ import { complement } from '../typings/types';
  *      isNil(7); //=> false
  *      isNotNil(7); //=> true
  */
-export default (fn =>
-    (...args) => !fn(...args)
-) as typeof complement;
+export default ((fn) => (...args) => !fn(...args)) as Complement;

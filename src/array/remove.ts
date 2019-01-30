@@ -1,5 +1,11 @@
-import { remove } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface Remove {
+    <T>(start: number, count: number, list: ReadonlyArray<T>): T[];
+    <T>(start: number): (count: number, list: ReadonlyArray<T>) => T[];
+    <T>(start: number, count: number): (list: ReadonlyArray<T>) => T[];
+}
+
 /**
  * Removes the sub-list of `list` starting at index `start` and containing
  * `count` elements. _Note that this is not destructive_: it returns a copy of
@@ -19,4 +25,4 @@ export default curryN(3, (start, count, list) => {
 
     result.splice(start, count);
     return result;
-}) as typeof remove
+}) as Remove;

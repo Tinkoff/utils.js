@@ -11,4 +11,4 @@
  *      isTrue([true]) // => false
  *      isTrue('false') // => false
  */
-export default val => val === true || val === 'true';
+export default (val) => val === true || val === 'true';

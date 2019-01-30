@@ -1,4 +1,14 @@
-import { type } from './typings/types';
+type Result =
+    | 'Object'
+    | 'Number'
+    | 'Boolean'
+    | 'Date'
+    | 'String'
+    | 'Null'
+    | 'Array'
+    | 'RegExp'
+    | 'Function'
+    | 'Undefined';
 /**
  * Gives a single-word string description of the (native) type of a value,
  * returning such answers as 'Object', 'Number', 'Array', or 'Null'. Does not
@@ -17,7 +27,7 @@ import { type } from './typings/types';
  *      type([]); //=> "Array"
  *      type(/[A-z]/); //=> "RegExp"
  */
-export default (function (x) {
+export default (x): Result => {
     if (x === null) {
         return 'Null';
     }
@@ -27,4 +37,4 @@ export default (function (x) {
     }
 
     return Object.prototype.toString.call(x).slice(8, -1);
-}) as (val: any) => ReturnType<typeof type> | 'Date';
+};

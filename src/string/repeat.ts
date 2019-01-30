@@ -1,6 +1,10 @@
 import curryN from '../function/curryN';
 import isString from '../is/string';
-import { repeatString } from '../typings/types';
+
+interface Repeat {
+    (n: number, a): string;
+    (n: number): (a) => string;
+}
 
 /**
  * Returns a string containing a repeated identical value.
@@ -14,7 +18,9 @@ import { repeatString } from '../typings/types';
  *
  */
 export default curryN(2, (n = 0, value) => {
-    if (!isString(value)) { return ''; }
+    if (!isString(value)) {
+        return '';
+    }
 
     let result = '';
 
@@ -23,4 +29,4 @@ export default curryN(2, (n = 0, value) => {
     }
 
     return result;
-}) as typeof repeatString
+}) as Repeat;

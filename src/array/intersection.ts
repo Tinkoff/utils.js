@@ -1,5 +1,9 @@
-import { intersection } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface Intersection {
+    <T>(list1: ReadonlyArray<T>, list2: ReadonlyArray<T>): T[];
+    <T>(list1: ReadonlyArray<T>): (list2: ReadonlyArray<T>) => T[];
+}
 
 /**
  * Combines two array into a set (i.e. no duplicates) composed of those
@@ -22,4 +26,4 @@ export default curryN(2, (a = [], b = []) => {
     }
 
     return result;
-}) as typeof intersection
+}) as Intersection;

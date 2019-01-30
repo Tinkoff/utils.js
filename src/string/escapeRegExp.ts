@@ -10,5 +10,4 @@ const escapeRegExp = /[\\^$.*+?()[\]{}|]/g;
  *
  * escapeRegExp('[test](utils)'); // => '\[test\]\(utils\)'
  */
-export default (str = '') =>
-    str.replace(escapeRegExp, '\\$&');
+export default (str = '') => str.replace(escapeRegExp, '\\$&');

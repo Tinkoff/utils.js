@@ -1,5 +1,9 @@
-import { nth } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface Nth {
+    <T>(n: number, list: ReadonlyArray<T>): T | undefined;
+    (n: number): <T>(list: ReadonlyArray<T>) => T | undefined;
+}
 
 /**
  * Returns the nth element of the given array. If n is negative the
@@ -22,4 +26,4 @@ export default curryN(2, (index = 0, arr = []) => {
     }
 
     return arr[index];
-}) as typeof nth
+}) as Nth;

@@ -1,5 +1,9 @@
 import curryN from '../function/curryN';
-import { resolveWith } from '../typings/types';
+
+interface ResolveWith {
+    <TResult>(func: (...args) => TResult, ...payload): Promise<TResult>;
+    <TResult>(func: (...args) => TResult): (...payload) => Promise<TResult>;
+}
 
 /**
  * Returns a promise that resolves with a value returned
@@ -13,4 +17,4 @@ import { resolveWith } from '../typings/types';
  */
 export default curryN(2, (func, ...payload) => {
     return Promise.resolve(func(...payload));
-}) as typeof resolveWith;
+}) as ResolveWith;

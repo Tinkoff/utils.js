@@ -1,5 +1,14 @@
-import { pick } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface PickFunc {
+    <T, K extends string>(names: ReadonlyArray<K>, obj: T): Pick<
+        T,
+        Exclude<keyof T, Exclude<keyof T, K>>
+    >;
+    <K extends string>(names: ReadonlyArray<K>): <T>(
+        obj: T
+    ) => Pick<T, Exclude<keyof T, Exclude<keyof T, K>>>;
+}
 
 /**
  * Returns a partial copy of an object containing only the keys specified. If
@@ -25,4 +34,4 @@ export default curryN(2, (props = [], obj = {}) => {
     }
 
     return result;
-}) as typeof pick
+}) as PickFunc;

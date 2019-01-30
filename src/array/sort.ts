@@ -1,5 +1,9 @@
-import { sort } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface Sort {
+    <T>(fn: (a: T, b: T) => number, list: ReadonlyArray<T>): T[];
+    <T>(fn: (a: T, b: T) => number): (list: ReadonlyArray<T>) => T[];
+}
 
 const defaultComparator = (a, b) => a - b;
 
@@ -22,4 +26,4 @@ export default curryN(2, (comparator = defaultComparator, arr = []) => {
     const newArray = Array.prototype.slice.call(arr);
 
     return newArray.sort(comparator);
-}) as typeof sort
+}) as Sort;

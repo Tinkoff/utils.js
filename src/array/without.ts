@@ -1,8 +1,12 @@
-import { without } from '../typings/types';
 import reject from './reject';
 import curryN from '../function/curryN';
 import flip from '../function/flip';
 import includes from './includes';
+
+interface Without {
+    <T>(list1: ReadonlyArray<T>, list2: ReadonlyArray<T>): T[];
+    <T>(list1: ReadonlyArray<T>): (list2: ReadonlyArray<T>) => T[];
+}
 
 /**
  * Returns a new list without values in the first argument.
@@ -14,4 +18,6 @@ import includes from './includes';
  *
  *      without([1, 2], [1, 2, 1, 3, 4]); //=> [3, 4]
  */
-export default curryN(2, (xs, list) => reject(flip(includes)(xs), list)) as typeof without
+export default curryN(2, (xs, list) =>
+    reject(flip(includes)(xs), list)
+) as Without;

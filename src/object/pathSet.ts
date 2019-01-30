@@ -1,6 +1,14 @@
 import curryN from '../function/curryN';
 import isObject from '../is/object';
-import { pathSet } from '../typings/types';
+import { Paths } from '../typings/types';
+
+interface PathSet {
+    (paths: Paths, value, obj: Record<string, any>): Record<string, any>;
+    (paths: Paths): (value, obj: Record<string, any>) => Record<string, any>;
+    (paths: Paths): (
+        value
+    ) => (obj: Record<string, any>) => Record<string, any>;
+}
 
 /**
  * Returns the result of "setting" the portion of the given data structure
@@ -34,5 +42,4 @@ export default curryN(3, (paths = [], value, obj = {}) => {
     val[paths[n]] = value;
 
     return result;
-}) as typeof pathSet
-
+}) as PathSet;

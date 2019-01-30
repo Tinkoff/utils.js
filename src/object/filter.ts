@@ -1,6 +1,11 @@
-import { filterObj } from '../typings/types';
 import curryN from '../function/curryN';
 import objectKeys from './keys';
+import { Dictionary, Filter } from '../typings/types';
+
+interface FilterObj {
+    <T>(fn: (value: T) => boolean): Filter<T>;
+    <T>(fn: (value: T) => boolean, obj: Dictionary<T>): Dictionary<T>;
+}
 
 /**
  * Takes a predicate and a object, and returns a new object
@@ -29,4 +34,4 @@ export default curryN(2, (fn, obj = {}) => {
     }
 
     return result;
-}) as typeof filterObj
+}) as FilterObj;

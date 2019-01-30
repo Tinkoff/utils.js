@@ -1,4 +1,7 @@
-import { sum } from '../typings/types';
+interface Sum {
+    (list: ReadonlyArray<number>): number;
+}
+
 /**
  * Adds together all the elements of a list.
  *
@@ -16,4 +19,4 @@ export default ((arr = []) => {
     }
 
     return sum;
-}) as typeof sum
+}) as Sum;

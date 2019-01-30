@@ -11,4 +11,4 @@
  *      optIsString({}) // => false
  *      optIsString('str') // => true
  */
-export default fn => x => typeof x === 'undefined' || fn(x);
+export default (fn) => (x) => typeof x === 'undefined' || fn(x);

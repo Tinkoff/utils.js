@@ -1,5 +1,9 @@
 import curryN from '../function/curryN';
-import { tapPromise } from '../typings/types';
+
+interface TapPromise {
+    <T>(fn: (a: T) => any, value: T): Promise<T>;
+    <T>(fn: (a: T) => any): (value: T) => Promise<T>;
+}
 
 /**
  * Runs the given promise with the supplied argument. Returns the argument, when promise is resolved.
@@ -13,9 +17,8 @@ import { tapPromise } from '../typings/types';
  *      Promise.resolve(5).then(promiseTap(sayX));
  *      // logs 'x is 5'
  */
-export default curryN(2,
-  (fn, x) => Promise.resolve()
-    .then(() => fn(x))
-    .then(() => x)
-) as typeof tapPromise
-
+export default curryN(2, (fn, x) =>
+    Promise.resolve()
+        .then(() => fn(x))
+        .then(() => x)
+) as TapPromise;

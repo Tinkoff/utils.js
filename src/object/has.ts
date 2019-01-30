@@ -1,5 +1,9 @@
-import { has } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface Has {
+    <T>(s: string, obj: T): boolean;
+    (s: string): <T>(obj: T) => boolean;
+}
 
 /**
  * Returns whether or not an object has an own property with the specified name
@@ -14,6 +18,8 @@ import curryN from '../function/curryN';
  *      hasName({name: 'bob'});     //=> true
  *      hasName({});                //=> false
  */
-export default curryN(2, (prop, obj) =>
-    obj != null && Object.prototype.hasOwnProperty.call(obj, prop)
-) as typeof has
+export default curryN(
+    2,
+    (prop, obj) =>
+        obj != null && Object.prototype.hasOwnProperty.call(obj, prop)
+) as Has;

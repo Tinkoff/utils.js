@@ -1,4 +1,8 @@
-import { last } from '../typings/types';
+interface Last {
+    <T>(list: ReadonlyArray<T>): T | undefined;
+    (list: string): string;
+}
+
 /**
  * Returns the last element of the given array.
  *
@@ -9,6 +13,4 @@ import { last } from '../typings/types';
  *      last(['fi', 'fo', 'fum']); //=> 'fum'
  *      last([]); //=> undefined
  */
-export default (
-    arr => arr && arr[arr.length - 1]
-) as typeof last
+export default ((arr) => arr && arr[arr.length - 1]) as Last;

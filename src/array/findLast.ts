@@ -1,5 +1,14 @@
-import { findLast } from '../typings/types';
 import curry from '../function/curry';
+
+interface FindLast {
+    <T>(
+        fn: (a: T, index: number, list: ReadonlyArray<T>) => boolean,
+        list: ReadonlyArray<T>
+    ): T | undefined;
+    <T>(fn: (a: T, index: number, list: ReadonlyArray<T>) => boolean): (
+        list: ReadonlyArray<T>
+    ) => T | undefined;
+}
 
 /**
  * Returns the last element of the list which matches the predicate, or
@@ -22,4 +31,4 @@ export default curry((fn, list: ReadonlyArray<any>) => {
             return list[i];
         }
     }
-}) as typeof findLast;
+}) as FindLast;

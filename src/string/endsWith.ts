@@ -1,5 +1,9 @@
 import curryN from '../function/curryN';
-import { endsWith } from '../typings/types';
+
+interface EndsWith {
+    (postfix: string, str: string): boolean;
+    (postfix: string): (str: string) => boolean;
+}
 
 /**
  * Checks if a string ends with the provided postfix
@@ -12,4 +16,7 @@ import { endsWith } from '../typings/types';
  *      endsWith('c', 'abc')                //=> true
  *      endsWith('b', 'abc')                //=> false
  */
-export default curryN(2, (postfix = '', str = '') => str.slice(-postfix.length) === postfix) as typeof endsWith
+export default curryN(
+    2,
+    (postfix = '', str = '') => str.slice(-postfix.length) === postfix
+) as EndsWith;

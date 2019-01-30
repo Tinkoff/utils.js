@@ -5,9 +5,9 @@ const htmlEscapes = {
     '<': '&lt;',
     '>': '&gt;',
     '"': '&quot;',
-    "'": '&#39;'
+    "'": '&#39;',
 };
-const escape = char => htmlEscapes[char];
+const escape = (char) => htmlEscapes[char];
 
 /**
  * Converts the characters "&", "<", ">", '"', and "'" in `string` to their
@@ -19,5 +19,4 @@ const escape = char => htmlEscapes[char];
  *
  * escape('fred, barney, & pebbles'); // => 'fred, barney, &amp; pebbles'
  */
-export default (str = '') =>
-    str.replace(escapeRegExp, escape);
+export default (str = '') => str.replace(escapeRegExp, escape);

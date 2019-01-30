@@ -1,5 +1,17 @@
-import { slice } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface Slice {
+    (a: number, b: number, list: string): string;
+    <T>(a: number, b: number, list: ReadonlyArray<T>): T[];
+    (a: number, b: number): {
+        (list: string): string;
+        <T>(list: ReadonlyArray<T>): T[];
+    };
+    (a: number): {
+        (b: number, list: string): string;
+        <T>(b: number, list: ReadonlyArray<T>): T[];
+    };
+}
 
 /**
  * Returns the elements of the given list or string (or object with a `slice`
@@ -17,4 +29,6 @@ import curryN from '../function/curryN';
  *      slice(-3, -1, ['a', 'b', 'c', 'd']);      //=> ['b', 'c']
  */
 
-export default curryN(3, (fromIndex, toIndex, list = []) => list.slice(fromIndex, toIndex)) as typeof slice
+export default curryN(3, (fromIndex, toIndex, list = []) =>
+    list.slice(fromIndex, toIndex)
+) as Slice;

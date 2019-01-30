@@ -1,5 +1,10 @@
-import { assoc } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface Assoc {
+    <T, U, K extends string>(prop: K, val: T, obj: U): Record<K, T> & U;
+    <K extends string>(prop: K): <T, U>(val: T, obj: U) => Record<K, T> & U;
+    <T, K extends string>(prop: K, val: T): <U>(obj: U) => Record<K, T> & U;
+}
 
 /**
  * Makes a shallow clone of an object, setting or overriding the specified
@@ -15,4 +20,7 @@ import curryN from '../function/curryN';
  *
  *      assoc('c', 3, {a: 1, b: 2}); //=> {a: 1, b: 2, c: 3}
  */
-export default curryN(3, (prop, val, obj = {}) => ({ ...obj, [prop]: val })) as typeof assoc
+export default curryN(3, (prop, val, obj = {}) => ({
+    ...obj,
+    [prop]: val,
+})) as Assoc;

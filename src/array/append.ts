@@ -1,6 +1,10 @@
-import { append } from '../typings/types';
 import concat from './concat';
 import curryN from '../function/curryN';
+
+interface Append {
+    <T>(el: T, list: ReadonlyArray<T>): T[];
+    <T>(el: T): <T>(list: ReadonlyArray<T>) => T[];
+}
 
 /**
  * Returns a new list containing the contents of the given list, followed by
@@ -17,6 +21,4 @@ import curryN from '../function/curryN';
  *      append(['tests'], ['write', 'more']); //=> ['write', 'more', ['tests']]
  */
 
-export default curryN(2, (el, list) => (
-    concat(list, [el])
-)) as typeof append
+export default curryN(2, (el, list) => concat(list, [el])) as Append;

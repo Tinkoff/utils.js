@@ -1,5 +1,9 @@
-import { defaultTo } from './typings/types';
 import curryN from './function/curryN';
+
+interface DefaultTo {
+    <T, U>(a: T, b: U | null | undefined): T | U;
+    <T>(a: T): <U>(b: U | null | undefined) => T | U;
+}
 
 /**
  * Returns the second argument if it is not `null`, `undefined` or `NaN`
@@ -18,9 +22,10 @@ import curryN from './function/curryN';
  *      defaultTo42(parseInt('string')); //=> 42
  */
 export default curryN(2, (dflt, x) => {
-    if (x == null || x !== x) { // eslint-disable-line no-self-compare
+    if (x == null || x !== x) {
+        // eslint-disable-line no-self-compare
         return dflt;
     }
 
     return x;
-}) as typeof defaultTo;
+}) as DefaultTo;

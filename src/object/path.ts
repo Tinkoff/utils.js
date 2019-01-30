@@ -1,4 +1,10 @@
-import { path } from '../typings/types';
+import { Paths } from '../typings/types';
+
+export interface Path {
+    <T>(path: Paths, obj: any): T | undefined;
+    <T>(path: Paths): (obj: any) => T | undefined;
+}
+
 import curryN from '../function/curryN';
 
 /**
@@ -24,4 +30,4 @@ export default curryN(2, (paths = [], obj = {}) => {
     }
 
     return val;
-}) as typeof path
+}) as Path;

@@ -1,5 +1,9 @@
-import { allPass } from '../typings/types';
+import { Pred } from '../typings/types';
 import curryN from './curryN';
+
+interface AllPass {
+    (preds: ReadonlyArray<Pred>): Pred;
+}
 
 /**
  * Takes a list of predicates and returns a predicate that returns true for a
@@ -26,4 +30,4 @@ export default curryN(2, (fns, ...args) => {
     }
 
     return true;
-}) as typeof allPass;
+}) as AllPass;

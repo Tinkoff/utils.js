@@ -1,5 +1,9 @@
-import { findIndex } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface FindIndex {
+    <T>(fn: (a: T) => boolean, list: ReadonlyArray<T>): number;
+    <T>(fn: (a: T) => boolean): (list: ReadonlyArray<T>) => number;
+}
 
 /**
  * Returns the index of the first element of the list which matches the
@@ -23,4 +27,4 @@ export default curryN(2, (fn, arr = []) => {
     }
 
     return -1;
-}) as typeof findIndex
+}) as FindIndex;

@@ -1,5 +1,10 @@
-import { either } from '../typings/types';
 import curryN from './curryN';
+import { Pred } from '../typings/types';
+
+interface Either {
+    (pred1: Pred, pred2: Pred): Pred;
+    (pred1: Pred): (pred2: Pred) => Pred;
+}
 
 /**
  * A function wrapping calls to the two functions in an `||` operation,
@@ -20,6 +25,6 @@ import curryN from './curryN';
  *      f(8); //=> true
  *      f(3); //=> false
  */
-export default curryN(2, (f, g) =>
-    (...args) => f(...args) || g(...args)
-) as typeof either
+export default curryN(2, (f, g) => (...args) =>
+    f(...args) || g(...args)
+) as Either;

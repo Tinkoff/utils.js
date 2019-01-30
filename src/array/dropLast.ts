@@ -1,6 +1,14 @@
-import { dropLast } from '../typings/types';
 import curryN from '../function/curryN';
 import take from './take';
+
+interface DropLast {
+    <T>(n: number, xs: ReadonlyArray<T>): T[];
+    (n: number, xs: string): string;
+    <T>(n: number): {
+        (xs: ReadonlyArray<T>): T[];
+        (xs: string): string;
+    };
+}
 
 /**
  * Returns a list containing all but the last `n` elements of the given `list`.
@@ -16,4 +24,6 @@ import take from './take';
  *      dropLast(4, ['foo', 'bar', 'baz']); //=> []
  *      dropLast(3, 'ramda');               //=> 'ra'
  */
-export default curryN(2, (n, xs) => take(n < xs.length ? xs.length - n : 0, xs)) as typeof dropLast
+export default curryN(2, (n, xs) =>
+    take(n < xs.length ? xs.length - n : 0, xs)
+) as DropLast;

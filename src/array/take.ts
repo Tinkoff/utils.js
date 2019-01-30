@@ -1,5 +1,13 @@
-import { take } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface Take {
+    <T>(n: number, xs: ReadonlyArray<T>): T[];
+    (n: number, xs: string): string;
+    <T>(n: number): {
+        (xs: string): string;
+        (xs: ReadonlyArray<T>): T[];
+    };
+}
 
 /**
  * Returns the first `n` elements of the given array or string
@@ -15,4 +23,4 @@ import curryN from '../function/curryN';
  *      take(4, ['foo', 'bar', 'baz']); //=> ['foo', 'bar', 'baz']
  *      take(3, 'ramda');               //=> 'ram'
  */
-export default curryN(2, (n, arr = []) => arr.slice(0, n)) as typeof take
+export default curryN(2, (n, arr = []) => arr.slice(0, n)) as Take;
