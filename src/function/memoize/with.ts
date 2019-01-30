@@ -25,7 +25,7 @@ import curryN from '../curryN';
  *      const sum = add(1,4); // from original add call
  *      const sum = add(1,3); // from cache
  */
-const memoizeWith = curryN(3, (getCache, hasher, fn) => {
+export default curryN(3, (getCache, hasher, fn) => {
     const cache = getCache();
 
     return (...args) => {
@@ -42,20 +42,3 @@ const memoizeWith = curryN(3, (getCache, hasher, fn) => {
         return fnCallResult;
     };
 });
-
-export const createCacheFrom = (obj = Object.create(null)) => {
-    return {
-        get(key) {
-            return obj[key];
-        },
-        set(key, value) {
-            obj[key] = value;
-            return this;
-        },
-        has(key) {
-            return key in obj;
-        }
-    };
-};
-
-export default memoizeWith;
