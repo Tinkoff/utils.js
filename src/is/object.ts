@@ -8,6 +8,5 @@
  * isObject({ a: 'test' }); // => true
  * isObject(null); // => false
  */
-export default (test =>
-    (test !== null && typeof test === 'object')
-) as (arg) => arg is Object;
+export default (test: any): test is object =>
+    test !== null && typeof test === 'object';

@@ -1,6 +1,7 @@
 import has from '../object/has';
 
-const HAS_SYMBOL_SUPPORT = typeof Symbol === 'function' && typeof Symbol.for === 'function';
+const HAS_SYMBOL_SUPPORT =
+    typeof Symbol === 'function' && typeof Symbol.for === 'function';
 const REACT_ELEMENT_TYPE = HAS_SYMBOL_SUPPORT && Symbol.for('react.element');
 
 /**
@@ -16,8 +17,10 @@ const REACT_ELEMENT_TYPE = HAS_SYMBOL_SUPPORT && Symbol.for('react.element');
  * @param {*} test a reference being tested
  * @returns whether a value is a React element
  */
-export default function isReactElement(test) {
-    return !!test && has('$$typeof', test) && (
-        !HAS_SYMBOL_SUPPORT || test.$$typeof === REACT_ELEMENT_TYPE
-    )
+export default function isReactElement(test: any): boolean {
+    return (
+        !!test &&
+        has('$$typeof', test) &&
+        (!HAS_SYMBOL_SUPPORT || test.$$typeof === REACT_ELEMENT_TYPE)
+    );
 }

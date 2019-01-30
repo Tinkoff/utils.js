@@ -8,5 +8,4 @@
  * isArray([]); // => true
  * isArray(null); // => false
  */
-export default test =>
-    !!test && Array.isArray(test);
+export default (test: any): test is Array<any> => !!test && Array.isArray(test);

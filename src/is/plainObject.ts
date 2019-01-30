@@ -1,6 +1,10 @@
 import isReactElement from './reactElement';
 import isObject from './object';
 
+interface PlainObject {
+    [key: string]: any;
+}
+
 /**
  * Returns whether a value is a plain object
  * (an object that is created using an object literal, Object.create(null) or similar).
@@ -20,7 +24,7 @@ import isObject from './object';
  *
  * isPlainObject(<span></span>); // => false
  */
-export default function isPlainObject(test) {
+export default function isPlainObject(test: any): test is PlainObject {
     if (!isObject(test)) {
         return false;
     }
