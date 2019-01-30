@@ -2,6 +2,7 @@
 + add typings
 + move docs to branch gh-pages
 + add memoize functions
++ add is/shallowEqual
 + upgrade to babel@7
 + fix bug with `omit` string conversion
 + remove is/not
