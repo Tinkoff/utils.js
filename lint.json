@@ -1,1 +1,201 @@
-[]
+[
+  {
+    "name": "deepSizeLimit",
+    "filePath": "ts_temp/function/memoize/deepSizeLimit.js",
+    "lines": [
+      {
+        "lineNumber": 2,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * Memoize function with multiply arguments of any type, but it\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": " * clears cache every time it reaches the limit. Use it when you need\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * deep equality for cache lookup and afraid of memory leak.\r"
+      },
+      {
+        "lineNumber": 6,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @param {Number} sizeLimit. Cache size limit\r"
+      },
+      {
+        "lineNumber": 8,
+        "line": " * @returns {Function} fn\r"
+      },
+      {
+        "lineNumber": 9,
+        "line": " * @example\r"
+      },
+      {
+        "lineNumber": 10,
+        "line": " *     const addFlag = obj => ({...obj, flag: true });\r"
+      },
+      {
+        "lineNumber": 11,
+        "line": " *     const memoize = memoizeDeepSizeLimit(2, addFlag));\r"
+      },
+      {
+        "lineNumber": 12,
+        "line": " *     memoize({test: 2}); // from addFlag call\r"
+      },
+      {
+        "lineNumber": 13,
+        "line": " *     memoize({test: 2}); // from cache\r"
+      },
+      {
+        "lineNumber": 14,
+        "line": " *     memoize({test: 3}); //from addFlag call\r"
+      },
+      {
+        "lineNumber": 15,
+        "line": " *     memoize({test: 4}); // from addFlag call\r"
+      },
+      {
+        "lineNumber": 16,
+        "line": " *     memoize({test: 2}); // from addFlag call (memory was cleared)\r"
+      },
+      {
+        "lineNumber": 17,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 18,
+        "line": "export default curryN(2, (maxSize, fn) => memoizeWith(() => createSizedCache(maxSize), (...args) => JSON.stringify(args), fn));\r"
+      }
+    ],
+    "codeParams": [
+      "maxSize",
+      "fn"
+    ],
+    "docParams": []
+  },
+  {
+    "name": "with",
+    "filePath": "ts_temp/function/memoize/with.js",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 2,
+        "line": " * `memoizeWith` is a memoize function fabric. It has simple classic memoization signature.\r"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * Use it to build your own memoization function.\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * It takes  three params:\r"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * 1) function that will be used to create cache object.\r"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * Cache must have three methods - get, has, set. So it's compatible with Map, WeakMap, LRU (https://www.npmjs.com/package/lru-cache) instances.\r"
+      },
+      {
+        "lineNumber": 8,
+        "line": " * 2) function that will be used to create hash key for cache lookup. It is invoked with arguments for result function.\r"
+      },
+      {
+        "lineNumber": 9,
+        "line": " * 3) function, that will be memoized.\r"
+      },
+      {
+        "lineNumber": 10,
+        "line": " * *\r"
+      },
+      {
+        "lineNumber": 11,
+        "line": " * @param {Function} createCache - creates cache object\r"
+      },
+      {
+        "lineNumber": 12,
+        "line": " * @param {Function} hasher - creates hash for given arguments\r"
+      },
+      {
+        "lineNumber": 13,
+        "line": " * @param {Function} function that will be memoized\r"
+      },
+      {
+        "lineNumber": 14,
+        "line": " * @return {Function}\r"
+      },
+      {
+        "lineNumber": 15,
+        "line": " * @example\r"
+      },
+      {
+        "lineNumber": 16,
+        "line": " *      const createCache = () => new Map();\r"
+      },
+      {
+        "lineNumber": 17,
+        "line": " *      const hasher = (...args) => JSON.stringify(args);\r"
+      },
+      {
+        "lineNumber": 18,
+        "line": " *      const memoize = memoizeWith(createCache, hasher);\r"
+      },
+      {
+        "lineNumber": 19,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 20,
+        "line": " *      const add = (a,b) => a + b;\r"
+      },
+      {
+        "lineNumber": 21,
+        "line": " *      const memoizeAdd = memoize(add);\r"
+      },
+      {
+        "lineNumber": 22,
+        "line": " *      const sum = add(1,3); // from original add call\r"
+      },
+      {
+        "lineNumber": 23,
+        "line": " *      const sum = add(1,4); // from original add call\r"
+      },
+      {
+        "lineNumber": 24,
+        "line": " *      const sum = add(1,3); // from cache\r"
+      },
+      {
+        "lineNumber": 25,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 26,
+        "line": "export default curryN(3, (getCache, hasher, fn) => {\r"
+      }
+    ],
+    "codeParams": [
+      "getCache",
+      "hasher",
+      "fn"
+    ],
+    "docParams": [
+      "createCache",
+      "hasher",
+      "function"
+    ]
+  }
+]

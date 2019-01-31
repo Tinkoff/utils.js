@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 566,
+  "end": 576,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 20,
+      "line": 17,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 566,
+    "end": 576,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 20,
+        "line": 17,
         "column": 0
       }
     },
@@ -99,8 +99,8 @@
       },
       {
         "type": "ImportDeclaration",
-        "start": 41,
-        "end": 67,
+        "start": 42,
+        "end": 68,
         "loc": {
           "start": {
             "line": 2,
@@ -114,8 +114,8 @@
         "specifiers": [
           {
             "type": "ImportDefaultSpecifier",
-            "start": 48,
-            "end": 52,
+            "start": 49,
+            "end": 53,
             "loc": {
               "start": {
                 "line": 2,
@@ -128,8 +128,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 48,
-              "end": 52,
+              "start": 49,
+              "end": 53,
               "loc": {
                 "start": {
                   "line": 2,
@@ -147,8 +147,8 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 58,
-          "end": 66,
+          "start": 59,
+          "end": 67,
           "loc": {
             "start": {
               "line": 2,
@@ -168,16 +168,16 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Returns the result of `fn` with value of property in `obj`.\n *\n * @param {String} propName The property name to apply.\n * @param {Function} fn function to apply\n * @param {Object} obj The object to retrieve the property from.\n * @return {*} result of calling fn with property.\n *\n * @example\n *\n *      propApply('a', x => 'is ' + x, {a: 2}); //=> is 2\n *      propApply('b', x => x > 0, {b: 2}); //=> true\n ",
-            "start": 69,
-            "end": 486,
+            "value": "*\r\n * Returns the result of `fn` with value of property in `obj`.\r\n *\r\n * @param {String} propName The property name to apply.\r\n * @param {Function} fn function to apply\r\n * @param {Object} obj The object to retrieve the property from.\r\n * @return {*} result of calling fn with property.\r\n *\r\n * @example\r\n *\r\n *      propApply('a', x => 'is ' + x, {a: 2}); //=> is 2\r\n *      propApply('b', x => x > 0, {b: 2}); //=> true\r\n ",
+            "start": 70,
+            "end": 499,
             "loc": {
               "start": {
-                "line": 4,
+                "line": 3,
                 "column": 0
               },
               "end": {
-                "line": 16,
+                "line": 15,
                 "column": 3
               }
             }
@@ -186,30 +186,30 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 487,
-        "end": 565,
+        "start": 501,
+        "end": 574,
         "loc": {
           "start": {
-            "line": 17,
+            "line": 16,
             "column": 0
           },
           "end": {
-            "line": 19,
-            "column": 2
+            "line": 16,
+            "column": 73
           }
         },
         "declaration": {
           "type": "ArrowFunctionExpression",
-          "start": 512,
-          "end": 562,
+          "start": 526,
+          "end": 572,
           "loc": {
             "start": {
-              "line": 17,
+              "line": 16,
               "column": 25
             },
             "end": {
-              "line": 18,
-              "column": 27
+              "line": 16,
+              "column": 71
             }
           },
           "id": null,
@@ -219,15 +219,15 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 513,
-              "end": 521,
+              "start": 527,
+              "end": 535,
               "loc": {
                 "start": {
-                  "line": 17,
+                  "line": 16,
                   "column": 26
                 },
                 "end": {
-                  "line": 17,
+                  "line": 16,
                   "column": 34
                 },
                 "identifierName": "propName"
@@ -236,15 +236,15 @@
             },
             {
               "type": "Identifier",
-              "start": 523,
-              "end": 525,
+              "start": 537,
+              "end": 539,
               "loc": {
                 "start": {
-                  "line": 17,
+                  "line": 16,
                   "column": 36
                 },
                 "end": {
-                  "line": 17,
+                  "line": 16,
                   "column": 38
                 },
                 "identifierName": "fn"
@@ -253,15 +253,15 @@
             },
             {
               "type": "Identifier",
-              "start": 527,
-              "end": 530,
+              "start": 541,
+              "end": 544,
               "loc": {
                 "start": {
-                  "line": 17,
+                  "line": 16,
                   "column": 40
                 },
                 "end": {
-                  "line": 17,
+                  "line": 16,
                   "column": 43
                 },
                 "identifierName": "obj"
@@ -271,30 +271,30 @@
           ],
           "body": {
             "type": "CallExpression",
-            "start": 539,
-            "end": 562,
+            "start": 549,
+            "end": 572,
             "loc": {
               "start": {
-                "line": 18,
-                "column": 4
+                "line": 16,
+                "column": 48
               },
               "end": {
-                "line": 18,
-                "column": 27
+                "line": 16,
+                "column": 71
               }
             },
             "callee": {
               "type": "Identifier",
-              "start": 539,
-              "end": 541,
+              "start": 549,
+              "end": 551,
               "loc": {
                 "start": {
-                  "line": 18,
-                  "column": 4
+                  "line": 16,
+                  "column": 48
                 },
                 "end": {
-                  "line": 18,
-                  "column": 6
+                  "line": 16,
+                  "column": 50
                 },
                 "identifierName": "fn"
               },
@@ -303,30 +303,30 @@
             "arguments": [
               {
                 "type": "CallExpression",
-                "start": 542,
-                "end": 561,
+                "start": 552,
+                "end": 571,
                 "loc": {
                   "start": {
-                    "line": 18,
-                    "column": 7
+                    "line": 16,
+                    "column": 51
                   },
                   "end": {
-                    "line": 18,
-                    "column": 26
+                    "line": 16,
+                    "column": 70
                   }
                 },
                 "callee": {
                   "type": "Identifier",
-                  "start": 542,
-                  "end": 546,
+                  "start": 552,
+                  "end": 556,
                   "loc": {
                     "start": {
-                      "line": 18,
-                      "column": 7
+                      "line": 16,
+                      "column": 51
                     },
                     "end": {
-                      "line": 18,
-                      "column": 11
+                      "line": 16,
+                      "column": 55
                     },
                     "identifierName": "prop"
                   },
@@ -335,16 +335,16 @@
                 "arguments": [
                   {
                     "type": "Identifier",
-                    "start": 547,
-                    "end": 555,
+                    "start": 557,
+                    "end": 565,
                     "loc": {
                       "start": {
-                        "line": 18,
-                        "column": 12
+                        "line": 16,
+                        "column": 56
                       },
                       "end": {
-                        "line": 18,
-                        "column": 20
+                        "line": 16,
+                        "column": 64
                       },
                       "identifierName": "propName"
                     },
@@ -352,16 +352,16 @@
                   },
                   {
                     "type": "Identifier",
-                    "start": 557,
-                    "end": 560,
+                    "start": 567,
+                    "end": 570,
                     "loc": {
                       "start": {
-                        "line": 18,
-                        "column": 22
+                        "line": 16,
+                        "column": 66
                       },
                       "end": {
-                        "line": 18,
-                        "column": 25
+                        "line": 16,
+                        "column": 69
                       },
                       "identifierName": "obj"
                     },
@@ -375,16 +375,16 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * Returns the result of `fn` with value of property in `obj`.\n *\n * @param {String} propName The property name to apply.\n * @param {Function} fn function to apply\n * @param {Object} obj The object to retrieve the property from.\n * @return {*} result of calling fn with property.\n *\n * @example\n *\n *      propApply('a', x => 'is ' + x, {a: 2}); //=> is 2\n *      propApply('b', x => x > 0, {b: 2}); //=> true\n ",
-              "start": 69,
-              "end": 486,
+              "value": "*\r\n * Returns the result of `fn` with value of property in `obj`.\r\n *\r\n * @param {String} propName The property name to apply.\r\n * @param {Function} fn function to apply\r\n * @param {Object} obj The object to retrieve the property from.\r\n * @return {*} result of calling fn with property.\r\n *\r\n * @example\r\n *\r\n *      propApply('a', x => 'is ' + x, {a: 2}); //=> is 2\r\n *      propApply('b', x => x > 0, {b: 2}); //=> true\r\n ",
+              "start": 70,
+              "end": 499,
               "loc": {
                 "start": {
-                  "line": 4,
+                  "line": 3,
                   "column": 0
                 },
                 "end": {
-                  "line": 16,
+                  "line": 15,
                   "column": 3
                 }
               }
@@ -395,16 +395,16 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Returns the result of `fn` with value of property in `obj`.\n *\n * @param {String} propName The property name to apply.\n * @param {Function} fn function to apply\n * @param {Object} obj The object to retrieve the property from.\n * @return {*} result of calling fn with property.\n *\n * @example\n *\n *      propApply('a', x => 'is ' + x, {a: 2}); //=> is 2\n *      propApply('b', x => x > 0, {b: 2}); //=> true\n ",
-            "start": 69,
-            "end": 486,
+            "value": "*\r\n * Returns the result of `fn` with value of property in `obj`.\r\n *\r\n * @param {String} propName The property name to apply.\r\n * @param {Function} fn function to apply\r\n * @param {Object} obj The object to retrieve the property from.\r\n * @return {*} result of calling fn with property.\r\n *\r\n * @example\r\n *\r\n *      propApply('a', x => 'is ' + x, {a: 2}); //=> is 2\r\n *      propApply('b', x => x > 0, {b: 2}); //=> true\r\n ",
+            "start": 70,
+            "end": 499,
             "loc": {
               "start": {
-                "line": 4,
+                "line": 3,
                 "column": 0
               },
               "end": {
-                "line": 16,
+                "line": 15,
                 "column": 3
               }
             }
@@ -417,16 +417,16 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * Returns the result of `fn` with value of property in `obj`.\n *\n * @param {String} propName The property name to apply.\n * @param {Function} fn function to apply\n * @param {Object} obj The object to retrieve the property from.\n * @return {*} result of calling fn with property.\n *\n * @example\n *\n *      propApply('a', x => 'is ' + x, {a: 2}); //=> is 2\n *      propApply('b', x => x > 0, {b: 2}); //=> true\n ",
-      "start": 69,
-      "end": 486,
+      "value": "*\r\n * Returns the result of `fn` with value of property in `obj`.\r\n *\r\n * @param {String} propName The property name to apply.\r\n * @param {Function} fn function to apply\r\n * @param {Object} obj The object to retrieve the property from.\r\n * @return {*} result of calling fn with property.\r\n *\r\n * @example\r\n *\r\n *      propApply('a', x => 'is ' + x, {a: 2}); //=> is 2\r\n *      propApply('b', x => x > 0, {b: 2}); //=> true\r\n ",
+      "start": 70,
+      "end": 499,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 3,
           "column": 0
         },
         "end": {
-          "line": 16,
+          "line": 15,
           "column": 3
         }
       }
@@ -581,8 +581,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 41,
-      "end": 47,
+      "start": 42,
+      "end": 48,
       "loc": {
         "start": {
           "line": 2,
@@ -607,8 +607,8 @@
         "binop": null
       },
       "value": "prop",
-      "start": 48,
-      "end": 52,
+      "start": 49,
+      "end": 53,
       "loc": {
         "start": {
           "line": 2,
@@ -633,8 +633,8 @@
         "binop": null
       },
       "value": "from",
-      "start": 53,
-      "end": 57,
+      "start": 54,
+      "end": 58,
       "loc": {
         "start": {
           "line": 2,
@@ -660,8 +660,8 @@
         "updateContext": null
       },
       "value": "./prop",
-      "start": 58,
-      "end": 66,
+      "start": 59,
+      "end": 67,
       "loc": {
         "start": {
           "line": 2,
@@ -686,8 +686,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 66,
-      "end": 67,
+      "start": 67,
+      "end": 68,
       "loc": {
         "start": {
           "line": 2,
@@ -701,16 +701,16 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * Returns the result of `fn` with value of property in `obj`.\n *\n * @param {String} propName The property name to apply.\n * @param {Function} fn function to apply\n * @param {Object} obj The object to retrieve the property from.\n * @return {*} result of calling fn with property.\n *\n * @example\n *\n *      propApply('a', x => 'is ' + x, {a: 2}); //=> is 2\n *      propApply('b', x => x > 0, {b: 2}); //=> true\n ",
-      "start": 69,
-      "end": 486,
+      "value": "*\r\n * Returns the result of `fn` with value of property in `obj`.\r\n *\r\n * @param {String} propName The property name to apply.\r\n * @param {Function} fn function to apply\r\n * @param {Object} obj The object to retrieve the property from.\r\n * @return {*} result of calling fn with property.\r\n *\r\n * @example\r\n *\r\n *      propApply('a', x => 'is ' + x, {a: 2}); //=> is 2\r\n *      propApply('b', x => x > 0, {b: 2}); //=> true\r\n ",
+      "start": 70,
+      "end": 499,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 3,
           "column": 0
         },
         "end": {
-          "line": 16,
+          "line": 15,
           "column": 3
         }
       }
@@ -730,15 +730,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 487,
-      "end": 493,
+      "start": 501,
+      "end": 507,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 16,
           "column": 0
         },
         "end": {
-          "line": 17,
+          "line": 16,
           "column": 6
         }
       }
@@ -758,15 +758,15 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 494,
-      "end": 501,
+      "start": 508,
+      "end": 515,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 16,
           "column": 7
         },
         "end": {
-          "line": 17,
+          "line": 16,
           "column": 14
         }
       }
@@ -784,15 +784,15 @@
         "binop": null
       },
       "value": "curryN",
-      "start": 502,
-      "end": 508,
+      "start": 516,
+      "end": 522,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 16,
           "column": 15
         },
         "end": {
-          "line": 17,
+          "line": 16,
           "column": 21
         }
       }
@@ -809,15 +809,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 508,
-      "end": 509,
+      "start": 522,
+      "end": 523,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 16,
           "column": 21
         },
         "end": {
-          "line": 17,
+          "line": 16,
           "column": 22
         }
       }
@@ -836,15 +836,15 @@
         "updateContext": null
       },
       "value": 3,
-      "start": 509,
-      "end": 510,
+      "start": 523,
+      "end": 524,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 16,
           "column": 22
         },
         "end": {
-          "line": 17,
+          "line": 16,
           "column": 23
         }
       }
@@ -862,15 +862,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 510,
-      "end": 511,
+      "start": 524,
+      "end": 525,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 16,
           "column": 23
         },
         "end": {
-          "line": 17,
+          "line": 16,
           "column": 24
         }
       }
@@ -887,15 +887,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 512,
-      "end": 513,
+      "start": 526,
+      "end": 527,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 16,
           "column": 25
         },
         "end": {
-          "line": 17,
+          "line": 16,
           "column": 26
         }
       }
@@ -913,15 +913,15 @@
         "binop": null
       },
       "value": "propName",
-      "start": 513,
-      "end": 521,
+      "start": 527,
+      "end": 535,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 16,
           "column": 26
         },
         "end": {
-          "line": 17,
+          "line": 16,
           "column": 34
         }
       }
@@ -939,15 +939,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 521,
-      "end": 522,
+      "start": 535,
+      "end": 536,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 16,
           "column": 34
         },
         "end": {
-          "line": 17,
+          "line": 16,
           "column": 35
         }
       }
@@ -965,15 +965,15 @@
         "binop": null
       },
       "value": "fn",
-      "start": 523,
-      "end": 525,
+      "start": 537,
+      "end": 539,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 16,
           "column": 36
         },
         "end": {
-          "line": 17,
+          "line": 16,
           "column": 38
         }
       }
@@ -991,15 +991,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 525,
-      "end": 526,
+      "start": 539,
+      "end": 540,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 16,
           "column": 38
         },
         "end": {
-          "line": 17,
+          "line": 16,
           "column": 39
         }
       }
@@ -1017,15 +1017,15 @@
         "binop": null
       },
       "value": "obj",
-      "start": 527,
-      "end": 530,
+      "start": 541,
+      "end": 544,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 16,
           "column": 40
         },
         "end": {
-          "line": 17,
+          "line": 16,
           "column": 43
         }
       }
@@ -1042,15 +1042,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 530,
-      "end": 531,
+      "start": 544,
+      "end": 545,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 16,
           "column": 43
         },
         "end": {
-          "line": 17,
+          "line": 16,
           "column": 44
         }
       }
@@ -1068,15 +1068,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 532,
-      "end": 534,
+      "start": 546,
+      "end": 548,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 16,
           "column": 45
         },
         "end": {
-          "line": 17,
+          "line": 16,
           "column": 47
         }
       }
@@ -1094,16 +1094,16 @@
         "binop": null
       },
       "value": "fn",
-      "start": 539,
-      "end": 541,
+      "start": 549,
+      "end": 551,
       "loc": {
         "start": {
-          "line": 18,
-          "column": 4
+          "line": 16,
+          "column": 48
         },
         "end": {
-          "line": 18,
-          "column": 6
+          "line": 16,
+          "column": 50
         }
       }
     },
@@ -1119,16 +1119,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 541,
-      "end": 542,
+      "start": 551,
+      "end": 552,
       "loc": {
         "start": {
-          "line": 18,
-          "column": 6
+          "line": 16,
+          "column": 50
         },
         "end": {
-          "line": 18,
-          "column": 7
+          "line": 16,
+          "column": 51
         }
       }
     },
@@ -1145,16 +1145,16 @@
         "binop": null
       },
       "value": "prop",
-      "start": 542,
-      "end": 546,
+      "start": 552,
+      "end": 556,
       "loc": {
         "start": {
-          "line": 18,
-          "column": 7
+          "line": 16,
+          "column": 51
         },
         "end": {
-          "line": 18,
-          "column": 11
+          "line": 16,
+          "column": 55
         }
       }
     },
@@ -1170,16 +1170,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 546,
-      "end": 547,
+      "start": 556,
+      "end": 557,
       "loc": {
         "start": {
-          "line": 18,
-          "column": 11
+          "line": 16,
+          "column": 55
         },
         "end": {
-          "line": 18,
-          "column": 12
+          "line": 16,
+          "column": 56
         }
       }
     },
@@ -1196,16 +1196,16 @@
         "binop": null
       },
       "value": "propName",
-      "start": 547,
-      "end": 555,
+      "start": 557,
+      "end": 565,
       "loc": {
         "start": {
-          "line": 18,
-          "column": 12
+          "line": 16,
+          "column": 56
         },
         "end": {
-          "line": 18,
-          "column": 20
+          "line": 16,
+          "column": 64
         }
       }
     },
@@ -1222,16 +1222,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 555,
-      "end": 556,
+      "start": 565,
+      "end": 566,
       "loc": {
         "start": {
-          "line": 18,
-          "column": 20
+          "line": 16,
+          "column": 64
         },
         "end": {
-          "line": 18,
-          "column": 21
+          "line": 16,
+          "column": 65
         }
       }
     },
@@ -1248,16 +1248,16 @@
         "binop": null
       },
       "value": "obj",
-      "start": 557,
-      "end": 560,
+      "start": 567,
+      "end": 570,
       "loc": {
         "start": {
-          "line": 18,
-          "column": 22
+          "line": 16,
+          "column": 66
         },
         "end": {
-          "line": 18,
-          "column": 25
+          "line": 16,
+          "column": 69
         }
       }
     },
@@ -1273,16 +1273,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 560,
-      "end": 561,
+      "start": 570,
+      "end": 571,
       "loc": {
         "start": {
-          "line": 18,
-          "column": 25
+          "line": 16,
+          "column": 69
         },
         "end": {
-          "line": 18,
-          "column": 26
+          "line": 16,
+          "column": 70
         }
       }
     },
@@ -1298,16 +1298,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 561,
-      "end": 562,
+      "start": 571,
+      "end": 572,
       "loc": {
         "start": {
-          "line": 18,
-          "column": 26
+          "line": 16,
+          "column": 70
         },
         "end": {
-          "line": 18,
-          "column": 27
+          "line": 16,
+          "column": 71
         }
       }
     },
@@ -1323,16 +1323,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 563,
-      "end": 564,
+      "start": 572,
+      "end": 573,
       "loc": {
         "start": {
-          "line": 19,
-          "column": 0
+          "line": 16,
+          "column": 71
         },
         "end": {
-          "line": 19,
-          "column": 1
+          "line": 16,
+          "column": 72
         }
       }
     },
@@ -1349,16 +1349,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 564,
-      "end": 565,
+      "start": 573,
+      "end": 574,
       "loc": {
         "start": {
-          "line": 19,
-          "column": 1
+          "line": 16,
+          "column": 72
         },
         "end": {
-          "line": 19,
-          "column": 2
+          "line": 16,
+          "column": 73
         }
       }
     },
@@ -1375,15 +1375,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 566,
-      "end": 566,
+      "start": 576,
+      "end": 576,
       "loc": {
         "start": {
-          "line": 20,
+          "line": 17,
           "column": 0
         },
         "end": {
-          "line": 20,
+          "line": 17,
           "column": 0
         }
       }

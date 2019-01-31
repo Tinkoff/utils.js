@@ -1,992 +1,1010 @@
 window.esdocSearchIndex = [
   [
-    "@tinkoff/utils/function/f~f",
+    "@tinkoff/utils//function/f~f",
     "function/index.html#static-function-F",
-    "<span>F</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/F</span>",
+    "<span>F</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/F</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/t~t",
+    "@tinkoff/utils//function/t~t",
     "function/index.html#static-function-T",
-    "<span>T</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/T</span>",
+    "<span>T</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/T</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/adjust~adjust",
+    "@tinkoff/utils//array/adjust~adjust",
     "function/index.html#static-function-adjust",
-    "<span>adjust</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/adjust</span>",
+    "<span>adjust</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/adjust</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/all~all",
+    "@tinkoff/utils//array/all~all",
     "function/index.html#static-function-all",
-    "<span>all</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/all</span>",
+    "<span>all</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/all</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/all~all",
+    "@tinkoff/utils//object/all~all",
     "function/index.html#static-function-all",
-    "<span>all</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/all</span>",
+    "<span>all</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/all</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/allpass~allpass",
+    "@tinkoff/utils//function/allpass~allpass",
     "function/index.html#static-function-allPass",
-    "<span>allPass</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/allPass</span>",
+    "<span>allPass</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/allPass</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/always~always",
+    "@tinkoff/utils//function/always~always",
     "function/index.html#static-function-always",
-    "<span>always</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/always</span>",
+    "<span>always</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/always</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/any~any",
+    "@tinkoff/utils//array/any~any",
     "function/index.html#static-function-any",
-    "<span>any</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/any</span>",
+    "<span>any</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/any</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/any~any",
+    "@tinkoff/utils//object/any~any",
     "function/index.html#static-function-any",
-    "<span>any</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/any</span>",
+    "<span>any</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/any</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/anypass~anypass",
+    "@tinkoff/utils//function/anypass~anypass",
     "function/index.html#static-function-anyPass",
-    "<span>anyPass</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/anyPass</span>",
+    "<span>anyPass</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/anyPass</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/append~append",
+    "@tinkoff/utils//array/append~append",
     "function/index.html#static-function-append",
-    "<span>append</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/append</span>",
+    "<span>append</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/append</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/applyorreturn~applyorreturn",
+    "@tinkoff/utils//function/applyorreturn~applyorreturn",
     "function/index.html#static-function-applyOrReturn",
-    "<span>applyOrReturn</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/applyOrReturn</span>",
+    "<span>applyOrReturn</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/applyOrReturn</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/is/array~array",
+    "@tinkoff/utils//is/array~array",
     "function/index.html#static-function-array",
-    "<span>array</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/array</span>",
+    "<span>array</span> <span class=\"search-result-import-path\">@tinkoff/utils//is/array</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/is/arraylike~arraylike",
+    "@tinkoff/utils//is/arraylike~arraylike",
     "function/index.html#static-function-arrayLike",
-    "<span>arrayLike</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/arrayLike</span>",
+    "<span>arrayLike</span> <span class=\"search-result-import-path\">@tinkoff/utils//is/arrayLike</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/assoc~assoc",
+    "@tinkoff/utils//object/assoc~assoc",
     "function/index.html#static-function-assoc",
-    "<span>assoc</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/assoc</span>",
+    "<span>assoc</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/assoc</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/is/boolean~boolean",
+    "@tinkoff/utils//is/boolean~boolean",
     "function/index.html#static-function-boolean",
-    "<span>boolean</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/boolean</span>",
+    "<span>boolean</span> <span class=\"search-result-import-path\">@tinkoff/utils//is/boolean</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/both~both",
+    "@tinkoff/utils//function/both~both",
     "function/index.html#static-function-both",
-    "<span>both</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/both</span>",
+    "<span>both</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/both</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/string/capitalize~capitalize",
+    "@tinkoff/utils//string/capitalize~capitalize",
     "function/index.html#static-function-capitalize",
-    "<span>capitalize</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/capitalize</span>",
+    "<span>capitalize</span> <span class=\"search-result-import-path\">@tinkoff/utils//string/capitalize</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/clone~clone",
+    "@tinkoff/utils//clone~clone",
     "function/index.html#static-function-clone",
-    "<span>clone</span> <span class=\"search-result-import-path\">@tinkoff/utils/clone</span>",
+    "<span>clone</span> <span class=\"search-result-import-path\">@tinkoff/utils//clone</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/comparator~comparator",
+    "@tinkoff/utils//function/comparator~comparator",
     "function/index.html#static-function-comparator",
-    "<span>comparator</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/comparator</span>",
+    "<span>comparator</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/comparator</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/complement~complement",
+    "@tinkoff/utils//function/complement~complement",
     "function/index.html#static-function-complement",
-    "<span>complement</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/complement</span>",
+    "<span>complement</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/complement</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/compose~compose",
+    "@tinkoff/utils//function/compose~compose",
     "function/index.html#static-function-compose",
-    "<span>compose</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/compose</span>",
+    "<span>compose</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/compose</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/composep~composep",
-    "function/index.html#static-function-composeP",
-    "<span>composeP</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/composeP</span>",
-    "function"
-  ],
-  [
-    "@tinkoff/utils/array/concat~concat",
+    "@tinkoff/utils//array/concat~concat",
     "function/index.html#static-function-concat",
-    "<span>concat</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/concat</span>",
+    "<span>concat</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/concat</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/cond~cond",
+    "@tinkoff/utils//function/cond~cond",
     "function/index.html#static-function-cond",
-    "<span>cond</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/cond</span>",
+    "<span>cond</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/cond</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/is/contains~contains",
-    "function/index.html#static-function-contains",
-    "<span>contains</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/contains</span>",
+    "@tinkoff/utils//function/memoize/createcache~createcache",
+    "function/index.html#static-function-createCache",
+    "<span>createCache</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/memoize/createCache</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/curry~curry",
+    "@tinkoff/utils//function/curry~curry",
     "function/index.html#static-function-curry",
-    "<span>curry</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/curry</span>",
+    "<span>curry</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/curry</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/curryn~curryn",
+    "@tinkoff/utils//function/curryn~curryn",
     "function/index.html#static-function-curryN",
-    "<span>curryN</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/curryN</span>",
+    "<span>curryN</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/curryN</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/debounce~debounce",
+    "@tinkoff/utils//function/debounce~debounce",
     "function/index.html#static-function-debounce",
-    "<span>debounce</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/debounce</span>",
+    "<span>debounce</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/debounce</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/defaultto~defaultto",
+    "@tinkoff/utils//function/memoize/deepsizelimit~deepsizelimit",
+    "function/index.html#static-function-deepSizeLimit",
+    "<span>deepSizeLimit</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/memoize/deepSizeLimit</span>",
+    "function"
+  ],
+  [
+    "@tinkoff/utils//defaultto~defaultto",
     "function/index.html#static-function-defaultTo",
-    "<span>defaultTo</span> <span class=\"search-result-import-path\">@tinkoff/utils/defaultTo</span>",
+    "<span>defaultTo</span> <span class=\"search-result-import-path\">@tinkoff/utils//defaultTo</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/difference~difference",
+    "@tinkoff/utils//array/difference~difference",
     "function/index.html#static-function-difference",
-    "<span>difference</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/difference</span>",
+    "<span>difference</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/difference</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/drop~drop",
+    "@tinkoff/utils//array/drop~drop",
     "function/index.html#static-function-drop",
-    "<span>drop</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/drop</span>",
+    "<span>drop</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/drop</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/droplast~droplast",
+    "@tinkoff/utils//array/droplast~droplast",
     "function/index.html#static-function-dropLast",
-    "<span>dropLast</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/dropLast</span>",
+    "<span>dropLast</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/dropLast</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/dropwhile~dropwhile",
+    "@tinkoff/utils//array/dropwhile~dropwhile",
     "function/index.html#static-function-dropWhile",
-    "<span>dropWhile</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/dropWhile</span>",
+    "<span>dropWhile</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/dropWhile</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/each~each",
+    "@tinkoff/utils//array/each~each",
     "function/index.html#static-function-each",
-    "<span>each</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/each</span>",
+    "<span>each</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/each</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/each~each",
+    "@tinkoff/utils//object/each~each",
     "function/index.html#static-function-each",
-    "<span>each</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/each</span>",
+    "<span>each</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/each</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/either~either",
+    "@tinkoff/utils//function/either~either",
     "function/index.html#static-function-either",
-    "<span>either</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/either</span>",
+    "<span>either</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/either</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/is/element~element",
+    "@tinkoff/utils//is/element~element",
     "function/index.html#static-function-element",
-    "<span>element</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/element</span>",
+    "<span>element</span> <span class=\"search-result-import-path\">@tinkoff/utils//is/element</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/is/empty~empty",
+    "@tinkoff/utils//is/empty~empty",
     "function/index.html#static-function-empty",
-    "<span>empty</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/empty</span>",
+    "<span>empty</span> <span class=\"search-result-import-path\">@tinkoff/utils//is/empty</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/string/endswith~endswith",
+    "@tinkoff/utils//string/endswith~endswith",
     "function/index.html#static-function-endsWith",
-    "<span>endsWith</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/endsWith</span>",
+    "<span>endsWith</span> <span class=\"search-result-import-path\">@tinkoff/utils//string/endsWith</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/eqprops~eqprops",
+    "@tinkoff/utils//object/eqprops~eqprops",
     "function/index.html#static-function-eqProps",
-    "<span>eqProps</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/eqProps</span>",
+    "<span>eqProps</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/eqProps</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/string/escape~escape",
+    "@tinkoff/utils//string/escape~escape",
     "function/index.html#static-function-escape",
-    "<span>escape</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/escape</span>",
+    "<span>escape</span> <span class=\"search-result-import-path\">@tinkoff/utils//string/escape</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/string/escaperegexp~escaperegexp",
+    "@tinkoff/utils//string/escaperegexp~escaperegexp",
     "function/index.html#static-function-escapeRegExp",
-    "<span>escapeRegExp</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/escapeRegExp</span>",
+    "<span>escapeRegExp</span> <span class=\"search-result-import-path\">@tinkoff/utils//string/escapeRegExp</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/filter~filter",
+    "@tinkoff/utils//array/filter~filter",
     "function/index.html#static-function-filter",
-    "<span>filter</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/filter</span>",
+    "<span>filter</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/filter</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/filter~filter",
+    "@tinkoff/utils//object/filter~filter",
     "function/index.html#static-function-filter",
-    "<span>filter</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/filter</span>",
+    "<span>filter</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/filter</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/find~find",
+    "@tinkoff/utils//array/find~find",
     "function/index.html#static-function-find",
-    "<span>find</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/find</span>",
+    "<span>find</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/find</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/findindex~findindex",
+    "@tinkoff/utils//array/findindex~findindex",
     "function/index.html#static-function-findIndex",
-    "<span>findIndex</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/findIndex</span>",
+    "<span>findIndex</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/findIndex</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/findkey~findkey",
+    "@tinkoff/utils//object/findkey~findkey",
     "function/index.html#static-function-findKey",
-    "<span>findKey</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/findKey</span>",
+    "<span>findKey</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/findKey</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/findlast~findlast",
+    "@tinkoff/utils//array/findlast~findlast",
     "function/index.html#static-function-findLast",
-    "<span>findLast</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/findLast</span>",
+    "<span>findLast</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/findLast</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/is/finite~finite",
+    "@tinkoff/utils//is/finite~finite",
     "function/index.html#static-function-finite",
-    "<span>finite</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/finite</span>",
+    "<span>finite</span> <span class=\"search-result-import-path\">@tinkoff/utils//is/finite</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/flatten~flatten",
+    "@tinkoff/utils//array/flatten~flatten",
     "function/index.html#static-function-flatten",
-    "<span>flatten</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/flatten</span>",
+    "<span>flatten</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/flatten</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/flip~flip",
+    "@tinkoff/utils//function/flip~flip",
     "function/index.html#static-function-flip",
-    "<span>flip</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/flip</span>",
+    "<span>flip</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/flip</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/frompairs~frompairs",
+    "@tinkoff/utils//object/frompairs~frompairs",
     "function/index.html#static-function-fromPairs",
-    "<span>fromPairs</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/fromPairs</span>",
+    "<span>fromPairs</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/fromPairs</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/is/function~function",
+    "@tinkoff/utils//is/function~function",
     "function/index.html#static-function-function",
-    "<span>function</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/function</span>",
+    "<span>function</span> <span class=\"search-result-import-path\">@tinkoff/utils//is/function</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/groupby~groupby",
+    "@tinkoff/utils//object/groupby~groupby",
     "function/index.html#static-function-groupBy",
-    "<span>groupBy</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/groupBy</span>",
+    "<span>groupBy</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/groupBy</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/has~has",
+    "@tinkoff/utils//object/has~has",
     "function/index.html#static-function-has",
-    "<span>has</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/has</span>",
+    "<span>has</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/has</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/head~head",
+    "@tinkoff/utils//array/head~head",
     "function/index.html#static-function-head",
-    "<span>head</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/head</span>",
+    "<span>head</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/head</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/identity~identity",
+    "@tinkoff/utils//function/identity~identity",
     "function/index.html#static-function-identity",
-    "<span>identity</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/identity</span>",
+    "<span>identity</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/identity</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/ifelse~ifelse",
+    "@tinkoff/utils//function/ifelse~ifelse",
     "function/index.html#static-function-ifElse",
-    "<span>ifElse</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/ifElse</span>",
+    "<span>ifElse</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/ifElse</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/includes~includes",
+    "@tinkoff/utils//array/includes~includes",
     "function/index.html#static-function-includes",
-    "<span>includes</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/includes</span>",
+    "<span>includes</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/includes</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/indexby~indexby",
+    "@tinkoff/utils//array/indexby~indexby",
     "function/index.html#static-function-indexBy",
-    "<span>indexBy</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/indexBy</span>",
+    "<span>indexBy</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/indexBy</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/indexof~indexof",
+    "@tinkoff/utils//array/indexof~indexof",
     "function/index.html#static-function-indexOf",
-    "<span>indexOf</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/indexOf</span>",
+    "<span>indexOf</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/indexOf</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/init~init",
+    "@tinkoff/utils//array/init~init",
     "function/index.html#static-function-init",
-    "<span>init</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/init</span>",
+    "<span>init</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/init</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/intersection~intersection",
+    "@tinkoff/utils//array/intersection~intersection",
     "function/index.html#static-function-intersection",
-    "<span>intersection</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/intersection</span>",
+    "<span>intersection</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/intersection</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/is/equal~isequal",
+    "@tinkoff/utils//is/equal~isequal",
     "function/index.html#static-function-isEqual",
-    "<span>isEqual</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/equal</span>",
+    "<span>isEqual</span> <span class=\"search-result-import-path\">@tinkoff/utils//is/equal</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/is/plainobject~isplainobject",
+    "@tinkoff/utils//is/plainobject~isplainobject",
     "function/index.html#static-function-isPlainObject",
-    "<span>isPlainObject</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/plainObject</span>",
+    "<span>isPlainObject</span> <span class=\"search-result-import-path\">@tinkoff/utils//is/plainObject</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/is/reactelement~isreactelement",
+    "@tinkoff/utils//is/reactelement~isreactelement",
     "function/index.html#static-function-isReactElement",
-    "<span>isReactElement</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/reactElement</span>",
+    "<span>isReactElement</span> <span class=\"search-result-import-path\">@tinkoff/utils//is/reactElement</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/istrue~istrue",
+    "@tinkoff/utils//istrue~istrue",
     "function/index.html#static-function-isTrue",
-    "<span>isTrue</span> <span class=\"search-result-import-path\">@tinkoff/utils/isTrue</span>",
+    "<span>isTrue</span> <span class=\"search-result-import-path\">@tinkoff/utils//isTrue</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/join~join",
+    "@tinkoff/utils//array/join~join",
     "function/index.html#static-function-join",
-    "<span>join</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/join</span>",
+    "<span>join</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/join</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/keyby~keyby",
+    "@tinkoff/utils//object/keyby~keyby",
     "function/index.html#static-function-keyBy",
-    "<span>keyBy</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/keyBy</span>",
+    "<span>keyBy</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/keyBy</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/keys~keys",
+    "@tinkoff/utils//object/keys~keys",
     "function/index.html#static-function-keys",
-    "<span>keys</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/keys</span>",
+    "<span>keys</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/keys</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/last~last",
+    "@tinkoff/utils//array/last~last",
     "function/index.html#static-function-last",
-    "<span>last</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/last</span>",
+    "<span>last</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/last</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/length~length",
+    "@tinkoff/utils//array/length~length",
     "function/index.html#static-function-length",
-    "<span>length</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/length</span>",
+    "<span>length</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/length</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/map~map",
+    "@tinkoff/utils//array/map~map",
     "function/index.html#static-function-map",
-    "<span>map</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/map</span>",
+    "<span>map</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/map</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/map~map",
+    "@tinkoff/utils//object/map~map",
     "function/index.html#static-function-map",
-    "<span>map</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/map</span>",
+    "<span>map</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/map</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/maxby~maxby",
+    "@tinkoff/utils//array/maxby~maxby",
     "function/index.html#static-function-maxBy",
-    "<span>maxBy</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/maxBy</span>",
+    "<span>maxBy</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/maxBy</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/merge~merge",
+    "@tinkoff/utils//object/merge~merge",
     "function/index.html#static-function-merge",
-    "<span>merge</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/merge</span>",
+    "<span>merge</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/merge</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/mergedeep~mergedeep",
+    "@tinkoff/utils//object/mergedeep~mergedeep",
     "function/index.html#static-function-mergeDeep",
-    "<span>mergeDeep</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/mergeDeep</span>",
+    "<span>mergeDeep</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/mergeDeep</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/mergewith~mergewith",
+    "@tinkoff/utils//object/mergewith~mergewith",
     "function/index.html#static-function-mergeWith",
-    "<span>mergeWith</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/mergeWith</span>",
+    "<span>mergeWith</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/mergeWith</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/negate~negate",
+    "@tinkoff/utils//negate~negate",
     "function/index.html#static-function-negate",
-    "<span>negate</span> <span class=\"search-result-import-path\">@tinkoff/utils/negate</span>",
+    "<span>negate</span> <span class=\"search-result-import-path\">@tinkoff/utils//negate</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/is/nil~nil",
+    "@tinkoff/utils//is/nil~nil",
     "function/index.html#static-function-nil",
-    "<span>nil</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/nil</span>",
+    "<span>nil</span> <span class=\"search-result-import-path\">@tinkoff/utils//is/nil</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/noop~noop",
+    "@tinkoff/utils//function/noop~noop",
     "function/index.html#static-function-noop",
-    "<span>noop</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/noop</span>",
+    "<span>noop</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/noop</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/is/not~not",
+    "@tinkoff/utils//not~not",
     "function/index.html#static-function-not",
-    "<span>not</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/not</span>",
+    "<span>not</span> <span class=\"search-result-import-path\">@tinkoff/utils//not</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/not~not",
-    "function/index.html#static-function-not",
-    "<span>not</span> <span class=\"search-result-import-path\">@tinkoff/utils/not</span>",
-    "function"
-  ],
-  [
-    "@tinkoff/utils/function/nothing~nothing",
+    "@tinkoff/utils//function/nothing~nothing",
     "function/index.html#static-function-nothing",
-    "<span>nothing</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/nothing</span>",
+    "<span>nothing</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/nothing</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/nth~nth",
+    "@tinkoff/utils//array/nth~nth",
     "function/index.html#static-function-nth",
-    "<span>nth</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/nth</span>",
+    "<span>nth</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/nth</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/is/number~number",
+    "@tinkoff/utils//is/number~number",
     "function/index.html#static-function-number",
-    "<span>number</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/number</span>",
+    "<span>number</span> <span class=\"search-result-import-path\">@tinkoff/utils//is/number</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/objof~objof",
+    "@tinkoff/utils//object/objof~objof",
     "function/index.html#static-function-objOf",
-    "<span>objOf</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/objOf</span>",
+    "<span>objOf</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/objOf</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/is/object~object",
+    "@tinkoff/utils//is/object~object",
     "function/index.html#static-function-object",
-    "<span>object</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/object</span>",
+    "<span>object</span> <span class=\"search-result-import-path\">@tinkoff/utils//is/object</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/omit~omit",
+    "@tinkoff/utils//object/omit~omit",
     "function/index.html#static-function-omit",
-    "<span>omit</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/omit</span>",
+    "<span>omit</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/omit</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/once~once",
+    "@tinkoff/utils//function/once~once",
     "function/index.html#static-function-once",
-    "<span>once</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/once</span>",
+    "<span>once</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/once</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/optional~optional",
+    "@tinkoff/utils//function/memoize/one~one",
+    "function/index.html#static-function-one",
+    "<span>one</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/memoize/one</span>",
+    "function"
+  ],
+  [
+    "@tinkoff/utils//function/optional~optional",
     "function/index.html#static-function-optional",
-    "<span>optional</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/optional</span>",
+    "<span>optional</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/optional</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/partition~partition",
+    "@tinkoff/utils//array/partition~partition",
     "function/index.html#static-function-partition",
-    "<span>partition</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/partition</span>",
+    "<span>partition</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/partition</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/path~path",
+    "@tinkoff/utils//object/path~path",
     "function/index.html#static-function-path",
-    "<span>path</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/path</span>",
+    "<span>path</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/path</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/pathapply~pathapply",
+    "@tinkoff/utils//object/pathapply~pathapply",
     "function/index.html#static-function-pathApply",
-    "<span>pathApply</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/pathApply</span>",
+    "<span>pathApply</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/pathApply</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/patheq~patheq",
+    "@tinkoff/utils//object/patheq~patheq",
     "function/index.html#static-function-pathEq",
-    "<span>pathEq</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/pathEq</span>",
+    "<span>pathEq</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/pathEq</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/pathor~pathor",
+    "@tinkoff/utils//object/pathor~pathor",
     "function/index.html#static-function-pathOr",
-    "<span>pathOr</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/pathOr</span>",
+    "<span>pathOr</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/pathOr</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/pathset~pathset",
+    "@tinkoff/utils//object/pathset~pathset",
     "function/index.html#static-function-pathSet",
-    "<span>pathSet</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/pathSet</span>",
+    "<span>pathSet</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/pathSet</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/pick~pick",
+    "@tinkoff/utils//object/pick~pick",
     "function/index.html#static-function-pick",
-    "<span>pick</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/pick</span>",
+    "<span>pick</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/pick</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/pickby~pickby",
+    "@tinkoff/utils//object/pickby~pickby",
     "function/index.html#static-function-pickBy",
-    "<span>pickBy</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/pickBy</span>",
+    "<span>pickBy</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/pickBy</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/pluck~pluck",
+    "@tinkoff/utils//array/pluck~pluck",
     "function/index.html#static-function-pluck",
-    "<span>pluck</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/pluck</span>",
+    "<span>pluck</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/pluck</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/is/promise~promise",
+    "@tinkoff/utils//is/promise~promise",
     "function/index.html#static-function-promise",
-    "<span>promise</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/promise</span>",
+    "<span>promise</span> <span class=\"search-result-import-path\">@tinkoff/utils//is/promise</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/prop~prop",
+    "@tinkoff/utils//object/prop~prop",
     "function/index.html#static-function-prop",
-    "<span>prop</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/prop</span>",
+    "<span>prop</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/prop</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/propapply~propapply",
+    "@tinkoff/utils//object/propapply~propapply",
     "function/index.html#static-function-propApply",
-    "<span>propApply</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/propApply</span>",
+    "<span>propApply</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/propApply</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/propeq~propeq",
+    "@tinkoff/utils//object/propeq~propeq",
     "function/index.html#static-function-propEq",
-    "<span>propEq</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/propEq</span>",
+    "<span>propEq</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/propEq</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/propor~propor",
+    "@tinkoff/utils//object/propor~propor",
     "function/index.html#static-function-propOr",
-    "<span>propOr</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/propOr</span>",
+    "<span>propOr</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/propOr</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/range~range",
+    "@tinkoff/utils//array/range~range",
     "function/index.html#static-function-range",
-    "<span>range</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/range</span>",
+    "<span>range</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/range</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/reduce~reduce",
+    "@tinkoff/utils//array/reduce~reduce",
     "function/index.html#static-function-reduce",
-    "<span>reduce</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/reduce</span>",
+    "<span>reduce</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/reduce</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/reduce~reduce",
+    "@tinkoff/utils//object/reduce~reduce",
     "function/index.html#static-function-reduce",
-    "<span>reduce</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/reduce</span>",
+    "<span>reduce</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/reduce</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/reducewhile~reducewhile",
+    "@tinkoff/utils//array/reducewhile~reducewhile",
     "function/index.html#static-function-reduceWhile",
-    "<span>reduceWhile</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/reduceWhile</span>",
+    "<span>reduceWhile</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/reduceWhile</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/reducewhile~reducewhile",
+    "@tinkoff/utils//array/reducewhile~reducewhile",
     "function/index.html#static-function-reduceWhile",
-    "<span>reduceWhile</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/reduceWhile</span>",
+    "<span>reduceWhile</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/reduceWhile</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/reject~reject",
+    "@tinkoff/utils//array/reject~reject",
     "function/index.html#static-function-reject",
-    "<span>reject</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/reject</span>",
+    "<span>reject</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/reject</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/promise/rejectwith~rejectwith",
+    "@tinkoff/utils//promise/rejectwith~rejectwith",
     "function/index.html#static-function-rejectWith",
-    "<span>rejectWith</span> <span class=\"search-result-import-path\">@tinkoff/utils/promise/rejectWith</span>",
+    "<span>rejectWith</span> <span class=\"search-result-import-path\">@tinkoff/utils//promise/rejectWith</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/remove~remove",
+    "@tinkoff/utils//array/remove~remove",
     "function/index.html#static-function-remove",
-    "<span>remove</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/remove</span>",
+    "<span>remove</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/remove</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/repeat~repeat",
+    "@tinkoff/utils//array/repeat~repeat",
     "function/index.html#static-function-repeat",
-    "<span>repeat</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/repeat</span>",
+    "<span>repeat</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/repeat</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/string/repeat~repeat",
+    "@tinkoff/utils//string/repeat~repeat",
     "function/index.html#static-function-repeat",
-    "<span>repeat</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/repeat</span>",
+    "<span>repeat</span> <span class=\"search-result-import-path\">@tinkoff/utils//string/repeat</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/string/replace~replace",
+    "@tinkoff/utils//string/replace~replace",
     "function/index.html#static-function-replace",
-    "<span>replace</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/replace</span>",
+    "<span>replace</span> <span class=\"search-result-import-path\">@tinkoff/utils//string/replace</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/promise/resolvewith~resolvewith",
+    "@tinkoff/utils//promise/resolvewith~resolvewith",
     "function/index.html#static-function-resolveWith",
-    "<span>resolveWith</span> <span class=\"search-result-import-path\">@tinkoff/utils/promise/resolveWith</span>",
+    "<span>resolveWith</span> <span class=\"search-result-import-path\">@tinkoff/utils//promise/resolveWith</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/reverse~reverse",
+    "@tinkoff/utils//array/reverse~reverse",
     "function/index.html#static-function-reverse",
-    "<span>reverse</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/reverse</span>",
+    "<span>reverse</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/reverse</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/sanitize~sanitize",
-    "function/index.html#static-function-sanitize",
-    "<span>sanitize</span> <span class=\"search-result-import-path\">@tinkoff/utils/sanitize</span>",
+    "@tinkoff/utils//is/shallowequal~shallowequal",
+    "function/index.html#static-function-shallowEqual",
+    "<span>shallowEqual</span> <span class=\"search-result-import-path\">@tinkoff/utils//is/shallowEqual</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/shuffle~shuffle",
+    "@tinkoff/utils//array/shuffle~shuffle",
     "function/index.html#static-function-shuffle",
-    "<span>shuffle</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/shuffle</span>",
+    "<span>shuffle</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/shuffle</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/size~size",
+    "@tinkoff/utils//object/size~size",
     "function/index.html#static-function-size",
-    "<span>size</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/size</span>",
+    "<span>size</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/size</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/slice~slice",
+    "@tinkoff/utils//array/slice~slice",
     "function/index.html#static-function-slice",
-    "<span>slice</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/slice</span>",
+    "<span>slice</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/slice</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/sort~sort",
+    "@tinkoff/utils//array/sort~sort",
     "function/index.html#static-function-sort",
-    "<span>sort</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/sort</span>",
+    "<span>sort</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/sort</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/sortby~sortby",
+    "@tinkoff/utils//array/sortby~sortby",
     "function/index.html#static-function-sortBy",
-    "<span>sortBy</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/sortBy</span>",
+    "<span>sortBy</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/sortBy</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/string/split~split",
+    "@tinkoff/utils//string/split~split",
     "function/index.html#static-function-split",
-    "<span>split</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/split</span>",
+    "<span>split</span> <span class=\"search-result-import-path\">@tinkoff/utils//string/split</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/splitevery~splitevery",
+    "@tinkoff/utils//array/splitevery~splitevery",
     "function/index.html#static-function-splitEvery",
-    "<span>splitEvery</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/splitEvery</span>",
+    "<span>splitEvery</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/splitEvery</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/stablesortby~stablesortby",
+    "@tinkoff/utils//array/stablesortby~stablesortby",
     "function/index.html#static-function-stableSortBy",
-    "<span>stableSortBy</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/stableSortBy</span>",
+    "<span>stableSortBy</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/stableSortBy</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/string/startswith~startswith",
+    "@tinkoff/utils//string/startswith~startswith",
     "function/index.html#static-function-startsWith",
-    "<span>startsWith</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/startsWith</span>",
+    "<span>startsWith</span> <span class=\"search-result-import-path\">@tinkoff/utils//string/startsWith</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/is/string~string",
+    "@tinkoff/utils//is/string~string",
     "function/index.html#static-function-string",
-    "<span>string</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/string</span>",
+    "<span>string</span> <span class=\"search-result-import-path\">@tinkoff/utils//is/string</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/sum~sum",
+    "@tinkoff/utils//array/sum~sum",
     "function/index.html#static-function-sum",
-    "<span>sum</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/sum</span>",
+    "<span>sum</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/sum</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/tail~tail",
+    "@tinkoff/utils//array/tail~tail",
     "function/index.html#static-function-tail",
-    "<span>tail</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/tail</span>",
+    "<span>tail</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/tail</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/take~take",
+    "@tinkoff/utils//array/take~take",
     "function/index.html#static-function-take",
-    "<span>take</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/take</span>",
+    "<span>take</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/take</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/takerightwhile~takerightwhile",
+    "@tinkoff/utils//array/takerightwhile~takerightwhile",
     "function/index.html#static-function-takeRightWhile",
-    "<span>takeRightWhile</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/takeRightWhile</span>",
+    "<span>takeRightWhile</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/takeRightWhile</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/tap~tap",
+    "@tinkoff/utils//function/tap~tap",
     "function/index.html#static-function-tap",
-    "<span>tap</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/tap</span>",
+    "<span>tap</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/tap</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/promise/tap~tap",
+    "@tinkoff/utils//promise/tap~tap",
     "function/index.html#static-function-tap",
-    "<span>tap</span> <span class=\"search-result-import-path\">@tinkoff/utils/promise/tap</span>",
+    "<span>tap</span> <span class=\"search-result-import-path\">@tinkoff/utils//promise/tap</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/string/template~template",
+    "@tinkoff/utils//string/template~template",
     "function/index.html#static-function-template",
-    "<span>template</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/template</span>",
+    "<span>template</span> <span class=\"search-result-import-path\">@tinkoff/utils//string/template</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/string/test~test",
+    "@tinkoff/utils//string/test~test",
     "function/index.html#static-function-test",
-    "<span>test</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/test</span>",
+    "<span>test</span> <span class=\"search-result-import-path\">@tinkoff/utils//string/test</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/throttle~throttle",
+    "@tinkoff/utils//function/throttle~throttle",
     "function/index.html#static-function-throttle",
-    "<span>throttle</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/throttle</span>",
+    "<span>throttle</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/throttle</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/throttleend~throttleend",
+    "@tinkoff/utils//function/throttleend~throttleend",
     "function/index.html#static-function-throttleEnd",
-    "<span>throttleEnd</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/throttleEnd</span>",
+    "<span>throttleEnd</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/throttleEnd</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/toarray~toarray",
+    "@tinkoff/utils//array/toarray~toarray",
     "function/index.html#static-function-toArray",
-    "<span>toArray</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/toArray</span>",
+    "<span>toArray</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/toArray</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/string/tolower~tolower",
+    "@tinkoff/utils//string/tolower~tolower",
     "function/index.html#static-function-toLower",
-    "<span>toLower</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/toLower</span>",
+    "<span>toLower</span> <span class=\"search-result-import-path\">@tinkoff/utils//string/toLower</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/topairs~topairs",
+    "@tinkoff/utils//object/topairs~topairs",
     "function/index.html#static-function-toPairs",
-    "<span>toPairs</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/toPairs</span>",
+    "<span>toPairs</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/toPairs</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/string/tostring~tostring",
+    "@tinkoff/utils//string/tostring~tostring",
     "function/index.html#static-function-toString",
-    "<span>toString</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/toString</span>",
+    "<span>toString</span> <span class=\"search-result-import-path\">@tinkoff/utils//string/toString</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/string/toupper~toupper",
+    "@tinkoff/utils//string/toupper~toupper",
     "function/index.html#static-function-toUpper",
-    "<span>toUpper</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/toUpper</span>",
+    "<span>toUpper</span> <span class=\"search-result-import-path\">@tinkoff/utils//string/toUpper</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/string/trim~trim",
+    "@tinkoff/utils//string/trim~trim",
     "function/index.html#static-function-trim",
-    "<span>trim</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/trim</span>",
+    "<span>trim</span> <span class=\"search-result-import-path\">@tinkoff/utils//string/trim</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/string/trimleft~trimleft",
+    "@tinkoff/utils//string/trimleft~trimleft",
     "function/index.html#static-function-trimLeft",
-    "<span>trimLeft</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/trimLeft</span>",
+    "<span>trimLeft</span> <span class=\"search-result-import-path\">@tinkoff/utils//string/trimLeft</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/trycatch~trycatch",
+    "@tinkoff/utils//function/trycatch~trycatch",
     "function/index.html#static-function-tryCatch",
-    "<span>tryCatch</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/tryCatch</span>",
+    "<span>tryCatch</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/tryCatch</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/type~type",
+    "@tinkoff/utils//type~type",
     "function/index.html#static-function-type",
-    "<span>type</span> <span class=\"search-result-import-path\">@tinkoff/utils/type</span>",
+    "<span>type</span> <span class=\"search-result-import-path\">@tinkoff/utils//type</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/is/undefined~undefined",
+    "@tinkoff/utils//is/undefined~undefined",
     "function/index.html#static-function-undefined",
-    "<span>undefined</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/undefined</span>",
+    "<span>undefined</span> <span class=\"search-result-import-path\">@tinkoff/utils//is/undefined</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/string/unescape~unescape",
+    "@tinkoff/utils//string/unescape~unescape",
     "function/index.html#static-function-unescape",
-    "<span>unescape</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/unescape</span>",
+    "<span>unescape</span> <span class=\"search-result-import-path\">@tinkoff/utils//string/unescape</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/uniq~uniq",
+    "@tinkoff/utils//array/uniq~uniq",
     "function/index.html#static-function-uniq",
-    "<span>uniq</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/uniq</span>",
+    "<span>uniq</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/uniq</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/uniqby~uniqby",
+    "@tinkoff/utils//array/uniqby~uniqby",
     "function/index.html#static-function-uniqBy",
-    "<span>uniqBy</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/uniqBy</span>",
+    "<span>uniqBy</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/uniqBy</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/uniqueid~uniqueid",
+    "@tinkoff/utils//uniqueid~uniqueid",
     "function/index.html#static-function-uniqueId",
-    "<span>uniqueId</span> <span class=\"search-result-import-path\">@tinkoff/utils/uniqueId</span>",
+    "<span>uniqueId</span> <span class=\"search-result-import-path\">@tinkoff/utils//uniqueId</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/update~update",
+    "@tinkoff/utils//array/update~update",
     "function/index.html#static-function-update",
-    "<span>update</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/update</span>",
+    "<span>update</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/update</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/updatepropertyvalue~updatepropertyvalue",
+    "@tinkoff/utils//function/updatepropertyvalue~updatepropertyvalue",
     "function/index.html#static-function-updatePropertyValue",
-    "<span>updatePropertyValue</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/updatePropertyValue</span>",
+    "<span>updatePropertyValue</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/updatePropertyValue</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/values~values",
+    "@tinkoff/utils//object/values~values",
     "function/index.html#static-function-values",
-    "<span>values</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/values</span>",
+    "<span>values</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/values</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/function/when~when",
+    "@tinkoff/utils//function/when~when",
     "function/index.html#static-function-when",
-    "<span>when</span> <span class=\"search-result-import-path\">@tinkoff/utils/function/when</span>",
+    "<span>when</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/when</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/object/where~where",
+    "@tinkoff/utils//object/where~where",
     "function/index.html#static-function-where",
-    "<span>where</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/where</span>",
+    "<span>where</span> <span class=\"search-result-import-path\">@tinkoff/utils//object/where</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/without~without",
+    "@tinkoff/utils//function/memoize/with~with",
+    "function/index.html#static-function-with",
+    "<span>with</span> <span class=\"search-result-import-path\">@tinkoff/utils//function/memoize/with</span>",
+    "function"
+  ],
+  [
+    "@tinkoff/utils//array/without~without",
     "function/index.html#static-function-without",
-    "<span>without</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/without</span>",
+    "<span>without</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/without</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/zip~zip",
+    "@tinkoff/utils//array/zip~zip",
     "function/index.html#static-function-zip",
-    "<span>zip</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/zip</span>",
+    "<span>zip</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/zip</span>",
     "function"
   ],
   [
-    "@tinkoff/utils/array/zipwith~zipwith",
+    "@tinkoff/utils//array/zipwith~zipwith",
     "function/index.html#static-function-zipWith",
-    "<span>zipWith</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/zipWith</span>",
+    "<span>zipWith</span> <span class=\"search-result-import-path\">@tinkoff/utils//array/zipWith</span>",
     "function"
   ],
   [
     "",
-    "test-file/utils.js/src/is/__tests__/contains.js.html#lineNumber3",
-    "contains",
+    "test-file/utils.js/ts_temp/function/memoize/__tests__/createCache.js.html#lineNumber2",
+    "function/memoize/createCache",
     "test"
   ],
   [
     "",
-    "test-file/utils.js/src/is/__tests__/contains.js.html#lineNumber18",
-    "contains false",
+    "test-file/utils.js/ts_temp/function/memoize/__tests__/createCache.js.html#lineNumber11",
+    "function/memoize/createCache initial value",
     "test"
   ],
   [
     "",
-    "test-file/utils.js/src/is/__tests__/contains.js.html#lineNumber6",
-    "contains true",
+    "test-file/utils.js/ts_temp/function/memoize/__tests__/createCache.js.html#lineNumber3",
+    "function/memoize/createCache simple case",
+    "test"
+  ],
+  [
+    "",
+    "test-file/utils.js/ts_temp/is/__tests__/shallowEqual.js.html#lineNumber2",
+    "is/shallowEqual",
+    "test"
+  ],
+  [
+    "",
+    "test-file/utils.js/ts_temp/is/__tests__/shallowEqual.js.html#lineNumber3",
+    "is/shallowEqual test",
     "test"
   ],
   [
@@ -1005,6 +1023,30 @@ window.esdocSearchIndex = [
     "",
     "test-file/utils.js/src/__tests__/isTrue.js.html#lineNumber8",
     "isTrue works correctly with string",
+    "test"
+  ],
+  [
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/with.js.html#lineNumber4",
+    "memoizeWith",
+    "test"
+  ],
+  [
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/with.js.html#lineNumber11",
+    "memoizeWith returns cache if cache has value for given key",
+    "test"
+  ],
+  [
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/with.js.html#lineNumber32",
+    "memoizeWith returns not cached value if cache has not value for given key",
+    "test"
+  ],
+  [
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/with.js.html#lineNumber5",
+    "memoizeWith uses createCache function for cache creating",
     "test"
   ],
   [
@@ -1032,2260 +1074,190 @@ window.esdocSearchIndex = [
     "test"
   ],
   [
-    "src/.external-ecmascript.js~array",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
-    "src/.external-ecmascript.js~Array",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/one.js.html#lineNumber3",
+    "src/function/memoize/one",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~arraybuffer",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
-    "src/.external-ecmascript.js~ArrayBuffer",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/one.js.html#lineNumber4",
+    "src/function/memoize/one default equality function",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~boolean",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "src/.external-ecmascript.js~Boolean",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/one.js.html#lineNumber15",
+    "src/function/memoize/one default equality function with multiple deep equally objects get cache, reset cache and resume",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~dataview",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
-    "src/.external-ecmascript.js~DataView",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/deep.js.html#lineNumber3",
+    "src/memoize/deep",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~date",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
-    "src/.external-ecmascript.js~Date",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/deep.js.html#lineNumber50",
+    "src/memoize/deep with multiple non-primitive arguments",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~error",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
-    "src/.external-ecmascript.js~Error",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/deep.js.html#lineNumber51",
+    "src/memoize/deep with multiple non-primitive arguments returns cache for deep equally objects",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~evalerror",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
-    "src/.external-ecmascript.js~EvalError",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/deep.js.html#lineNumber57",
+    "src/memoize/deep with multiple non-primitive arguments returns not cached value for deep not equall objects",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~float32array",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
-    "src/.external-ecmascript.js~Float32Array",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/deep.js.html#lineNumber35",
+    "src/memoize/deep with multiple primitive argument",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~float64array",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
-    "src/.external-ecmascript.js~Float64Array",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/deep.js.html#lineNumber36",
+    "src/memoize/deep with multiple primitive argument returns cached value",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~function",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "src/.external-ecmascript.js~Function",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/deep.js.html#lineNumber42",
+    "src/memoize/deep with multiple primitive argument returns not cached value",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~generator",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
-    "src/.external-ecmascript.js~Generator",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/deep.js.html#lineNumber14",
+    "src/memoize/deep with single primitive argument",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~generatorfunction",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
-    "src/.external-ecmascript.js~GeneratorFunction",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/deep.js.html#lineNumber21",
+    "src/memoize/deep with single primitive argument return not cached value",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~infinity",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
-    "src/.external-ecmascript.js~Infinity",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/deep.js.html#lineNumber15",
+    "src/memoize/deep with single primitive argument returns cached value",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~int16array",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
-    "src/.external-ecmascript.js~Int16Array",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/deep.js.html#lineNumber28",
+    "src/memoize/deep with single primitive argument returns not cached value for strict equally string and number arguments",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~int32array",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
-    "src/.external-ecmascript.js~Int32Array",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/deepSizeLimit.js.html#lineNumber3",
+    "src/memoize/deepSizeLimit",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~int8array",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
-    "src/.external-ecmascript.js~Int8Array",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/deepSizeLimit.js.html#lineNumber14",
+    "src/memoize/deepSizeLimit with multiple deep equally objects get cache",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~internalerror",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
-    "src/.external-ecmascript.js~InternalError",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/strictSingle.js.html#lineNumber3",
+    "src/memoize/strictSingle",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~json",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
-    "src/.external-ecmascript.js~JSON",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/strictSingle.js.html#lineNumber33",
+    "src/memoize/strictSingle with functions",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~map",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
-    "src/.external-ecmascript.js~Map",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/strictSingle.js.html#lineNumber42",
+    "src/memoize/strictSingle with functions with different functions",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~nan",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
-    "src/.external-ecmascript.js~NaN",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/strictSingle.js.html#lineNumber34",
+    "src/memoize/strictSingle with functions with the same function",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~number",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "src/.external-ecmascript.js~Number",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/strictSingle.js.html#lineNumber14",
+    "src/memoize/strictSingle with the same object argument",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~object",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "src/.external-ecmascript.js~Object",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/strictSingle.js.html#lineNumber15",
+    "src/memoize/strictSingle with the same object argument returns from cache",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~promise",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-    "src/.external-ecmascript.js~Promise",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/strictSingle.js.html#lineNumber23",
+    "src/memoize/strictSingle with the same object argument returns not cached value",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~proxy",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
-    "src/.external-ecmascript.js~Proxy",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/weak.js.html#lineNumber3",
+    "src/memoize/weak",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~rangeerror",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
-    "src/.external-ecmascript.js~RangeError",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/weak.js.html#lineNumber14",
+    "src/memoize/weak throws error if argument is primitive",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~referenceerror",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
-    "src/.external-ecmascript.js~ReferenceError",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/weak.js.html#lineNumber19",
+    "src/memoize/weak with the same object argument",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~reflect",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
-    "src/.external-ecmascript.js~Reflect",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/weak.js.html#lineNumber28",
+    "src/memoize/weak with the same object argument negative",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~regexp",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
-    "src/.external-ecmascript.js~RegExp",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/weak.js.html#lineNumber20",
+    "src/memoize/weak with the same object argument positive",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~set",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
-    "src/.external-ecmascript.js~Set",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/weak.js.html#lineNumber36",
+    "src/memoize/weak with the same object argument with functions",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~string",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "src/.external-ecmascript.js~String",
-    "external"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/weak.js.html#lineNumber45",
+    "src/memoize/weak with the same object argument with functions with different functions",
+    "test"
   ],
   [
-    "src/.external-ecmascript.js~symbol",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
-    "src/.external-ecmascript.js~Symbol",
-    "external"
-  ],
-  [
-    "src/.external-ecmascript.js~syntaxerror",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
-    "src/.external-ecmascript.js~SyntaxError",
-    "external"
-  ],
-  [
-    "src/.external-ecmascript.js~typeerror",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
-    "src/.external-ecmascript.js~TypeError",
-    "external"
-  ],
-  [
-    "src/.external-ecmascript.js~urierror",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
-    "src/.external-ecmascript.js~URIError",
-    "external"
-  ],
-  [
-    "src/.external-ecmascript.js~uint16array",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
-    "src/.external-ecmascript.js~Uint16Array",
-    "external"
-  ],
-  [
-    "src/.external-ecmascript.js~uint32array",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
-    "src/.external-ecmascript.js~Uint32Array",
-    "external"
-  ],
-  [
-    "src/.external-ecmascript.js~uint8array",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
-    "src/.external-ecmascript.js~Uint8Array",
-    "external"
-  ],
-  [
-    "src/.external-ecmascript.js~uint8clampedarray",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
-    "src/.external-ecmascript.js~Uint8ClampedArray",
-    "external"
-  ],
-  [
-    "src/.external-ecmascript.js~weakmap",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
-    "src/.external-ecmascript.js~WeakMap",
-    "external"
-  ],
-  [
-    "src/.external-ecmascript.js~weakset",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
-    "src/.external-ecmascript.js~WeakSet",
-    "external"
-  ],
-  [
-    "src/.external-ecmascript.js~boolean",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "src/.external-ecmascript.js~boolean",
-    "external"
-  ],
-  [
-    "src/.external-ecmascript.js~function",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "src/.external-ecmascript.js~function",
-    "external"
-  ],
-  [
-    "src/.external-ecmascript.js~null",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
-    "src/.external-ecmascript.js~null",
-    "external"
-  ],
-  [
-    "src/.external-ecmascript.js~number",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "src/.external-ecmascript.js~number",
-    "external"
-  ],
-  [
-    "src/.external-ecmascript.js~object",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "src/.external-ecmascript.js~object",
-    "external"
-  ],
-  [
-    "src/.external-ecmascript.js~string",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "src/.external-ecmascript.js~string",
-    "external"
-  ],
-  [
-    "src/.external-ecmascript.js~undefined",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
-    "src/.external-ecmascript.js~undefined",
-    "external"
-  ],
-  [
-    "src/__benchmarks__/clone.js",
-    "file/src/__benchmarks__/clone.js.html",
-    "src/__benchmarks__/clone.js",
-    "file"
-  ],
-  [
-    "src/__tests__/clone.js",
-    "file/src/__tests__/clone.js.html",
-    "src/__tests__/clone.js",
-    "file"
-  ],
-  [
-    "src/__tests__/defaultto.js",
-    "file/src/__tests__/defaultTo.js.html",
-    "src/__tests__/defaultTo.js",
-    "file"
-  ],
-  [
-    "src/__tests__/istrue.js",
-    "file/src/__tests__/isTrue.js.html",
-    "src/__tests__/isTrue.js",
-    "file"
-  ],
-  [
-    "src/__tests__/negate.js",
-    "file/src/__tests__/negate.js.html",
-    "src/__tests__/negate.js",
-    "file"
-  ],
-  [
-    "src/__tests__/not.js",
-    "file/src/__tests__/not.js.html",
-    "src/__tests__/not.js",
-    "file"
-  ],
-  [
-    "src/__tests__/sanitize.js",
-    "file/src/__tests__/sanitize.js.html",
-    "src/__tests__/sanitize.js",
-    "file"
-  ],
-  [
-    "src/__tests__/type.js",
-    "file/src/__tests__/type.js.html",
-    "src/__tests__/type.js",
-    "file"
-  ],
-  [
-    "src/__tests__/uniqueid.js",
-    "file/src/__tests__/uniqueId.js.html",
-    "src/__tests__/uniqueId.js",
-    "file"
-  ],
-  [
-    "src/array/__benchmarks__/filter.js",
-    "file/src/array/__benchmarks__/filter.js.html",
-    "src/array/__benchmarks__/filter.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/adjust.js",
-    "file/src/array/__tests__/adjust.js.html",
-    "src/array/__tests__/adjust.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/all.js",
-    "file/src/array/__tests__/all.js.html",
-    "src/array/__tests__/all.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/any.js",
-    "file/src/array/__tests__/any.js.html",
-    "src/array/__tests__/any.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/append.js",
-    "file/src/array/__tests__/append.js.html",
-    "src/array/__tests__/append.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/concat.js",
-    "file/src/array/__tests__/concat.js.html",
-    "src/array/__tests__/concat.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/difference.js",
-    "file/src/array/__tests__/difference.js.html",
-    "src/array/__tests__/difference.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/drop.js",
-    "file/src/array/__tests__/drop.js.html",
-    "src/array/__tests__/drop.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/droplast.js",
-    "file/src/array/__tests__/dropLast.js.html",
-    "src/array/__tests__/dropLast.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/dropwhile.js",
-    "file/src/array/__tests__/dropWhile.js.html",
-    "src/array/__tests__/dropWhile.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/each.js",
-    "file/src/array/__tests__/each.js.html",
-    "src/array/__tests__/each.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/filter.js",
-    "file/src/array/__tests__/filter.js.html",
-    "src/array/__tests__/filter.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/find.js",
-    "file/src/array/__tests__/find.js.html",
-    "src/array/__tests__/find.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/findindex.js",
-    "file/src/array/__tests__/findIndex.js.html",
-    "src/array/__tests__/findIndex.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/findlast.js",
-    "file/src/array/__tests__/findLast.js.html",
-    "src/array/__tests__/findLast.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/flatten.js",
-    "file/src/array/__tests__/flatten.js.html",
-    "src/array/__tests__/flatten.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/head.js",
-    "file/src/array/__tests__/head.js.html",
-    "src/array/__tests__/head.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/includes.js",
-    "file/src/array/__tests__/includes.js.html",
-    "src/array/__tests__/includes.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/indexby.js",
-    "file/src/array/__tests__/indexBy.js.html",
-    "src/array/__tests__/indexBy.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/indexof.js",
-    "file/src/array/__tests__/indexOf.js.html",
-    "src/array/__tests__/indexOf.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/init.js",
-    "file/src/array/__tests__/init.js.html",
-    "src/array/__tests__/init.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/intersection.js",
-    "file/src/array/__tests__/intersection.js.html",
-    "src/array/__tests__/intersection.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/join.js",
-    "file/src/array/__tests__/join.js.html",
-    "src/array/__tests__/join.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/last.js",
-    "file/src/array/__tests__/last.js.html",
-    "src/array/__tests__/last.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/length.js",
-    "file/src/array/__tests__/length.js.html",
-    "src/array/__tests__/length.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/map.js",
-    "file/src/array/__tests__/map.js.html",
-    "src/array/__tests__/map.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/maxby.js",
-    "file/src/array/__tests__/maxBy.js.html",
-    "src/array/__tests__/maxBy.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/nth.js",
-    "file/src/array/__tests__/nth.js.html",
-    "src/array/__tests__/nth.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/partition.js",
-    "file/src/array/__tests__/partition.js.html",
-    "src/array/__tests__/partition.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/pluck.js",
-    "file/src/array/__tests__/pluck.js.html",
-    "src/array/__tests__/pluck.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/range.js",
-    "file/src/array/__tests__/range.js.html",
-    "src/array/__tests__/range.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/reduce.js",
-    "file/src/array/__tests__/reduce.js.html",
-    "src/array/__tests__/reduce.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/reducewhile.js",
-    "file/src/array/__tests__/reduceWhile.js.html",
-    "src/array/__tests__/reduceWhile.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/reject.js",
-    "file/src/array/__tests__/reject.js.html",
-    "src/array/__tests__/reject.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/remove.js",
-    "file/src/array/__tests__/remove.js.html",
-    "src/array/__tests__/remove.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/repeat.js",
-    "file/src/array/__tests__/repeat.js.html",
-    "src/array/__tests__/repeat.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/reverse.js",
-    "file/src/array/__tests__/reverse.js.html",
-    "src/array/__tests__/reverse.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/shuffle.js",
-    "file/src/array/__tests__/shuffle.js.html",
-    "src/array/__tests__/shuffle.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/slice.js",
-    "file/src/array/__tests__/slice.js.html",
-    "src/array/__tests__/slice.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/sort.js",
-    "file/src/array/__tests__/sort.js.html",
-    "src/array/__tests__/sort.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/sortby.js",
-    "file/src/array/__tests__/sortBy.js.html",
-    "src/array/__tests__/sortBy.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/splitevery.js",
-    "file/src/array/__tests__/splitEvery.js.html",
-    "src/array/__tests__/splitEvery.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/stablesortby.js",
-    "file/src/array/__tests__/stableSortBy.js.html",
-    "src/array/__tests__/stableSortBy.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/sum.js",
-    "file/src/array/__tests__/sum.js.html",
-    "src/array/__tests__/sum.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/tail.js",
-    "file/src/array/__tests__/tail.js.html",
-    "src/array/__tests__/tail.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/take.js",
-    "file/src/array/__tests__/take.js.html",
-    "src/array/__tests__/take.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/takerightwhile.js",
-    "file/src/array/__tests__/takeRightWhile.js.html",
-    "src/array/__tests__/takeRightWhile.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/toarray.js",
-    "file/src/array/__tests__/toArray.js.html",
-    "src/array/__tests__/toArray.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/uniq.js",
-    "file/src/array/__tests__/uniq.js.html",
-    "src/array/__tests__/uniq.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/uniqby.js",
-    "file/src/array/__tests__/uniqBy.js.html",
-    "src/array/__tests__/uniqBy.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/update.js",
-    "file/src/array/__tests__/update.js.html",
-    "src/array/__tests__/update.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/without.js",
-    "file/src/array/__tests__/without.js.html",
-    "src/array/__tests__/without.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/zip.js",
-    "file/src/array/__tests__/zip.js.html",
-    "src/array/__tests__/zip.js",
-    "file"
-  ],
-  [
-    "src/array/__tests__/zipwith.js",
-    "file/src/array/__tests__/zipWith.js.html",
-    "src/array/__tests__/zipWith.js",
-    "file"
-  ],
-  [
-    "src/array/adjust.js",
-    "file/src/array/adjust.js.html",
-    "src/array/adjust.js",
-    "file"
-  ],
-  [
-    "src/array/all.js",
-    "file/src/array/all.js.html",
-    "src/array/all.js",
-    "file"
-  ],
-  [
-    "src/array/any.js",
-    "file/src/array/any.js.html",
-    "src/array/any.js",
-    "file"
-  ],
-  [
-    "src/array/append.js",
-    "file/src/array/append.js.html",
-    "src/array/append.js",
-    "file"
-  ],
-  [
-    "src/array/concat.js",
-    "file/src/array/concat.js.html",
-    "src/array/concat.js",
-    "file"
-  ],
-  [
-    "src/array/difference.js",
-    "file/src/array/difference.js.html",
-    "src/array/difference.js",
-    "file"
-  ],
-  [
-    "src/array/drop.js",
-    "file/src/array/drop.js.html",
-    "src/array/drop.js",
-    "file"
-  ],
-  [
-    "src/array/droplast.js",
-    "file/src/array/dropLast.js.html",
-    "src/array/dropLast.js",
-    "file"
-  ],
-  [
-    "src/array/dropwhile.js",
-    "file/src/array/dropWhile.js.html",
-    "src/array/dropWhile.js",
-    "file"
-  ],
-  [
-    "src/array/each.js",
-    "file/src/array/each.js.html",
-    "src/array/each.js",
-    "file"
-  ],
-  [
-    "src/array/filter.js",
-    "file/src/array/filter.js.html",
-    "src/array/filter.js",
-    "file"
-  ],
-  [
-    "src/array/find.js",
-    "file/src/array/find.js.html",
-    "src/array/find.js",
-    "file"
-  ],
-  [
-    "src/array/findindex.js",
-    "file/src/array/findIndex.js.html",
-    "src/array/findIndex.js",
-    "file"
-  ],
-  [
-    "src/array/findlast.js",
-    "file/src/array/findLast.js.html",
-    "src/array/findLast.js",
-    "file"
-  ],
-  [
-    "src/array/flatten.js",
-    "file/src/array/flatten.js.html",
-    "src/array/flatten.js",
-    "file"
-  ],
-  [
-    "src/array/head.js",
-    "file/src/array/head.js.html",
-    "src/array/head.js",
-    "file"
-  ],
-  [
-    "src/array/includes.js",
-    "file/src/array/includes.js.html",
-    "src/array/includes.js",
-    "file"
-  ],
-  [
-    "src/array/indexby.js",
-    "file/src/array/indexBy.js.html",
-    "src/array/indexBy.js",
-    "file"
-  ],
-  [
-    "src/array/indexof.js",
-    "file/src/array/indexOf.js.html",
-    "src/array/indexOf.js",
-    "file"
-  ],
-  [
-    "src/array/init.js",
-    "file/src/array/init.js.html",
-    "src/array/init.js",
-    "file"
-  ],
-  [
-    "src/array/intersection.js",
-    "file/src/array/intersection.js.html",
-    "src/array/intersection.js",
-    "file"
-  ],
-  [
-    "src/array/join.js",
-    "file/src/array/join.js.html",
-    "src/array/join.js",
-    "file"
-  ],
-  [
-    "src/array/last.js",
-    "file/src/array/last.js.html",
-    "src/array/last.js",
-    "file"
-  ],
-  [
-    "src/array/length.js",
-    "file/src/array/length.js.html",
-    "src/array/length.js",
-    "file"
-  ],
-  [
-    "src/array/map.js",
-    "file/src/array/map.js.html",
-    "src/array/map.js",
-    "file"
-  ],
-  [
-    "src/array/maxby.js",
-    "file/src/array/maxBy.js.html",
-    "src/array/maxBy.js",
-    "file"
-  ],
-  [
-    "src/array/nth.js",
-    "file/src/array/nth.js.html",
-    "src/array/nth.js",
-    "file"
-  ],
-  [
-    "src/array/partition.js",
-    "file/src/array/partition.js.html",
-    "src/array/partition.js",
-    "file"
-  ],
-  [
-    "src/array/pluck.js",
-    "file/src/array/pluck.js.html",
-    "src/array/pluck.js",
-    "file"
-  ],
-  [
-    "src/array/range.js",
-    "file/src/array/range.js.html",
-    "src/array/range.js",
-    "file"
-  ],
-  [
-    "src/array/reduce.js",
-    "file/src/array/reduce.js.html",
-    "src/array/reduce.js",
-    "file"
-  ],
-  [
-    "src/array/reducewhile.js",
-    "file/src/array/reduceWhile.js.html",
-    "src/array/reduceWhile.js",
-    "file"
-  ],
-  [
-    "src/array/reject.js",
-    "file/src/array/reject.js.html",
-    "src/array/reject.js",
-    "file"
-  ],
-  [
-    "src/array/remove.js",
-    "file/src/array/remove.js.html",
-    "src/array/remove.js",
-    "file"
-  ],
-  [
-    "src/array/repeat.js",
-    "file/src/array/repeat.js.html",
-    "src/array/repeat.js",
-    "file"
-  ],
-  [
-    "src/array/reverse.js",
-    "file/src/array/reverse.js.html",
-    "src/array/reverse.js",
-    "file"
-  ],
-  [
-    "src/array/shuffle.js",
-    "file/src/array/shuffle.js.html",
-    "src/array/shuffle.js",
-    "file"
-  ],
-  [
-    "src/array/slice.js",
-    "file/src/array/slice.js.html",
-    "src/array/slice.js",
-    "file"
-  ],
-  [
-    "src/array/sort.js",
-    "file/src/array/sort.js.html",
-    "src/array/sort.js",
-    "file"
-  ],
-  [
-    "src/array/sortby.js",
-    "file/src/array/sortBy.js.html",
-    "src/array/sortBy.js",
-    "file"
-  ],
-  [
-    "src/array/splitevery.js",
-    "file/src/array/splitEvery.js.html",
-    "src/array/splitEvery.js",
-    "file"
-  ],
-  [
-    "src/array/stablesortby.js",
-    "file/src/array/stableSortBy.js.html",
-    "src/array/stableSortBy.js",
-    "file"
-  ],
-  [
-    "src/array/sum.js",
-    "file/src/array/sum.js.html",
-    "src/array/sum.js",
-    "file"
-  ],
-  [
-    "src/array/tail.js",
-    "file/src/array/tail.js.html",
-    "src/array/tail.js",
-    "file"
-  ],
-  [
-    "src/array/take.js",
-    "file/src/array/take.js.html",
-    "src/array/take.js",
-    "file"
-  ],
-  [
-    "src/array/takerightwhile.js",
-    "file/src/array/takeRightWhile.js.html",
-    "src/array/takeRightWhile.js",
-    "file"
-  ],
-  [
-    "src/array/toarray.js",
-    "file/src/array/toArray.js.html",
-    "src/array/toArray.js",
-    "file"
-  ],
-  [
-    "src/array/uniq.js",
-    "file/src/array/uniq.js.html",
-    "src/array/uniq.js",
-    "file"
-  ],
-  [
-    "src/array/uniqby.js",
-    "file/src/array/uniqBy.js.html",
-    "src/array/uniqBy.js",
-    "file"
-  ],
-  [
-    "src/array/update.js",
-    "file/src/array/update.js.html",
-    "src/array/update.js",
-    "file"
-  ],
-  [
-    "src/array/without.js",
-    "file/src/array/without.js.html",
-    "src/array/without.js",
-    "file"
-  ],
-  [
-    "src/array/zip.js",
-    "file/src/array/zip.js.html",
-    "src/array/zip.js",
-    "file"
-  ],
-  [
-    "src/array/zipwith.js",
-    "file/src/array/zipWith.js.html",
-    "src/array/zipWith.js",
-    "file"
-  ],
-  [
-    "src/clone.js",
-    "file/src/clone.js.html",
-    "src/clone.js",
-    "file"
-  ],
-  [
-    "src/defaultto.js",
-    "file/src/defaultTo.js.html",
-    "src/defaultTo.js",
-    "file"
-  ],
-  [
-    "src/function/f.js",
-    "file/src/function/F.js.html",
-    "src/function/F.js",
-    "file"
-  ],
-  [
-    "src/function/t.js",
-    "file/src/function/T.js.html",
-    "src/function/T.js",
-    "file"
-  ],
-  [
-    "src/function/__benchmarks__/flip.js",
-    "file/src/function/__benchmarks__/flip.js.html",
-    "src/function/__benchmarks__/flip.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/f.js",
-    "file/src/function/__tests__/F.js.html",
-    "src/function/__tests__/F.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/t.js",
-    "file/src/function/__tests__/T.js.html",
-    "src/function/__tests__/T.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/allpass.js",
-    "file/src/function/__tests__/allPass.js.html",
-    "src/function/__tests__/allPass.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/always.js",
-    "file/src/function/__tests__/always.js.html",
-    "src/function/__tests__/always.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/anypass.js",
-    "file/src/function/__tests__/anyPass.js.html",
-    "src/function/__tests__/anyPass.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/applyorreturn.js",
-    "file/src/function/__tests__/applyOrReturn.js.html",
-    "src/function/__tests__/applyOrReturn.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/both.js",
-    "file/src/function/__tests__/both.js.html",
-    "src/function/__tests__/both.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/comparator.js",
-    "file/src/function/__tests__/comparator.js.html",
-    "src/function/__tests__/comparator.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/complement.js",
-    "file/src/function/__tests__/complement.js.html",
-    "src/function/__tests__/complement.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/compose.js",
-    "file/src/function/__tests__/compose.js.html",
-    "src/function/__tests__/compose.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/composep.js",
-    "file/src/function/__tests__/composeP.js.html",
-    "src/function/__tests__/composeP.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/cond.js",
-    "file/src/function/__tests__/cond.js.html",
-    "src/function/__tests__/cond.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/curry.js",
-    "file/src/function/__tests__/curry.js.html",
-    "src/function/__tests__/curry.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/curryn.js",
-    "file/src/function/__tests__/curryN.js.html",
-    "src/function/__tests__/curryN.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/debounce.js",
-    "file/src/function/__tests__/debounce.js.html",
-    "src/function/__tests__/debounce.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/either.js",
-    "file/src/function/__tests__/either.js.html",
-    "src/function/__tests__/either.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/flip.js",
-    "file/src/function/__tests__/flip.js.html",
-    "src/function/__tests__/flip.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/identity.js",
-    "file/src/function/__tests__/identity.js.html",
-    "src/function/__tests__/identity.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/ifelse.js",
-    "file/src/function/__tests__/ifElse.js.html",
-    "src/function/__tests__/ifElse.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/noop.js",
-    "file/src/function/__tests__/noop.js.html",
-    "src/function/__tests__/noop.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/nothing.js",
-    "file/src/function/__tests__/nothing.js.html",
-    "src/function/__tests__/nothing.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/once.js",
-    "file/src/function/__tests__/once.js.html",
-    "src/function/__tests__/once.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/optional.js",
-    "file/src/function/__tests__/optional.js.html",
-    "src/function/__tests__/optional.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/tap.js",
-    "file/src/function/__tests__/tap.js.html",
-    "src/function/__tests__/tap.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/throttle.js",
-    "file/src/function/__tests__/throttle.js.html",
-    "src/function/__tests__/throttle.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/throttleend.js",
-    "file/src/function/__tests__/throttleEnd.js.html",
-    "src/function/__tests__/throttleEnd.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/trycatch.js",
-    "file/src/function/__tests__/tryCatch.js.html",
-    "src/function/__tests__/tryCatch.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/updatepropertyvalue.js",
-    "file/src/function/__tests__/updatePropertyValue.js.html",
-    "src/function/__tests__/updatePropertyValue.js",
-    "file"
-  ],
-  [
-    "src/function/__tests__/when.js",
-    "file/src/function/__tests__/when.js.html",
-    "src/function/__tests__/when.js",
-    "file"
-  ],
-  [
-    "src/function/allpass.js",
-    "file/src/function/allPass.js.html",
-    "src/function/allPass.js",
-    "file"
-  ],
-  [
-    "src/function/always.js",
-    "file/src/function/always.js.html",
-    "src/function/always.js",
-    "file"
-  ],
-  [
-    "src/function/anypass.js",
-    "file/src/function/anyPass.js.html",
-    "src/function/anyPass.js",
-    "file"
-  ],
-  [
-    "src/function/applyorreturn.js",
-    "file/src/function/applyOrReturn.js.html",
-    "src/function/applyOrReturn.js",
-    "file"
-  ],
-  [
-    "src/function/both.js",
-    "file/src/function/both.js.html",
-    "src/function/both.js",
-    "file"
-  ],
-  [
-    "src/function/comparator.js",
-    "file/src/function/comparator.js.html",
-    "src/function/comparator.js",
-    "file"
-  ],
-  [
-    "src/function/complement.js",
-    "file/src/function/complement.js.html",
-    "src/function/complement.js",
-    "file"
-  ],
-  [
-    "src/function/compose.js",
-    "file/src/function/compose.js.html",
-    "src/function/compose.js",
-    "file"
-  ],
-  [
-    "src/function/composep.js",
-    "file/src/function/composeP.js.html",
-    "src/function/composeP.js",
-    "file"
-  ],
-  [
-    "src/function/cond.js",
-    "file/src/function/cond.js.html",
-    "src/function/cond.js",
-    "file"
-  ],
-  [
-    "src/function/curry.js",
-    "file/src/function/curry.js.html",
-    "src/function/curry.js",
-    "file"
-  ],
-  [
-    "src/function/curryn.js",
-    "file/src/function/curryN.js.html",
-    "src/function/curryN.js",
-    "file"
-  ],
-  [
-    "src/function/debounce.js",
-    "file/src/function/debounce.js.html",
-    "src/function/debounce.js",
-    "file"
-  ],
-  [
-    "src/function/either.js",
-    "file/src/function/either.js.html",
-    "src/function/either.js",
-    "file"
-  ],
-  [
-    "src/function/flip.js",
-    "file/src/function/flip.js.html",
-    "src/function/flip.js",
-    "file"
-  ],
-  [
-    "src/function/identity.js",
-    "file/src/function/identity.js.html",
-    "src/function/identity.js",
-    "file"
-  ],
-  [
-    "src/function/ifelse.js",
-    "file/src/function/ifElse.js.html",
-    "src/function/ifElse.js",
-    "file"
-  ],
-  [
-    "src/function/noop.js",
-    "file/src/function/noop.js.html",
-    "src/function/noop.js",
-    "file"
-  ],
-  [
-    "src/function/nothing.js",
-    "file/src/function/nothing.js.html",
-    "src/function/nothing.js",
-    "file"
-  ],
-  [
-    "src/function/once.js",
-    "file/src/function/once.js.html",
-    "src/function/once.js",
-    "file"
-  ],
-  [
-    "src/function/optional.js",
-    "file/src/function/optional.js.html",
-    "src/function/optional.js",
-    "file"
-  ],
-  [
-    "src/function/tap.js",
-    "file/src/function/tap.js.html",
-    "src/function/tap.js",
-    "file"
-  ],
-  [
-    "src/function/throttle.js",
-    "file/src/function/throttle.js.html",
-    "src/function/throttle.js",
-    "file"
-  ],
-  [
-    "src/function/throttleend.js",
-    "file/src/function/throttleEnd.js.html",
-    "src/function/throttleEnd.js",
-    "file"
-  ],
-  [
-    "src/function/trycatch.js",
-    "file/src/function/tryCatch.js.html",
-    "src/function/tryCatch.js",
-    "file"
-  ],
-  [
-    "src/function/updatepropertyvalue.js",
-    "file/src/function/updatePropertyValue.js.html",
-    "src/function/updatePropertyValue.js",
-    "file"
-  ],
-  [
-    "src/function/when.js",
-    "file/src/function/when.js.html",
-    "src/function/when.js",
-    "file"
-  ],
-  [
-    "src/is/__benchmarks__/empty.js",
-    "file/src/is/__benchmarks__/empty.js.html",
-    "src/is/__benchmarks__/empty.js",
-    "file"
-  ],
-  [
-    "src/is/__tests__/array.js",
-    "file/src/is/__tests__/array.js.html",
-    "src/is/__tests__/array.js",
-    "file"
-  ],
-  [
-    "src/is/__tests__/arraylike.js",
-    "file/src/is/__tests__/arrayLike.js.html",
-    "src/is/__tests__/arrayLike.js",
-    "file"
-  ],
-  [
-    "src/is/__tests__/boolean.js",
-    "file/src/is/__tests__/boolean.js.html",
-    "src/is/__tests__/boolean.js",
-    "file"
-  ],
-  [
-    "src/is/__tests__/contains.js",
-    "file/src/is/__tests__/contains.js.html",
-    "src/is/__tests__/contains.js",
-    "file"
-  ],
-  [
-    "src/is/__tests__/element.js",
-    "file/src/is/__tests__/element.js.html",
-    "src/is/__tests__/element.js",
-    "file"
-  ],
-  [
-    "src/is/__tests__/empty.js",
-    "file/src/is/__tests__/empty.js.html",
-    "src/is/__tests__/empty.js",
-    "file"
-  ],
-  [
-    "src/is/__tests__/equal.js",
-    "file/src/is/__tests__/equal.js.html",
-    "src/is/__tests__/equal.js",
-    "file"
-  ],
-  [
-    "src/is/__tests__/finite.js",
-    "file/src/is/__tests__/finite.js.html",
-    "src/is/__tests__/finite.js",
-    "file"
-  ],
-  [
-    "src/is/__tests__/function.js",
-    "file/src/is/__tests__/function.js.html",
-    "src/is/__tests__/function.js",
-    "file"
-  ],
-  [
-    "src/is/__tests__/nil.js",
-    "file/src/is/__tests__/nil.js.html",
-    "src/is/__tests__/nil.js",
-    "file"
-  ],
-  [
-    "src/is/__tests__/not.js",
-    "file/src/is/__tests__/not.js.html",
-    "src/is/__tests__/not.js",
-    "file"
-  ],
-  [
-    "src/is/__tests__/number.js",
-    "file/src/is/__tests__/number.js.html",
-    "src/is/__tests__/number.js",
-    "file"
-  ],
-  [
-    "src/is/__tests__/object.js",
-    "file/src/is/__tests__/object.js.html",
-    "src/is/__tests__/object.js",
-    "file"
-  ],
-  [
-    "src/is/__tests__/plainobject.js",
-    "file/src/is/__tests__/plainObject.js.html",
-    "src/is/__tests__/plainObject.js",
-    "file"
-  ],
-  [
-    "src/is/__tests__/promise.js",
-    "file/src/is/__tests__/promise.js.html",
-    "src/is/__tests__/promise.js",
-    "file"
-  ],
-  [
-    "src/is/__tests__/reactelement.js",
-    "file/src/is/__tests__/reactElement.js.html",
-    "src/is/__tests__/reactElement.js",
-    "file"
-  ],
-  [
-    "src/is/__tests__/string.js",
-    "file/src/is/__tests__/string.js.html",
-    "src/is/__tests__/string.js",
-    "file"
-  ],
-  [
-    "src/is/__tests__/undefined.js",
-    "file/src/is/__tests__/undefined.js.html",
-    "src/is/__tests__/undefined.js",
-    "file"
-  ],
-  [
-    "src/is/array.js",
-    "file/src/is/array.js.html",
-    "src/is/array.js",
-    "file"
-  ],
-  [
-    "src/is/arraylike.js",
-    "file/src/is/arrayLike.js.html",
-    "src/is/arrayLike.js",
-    "file"
-  ],
-  [
-    "src/is/boolean.js",
-    "file/src/is/boolean.js.html",
-    "src/is/boolean.js",
-    "file"
-  ],
-  [
-    "src/is/contains.js",
-    "file/src/is/contains.js.html",
-    "src/is/contains.js",
-    "file"
-  ],
-  [
-    "src/is/element.js",
-    "file/src/is/element.js.html",
-    "src/is/element.js",
-    "file"
-  ],
-  [
-    "src/is/empty.js",
-    "file/src/is/empty.js.html",
-    "src/is/empty.js",
-    "file"
-  ],
-  [
-    "src/is/equal.js",
-    "file/src/is/equal.js.html",
-    "src/is/equal.js",
-    "file"
-  ],
-  [
-    "src/is/finite.js",
-    "file/src/is/finite.js.html",
-    "src/is/finite.js",
-    "file"
-  ],
-  [
-    "src/is/function.js",
-    "file/src/is/function.js.html",
-    "src/is/function.js",
-    "file"
-  ],
-  [
-    "src/is/nil.js",
-    "file/src/is/nil.js.html",
-    "src/is/nil.js",
-    "file"
-  ],
-  [
-    "src/is/not.js",
-    "file/src/is/not.js.html",
-    "src/is/not.js",
-    "file"
-  ],
-  [
-    "src/is/number.js",
-    "file/src/is/number.js.html",
-    "src/is/number.js",
-    "file"
-  ],
-  [
-    "src/is/object.js",
-    "file/src/is/object.js.html",
-    "src/is/object.js",
-    "file"
-  ],
-  [
-    "src/is/plainobject.js",
-    "file/src/is/plainObject.js.html",
-    "src/is/plainObject.js",
-    "file"
-  ],
-  [
-    "src/is/promise.js",
-    "file/src/is/promise.js.html",
-    "src/is/promise.js",
-    "file"
-  ],
-  [
-    "src/is/reactelement.js",
-    "file/src/is/reactElement.js.html",
-    "src/is/reactElement.js",
-    "file"
-  ],
-  [
-    "src/is/string.js",
-    "file/src/is/string.js.html",
-    "src/is/string.js",
-    "file"
-  ],
-  [
-    "src/is/undefined.js",
-    "file/src/is/undefined.js.html",
-    "src/is/undefined.js",
-    "file"
-  ],
-  [
-    "src/istrue.js",
-    "file/src/isTrue.js.html",
-    "src/isTrue.js",
-    "file"
-  ],
-  [
-    "src/negate.js",
-    "file/src/negate.js.html",
-    "src/negate.js",
-    "file"
-  ],
-  [
-    "src/not.js",
-    "file/src/not.js.html",
-    "src/not.js",
-    "file"
-  ],
-  [
-    "src/object/__benchmarks__/path.js",
-    "file/src/object/__benchmarks__/path.js.html",
-    "src/object/__benchmarks__/path.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/all.js",
-    "file/src/object/__tests__/all.js.html",
-    "src/object/__tests__/all.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/any.js",
-    "file/src/object/__tests__/any.js.html",
-    "src/object/__tests__/any.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/assoc.js",
-    "file/src/object/__tests__/assoc.js.html",
-    "src/object/__tests__/assoc.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/each.js",
-    "file/src/object/__tests__/each.js.html",
-    "src/object/__tests__/each.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/eqprops.js",
-    "file/src/object/__tests__/eqProps.js.html",
-    "src/object/__tests__/eqProps.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/filter.js",
-    "file/src/object/__tests__/filter.js.html",
-    "src/object/__tests__/filter.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/findkey.js",
-    "file/src/object/__tests__/findKey.js.html",
-    "src/object/__tests__/findKey.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/frompairs.js",
-    "file/src/object/__tests__/fromPairs.js.html",
-    "src/object/__tests__/fromPairs.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/groupby.js",
-    "file/src/object/__tests__/groupBy.js.html",
-    "src/object/__tests__/groupBy.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/has.js",
-    "file/src/object/__tests__/has.js.html",
-    "src/object/__tests__/has.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/keyby.js",
-    "file/src/object/__tests__/keyBy.js.html",
-    "src/object/__tests__/keyBy.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/keys.js",
-    "file/src/object/__tests__/keys.js.html",
-    "src/object/__tests__/keys.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/map.js",
-    "file/src/object/__tests__/map.js.html",
-    "src/object/__tests__/map.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/merge.js",
-    "file/src/object/__tests__/merge.js.html",
-    "src/object/__tests__/merge.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/mergedeep.js",
-    "file/src/object/__tests__/mergeDeep.js.html",
-    "src/object/__tests__/mergeDeep.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/mergewith.js",
-    "file/src/object/__tests__/mergeWith.js.html",
-    "src/object/__tests__/mergeWith.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/objof.js",
-    "file/src/object/__tests__/objOf.js.html",
-    "src/object/__tests__/objOf.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/omit.js",
-    "file/src/object/__tests__/omit.js.html",
-    "src/object/__tests__/omit.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/path.js",
-    "file/src/object/__tests__/path.js.html",
-    "src/object/__tests__/path.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/pathapply.js",
-    "file/src/object/__tests__/pathApply.js.html",
-    "src/object/__tests__/pathApply.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/patheq.js",
-    "file/src/object/__tests__/pathEq.js.html",
-    "src/object/__tests__/pathEq.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/pathor.js",
-    "file/src/object/__tests__/pathOr.js.html",
-    "src/object/__tests__/pathOr.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/pathset.js",
-    "file/src/object/__tests__/pathSet.js.html",
-    "src/object/__tests__/pathSet.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/pick.js",
-    "file/src/object/__tests__/pick.js.html",
-    "src/object/__tests__/pick.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/pickby.js",
-    "file/src/object/__tests__/pickBy.js.html",
-    "src/object/__tests__/pickBy.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/prop.js",
-    "file/src/object/__tests__/prop.js.html",
-    "src/object/__tests__/prop.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/propapply.js",
-    "file/src/object/__tests__/propApply.js.html",
-    "src/object/__tests__/propApply.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/propeq.js",
-    "file/src/object/__tests__/propEq.js.html",
-    "src/object/__tests__/propEq.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/propor.js",
-    "file/src/object/__tests__/propOr.js.html",
-    "src/object/__tests__/propOr.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/reduce.js",
-    "file/src/object/__tests__/reduce.js.html",
-    "src/object/__tests__/reduce.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/size.js",
-    "file/src/object/__tests__/size.js.html",
-    "src/object/__tests__/size.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/topairs.js",
-    "file/src/object/__tests__/toPairs.js.html",
-    "src/object/__tests__/toPairs.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/values.js",
-    "file/src/object/__tests__/values.js.html",
-    "src/object/__tests__/values.js",
-    "file"
-  ],
-  [
-    "src/object/__tests__/where.js",
-    "file/src/object/__tests__/where.js.html",
-    "src/object/__tests__/where.js",
-    "file"
-  ],
-  [
-    "src/object/all.js",
-    "file/src/object/all.js.html",
-    "src/object/all.js",
-    "file"
-  ],
-  [
-    "src/object/any.js",
-    "file/src/object/any.js.html",
-    "src/object/any.js",
-    "file"
-  ],
-  [
-    "src/object/assoc.js",
-    "file/src/object/assoc.js.html",
-    "src/object/assoc.js",
-    "file"
-  ],
-  [
-    "src/object/each.js",
-    "file/src/object/each.js.html",
-    "src/object/each.js",
-    "file"
-  ],
-  [
-    "src/object/eqprops.js",
-    "file/src/object/eqProps.js.html",
-    "src/object/eqProps.js",
-    "file"
-  ],
-  [
-    "src/object/filter.js",
-    "file/src/object/filter.js.html",
-    "src/object/filter.js",
-    "file"
-  ],
-  [
-    "src/object/findkey.js",
-    "file/src/object/findKey.js.html",
-    "src/object/findKey.js",
-    "file"
-  ],
-  [
-    "src/object/frompairs.js",
-    "file/src/object/fromPairs.js.html",
-    "src/object/fromPairs.js",
-    "file"
-  ],
-  [
-    "src/object/groupby.js",
-    "file/src/object/groupBy.js.html",
-    "src/object/groupBy.js",
-    "file"
-  ],
-  [
-    "src/object/has.js",
-    "file/src/object/has.js.html",
-    "src/object/has.js",
-    "file"
-  ],
-  [
-    "src/object/keyby.js",
-    "file/src/object/keyBy.js.html",
-    "src/object/keyBy.js",
-    "file"
-  ],
-  [
-    "src/object/keys.js",
-    "file/src/object/keys.js.html",
-    "src/object/keys.js",
-    "file"
-  ],
-  [
-    "src/object/map.js",
-    "file/src/object/map.js.html",
-    "src/object/map.js",
-    "file"
-  ],
-  [
-    "src/object/merge.js",
-    "file/src/object/merge.js.html",
-    "src/object/merge.js",
-    "file"
-  ],
-  [
-    "src/object/mergedeep.js",
-    "file/src/object/mergeDeep.js.html",
-    "src/object/mergeDeep.js",
-    "file"
-  ],
-  [
-    "src/object/mergewith.js",
-    "file/src/object/mergeWith.js.html",
-    "src/object/mergeWith.js",
-    "file"
-  ],
-  [
-    "src/object/objof.js",
-    "file/src/object/objOf.js.html",
-    "src/object/objOf.js",
-    "file"
-  ],
-  [
-    "src/object/omit.js",
-    "file/src/object/omit.js.html",
-    "src/object/omit.js",
-    "file"
-  ],
-  [
-    "src/object/path.js",
-    "file/src/object/path.js.html",
-    "src/object/path.js",
-    "file"
-  ],
-  [
-    "src/object/pathapply.js",
-    "file/src/object/pathApply.js.html",
-    "src/object/pathApply.js",
-    "file"
-  ],
-  [
-    "src/object/patheq.js",
-    "file/src/object/pathEq.js.html",
-    "src/object/pathEq.js",
-    "file"
-  ],
-  [
-    "src/object/pathor.js",
-    "file/src/object/pathOr.js.html",
-    "src/object/pathOr.js",
-    "file"
-  ],
-  [
-    "src/object/pathset.js",
-    "file/src/object/pathSet.js.html",
-    "src/object/pathSet.js",
-    "file"
-  ],
-  [
-    "src/object/pick.js",
-    "file/src/object/pick.js.html",
-    "src/object/pick.js",
-    "file"
-  ],
-  [
-    "src/object/pickby.js",
-    "file/src/object/pickBy.js.html",
-    "src/object/pickBy.js",
-    "file"
-  ],
-  [
-    "src/object/prop.js",
-    "file/src/object/prop.js.html",
-    "src/object/prop.js",
-    "file"
-  ],
-  [
-    "src/object/propapply.js",
-    "file/src/object/propApply.js.html",
-    "src/object/propApply.js",
-    "file"
-  ],
-  [
-    "src/object/propeq.js",
-    "file/src/object/propEq.js.html",
-    "src/object/propEq.js",
-    "file"
-  ],
-  [
-    "src/object/propor.js",
-    "file/src/object/propOr.js.html",
-    "src/object/propOr.js",
-    "file"
-  ],
-  [
-    "src/object/reduce.js",
-    "file/src/object/reduce.js.html",
-    "src/object/reduce.js",
-    "file"
-  ],
-  [
-    "src/object/size.js",
-    "file/src/object/size.js.html",
-    "src/object/size.js",
-    "file"
-  ],
-  [
-    "src/object/topairs.js",
-    "file/src/object/toPairs.js.html",
-    "src/object/toPairs.js",
-    "file"
-  ],
-  [
-    "src/object/values.js",
-    "file/src/object/values.js.html",
-    "src/object/values.js",
-    "file"
-  ],
-  [
-    "src/object/where.js",
-    "file/src/object/where.js.html",
-    "src/object/where.js",
-    "file"
-  ],
-  [
-    "src/promise/__tests__/rejectwith.js",
-    "file/src/promise/__tests__/rejectWith.js.html",
-    "src/promise/__tests__/rejectWith.js",
-    "file"
-  ],
-  [
-    "src/promise/__tests__/resolvewith.js",
-    "file/src/promise/__tests__/resolveWith.js.html",
-    "src/promise/__tests__/resolveWith.js",
-    "file"
-  ],
-  [
-    "src/promise/__tests__/tap.js",
-    "file/src/promise/__tests__/tap.js.html",
-    "src/promise/__tests__/tap.js",
-    "file"
-  ],
-  [
-    "src/promise/promisetap.js",
-    "file/src/promise/promiseTap.js.html",
-    "src/promise/promiseTap.js",
-    "file"
-  ],
-  [
-    "src/promise/rejectwith.js",
-    "file/src/promise/rejectWith.js.html",
-    "src/promise/rejectWith.js",
-    "file"
-  ],
-  [
-    "src/promise/resolvewith.js",
-    "file/src/promise/resolveWith.js.html",
-    "src/promise/resolveWith.js",
-    "file"
-  ],
-  [
-    "src/promise/tap.js",
-    "file/src/promise/tap.js.html",
-    "src/promise/tap.js",
-    "file"
-  ],
-  [
-    "src/sanitize.js",
-    "file/src/sanitize.js.html",
-    "src/sanitize.js",
-    "file"
-  ],
-  [
-    "src/string/__benchmarks__/trim.js",
-    "file/src/string/__benchmarks__/trim.js.html",
-    "src/string/__benchmarks__/trim.js",
-    "file"
-  ],
-  [
-    "src/string/__tests__/capitalize.js",
-    "file/src/string/__tests__/capitalize.js.html",
-    "src/string/__tests__/capitalize.js",
-    "file"
-  ],
-  [
-    "src/string/__tests__/endswith.js",
-    "file/src/string/__tests__/endsWith.js.html",
-    "src/string/__tests__/endsWith.js",
-    "file"
-  ],
-  [
-    "src/string/__tests__/escape.js",
-    "file/src/string/__tests__/escape.js.html",
-    "src/string/__tests__/escape.js",
-    "file"
-  ],
-  [
-    "src/string/__tests__/escaperegexp.js",
-    "file/src/string/__tests__/escapeRegExp.js.html",
-    "src/string/__tests__/escapeRegExp.js",
-    "file"
-  ],
-  [
-    "src/string/__tests__/repeat.js",
-    "file/src/string/__tests__/repeat.js.html",
-    "src/string/__tests__/repeat.js",
-    "file"
-  ],
-  [
-    "src/string/__tests__/replace.js",
-    "file/src/string/__tests__/replace.js.html",
-    "src/string/__tests__/replace.js",
-    "file"
-  ],
-  [
-    "src/string/__tests__/split.js",
-    "file/src/string/__tests__/split.js.html",
-    "src/string/__tests__/split.js",
-    "file"
-  ],
-  [
-    "src/string/__tests__/startswith.js",
-    "file/src/string/__tests__/startsWith.js.html",
-    "src/string/__tests__/startsWith.js",
-    "file"
-  ],
-  [
-    "src/string/__tests__/template.js",
-    "file/src/string/__tests__/template.js.html",
-    "src/string/__tests__/template.js",
-    "file"
-  ],
-  [
-    "src/string/__tests__/test.js",
-    "file/src/string/__tests__/test.js.html",
-    "src/string/__tests__/test.js",
-    "file"
-  ],
-  [
-    "src/string/__tests__/tolower.js",
-    "file/src/string/__tests__/toLower.js.html",
-    "src/string/__tests__/toLower.js",
-    "file"
-  ],
-  [
-    "src/string/__tests__/tostring.js",
-    "file/src/string/__tests__/toString.js.html",
-    "src/string/__tests__/toString.js",
-    "file"
-  ],
-  [
-    "src/string/__tests__/toupper.js",
-    "file/src/string/__tests__/toUpper.js.html",
-    "src/string/__tests__/toUpper.js",
-    "file"
-  ],
-  [
-    "src/string/__tests__/trim.js",
-    "file/src/string/__tests__/trim.js.html",
-    "src/string/__tests__/trim.js",
-    "file"
-  ],
-  [
-    "src/string/__tests__/trimleft.js",
-    "file/src/string/__tests__/trimLeft.js.html",
-    "src/string/__tests__/trimLeft.js",
-    "file"
-  ],
-  [
-    "src/string/__tests__/unescape.js",
-    "file/src/string/__tests__/unescape.js.html",
-    "src/string/__tests__/unescape.js",
-    "file"
-  ],
-  [
-    "src/string/capitalize.js",
-    "file/src/string/capitalize.js.html",
-    "src/string/capitalize.js",
-    "file"
-  ],
-  [
-    "src/string/endswith.js",
-    "file/src/string/endsWith.js.html",
-    "src/string/endsWith.js",
-    "file"
-  ],
-  [
-    "src/string/escape.js",
-    "file/src/string/escape.js.html",
-    "src/string/escape.js",
-    "file"
-  ],
-  [
-    "src/string/escaperegexp.js",
-    "file/src/string/escapeRegExp.js.html",
-    "src/string/escapeRegExp.js",
-    "file"
-  ],
-  [
-    "src/string/repeat.js",
-    "file/src/string/repeat.js.html",
-    "src/string/repeat.js",
-    "file"
-  ],
-  [
-    "src/string/replace.js",
-    "file/src/string/replace.js.html",
-    "src/string/replace.js",
-    "file"
-  ],
-  [
-    "src/string/split.js",
-    "file/src/string/split.js.html",
-    "src/string/split.js",
-    "file"
-  ],
-  [
-    "src/string/startswith.js",
-    "file/src/string/startsWith.js.html",
-    "src/string/startsWith.js",
-    "file"
-  ],
-  [
-    "src/string/template.js",
-    "file/src/string/template.js.html",
-    "src/string/template.js",
-    "file"
-  ],
-  [
-    "src/string/test.js",
-    "file/src/string/test.js.html",
-    "src/string/test.js",
-    "file"
-  ],
-  [
-    "src/string/tolower.js",
-    "file/src/string/toLower.js.html",
-    "src/string/toLower.js",
-    "file"
-  ],
-  [
-    "src/string/tostring.js",
-    "file/src/string/toString.js.html",
-    "src/string/toString.js",
-    "file"
-  ],
-  [
-    "src/string/toupper.js",
-    "file/src/string/toUpper.js.html",
-    "src/string/toUpper.js",
-    "file"
-  ],
-  [
-    "src/string/trim.js",
-    "file/src/string/trim.js.html",
-    "src/string/trim.js",
-    "file"
-  ],
-  [
-    "src/string/trimleft.js",
-    "file/src/string/trimLeft.js.html",
-    "src/string/trimLeft.js",
-    "file"
-  ],
-  [
-    "src/string/unescape.js",
-    "file/src/string/unescape.js.html",
-    "src/string/unescape.js",
-    "file"
-  ],
-  [
-    "src/type.js",
-    "file/src/type.js.html",
-    "src/type.js",
-    "file"
-  ],
-  [
-    "src/uniqueid.js",
-    "file/src/uniqueId.js.html",
-    "src/uniqueId.js",
-    "file"
+    "",
+    "test-file/utils.js/src/function/memoize/__tests__/weak.js.html#lineNumber37",
+    "src/memoize/weak with the same object argument with functions with the same function",
+    "test"
   ],
   [
     "",
@@ -3336,6 +1308,1302 @@ window.esdocSearchIndex = [
     "test"
   ],
   [
+    "ts_temp/.external-ecmascript.js~array",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "ts_temp/.external-ecmascript.js~Array",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~arraybuffer",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "ts_temp/.external-ecmascript.js~ArrayBuffer",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~boolean",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "ts_temp/.external-ecmascript.js~Boolean",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~dataview",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "ts_temp/.external-ecmascript.js~DataView",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~date",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "ts_temp/.external-ecmascript.js~Date",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~error",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "ts_temp/.external-ecmascript.js~Error",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~evalerror",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "ts_temp/.external-ecmascript.js~EvalError",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~float32array",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "ts_temp/.external-ecmascript.js~Float32Array",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~float64array",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "ts_temp/.external-ecmascript.js~Float64Array",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~function",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "ts_temp/.external-ecmascript.js~Function",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~generator",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "ts_temp/.external-ecmascript.js~Generator",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~generatorfunction",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "ts_temp/.external-ecmascript.js~GeneratorFunction",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~infinity",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "ts_temp/.external-ecmascript.js~Infinity",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~int16array",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "ts_temp/.external-ecmascript.js~Int16Array",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~int32array",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "ts_temp/.external-ecmascript.js~Int32Array",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~int8array",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "ts_temp/.external-ecmascript.js~Int8Array",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~internalerror",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "ts_temp/.external-ecmascript.js~InternalError",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~json",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "ts_temp/.external-ecmascript.js~JSON",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~map",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "ts_temp/.external-ecmascript.js~Map",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~nan",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "ts_temp/.external-ecmascript.js~NaN",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~number",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "ts_temp/.external-ecmascript.js~Number",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~object",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "ts_temp/.external-ecmascript.js~Object",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~promise",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "ts_temp/.external-ecmascript.js~Promise",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~proxy",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "ts_temp/.external-ecmascript.js~Proxy",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~rangeerror",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "ts_temp/.external-ecmascript.js~RangeError",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~referenceerror",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "ts_temp/.external-ecmascript.js~ReferenceError",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~reflect",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "ts_temp/.external-ecmascript.js~Reflect",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~regexp",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "ts_temp/.external-ecmascript.js~RegExp",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~set",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "ts_temp/.external-ecmascript.js~Set",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~string",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "ts_temp/.external-ecmascript.js~String",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~symbol",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "ts_temp/.external-ecmascript.js~Symbol",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~syntaxerror",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "ts_temp/.external-ecmascript.js~SyntaxError",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~typeerror",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "ts_temp/.external-ecmascript.js~TypeError",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~urierror",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "ts_temp/.external-ecmascript.js~URIError",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~uint16array",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "ts_temp/.external-ecmascript.js~Uint16Array",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~uint32array",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "ts_temp/.external-ecmascript.js~Uint32Array",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~uint8array",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "ts_temp/.external-ecmascript.js~Uint8Array",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~uint8clampedarray",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "ts_temp/.external-ecmascript.js~Uint8ClampedArray",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~weakmap",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "ts_temp/.external-ecmascript.js~WeakMap",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~weakset",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "ts_temp/.external-ecmascript.js~WeakSet",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~boolean",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "ts_temp/.external-ecmascript.js~boolean",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~function",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "ts_temp/.external-ecmascript.js~function",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~null",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "ts_temp/.external-ecmascript.js~null",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~number",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "ts_temp/.external-ecmascript.js~number",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~object",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "ts_temp/.external-ecmascript.js~object",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~string",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "ts_temp/.external-ecmascript.js~string",
+    "external"
+  ],
+  [
+    "ts_temp/.external-ecmascript.js~undefined",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "ts_temp/.external-ecmascript.js~undefined",
+    "external"
+  ],
+  [
+    "ts_temp/array/adjust.js",
+    "file/ts_temp/array/adjust.js.html",
+    "ts_temp/array/adjust.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/all.js",
+    "file/ts_temp/array/all.js.html",
+    "ts_temp/array/all.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/any.js",
+    "file/ts_temp/array/any.js.html",
+    "ts_temp/array/any.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/append.js",
+    "file/ts_temp/array/append.js.html",
+    "ts_temp/array/append.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/concat.js",
+    "file/ts_temp/array/concat.js.html",
+    "ts_temp/array/concat.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/difference.js",
+    "file/ts_temp/array/difference.js.html",
+    "ts_temp/array/difference.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/drop.js",
+    "file/ts_temp/array/drop.js.html",
+    "ts_temp/array/drop.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/droplast.js",
+    "file/ts_temp/array/dropLast.js.html",
+    "ts_temp/array/dropLast.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/dropwhile.js",
+    "file/ts_temp/array/dropWhile.js.html",
+    "ts_temp/array/dropWhile.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/each.js",
+    "file/ts_temp/array/each.js.html",
+    "ts_temp/array/each.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/filter.js",
+    "file/ts_temp/array/filter.js.html",
+    "ts_temp/array/filter.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/find.js",
+    "file/ts_temp/array/find.js.html",
+    "ts_temp/array/find.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/findindex.js",
+    "file/ts_temp/array/findIndex.js.html",
+    "ts_temp/array/findIndex.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/findlast.js",
+    "file/ts_temp/array/findLast.js.html",
+    "ts_temp/array/findLast.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/flatten.js",
+    "file/ts_temp/array/flatten.js.html",
+    "ts_temp/array/flatten.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/head.js",
+    "file/ts_temp/array/head.js.html",
+    "ts_temp/array/head.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/includes.js",
+    "file/ts_temp/array/includes.js.html",
+    "ts_temp/array/includes.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/indexby.js",
+    "file/ts_temp/array/indexBy.js.html",
+    "ts_temp/array/indexBy.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/indexof.js",
+    "file/ts_temp/array/indexOf.js.html",
+    "ts_temp/array/indexOf.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/init.js",
+    "file/ts_temp/array/init.js.html",
+    "ts_temp/array/init.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/intersection.js",
+    "file/ts_temp/array/intersection.js.html",
+    "ts_temp/array/intersection.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/join.js",
+    "file/ts_temp/array/join.js.html",
+    "ts_temp/array/join.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/last.js",
+    "file/ts_temp/array/last.js.html",
+    "ts_temp/array/last.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/length.js",
+    "file/ts_temp/array/length.js.html",
+    "ts_temp/array/length.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/map.js",
+    "file/ts_temp/array/map.js.html",
+    "ts_temp/array/map.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/maxby.js",
+    "file/ts_temp/array/maxBy.js.html",
+    "ts_temp/array/maxBy.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/nth.js",
+    "file/ts_temp/array/nth.js.html",
+    "ts_temp/array/nth.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/partition.js",
+    "file/ts_temp/array/partition.js.html",
+    "ts_temp/array/partition.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/pluck.js",
+    "file/ts_temp/array/pluck.js.html",
+    "ts_temp/array/pluck.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/range.js",
+    "file/ts_temp/array/range.js.html",
+    "ts_temp/array/range.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/reduce.js",
+    "file/ts_temp/array/reduce.js.html",
+    "ts_temp/array/reduce.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/reducewhile.js",
+    "file/ts_temp/array/reduceWhile.js.html",
+    "ts_temp/array/reduceWhile.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/reject.js",
+    "file/ts_temp/array/reject.js.html",
+    "ts_temp/array/reject.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/remove.js",
+    "file/ts_temp/array/remove.js.html",
+    "ts_temp/array/remove.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/repeat.js",
+    "file/ts_temp/array/repeat.js.html",
+    "ts_temp/array/repeat.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/reverse.js",
+    "file/ts_temp/array/reverse.js.html",
+    "ts_temp/array/reverse.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/shuffle.js",
+    "file/ts_temp/array/shuffle.js.html",
+    "ts_temp/array/shuffle.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/slice.js",
+    "file/ts_temp/array/slice.js.html",
+    "ts_temp/array/slice.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/sort.js",
+    "file/ts_temp/array/sort.js.html",
+    "ts_temp/array/sort.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/sortby.js",
+    "file/ts_temp/array/sortBy.js.html",
+    "ts_temp/array/sortBy.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/splitevery.js",
+    "file/ts_temp/array/splitEvery.js.html",
+    "ts_temp/array/splitEvery.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/stablesortby.js",
+    "file/ts_temp/array/stableSortBy.js.html",
+    "ts_temp/array/stableSortBy.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/sum.js",
+    "file/ts_temp/array/sum.js.html",
+    "ts_temp/array/sum.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/tail.js",
+    "file/ts_temp/array/tail.js.html",
+    "ts_temp/array/tail.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/take.js",
+    "file/ts_temp/array/take.js.html",
+    "ts_temp/array/take.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/takerightwhile.js",
+    "file/ts_temp/array/takeRightWhile.js.html",
+    "ts_temp/array/takeRightWhile.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/toarray.js",
+    "file/ts_temp/array/toArray.js.html",
+    "ts_temp/array/toArray.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/uniq.js",
+    "file/ts_temp/array/uniq.js.html",
+    "ts_temp/array/uniq.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/uniqby.js",
+    "file/ts_temp/array/uniqBy.js.html",
+    "ts_temp/array/uniqBy.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/update.js",
+    "file/ts_temp/array/update.js.html",
+    "ts_temp/array/update.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/without.js",
+    "file/ts_temp/array/without.js.html",
+    "ts_temp/array/without.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/zip.js",
+    "file/ts_temp/array/zip.js.html",
+    "ts_temp/array/zip.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/zipwith.js",
+    "file/ts_temp/array/zipWith.js.html",
+    "ts_temp/array/zipWith.js",
+    "file"
+  ],
+  [
+    "ts_temp/clone.js",
+    "file/ts_temp/clone.js.html",
+    "ts_temp/clone.js",
+    "file"
+  ],
+  [
+    "ts_temp/defaultto.js",
+    "file/ts_temp/defaultTo.js.html",
+    "ts_temp/defaultTo.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/f.js",
+    "file/ts_temp/function/F.js.html",
+    "ts_temp/function/F.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/t.js",
+    "file/ts_temp/function/T.js.html",
+    "ts_temp/function/T.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/allpass.js",
+    "file/ts_temp/function/allPass.js.html",
+    "ts_temp/function/allPass.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/always.js",
+    "file/ts_temp/function/always.js.html",
+    "ts_temp/function/always.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/anypass.js",
+    "file/ts_temp/function/anyPass.js.html",
+    "ts_temp/function/anyPass.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/applyorreturn.js",
+    "file/ts_temp/function/applyOrReturn.js.html",
+    "ts_temp/function/applyOrReturn.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/both.js",
+    "file/ts_temp/function/both.js.html",
+    "ts_temp/function/both.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/comparator.js",
+    "file/ts_temp/function/comparator.js.html",
+    "ts_temp/function/comparator.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/complement.js",
+    "file/ts_temp/function/complement.js.html",
+    "ts_temp/function/complement.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/compose.js",
+    "file/ts_temp/function/compose.js.html",
+    "ts_temp/function/compose.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/composep.js",
+    "file/ts_temp/function/composeP.js.html",
+    "ts_temp/function/composeP.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/cond.js",
+    "file/ts_temp/function/cond.js.html",
+    "ts_temp/function/cond.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/curry.js",
+    "file/ts_temp/function/curry.js.html",
+    "ts_temp/function/curry.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/curryn.js",
+    "file/ts_temp/function/curryN.js.html",
+    "ts_temp/function/curryN.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/debounce.js",
+    "file/ts_temp/function/debounce.js.html",
+    "ts_temp/function/debounce.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/either.js",
+    "file/ts_temp/function/either.js.html",
+    "ts_temp/function/either.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/flip.js",
+    "file/ts_temp/function/flip.js.html",
+    "ts_temp/function/flip.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/identity.js",
+    "file/ts_temp/function/identity.js.html",
+    "ts_temp/function/identity.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/ifelse.js",
+    "file/ts_temp/function/ifElse.js.html",
+    "ts_temp/function/ifElse.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/memoize/__tests__/createcache.js",
+    "file/ts_temp/function/memoize/__tests__/createCache.js.html",
+    "ts_temp/function/memoize/__tests__/createCache.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/memoize/createcache.js",
+    "file/ts_temp/function/memoize/createCache.js.html",
+    "ts_temp/function/memoize/createCache.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/memoize/deep.js",
+    "file/ts_temp/function/memoize/deep.js.html",
+    "ts_temp/function/memoize/deep.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/memoize/deepsizelimit.js",
+    "file/ts_temp/function/memoize/deepSizeLimit.js.html",
+    "ts_temp/function/memoize/deepSizeLimit.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/memoize/one.js",
+    "file/ts_temp/function/memoize/one.js.html",
+    "ts_temp/function/memoize/one.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/memoize/strictsingle.js",
+    "file/ts_temp/function/memoize/strictSingle.js.html",
+    "ts_temp/function/memoize/strictSingle.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/memoize/weak.js",
+    "file/ts_temp/function/memoize/weak.js.html",
+    "ts_temp/function/memoize/weak.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/memoize/with.js",
+    "file/ts_temp/function/memoize/with.js.html",
+    "ts_temp/function/memoize/with.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/noop.js",
+    "file/ts_temp/function/noop.js.html",
+    "ts_temp/function/noop.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/nothing.js",
+    "file/ts_temp/function/nothing.js.html",
+    "ts_temp/function/nothing.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/once.js",
+    "file/ts_temp/function/once.js.html",
+    "ts_temp/function/once.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/optional.js",
+    "file/ts_temp/function/optional.js.html",
+    "ts_temp/function/optional.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/tap.js",
+    "file/ts_temp/function/tap.js.html",
+    "ts_temp/function/tap.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/throttle.js",
+    "file/ts_temp/function/throttle.js.html",
+    "ts_temp/function/throttle.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/throttleend.js",
+    "file/ts_temp/function/throttleEnd.js.html",
+    "ts_temp/function/throttleEnd.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/trycatch.js",
+    "file/ts_temp/function/tryCatch.js.html",
+    "ts_temp/function/tryCatch.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/updatepropertyvalue.js",
+    "file/ts_temp/function/updatePropertyValue.js.html",
+    "ts_temp/function/updatePropertyValue.js",
+    "file"
+  ],
+  [
+    "ts_temp/function/when.js",
+    "file/ts_temp/function/when.js.html",
+    "ts_temp/function/when.js",
+    "file"
+  ],
+  [
+    "ts_temp/is/__tests__/shallowequal.js",
+    "file/ts_temp/is/__tests__/shallowEqual.js.html",
+    "ts_temp/is/__tests__/shallowEqual.js",
+    "file"
+  ],
+  [
+    "ts_temp/is/array.js",
+    "file/ts_temp/is/array.js.html",
+    "ts_temp/is/array.js",
+    "file"
+  ],
+  [
+    "ts_temp/is/arraylike.js",
+    "file/ts_temp/is/arrayLike.js.html",
+    "ts_temp/is/arrayLike.js",
+    "file"
+  ],
+  [
+    "ts_temp/is/boolean.js",
+    "file/ts_temp/is/boolean.js.html",
+    "ts_temp/is/boolean.js",
+    "file"
+  ],
+  [
+    "ts_temp/is/element.js",
+    "file/ts_temp/is/element.js.html",
+    "ts_temp/is/element.js",
+    "file"
+  ],
+  [
+    "ts_temp/is/empty.js",
+    "file/ts_temp/is/empty.js.html",
+    "ts_temp/is/empty.js",
+    "file"
+  ],
+  [
+    "ts_temp/is/equal.js",
+    "file/ts_temp/is/equal.js.html",
+    "ts_temp/is/equal.js",
+    "file"
+  ],
+  [
+    "ts_temp/is/finite.js",
+    "file/ts_temp/is/finite.js.html",
+    "ts_temp/is/finite.js",
+    "file"
+  ],
+  [
+    "ts_temp/is/function.js",
+    "file/ts_temp/is/function.js.html",
+    "ts_temp/is/function.js",
+    "file"
+  ],
+  [
+    "ts_temp/is/nil.js",
+    "file/ts_temp/is/nil.js.html",
+    "ts_temp/is/nil.js",
+    "file"
+  ],
+  [
+    "ts_temp/is/number.js",
+    "file/ts_temp/is/number.js.html",
+    "ts_temp/is/number.js",
+    "file"
+  ],
+  [
+    "ts_temp/is/object.js",
+    "file/ts_temp/is/object.js.html",
+    "ts_temp/is/object.js",
+    "file"
+  ],
+  [
+    "ts_temp/is/plainobject.js",
+    "file/ts_temp/is/plainObject.js.html",
+    "ts_temp/is/plainObject.js",
+    "file"
+  ],
+  [
+    "ts_temp/is/promise.js",
+    "file/ts_temp/is/promise.js.html",
+    "ts_temp/is/promise.js",
+    "file"
+  ],
+  [
+    "ts_temp/is/reactelement.js",
+    "file/ts_temp/is/reactElement.js.html",
+    "ts_temp/is/reactElement.js",
+    "file"
+  ],
+  [
+    "ts_temp/is/shallowequal.js",
+    "file/ts_temp/is/shallowEqual.js.html",
+    "ts_temp/is/shallowEqual.js",
+    "file"
+  ],
+  [
+    "ts_temp/is/string.js",
+    "file/ts_temp/is/string.js.html",
+    "ts_temp/is/string.js",
+    "file"
+  ],
+  [
+    "ts_temp/is/undefined.js",
+    "file/ts_temp/is/undefined.js.html",
+    "ts_temp/is/undefined.js",
+    "file"
+  ],
+  [
+    "ts_temp/istrue.js",
+    "file/ts_temp/isTrue.js.html",
+    "ts_temp/isTrue.js",
+    "file"
+  ],
+  [
+    "ts_temp/negate.js",
+    "file/ts_temp/negate.js.html",
+    "ts_temp/negate.js",
+    "file"
+  ],
+  [
+    "ts_temp/not.js",
+    "file/ts_temp/not.js.html",
+    "ts_temp/not.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/all.js",
+    "file/ts_temp/object/all.js.html",
+    "ts_temp/object/all.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/any.js",
+    "file/ts_temp/object/any.js.html",
+    "ts_temp/object/any.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/assoc.js",
+    "file/ts_temp/object/assoc.js.html",
+    "ts_temp/object/assoc.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/each.js",
+    "file/ts_temp/object/each.js.html",
+    "ts_temp/object/each.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/eqprops.js",
+    "file/ts_temp/object/eqProps.js.html",
+    "ts_temp/object/eqProps.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/filter.js",
+    "file/ts_temp/object/filter.js.html",
+    "ts_temp/object/filter.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/findkey.js",
+    "file/ts_temp/object/findKey.js.html",
+    "ts_temp/object/findKey.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/frompairs.js",
+    "file/ts_temp/object/fromPairs.js.html",
+    "ts_temp/object/fromPairs.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/groupby.js",
+    "file/ts_temp/object/groupBy.js.html",
+    "ts_temp/object/groupBy.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/has.js",
+    "file/ts_temp/object/has.js.html",
+    "ts_temp/object/has.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/keyby.js",
+    "file/ts_temp/object/keyBy.js.html",
+    "ts_temp/object/keyBy.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/keys.js",
+    "file/ts_temp/object/keys.js.html",
+    "ts_temp/object/keys.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/map.js",
+    "file/ts_temp/object/map.js.html",
+    "ts_temp/object/map.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/merge.js",
+    "file/ts_temp/object/merge.js.html",
+    "ts_temp/object/merge.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/mergedeep.js",
+    "file/ts_temp/object/mergeDeep.js.html",
+    "ts_temp/object/mergeDeep.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/mergewith.js",
+    "file/ts_temp/object/mergeWith.js.html",
+    "ts_temp/object/mergeWith.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/objof.js",
+    "file/ts_temp/object/objOf.js.html",
+    "ts_temp/object/objOf.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/omit.js",
+    "file/ts_temp/object/omit.js.html",
+    "ts_temp/object/omit.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/path.js",
+    "file/ts_temp/object/path.js.html",
+    "ts_temp/object/path.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/pathapply.js",
+    "file/ts_temp/object/pathApply.js.html",
+    "ts_temp/object/pathApply.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/patheq.js",
+    "file/ts_temp/object/pathEq.js.html",
+    "ts_temp/object/pathEq.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/pathor.js",
+    "file/ts_temp/object/pathOr.js.html",
+    "ts_temp/object/pathOr.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/pathset.js",
+    "file/ts_temp/object/pathSet.js.html",
+    "ts_temp/object/pathSet.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/pick.js",
+    "file/ts_temp/object/pick.js.html",
+    "ts_temp/object/pick.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/pickby.js",
+    "file/ts_temp/object/pickBy.js.html",
+    "ts_temp/object/pickBy.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/prop.js",
+    "file/ts_temp/object/prop.js.html",
+    "ts_temp/object/prop.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/propapply.js",
+    "file/ts_temp/object/propApply.js.html",
+    "ts_temp/object/propApply.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/propeq.js",
+    "file/ts_temp/object/propEq.js.html",
+    "ts_temp/object/propEq.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/propor.js",
+    "file/ts_temp/object/propOr.js.html",
+    "ts_temp/object/propOr.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/reduce.js",
+    "file/ts_temp/object/reduce.js.html",
+    "ts_temp/object/reduce.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/size.js",
+    "file/ts_temp/object/size.js.html",
+    "ts_temp/object/size.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/topairs.js",
+    "file/ts_temp/object/toPairs.js.html",
+    "ts_temp/object/toPairs.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/values.js",
+    "file/ts_temp/object/values.js.html",
+    "ts_temp/object/values.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/where.js",
+    "file/ts_temp/object/where.js.html",
+    "ts_temp/object/where.js",
+    "file"
+  ],
+  [
+    "ts_temp/promise/rejectwith.js",
+    "file/ts_temp/promise/rejectWith.js.html",
+    "ts_temp/promise/rejectWith.js",
+    "file"
+  ],
+  [
+    "ts_temp/promise/resolvewith.js",
+    "file/ts_temp/promise/resolveWith.js.html",
+    "ts_temp/promise/resolveWith.js",
+    "file"
+  ],
+  [
+    "ts_temp/promise/tap.js",
+    "file/ts_temp/promise/tap.js.html",
+    "ts_temp/promise/tap.js",
+    "file"
+  ],
+  [
+    "ts_temp/string/capitalize.js",
+    "file/ts_temp/string/capitalize.js.html",
+    "ts_temp/string/capitalize.js",
+    "file"
+  ],
+  [
+    "ts_temp/string/endswith.js",
+    "file/ts_temp/string/endsWith.js.html",
+    "ts_temp/string/endsWith.js",
+    "file"
+  ],
+  [
+    "ts_temp/string/escape.js",
+    "file/ts_temp/string/escape.js.html",
+    "ts_temp/string/escape.js",
+    "file"
+  ],
+  [
+    "ts_temp/string/escaperegexp.js",
+    "file/ts_temp/string/escapeRegExp.js.html",
+    "ts_temp/string/escapeRegExp.js",
+    "file"
+  ],
+  [
+    "ts_temp/string/repeat.js",
+    "file/ts_temp/string/repeat.js.html",
+    "ts_temp/string/repeat.js",
+    "file"
+  ],
+  [
+    "ts_temp/string/replace.js",
+    "file/ts_temp/string/replace.js.html",
+    "ts_temp/string/replace.js",
+    "file"
+  ],
+  [
+    "ts_temp/string/split.js",
+    "file/ts_temp/string/split.js.html",
+    "ts_temp/string/split.js",
+    "file"
+  ],
+  [
+    "ts_temp/string/startswith.js",
+    "file/ts_temp/string/startsWith.js.html",
+    "ts_temp/string/startsWith.js",
+    "file"
+  ],
+  [
+    "ts_temp/string/template.js",
+    "file/ts_temp/string/template.js.html",
+    "ts_temp/string/template.js",
+    "file"
+  ],
+  [
+    "ts_temp/string/test.js",
+    "file/ts_temp/string/test.js.html",
+    "ts_temp/string/test.js",
+    "file"
+  ],
+  [
+    "ts_temp/string/tolower.js",
+    "file/ts_temp/string/toLower.js.html",
+    "ts_temp/string/toLower.js",
+    "file"
+  ],
+  [
+    "ts_temp/string/tostring.js",
+    "file/ts_temp/string/toString.js.html",
+    "ts_temp/string/toString.js",
+    "file"
+  ],
+  [
+    "ts_temp/string/toupper.js",
+    "file/ts_temp/string/toUpper.js.html",
+    "ts_temp/string/toUpper.js",
+    "file"
+  ],
+  [
+    "ts_temp/string/trim.js",
+    "file/ts_temp/string/trim.js.html",
+    "ts_temp/string/trim.js",
+    "file"
+  ],
+  [
+    "ts_temp/string/trimleft.js",
+    "file/ts_temp/string/trimLeft.js.html",
+    "ts_temp/string/trimLeft.js",
+    "file"
+  ],
+  [
+    "ts_temp/string/unescape.js",
+    "file/ts_temp/string/unescape.js.html",
+    "ts_temp/string/unescape.js",
+    "file"
+  ],
+  [
+    "ts_temp/type.js",
+    "file/ts_temp/type.js.html",
+    "ts_temp/type.js",
+    "file"
+  ],
+  [
+    "ts_temp/typings/types.js",
+    "file/ts_temp/typings/types.js.html",
+    "ts_temp/typings/types.js",
+    "file"
+  ],
+  [
+    "ts_temp/uniqueid.js",
+    "file/ts_temp/uniqueId.js.html",
+    "ts_temp/uniqueId.js",
+    "file"
+  ],
+  [
     "utils.js/src/__tests__/clone.js",
     "test-file/utils.js/src/__tests__/clone.js.html",
     "utils.js/src/__tests__/clone.js",
@@ -3363,12 +2631,6 @@ window.esdocSearchIndex = [
     "utils.js/src/__tests__/not.js",
     "test-file/utils.js/src/__tests__/not.js.html",
     "utils.js/src/__tests__/not.js",
-    "testFile"
-  ],
-  [
-    "utils.js/src/__tests__/sanitize.js",
-    "test-file/utils.js/src/__tests__/sanitize.js.html",
-    "utils.js/src/__tests__/sanitize.js",
     "testFile"
   ],
   [
@@ -3876,6 +3138,42 @@ window.esdocSearchIndex = [
     "testFile"
   ],
   [
+    "utils.js/src/function/memoize/__tests__/deep.js",
+    "test-file/utils.js/src/function/memoize/__tests__/deep.js.html",
+    "utils.js/src/function/memoize/__tests__/deep.js",
+    "testFile"
+  ],
+  [
+    "utils.js/src/function/memoize/__tests__/deepsizelimit.js",
+    "test-file/utils.js/src/function/memoize/__tests__/deepSizeLimit.js.html",
+    "utils.js/src/function/memoize/__tests__/deepSizeLimit.js",
+    "testFile"
+  ],
+  [
+    "utils.js/src/function/memoize/__tests__/one.js",
+    "test-file/utils.js/src/function/memoize/__tests__/one.js.html",
+    "utils.js/src/function/memoize/__tests__/one.js",
+    "testFile"
+  ],
+  [
+    "utils.js/src/function/memoize/__tests__/strictsingle.js",
+    "test-file/utils.js/src/function/memoize/__tests__/strictSingle.js.html",
+    "utils.js/src/function/memoize/__tests__/strictSingle.js",
+    "testFile"
+  ],
+  [
+    "utils.js/src/function/memoize/__tests__/weak.js",
+    "test-file/utils.js/src/function/memoize/__tests__/weak.js.html",
+    "utils.js/src/function/memoize/__tests__/weak.js",
+    "testFile"
+  ],
+  [
+    "utils.js/src/function/memoize/__tests__/with.js",
+    "test-file/utils.js/src/function/memoize/__tests__/with.js.html",
+    "utils.js/src/function/memoize/__tests__/with.js",
+    "testFile"
+  ],
+  [
     "utils.js/src/is/__tests__/array.js",
     "test-file/utils.js/src/is/__tests__/array.js.html",
     "utils.js/src/is/__tests__/array.js",
@@ -3891,12 +3189,6 @@ window.esdocSearchIndex = [
     "utils.js/src/is/__tests__/boolean.js",
     "test-file/utils.js/src/is/__tests__/boolean.js.html",
     "utils.js/src/is/__tests__/boolean.js",
-    "testFile"
-  ],
-  [
-    "utils.js/src/is/__tests__/contains.js",
-    "test-file/utils.js/src/is/__tests__/contains.js.html",
-    "utils.js/src/is/__tests__/contains.js",
     "testFile"
   ],
   [
@@ -3933,12 +3225,6 @@ window.esdocSearchIndex = [
     "utils.js/src/is/__tests__/nil.js",
     "test-file/utils.js/src/is/__tests__/nil.js.html",
     "utils.js/src/is/__tests__/nil.js",
-    "testFile"
-  ],
-  [
-    "utils.js/src/is/__tests__/not.js",
-    "test-file/utils.js/src/is/__tests__/not.js.html",
-    "utils.js/src/is/__tests__/not.js",
     "testFile"
   ],
   [
@@ -4302,14 +3588,26 @@ window.esdocSearchIndex = [
     "testFile"
   ],
   [
+    "utils.js/ts_temp/function/memoize/__tests__/createcache.js",
+    "test-file/utils.js/ts_temp/function/memoize/__tests__/createCache.js.html",
+    "utils.js/ts_temp/function/memoize/__tests__/createCache.js",
+    "testFile"
+  ],
+  [
+    "utils.js/ts_temp/is/__tests__/shallowequal.js",
+    "test-file/utils.js/ts_temp/is/__tests__/shallowEqual.js.html",
+    "utils.js/ts_temp/is/__tests__/shallowEqual.js",
+    "testFile"
+  ],
+  [
     "",
-    "test-file/utils.js/src/array/__tests__/update.js.html#lineNumber3",
+    "test-file/utils.js/src/array/__tests__/adjust.js.html#lineNumber3",
     "utils/array/adjust",
     "test"
   ],
   [
     "",
-    "test-file/utils.js/src/array/__tests__/adjust.js.html#lineNumber3",
+    "test-file/utils.js/src/array/__tests__/update.js.html#lineNumber3",
     "utils/array/adjust",
     "test"
   ],
@@ -4345,25 +3643,25 @@ window.esdocSearchIndex = [
   ],
   [
     "",
-    "test-file/utils.js/src/array/__tests__/update.js.html#lineNumber11",
-    "utils/array/adjust offsets negative indexes from the end of the array",
-    "test"
-  ],
-  [
-    "",
     "test-file/utils.js/src/array/__tests__/adjust.js.html#lineNumber11",
     "utils/array/adjust offsets negative indexes from the end of the array",
     "test"
   ],
   [
     "",
-    "test-file/utils.js/src/array/__tests__/update.js.html#lineNumber15",
-    "utils/array/adjust returns the original array if the supplied index is out of bounds",
+    "test-file/utils.js/src/array/__tests__/update.js.html#lineNumber11",
+    "utils/array/adjust offsets negative indexes from the end of the array",
     "test"
   ],
   [
     "",
     "test-file/utils.js/src/array/__tests__/adjust.js.html#lineNumber15",
+    "utils/array/adjust returns the original array if the supplied index is out of bounds",
+    "test"
+  ],
+  [
+    "",
+    "test-file/utils.js/src/array/__tests__/update.js.html#lineNumber15",
     "utils/array/adjust returns the original array if the supplied index is out of bounds",
     "test"
   ],
@@ -4597,6 +3895,12 @@ window.esdocSearchIndex = [
   ],
   [
     "",
+    "test-file/utils.js/src/array/__tests__/find.js.html#lineNumber10",
+    "utils/array/find test callback parameters",
+    "test"
+  ],
+  [
+    "",
     "test-file/utils.js/src/array/__tests__/findIndex.js.html#lineNumber3",
     "utils/array/findIndex",
     "test"
@@ -4609,6 +3913,12 @@ window.esdocSearchIndex = [
   ],
   [
     "",
+    "test-file/utils.js/src/array/__tests__/findIndex.js.html#lineNumber10",
+    "utils/array/findIndex test callback parameters",
+    "test"
+  ],
+  [
+    "",
     "test-file/utils.js/src/array/__tests__/findLast.js.html#lineNumber3",
     "utils/array/findLast",
     "test"
@@ -4617,6 +3927,12 @@ window.esdocSearchIndex = [
     "",
     "test-file/utils.js/src/array/__tests__/findLast.js.html#lineNumber4",
     "utils/array/findLast should find last",
+    "test"
+  ],
+  [
+    "",
+    "test-file/utils.js/src/array/__tests__/findLast.js.html#lineNumber10",
+    "utils/array/findLast test callback parameters",
     "test"
   ],
   [
@@ -4837,6 +4153,12 @@ window.esdocSearchIndex = [
   ],
   [
     "",
+    "test-file/utils.js/src/array/__tests__/maxBy.js.html#lineNumber13",
+    "utils/array/maxBy test edge cases",
+    "test"
+  ],
+  [
+    "",
     "test-file/utils.js/src/array/__tests__/nth.js.html#lineNumber3",
     "utils/array/nth",
     "test"
@@ -4987,7 +4309,19 @@ window.esdocSearchIndex = [
   ],
   [
     "",
-    "test-file/utils.js/src/array/__tests__/shuffle.js.html#lineNumber4",
+    "test-file/utils.js/src/array/__tests__/shuffle.js.html#lineNumber28",
+    "utils/array/shuffle Math.random is always returns 0",
+    "test"
+  ],
+  [
+    "",
+    "test-file/utils.js/src/array/__tests__/shuffle.js.html#lineNumber36",
+    "utils/array/shuffle Math.random is always returns value close to 1",
+    "test"
+  ],
+  [
+    "",
+    "test-file/utils.js/src/array/__tests__/shuffle.js.html#lineNumber18",
     "utils/array/shuffle should return new array with rearranged elements",
     "test"
   ],
@@ -5263,6 +4597,12 @@ window.esdocSearchIndex = [
   ],
   [
     "",
+    "test-file/utils.js/src/__tests__/clone.js.html#lineNumber22",
+    "utils/clone should copy regexp",
+    "test"
+  ],
+  [
+    "",
     "test-file/utils.js/src/__tests__/clone.js.html#lineNumber4",
     "utils/clone should return copy of all nested objects",
     "test"
@@ -5305,25 +4645,25 @@ window.esdocSearchIndex = [
   ],
   [
     "",
-    "test-file/utils.js/src/function/__tests__/allPass.js.html#lineNumber3",
-    "utils/function/allPass",
-    "test"
-  ],
-  [
-    "",
     "test-file/utils.js/src/function/__tests__/anyPass.js.html#lineNumber3",
     "utils/function/allPass",
     "test"
   ],
   [
     "",
-    "test-file/utils.js/src/function/__tests__/allPass.js.html#lineNumber14",
-    "utils/function/allPass should return false",
+    "test-file/utils.js/src/function/__tests__/allPass.js.html#lineNumber3",
+    "utils/function/allPass",
     "test"
   ],
   [
     "",
     "test-file/utils.js/src/function/__tests__/anyPass.js.html#lineNumber4",
+    "utils/function/allPass should return false",
+    "test"
+  ],
+  [
+    "",
+    "test-file/utils.js/src/function/__tests__/allPass.js.html#lineNumber14",
     "utils/function/allPass should return false",
     "test"
   ],
@@ -5449,14 +4789,20 @@ window.esdocSearchIndex = [
   ],
   [
     "",
-    "test-file/utils.js/src/function/__tests__/composeP.js.html#lineNumber31",
+    "test-file/utils.js/src/function/__tests__/composeP.js.html#lineNumber36",
     "utils/function/composeP should be composable",
     "test"
   ],
   [
     "",
-    "test-file/utils.js/src/function/__tests__/composeP.js.html#lineNumber6",
+    "test-file/utils.js/src/function/__tests__/composeP.js.html#lineNumber10",
     "utils/function/composeP should compose promise-returning functions",
+    "test"
+  ],
+  [
+    "",
+    "test-file/utils.js/src/function/__tests__/composeP.js.html#lineNumber6",
+    "utils/function/composeP should throw error when no arguments passed",
     "test"
   ],
   [
@@ -5779,7 +5125,7 @@ window.esdocSearchIndex = [
   ],
   [
     "",
-    "test-file/utils.js/src/is/__tests__/equal.js.html#lineNumber41",
+    "test-file/utils.js/src/is/__tests__/equal.js.html#lineNumber42",
     "utils/is/equal different types",
     "test"
   ],
@@ -5847,18 +5193,6 @@ window.esdocSearchIndex = [
     "",
     "test-file/utils.js/src/is/__tests__/nil.js.html#lineNumber4",
     "utils/is/nil test",
-    "test"
-  ],
-  [
-    "",
-    "test-file/utils.js/src/is/__tests__/not.js.html#lineNumber3",
-    "utils/is/not",
-    "test"
-  ],
-  [
-    "",
-    "test-file/utils.js/src/is/__tests__/not.js.html#lineNumber4",
-    "utils/is/not returns the logical inverse of passed arg",
     "test"
   ],
   [
@@ -6073,6 +5407,12 @@ window.esdocSearchIndex = [
   ],
   [
     "",
+    "test-file/utils.js/src/object/__tests__/findKey.js.html#lineNumber12",
+    "utils/object/findKey test callback parameters",
+    "test"
+  ],
+  [
+    "",
     "test-file/utils.js/src/object/__tests__/fromPairs.js.html#lineNumber3",
     "utils/object/fromPairs",
     "test"
@@ -6205,6 +5545,12 @@ window.esdocSearchIndex = [
   ],
   [
     "",
+    "test-file/utils.js/src/object/__tests__/omit.js.html#lineNumber10",
+    "utils/object/omit omit should convert keys to string",
+    "test"
+  ],
+  [
+    "",
     "test-file/utils.js/src/object/__tests__/omit.js.html#lineNumber4",
     "utils/object/omit should omit props",
     "test"
@@ -6267,6 +5613,12 @@ window.esdocSearchIndex = [
     "",
     "test-file/utils.js/src/object/__tests__/pathSet.js.html#lineNumber3",
     "utils/object/pathSet",
+    "test"
+  ],
+  [
+    "",
+    "test-file/utils.js/src/object/__tests__/pathSet.js.html#lineNumber13",
+    "utils/object/pathSet should properly handle nested objects",
     "test"
   ],
   [
@@ -6459,18 +5811,6 @@ window.esdocSearchIndex = [
     "",
     "test-file/utils.js/src/promise/__tests__/resolveWith.js.html#lineNumber5",
     "utils/promise/resolveWith should resolve with transformed value",
-    "test"
-  ],
-  [
-    "",
-    "test-file/utils.js/src/__tests__/sanitize.js.html#lineNumber3",
-    "utils/sanitize",
-    "test"
-  ],
-  [
-    "",
-    "test-file/utils.js/src/__tests__/sanitize.js.html#lineNumber4",
-    "utils/sanitize test",
     "test"
   ],
   [

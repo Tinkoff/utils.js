@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 705,
+  "end": 731,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 25,
+      "line": 24,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 705,
+    "end": 731,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 25,
+        "line": 24,
         "column": 0
       }
     },
@@ -99,16 +99,16 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Returns a curried equivalent of the provided function. The arguments of curried function\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\n * following are equivalent:\n *\n *   - `g(1)(2)(3)`\n *   - `g(1)(2, 3)`\n *   - `g(1, 2)(3)`\n *   - `g(1, 2, 3)`\n *\n * @param {Function} fn The function to curry.\n * @return {Function} A new, curried function.\n * @example\n *\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\n *\n *      var curriedAddFourNumbers = curry(addFourNumbers);\n *      var f = curriedAddFourNumbers(1, 2);\n *      var g = f(3);\n *      g(4); //=> 10\n ",
+            "value": "*\r\n * Returns a curried equivalent of the provided function. The arguments of curried function\r\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\r\n * following are equivalent:\r\n *\r\n *   - `g(1)(2)(3)`\r\n *   - `g(1)(2, 3)`\r\n *   - `g(1, 2)(3)`\r\n *   - `g(1, 2, 3)`\r\n *\r\n * @param {Function} fn The function to curry.\r\n * @return {Function} A new, curried function.\r\n * @example\r\n *\r\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\r\n *\r\n *      var curriedAddFourNumbers = curry(addFourNumbers);\r\n *      var f = curriedAddFourNumbers(1, 2);\r\n *      var g = f(3);\r\n *      g(4); //=> 10\r\n ",
             "start": 32,
-            "end": 660,
+            "end": 680,
             "loc": {
               "start": {
-                "line": 3,
+                "line": 2,
                 "column": 0
               },
               "end": {
-                "line": 23,
+                "line": 22,
                 "column": 3
               }
             }
@@ -117,30 +117,30 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 661,
-        "end": 704,
+        "start": 682,
+        "end": 729,
         "loc": {
           "start": {
-            "line": 24,
+            "line": 23,
             "column": 0
           },
           "end": {
-            "line": 24,
-            "column": 43
+            "line": 23,
+            "column": 47
           }
         },
         "declaration": {
           "type": "ArrowFunctionExpression",
-          "start": 676,
-          "end": 703,
+          "start": 698,
+          "end": 727,
           "loc": {
             "start": {
-              "line": 24,
-              "column": 15
+              "line": 23,
+              "column": 16
             },
             "end": {
-              "line": 24,
-              "column": 42
+              "line": 23,
+              "column": 45
             }
           },
           "id": null,
@@ -150,16 +150,16 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 676,
-              "end": 678,
+              "start": 699,
+              "end": 701,
               "loc": {
                 "start": {
-                  "line": 24,
-                  "column": 15
+                  "line": 23,
+                  "column": 17
                 },
                 "end": {
-                  "line": 24,
-                  "column": 17
+                  "line": 23,
+                  "column": 19
                 },
                 "identifierName": "fn"
               },
@@ -169,30 +169,30 @@
           ],
           "body": {
             "type": "CallExpression",
-            "start": 682,
-            "end": 703,
+            "start": 706,
+            "end": 727,
             "loc": {
               "start": {
-                "line": 24,
-                "column": 21
+                "line": 23,
+                "column": 24
               },
               "end": {
-                "line": 24,
-                "column": 42
+                "line": 23,
+                "column": 45
               }
             },
             "callee": {
               "type": "Identifier",
-              "start": 682,
-              "end": 688,
+              "start": 706,
+              "end": 712,
               "loc": {
                 "start": {
-                  "line": 24,
-                  "column": 21
+                  "line": 23,
+                  "column": 24
                 },
                 "end": {
-                  "line": 24,
-                  "column": 27
+                  "line": 23,
+                  "column": 30
                 },
                 "identifierName": "curryN"
               },
@@ -201,30 +201,30 @@
             "arguments": [
               {
                 "type": "MemberExpression",
-                "start": 689,
-                "end": 698,
+                "start": 713,
+                "end": 722,
                 "loc": {
                   "start": {
-                    "line": 24,
-                    "column": 28
+                    "line": 23,
+                    "column": 31
                   },
                   "end": {
-                    "line": 24,
-                    "column": 37
+                    "line": 23,
+                    "column": 40
                   }
                 },
                 "object": {
                   "type": "Identifier",
-                  "start": 689,
-                  "end": 691,
+                  "start": 713,
+                  "end": 715,
                   "loc": {
                     "start": {
-                      "line": 24,
-                      "column": 28
+                      "line": 23,
+                      "column": 31
                     },
                     "end": {
-                      "line": 24,
-                      "column": 30
+                      "line": 23,
+                      "column": 33
                     },
                     "identifierName": "fn"
                   },
@@ -232,16 +232,16 @@
                 },
                 "property": {
                   "type": "Identifier",
-                  "start": 692,
-                  "end": 698,
+                  "start": 716,
+                  "end": 722,
                   "loc": {
                     "start": {
-                      "line": 24,
-                      "column": 31
+                      "line": 23,
+                      "column": 34
                     },
                     "end": {
-                      "line": 24,
-                      "column": 37
+                      "line": 23,
+                      "column": 40
                     },
                     "identifierName": "length"
                   },
@@ -251,16 +251,16 @@
               },
               {
                 "type": "Identifier",
-                "start": 700,
-                "end": 702,
+                "start": 724,
+                "end": 726,
                 "loc": {
                   "start": {
-                    "line": 24,
-                    "column": 39
+                    "line": 23,
+                    "column": 42
                   },
                   "end": {
-                    "line": 24,
-                    "column": 41
+                    "line": 23,
+                    "column": 44
                   },
                   "identifierName": "fn"
                 },
@@ -271,36 +271,40 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * Returns a curried equivalent of the provided function. The arguments of curried function\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\n * following are equivalent:\n *\n *   - `g(1)(2)(3)`\n *   - `g(1)(2, 3)`\n *   - `g(1, 2)(3)`\n *   - `g(1, 2, 3)`\n *\n * @param {Function} fn The function to curry.\n * @return {Function} A new, curried function.\n * @example\n *\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\n *\n *      var curriedAddFourNumbers = curry(addFourNumbers);\n *      var f = curriedAddFourNumbers(1, 2);\n *      var g = f(3);\n *      g(4); //=> 10\n ",
+              "value": "*\r\n * Returns a curried equivalent of the provided function. The arguments of curried function\r\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\r\n * following are equivalent:\r\n *\r\n *   - `g(1)(2)(3)`\r\n *   - `g(1)(2, 3)`\r\n *   - `g(1, 2)(3)`\r\n *   - `g(1, 2, 3)`\r\n *\r\n * @param {Function} fn The function to curry.\r\n * @return {Function} A new, curried function.\r\n * @example\r\n *\r\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\r\n *\r\n *      var curriedAddFourNumbers = curry(addFourNumbers);\r\n *      var f = curriedAddFourNumbers(1, 2);\r\n *      var g = f(3);\r\n *      g(4); //=> 10\r\n ",
               "start": 32,
-              "end": 660,
+              "end": 680,
               "loc": {
                 "start": {
-                  "line": 3,
+                  "line": 2,
                   "column": 0
                 },
                 "end": {
-                  "line": 23,
+                  "line": 22,
                   "column": 3
                 }
               }
             }
           ],
+          "extra": {
+            "parenthesized": true,
+            "parenStart": 697
+          },
           "trailingComments": []
         },
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Returns a curried equivalent of the provided function. The arguments of curried function\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\n * following are equivalent:\n *\n *   - `g(1)(2)(3)`\n *   - `g(1)(2, 3)`\n *   - `g(1, 2)(3)`\n *   - `g(1, 2, 3)`\n *\n * @param {Function} fn The function to curry.\n * @return {Function} A new, curried function.\n * @example\n *\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\n *\n *      var curriedAddFourNumbers = curry(addFourNumbers);\n *      var f = curriedAddFourNumbers(1, 2);\n *      var g = f(3);\n *      g(4); //=> 10\n ",
+            "value": "*\r\n * Returns a curried equivalent of the provided function. The arguments of curried function\r\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\r\n * following are equivalent:\r\n *\r\n *   - `g(1)(2)(3)`\r\n *   - `g(1)(2, 3)`\r\n *   - `g(1, 2)(3)`\r\n *   - `g(1, 2, 3)`\r\n *\r\n * @param {Function} fn The function to curry.\r\n * @return {Function} A new, curried function.\r\n * @example\r\n *\r\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\r\n *\r\n *      var curriedAddFourNumbers = curry(addFourNumbers);\r\n *      var f = curriedAddFourNumbers(1, 2);\r\n *      var g = f(3);\r\n *      g(4); //=> 10\r\n ",
             "start": 32,
-            "end": 660,
+            "end": 680,
             "loc": {
               "start": {
-                "line": 3,
+                "line": 2,
                 "column": 0
               },
               "end": {
-                "line": 23,
+                "line": 22,
                 "column": 3
               }
             }
@@ -313,16 +317,16 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * Returns a curried equivalent of the provided function. The arguments of curried function\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\n * following are equivalent:\n *\n *   - `g(1)(2)(3)`\n *   - `g(1)(2, 3)`\n *   - `g(1, 2)(3)`\n *   - `g(1, 2, 3)`\n *\n * @param {Function} fn The function to curry.\n * @return {Function} A new, curried function.\n * @example\n *\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\n *\n *      var curriedAddFourNumbers = curry(addFourNumbers);\n *      var f = curriedAddFourNumbers(1, 2);\n *      var g = f(3);\n *      g(4); //=> 10\n ",
+      "value": "*\r\n * Returns a curried equivalent of the provided function. The arguments of curried function\r\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\r\n * following are equivalent:\r\n *\r\n *   - `g(1)(2)(3)`\r\n *   - `g(1)(2, 3)`\r\n *   - `g(1, 2)(3)`\r\n *   - `g(1, 2, 3)`\r\n *\r\n * @param {Function} fn The function to curry.\r\n * @return {Function} A new, curried function.\r\n * @example\r\n *\r\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\r\n *\r\n *      var curriedAddFourNumbers = curry(addFourNumbers);\r\n *      var f = curriedAddFourNumbers(1, 2);\r\n *      var g = f(3);\r\n *      g(4); //=> 10\r\n ",
       "start": 32,
-      "end": 660,
+      "end": 680,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 2,
           "column": 0
         },
         "end": {
-          "line": 23,
+          "line": 22,
           "column": 3
         }
       }
@@ -464,16 +468,16 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * Returns a curried equivalent of the provided function. The arguments of curried function\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\n * following are equivalent:\n *\n *   - `g(1)(2)(3)`\n *   - `g(1)(2, 3)`\n *   - `g(1, 2)(3)`\n *   - `g(1, 2, 3)`\n *\n * @param {Function} fn The function to curry.\n * @return {Function} A new, curried function.\n * @example\n *\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\n *\n *      var curriedAddFourNumbers = curry(addFourNumbers);\n *      var f = curriedAddFourNumbers(1, 2);\n *      var g = f(3);\n *      g(4); //=> 10\n ",
+      "value": "*\r\n * Returns a curried equivalent of the provided function. The arguments of curried function\r\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\r\n * following are equivalent:\r\n *\r\n *   - `g(1)(2)(3)`\r\n *   - `g(1)(2, 3)`\r\n *   - `g(1, 2)(3)`\r\n *   - `g(1, 2, 3)`\r\n *\r\n * @param {Function} fn The function to curry.\r\n * @return {Function} A new, curried function.\r\n * @example\r\n *\r\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\r\n *\r\n *      var curriedAddFourNumbers = curry(addFourNumbers);\r\n *      var f = curriedAddFourNumbers(1, 2);\r\n *      var g = f(3);\r\n *      g(4); //=> 10\r\n ",
       "start": 32,
-      "end": 660,
+      "end": 680,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 2,
           "column": 0
         },
         "end": {
-          "line": 23,
+          "line": 22,
           "column": 3
         }
       }
@@ -493,15 +497,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 661,
-      "end": 667,
+      "start": 682,
+      "end": 688,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 23,
           "column": 0
         },
         "end": {
-          "line": 24,
+          "line": 23,
           "column": 6
         }
       }
@@ -521,16 +525,66 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 668,
-      "end": 675,
+      "start": 689,
+      "end": 696,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 23,
           "column": 7
         },
         "end": {
-          "line": 24,
+          "line": 23,
           "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 697,
+      "end": 698,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 15
+        },
+        "end": {
+          "line": 23,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 698,
+      "end": 699,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 16
+        },
+        "end": {
+          "line": 23,
+          "column": 17
         }
       }
     },
@@ -547,16 +601,41 @@
         "binop": null
       },
       "value": "fn",
-      "start": 676,
-      "end": 678,
+      "start": 699,
+      "end": 701,
       "loc": {
         "start": {
-          "line": 24,
-          "column": 15
+          "line": 23,
+          "column": 17
         },
         "end": {
-          "line": 24,
-          "column": 17
+          "line": 23,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 701,
+      "end": 702,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 19
+        },
+        "end": {
+          "line": 23,
+          "column": 20
         }
       }
     },
@@ -573,16 +652,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 679,
-      "end": 681,
+      "start": 703,
+      "end": 705,
       "loc": {
         "start": {
-          "line": 24,
-          "column": 18
+          "line": 23,
+          "column": 21
         },
         "end": {
-          "line": 24,
-          "column": 20
+          "line": 23,
+          "column": 23
         }
       }
     },
@@ -599,16 +678,16 @@
         "binop": null
       },
       "value": "curryN",
-      "start": 682,
-      "end": 688,
+      "start": 706,
+      "end": 712,
       "loc": {
         "start": {
-          "line": 24,
-          "column": 21
+          "line": 23,
+          "column": 24
         },
         "end": {
-          "line": 24,
-          "column": 27
+          "line": 23,
+          "column": 30
         }
       }
     },
@@ -624,16 +703,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 688,
-      "end": 689,
+      "start": 712,
+      "end": 713,
       "loc": {
         "start": {
-          "line": 24,
-          "column": 27
+          "line": 23,
+          "column": 30
         },
         "end": {
-          "line": 24,
-          "column": 28
+          "line": 23,
+          "column": 31
         }
       }
     },
@@ -650,16 +729,16 @@
         "binop": null
       },
       "value": "fn",
-      "start": 689,
-      "end": 691,
+      "start": 713,
+      "end": 715,
       "loc": {
         "start": {
-          "line": 24,
-          "column": 28
+          "line": 23,
+          "column": 31
         },
         "end": {
-          "line": 24,
-          "column": 30
+          "line": 23,
+          "column": 33
         }
       }
     },
@@ -676,16 +755,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 691,
-      "end": 692,
+      "start": 715,
+      "end": 716,
       "loc": {
         "start": {
-          "line": 24,
-          "column": 30
+          "line": 23,
+          "column": 33
         },
         "end": {
-          "line": 24,
-          "column": 31
+          "line": 23,
+          "column": 34
         }
       }
     },
@@ -702,16 +781,16 @@
         "binop": null
       },
       "value": "length",
-      "start": 692,
-      "end": 698,
+      "start": 716,
+      "end": 722,
       "loc": {
         "start": {
-          "line": 24,
-          "column": 31
+          "line": 23,
+          "column": 34
         },
         "end": {
-          "line": 24,
-          "column": 37
+          "line": 23,
+          "column": 40
         }
       }
     },
@@ -728,16 +807,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 698,
-      "end": 699,
+      "start": 722,
+      "end": 723,
       "loc": {
         "start": {
-          "line": 24,
-          "column": 37
+          "line": 23,
+          "column": 40
         },
         "end": {
-          "line": 24,
-          "column": 38
+          "line": 23,
+          "column": 41
         }
       }
     },
@@ -754,16 +833,16 @@
         "binop": null
       },
       "value": "fn",
-      "start": 700,
-      "end": 702,
+      "start": 724,
+      "end": 726,
       "loc": {
         "start": {
-          "line": 24,
-          "column": 39
+          "line": 23,
+          "column": 42
         },
         "end": {
-          "line": 24,
-          "column": 41
+          "line": 23,
+          "column": 44
         }
       }
     },
@@ -779,16 +858,41 @@
         "postfix": false,
         "binop": null
       },
-      "start": 702,
-      "end": 703,
+      "start": 726,
+      "end": 727,
       "loc": {
         "start": {
-          "line": 24,
-          "column": 41
+          "line": 23,
+          "column": 44
         },
         "end": {
-          "line": 24,
-          "column": 42
+          "line": 23,
+          "column": 45
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 727,
+      "end": 728,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 45
+        },
+        "end": {
+          "line": 23,
+          "column": 46
         }
       }
     },
@@ -805,16 +909,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 703,
-      "end": 704,
+      "start": 728,
+      "end": 729,
       "loc": {
         "start": {
-          "line": 24,
-          "column": 42
+          "line": 23,
+          "column": 46
         },
         "end": {
-          "line": 24,
-          "column": 43
+          "line": 23,
+          "column": 47
         }
       }
     },
@@ -831,15 +935,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 705,
-      "end": 705,
+      "start": 731,
+      "end": 731,
       "loc": {
         "start": {
-          "line": 25,
+          "line": 24,
           "column": 0
         },
         "end": {
-          "line": 25,
+          "line": 24,
           "column": 0
         }
       }

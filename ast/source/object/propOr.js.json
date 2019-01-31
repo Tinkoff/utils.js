@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 820,
+  "end": 843,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 28,
+      "line": 26,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 820,
+    "end": 843,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 28,
+        "line": 26,
         "column": 0
       }
     },
@@ -99,8 +99,8 @@
       },
       {
         "type": "ImportDeclaration",
-        "start": 41,
-        "end": 67,
+        "start": 42,
+        "end": 68,
         "loc": {
           "start": {
             "line": 2,
@@ -114,8 +114,8 @@
         "specifiers": [
           {
             "type": "ImportDefaultSpecifier",
-            "start": 48,
-            "end": 52,
+            "start": 49,
+            "end": 53,
             "loc": {
               "start": {
                 "line": 2,
@@ -128,8 +128,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 48,
-              "end": 52,
+              "start": 49,
+              "end": 53,
               "loc": {
                 "start": {
                   "line": 2,
@@ -147,8 +147,8 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 58,
-          "end": 66,
+          "start": 59,
+          "end": 67,
           "loc": {
             "start": {
               "line": 2,
@@ -168,16 +168,16 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * If the given, non-null object has an own property with the specified name,\n * returns the value of that property. Otherwise returns the provided default\n * value.\n *\n * @param {String} propName The name of the property to return.\n * @param {*} value The default value.\n * @param {Object} obj The object to query.\n * @return {*} The value of given property of the supplied object or the default value.\n * @example\n *\n *      var alice = {\n *        name: 'ALICE',\n *        age: 101\n *      };\n *\n *      propOr('name', 'Bob')(alice);  //=> 'ALICE'\n *      propOr('favoriteLibrary', 'react')(alice);  //=> 'react'\n ",
-            "start": 69,
-            "end": 692,
+            "value": "*\r\n * If the given, non-null object has an own property with the specified name,\r\n * returns the value of that property. Otherwise returns the provided default\r\n * value.\r\n *\r\n * @param {String} propName The name of the property to return.\r\n * @param {*} value The default value.\r\n * @param {Object} obj The object to query.\r\n * @return {*} The value of given property of the supplied object or the default value.\r\n * @example\r\n *\r\n *      var alice = {\r\n *        name: 'ALICE',\r\n *        age: 101\r\n *      };\r\n *\r\n *      propOr('name', 'Bob')(alice);  //=> 'ALICE'\r\n *      propOr('favoriteLibrary', 'react')(alice);  //=> 'react'\r\n ",
+            "start": 70,
+            "end": 711,
             "loc": {
               "start": {
-                "line": 4,
+                "line": 3,
                 "column": 0
               },
               "end": {
-                "line": 22,
+                "line": 21,
                 "column": 3
               }
             }
@@ -186,29 +186,29 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 693,
-        "end": 819,
+        "start": 713,
+        "end": 841,
         "loc": {
           "start": {
-            "line": 23,
+            "line": 22,
             "column": 0
           },
           "end": {
-            "line": 27,
+            "line": 25,
             "column": 3
           }
         },
         "declaration": {
           "type": "ArrowFunctionExpression",
-          "start": 718,
-          "end": 817,
+          "start": 738,
+          "end": 839,
           "loc": {
             "start": {
-              "line": 23,
+              "line": 22,
               "column": 25
             },
             "end": {
-              "line": 27,
+              "line": 25,
               "column": 1
             }
           },
@@ -219,15 +219,15 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 719,
-              "end": 727,
+              "start": 739,
+              "end": 747,
               "loc": {
                 "start": {
-                  "line": 23,
+                  "line": 22,
                   "column": 26
                 },
                 "end": {
-                  "line": 23,
+                  "line": 22,
                   "column": 34
                 },
                 "identifierName": "propName"
@@ -236,15 +236,15 @@
             },
             {
               "type": "Identifier",
-              "start": 729,
-              "end": 734,
+              "start": 749,
+              "end": 754,
               "loc": {
                 "start": {
-                  "line": 23,
+                  "line": 22,
                   "column": 36
                 },
                 "end": {
-                  "line": 23,
+                  "line": 22,
                   "column": 41
                 },
                 "identifierName": "value"
@@ -253,15 +253,15 @@
             },
             {
               "type": "Identifier",
-              "start": 736,
-              "end": 739,
+              "start": 756,
+              "end": 759,
               "loc": {
                 "start": {
-                  "line": 23,
+                  "line": 22,
                   "column": 43
                 },
                 "end": {
-                  "line": 23,
+                  "line": 22,
                   "column": 46
                 },
                 "identifierName": "obj"
@@ -271,59 +271,59 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 744,
-            "end": 817,
+            "start": 764,
+            "end": 839,
             "loc": {
               "start": {
-                "line": 23,
+                "line": 22,
                 "column": 51
               },
               "end": {
-                "line": 27,
+                "line": 25,
                 "column": 1
               }
             },
             "body": [
               {
                 "type": "VariableDeclaration",
-                "start": 750,
-                "end": 780,
+                "start": 771,
+                "end": 801,
                 "loc": {
                   "start": {
-                    "line": 24,
+                    "line": 23,
                     "column": 4
                   },
                   "end": {
-                    "line": 24,
+                    "line": 23,
                     "column": 34
                   }
                 },
                 "declarations": [
                   {
                     "type": "VariableDeclarator",
-                    "start": 756,
-                    "end": 779,
+                    "start": 777,
+                    "end": 800,
                     "loc": {
                       "start": {
-                        "line": 24,
+                        "line": 23,
                         "column": 10
                       },
                       "end": {
-                        "line": 24,
+                        "line": 23,
                         "column": 33
                       }
                     },
                     "id": {
                       "type": "Identifier",
-                      "start": 756,
-                      "end": 757,
+                      "start": 777,
+                      "end": 778,
                       "loc": {
                         "start": {
-                          "line": 24,
+                          "line": 23,
                           "column": 10
                         },
                         "end": {
-                          "line": 24,
+                          "line": 23,
                           "column": 11
                         },
                         "identifierName": "v"
@@ -332,29 +332,29 @@
                     },
                     "init": {
                       "type": "CallExpression",
-                      "start": 760,
-                      "end": 779,
+                      "start": 781,
+                      "end": 800,
                       "loc": {
                         "start": {
-                          "line": 24,
+                          "line": 23,
                           "column": 14
                         },
                         "end": {
-                          "line": 24,
+                          "line": 23,
                           "column": 33
                         }
                       },
                       "callee": {
                         "type": "Identifier",
-                        "start": 760,
-                        "end": 764,
+                        "start": 781,
+                        "end": 785,
                         "loc": {
                           "start": {
-                            "line": 24,
+                            "line": 23,
                             "column": 14
                           },
                           "end": {
-                            "line": 24,
+                            "line": 23,
                             "column": 18
                           },
                           "identifierName": "prop"
@@ -364,15 +364,15 @@
                       "arguments": [
                         {
                           "type": "Identifier",
-                          "start": 765,
-                          "end": 773,
+                          "start": 786,
+                          "end": 794,
                           "loc": {
                             "start": {
-                              "line": 24,
+                              "line": 23,
                               "column": 19
                             },
                             "end": {
-                              "line": 24,
+                              "line": 23,
                               "column": 27
                             },
                             "identifierName": "propName"
@@ -381,15 +381,15 @@
                         },
                         {
                           "type": "Identifier",
-                          "start": 775,
-                          "end": 778,
+                          "start": 796,
+                          "end": 799,
                           "loc": {
                             "start": {
-                              "line": 24,
+                              "line": 23,
                               "column": 29
                             },
                             "end": {
-                              "line": 24,
+                              "line": 23,
                               "column": 32
                             },
                             "identifierName": "obj"
@@ -404,57 +404,57 @@
               },
               {
                 "type": "ReturnStatement",
-                "start": 786,
-                "end": 815,
+                "start": 807,
+                "end": 836,
                 "loc": {
                   "start": {
-                    "line": 26,
+                    "line": 24,
                     "column": 4
                   },
                   "end": {
-                    "line": 26,
+                    "line": 24,
                     "column": 33
                   }
                 },
                 "argument": {
                   "type": "ConditionalExpression",
-                  "start": 793,
-                  "end": 814,
+                  "start": 814,
+                  "end": 835,
                   "loc": {
                     "start": {
-                      "line": 26,
+                      "line": 24,
                       "column": 11
                     },
                     "end": {
-                      "line": 26,
+                      "line": 24,
                       "column": 32
                     }
                   },
                   "test": {
                     "type": "BinaryExpression",
-                    "start": 793,
-                    "end": 802,
+                    "start": 814,
+                    "end": 823,
                     "loc": {
                       "start": {
-                        "line": 26,
+                        "line": 24,
                         "column": 11
                       },
                       "end": {
-                        "line": 26,
+                        "line": 24,
                         "column": 20
                       }
                     },
                     "left": {
                       "type": "Identifier",
-                      "start": 793,
-                      "end": 794,
+                      "start": 814,
+                      "end": 815,
                       "loc": {
                         "start": {
-                          "line": 26,
+                          "line": 24,
                           "column": 11
                         },
                         "end": {
-                          "line": 26,
+                          "line": 24,
                           "column": 12
                         },
                         "identifierName": "v"
@@ -464,15 +464,15 @@
                     "operator": "!=",
                     "right": {
                       "type": "NullLiteral",
-                      "start": 798,
-                      "end": 802,
+                      "start": 819,
+                      "end": 823,
                       "loc": {
                         "start": {
-                          "line": 26,
+                          "line": 24,
                           "column": 16
                         },
                         "end": {
-                          "line": 26,
+                          "line": 24,
                           "column": 20
                         }
                       }
@@ -480,15 +480,15 @@
                   },
                   "consequent": {
                     "type": "Identifier",
-                    "start": 805,
-                    "end": 806,
+                    "start": 826,
+                    "end": 827,
                     "loc": {
                       "start": {
-                        "line": 26,
+                        "line": 24,
                         "column": 23
                       },
                       "end": {
-                        "line": 26,
+                        "line": 24,
                         "column": 24
                       },
                       "identifierName": "v"
@@ -497,15 +497,15 @@
                   },
                   "alternate": {
                     "type": "Identifier",
-                    "start": 809,
-                    "end": 814,
+                    "start": 830,
+                    "end": 835,
                     "loc": {
                       "start": {
-                        "line": 26,
+                        "line": 24,
                         "column": 27
                       },
                       "end": {
-                        "line": 26,
+                        "line": 24,
                         "column": 32
                       },
                       "identifierName": "value"
@@ -521,16 +521,16 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * If the given, non-null object has an own property with the specified name,\n * returns the value of that property. Otherwise returns the provided default\n * value.\n *\n * @param {String} propName The name of the property to return.\n * @param {*} value The default value.\n * @param {Object} obj The object to query.\n * @return {*} The value of given property of the supplied object or the default value.\n * @example\n *\n *      var alice = {\n *        name: 'ALICE',\n *        age: 101\n *      };\n *\n *      propOr('name', 'Bob')(alice);  //=> 'ALICE'\n *      propOr('favoriteLibrary', 'react')(alice);  //=> 'react'\n ",
-              "start": 69,
-              "end": 692,
+              "value": "*\r\n * If the given, non-null object has an own property with the specified name,\r\n * returns the value of that property. Otherwise returns the provided default\r\n * value.\r\n *\r\n * @param {String} propName The name of the property to return.\r\n * @param {*} value The default value.\r\n * @param {Object} obj The object to query.\r\n * @return {*} The value of given property of the supplied object or the default value.\r\n * @example\r\n *\r\n *      var alice = {\r\n *        name: 'ALICE',\r\n *        age: 101\r\n *      };\r\n *\r\n *      propOr('name', 'Bob')(alice);  //=> 'ALICE'\r\n *      propOr('favoriteLibrary', 'react')(alice);  //=> 'react'\r\n ",
+              "start": 70,
+              "end": 711,
               "loc": {
                 "start": {
-                  "line": 4,
+                  "line": 3,
                   "column": 0
                 },
                 "end": {
-                  "line": 22,
+                  "line": 21,
                   "column": 3
                 }
               }
@@ -541,16 +541,16 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * If the given, non-null object has an own property with the specified name,\n * returns the value of that property. Otherwise returns the provided default\n * value.\n *\n * @param {String} propName The name of the property to return.\n * @param {*} value The default value.\n * @param {Object} obj The object to query.\n * @return {*} The value of given property of the supplied object or the default value.\n * @example\n *\n *      var alice = {\n *        name: 'ALICE',\n *        age: 101\n *      };\n *\n *      propOr('name', 'Bob')(alice);  //=> 'ALICE'\n *      propOr('favoriteLibrary', 'react')(alice);  //=> 'react'\n ",
-            "start": 69,
-            "end": 692,
+            "value": "*\r\n * If the given, non-null object has an own property with the specified name,\r\n * returns the value of that property. Otherwise returns the provided default\r\n * value.\r\n *\r\n * @param {String} propName The name of the property to return.\r\n * @param {*} value The default value.\r\n * @param {Object} obj The object to query.\r\n * @return {*} The value of given property of the supplied object or the default value.\r\n * @example\r\n *\r\n *      var alice = {\r\n *        name: 'ALICE',\r\n *        age: 101\r\n *      };\r\n *\r\n *      propOr('name', 'Bob')(alice);  //=> 'ALICE'\r\n *      propOr('favoriteLibrary', 'react')(alice);  //=> 'react'\r\n ",
+            "start": 70,
+            "end": 711,
             "loc": {
               "start": {
-                "line": 4,
+                "line": 3,
                 "column": 0
               },
               "end": {
-                "line": 22,
+                "line": 21,
                 "column": 3
               }
             }
@@ -563,16 +563,16 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * If the given, non-null object has an own property with the specified name,\n * returns the value of that property. Otherwise returns the provided default\n * value.\n *\n * @param {String} propName The name of the property to return.\n * @param {*} value The default value.\n * @param {Object} obj The object to query.\n * @return {*} The value of given property of the supplied object or the default value.\n * @example\n *\n *      var alice = {\n *        name: 'ALICE',\n *        age: 101\n *      };\n *\n *      propOr('name', 'Bob')(alice);  //=> 'ALICE'\n *      propOr('favoriteLibrary', 'react')(alice);  //=> 'react'\n ",
-      "start": 69,
-      "end": 692,
+      "value": "*\r\n * If the given, non-null object has an own property with the specified name,\r\n * returns the value of that property. Otherwise returns the provided default\r\n * value.\r\n *\r\n * @param {String} propName The name of the property to return.\r\n * @param {*} value The default value.\r\n * @param {Object} obj The object to query.\r\n * @return {*} The value of given property of the supplied object or the default value.\r\n * @example\r\n *\r\n *      var alice = {\r\n *        name: 'ALICE',\r\n *        age: 101\r\n *      };\r\n *\r\n *      propOr('name', 'Bob')(alice);  //=> 'ALICE'\r\n *      propOr('favoriteLibrary', 'react')(alice);  //=> 'react'\r\n ",
+      "start": 70,
+      "end": 711,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 3,
           "column": 0
         },
         "end": {
-          "line": 22,
+          "line": 21,
           "column": 3
         }
       }
@@ -727,8 +727,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 41,
-      "end": 47,
+      "start": 42,
+      "end": 48,
       "loc": {
         "start": {
           "line": 2,
@@ -753,8 +753,8 @@
         "binop": null
       },
       "value": "prop",
-      "start": 48,
-      "end": 52,
+      "start": 49,
+      "end": 53,
       "loc": {
         "start": {
           "line": 2,
@@ -779,8 +779,8 @@
         "binop": null
       },
       "value": "from",
-      "start": 53,
-      "end": 57,
+      "start": 54,
+      "end": 58,
       "loc": {
         "start": {
           "line": 2,
@@ -806,8 +806,8 @@
         "updateContext": null
       },
       "value": "./prop",
-      "start": 58,
-      "end": 66,
+      "start": 59,
+      "end": 67,
       "loc": {
         "start": {
           "line": 2,
@@ -832,8 +832,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 66,
-      "end": 67,
+      "start": 67,
+      "end": 68,
       "loc": {
         "start": {
           "line": 2,
@@ -847,16 +847,16 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * If the given, non-null object has an own property with the specified name,\n * returns the value of that property. Otherwise returns the provided default\n * value.\n *\n * @param {String} propName The name of the property to return.\n * @param {*} value The default value.\n * @param {Object} obj The object to query.\n * @return {*} The value of given property of the supplied object or the default value.\n * @example\n *\n *      var alice = {\n *        name: 'ALICE',\n *        age: 101\n *      };\n *\n *      propOr('name', 'Bob')(alice);  //=> 'ALICE'\n *      propOr('favoriteLibrary', 'react')(alice);  //=> 'react'\n ",
-      "start": 69,
-      "end": 692,
+      "value": "*\r\n * If the given, non-null object has an own property with the specified name,\r\n * returns the value of that property. Otherwise returns the provided default\r\n * value.\r\n *\r\n * @param {String} propName The name of the property to return.\r\n * @param {*} value The default value.\r\n * @param {Object} obj The object to query.\r\n * @return {*} The value of given property of the supplied object or the default value.\r\n * @example\r\n *\r\n *      var alice = {\r\n *        name: 'ALICE',\r\n *        age: 101\r\n *      };\r\n *\r\n *      propOr('name', 'Bob')(alice);  //=> 'ALICE'\r\n *      propOr('favoriteLibrary', 'react')(alice);  //=> 'react'\r\n ",
+      "start": 70,
+      "end": 711,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 3,
           "column": 0
         },
         "end": {
-          "line": 22,
+          "line": 21,
           "column": 3
         }
       }
@@ -876,15 +876,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 693,
-      "end": 699,
+      "start": 713,
+      "end": 719,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 22,
           "column": 0
         },
         "end": {
-          "line": 23,
+          "line": 22,
           "column": 6
         }
       }
@@ -904,15 +904,15 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 700,
-      "end": 707,
+      "start": 720,
+      "end": 727,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 22,
           "column": 7
         },
         "end": {
-          "line": 23,
+          "line": 22,
           "column": 14
         }
       }
@@ -930,15 +930,15 @@
         "binop": null
       },
       "value": "curryN",
-      "start": 708,
-      "end": 714,
+      "start": 728,
+      "end": 734,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 22,
           "column": 15
         },
         "end": {
-          "line": 23,
+          "line": 22,
           "column": 21
         }
       }
@@ -955,15 +955,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 714,
-      "end": 715,
+      "start": 734,
+      "end": 735,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 22,
           "column": 21
         },
         "end": {
-          "line": 23,
+          "line": 22,
           "column": 22
         }
       }
@@ -982,15 +982,15 @@
         "updateContext": null
       },
       "value": 3,
-      "start": 715,
-      "end": 716,
+      "start": 735,
+      "end": 736,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 22,
           "column": 22
         },
         "end": {
-          "line": 23,
+          "line": 22,
           "column": 23
         }
       }
@@ -1008,15 +1008,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 716,
-      "end": 717,
+      "start": 736,
+      "end": 737,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 22,
           "column": 23
         },
         "end": {
-          "line": 23,
+          "line": 22,
           "column": 24
         }
       }
@@ -1033,15 +1033,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 718,
-      "end": 719,
+      "start": 738,
+      "end": 739,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 22,
           "column": 25
         },
         "end": {
-          "line": 23,
+          "line": 22,
           "column": 26
         }
       }
@@ -1059,15 +1059,15 @@
         "binop": null
       },
       "value": "propName",
-      "start": 719,
-      "end": 727,
+      "start": 739,
+      "end": 747,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 22,
           "column": 26
         },
         "end": {
-          "line": 23,
+          "line": 22,
           "column": 34
         }
       }
@@ -1085,15 +1085,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 727,
-      "end": 728,
+      "start": 747,
+      "end": 748,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 22,
           "column": 34
         },
         "end": {
-          "line": 23,
+          "line": 22,
           "column": 35
         }
       }
@@ -1111,15 +1111,15 @@
         "binop": null
       },
       "value": "value",
-      "start": 729,
-      "end": 734,
+      "start": 749,
+      "end": 754,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 22,
           "column": 36
         },
         "end": {
-          "line": 23,
+          "line": 22,
           "column": 41
         }
       }
@@ -1137,15 +1137,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 734,
-      "end": 735,
+      "start": 754,
+      "end": 755,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 22,
           "column": 41
         },
         "end": {
-          "line": 23,
+          "line": 22,
           "column": 42
         }
       }
@@ -1163,15 +1163,15 @@
         "binop": null
       },
       "value": "obj",
-      "start": 736,
-      "end": 739,
+      "start": 756,
+      "end": 759,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 22,
           "column": 43
         },
         "end": {
-          "line": 23,
+          "line": 22,
           "column": 46
         }
       }
@@ -1188,15 +1188,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 739,
-      "end": 740,
+      "start": 759,
+      "end": 760,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 22,
           "column": 46
         },
         "end": {
-          "line": 23,
+          "line": 22,
           "column": 47
         }
       }
@@ -1214,15 +1214,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 741,
-      "end": 743,
+      "start": 761,
+      "end": 763,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 22,
           "column": 48
         },
         "end": {
-          "line": 23,
+          "line": 22,
           "column": 50
         }
       }
@@ -1239,15 +1239,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 744,
-      "end": 745,
+      "start": 764,
+      "end": 765,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 22,
           "column": 51
         },
         "end": {
-          "line": 23,
+          "line": 22,
           "column": 52
         }
       }
@@ -1267,15 +1267,15 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 750,
-      "end": 755,
+      "start": 771,
+      "end": 776,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 23,
           "column": 4
         },
         "end": {
-          "line": 24,
+          "line": 23,
           "column": 9
         }
       }
@@ -1293,15 +1293,15 @@
         "binop": null
       },
       "value": "v",
-      "start": 756,
-      "end": 757,
+      "start": 777,
+      "end": 778,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 23,
           "column": 10
         },
         "end": {
-          "line": 24,
+          "line": 23,
           "column": 11
         }
       }
@@ -1320,15 +1320,15 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 758,
-      "end": 759,
+      "start": 779,
+      "end": 780,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 23,
           "column": 12
         },
         "end": {
-          "line": 24,
+          "line": 23,
           "column": 13
         }
       }
@@ -1346,15 +1346,15 @@
         "binop": null
       },
       "value": "prop",
-      "start": 760,
-      "end": 764,
+      "start": 781,
+      "end": 785,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 23,
           "column": 14
         },
         "end": {
-          "line": 24,
+          "line": 23,
           "column": 18
         }
       }
@@ -1371,15 +1371,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 764,
-      "end": 765,
+      "start": 785,
+      "end": 786,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 23,
           "column": 18
         },
         "end": {
-          "line": 24,
+          "line": 23,
           "column": 19
         }
       }
@@ -1397,15 +1397,15 @@
         "binop": null
       },
       "value": "propName",
-      "start": 765,
-      "end": 773,
+      "start": 786,
+      "end": 794,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 23,
           "column": 19
         },
         "end": {
-          "line": 24,
+          "line": 23,
           "column": 27
         }
       }
@@ -1423,15 +1423,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 773,
-      "end": 774,
+      "start": 794,
+      "end": 795,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 23,
           "column": 27
         },
         "end": {
-          "line": 24,
+          "line": 23,
           "column": 28
         }
       }
@@ -1449,15 +1449,15 @@
         "binop": null
       },
       "value": "obj",
-      "start": 775,
-      "end": 778,
+      "start": 796,
+      "end": 799,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 23,
           "column": 29
         },
         "end": {
-          "line": 24,
+          "line": 23,
           "column": 32
         }
       }
@@ -1474,15 +1474,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 778,
-      "end": 779,
+      "start": 799,
+      "end": 800,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 23,
           "column": 32
         },
         "end": {
-          "line": 24,
+          "line": 23,
           "column": 33
         }
       }
@@ -1500,15 +1500,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 779,
-      "end": 780,
+      "start": 800,
+      "end": 801,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 23,
           "column": 33
         },
         "end": {
-          "line": 24,
+          "line": 23,
           "column": 34
         }
       }
@@ -1528,15 +1528,15 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 786,
-      "end": 792,
+      "start": 807,
+      "end": 813,
       "loc": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 4
         },
         "end": {
-          "line": 26,
+          "line": 24,
           "column": 10
         }
       }
@@ -1554,15 +1554,15 @@
         "binop": null
       },
       "value": "v",
-      "start": 793,
-      "end": 794,
+      "start": 814,
+      "end": 815,
       "loc": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 11
         },
         "end": {
-          "line": 26,
+          "line": 24,
           "column": 12
         }
       }
@@ -1581,15 +1581,15 @@
         "updateContext": null
       },
       "value": "!=",
-      "start": 795,
-      "end": 797,
+      "start": 816,
+      "end": 818,
       "loc": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 13
         },
         "end": {
-          "line": 26,
+          "line": 24,
           "column": 15
         }
       }
@@ -1609,15 +1609,15 @@
         "updateContext": null
       },
       "value": "null",
-      "start": 798,
-      "end": 802,
+      "start": 819,
+      "end": 823,
       "loc": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 16
         },
         "end": {
-          "line": 26,
+          "line": 24,
           "column": 20
         }
       }
@@ -1635,15 +1635,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 803,
-      "end": 804,
+      "start": 824,
+      "end": 825,
       "loc": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 21
         },
         "end": {
-          "line": 26,
+          "line": 24,
           "column": 22
         }
       }
@@ -1661,15 +1661,15 @@
         "binop": null
       },
       "value": "v",
-      "start": 805,
-      "end": 806,
+      "start": 826,
+      "end": 827,
       "loc": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 23
         },
         "end": {
-          "line": 26,
+          "line": 24,
           "column": 24
         }
       }
@@ -1687,15 +1687,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 807,
-      "end": 808,
+      "start": 828,
+      "end": 829,
       "loc": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 25
         },
         "end": {
-          "line": 26,
+          "line": 24,
           "column": 26
         }
       }
@@ -1713,15 +1713,15 @@
         "binop": null
       },
       "value": "value",
-      "start": 809,
-      "end": 814,
+      "start": 830,
+      "end": 835,
       "loc": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 27
         },
         "end": {
-          "line": 26,
+          "line": 24,
           "column": 32
         }
       }
@@ -1739,15 +1739,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 814,
-      "end": 815,
+      "start": 835,
+      "end": 836,
       "loc": {
         "start": {
-          "line": 26,
+          "line": 24,
           "column": 32
         },
         "end": {
-          "line": 26,
+          "line": 24,
           "column": 33
         }
       }
@@ -1764,15 +1764,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 816,
-      "end": 817,
+      "start": 838,
+      "end": 839,
       "loc": {
         "start": {
-          "line": 27,
+          "line": 25,
           "column": 0
         },
         "end": {
-          "line": 27,
+          "line": 25,
           "column": 1
         }
       }
@@ -1789,15 +1789,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 817,
-      "end": 818,
+      "start": 839,
+      "end": 840,
       "loc": {
         "start": {
-          "line": 27,
+          "line": 25,
           "column": 1
         },
         "end": {
-          "line": 27,
+          "line": 25,
           "column": 2
         }
       }
@@ -1815,15 +1815,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 818,
-      "end": 819,
+      "start": 840,
+      "end": 841,
       "loc": {
         "start": {
-          "line": 27,
+          "line": 25,
           "column": 2
         },
         "end": {
-          "line": 27,
+          "line": 25,
           "column": 3
         }
       }
@@ -1841,15 +1841,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 820,
-      "end": 820,
+      "start": 843,
+      "end": 843,
       "loc": {
         "start": {
-          "line": 28,
+          "line": 26,
           "column": 0
         },
         "end": {
-          "line": 28,
+          "line": 26,
           "column": 0
         }
       }
