@@ -1,5 +1,16 @@
-import { partition } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface Partition {
+    (fn: (a: string) => boolean, list: ReadonlyArray<string>): [
+        string[],
+        string[]
+    ];
+    <T>(fn: (a: T) => boolean, list: ReadonlyArray<T>): [T[], T[]];
+    <T>(fn: (a: T) => boolean): (list: ReadonlyArray<T>) => [T[], T[]];
+    (fn: (a: string) => boolean): (
+        list: ReadonlyArray<string>
+    ) => [string[], string[]];
+}
 
 /**
  * Takes a predicate and a array and returns the
@@ -28,4 +39,4 @@ export default curryN(2, (fn, arr = []) => {
     }
 
     return [t, f];
-}) as typeof partition
+}) as Partition;

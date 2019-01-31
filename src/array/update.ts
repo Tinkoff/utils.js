@@ -1,7 +1,11 @@
-import { update } from '../typings/types';
 import adjust from './adjust';
 import curryN from '../function/curryN';
 import always from '../function/always';
+
+interface Update {
+    <T>(index: number, value: T, list: ReadonlyArray<T>): T[];
+    <T>(index: number, value: T): (list: ReadonlyArray<T>) => T[];
+}
 
 /**
  * Returns a new copy of the array with the element at the provided index
@@ -17,6 +21,6 @@ import always from '../function/always';
  *      update(1)(11)([0, 1, 2]);     //=> [0, 11, 2]
  */
 
-export default curryN(3, (idx, x, list) => (
+export default curryN(3, (idx, x, list) =>
     adjust(always(x), idx, list)
-)) as typeof update
+) as Update;

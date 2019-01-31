@@ -1,5 +1,9 @@
-import { test } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface Test {
+    (regexp: RegExp, str: string): boolean;
+    (regexp: RegExp): (str: string) => boolean;
+}
 
 /**
  * Determines whether a given string matches a given regular expression.
@@ -8,4 +12,6 @@ import curryN from '../function/curryN';
  * @param {String} str
  * @return {Boolean}
  */
-export default curryN(2, (pattern = /()/, str = '') => pattern.test(str)) as typeof test
+export default curryN(2, (pattern = /()/, str = '') =>
+    pattern.test(str)
+) as Test;

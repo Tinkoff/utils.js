@@ -5,4 +5,4 @@ let idCounter = 0;
  *
  * @returns {number} Returns the unique ID.
  */
-export default () => (++idCounter);
+export default () => ++idCounter;

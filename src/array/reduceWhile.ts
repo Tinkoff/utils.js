@@ -1,6 +1,32 @@
-import * as types from '../typings/types';
 import isNil from '../is/nil';
 import curryN from '../function/curryN';
+import { CurriedFunction2, CurriedFunction3 } from '../typings/types';
+
+interface ReduceWhile {
+    <T, TResult>(
+        predicate: (acc: TResult, elem: T) => boolean,
+        fn: (acc: TResult, elem: T) => TResult,
+        acc: TResult,
+        list: ReadonlyArray<T>
+    ): TResult;
+    <T, TResult>(
+        predicate: (acc: TResult, elem: T) => boolean,
+        fn: (acc: TResult, elem: T) => TResult,
+        acc: TResult
+    ): (list: ReadonlyArray<T>) => TResult;
+    <T, TResult>(
+        predicate: (acc: TResult, elem: T) => boolean,
+        fn: (acc: TResult, elem: T) => TResult
+    ): CurriedFunction2<TResult, ReadonlyArray<T>, TResult>;
+    <T, TResult>(
+        predicate: (acc: TResult, elem: T) => boolean
+    ): CurriedFunction3<
+        (acc: TResult, elem: T) => TResult,
+        TResult,
+        ReadonlyArray<T>,
+        TResult
+    >;
+}
 
 /**
  * Returns a single item by iterating through the list, successively calling
@@ -22,7 +48,8 @@ import curryN from '../function/curryN';
  *      reduceWhile(acc => acc.length < 3, (acc, x) => acc + x, '1', ['2', '3', '4', '5']) // '123'
  *
  */
-function reduceWhile(pred, fn, acc, arr) { // eslint-disable-line max-params
+function reduceWhile(pred, fn, acc, arr) {
+    // eslint-disable-line max-params
     if (isNil(arr)) {
         return acc;
     }
@@ -40,4 +67,4 @@ function reduceWhile(pred, fn, acc, arr) { // eslint-disable-line max-params
     return acc;
 }
 
-export default curryN(4, reduceWhile) as typeof types.reduceWhile
+export default curryN(4, reduceWhile) as ReduceWhile;

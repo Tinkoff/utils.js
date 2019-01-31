@@ -11,4 +11,4 @@
  *      const obj = {};
  *      identity(obj) === obj; //=> true
  */
-export default x => x;
+export default (x) => x;

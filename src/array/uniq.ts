@@ -1,4 +1,7 @@
-import { uniq } from '../typings/types';
+interface Uniq {
+    <T>(list: ReadonlyArray<T>): T[];
+}
+
 /**
  * Returns unique items in array
  *
@@ -19,4 +22,4 @@ export default ((arr = []) => {
     }
 
     return result;
-}) as typeof uniq
+}) as Uniq;

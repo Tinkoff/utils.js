@@ -1,5 +1,9 @@
-import { indexBy } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface IndexBy {
+    <T>(fn: (a: T) => string, list: ReadonlyArray<T>): { [key: string]: T };
+    <T>(fn: (a: T) => string): (list: ReadonlyArray<T>) => { [key: string]: T };
+}
 
 /**
  * Given a function that generates a key, turns a list of objects into an
@@ -24,4 +28,4 @@ export default curryN(2, (fn, arr = []) => {
     }
 
     return result;
-}) as typeof indexBy
+}) as IndexBy;

@@ -1,5 +1,8 @@
-import { reverse } from '../typings/types';
 import isString from '../is/string';
+
+interface Reverse {
+    <T>(list: ReadonlyArray<T>): T[];
+}
 
 /**
  * Returns a new list or string with the elements or characters in reverse
@@ -20,8 +23,10 @@ import isString from '../is/string';
  *      reverse('');         //=> ''
  */
 
-export default (
-    list => isString(list) ?
-        list.split('').reverse().join('') :
-        Array.prototype.slice.call(list, 0).reverse()
-) as typeof reverse
+export default ((list) =>
+    isString(list)
+        ? list
+              .split('')
+              .reverse()
+              .join('')
+        : Array.prototype.slice.call(list, 0).reverse()) as Reverse;

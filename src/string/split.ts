@@ -1,5 +1,9 @@
-import { split } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface Split {
+    (sep: string | RegExp): (str: string) => string[];
+    (sep: string | RegExp, str: string): string[];
+}
 
 /**
  * Splits a string into an array of strings based on the given
@@ -12,6 +16,4 @@ import curryN from '../function/curryN';
  *
  *      split('.', 'a.b.c.xyz.d'); //=> ['a', 'b', 'c', 'xyz', 'd']
  */
-export default curryN(2, (delim = '', str = '') =>
-    str.split(delim)
-) as typeof split
+export default curryN(2, (delim = '', str = '') => str.split(delim)) as Split;

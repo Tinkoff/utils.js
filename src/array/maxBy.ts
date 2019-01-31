@@ -1,5 +1,14 @@
 import curryN from '../function/curryN';
-import { maxBy } from '../typings/types';
+
+interface MaxBy {
+    <TItem, R>(
+        fn: (item: TItem, i: number, arr: TItem[]) => R,
+        arr: TItem[]
+    ): TItem;
+    <TItem, R>(fn: (item: TItem, i: number, arr: TItem[]) => R): (
+        arr: TItem[]
+    ) => TItem;
+}
 
 /**
  * Return max value in array, depending on result of calling `fn`
@@ -28,4 +37,4 @@ export default curryN(2, (fn, arr = []) => {
     }
 
     return result;
-}) as typeof maxBy
+}) as MaxBy;

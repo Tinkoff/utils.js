@@ -2,12 +2,15 @@ import type from './type';
 import mapObj from './object/map';
 import mapArr from './array/map';
 
-const cloneRegExp = pattern =>
-    new RegExp(pattern.source, (pattern.global ? 'g' : '')
-        + (pattern.ignoreCase ? 'i' : '')
-        + (pattern.multiline ? 'm' : '')
-        + (pattern.sticky ? 'y' : '')
-        + (pattern.unicode ? 'u' : ''));
+const cloneRegExp = (pattern) =>
+    new RegExp(
+        pattern.source,
+        (pattern.global ? 'g' : '') +
+            (pattern.ignoreCase ? 'i' : '') +
+            (pattern.multiline ? 'm' : '') +
+            (pattern.sticky ? 'y' : '') +
+            (pattern.unicode ? 'u' : '')
+    );
 
 /**
  * Creates a deep copy of the value which may contain (nested) `Array`s and
@@ -22,7 +25,7 @@ const cloneRegExp = pattern =>
  *      var objectsClone = clone(objects);
  *      objects[0] === objectsClone[0]; //=> false
  */
-const clone = x => {
+const clone = (x) => {
     switch (type(x)) {
         case 'Object':
             return mapObj(clone, x);

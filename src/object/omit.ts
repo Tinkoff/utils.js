@@ -1,6 +1,12 @@
-import { omit } from '../typings/types';
 import curryN from '../function/curryN';
 import objectKeys from './keys';
+
+type Omitted<T, K extends string> = Pick<T, Exclude<keyof T, K>>;
+
+interface Omit {
+    <T, K extends string>(names: ReadonlyArray<K>, obj: T): Omitted<T, K>;
+    <K extends string>(names: ReadonlyArray<K>): <T>(obj: T) => Omitted<T, K>;
+}
 
 /**
  * Returns a partial copy of an object omitting the keys specified.
@@ -31,4 +37,4 @@ export default curryN(2, (props = [], obj = {}) => {
     }
 
     return result;
-}) as typeof omit
+}) as Omit;

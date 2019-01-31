@@ -1,6 +1,16 @@
 import curryN from '../function/curryN';
 import objectKeys from './keys';
-import { keyBy } from '../typings/types';
+
+interface KeyBy {
+    <T, R>(
+        fn: (value: T, key: string, obj: Record<string, T>) => R,
+        obj?: Record<string, T>
+    ): Record<string, R>;
+
+    <T, R>(fn: (value: T, key: string, obj: Record<string, T>) => R): (
+        obj?: Record<string, T>
+    ) => Record<string, R>;
+}
 
 /**
  * Creates an object composed of keys generated from the results of running
@@ -27,4 +37,4 @@ export default curryN(2, (fn, obj = {}) => {
     }
 
     return result;
-}) as typeof keyBy
+}) as KeyBy;

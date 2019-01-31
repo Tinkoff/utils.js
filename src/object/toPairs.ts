@@ -1,5 +1,9 @@
-import { toPairs } from '../typings/types';
 import objKeys from './keys';
+
+interface ToPairs {
+    <S>(obj: { [k: string]: S } | { [k: number]: S }): Array<[string, S]>;
+}
+
 /**
  * Converts an object into an array of key, value arrays. Only the object's
  * own properties are used.
@@ -22,4 +26,4 @@ export default ((obj = {}) => {
     }
 
     return result;
-}) as typeof toPairs
+}) as ToPairs;

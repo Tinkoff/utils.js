@@ -1,5 +1,9 @@
-import { when } from '../typings/types';
 import curryN from './curryN';
+
+interface When {
+    <T, U>(pred: (a: T) => boolean, whenTrueFn: (a: T) => U, obj: T): U;
+    <T, U>(pred: (a: T) => boolean, whenTrueFn: (a: T) => U): (obj: T) => U;
+}
 
 /**
  * Tests the final argument by passing it to the given predicate function. If
@@ -27,4 +31,4 @@ export default curryN(3, (pred, onTrue, x) => {
     }
 
     return x;
-}) as typeof when
+}) as When;

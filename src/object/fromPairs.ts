@@ -1,4 +1,10 @@
-import { fromPairs } from '../typings/types';
+import { KeyValuePair } from '../typings/types';
+
+interface FromPairs {
+    <V>(pairs: Array<KeyValuePair<string, V>>): { [index: string]: V };
+    <V>(pairs: Array<KeyValuePair<number, V>>): { [index: number]: V };
+}
+
 /**
  * Creates a new object from a list key-value pairs. If a key appears in
  * multiple pairs, the rightmost pair is included in the object.
@@ -17,4 +23,4 @@ export default ((arr = []) => {
     }
 
     return result;
-}) as typeof fromPairs
+}) as FromPairs;

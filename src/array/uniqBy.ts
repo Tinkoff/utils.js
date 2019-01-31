@@ -1,5 +1,9 @@
-import { uniqBy } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface UniqBy {
+    <T, U>(fn: (a: T) => U, list: ReadonlyArray<T>): T[];
+    <T, U>(fn: (a: T) => U): (list: ReadonlyArray<T>) => T[];
+}
 
 /**
  * Returns unique items in array. Uniqueness is defined by `fn`.
@@ -26,4 +30,4 @@ export default curryN(2, (fn, arr = []) => {
     }
 
     return result;
-}) as typeof uniqBy
+}) as UniqBy;

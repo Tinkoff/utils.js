@@ -1,6 +1,11 @@
-import { mergeWith } from '../typings/types';
 import curryN from '../function/curryN';
 import objectKeys from './keys';
+
+interface MergeWith {
+    <U, V>(fn: (x: any, z: any) => any, a: U, b: V): U & V;
+    <U>(fn: (x: any, z: any) => any, a: U): <V>(b: V) => U & V;
+    (fn: (x: any, z: any) => any): <U, V>(a: U, b: V) => U & V;
+}
 
 /**
  * Create a new object with the own properties of the first object merged with
@@ -34,4 +39,4 @@ export default curryN(3, (fn, ...sources) => {
     }
 
     return result;
-}) as typeof mergeWith
+}) as MergeWith;

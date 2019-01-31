@@ -1,5 +1,19 @@
-import { reduce } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface Reduce {
+    <T, TResult>(
+        fn: (acc: TResult, elem: T) => TResult,
+        acc: TResult,
+        list: ReadonlyArray<T>
+    ): TResult;
+    <T, TResult>(
+        fn: (acc: TResult, elem: T) => TResult
+    ): (acc: TResult, list: ReadonlyArray<T>) => TResult;
+    <T, TResult>(
+        fn: (acc: TResult, elem: T) => TResult,
+        acc: TResult
+    ): (list: ReadonlyArray<T>) => TResult;
+}
 
 /**
  * Returns a single item by iterating through the list, successively calling
@@ -26,4 +40,4 @@ export default curryN(3, (fn, acc, arr = []) => {
     }
 
     return acc;
-}) as typeof reduce
+}) as Reduce;

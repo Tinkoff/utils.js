@@ -1,5 +1,10 @@
-import { sortBy } from '../typings/types';
 import curryN from '../function/curryN';
+import { Ord } from '../typings/types';
+
+interface SortBy {
+    <T>(fn: (a: T) => Ord, list: ReadonlyArray<T>): T[];
+    (fn: (a: any) => Ord): <T>(list: ReadonlyArray<T>) => T[];
+}
 
 /**
  * Sorts the array according to the supplied function.
@@ -28,4 +33,4 @@ export default curryN(2, (fn, arr = []) => {
 
         return 0;
     });
-}) as typeof sortBy
+}) as SortBy;

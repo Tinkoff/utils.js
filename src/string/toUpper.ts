@@ -1,4 +1,3 @@
-import { toUpper } from '../typings/types';
 /**
  * Returns the upper case version of a string.
  *
@@ -8,6 +7,4 @@ import { toUpper } from '../typings/types';
  *
  *      toLower('xyz'); //=> 'XYZ'
  */
-export default (
-    (str = '') => str.toUpperCase()
-) as typeof toUpper
+export default (str = '') => str.toUpperCase();

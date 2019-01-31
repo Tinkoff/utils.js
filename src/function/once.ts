@@ -1,4 +1,6 @@
-import { once } from '../typings/types';
+interface Once {
+    <T>(fn: (...a: any[]) => T): (...a: any[]) => T;
+}
 
 /**
  * Accepts a function `fn` and returns a function that guards invocation of
@@ -14,7 +16,7 @@ import { once } from '../typings/types';
  *      addOneOnce(10); //=> 11
  *      addOneOnce(addOneOnce(50)); //=> 11
  */
-export default (fn => {
+export default ((fn) => {
     let called = false;
     let result;
 
@@ -28,4 +30,4 @@ export default (fn => {
 
         return result;
     };
-}) as typeof once;
+}) as Once;

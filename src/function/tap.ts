@@ -1,5 +1,9 @@
-import { tap } from '../typings/types';
 import curryN from './curryN';
+
+interface Tap {
+    <T>(fn: (a: T) => any, value: T): T;
+    <T>(fn: (a: T) => any): (value: T) => T;
+}
 
 /**
  * Runs the given function with the supplied argument, then returns the argument.
@@ -16,4 +20,4 @@ import curryN from './curryN';
 export default curryN(2, (fn, x) => {
     fn(x);
     return x;
-}) as typeof tap
+}) as Tap;

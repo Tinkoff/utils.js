@@ -1,5 +1,9 @@
-import { keys } from '../typings/types';
 import isObject from '../is/object';
+
+interface Keys {
+    <T extends object>(x: T): Array<keyof T>;
+    <T>(x: T): string[];
+}
 
 /**
  * Returns a list containing the names of all the enumerable own properties of
@@ -13,6 +17,4 @@ import isObject from '../is/object';
  *
  *      keys({a: 1, b: 2, c: 3}); //=> ['a', 'b', 'c']
  */
-export default (
-    obj => isObject(obj) ? Object.keys(obj) : []
-) as typeof keys
+export default ((obj) => (isObject(obj) ? Object.keys(obj) : [])) as Keys;

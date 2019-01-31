@@ -1,5 +1,9 @@
 import curryN from '../function/curryN';
-import { allObject } from '../typings/types';
+
+interface AllObject {
+    <T>(fn: (a: T) => boolean, list: Object): boolean;
+    <T>(fn: (a: T) => boolean): (list: Object) => boolean;
+}
 
 /**
  * Tests whether every [key, value] pair in the object passes the test implemented by the provided function.
@@ -21,9 +25,12 @@ import { allObject } from '../typings/types';
  */
 export default curryN(2, (fn, obj = {}) => {
     for (const key in obj) {
-        if (Object.prototype.hasOwnProperty.call(obj, key) && !fn(obj[key], key, obj)) {
+        if (
+            Object.prototype.hasOwnProperty.call(obj, key) &&
+            !fn(obj[key], key, obj)
+        ) {
             return false;
         }
     }
     return true;
-}) as typeof allObject
+}) as AllObject;

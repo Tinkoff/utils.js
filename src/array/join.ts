@@ -1,6 +1,10 @@
-import { join } from '../typings/types';
 import curryN from '../function/curryN';
 import isArray from '../is/array';
+
+interface Join {
+    (x: string, xs: ReadonlyArray<any>): string;
+    (x: string): (xs: ReadonlyArray<any>) => string;
+}
 
 /**
  * Returns a string made by inserting the `separator` between each element and
@@ -21,4 +25,4 @@ export default curryN(2, (separator = '', arr = []) => {
     }
 
     return arr.join(separator);
-}) as typeof join
+}) as Join;

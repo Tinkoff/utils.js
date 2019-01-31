@@ -1,4 +1,5 @@
-import memoizeWith, { createCacheFrom } from './with';
+import memoizeWith from './with';
+import createCacheFrom from './createCache';
 
 /**
  * Memoize function with multiply arguments of any type.

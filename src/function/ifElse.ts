@@ -1,5 +1,23 @@
+import { func } from '../typings/types';
 import curryN from './curryN';
-import { ifElse } from '../typings/types';
+
+interface IfElse {
+    <TTrue, TFalse>(
+        condition: func,
+        onTrue: func<TTrue>,
+        onFalse: func<TFalse>
+    ): TTrue | TFalse;
+    <TTrue, TFalse>(condition: func, onTrue: func<TTrue>): (
+        onFalse: func<TFalse>
+    ) => TTrue | TFalse;
+    <TTrue, TFalse>(condition: func): (
+        onTrue: func<TTrue>,
+        onFalse: func<TFalse>
+    ) => TTrue | TFalse;
+    <TTrue, TFalse>(condition: func): (
+        onTrue: func<TTrue>
+    ) => (onFalse: func<TFalse>) => TTrue | TFalse;
+}
 
 /**
  * Creates a function that will process either the `onTrue` or the `onFalse`
@@ -20,6 +38,6 @@ import { ifElse } from '../typings/types';
  *      prop({ a: false, c: 2 }); //=> 2
  *      prop({ a: true, b: 1, c: 2 }); //=> 1
  */
-export default curryN(3, (condition, onTrue, onFalse) =>
-    (...args) => (condition(...args) ? onTrue(...args) : onFalse(...args))
-) as typeof ifElse;
+export default curryN(3, (condition, onTrue, onFalse) => (...args) =>
+    condition(...args) ? onTrue(...args) : onFalse(...args)
+) as IfElse;

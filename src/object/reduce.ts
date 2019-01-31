@@ -1,5 +1,22 @@
 import curryN from '../function/curryN';
-import { reduceObject } from '../typings/types';
+
+interface ReduceObj {
+    <TObj, TKey extends keyof TObj, TAcc, TResult>(
+        fn: (acc: TAcc, value: TObj[TKey], TKey) => TResult,
+        acc: TAcc,
+        obj: TObj
+    ): TResult;
+    <TObj, TKey extends keyof TObj, TAcc, TResult>(
+        fn: (acc: TAcc, value: TObj[TKey], TKey) => TResult,
+        acc: TAcc
+    ): (obj: TObj) => TResult;
+    <TObj, TKey extends keyof TObj, TAcc, TResult>(
+        fn: (acc: TAcc, value: TObj[TKey], TKey) => TResult
+    ): (acc: TAcc, obj: TObj) => TResult;
+    <TObj, TKey extends keyof TObj, TAcc, TResult>(
+        fn: (acc: TAcc, value: TObj[TKey], TKey) => TResult
+    ): (acc: TAcc) => (obj: TObj) => TResult;
+}
 
 /**
  * Returns a single item by iterating through the obj, successively calling
@@ -25,4 +42,4 @@ export default curryN(3, (fn, acc, obj = {}) => {
     }
 
     return acc;
-}) as typeof reduceObject
+}) as ReduceObj;

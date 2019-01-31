@@ -1,5 +1,12 @@
-import { replace } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface Replace {
+    (pattern: RegExp | string, replacement: string, str: string): string;
+    (pattern: RegExp | string, replacement: string): (str: string) => string;
+    (pattern: RegExp | string): (
+        replacement: string
+    ) => (str: string) => string;
+}
 
 /**
  * Replace a substring or regex match in a string with a replacement.
@@ -18,4 +25,4 @@ import curryN from '../function/curryN';
  */
 export default curryN(3, (pattern = '', replacement = '', str = '') =>
     str.replace(pattern, replacement)
-) as typeof replace
+) as Replace;

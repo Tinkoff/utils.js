@@ -1,5 +1,9 @@
-import { any } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface Any {
+    <T>(fn: (a: T) => boolean, list: ReadonlyArray<T>): boolean;
+    <T>(fn: (a: T) => boolean): (list: ReadonlyArray<T>) => boolean;
+}
 
 /**
  * Returns `true` if at least one of elements of the list match the predicate,
@@ -24,4 +28,4 @@ export default curryN(2, (fn, arr = []) => {
     }
 
     return false;
-}) as typeof any
+}) as Any;

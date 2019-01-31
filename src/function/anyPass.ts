@@ -1,5 +1,9 @@
-import { anyPass } from '../typings/types';
 import curryN from './curryN';
+import { SafePred } from '../typings/types';
+
+interface AnyPass {
+    <T>(preds: ReadonlyArray<SafePred<T>>): SafePred<T>;
+}
 
 /**
  * Takes a list of predicates and returns a predicate that returns true for a
@@ -27,4 +31,4 @@ export default curryN(2, (fns, ...args) => {
     }
 
     return false;
-}) as typeof anyPass;
+}) as AnyPass;

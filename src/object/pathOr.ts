@@ -1,6 +1,12 @@
 import curryN from '../function/curryN';
 import path from './path';
-import { pathOr } from '../typings/types';
+import { Paths } from '../typings/types';
+
+interface PathOr {
+    (paths: Paths, defaultValue, obj?): any;
+    (paths: Paths): (defaultValue, obj?) => any;
+    (paths: Paths): (defaultValue) => (obj?) => any;
+}
 
 /**
  * If the given, non-null object has a value at the given path, returns the
@@ -19,4 +25,4 @@ export default curryN(3, (paths = [], value, obj = {}) => {
     const v = path(paths, obj);
 
     return v != null ? v : value;
-}) as typeof pathOr
+}) as PathOr;

@@ -1,5 +1,9 @@
-import { sort } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface StableSortBy {
+    <T>(fn: (a: T, b: T) => number, list: ReadonlyArray<T>): T[];
+    <T>(fn: (a: T, b: T) => number): (list: ReadonlyArray<T>) => T[];
+}
 
 /**
  * Sorts the array according to the supplied function and keeping the order of elements.
@@ -54,4 +58,4 @@ export default curryN(2, (fn, arr = []) => {
     }
 
     return result;
-}) as typeof sort
+}) as StableSortBy;

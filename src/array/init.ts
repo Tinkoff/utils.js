@@ -1,4 +1,8 @@
-import { init } from '../typings/types';
+interface Init {
+    <T>(list: ReadonlyArray<T>): T[];
+    (list: string): string;
+}
+
 /**
  * Returns all but the last element of the given list or string.
  *
@@ -11,6 +15,4 @@ import { init } from '../typings/types';
  *      init([1]);        //=> []
  *      init([]);         //=> []
  */
-export default (
-  arr => arr.slice(0, -1)
-) as typeof init
+export default ((arr) => arr.slice(0, -1)) as Init;

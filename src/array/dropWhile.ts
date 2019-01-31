@@ -1,5 +1,9 @@
-import { dropWhile } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface DropWhile {
+    <T>(fn: (a: T) => boolean, list: ReadonlyArray<T>): T[];
+    <T>(fn: (a: T) => boolean): (list: ReadonlyArray<T>) => T[];
+}
 
 /**
  * Returns a new list excluding the leading elements of a given list which
@@ -24,4 +28,4 @@ export default curryN(2, (fn, arr = []) => {
     }
 
     return arr.slice(idx);
-}) as typeof dropWhile
+}) as DropWhile;

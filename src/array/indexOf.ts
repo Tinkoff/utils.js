@@ -1,5 +1,9 @@
-import { indexOf } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface IndexOf {
+    <T>(target: T, list: ReadonlyArray<T>): number;
+    <T>(target: T): (list: ReadonlyArray<T>) => number;
+}
 
 /**
  * Returns the position of the first occurrence of an item in an array, or -1
@@ -14,4 +18,6 @@ import curryN from '../function/curryN';
  *      indexOf(10, [1,2,3,4]); //=> -1
  */
 
-export default curryN(2, (target, xs) => Array.prototype.indexOf.call(xs, target)) as typeof indexOf
+export default curryN(2, (target, xs) =>
+    Array.prototype.indexOf.call(xs, target)
+) as IndexOf;

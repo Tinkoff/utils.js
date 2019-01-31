@@ -1,5 +1,14 @@
-import { zip } from '../typings/types';
 import curryN from '../function/curryN';
+import { KeyValuePair } from '../typings/types';
+
+interface Zip {
+    <K, V>(list1: ReadonlyArray<K>, list2: ReadonlyArray<V>): Array<
+        KeyValuePair<K, V>
+    >;
+    <K>(list1: ReadonlyArray<K>): <V>(
+        list2: ReadonlyArray<V>
+    ) => Array<KeyValuePair<K, V>>;
+}
 
 /**
  * Creates a new list out of the two supplied by pairing up equally-positioned
@@ -22,4 +31,4 @@ export default curryN(2, (a = [], b = []) => {
     }
 
     return result;
-}) as typeof zip
+}) as Zip;

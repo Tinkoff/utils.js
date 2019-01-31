@@ -1,6 +1,12 @@
-import { groupBy } from '../typings/types';
 import curryN from '../function/curryN';
 import objectKeys from './keys';
+
+interface GroupBy {
+    <T>(fn: (a: T) => string, list: ReadonlyArray<T>): { [index: string]: T[] };
+    <T>(fn: (a: T) => string): (
+        list: ReadonlyArray<T>
+    ) => { [index: string]: T[] };
+}
 
 /**
  * Creates an object composed of keys generated from the results of running
@@ -30,4 +36,4 @@ export default curryN(2, (fn, obj = {}) => {
     }
 
     return result;
-}) as typeof groupBy
+}) as GroupBy;

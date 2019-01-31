@@ -1,6 +1,12 @@
-import { pathEq, CurriedFunction2 } from '../typings/types';
 import curryN from '../function/curryN';
 import path from './path';
+import { Paths, CurriedFunction2 } from '../typings/types';
+
+interface PathEq {
+    (path: Paths, val: any, obj: any): boolean;
+    (path: Paths, val: any): (obj: any) => boolean;
+    (path: Paths): CurriedFunction2<any, any, boolean>;
+}
 
 /**
  * Determines whether a nested path on an object has a specific value
@@ -19,4 +25,7 @@ import path from './path';
  *      var isFamous = pathEq(['address', 'zipCode'], 90210);
  *      filter(isFamous, users); //=> [ user1 ]
  */
-export default curryN(3, (paths = [], value, obj = {}) => path(paths, obj) === value) as typeof pathEq
+export default curryN(
+    3,
+    (paths = [], value, obj = {}) => path(paths, obj) === value
+) as PathEq;

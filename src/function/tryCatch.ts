@@ -1,5 +1,10 @@
-import { tryCatch } from '../typings/types';
 import curryN from './curryN';
+
+interface TryCatch {
+    <T>(tryer: (...args: any[]) => T, catcher: (...args: any[]) => T): (
+        ...args: any[]
+    ) => T;
+}
 
 /**
  * Takes two functions, tryer and catcher.
@@ -32,4 +37,4 @@ export default curryN(2, (tryer, catcher) => {
             return catcher.apply(this, args);
         }
     };
-}) as typeof tryCatch
+}) as TryCatch;

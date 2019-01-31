@@ -1,5 +1,13 @@
-import { eqProps } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface EqProps {
+    <T, U>(prop: string, obj1: T, obj2: U): boolean;
+    <P extends string>(prop: P): <T, U>(
+        obj1: Record<P, T>,
+        obj2: Record<P, U>
+    ) => boolean;
+    <T>(prop: string, obj1: T): <U>(obj2: U) => boolean;
+}
 
 /**
  * Reports whether two objects have the same value, in equal
@@ -19,4 +27,4 @@ import curryN from '../function/curryN';
  */
 export default curryN(3, (prop, obj1, obj2) => {
     return obj1 != null && obj2 != null ? obj1[prop] === obj2[prop] : undefined;
-}) as typeof eqProps
+}) as EqProps;

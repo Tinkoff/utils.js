@@ -1,5 +1,9 @@
-import { all } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface All {
+    <T>(fn: (a: T) => boolean, list: ReadonlyArray<T>): boolean;
+    <T>(fn: (a: T) => boolean): (list: ReadonlyArray<T>) => boolean;
+}
 
 /**
  * Returns `true` if all the elements of the array match the predicate,
@@ -24,4 +28,4 @@ export default curryN(2, (fn, arr = []) => {
     }
 
     return true;
-}) as typeof all
+}) as All;

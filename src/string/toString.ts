@@ -1,4 +1,3 @@
-import { toString } from '../typings/types';
 /**
  * Converts `value` to a string. An empty string is returned for `null`
  * and `undefined` values.
@@ -13,10 +12,10 @@ import { toString } from '../typings/types';
  *
  * toString([1, 2, 3]); => '1,2,3'
  */
-export default (val => {
+export default (val) => {
     if (val == null) {
         return '';
     }
 
     return `${val}`;
-}) as typeof toString
+};

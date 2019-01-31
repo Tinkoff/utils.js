@@ -1,5 +1,9 @@
-import { find } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface Find {
+    <T>(fn: (a: T) => boolean, list: ReadonlyArray<T>): T | undefined;
+    <T>(fn: (a: T) => boolean): (list: ReadonlyArray<T>) => T | undefined;
+}
 
 /**
  * Returns the first element of the list which matches the predicate, or
@@ -21,4 +25,4 @@ export default curryN(2, (fn, arr = []) => {
             return arr[i];
         }
     }
-}) as typeof find
+}) as Find;

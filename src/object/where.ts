@@ -1,6 +1,12 @@
-import { where } from '../typings/types';
 import curryN from '../function/curryN';
 import has from './has';
+
+interface Where {
+    <T, U>(spec: T, testObj: U): boolean;
+    <T>(spec: T): <U>(testObj: U) => boolean;
+    <ObjFunc2, U>(spec: ObjFunc2, testObj: U): boolean;
+    <ObjFunc2>(spec: ObjFunc2): <U>(testObj: U) => boolean;
+}
 
 /**
  * Takes a spec object and a test object; returns true if the test satisfies
@@ -36,4 +42,4 @@ export default curryN(2, (spec = {}, obj = {}) => {
     }
 
     return true;
-}) as typeof where
+}) as Where;

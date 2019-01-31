@@ -1,5 +1,14 @@
 import curryN from '../function/curryN';
-import { mapObject } from '../typings/types';
+
+interface MapObject {
+    <TKey extends keyof TObj, TValue, TObj>(
+        fn: (value: TObj[TKey], key: TKey, obj: TObj) => TValue,
+        obj: TObj
+    ): Record<TKey, TValue>;
+    <TKey extends keyof TObj, TValue, TObj>(
+        fn: (value: TObj[TKey], key: TKey, obj: TObj) => TValue
+    ): (obj: TObj) => Record<TKey, TValue>;
+}
 
 /**
  * Applies `fn` to each of the `obj` values, and returns new object.
@@ -23,4 +32,4 @@ export default curryN(2, (fn, obj = {}) => {
     }
 
     return result;
-}) as typeof mapObject
+}) as MapObject;

@@ -1,5 +1,9 @@
-import { difference } from '../typings/types';
 import curryN from '../function/curryN';
+
+interface Difference {
+    <T>(list1: ReadonlyArray<T>, list2: ReadonlyArray<T>): T[];
+    <T>(list1: ReadonlyArray<T>): (list2: ReadonlyArray<T>) => T[];
+}
 
 /**
  * Returns the array of all elements in the first array not
@@ -23,4 +27,4 @@ export default curryN(2, (a = [], b = []) => {
     }
 
     return result;
-}) as typeof difference
+}) as Difference;

@@ -1,4 +1,7 @@
-import { length } from '../typings/types';
+interface Length {
+    <T>(list: ReadonlyArray<T>): number;
+}
+
 /**
  * Returns the number of elements in the array by returning `arr.length`.
  *
@@ -9,6 +12,4 @@ import { length } from '../typings/types';
  *      length([]); //=> 0
  *      length([1, 2, 3]); //=> 3
  */
-export default (
-    arr => arr && arr.length
-) as typeof length
+export default ((arr) => arr && arr.length) as Length;

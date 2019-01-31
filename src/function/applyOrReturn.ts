@@ -1,5 +1,11 @@
 import curryN from './curryN';
-import { applyOrReturn } from '../typings/types';
+
+interface ApplyOrReturn {
+    <TFunc, T>(args, func: T): T extends (...args) => any ? ReturnType<T> : T;
+    (args): <TFunc, T>(
+        func: T
+    ) => T extends (...args) => any ? ReturnType<T> : T;
+}
 
 /**
  * If `test` is function it calls with applied first argument, otherwise just returns `test`
@@ -18,5 +24,4 @@ export default curryN(2, (args, test) => {
     }
 
     return test;
-}) as typeof applyOrReturn;
-
+}) as ApplyOrReturn;

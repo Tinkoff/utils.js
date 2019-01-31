@@ -1,4 +1,7 @@
-import { comparator } from '../typings/types';
+interface Comparator {
+    <T>(pred: (a: T, b: T) => boolean): (x: T, y: T) => number;
+}
+
 /**
  * Makes a comparator function out of a function that reports whether the first
  * element is less than the second.
@@ -14,11 +17,11 @@ import { comparator } from '../typings/types';
  *      ];
  *      var peopleByIncreasingAge = sort(byAge, people);
  */
-export default (function (pred) {
-    return function (a, b) {
+export default ((pred) => {
+    return function(a, b) {
         if (pred(a, b)) {
             return -1;
         }
         return pred(b, a) ? 1 : 0;
-    }
-}) as typeof comparator;
+    };
+}) as Comparator;

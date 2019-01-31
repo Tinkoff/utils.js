@@ -1,4 +1,7 @@
-import { curryN } from '../typings/types';
+interface CurryN {
+    (length: number, fn: (...args: any[]) => any): (...a: any[]) => any;
+}
+
 /**
  * Returns a curried equivalent of the provided function, with the specified
  * arity. If `g` is `curryN(3, f)`, the
@@ -27,7 +30,7 @@ export default ((arity, fn) =>
             return fn.apply(this, args);
         }
 
-        return function (...newArgs) {
+        return function(...newArgs) {
             return curried.apply(this, args.concat(newArgs));
         };
-    }) as typeof curryN;
+    }) as CurryN;

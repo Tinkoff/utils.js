@@ -1,4 +1,3 @@
-import { toLower } from '../typings/types';
 /**
  * Returns the lower case version of a string.
  *
@@ -8,6 +7,4 @@ import { toLower } from '../typings/types';
  *
  *      toLower('XYZ'); //=> 'xyz'
  */
-export default (
-    (str = '') => str.toLowerCase()
-) as typeof toLower
+export default (str = '') => str.toLowerCase();

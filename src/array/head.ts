@@ -1,4 +1,8 @@
-import { head } from '../typings/types';
+interface Head {
+    <T>(list: ReadonlyArray<T>): T | undefined;
+    (list: string): string;
+}
+
 /**
  * Returns the first element of the given array.
  *
@@ -9,6 +13,4 @@ import { head } from '../typings/types';
  *      head(['fi', 'fo', 'fum']); //=> 'fi'
  *      head([]); //=> undefined
  */
-export default (
-    arr => arr && arr[0]
-) as typeof head
+export default ((arr) => arr && arr[0]) as Head;

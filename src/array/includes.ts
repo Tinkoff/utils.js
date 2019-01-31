@@ -1,5 +1,9 @@
 import curryN from '../function/curryN';
-import { includes } from '../typings/types';
+
+interface Includes {
+    <TValue>(value: TValue, array: TValue[]): boolean;
+    <TValue>(value: TValue): (array: TValue[]) => boolean;
+}
 
 /**
  * Dispatches call to arr.indexOf, returns true if arr is array and value in the array or
@@ -14,4 +18,7 @@ import { includes } from '../typings/types';
  *      includes(4, [1, 2, 3]); //=> false
  *      includes('test', 'aaatest'); //=> true
  */
-export default curryN(2, (value, arr = []) => arr.indexOf(value) !== -1) as typeof includes
+export default curryN(
+    2,
+    (value, arr = []) => arr.indexOf(value) !== -1
+) as Includes;

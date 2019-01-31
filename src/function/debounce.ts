@@ -1,5 +1,9 @@
 import curryN from './curryN';
-import { debounce } from '../typings/types';
+
+interface Debounce {
+    <TFunc>(wait: number, fn: TFunc): Function & { cancel: Function };
+    (wait: number): <TFunc>(fn: TFunc) => Function & { cancel: Function };
+}
 
 /**
  * Creates a debounced function that delays invoking `func` until after `wait`
@@ -17,7 +21,7 @@ export default curryN(2, (wait, fn) => {
         let args = arguments;
         clearTimeout(timeout);
         timeout = setTimeout(
-            () => fn.apply(this, args),  // eslint-disable-line prefer-rest-params
+            () => fn.apply(this, args), // eslint-disable-line prefer-rest-params
             wait
         );
     }
@@ -25,4 +29,4 @@ export default curryN(2, (wait, fn) => {
     (f as any).cancel = () => clearTimeout(timeout);
 
     return f;
-}) as typeof debounce
+}) as Debounce;
