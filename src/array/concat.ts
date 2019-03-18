@@ -1,14 +1,14 @@
 import curryN from '../function/curryN';
 import isArray from '../is/array';
+import isArrayLike from '../is/arrayLike';
+import slice from './slice';
 
 interface Concat {
-    <T>(list1: ReadonlyArray<T>, list2: ReadonlyArray<T>): T[];
-    <T>(list1: ReadonlyArray<T>): (list2: ReadonlyArray<T>) => T[];
     (list1: string, list2: string): string;
+    <U, V>(list1: ArrayLike<U>, list2: ArrayLike<V>): (U | V)[];
     (list1: string): (list2: string) => string;
+    <U>(list1: ArrayLike<U>): <V>(list2: ArrayLike<V>) => (U | V)[];
 }
-
-type Arg = Array<any> | string;
 
 /**
  * Returns the result of concatenating the given arrays or strings.
@@ -24,10 +24,20 @@ type Arg = Array<any> | string;
  *      concat([4, 5, 6], [1, 2, 3]); //=> [4, 5, 6, 1, 2, 3]
  *      concat([], []); //=> []
  */
-export default curryN(2, (a: Arg = [], b: Arg = []) => {
+export default curryN(2, <U, V>(a: ArrayLike<U> = [], b: ArrayLike<V> = []) => {
     if (isArray(a)) {
         return a.concat(b);
     }
 
-    return a + b;
+    if (isArrayLike(a)) {
+        const resultArr: (U | V)[] = slice(0, a.length, a);
+
+        for (let i = 0; i < b.length; i++) {
+            resultArr.push(b[i]);
+        }
+
+        return resultArr;
+    }
+
+    return (a as string) + b;
 }) as Concat;

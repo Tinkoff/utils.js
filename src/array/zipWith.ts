@@ -1,18 +1,12 @@
 import curryN from '../function/curryN';
+import { CurriedFunction2 } from '../typings/types';
+
+type MapFunc<U, V, R> = (a: U, b: V) => R;
 
 interface ZipWith {
-    <T, U, TResult>(
-        fn: (x: T, y: U) => TResult,
-        list1: ReadonlyArray<T>,
-        list2: ReadonlyArray<U>
-    ): TResult[];
-    <T, U, TResult>(fn: (x: T, y: U) => TResult, list1: ReadonlyArray<T>): (
-        list2: ReadonlyArray<U>
-    ) => TResult[];
-    <T, U, TResult>(fn: (x: T, y: U) => TResult): (
-        list1: ReadonlyArray<T>,
-        list2: ReadonlyArray<U>
-    ) => TResult[];
+    <U, V, R>(fn: MapFunc<U, V, R>, list1: ArrayLike<U>, list2: ArrayLike<V>): R[];
+    <U, V, R>(fn: MapFunc<U, V, R>, list1: ArrayLike<U>): (list2: ArrayLike<V>) => R[];
+    <U, V, R>(fn: MapFunc<U, V, R>): CurriedFunction2<ArrayLike<U>, ArrayLike<V>, R[]>;
 }
 
 /**
@@ -33,9 +27,9 @@ interface ZipWith {
  *      zipWith(f, [1, 2, 3], ['a', 'b', 'c']);
  *      //=> [f(1, 'a'), f(2, 'b'), f(3, 'c')]
  */
-export default curryN(3, (fn, a = [], b = []) => {
+export default curryN(3, <U, V, R>(fn: MapFunc<U, V, R>, a: ArrayLike<U> = [], b: ArrayLike<V> = []) => {
     const len = Math.min(a.length, b.length);
-    const result = new Array(len);
+    const result: R[] = new Array(len);
 
     for (let i = 0; i < len; i++) {
         result[i] = fn(a[i], b[i]);

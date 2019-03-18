@@ -1,6 +1,8 @@
+import slice from './slice';
+
 interface Init {
-    <T>(list: ReadonlyArray<T>): T[];
     (list: string): string;
+    <T>(list: ArrayLike<T>): T[];
 }
 
 /**
@@ -15,4 +17,4 @@ interface Init {
  *      init([1]);        //=> []
  *      init([]);         //=> []
  */
-export default ((arr) => arr.slice(0, -1)) as Init;
+export default (<T>(arr: ArrayLike<T>) => slice(0, -1, arr)) as Init;

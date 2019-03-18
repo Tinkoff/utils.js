@@ -1,13 +1,12 @@
 import curryN from '../function/curryN';
 import concat from './concat';
+import { Endo1, CurriedFunction2 } from '../typings/types';
 
 interface Adjust {
-    <T>(fn: (a: T) => T, index: number, list: ReadonlyArray<T>): T[];
-    <T>(fn: (a: T) => T, index: number): (list: ReadonlyArray<T>) => T[];
-    <T>(fn: (a: T) => T): (index: number) => (list: ReadonlyArray<T>) => T[];
-    <T>(fn: (a: T) => T): (index: number, list: ReadonlyArray<T>) => T[];
+    <T>(fn: Endo1<T>, index: number, list: ArrayLike<T>): T[];
+    <T>(fn: Endo1<T>, index: number): (list: ArrayLike<T>) => T[];
+    <T>(fn: Endo1<T>): CurriedFunction2<number, ArrayLike<T>, T[]>;
 }
-
 
 /**
  * Applies a function to the value at the given index of an array, returning a
@@ -27,7 +26,7 @@ interface Adjust {
  *      adjust(add(10), 1, [1, 2, 3]);     //=> [1, 12, 3]
  *      adjust(add(10))(1)([1, 2, 3]);     //=> [1, 12, 3]
  */
-export default curryN(3, (fn, idx, list) => {
+export default curryN(3, <T>(fn: Endo1<T>, idx: number, list: ArrayLike<T> = []) => {
     if (idx >= list.length || idx < -list.length) {
         return list;
     }

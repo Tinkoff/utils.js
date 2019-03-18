@@ -26,6 +26,7 @@ describe('utils/array/shuffle', () => {
     });
 
     it('Math.random is always returns 0', () => {
+        // @ts-ignore
         Math.random.mockImplementation(() => 0);
 
         const arr = [1, 2, 3, 4, 5];
@@ -34,6 +35,7 @@ describe('utils/array/shuffle', () => {
     });
 
     it('Math.random is always returns value close to 1', () => {
+        // @ts-ignore
         Math.random.mockImplementation(() => 0.999999);
 
         const arr = [1, 2, 3, 4, 5];

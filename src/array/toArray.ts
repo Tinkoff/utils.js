@@ -1,5 +1,12 @@
 import isArray from '../is/array';
 import isArrayLike from '../is/arrayLike';
+
+interface ToArray {
+    <T>(v: Array<T>): T[];
+    <T>(v: ArrayLike<T>): T[];
+    <T>(v: T): [T];
+}
+
 /**
  * Converts val to array. If val is array return it.
  * @param {*} val
@@ -20,6 +27,4 @@ export default ((val) => {
     }
 
     return [val];
-}) as <T, V>(
-    v: T
-) => T extends Array<any> ? T : T extends ArrayLike<V> ? V[] : [T];
+}) as ToArray;

@@ -1,8 +1,9 @@
 import curryN from '../function/curryN';
+import { ArrPred } from '../typings/types';
 
 interface Find {
-    <T>(fn: (a: T) => boolean, list: ReadonlyArray<T>): T | undefined;
-    <T>(fn: (a: T) => boolean): (list: ReadonlyArray<T>) => T | undefined;
+    <T>(fn: ArrPred<T>, list: ArrayLike<T>): T | undefined;
+    <T>(fn: ArrPred<T>): (list: ArrayLike<T>) => T | undefined;
 }
 
 /**
@@ -19,7 +20,7 @@ interface Find {
  *      find(x => x.a === 2)(xs); //=> {a: 2}
  *      find(x => x.a === 4)(xs); //=> undefined
  */
-export default curryN(2, (fn, arr = []) => {
+export default curryN(2, <T>(fn: ArrPred<T>, arr: ArrayLike<T> = []) => {
     for (let i = 0; i < arr.length; i++) {
         if (fn(arr[i], i, arr)) {
             return arr[i];

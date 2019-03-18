@@ -1,7 +1,7 @@
 import indexOf from '../indexOf';
 
 describe('utils/array/indexOf', () => {
-    it('returns a number indicating an object\'s position in a list', () => {
+    it("returns a number indicating an object's position in a list", () => {
         const list = [1, 2, 3, 4];
 
         expect(indexOf(3, list)).toEqual(2);
@@ -41,7 +41,7 @@ describe('utils/array/indexOf', () => {
     });
 
     it('does not consider "1" equal to 1', () => {
-        expect(indexOf('1', list)).toEqual(-1);
+        expect(indexOf('1', list as any[])).toEqual(-1);
     });
 
     it('returns -1 for an empty array', () => {

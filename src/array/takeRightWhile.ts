@@ -1,13 +1,14 @@
 import curryN from '../function/curryN';
+import slice from './slice';
+import { ArrPred } from '../typings/types';
 
 interface TakeRightWhile {
-    <TType extends string | any[]>(
-        fn: (item: TType[0]) => any,
-        item?: TType
-    ): TType;
-    <TType extends string | any[]>(fn: (item: TType[0]) => any): (
-        item?: TType
-    ) => TType;
+    (fn: ArrPred<string>, arr: string): string;
+    <T>(fn: ArrPred<T>, arr: ArrayLike<T>): T[];
+    <T>(fn: ArrPred<T>): {
+        (arr: string): string;
+        (arr: ArrayLike<T>): T[];
+    };
 }
 
 /**
@@ -25,12 +26,12 @@ interface TakeRightWhile {
  *
  *      takeRightWhile(isNotOne, [1, 2, 3, 4]); //=> [2, 3, 4]
  */
-export default curryN(2, (fn, arr = []) => {
+export default curryN(2, <T>(fn: ArrPred<T>, arr: ArrayLike<T> = []) => {
     let i = arr.length - 1;
 
-    while (i >= 0 && fn(arr[i])) {
+    while (i >= 0 && fn(arr[i], i, arr)) {
         i -= 1;
     }
 
-    return arr.slice(i + 1);
+    return slice(i + 1, arr.length, arr);
 }) as TakeRightWhile;

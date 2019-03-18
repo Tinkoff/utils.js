@@ -7,7 +7,7 @@ describe('utils/array/splitEvery', () => {
         });
 
         it('part length greater than array length', () => {
-            expect(splitEvery(3, [1, 2])).toEqual([[1, 2]]);
+            expect(splitEvery(3)([1, 2])).toEqual([[1, 2]]);
         });
 
         it('exact split', () => {
@@ -25,7 +25,7 @@ describe('utils/array/splitEvery', () => {
         });
 
         it('part length greater than string length', () => {
-            expect(splitEvery(3, 'ab')).toEqual(['ab']);
+            expect(splitEvery(3)('ab')).toEqual(['ab']);
         });
 
         it('exact split', () => {

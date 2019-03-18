@@ -1,9 +1,10 @@
 import curryN from '../function/curryN';
+import { CurriedFunction2 } from '../typings/types';
 
 interface Remove {
-    <T>(start: number, count: number, list: ReadonlyArray<T>): T[];
-    <T>(start: number): (count: number, list: ReadonlyArray<T>) => T[];
-    <T>(start: number, count: number): (list: ReadonlyArray<T>) => T[];
+    <T>(start: number, count: number, list: ArrayLike<T>): T[];
+    <T>(start: number, count: number): (list: ArrayLike<T>) => T[];
+    <T>(start: number): CurriedFunction2<number, ArrayLike<T>, T[]>;
 }
 
 /**
@@ -20,7 +21,7 @@ interface Remove {
  *      remove(2, 3, [1,2,3,4,5,6,7,8]); //=> [1,2,6,7,8]
  */
 
-export default curryN(3, (start, count, list) => {
+export default curryN(3, <T>(start: number, count: number, list: ArrayLike<T>) => {
     const result = Array.prototype.slice.call(list, 0);
 
     result.splice(start, count);

@@ -1,8 +1,9 @@
 import curryN from '../function/curryN';
+import { ArrPred } from '../typings/types';
 
 interface FindIndex {
-    <T>(fn: (a: T) => boolean, list: ReadonlyArray<T>): number;
-    <T>(fn: (a: T) => boolean): (list: ReadonlyArray<T>) => number;
+    <T>(fn: ArrPred<T>, list: ArrayLike<T>): number;
+    <T>(fn: ArrPred<T>): (list: ArrayLike<T>) => number;
 }
 
 /**
@@ -19,7 +20,7 @@ interface FindIndex {
  *      findIndex(x => x.a === 2)(xs); //=> 1
  *      findIndex(x => x.a === 4)(xs); //=> -1
  */
-export default curryN(2, (fn, arr = []) => {
+export default curryN(2, <T>(fn: ArrPred<T>, arr: ArrayLike<T> = []) => {
     for (let i = 0; i < arr.length; i++) {
         if (fn(arr[i], i, arr)) {
             return i;

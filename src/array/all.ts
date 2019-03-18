@@ -1,8 +1,9 @@
 import curryN from '../function/curryN';
+import { ArrPred } from '../typings/types';
 
 interface All {
-    <T>(fn: (a: T) => boolean, list: ReadonlyArray<T>): boolean;
-    <T>(fn: (a: T) => boolean): (list: ReadonlyArray<T>) => boolean;
+    <T>(fn: ArrPred<T>, list: ArrayLike<T>): boolean;
+    <T>(fn: ArrPred<T>): (list: ArrayLike<T>) => boolean;
 }
 
 /**
@@ -20,7 +21,7 @@ interface All {
  *      all(lessThan2)([1, 2]); //=> false
  *      all(lessThan3)([1, 2]); //=> true
  */
-export default curryN(2, (fn, arr = []) => {
+export default curryN(2, <T>(fn: ArrPred<T>, arr: ArrayLike<T> = []) => {
     for (let i = 0; i < arr.length; i++) {
         if (!fn(arr[i], i, arr)) {
             return false;

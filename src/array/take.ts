@@ -1,11 +1,12 @@
 import curryN from '../function/curryN';
+import slice from './slice';
 
 interface Take {
-    <T>(n: number, xs: ReadonlyArray<T>): T[];
     (n: number, xs: string): string;
-    <T>(n: number): {
+    <T>(n: number, xs: ArrayLike<T>): T[];
+    (n: number): {
         (xs: string): string;
-        (xs: ReadonlyArray<T>): T[];
+        <T>(xs: ArrayLike<T>): T[];
     };
 }
 
@@ -23,4 +24,4 @@ interface Take {
  *      take(4, ['foo', 'bar', 'baz']); //=> ['foo', 'bar', 'baz']
  *      take(3, 'ramda');               //=> 'ram'
  */
-export default curryN(2, (n, arr = []) => arr.slice(0, n)) as Take;
+export default curryN(2, <T>(n: number, arr: ArrayLike<T> = []) => slice(0, n, arr)) as Take;

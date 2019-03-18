@@ -25,7 +25,7 @@
  *
  * range(0); // => []
  */
-export default ((a, b, step) => {
+export default (a: number, b?: number, step?: number) => {
     if (typeof b !== 'number') {
         b = a;
         a = 0;
@@ -45,4 +45,4 @@ export default ((a, b, step) => {
     }
 
     return result;
-}) as (a: number, b, step) => number[];
+};

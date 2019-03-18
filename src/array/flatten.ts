@@ -11,7 +11,7 @@ import isArrayLike from '../is/arrayLike';
  *      flatten([1, 2, [3, 4], 5, [6, [7, 8, [9, [10, 11], 12]]]]);
  *      //=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
  */
-const flatten = <T>(arr: ArrayLike<T> = []) => {
+const flatten = <T>(arr: ArrayLike<any> = []): T[] => {
     const result = [];
 
     for (let i = 0; i < arr.length; i++) {

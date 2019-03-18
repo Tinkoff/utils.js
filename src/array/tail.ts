@@ -1,6 +1,8 @@
+import slice from './slice';
+
 interface Tail {
-    <T>(list: ReadonlyArray<T>): T[];
     (list: string): string;
+    <T>(list: ArrayLike<T>): T[];
 }
 
 /**
@@ -13,4 +15,4 @@ interface Tail {
  *      tail(['fi', 'fo', 'fum']); //=> ['fo', 'fum']
  *      tail([]); //=> []
  */
-export default (arr) => arr.slice(1) as Tail;
+export default (<T>(arr: ArrayLike<T>) => slice(1, arr.length, arr)) as Tail;

@@ -1,5 +1,5 @@
 interface Length {
-    <T>(list: ReadonlyArray<T>): number;
+    (list: ArrayLike<any>): number | void;
 }
 
 /**
@@ -12,4 +12,4 @@ interface Length {
  *      length([]); //=> 0
  *      length([1, 2, 3]); //=> 3
  */
-export default ((arr) => arr && arr.length) as Length;
+export default ((arr?: ArrayLike<any>) => arr && arr.length) as Length;

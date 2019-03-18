@@ -1,8 +1,10 @@
 import curryN from '../function/curryN';
+import indexOf from './indexOf';
 
 interface Includes {
-    <TValue>(value: TValue, array: TValue[]): boolean;
-    <TValue>(value: TValue): (array: TValue[]) => boolean;
+    (value: string, array: string): boolean;
+    <T>(value: T, array: ArrayLike<T>): boolean;
+    <T>(value: T): (array: ArrayLike<T> | string) => boolean;
 }
 
 /**
@@ -18,7 +20,4 @@ interface Includes {
  *      includes(4, [1, 2, 3]); //=> false
  *      includes('test', 'aaatest'); //=> true
  */
-export default curryN(
-    2,
-    (value, arr = []) => arr.indexOf(value) !== -1
-) as Includes;
+export default curryN(2, <T>(value: T, arr: ArrayLike<T> = []) => indexOf(value, arr) !== -1) as Includes;

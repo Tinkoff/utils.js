@@ -3,8 +3,12 @@ import curryN from '../function/curryN';
 import always from '../function/always';
 
 interface Update {
-    <T>(index: number, value: T, list: ReadonlyArray<T>): T[];
-    <T>(index: number, value: T): (list: ReadonlyArray<T>) => T[];
+    <T>(index: number, value: T, list: ArrayLike<T>): T[];
+    <T>(index: number, value: T): (list: ArrayLike<T>) => T[];
+    <T>(index: number): {
+        <T>(value: T, list: ArrayLike<T>): T[];
+        <T>(value: T): (list: ArrayLike<T>) => T[];
+    };
 }
 
 /**
@@ -21,6 +25,4 @@ interface Update {
  *      update(1)(11)([0, 1, 2]);     //=> [0, 11, 2]
  */
 
-export default curryN(3, (idx, x, list) =>
-    adjust(always(x), idx, list)
-) as Update;
+export default curryN(3, <T>(idx: number, x: T, list: ArrayLike<T>) => adjust(always(x), idx, list)) as Update;

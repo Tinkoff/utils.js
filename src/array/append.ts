@@ -2,8 +2,8 @@ import concat from './concat';
 import curryN from '../function/curryN';
 
 interface Append {
-    <T>(el: T, list: ReadonlyArray<T>): T[];
-    <T>(el: T): <T>(list: ReadonlyArray<T>) => T[];
+    <U, V>(el: U, list: ArrayLike<V>): (U | V)[];
+    <U>(el: U): <V>(list: ArrayLike<V>) => (U | V)[];
 }
 
 /**
@@ -21,4 +21,4 @@ interface Append {
  *      append(['tests'], ['write', 'more']); //=> ['write', 'more', ['tests']]
  */
 
-export default curryN(2, (el, list) => concat(list, [el])) as Append;
+export default curryN(2, <U, V>(el: U, list: ArrayLike<V>) => concat(list, [el])) as Append;

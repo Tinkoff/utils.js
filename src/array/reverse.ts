@@ -1,7 +1,8 @@
 import isString from '../is/string';
 
 interface Reverse {
-    <T>(list: ReadonlyArray<T>): T[];
+    (list: string): string;
+    <T>(list: ArrayLike<T>): T[];
 }
 
 /**
@@ -23,7 +24,7 @@ interface Reverse {
  *      reverse('');         //=> ''
  */
 
-export default ((list) =>
+export default (<T>(list: ArrayLike<T> | string) =>
     isString(list)
         ? list
               .split('')

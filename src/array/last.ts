@@ -1,5 +1,5 @@
 interface Last {
-    <T>(list: ReadonlyArray<T>): T | undefined;
+    <T>(list: ArrayLike<T>): T | undefined;
     (list: string): string;
 }
 
@@ -13,4 +13,4 @@ interface Last {
  *      last(['fi', 'fo', 'fum']); //=> 'fum'
  *      last([]); //=> undefined
  */
-export default ((arr) => arr && arr[arr.length - 1]) as Last;
+export default (<T>(arr: ArrayLike<T> | string) => arr && arr[arr.length - 1]) as Last;

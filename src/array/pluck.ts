@@ -1,12 +1,11 @@
 import curryN from '../function/curryN';
-import path from '../object/path';
+import prop from '../object/prop';
 import map from './map';
+import { Prop } from '../typings/types';
 
 interface Pluck {
-    <P extends string, T>(p: P, list: ReadonlyArray<Record<P, T>>): T[];
-    <T>(p: number, list: ReadonlyArray<{ [k: number]: T }>): T[];
-    <P extends string>(p: P): <T>(list: ReadonlyArray<Record<P, T>>) => T[];
-    (p: number): <T>(list: ReadonlyArray<{ [k: number]: T }>) => T[];
+    <P extends Prop, T>(p: P, list: ArrayLike<Record<P, T>>): T[];
+    <P extends Prop>(p: P): <T>(list: ArrayLike<Record<P, T>>) => T[];
 }
 
 /**
@@ -21,4 +20,6 @@ interface Pluck {
  *      pluck(0)([[1, 2], [3, 4]]);   //=> [1, 3]
  */
 
-export default curryN(2, (key, arr = []) => map(path([key]), arr)) as Pluck;
+export default curryN(2, <P extends Prop, T>(key: string, arr: ArrayLike<Record<P, T>> = []) =>
+    map(prop(key), arr)
+) as Pluck;

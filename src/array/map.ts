@@ -1,13 +1,10 @@
 import curryN from '../function/curryN';
 
+type MapFunc<T, R> = (item: T, i: number, arr: ArrayLike<T>) => R;
+
 interface Map {
-    <TItem, R>(
-        fn: (item: TItem, i: number, arr: TItem[]) => R,
-        arr: TItem[]
-    ): R[];
-    <TItem, R>(fn: (item: TItem, i: number, arr: TItem[]) => R): (
-        arr: TItem[]
-    ) => R[];
+    <T, R>(fn: MapFunc<T, R>, arr: ArrayLike<T>): R[];
+    <T, R>(fn: MapFunc<T, R>): (arr: ArrayLike<T>) => R[];
 }
 
 /**
@@ -23,7 +20,7 @@ interface Map {
  *
  *      map(double, [1, 2, 3]); //=> [2, 4, 6]
  */
-export default curryN(2, (fn, arr = []) => {
+export default curryN(2, <T, R>(fn: MapFunc<T, R>, arr: ArrayLike<T> = []) => {
     const len = arr.length;
     const result = new Array(len);
 

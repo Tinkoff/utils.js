@@ -3,7 +3,7 @@ import drop from '../drop';
 describe('utils/array/drop', () => {
     it('should drop', () => {
         expect(drop(1, ['foo', 'bar', 'baz'])).toEqual(['bar', 'baz']);
-        expect(drop(2, ['foo', 'bar', 'baz'])).toEqual(['baz']);
+        expect(drop(2)(['foo', 'bar', 'baz'])).toEqual(['baz']);
         expect(drop(3, ['foo', 'bar', 'baz'])).toEqual([]);
     });
     it('skips the first `n` elements from a list, returning the remainder', () => {

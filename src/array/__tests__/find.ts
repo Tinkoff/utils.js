@@ -1,17 +1,17 @@
-import findIndex from '../findIndex';
+import find from '../find';
 
-describe('utils/array/findIndex', () => {
+describe('utils/array/find', () => {
     it('should return founded value or undefined otherwise', () => {
-        expect(findIndex(a => a > 3, [1, 2, 3, 4])).toBe(3);
-        expect(findIndex(a => a % 2 === 0)([1, 2, 3, 4])).toBe(1);
-        expect(findIndex(a => a > 100, [1, 2, 3])).toBe(-1);
+        expect(find((a) => a > 3, [1, 2, 3, 4])).toBe(4);
+        expect(find((a: number) => a % 2 === 0)([1, 2, 3, 4])).toBe(2);
+        expect(find((a) => a > 100, [1, 2, 3])).toBeUndefined();
     });
 
     it('test callback parameters', () => {
         const fn = jest.fn();
         const arr = [1, 2, 3];
 
-        findIndex(fn, arr);
+        find(fn, arr);
 
         expect(fn).toHaveBeenCalledWith(1, 0, arr);
         expect(fn).toHaveBeenCalledWith(2, 1, arr);

@@ -1,13 +1,9 @@
 import curryN from '../function/curryN';
+import { ArrVoid } from '../typings/types';
 
 interface Each {
-    <TItem>(
-        fn: (item: TItem, index: number, arr: TItem[]) => void,
-        arr?: TItem[]
-    ): void;
-    <TItem>(fn: (item: TItem, index: number, arr: TItem[]) => void): (
-        arr?: TItem[]
-    ) => void;
+    <T>(fn: ArrVoid<T>, arr: ArrayLike<T>): void;
+    <T>(fn: ArrVoid<T>): (arr: ArrayLike<T>) => void;
 }
 
 /**
@@ -24,7 +20,7 @@ interface Each {
  *      // logs 7
  *      // logs 8
  */
-export default curryN(2, (fn, arr = []) => {
+export default curryN(2, <T>(fn: ArrVoid<T>, arr: ArrayLike<T> = []) => {
     for (let i = 0; i < arr.length; i++) {
         fn(arr[i], i, arr);
     }

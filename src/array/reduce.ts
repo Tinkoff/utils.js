@@ -1,18 +1,12 @@
 import curryN from '../function/curryN';
+import { CurriedFunction2 } from '../typings/types';
+
+export type ReduceFunc<T, R> = (acc: R, elem: T, index: number, arr: ArrayLike<T>) => R;
 
 interface Reduce {
-    <T, TResult>(
-        fn: (acc: TResult, elem: T) => TResult,
-        acc: TResult,
-        list: ReadonlyArray<T>
-    ): TResult;
-    <T, TResult>(
-        fn: (acc: TResult, elem: T) => TResult
-    ): (acc: TResult, list: ReadonlyArray<T>) => TResult;
-    <T, TResult>(
-        fn: (acc: TResult, elem: T) => TResult,
-        acc: TResult
-    ): (list: ReadonlyArray<T>) => TResult;
+    <T, R>(fn: ReduceFunc<T, R>, acc: R, list: ArrayLike<T>): R;
+    <T, R>(fn: ReduceFunc<T, R>, acc: R): (list: ArrayLike<T>) => R;
+    <T, R>(fn: ReduceFunc<T, R>): CurriedFunction2<R, ArrayLike<T>, R>;
 }
 
 /**
@@ -32,11 +26,11 @@ interface Reduce {
  *
  *      reduce(plus, 10, numbers); //=> 16
  */
-export default curryN(3, (fn, acc, arr = []) => {
+export default curryN(3, <T, R>(fn: ReduceFunc<T, R>, acc: R, arr: ArrayLike<T> = []) => {
     const len = arr.length;
 
     for (let i = 0; i < len; i++) {
-        acc = fn(acc, arr[i], i);
+        acc = fn(acc, arr[i], i, arr);
     }
 
     return acc;

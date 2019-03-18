@@ -1,13 +1,9 @@
 import curryN from '../function/curryN';
+import { Ord, ArrOrdFunc } from '../typings/types';
 
 interface MaxBy {
-    <TItem, R>(
-        fn: (item: TItem, i: number, arr: TItem[]) => R,
-        arr: TItem[]
-    ): TItem;
-    <TItem, R>(fn: (item: TItem, i: number, arr: TItem[]) => R): (
-        arr: TItem[]
-    ) => TItem;
+    <T, R extends Ord>(fn: ArrOrdFunc<T, R>, arr: ArrayLike<T>): T;
+    <T, R extends Ord>(fn: ArrOrdFunc<T, R>): (arr: ArrayLike<T>) => T;
 }
 
 /**
@@ -23,9 +19,9 @@ interface MaxBy {
  *      maxBy(o => o.n, objects); // => { 'n': 2 }
  *
  */
-export default curryN(2, (fn, arr = []) => {
+export default curryN(2, <T, R extends Ord>(fn: ArrOrdFunc<T, R>, arr: ArrayLike<T> = []) => {
     let result;
-    let max = -Infinity;
+    let max: Ord = -Infinity;
 
     for (let i = 0; i < arr.length; i++) {
         const computed = fn(arr[i], i, arr);

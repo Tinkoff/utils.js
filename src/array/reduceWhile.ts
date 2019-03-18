@@ -1,31 +1,15 @@
 import isNil from '../is/nil';
 import curryN from '../function/curryN';
+import { ReduceFunc } from './reduce';
 import { CurriedFunction2, CurriedFunction3 } from '../typings/types';
 
+type ReducePred<T, R> = (acc: R, elem: T, index: number, arr: ArrayLike<T>) => boolean;
+
 interface ReduceWhile {
-    <T, TResult>(
-        predicate: (acc: TResult, elem: T) => boolean,
-        fn: (acc: TResult, elem: T) => TResult,
-        acc: TResult,
-        list: ReadonlyArray<T>
-    ): TResult;
-    <T, TResult>(
-        predicate: (acc: TResult, elem: T) => boolean,
-        fn: (acc: TResult, elem: T) => TResult,
-        acc: TResult
-    ): (list: ReadonlyArray<T>) => TResult;
-    <T, TResult>(
-        predicate: (acc: TResult, elem: T) => boolean,
-        fn: (acc: TResult, elem: T) => TResult
-    ): CurriedFunction2<TResult, ReadonlyArray<T>, TResult>;
-    <T, TResult>(
-        predicate: (acc: TResult, elem: T) => boolean
-    ): CurriedFunction3<
-        (acc: TResult, elem: T) => TResult,
-        TResult,
-        ReadonlyArray<T>,
-        TResult
-    >;
+    <T, R>(predicate: ReducePred<T, R>, fn: ReduceFunc<T, R>, acc: R, list: ArrayLike<T>): R;
+    <T, R>(predicate: ReducePred<T, R>, fn: ReduceFunc<T, R>, acc: R): (list: ArrayLike<T>) => R;
+    <T, R>(predicate: ReducePred<T, R>, fn: ReduceFunc<T, R>): CurriedFunction2<R, ArrayLike<T>, R>;
+    <T, R>(predicate: ReducePred<T, R>): CurriedFunction3<ReduceFunc<T, R>, R, ArrayLike<T>, R>;
 }
 
 /**
@@ -48,7 +32,7 @@ interface ReduceWhile {
  *      reduceWhile(acc => acc.length < 3, (acc, x) => acc + x, '1', ['2', '3', '4', '5']) // '123'
  *
  */
-function reduceWhile(pred, fn, acc, arr) {
+export default curryN(4, <T, R>(pred: ReducePred<T, R>, fn: ReduceFunc<T, R>, acc: R, arr: ArrayLike<T> = []) => {
     // eslint-disable-line max-params
     if (isNil(arr)) {
         return acc;
@@ -58,13 +42,11 @@ function reduceWhile(pred, fn, acc, arr) {
 
     for (
         let index = 0, curr = arr[0];
-        index < length && pred(acc, curr);
+        index < length && pred(acc, curr, index, arr);
         curr = arr[++index] // eslint-disable-line no-plusplus
     ) {
         acc = fn(acc, curr, index, arr); // eslint-disable-line no-param-reassign
     }
 
     return acc;
-}
-
-export default curryN(4, reduceWhile) as ReduceWhile;
+}) as ReduceWhile;

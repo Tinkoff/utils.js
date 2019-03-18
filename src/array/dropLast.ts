@@ -2,11 +2,11 @@ import curryN from '../function/curryN';
 import take from './take';
 
 interface DropLast {
-    <T>(n: number, xs: ReadonlyArray<T>): T[];
     (n: number, xs: string): string;
-    <T>(n: number): {
-        (xs: ReadonlyArray<T>): T[];
+    <T>(n: number, xs: ArrayLike<T>): T[];
+    (n: number): {
         (xs: string): string;
+        <T>(xs: ArrayLike<T>): T[];
     };
 }
 
@@ -24,6 +24,4 @@ interface DropLast {
  *      dropLast(4, ['foo', 'bar', 'baz']); //=> []
  *      dropLast(3, 'ramda');               //=> 'ra'
  */
-export default curryN(2, (n, xs) =>
-    take(n < xs.length ? xs.length - n : 0, xs)
-) as DropLast;
+export default curryN(2, <T>(n: number, xs: ArrayLike<T>) => take(n < xs.length ? xs.length - n : 0, xs)) as DropLast;

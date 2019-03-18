@@ -1,8 +1,8 @@
 import curryN from '../function/curryN';
 
 interface Nth {
-    <T>(n: number, list: ReadonlyArray<T>): T | undefined;
-    (n: number): <T>(list: ReadonlyArray<T>) => T | undefined;
+    <T>(n: number, list: ArrayLike<T>): T | undefined;
+    (n: number): <T>(list: ArrayLike<T>) => T | undefined;
 }
 
 /**
@@ -20,7 +20,7 @@ interface Nth {
  *      nth(-1, list); //=> 'quux'
  *      nth(-99, list); //=> undefined
  */
-export default curryN(2, (index = 0, arr = []) => {
+export default curryN(2, <T>(index = 0, arr: ArrayLike<T> = []) => {
     if (index < 0) {
         index += arr.length;
     }

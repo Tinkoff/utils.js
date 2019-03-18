@@ -1,13 +1,9 @@
 import curryN from '../function/curryN';
+import { ArrPred } from '../typings/types';
 
 interface Reject {
-    <TItem>(
-        fn: (item: TItem, i: number, arr: TItem[]) => any,
-        arr?: TItem[]
-    ): TItem[];
-    <TItem>(fn: (item: TItem, i: number, arr: TItem[]) => any): (
-        arr?: TItem[]
-    ) => TItem[];
+    <T>(fn: ArrPred<T>, arr: ArrayLike<T>): T[];
+    <T>(fn: ArrPred<T>): (arr: ArrayLike<T>) => T[];
 }
 
 /**
@@ -24,7 +20,7 @@ interface Reject {
  *
  *      reject(isEven, [1, 2, 3, 4]); //=> [1, 3]
  */
-export default curryN(2, (fn, arr = []) => {
+export default curryN(2, <T>(fn: ArrPred<T>, arr: ArrayLike<T> = []) => {
     const result = [];
 
     for (let i = 0; i < arr.length; i++) {

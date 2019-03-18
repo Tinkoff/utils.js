@@ -1,9 +1,9 @@
 import curryN from '../function/curryN';
-import { Ord } from '../typings/types';
+import { Ord, OrdFunc } from '../typings/types';
 
 interface SortBy {
-    <T>(fn: (a: T) => Ord, list: ReadonlyArray<T>): T[];
-    (fn: (a: any) => Ord): <T>(list: ReadonlyArray<T>) => T[];
+    <T, R extends Ord>(fn: OrdFunc<T, R>, list: ArrayLike<T>): T[];
+    <T, R extends Ord>(fn: OrdFunc<T, R>): (list: ArrayLike<T>) => T[];
 }
 
 /**
@@ -18,7 +18,7 @@ interface SortBy {
  *      var pairs = [[-1, 1], [-2, 2], [-3, 3]];
  *      sortByFirstItem(pairs); //=> [[-3, 3], [-2, 2], [-1, 1]]
  */
-export default curryN(2, (fn, arr = []) => {
+export default curryN(2, <T, R extends Ord>(fn: OrdFunc<T, R>, arr: ArrayLike<T> = []) => {
     const newArray = Array.prototype.slice.call(arr);
 
     return newArray.sort((a, b) => {

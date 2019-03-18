@@ -2,11 +2,11 @@ import slice from './slice';
 import curryN from '../function/curryN';
 
 interface Drop {
-    <T>(n: number, xs: ReadonlyArray<T>): T[];
     (n: number, xs: string): string;
-    <T>(n: number): {
+    <T>(n: number, xs: ArrayLike<T>): T[];
+    (n: number): {
         (xs: string): string;
-        (xs: ReadonlyArray<T>): T[];
+        <T>(xs: ArrayLike<T>): T[];
     };
 }
 
@@ -24,6 +24,4 @@ interface Drop {
  *      drop(4, ['foo', 'bar', 'baz']); //=> []
  */
 
-export default curryN(2, (n, xs) =>
-    slice(Math.max(0, n), Infinity, xs)
-) as Drop;
+export default curryN(2, <T>(n: number, xs: ArrayLike<T>) => slice(Math.max(0, n), Infinity, xs)) as Drop;

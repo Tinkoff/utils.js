@@ -11,5 +11,6 @@ describe('utils/array/includes', () => {
         expect(includes('test', 'aaatestbbbb')).toBe(true);
         expect(includes('test', 'aaaaa')).toBe(false);
         expect(includes('test')('')).toBe(false);
+        expect(includes('test')(['test', '3'])).toBe(true);
     });
 });

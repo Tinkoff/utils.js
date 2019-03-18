@@ -2,8 +2,8 @@ import curryN from '../function/curryN';
 import isArray from '../is/array';
 
 interface Join {
-    (x: string, xs: ReadonlyArray<any>): string;
-    (x: string): (xs: ReadonlyArray<any>) => string;
+    (x: string, xs: ArrayLike<any>): string;
+    (x: string): (xs: ArrayLike<any>) => string;
 }
 
 /**
@@ -19,10 +19,14 @@ interface Join {
  *      spacer(['a', 2, 3.4]);   //=> 'a 2 3.4'
  *      join('|', [1, 2, 3]);    //=> '1|2|3'
  */
-export default curryN(2, (separator = '', arr = []) => {
-    if (!isArray(arr)) {
-        arr = Array.prototype.slice.call(arr);
+export default curryN(2, <T>(separator = '', arr: ArrayLike<T> = []) => {
+    let resultArr: T[];
+
+    if (isArray(arr)) {
+        resultArr = arr;
+    } else {
+        resultArr = Array.prototype.slice.call(arr);
     }
 
-    return arr.join(separator);
+    return resultArr.join(separator);
 }) as Join;

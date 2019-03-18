@@ -19,8 +19,8 @@ interface Repeat {
  *      var repeatedObjs = repeat(5, obj); //=> [{}, {}, {}, {}, {}]
  *      repeatedObjs[0] === repeatedObjs[1]; //=> true
  */
-export default curryN(2, (n = 0, value) => {
-    const result = new Array(n);
+export default curryN(2, <T>(n: number = 0, value: T) => {
+    const result: T[] = new Array(n);
 
     for (let i = 0; i < n; i++) {
         result[i] = value;

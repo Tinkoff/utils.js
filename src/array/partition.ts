@@ -1,15 +1,9 @@
 import curryN from '../function/curryN';
+import { ArrPred } from '../typings/types';
 
 interface Partition {
-    (fn: (a: string) => boolean, list: ReadonlyArray<string>): [
-        string[],
-        string[]
-    ];
-    <T>(fn: (a: T) => boolean, list: ReadonlyArray<T>): [T[], T[]];
-    <T>(fn: (a: T) => boolean): (list: ReadonlyArray<T>) => [T[], T[]];
-    (fn: (a: string) => boolean): (
-        list: ReadonlyArray<string>
-    ) => [string[], string[]];
+    <T>(fn: ArrPred<T>, list: ArrayLike<T>): [T[], T[]];
+    <T>(fn: ArrPred<T>): (list: ArrayLike<T>) => [T[], T[]];
 }
 
 /**
@@ -26,12 +20,12 @@ interface Partition {
  *      partition(includes('s'), ['sss', 'ttt', 'foo', 'bars']);
  *      // => [ [ 'sss', 'bars' ],  [ 'ttt', 'foo' ] ]
  */
-export default curryN(2, (fn, arr = []) => {
+export default curryN(2, <T>(fn: ArrPred<T>, arr: ArrayLike<T> = []) => {
     const t = [];
     const f = [];
 
     for (let i = 0; i < arr.length; i++) {
-        if (fn(arr[i])) {
+        if (fn(arr[i], i, arr)) {
             t.push(arr[i]);
         } else {
             f.push(arr[i]);

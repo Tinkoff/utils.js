@@ -1,8 +1,9 @@
 import curryN from '../function/curryN';
+import indexOf from './indexOf';
 
 interface Difference {
-    <T>(list1: ReadonlyArray<T>, list2: ReadonlyArray<T>): T[];
-    <T>(list1: ReadonlyArray<T>): (list2: ReadonlyArray<T>) => T[];
+    <T>(list1: ArrayLike<T>, list2: ArrayLike<T>): T[];
+    <T>(list1: ArrayLike<T>): (list2: ArrayLike<T>) => T[];
 }
 
 /**
@@ -17,11 +18,11 @@ interface Difference {
  *      difference([1,2,3,4], [7,6,5,4,3]); //=> [1,2]
  *      difference([7,6,5,4,3], [1,2,3,4]); //=> [7,6,5]
  */
-export default curryN(2, (a = [], b = []) => {
+export default curryN(2, <T>(a: ArrayLike<T> = [], b: ArrayLike<T> = []) => {
     const result = [];
 
     for (let i = 0; i < a.length; i++) {
-        if (b.indexOf(a[i]) < 0) {
+        if (indexOf(a[i], b) < 0) {
             result.push(a[i]);
         }
     }

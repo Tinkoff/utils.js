@@ -1,8 +1,10 @@
 import curryN from '../function/curryN';
+import slice from './slice';
+import { ArrPred } from '../typings/types';
 
 interface DropWhile {
-    <T>(fn: (a: T) => boolean, list: ReadonlyArray<T>): T[];
-    <T>(fn: (a: T) => boolean): (list: ReadonlyArray<T>) => T[];
+    <T>(fn: ArrPred<T>, list: ArrayLike<T>): T[];
+    <T>(fn: ArrPred<T>): (list: ArrayLike<T>) => T[];
 }
 
 /**
@@ -20,12 +22,12 @@ interface DropWhile {
  *
  *      dropWhile(lteTwo, [1, 2, 3, 4, 3, 2, 1]); //=> [3, 4, 3, 2, 1]
  */
-export default curryN(2, (fn, arr = []) => {
+export default curryN(2, <T>(fn: ArrPred<T>, arr: ArrayLike<T> = []) => {
     let idx = 0;
 
-    while (idx < arr.length && fn(arr[idx])) {
+    while (idx < arr.length && fn(arr[idx], idx, arr)) {
         idx += 1;
     }
 
-    return arr.slice(idx);
+    return slice(idx, arr.length, arr);
 }) as DropWhile;

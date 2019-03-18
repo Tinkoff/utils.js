@@ -1,13 +1,9 @@
-import curry from '../function/curry';
+import curryN from '../function/curryN';
+import { ArrPred } from '../typings/types';
 
 interface FindLast {
-    <T>(
-        fn: (a: T, index: number, list: ReadonlyArray<T>) => boolean,
-        list: ReadonlyArray<T>
-    ): T | undefined;
-    <T>(fn: (a: T, index: number, list: ReadonlyArray<T>) => boolean): (
-        list: ReadonlyArray<T>
-    ) => T | undefined;
+    <T>(fn: ArrPred<T>, list: ArrayLike<T>): T | undefined;
+    <T>(fn: ArrPred<T>): (list: ArrayLike<T>) => T | undefined;
 }
 
 /**
@@ -25,7 +21,7 @@ interface FindLast {
  *      findLast(propEq('a', 1))(xs); //=> {a: 1, b: 1}
  *      findLast(propEq('a', 4))(xs); //=> undefined
  */
-export default curry((fn, list: ReadonlyArray<any>) => {
+export default curryN(2, <T>(fn: ArrPred<T>, list: ArrayLike<T>) => {
     for (let i = list.length - 1; i >= 0; i--) {
         if (fn(list[i], i, list)) {
             return list[i];

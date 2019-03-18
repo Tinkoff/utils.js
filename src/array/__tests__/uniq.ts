@@ -12,7 +12,14 @@ describe('utils/array/uniq', () => {
         const testFunc = () => {};
 
         expect(uniq([1, 2, 2, 3, 4, 5, 5, 5])).toEqual([1, 2, 3, 4, 5]);
-        expect(uniq([1, testObj, 5, [], testObj, testArr, testArr, 'test', testFunc, testFunc]))
-            .toEqual([1, {}, 5, [], [], 'test', testFunc]);
+        expect(uniq([1, testObj, 5, [], testObj, testArr, testArr, 'test', testFunc, testFunc])).toEqual([
+            1,
+            {},
+            5,
+            [],
+            [],
+            'test',
+            testFunc,
+        ]);
     });
 });

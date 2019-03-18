@@ -1,8 +1,9 @@
 import curryN from '../function/curryN';
+import { OrdFunc, Ord } from '../typings/types';
 
 interface StableSortBy {
-    <T>(fn: (a: T, b: T) => number, list: ReadonlyArray<T>): T[];
-    <T>(fn: (a: T, b: T) => number): (list: ReadonlyArray<T>) => T[];
+    <T, R extends Ord>(fn: OrdFunc<T, R>, list: ArrayLike<T>): T[];
+    <T, R extends Ord>(fn: OrdFunc<T, R>): (list: ArrayLike<T>) => T[];
 }
 
 /**
@@ -28,7 +29,7 @@ interface StableSortBy {
  *          { name: 'Sam', age: 21 }
  *      ]
  */
-export default curryN(2, (fn, arr = []) => {
+export default curryN(2, <T, R extends Ord>(fn: OrdFunc<T, R>, arr: ArrayLike<T> = []) => {
     const len = arr.length;
     const indexes = new Array(len);
 

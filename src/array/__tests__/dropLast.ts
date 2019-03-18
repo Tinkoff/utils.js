@@ -3,7 +3,7 @@ import dropLast from '../dropLast';
 describe('utils/array/dropLast', () => {
     it('should dropLast', () => {
         expect(dropLast(1, ['foo', 'bar', 'baz'])).toEqual(['foo', 'bar']);
-        expect(dropLast(2, ['foo', 'bar', 'baz'])).toEqual(['foo']);
+        expect(dropLast(2)(['foo', 'bar', 'baz'])).toEqual(['foo']);
         expect(dropLast(3, ['foo', 'bar', 'baz'])).toEqual([]);
         expect(dropLast(4, ['foo', 'bar', 'baz'])).toEqual([]);
         expect(dropLast(3, 'ramda')).toEqual('ra');
