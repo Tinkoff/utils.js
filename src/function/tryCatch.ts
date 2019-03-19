@@ -1,9 +1,8 @@
 import curryN from './curryN';
+import { Func } from '../typings/types';
 
 interface TryCatch {
-    <T>(tryer: (...args: any[]) => T, catcher: (...args: any[]) => T): (
-        ...args: any[]
-    ) => T;
+    <T>(tryer: Func<T>, catcher: Func<T>): Func<T>;
 }
 
 /**
@@ -28,7 +27,7 @@ interface TryCatch {
  *          }
  *      )( someIncompleteData ) // DEFAULT_VALUE (error is logged somewhere)
  */
-export default curryN(2, (tryer, catcher) => {
+export default curryN(2, <T>(tryer: Func<T>, catcher: Func<T>) => {
     return (...args) => {
         try {
             return tryer.apply(this, args);

@@ -15,20 +15,15 @@ import equal from '../../is/equal';
  *     memoize(1,2) // from addFlag call,
  *     memoize(1) // from addFlag call, cache was flashed on previous step
  */
-export default function(fn, isEqual: (a, b) => boolean = equal) {
+export default <T extends Function>(fn: T, isEqual: (a, b) => boolean = equal): T => {
     let lastArgs = [];
     let lastResult;
     let alreadyCalled = false;
 
-    const isNewArgEqualToLast = (newArg, index) =>
-        isEqual(newArg, lastArgs[index]);
+    const isNewArgEqualToLast = (newArg, index) => isEqual(newArg, lastArgs[index]);
 
-    return (...newArgs) => {
-        if (
-            alreadyCalled &&
-            newArgs.length === lastArgs.length &&
-            newArgs.every(isNewArgEqualToLast)
-        ) {
+    return ((...newArgs) => {
+        if (alreadyCalled && newArgs.length === lastArgs.length && newArgs.every(isNewArgEqualToLast)) {
             return lastResult;
         }
 
@@ -36,5 +31,5 @@ export default function(fn, isEqual: (a, b) => boolean = equal) {
         alreadyCalled = true;
         lastArgs = newArgs;
         return lastResult;
-    };
-}
+    }) as any;
+};

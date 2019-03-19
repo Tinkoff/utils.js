@@ -2,8 +2,8 @@ import curryN from './curryN';
 import { Pred } from '../typings/types';
 
 interface Both {
-    (pred1: Pred, pred2: Pred): Pred;
-    (pred1: Pred): (pred2: Pred) => Pred;
+    <T>(pred1: Pred<T>, pred2: Pred<T>): Pred<T>;
+    <T>(pred1: Pred<T>): (pred2: Pred<T>) => Pred<T>;
 }
 
 /**
@@ -24,6 +24,4 @@ interface Both {
  *      f(100); //=> true
  *      f(101); //=> false
  */
-export default curryN(2, (f, g) => (...args) =>
-    f(...args) && g(...args)
-) as Both;
+export default curryN(2, <T>(f: Pred<T>, g: Pred<T>) => (...args) => f(...args) && g(...args)) as Both;

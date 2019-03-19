@@ -1,5 +1,5 @@
 interface Complement {
-    (pred: (...args: any[]) => boolean): (...args: any[]) => boolean;
+    <F extends (...args) => any>(pred: F): (...args: Parameters<F>) => boolean;
 }
 
 /**
@@ -16,4 +16,4 @@ interface Complement {
  *      isNil(7); //=> false
  *      isNotNil(7); //=> true
  */
-export default ((fn) => (...args) => !fn(...args)) as Complement;
+export default (<F extends Function>(fn: F) => (...args) => !fn(...args)) as Complement;

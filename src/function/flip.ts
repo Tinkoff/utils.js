@@ -1,15 +1,7 @@
 import curryN from './curryN';
 
 interface Flip {
-    <T, U, TResult>(fn: (arg0: T, arg1: U) => TResult): (
-        arg1: U,
-        arg0?: T
-    ) => TResult;
-    <T, U, TResult>(fn: (arg0: T, arg1: U, ...args: any[]) => TResult): (
-        arg1: U,
-        arg0?: T,
-        ...args: any[]
-    ) => TResult;
+    <T, U, R>(fn: (arg0: T, arg1: U, ...args) => R): (arg1: U, arg0: T, ...args) => R;
 }
 
 /**
@@ -24,5 +16,4 @@ interface Flip {
  *
  *      flip(neg)(3, 5); //=> 2
  */
-export default ((fn) =>
-    curryN(2, (a, b, ...args) => fn(b, a, ...args))) as Flip;
+export default (<T, U, R>(fn: (a: T, b: U) => R) => curryN(2, (a: U, b: T, ...args) => fn(b, a, ...args))) as Flip;

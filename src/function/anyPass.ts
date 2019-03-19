@@ -1,8 +1,9 @@
 import curryN from './curryN';
-import { SafePred } from '../typings/types';
+import { Pred } from '../typings/types';
 
 interface AnyPass {
-    <T>(preds: ReadonlyArray<SafePred<T>>): SafePred<T>;
+    <T>(preds: ArrayLike<Pred<T>>): Pred<T>;
+    <T>(preds: ArrayLike<Pred<T>>, ...args: T[]): boolean;
 }
 
 /**
@@ -23,7 +24,7 @@ interface AnyPass {
  *      isBlackCard({rank: 'Q', suit: '♠'}); //=> true
  *      isBlackCard({rank: 'Q', suit: '♦'}); //=> false
  */
-export default curryN(2, (fns, ...args) => {
+export default curryN(2, <T>(fns: ArrayLike<Pred<T>>, ...args: T[]) => {
     for (let i = 0; i < fns.length; i++) {
         if (fns[i](...args)) {
             return true;

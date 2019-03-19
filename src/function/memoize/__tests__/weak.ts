@@ -7,14 +7,16 @@ describe('src/memoize/weak', () => {
 
         return {
             fn,
-            memoizedFn
+            memoizedFn,
         };
     };
 
     it('throws error if argument is primitive', () => {
         const { memoizedFn } = prepare();
 
-        expect(() => { memoizedFn(1); }).toThrow(TypeError);
+        expect(() => {
+            memoizedFn(1);
+        }).toThrow(TypeError);
     });
     describe('with the same object argument', () => {
         it('positive', () => {

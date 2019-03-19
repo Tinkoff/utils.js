@@ -1,7 +1,8 @@
 import throttleEnd from '../throttleEnd';
 
 describe('utils/function/throttleEnd', () => {
-    it('should call function at most once after "wait" ms at "wait" ms period', () => { // eslint-disable-line max-statements
+    it('should call function at most once after "wait" ms at "wait" ms period', () => {
+        // eslint-disable-line max-statements
         let context;
         const f = jest.fn(function() {
             context = this;

@@ -1,3 +1,5 @@
+import { Func } from '../typings/types';
+
 /**
  * A function that always returns `undefined`. Any passed in parameters are ignored.
  *
@@ -6,4 +8,4 @@
  *
  *      nothing(); //=> undefined
  */
-export default () => undefined;
+export default (() => undefined) as Func<void>;

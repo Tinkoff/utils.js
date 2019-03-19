@@ -5,10 +5,10 @@ import F from '../F';
 
 describe('utils/function/cond', () => {
     it('should call fn if predicate satisfies', () => {
-        const fns = [
+        const fns: [(x) => boolean, <T>(x) => T][] = [
             [jest.fn(F), jest.fn(identity)],
             [jest.fn(T), jest.fn(identity)],
-            [jest.fn(T), jest.fn(identity)]
+            [jest.fn(T), jest.fn(identity)],
         ];
 
         expect(cond(fns)('test')).toBe('test');

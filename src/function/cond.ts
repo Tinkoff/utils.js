@@ -1,7 +1,7 @@
 import { Pred } from '../typings/types';
 
 interface Cond {
-    (fns: ReadonlyArray<[Pred, (...a: any[]) => any]>): (...a: any[]) => any;
+    <T, F extends (...args) => any>(fns: ArrayLike<[Pred<T>, F]>): (...args: T[]) => ReturnType<F>;
 }
 /**
  * Returns a function, `fn`, which encapsulates if/else-if/else logic.
@@ -24,11 +24,11 @@ interface Cond {
  *      fn(50); //=> 'nothing special happens at 50°C'
  *      fn(100); //=> 'water boils at 100°C'
  */
-export default (pairs) =>
+export default (<T, F extends Function>(pairs: [Pred<T>, F][]) =>
     function(...args) {
         for (let i = 0; i < pairs.length; i++) {
             if (pairs[i][0].apply(this, args)) {
                 return pairs[i][1].apply(this, args);
             }
         }
-    } as Cond;
+    }) as Cond;

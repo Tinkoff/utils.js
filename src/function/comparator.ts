@@ -1,5 +1,7 @@
+import { Pred2 } from '../typings/types';
+
 interface Comparator {
-    <T>(pred: (a: T, b: T) => boolean): (x: T, y: T) => number;
+    <T>(pred: Pred2<T, T>): (x: T, y: T) => -1 | 0 | 1;
 }
 
 /**
@@ -17,11 +19,12 @@ interface Comparator {
  *      ];
  *      var peopleByIncreasingAge = sort(byAge, people);
  */
-export default ((pred) => {
-    return function(a, b) {
+export default (<T>(pred: Pred2<T, T>) => {
+    return (a: T, b: T) => {
         if (pred(a, b)) {
             return -1;
         }
+
         return pred(b, a) ? 1 : 0;
     };
 }) as Comparator;

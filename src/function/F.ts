@@ -1,3 +1,5 @@
+import { Func } from '../typings/types';
+
 /**
  * A function that always returns `false`. Any passed in parameters are ignored.
  *
@@ -6,4 +8,4 @@
  *
  *      F(); //=> false
  */
-export default () => false;
+export default (() => false) as Func<false>;

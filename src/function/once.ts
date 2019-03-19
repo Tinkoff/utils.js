@@ -1,5 +1,7 @@
+import { Func } from '../typings/types';
+
 interface Once {
-    <T>(fn: (...a: any[]) => T): (...a: any[]) => T;
+    <F extends Func>(fn: F): F;
 }
 
 /**
@@ -16,7 +18,7 @@ interface Once {
  *      addOneOnce(10); //=> 11
  *      addOneOnce(addOneOnce(50)); //=> 11
  */
-export default ((fn) => {
+export default (<F extends Func>(fn: F) => {
     let called = false;
     let result;
 

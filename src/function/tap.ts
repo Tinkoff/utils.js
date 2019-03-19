@@ -17,7 +17,7 @@ interface Tap {
  *      tap(sayX, 100); //=> 100
  *      // logs 'x is 100'
  */
-export default curryN(2, (fn, x) => {
+export default curryN(2, <T>(fn: (a: T) => any, x: T) => {
     fn(x);
     return x;
 }) as Tap;

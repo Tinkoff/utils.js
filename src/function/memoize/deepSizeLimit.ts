@@ -1,6 +1,11 @@
 import memoizeWith from './with';
 import curryN from '../curryN';
 
+interface DeepSizeLimit {
+    <T extends Function>(maxSize: number, fn: T): T;
+    (maxSize: number): <T extends Function>(fn: T) => T;
+}
+
 /**
  * Memoize function with multiply arguments of any type, but it
  * clears cache every time it reaches the limit. Use it when you need
@@ -17,15 +22,11 @@ import curryN from '../curryN';
  *     memoize({test: 4}); // from addFlag call
  *     memoize({test: 2}); // from addFlag call (memory was cleared)
  */
-export default curryN(2, (maxSize, fn) =>
-    memoizeWith(
-        () => createSizedCache(maxSize),
-        (...args) => JSON.stringify(args),
-        fn
-    )
-);
+export default curryN(2, (maxSize: number, fn: Function) =>
+    memoizeWith(() => createSizedCache(maxSize), (...args) => JSON.stringify(args), fn)
+) as DeepSizeLimit;
 
-function createSizedCache(maxSize) {
+function createSizedCache(maxSize: number) {
     const cache = new Map();
 
     cache.set = (...args) => {

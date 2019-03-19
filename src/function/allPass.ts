@@ -2,7 +2,8 @@ import { Pred } from '../typings/types';
 import curryN from './curryN';
 
 interface AllPass {
-    (preds: ReadonlyArray<Pred>): Pred;
+    <T>(preds: ArrayLike<Pred<T>>): Pred<T>;
+    <T>(preds: ArrayLike<Pred<T>>, ...args: T[]): boolean;
 }
 
 /**
@@ -22,7 +23,7 @@ interface AllPass {
  *      isQueenOfSpades({rank: 'Q', suit: '♣︎'}); //=> false
  *      isQueenOfSpades({rank: 'Q', suit: '♠︎'}); //=> true
  */
-export default curryN(2, (fns, ...args) => {
+export default curryN(2, <T>(fns: ArrayLike<Pred<T>>, ...args: T[]) => {
     for (let i = 0; i < fns.length; i++) {
         if (!fns[i](...args)) {
             return false;

@@ -1,10 +1,12 @@
 import curryN from './curryN';
 
+type ApplyFunc<T> = (...args: T[]) => any;
+
 interface ApplyOrReturn {
-    <TFunc, T>(args, func: T): T extends (...args) => any ? ReturnType<T> : T;
-    (args): <TFunc, T>(
-        func: T
-    ) => T extends (...args) => any ? ReturnType<T> : T;
+    <T, F extends ApplyFunc<T>>(args: T[], test: F): ReturnType<F>;
+    <T, F>(args: T[], test: F extends Function ? ApplyFunc<T> : F): F;
+    <T>(args: T[]): <F extends ApplyFunc<T>>(test: F) => ReturnType<F>;
+    <T>(args: T[]): <F>(test: F extends Function ? ApplyFunc<T> : F) => F;
 }
 
 /**
@@ -18,7 +20,7 @@ interface ApplyOrReturn {
  *      applyOrReturn([1,2,3], (...args) => args) // => [1,2,3]
  *      applyOrReturn([1,2,3], 'test') // => 'test'
  */
-export default curryN(2, (args, test) => {
+export default curryN(2, <T>(args: T[], test: ApplyFunc<T>) => {
     if (typeof test === 'function') {
         return test(...args);
     }

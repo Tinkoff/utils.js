@@ -1,22 +1,11 @@
-import { func } from '../typings/types';
+import { Func } from '../typings/types';
 import curryN from './curryN';
 
 interface IfElse {
-    <TTrue, TFalse>(
-        condition: func,
-        onTrue: func<TTrue>,
-        onFalse: func<TFalse>
-    ): TTrue | TFalse;
-    <TTrue, TFalse>(condition: func, onTrue: func<TTrue>): (
-        onFalse: func<TFalse>
-    ) => TTrue | TFalse;
-    <TTrue, TFalse>(condition: func): (
-        onTrue: func<TTrue>,
-        onFalse: func<TFalse>
-    ) => TTrue | TFalse;
-    <TTrue, TFalse>(condition: func): (
-        onTrue: func<TTrue>
-    ) => (onFalse: func<TFalse>) => TTrue | TFalse;
+    <T, F>(condition: Func<boolean>, onTrue: Func<T>, onFalse: Func<F>): T | F;
+    <T>(condition: Func<boolean>, onTrue: Func<T>): <F>(onFalse: Func<F>) => T | F;
+    (condition: Func<boolean>): <T, F>(onTrue: Func<T>, onFalse: Func<F>) => T | F;
+    (condition: Func): <T>(onTrue: Func<T>) => <F>(onFalse: Func<F>) => T | F;
 }
 
 /**

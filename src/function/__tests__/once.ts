@@ -2,7 +2,7 @@ import once from '../once';
 
 describe('utils/function/once', () => {
     it('tes', () => {
-        const f = jest.fn(x => x + 1);
+        const f = jest.fn((x) => x + 1);
         const g = once(f);
 
         expect(g(2)).toBe(3);

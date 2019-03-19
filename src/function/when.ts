@@ -1,8 +1,13 @@
 import curryN from './curryN';
+import { Pred1 } from '../typings/types';
 
 interface When {
-    <T, U>(pred: (a: T) => boolean, whenTrueFn: (a: T) => U, obj: T): U;
-    <T, U>(pred: (a: T) => boolean, whenTrueFn: (a: T) => U): (obj: T) => U;
+    <T, U>(pred: Pred1<T>, whenTrueFn: (a: T) => U, x: T): U | T;
+    <T, U>(pred: Pred1<T>, whenTrueFn: (a: T) => U): (x: T) => U | T;
+    <T>(pred: Pred1<T>): {
+        <U>(whenTrueFn: (a: T) => U, x: T): U | T;
+        <U>(whenTrueFn: (a: T) => U): (x: T) => U | T;
+    };
 }
 
 /**

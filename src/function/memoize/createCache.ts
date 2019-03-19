@@ -1,5 +1,3 @@
-import curryN from '../curryN';
-
 /**
  * Creates a cache instance base on passed object.
  * Return instance has 3 methods: get, set, has
@@ -24,6 +22,6 @@ export default (obj = Object.create(null)) => {
         },
         has(key) {
             return key in obj;
-        }
+        },
     };
 };

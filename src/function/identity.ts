@@ -1,3 +1,7 @@
+interface Identity {
+    <T>(x: T): T;
+}
+
 /**
  * A function that does nothing but return the parameter supplied to it. Good
  * as a default or placeholder function.
@@ -11,4 +15,4 @@
  *      const obj = {};
  *      identity(obj) === obj; //=> true
  */
-export default (x) => x;
+export default ((x) => x) as Identity;

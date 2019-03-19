@@ -2,8 +2,8 @@ import curryN from './curryN';
 import { Pred } from '../typings/types';
 
 interface Either {
-    (pred1: Pred, pred2: Pred): Pred;
-    (pred1: Pred): (pred2: Pred) => Pred;
+    <T>(pred1: Pred<T>, pred2: Pred<T>): Pred<T>;
+    <T>(pred1: Pred<T>): (pred2: Pred<T>) => Pred<T>;
 }
 
 /**
@@ -25,6 +25,4 @@ interface Either {
  *      f(8); //=> true
  *      f(3); //=> false
  */
-export default curryN(2, (f, g) => (...args) =>
-    f(...args) || g(...args)
-) as Either;
+export default curryN(2, <T>(f: Pred<T>, g: Pred<T>) => (...args) => f(...args) || g(...args)) as Either;

@@ -1,22 +1,23 @@
 import comparator from '../comparator';
 
 describe('utils/function/comparator', () => {
-    const byAge = comparator((a, b) => a.age < b.age);
+    type Age = { age: number };
+    const byAge = comparator((a: Age, b: Age) => a.age < b.age);
     const person1 = {
-        age: 10
+        age: 10,
     };
     const person2 = {
-        age: 20
+        age: 20,
     };
     const people = [
         person2,
         person1,
         {
-            age: 44
+            age: 44,
         },
         {
-            age: 33
-        }
+            age: 33,
+        },
     ];
 
     it('should return -1', () => {
@@ -28,8 +29,6 @@ describe('utils/function/comparator', () => {
     });
 
     it('should sort asc', () => {
-        expect(people.sort(byAge)).toEqual(
-            [{ age: 10 }, { age: 20 }, { age: 33 }, { age: 44 }]
-        );
+        expect(people.sort(byAge)).toEqual([{ age: 10 }, { age: 20 }, { age: 33 }, { age: 44 }]);
     });
 });

@@ -7,7 +7,7 @@ describe('src/memoize/strictSingle', () => {
 
         return {
             fn,
-            memoizedFn
+            memoizedFn,
         };
     };
 
@@ -29,7 +29,7 @@ describe('src/memoize/strictSingle', () => {
         });
     });
 
-  // separate test suite, because functions are not serializable
+    // separate test suite, because functions are not serializable
     describe('with functions', () => {
         it('with the same function', () => {
             const { fn, memoizedFn } = prepare();

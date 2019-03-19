@@ -1,9 +1,6 @@
 import curryN from './curryN';
-
-interface ThrottleEnd {
-    <TFunc extends (...args) => any>(wait: number, fn: TFunc): void;
-    (wait: number): <TFunc extends (...args) => any>(fn: TFunc) => void;
-}
+import { ThrottleFunc, Throttle } from './throttle';
+import { Func } from '../typings/types';
 
 /**
  * Creates a throttled function that only invokes `fn` at most once per
@@ -12,29 +9,32 @@ interface ThrottleEnd {
  * @param {number} wait The number of milliseconds to throttle invocations to.
  * @param {Function} fn The function to throttle.
  */
-export default curryN(2, (wait, fn) => {
-    let lastCalled;
-    let lastArgs;
-    let lastThis;
-    let timeout;
+export default curryN(
+    2,
+    <F extends Func>(wait: number, fn: F): ThrottleFunc<F> => {
+        let lastCalled;
+        let lastArgs;
+        let lastThis;
+        let timeout;
 
-    return function(...args) {
-        const now = Date.now();
-        const diff = lastCalled + wait - now;
+        return function(...args) {
+            const now = Date.now();
+            const diff = lastCalled + wait - now;
 
-        if (diff < 0 && timeout) {
-            clearTimeout(timeout);
-            timeout = null;
-            fn.apply(this, args);
-        } else if (!timeout) {
-            timeout = setTimeout(() => {
-                fn.apply(lastThis, lastArgs);
+            if (diff < 0 && timeout) {
+                clearTimeout(timeout);
                 timeout = null;
-            }, wait);
-        }
+                fn.apply(this, args);
+            } else if (!timeout) {
+                timeout = setTimeout(() => {
+                    fn.apply(lastThis, lastArgs);
+                    timeout = null;
+                }, wait);
+            }
 
-        lastCalled = now;
-        lastArgs = args;
-        lastThis = this;
-    };
-}) as ThrottleEnd;
+            lastCalled = now;
+            lastArgs = args;
+            lastThis = this;
+        };
+    }
+) as Throttle;

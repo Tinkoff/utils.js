@@ -3,18 +3,18 @@ import memoizeWithCacheSize from '../deepSizeLimit';
 describe('src/memoize/deepSizeLimit', () => {
     const prepare = () => {
         const fn = jest.fn((...args) => args);
-        const memoizedFn = memoizeWithCacheSize(2, fn);
+        const memoizedFn = memoizeWithCacheSize(2)(fn);
 
         return {
             fn,
-            memoizedFn
+            memoizedFn,
         };
     };
 
     it('with multiple deep equally objects get cache', () => {
         const { fn, memoizedFn } = prepare();
 
-        memoizedFn({}, [1, 2 ,3]);
+        memoizedFn({}, [1, 2, 3]);
         memoizedFn({}, [1, 2, 3]);
         expect(fn).toHaveBeenCalledTimes(1);
         memoizedFn({ test: 1 });

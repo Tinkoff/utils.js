@@ -22,7 +22,7 @@ describe('utils/function/updatePropertyValue', () => {
     });
 
     it('should change other property in object', () => {
-        const obj = {};
+        const obj: any = {};
 
         obj.field = 'field';
         checkPropertyChange(obj, 'field', 'newField', 'newField');

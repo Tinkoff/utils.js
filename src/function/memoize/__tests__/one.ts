@@ -8,21 +8,21 @@ describe('src/function/memoize/one', () => {
 
             return {
                 fn,
-                memoizedFn
+                memoizedFn,
             };
         };
 
         it('with multiple deep equally objects get cache, reset cache and resume', () => {
             const { fn, memoizedFn } = prepare();
-            memoizedFn({}, [1, 2 ,3]);
-            memoizedFn({}, [1, 2 ,3]);
+            memoizedFn({}, [1, 2, 3]);
+            memoizedFn({}, [1, 2, 3]);
             expect(fn).toHaveBeenCalledTimes(1);
             memoizedFn({}, [1, 2, 3, 4]);
             expect(fn).toHaveBeenCalledTimes(2);
             memoizedFn({}, [1, 2, 3]);
             expect(fn).toHaveBeenCalledTimes(3);
-            memoizedFn({}, [1, 2 ,3, 4, 5]);
-            memoizedFn({}, [1, 2 ,3, 4, 5]);
+            memoizedFn({}, [1, 2, 3, 4, 5]);
+            memoizedFn({}, [1, 2, 3, 4, 5]);
         });
     });
 });

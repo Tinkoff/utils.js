@@ -1,4 +1,17 @@
 import curryN from '../curryN';
+import createCache from './createCache';
+
+type CacheFunc = () => ReturnType<typeof createCache>;
+type Hasher = (...args) => string;
+
+interface MemoizeWith {
+    <T extends Function>(getCache: CacheFunc, hasher: Hasher, fn: T): T;
+    (getCache: CacheFunc, hasher: Hasher): <T extends Function>(fn: T) => T;
+    (getCache: CacheFunc): {
+        <T extends Function>(hasher: Hasher, fn: T): T;
+        (hasher: Hasher): <T extends Function>(fn: T) => T;
+    };
+}
 
 /**
  * `memoizeWith` is a memoize function fabric. It has simple classic memoization signature.
@@ -25,7 +38,7 @@ import curryN from '../curryN';
  *      const sum = add(1,4); // from original add call
  *      const sum = add(1,3); // from cache
  */
-export default curryN(3, (getCache, hasher, fn) => {
+export default curryN(3, (getCache: CacheFunc, hasher: Hasher, fn: Function) => {
     const cache = getCache();
 
     return (...args) => {
@@ -41,4 +54,4 @@ export default curryN(3, (getCache, hasher, fn) => {
 
         return fnCallResult;
     };
-});
+}) as MemoizeWith;
