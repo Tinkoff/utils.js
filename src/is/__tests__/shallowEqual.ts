@@ -11,11 +11,6 @@ describe('is/shallowEqual', () => {
         expect(shallowEqual({ a: { b: 1 } }, { a: { b: 1 } })).toBe(false);
         expect(shallowEqual(obj, obj)).toBe(true);
         expect(shallowEqual([obj, 2], [obj, 2]));
-        expect(
-            shallowEqual(
-                { a: 1 },
-                Object.create({ a: 1 }, { b: { value: 1, enumerable: true } })
-            )
-        ).toBe(false);
+        expect(shallowEqual({ a: 1 }, Object.create({ a: 1 }, { b: { value: 1, enumerable: true } }))).toBe(false);
     });
 });

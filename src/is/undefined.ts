@@ -8,4 +8,4 @@
  * isUndefined(void 0); // => true
  * isUndefined(null);// => false
  */
-export default (test: any): test is undefined => typeof test === 'undefined';
+export default (test): test is undefined => typeof test === 'undefined';

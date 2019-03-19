@@ -9,7 +9,7 @@ describe('utils/is/promise', () => {
         expect(isPromise(() => {})).toBe(false);
         expect(isPromise(Promise.resolve())).toBe(true);
         expect(isPromise(Promise.reject())).toBe(true);
-        expect(isPromise(new Promise(res => res()))).toBe(true);
+        expect(isPromise(new Promise((res) => res()))).toBe(true);
         const f = () => {};
 
         expect(isPromise(f)).toBe(false);

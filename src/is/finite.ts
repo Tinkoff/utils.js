@@ -9,4 +9,4 @@ import isNumber from './number';
  * isFinite(5); // => true
  * isFinite(null); // => false
  */
-export default (test: any): test is number => isNumber(test) && isFinite(test);
+export default (test): test is number => isNumber(test) && isFinite(test);

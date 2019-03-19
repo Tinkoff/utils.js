@@ -15,7 +15,7 @@ const hasOwnProperty = Object.prototype.hasOwnProperty;
  *      isShallowEqual([1, 2, 3], [1, 2, 3]); //=> true
  *      isShallowEqual({ a: { b: 1 }}, { a: { b: 1 }}); //=> false
  */
-export default (test1, test2) => {
+export default (test1, test2): boolean => {
     if (test1 === test2) {
         return true;
     }

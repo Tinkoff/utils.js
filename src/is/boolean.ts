@@ -9,5 +9,4 @@
  * isBool(new Boolean()); // => true
  * isBool(null); // => false
  */
-export default (test: any): test is boolean =>
-    typeof test === 'boolean' || test instanceof Boolean;
+export default (test): test is boolean => typeof test === 'boolean' || test instanceof Boolean;

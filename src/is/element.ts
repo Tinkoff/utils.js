@@ -12,5 +12,4 @@ import isPlainObject from './plainObject';
  *
  * isElement('<body>'); // => false
  */
-export default (test: any): test is HTMLElement =>
-    isObject(test) && (test as any).nodeType === 1 && !isPlainObject(test);
+export default (test): test is HTMLElement => isObject(test) && test.nodeType === 1 && !isPlainObject(test);

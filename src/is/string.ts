@@ -9,5 +9,4 @@
  * isString(new String('test')); // => true
  * isString(null); // => false
  */
-export default (test: any): test is string =>
-    typeof test === 'string' || test instanceof String;
+export default (test): test is string => typeof test === 'string' || test instanceof String;

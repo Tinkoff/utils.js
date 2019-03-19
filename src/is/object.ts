@@ -8,5 +8,4 @@
  * isObject({ a: 'test' }); // => true
  * isObject(null); // => false
  */
-export default (test: any): test is object =>
-    test !== null && typeof test === 'object';
+export default (test): test is Record<any, any> => test !== null && typeof test === 'object';

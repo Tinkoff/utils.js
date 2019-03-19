@@ -1,3 +1,5 @@
+import { Func } from '../typings/types';
+
 /**
  * Checks if `test` is function.
  *
@@ -8,4 +10,4 @@
  * isFunction(() => {}); // => true
  * isFunction(null); // => false
  */
-export default (test: any): test is Function => typeof test === 'function';
+export default (test): test is Func => typeof test === 'function';
