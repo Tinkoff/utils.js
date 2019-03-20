@@ -1,10 +1,22 @@
 import curryN from '../function/curryN';
 import prop from './prop';
+import { Prop } from '../typings/types';
 
 interface PropOr {
-    <T, U, V>(p: string, val: T, obj: U): V;
-    <T>(p: string, val: T): <U, V>(obj: U) => V;
-    <T>(p: string): <U, V>(val: T, obj: U) => V;
+    <K extends Prop, V, O extends Record<K, any>>(prop: K, value: V, obj: O): O[K];
+    <K extends Prop, V>(prop: K, value: V, obj): V;
+    <K extends Prop, V>(prop: K, value: V): {
+        <O extends Record<K, any>>(obj: O): O[K];
+        (obj): V;
+    };
+    <K extends Prop>(prop: K): {
+        <V, O extends Record<K, any>>(value: V, obj: O): O[K];
+        <V>(value: V): V;
+        <V>(value: V): {
+            <O extends Record<K, any>>(obj: O): O[K];
+            (obj): V;
+        };
+    };
 }
 
 /**

@@ -1,8 +1,10 @@
-import { Paths } from '../typings/types';
+import { Prop, Paths } from '../typings/types';
 
 export interface Path {
-    <T>(path: Paths, obj: any): T | undefined;
-    <T>(path: Paths): (obj: any) => T | undefined;
+    <K extends Prop, O extends Record<K, any>>(path: [K], obj: O): O[K];
+    <K extends Prop>(path: [K]): <O extends Record<K, any>>(obj: O) => O[K];
+    <T>(path: Paths, obj): T | undefined;
+    <T>(path: Paths): (obj) => T | undefined;
 }
 
 import curryN from '../function/curryN';
@@ -18,7 +20,7 @@ import curryN from '../function/curryN';
  *      path(['a', 'b'], {a: {b: 2}}); //=> 2
  *      path(['a', 'b'], {c: {b: 2}}); //=> undefined
  */
-export default curryN(2, (paths = [], obj = {}) => {
+export default curryN(2, <K extends Prop, O extends Record<K, any>>(paths: Paths = [], obj: O = {} as any) => {
     let val = obj;
 
     for (let i = 0; i < paths.length; i++) {

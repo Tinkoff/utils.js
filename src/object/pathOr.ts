@@ -1,11 +1,25 @@
 import curryN from '../function/curryN';
 import path from './path';
-import { Paths } from '../typings/types';
+import { CurriedFunction2, Paths, Prop } from '../typings/types';
 
 interface PathOr {
-    (paths: Paths, defaultValue, obj?): any;
-    (paths: Paths): (defaultValue, obj?) => any;
-    (paths: Paths): (defaultValue) => (obj?) => any;
+    <K extends Prop, V, O extends Record<K, any>>(path: [K], value: V, obj: O): O[K];
+    <K extends Prop, V>(path: [K], value: V, obj): V;
+    <K extends Prop, V>(path: [K], value: V): {
+        <O extends Record<K, any>>(obj: O): O[K];
+        (obj): V;
+    };
+    <K extends Prop>(path: [K]): {
+        <V, O extends Record<K, any>>(value: V, obj: O): O[K];
+        <V>(value: V, obj): V;
+        <V>(value: V): {
+            <O extends Record<K, any>>(obj: O): O[K];
+            (obj): V;
+        };
+    };
+    (path: Paths, value, obj): any;
+    (path: Paths, value): (obj) => any;
+    (path: Paths): CurriedFunction2<any, any, any>;
 }
 
 /**
@@ -21,7 +35,7 @@ interface PathOr {
  *      pathOr(['a', 'b'],'N/A', {a: {b: 2}}); //=> 2
  *      pathOr(['a', 'b'], 'N/A', {c: {b: 2}}); //=> "N/A"
  */
-export default curryN(3, (paths = [], value, obj = {}) => {
+export default curryN(3, (paths: Paths = [], value, obj = {}) => {
     const v = path(paths, obj);
 
     return v != null ? v : value;

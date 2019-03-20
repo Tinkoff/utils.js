@@ -1,11 +1,20 @@
-import { Paths } from '../typings/types';
+import { Paths, Prop } from '../typings/types';
 import curryN from '../function/curryN';
 import path from './path';
 
 interface PathApply {
-    <R>(paths: Paths, fn: (arg: ReturnType<typeof path>) => R, obj?): R;
-    <R>(paths: Paths): (fn: (arg: ReturnType<typeof path>) => R, obj?) => R;
-    <R>(paths: Paths): (fn: (arg: ReturnType<typeof path>) => R) => (obj?) => R;
+    <K extends Prop, O extends Record<K, any>, R>(path: [K], fn: (x: O[K]) => R, obj: O): R;
+    <K extends Prop, R>(path: [K], fn: (x) => R): (obj) => R;
+    <K extends Prop>(path: [K]): {
+        <R>(fn: (x) => R, obj): R;
+        <R>(fn: (x) => R): (obj) => R;
+    };
+    <R>(path: Paths, fn: (x) => R, obj): R | undefined;
+    <R>(path: Paths, fn: (x) => R): (obj) => R | undefined;
+    (path: Paths): {
+        <R>(fn: (x) => R, obj): R | undefined;
+        <R>(fn: (x) => R): (obj) => R | undefined;
+    };
 }
 
 /**
@@ -21,6 +30,4 @@ interface PathApply {
  *      pathApply(['a', 'b'], x => 'is ' + x, {a: {b: 2}}); //=> is 2
  *      pathApply(['a', 'b'], x => x > 0, {a: {b: 2}}); //=> true
  */
-export default curryN(3, (paths = [], fn, obj = {}) =>
-    fn(path(paths, obj))
-) as PathApply;
+export default curryN(3, <R>(paths: Paths = [], fn: (x) => R, obj = {}) => fn(path(paths, obj))) as PathApply;

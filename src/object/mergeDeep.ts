@@ -2,11 +2,7 @@ import curryN from '../function/curryN';
 import isPlainObject from '../is/plainObject';
 import isArray from '../is/array';
 import objectKeys from './keys';
-
-interface MergeDeep {
-    <T1, T2>(a: T1, b: T2): T1 & T2;
-    <T1>(a: T1): <T2>(b: T2) => T1 & T2;
-}
+import { Merge } from './merge';
 
 /**
  * Create a new object with the own properties of the first object deeply merged with
@@ -19,11 +15,8 @@ interface MergeDeep {
  *
  * mergeDeep({ 'name': 'fred', 'info': { 'age': 10, 'sex': 'm' } }, { 'info': { 'age': 40 }); //=> { 'name': 'fred', 'info': { 'age': 40, 'sex': 'm' } }
  */
-const mergeDeep = (...sources) => {
-    const result = Object.assign(
-        isArray(sources[0]) ? [] : {},
-        sources[0] || {}
-    );
+const mergeDeep = (...sources: Record<any, any>[]) => {
+    const result = Object.assign(isArray(sources[0]) ? [] : {}, sources[0] || {});
 
     for (let i = 1; i < sources.length; i++) {
         const src = sources[i];
@@ -50,4 +43,4 @@ const mergeDeep = (...sources) => {
     return result;
 };
 
-export default curryN(2, mergeDeep) as MergeDeep;
+export default curryN(2, mergeDeep) as Merge;

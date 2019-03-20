@@ -1,13 +1,11 @@
 import curryN from '../function/curryN';
 import prop from './prop';
+import { CurriedFunction2, Prop } from '../typings/types';
 
 interface PropEq {
-    <T>(name: string | number, val: T, obj: any): boolean;
-    <T>(name: string | number, val: T): (obj: any) => boolean;
-    (name: string | number): {
-        <T>(val: T, obj: any): boolean;
-        <T>(val: T): (obj: any) => boolean;
-    };
+    (prop: Prop, value, obj): boolean;
+    (prop: Prop, value): (obj) => boolean;
+    (prop: Prop): CurriedFunction2<any, any, boolean>;
 }
 
 /**
@@ -27,7 +25,4 @@ interface PropEq {
  *      var hasBrownHair = propEq('hair', 'brown');
  *      filter(hasBrownHair, kids); //=> [fred, rusty]
  */
-export default curryN(
-    3,
-    (propName, value, obj) => prop(propName, obj) === value
-) as PropEq;
+export default curryN(3, (propName: Prop, value, obj) => prop(propName, obj) === value) as PropEq;

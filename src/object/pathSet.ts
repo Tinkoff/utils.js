@@ -1,13 +1,20 @@
 import curryN from '../function/curryN';
 import isObject from '../is/object';
-import { Paths } from '../typings/types';
+import { Paths, Prop } from '../typings/types';
 
 interface PathSet {
-    (paths: Paths, value, obj: Record<string, any>): Record<string, any>;
-    (paths: Paths): (value, obj: Record<string, any>) => Record<string, any>;
-    (paths: Paths): (
-        value
-    ) => (obj: Record<string, any>) => Record<string, any>;
+    <K extends Prop, V, O>(path: [K], value: V, obj: O): O & Record<K, V>;
+    <K extends Prop, V>(path: [K], value: V): <O>(obj: O) => O & Record<K, V>;
+    <K extends Prop>(path: [K]): {
+        <V, O>(value: V, obj: O): O & Record<K, V>;
+        <V>(value: V): <O>(obj: O) => O & Record<K, V>;
+    };
+    <O>(path: Paths, value, obj: O): O;
+    (path: Paths, value): <O>(obj: O) => O;
+    (path: Paths): {
+        <O>(value, obj: O): O;
+        (value): <O>(obj: O) => O;
+    };
 }
 
 /**
@@ -22,7 +29,7 @@ interface PathSet {
  *
  *      pathSet(['a', 'b'], 3, {}) // => { a: { b: 3 } }
  */
-export default curryN(3, (paths = [], value, obj = {}) => {
+export default curryN(3, (paths: Paths = [], value, obj = {}) => {
     const n = paths.length - 1;
     const result = Object.assign({}, obj);
     let val = result;

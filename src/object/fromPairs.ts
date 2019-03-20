@@ -1,8 +1,7 @@
-import { KeyValuePair } from '../typings/types';
+import { Prop, KeyValuePairs } from '../typings/types';
 
 interface FromPairs {
-    <V>(pairs: Array<KeyValuePair<string, V>>): { [index: string]: V };
-    <V>(pairs: Array<KeyValuePair<number, V>>): { [index: number]: V };
+    <K extends Prop, V>(pairs: KeyValuePairs<K, V>): Record<K, V>;
 }
 
 /**
@@ -15,8 +14,8 @@ interface FromPairs {
  *
  *      fromPairs([['a', 1], ['b', 2], ['c', 3]]); //=> {a: 1, b: 2, c: 3}
  */
-export default ((arr = []) => {
-    const result = {};
+export default (<K extends Prop, V>(arr: KeyValuePairs<K, V> = []) => {
+    const result: { [k in K]: V } = {} as any;
 
     for (let i = 0; i < arr.length; i++) {
         result[arr[i][0]] = arr[i][1];

@@ -1,11 +1,12 @@
 import curryN from '../function/curryN';
 import objectKeys from './keys';
+import { Prop } from '../typings/types';
 
-type Omitted<T, K extends string> = Pick<T, Exclude<keyof T, K>>;
+type Omitted<T, K extends Prop> = Pick<T, Exclude<keyof T, K>>;
 
 interface Omit {
-    <T, K extends string>(names: ReadonlyArray<K>, obj: T): Omitted<T, K>;
-    <K extends string>(names: ReadonlyArray<K>): <T>(obj: T) => Omitted<T, K>;
+    <K extends Prop, O>(props: ReadonlyArray<K>, obj: O): Omitted<O, K>;
+    <K extends Prop>(props: ReadonlyArray<K>): <O>(obj: O) => Omitted<O, K>;
 }
 
 /**
@@ -18,7 +19,7 @@ interface Omit {
  *
  *      omit(['a', 'd'], {a: 1, b: 2, c: 3, d: 4}); //=> {b: 2, c: 3}
  */
-export default curryN(2, (props = [], obj = {}) => {
+export default curryN(2, <K extends Prop>(props: ReadonlyArray<K> = [], obj = {}) => {
     const propsSet = Object.create(null);
 
     for (let i = 0; i < props.length; i++) {

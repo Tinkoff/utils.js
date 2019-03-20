@@ -2,7 +2,7 @@ import all from '../all';
 
 describe('utils/object/all', () => {
     it('test', () => {
-        const isBiggerThanZero = x => x > 0;
+        const isBiggerThanZero = (x) => x > 0;
 
         expect(all(isBiggerThanZero, { a: 1, b: 1, c: 1 })).toBe(true);
         expect(all(isBiggerThanZero, { a: 0, b: 1, c: 1 })).toBe(false);

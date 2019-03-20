@@ -9,8 +9,7 @@ describe('utils/object/has', () => {
         expect(has('a', {})).toBe(false);
         expect(has('a', 'a')).toBe(false);
 
-        function C() {
-        }
+        function C() {}
 
         C.prototype = { a: 5 };
         expect(has('a', new C())).toBe(false);

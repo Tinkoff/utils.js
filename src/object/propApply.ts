@@ -1,12 +1,15 @@
 import curryN from '../function/curryN';
 import prop from './prop';
+import { Prop, Func1 } from '../typings/types';
 
 interface PropApply {
-    <R>(propName: string, fn: (arg: ReturnType<typeof prop>) => R, obj): R;
-    <R>(propName: string): (fn: (arg: ReturnType<typeof prop>) => R, obj) => R;
-    <R>(propName: string): (
-        fn: (arg: ReturnType<typeof prop>) => R
-    ) => (obj) => R;
+    <K extends Prop, R, O extends Record<K, any>>(prop: K, fn: (x: O[K]) => R, obj: O): R;
+    <K extends Prop, R>(prop: K, fn: Func1<R>, obj): R;
+    <K extends Prop, R>(prop: K, fn: Func1<R>): (obj) => R;
+    <K extends Prop>(prop: K): {
+        <R>(fn: Func1<R>, obj): R;
+        <R>(fn: Func1<R>): (obj) => R;
+    };
 }
 
 /**
@@ -22,6 +25,4 @@ interface PropApply {
  *      propApply('a', x => 'is ' + x, {a: 2}); //=> is 2
  *      propApply('b', x => x > 0, {b: 2}); //=> true
  */
-export default curryN(3, (propName, fn, obj) =>
-    fn(prop(propName, obj))
-) as PropApply;
+export default curryN(3, (propName, fn, obj) => fn(prop(propName, obj))) as PropApply;

@@ -11,3 +11,5 @@ describe('utils/object/pathOr', () => {
         expect(pathOr(['a', 'b'], 9, undefined)).toBe(9);
     });
 });
+
+const a = pathOr(['b', 'a'], 'fwfw', { a: 1, b: '234324', c: 2 });

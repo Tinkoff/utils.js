@@ -1,21 +1,14 @@
 import curryN from '../function/curryN';
 
+export type ReduceFunc<R, O extends Record<any, any>> = (acc: R, value: O[keyof O], key: keyof O, obj: O) => R;
+
 interface ReduceObj {
-    <TObj, TKey extends keyof TObj, TAcc, TResult>(
-        fn: (acc: TAcc, value: TObj[TKey], TKey) => TResult,
-        acc: TAcc,
-        obj: TObj
-    ): TResult;
-    <TObj, TKey extends keyof TObj, TAcc, TResult>(
-        fn: (acc: TAcc, value: TObj[TKey], TKey) => TResult,
-        acc: TAcc
-    ): (obj: TObj) => TResult;
-    <TObj, TKey extends keyof TObj, TAcc, TResult>(
-        fn: (acc: TAcc, value: TObj[TKey], TKey) => TResult
-    ): (acc: TAcc, obj: TObj) => TResult;
-    <TObj, TKey extends keyof TObj, TAcc, TResult>(
-        fn: (acc: TAcc, value: TObj[TKey], TKey) => TResult
-    ): (acc: TAcc) => (obj: TObj) => TResult;
+    <R, O extends Record<any, any>>(fn: ReduceFunc<R, O>, acc: R, obj: O): R;
+    <R>(fn: ReduceFunc<R, any>, acc: R): (obj) => R;
+    (fn: ReduceFunc<any, any>): {
+        <R>(acc: R, obj): R;
+        <R>(acc: R): (obj) => R;
+    };
 }
 
 /**
@@ -34,10 +27,10 @@ interface ReduceObj {
  *
  *      reduce(plus, 10, obj); //=> 16
  */
-export default curryN(3, (fn, acc, obj = {}) => {
+export default curryN(3, <R, O extends Record<any, any>>(fn: ReduceFunc<R, O>, acc: R, obj: O = {} as any) => {
     for (const key in obj) {
         if (Object.prototype.hasOwnProperty.call(obj, key)) {
-            acc = fn(acc, obj[key], key);
+            acc = fn(acc, obj[key], key, obj);
         }
     }
 

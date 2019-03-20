@@ -1,11 +1,12 @@
 import curryN from '../function/curryN';
 import objectKeys from './keys';
+import { Prop, ObjBaseBy, ObjBase } from '../typings/types';
 
 interface GroupBy {
-    <T>(fn: (a: T) => string, list: ReadonlyArray<T>): { [index: string]: T[] };
-    <T>(fn: (a: T) => string): (
-        list: ReadonlyArray<T>
-    ) => { [index: string]: T[] };
+    <O, KT extends string>(fn: ObjBaseBy<O, KT>, obj: O): Record<KT, O[keyof O][]>;
+    <K extends Prop, V, KT extends string>(fn: ObjBase<K, V, KT>): <O extends Record<K, V>>(
+        obj: O
+    ) => Record<KT, O[keyof O][]>;
 }
 
 /**
@@ -20,7 +21,7 @@ interface GroupBy {
  *
  * groupBy(x => x, { a: 1, b: 1, c: 3});// => { '1': [1, 1], '3': [3] }
  */
-export default curryN(2, (fn, obj = {}) => {
+export default curryN(2, <O extends Record<any, any>>(fn: ObjBaseBy<O, string>, obj: O = {} as any) => {
     const result = {};
     const keys = objectKeys(obj);
 

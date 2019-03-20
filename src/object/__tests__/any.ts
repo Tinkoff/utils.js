@@ -2,7 +2,7 @@ import any from '../any';
 
 describe('utils/object/any', () => {
     it('test', () => {
-        const isBiggerThanZero = x => x > 0;
+        const isBiggerThanZero = (x) => x > 0;
 
         expect(any(isBiggerThanZero, { a: 0 })).toBe(false);
         expect(any(isBiggerThanZero, { a: 0, b: 0, c: 1 })).toBe(true);

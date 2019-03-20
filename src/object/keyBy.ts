@@ -1,15 +1,12 @@
 import curryN from '../function/curryN';
 import objectKeys from './keys';
+import { ObjBase, ObjBaseBy, Prop } from '../typings/types';
 
 interface KeyBy {
-    <T, R>(
-        fn: (value: T, key: string, obj: Record<string, T>) => R,
-        obj?: Record<string, T>
-    ): Record<string, R>;
-
-    <T, R>(fn: (value: T, key: string, obj: Record<string, T>) => R): (
-        obj?: Record<string, T>
-    ) => Record<string, R>;
+    <O, KT extends string>(fn: ObjBaseBy<O, KT>, obj: O): Record<KT, O[keyof O]>;
+    <K extends Prop, V, KT extends string>(fn: ObjBase<K, V, KT>): <O extends Record<K, V>>(
+        obj: O
+    ) => Record<KT, O[keyof O]>;
 }
 
 /**
@@ -25,7 +22,7 @@ interface KeyBy {
  * keyBy(x => x < 2, { a: 0, b: 1, c: 3});// => { false: 1, true: 3 }
  */
 
-export default curryN(2, (fn, obj = {}) => {
+export default curryN(2, <O extends Record<any, any>>(fn: ObjBaseBy<O, string>, obj: O = {} as any) => {
     const result = {};
     const keys = objectKeys(obj);
 

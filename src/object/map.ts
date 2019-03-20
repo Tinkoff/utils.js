@@ -1,13 +1,9 @@
 import curryN from '../function/curryN';
+import { Prop, ObjBaseBy, ObjBase } from '../typings/types';
 
 interface MapObject {
-    <TKey extends keyof TObj, TValue, TObj>(
-        fn: (value: TObj[TKey], key: TKey, obj: TObj) => TValue,
-        obj: TObj
-    ): Record<TKey, TValue>;
-    <TKey extends keyof TObj, TValue, TObj>(
-        fn: (value: TObj[TKey], key: TKey, obj: TObj) => TValue
-    ): (obj: TObj) => Record<TKey, TValue>;
+    <O extends Record<any, any>, R>(fn: ObjBaseBy<O, R>, obj: O): Record<keyof O, R>;
+    <K extends Prop, V, R>(fn: ObjBase<K, V, R>): <O extends Record<any, any>>(obj: O) => Record<keyof O, R>;
 }
 
 /**
@@ -22,8 +18,8 @@ interface MapObject {
  *
  *      map(double, {x: 1, y: 2, z: 3}); //=> {x: 2, y: 4, z: 6}
  */
-export default curryN(2, (fn, obj = {}) => {
-    const result = {};
+export default curryN(2, <O extends Record<any, any>, R>(fn: ObjBaseBy<O, R>, obj: O = {} as any) => {
+    const result: Record<keyof O, R> = {} as any;
 
     for (const key in obj) {
         if (Object.prototype.hasOwnProperty.call(obj, key)) {

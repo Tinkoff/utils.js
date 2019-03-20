@@ -1,11 +1,10 @@
 import curryN from '../function/curryN';
 import has from './has';
+import { ObjPredBy, ObjPred, Prop } from '../typings/types';
 
 interface Where {
-    <T, U>(spec: T, testObj: U): boolean;
-    <T>(spec: T): <U>(testObj: U) => boolean;
-    <ObjFunc2, U>(spec: ObjFunc2, testObj: U): boolean;
-    <ObjFunc2>(spec: ObjFunc2): <U>(testObj: U) => boolean;
+    <O>(spec: Partial<Record<keyof O, ObjPredBy<O>>>, obj: O): boolean;
+    (spec: Record<Prop, ObjPred<Prop, any>>): (obj) => boolean;
 }
 
 /**
@@ -34,9 +33,9 @@ interface Where {
  *      pred({a: 'foo', b: 'xxx', x: 10, y: 19}); //=> false
  *      pred({a: 'foo', b: 'xxx', x: 11, y: 20}); //=> false
  */
-export default curryN(2, (spec = {}, obj = {}) => {
+export default curryN(2, <O>(spec: Partial<Record<keyof O, ObjPredBy<O>>> = {}, obj: O = {} as any) => {
     for (const prop in spec) {
-        if (has(prop, spec) && !spec[prop](obj[prop])) {
+        if (has(prop, spec) && !spec[prop](obj[prop], prop, obj)) {
             return false;
         }
     }

@@ -16,3 +16,5 @@ describe('utils/object/pathApply', () => {
         expect(f).toBeCalledWith({ c: 'test' });
     });
 });
+
+const a = pathApply(['a', 'b'], (x: string) => x, { a: 1, b: 'fwf' });

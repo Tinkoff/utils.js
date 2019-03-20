@@ -1,13 +1,9 @@
 import curryN from '../function/curryN';
+import { Prop, ObjPred } from '../typings/types';
 
 interface FindKey {
-    <T>(
-        fn: (value: T, key: string, obj: Record<string, T>) => any,
-        obj: Record<string, T>
-    ): string;
-    <T>(fn: (value: T, key: string, obj: Record<string, T>) => any): (
-        obj: Record<string, T>
-    ) => string;
+    <O extends Record<any, any>>(fn: ObjPred<keyof O, O[keyof O]>, obj: O): keyof O | void;
+    <K extends Prop, V>(fn: ObjPred<K, V>): <O extends Record<K, V>>(obj: O) => keyof O | void;
 }
 
 /**
@@ -23,7 +19,7 @@ interface FindKey {
  *      findKey(x => x > 3, { a: 2, b: 1 }) // => undefined
  *      findKey(x => x > 3, { a: 4, b: 5 }) // => 'a'
  */
-export default curryN(2, (fn, obj = {}) => {
+export default curryN(2, <O extends Record<any, any>>(fn: ObjPred<keyof O, O[keyof O]>, obj: O = {} as any) => {
     for (const key in obj) {
         if (Object.prototype.hasOwnProperty.call(obj, key)) {
             if (fn(obj[key], key, obj)) {

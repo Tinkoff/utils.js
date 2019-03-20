@@ -3,8 +3,8 @@ import path from './path';
 import { Paths, CurriedFunction2 } from '../typings/types';
 
 interface PathEq {
-    (path: Paths, val: any, obj: any): boolean;
-    (path: Paths, val: any): (obj: any) => boolean;
+    (path: Paths, val, obj): boolean;
+    (path: Paths, val): (obj) => boolean;
     (path: Paths): CurriedFunction2<any, any, boolean>;
 }
 
@@ -25,7 +25,4 @@ interface PathEq {
  *      var isFamous = pathEq(['address', 'zipCode'], 90210);
  *      filter(isFamous, users); //=> [ user1 ]
  */
-export default curryN(
-    3,
-    (paths = [], value, obj = {}) => path(paths, obj) === value
-) as PathEq;
+export default curryN(3, (paths: Paths = [], value, obj = {}) => path(paths, obj) === value) as PathEq;

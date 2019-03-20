@@ -1,10 +1,10 @@
 import curryN from '../function/curryN';
 import objectKeys from './keys';
-import { Dictionary, Filter } from '../typings/types';
+import { Prop, ObjPred } from '../typings/types';
 
 interface FilterObj {
-    <T>(fn: (value: T) => boolean): Filter<T>;
-    <T>(fn: (value: T) => boolean, obj: Dictionary<T>): Dictionary<T>;
+    <O extends Record<any, any>>(fn: ObjPred<keyof O, O[keyof O]>, obj: O): Partial<O>;
+    <K extends Prop, V>(fn: ObjPred<K, V>): <O extends Record<K, V>>(obj: O) => Partial<O>;
 }
 
 /**
@@ -21,9 +21,9 @@ interface FilterObj {
  *
  *      filter(isEven, {a: 1, b: 2, c: 3, d: 4}); //=> {b: 2, d: 4}
  */
-export default curryN(2, (fn, obj = {}) => {
+export default curryN(2, <O extends Record<any, any>>(fn: ObjPred<keyof O, O[keyof O]>, obj: O = {} as any) => {
     const keys = objectKeys(obj);
-    const result = {};
+    const result: Partial<O> = {};
 
     for (let i = 0; i < keys.length; i++) {
         const key = keys[i];

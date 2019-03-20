@@ -1,7 +1,7 @@
 import objectKeys from './keys';
 
 interface Values {
-    <T extends object, K extends keyof T>(obj: T): Array<T[K]>;
+    <O>(obj: O): Array<O[keyof O]>;
 }
 
 /**

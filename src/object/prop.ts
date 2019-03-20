@@ -1,9 +1,13 @@
 import curryN from '../function/curryN';
+import { Prop } from '../typings/types';
 
-interface Prop {
-    <P extends keyof T, T>(p: P, obj: T): T[P];
-    <P extends string>(p: P): <T>(obj: Record<P, T>) => T;
-    <P extends string, T>(p: P): (obj: Record<P, T>) => T;
+interface PropFunc {
+    <K extends Prop, O extends Record<K, any>>(prop: K, obj: O): O[K];
+    <K extends Prop>(prop: K, obj): undefined;
+    <K extends Prop>(prop: K): {
+        <O extends Record<K, any>>(obj: O): O[K];
+        (obj): undefined;
+    };
 }
 
 /**
@@ -19,6 +23,4 @@ interface Prop {
  *      prop('x', {x: 100}); //=> 100
  *      prop('x', {}); //=> undefined
  */
-export default curryN(2, (prop, obj) =>
-    obj != null ? obj[prop] : undefined
-) as Prop;
+export default curryN(2, <K extends Prop>(prop: K, obj) => (obj != null ? obj[prop] : undefined)) as PropFunc;
