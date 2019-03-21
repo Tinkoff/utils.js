@@ -12,6 +12,4 @@ interface Test {
  * @param {String} str
  * @return {Boolean}
  */
-export default curryN(2, (pattern = /()/, str = '') =>
-    pattern.test(str)
-) as Test;
+export default curryN(2, (pattern: RegExp = /()/, str: string = '') => pattern.test(str)) as Test;

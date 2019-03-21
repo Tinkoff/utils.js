@@ -1,8 +1,8 @@
 import curryN from '../function/curryN';
 
 interface StartsWith {
-    (a: string, list: string): boolean;
-    (a: string): (list: string) => boolean;
+    (a: string, str: string): boolean;
+    (a: string): (str: string) => boolean;
 }
 
 /**
@@ -18,5 +18,5 @@ interface StartsWith {
  */
 export default curryN(
     2,
-    (prefix = '', str = '') => str.slice(0, prefix.length) === prefix
+    (prefix: string = '', str: string = '') => str.slice(0, prefix.length) === prefix
 ) as StartsWith;

@@ -18,5 +18,5 @@ interface EndsWith {
  */
 export default curryN(
     2,
-    (postfix = '', str = '') => str.slice(-postfix.length) === postfix
+    (postfix: string = '', str: string = '') => str.slice(-postfix.length) === postfix
 ) as EndsWith;

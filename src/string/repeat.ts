@@ -2,8 +2,8 @@ import curryN from '../function/curryN';
 import isString from '../is/string';
 
 interface Repeat {
-    (n: number, a): string;
-    (n: number): (a) => string;
+    (n: number, a: string): string;
+    (n: number): (a: string) => string;
 }
 
 /**
@@ -17,7 +17,7 @@ interface Repeat {
  *      repeat(5, 'h'); //=> 'hhhhh'
  *
  */
-export default curryN(2, (n = 0, value) => {
+export default curryN(2, (n = 0, value: string) => {
     if (!isString(value)) {
         return '';
     }

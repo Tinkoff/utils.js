@@ -1,8 +1,9 @@
 import curryN from '../function/curryN';
+import { Pattern } from '../typings/types';
 
 interface Split {
-    (sep: string | RegExp): (str: string) => string[];
-    (sep: string | RegExp, str: string): string[];
+    (delim: Pattern, str: string): string[];
+    (delim: Pattern): (str: string) => string[];
 }
 
 /**
@@ -16,4 +17,4 @@ interface Split {
  *
  *      split('.', 'a.b.c.xyz.d'); //=> ['a', 'b', 'c', 'xyz', 'd']
  */
-export default curryN(2, (delim = '', str = '') => str.split(delim)) as Split;
+export default curryN(2, (delim: Pattern = '', str: string = '') => str.split(delim)) as Split;

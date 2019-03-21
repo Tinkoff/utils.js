@@ -1,8 +1,8 @@
 import curryN from '../function/curryN';
 
 interface Template {
-    (replacements: object, str?: string): string;
-    (replacements: object): (str?: string) => string;
+    (replacements: Record<string, string>, str?: string): string;
+    (replacements: Record<string, string>): (str?: string) => string;
 }
 
 /**
@@ -15,7 +15,7 @@ interface Template {
  *
  *      template({ fruit: 'banana' }, 'Petya has a %{fruit}') // => Petya has a banana
  */
-export default curryN(2, (replacements = {}, str = '') =>
+export default curryN(2, (replacements = {}, str: string = '') =>
     str.replace(/%\{.+?\}/g, (match) => {
         const replacementKey = match.replace(/\W/g, '');
 

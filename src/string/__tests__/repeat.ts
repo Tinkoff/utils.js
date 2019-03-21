@@ -5,7 +5,7 @@ describe('utils/string/repeat', () => {
         expect(repeat(4, 't')).toEqual('tttt');
         expect(repeat(4, ')')).toEqual('))))');
         expect(repeat(0, ')')).toEqual('');
-        expect(repeat(0, 1)).toEqual('');
-        expect(repeat(3, {})).toEqual('');
+        expect(repeat(0, 1 as any)).toEqual('');
+        expect(repeat(3, {} as any)).toEqual('');
     });
 });
