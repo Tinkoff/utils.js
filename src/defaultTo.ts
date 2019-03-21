@@ -1,8 +1,12 @@
 import curryN from './function/curryN';
 
 interface DefaultTo {
-    <T, U>(a: T, b: U | null | undefined): T | U;
-    <T>(a: T): <U>(b: U | null | undefined) => T | U;
+    <T>(a: T, b: null | undefined): T;
+    <T, U>(a: T, b: U): U;
+    <T>(a: T): {
+        (b: null | undefined): T;
+        <U>(b: U): U;
+    };
 }
 
 /**

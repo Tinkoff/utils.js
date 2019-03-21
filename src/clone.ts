@@ -2,7 +2,11 @@ import type from './type';
 import mapObj from './object/map';
 import mapArr from './array/map';
 
-const cloneRegExp = (pattern) =>
+interface Clone {
+    <T>(x: T): T;
+}
+
+const cloneRegExp = (pattern: RegExp) =>
     new RegExp(
         pattern.source,
         (pattern.global ? 'g' : '') +
@@ -40,4 +44,4 @@ const clone = (x) => {
     }
 };
 
-export default clone as <T>(x: T) => T;
+export default clone as Clone;
