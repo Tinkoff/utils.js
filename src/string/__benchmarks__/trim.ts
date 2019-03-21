@@ -1,5 +1,5 @@
-import trimRamda from 'ramda/src/trim';
-import trimLodash from 'lodash/trim';
+const trimRamda = require('ramda/src/trim');
+const trimLodash = require('lodash/trim');
 import trim from '../trim';
 
 const testStr = '           fawfawfsafgregr      ';
@@ -13,5 +13,5 @@ export default {
     },
     utils: () => {
         trim(testStr);
-    }
+    },
 };

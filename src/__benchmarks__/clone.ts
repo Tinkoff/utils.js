@@ -1,6 +1,6 @@
-import cloneRamda from 'ramda/src/clone';
-import cloneLodash from 'lodash/cloneDeep';
 import clone from '../clone';
+const cloneLodash = require('lodash/cloneDeep');
+const cloneRamda = require('ramda/src/clone');
 
 const testObj = {
     a: 1,
@@ -13,13 +13,13 @@ const testObj = {
             d: {
                 a: 1898983759325,
                 b: {},
-                c: null
-            }
+                c: null,
+            },
         },
-        c: null
+        c: null,
     },
     c: 3,
-    d: undefined
+    d: undefined,
 };
 
 export default {
@@ -31,5 +31,5 @@ export default {
     },
     utils: () => {
         clone(testObj);
-    }
+    },
 };

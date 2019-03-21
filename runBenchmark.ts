@@ -1,6 +1,3 @@
-/* eslint-disable import/no-commonjs,global-require,no-console */
-require('babel-register')();
-
 const path = require('path');
 const walker = require('walker');
 const Suite = require('benchmark').Suite;
@@ -15,7 +12,7 @@ function createSuite(name, tests) {
     console.log(`${name}:`);
 
     return suite
-        .on('cycle', event => {
+        .on('cycle', (event) => {
             console.log(String(event.target));
         })
         .on('complete', () => {
@@ -26,10 +23,10 @@ function createSuite(name, tests) {
 const filterRegex = process.argv[2] ? new RegExp(process.argv[2]) : null;
 
 walker(path.resolve(__dirname, 'src'))
-    .filterDir(dir => {
+    .filterDir((dir) => {
         return !/node_modules/.test(dir);
     })
-    .on('file', file => {
+    .on('file', (file) => {
         if (filterRegex && !filterRegex.test(file)) {
             return;
         }
@@ -40,4 +37,3 @@ walker(path.resolve(__dirname, 'src'))
             createSuite(path.relative(__dirname, file), tests).run();
         }
     });
-

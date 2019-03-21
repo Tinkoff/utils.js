@@ -1,10 +1,10 @@
-import pathRamda from 'ramda/src/path';
-import pathLodash from 'lodash/get';
+const pathRamda = require('ramda/src/path');
+const pathLodash = require('lodash/get');
 import path from '../path';
 
 const pth = ['a', 0, 'b'];
 const testObj = {
-    a: [{ b: 'check' }, 2, 3]
+    a: [{ b: 'check' }, 2, 3],
 };
 
 export default {
@@ -16,5 +16,5 @@ export default {
     },
     utils: () => {
         return path(pth, testObj);
-    }
+    },
 };

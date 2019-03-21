@@ -1,11 +1,11 @@
-import filterRamda from 'ramda/src/filter';
-import filterLodash from 'lodash/filter';
-import lazy from 'lazy.js';
-import _ from 'underscore';
+const filterRamda = require('ramda/src/filter');
+const filterLodash = require('lodash/filter');
+const lazy = require('lazy.js');
+const _ = require('underscore');
 import filter from '../filter';
 import range from '../range';
 
-const fn = x => x % 2;
+const fn = (x) => x % 2 !== 0;
 const array = range(101);
 
 export default {
@@ -19,9 +19,11 @@ export default {
         _.filter(array, fn);
     },
     lazyjs: () => {
-        lazy(array).filter(fn).toArray();
+        lazy(array)
+            .filter(fn)
+            .toArray();
     },
     utils: () => {
         filter(fn, array);
-    }
+    },
 };

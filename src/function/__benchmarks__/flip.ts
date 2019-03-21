@@ -1,5 +1,5 @@
-import flipRamda from 'ramda/src/flip';
-import flipLodash from 'lodash/flip';
+const flipRamda = require('ramda/src/flip');
+const flipLodash = require('lodash/flip');
 import flip from '../flip';
 
 const fn = (x, y) => x - y;
@@ -16,5 +16,5 @@ export default {
     },
     utils: () => {
         flipped(1, 2);
-    }
+    },
 };
