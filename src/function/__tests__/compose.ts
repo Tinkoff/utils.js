@@ -4,7 +4,7 @@ describe('utils/function/compose', () => {
     it('should return combination of passed functions', () => {
         const f1 = jest.fn((x: number) => x + 1);
         const f2 = jest.fn((x) => x * 2);
-        const f3: <T = number>(x: T, y: T, z: T) => T = jest.fn((x, y, z) => -z);
+        const f3: <T = number>(x: T, y: T, z: T) => T = jest.fn((x, y, z) => -z) as any;
 
         const f = compose(
             f1,

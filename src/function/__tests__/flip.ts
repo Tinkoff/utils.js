@@ -2,7 +2,7 @@ import flip from '../flip';
 
 describe('utils/function/flip', () => {
     it('should return new function with reversed two first arguments', () => {
-        const f: (x: number, y: string) => number = jest.fn((a, b) => a - b);
+        const f: (x: number, y: string) => number = jest.fn((a, b) => a - +b);
         const g = flip(f);
 
         expect(g('3', 4)).toBe(1);

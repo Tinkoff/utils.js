@@ -16,22 +16,22 @@ describe('utils/function/curry', () => {
         expect(curry(f)()).toBe('result');
         expect(f).toBeCalled();
 
-        const g: (a, b, c) => number = jestFn((a, b, c) => c);
+        const g: (a, b, c) => number = jestFn((a, b, c) => c) as any;
         expect(curry(g)(1, 2, 3)).toBe(3);
         expect(g).toBeCalledWith(1, 2, 3);
     });
 
     it('should return function if number of parameters is not enough', () => {
-        const f = jestFn((a) => a * 2);
-        const curried = curry(f);
-        let called = curried();
+        const f: (x: number) => number = jestFn((a) => a * 2) as any;
+        const curried: any = curry(f);
+        let called: any = curried();
 
         expect(typeof called).toBe('function');
         expect(f).not.toBeCalled();
         expect(called(5)).toBe(10);
         expect(f).toBeCalledWith(5);
 
-        const g: (x) => number = jestFn((a, b, c) => a + b + c);
+        const g: (x) => number = jestFn((a, b, c) => a + b + c) as any;
         const curried2 = curry(g);
         called = curried2(1);
         expect(typeof called).toBe('function');

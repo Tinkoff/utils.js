@@ -1,8 +1,8 @@
 import either from '../either';
 
 describe('utils/function/either', () => {
-    const t = jest.fn(() => true);
-    const f = jest.fn(() => false);
+    const t = jest.fn((x) => true);
+    const f = jest.fn((x) => false);
 
     beforeEach(() => {
         f.mockClear();

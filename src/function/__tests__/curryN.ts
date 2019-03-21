@@ -3,7 +3,7 @@ import curryN from '../curryN';
 describe('utils/function/curryN', () => {
     it('should return curried function with specified arity', () => {
         const f = jest.fn(() => 3);
-        let g = curryN(3, f);
+        let g: any = curryN(3, f);
 
         expect(f).not.toBeCalled();
         g = g(1);

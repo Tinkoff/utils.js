@@ -1,9 +1,8 @@
 import curryN from '../function/curryN';
-import { KeyValuePairs } from '../typings/types';
 
 interface Zip {
-    <U, V>(list1: ArrayLike<U>, list2: ArrayLike<V>): KeyValuePairs<U, V>;
-    <U>(list1: ArrayLike<U>): <V>(list2: ArrayLike<V>) => KeyValuePairs<U, V>;
+    <U, V>(list1: ArrayLike<U>, list2: ArrayLike<V>): Array<[U, V]>;
+    <U>(list1: ArrayLike<U>): <V>(list2: ArrayLike<V>) => Array<[U, V]>;
 }
 
 /**
@@ -20,7 +19,7 @@ interface Zip {
  */
 export default curryN(2, <U, V>(a: ArrayLike<U> = [], b: ArrayLike<V> = []) => {
     const len = Math.min(a.length, b.length);
-    const result: KeyValuePairs<U, V> = new Array(len);
+    const result: Array<[U, V]> = new Array(len);
 
     for (let i = 0; i < len; i++) {
         result[i] = [a[i], b[i]];

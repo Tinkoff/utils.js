@@ -39,7 +39,7 @@ describe('memoizeWith', () => {
             has: jest.fn(() => false),
             set: jest.fn(),
         };
-        const fn = jest.fn(() => fnResult);
+        const fn = jest.fn((x) => fnResult);
         const hasher = jest.fn(identity);
 
         const memoizedFn = memoizeWith(() => cache, hasher, fn);

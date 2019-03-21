@@ -2,10 +2,12 @@ import { Func } from '../typings/types';
 import curryN from './curryN';
 
 interface IfElse {
-    <T, F>(condition: Func<boolean>, onTrue: Func<T>, onFalse: Func<F>): T | F;
-    <T>(condition: Func<boolean>, onTrue: Func<T>): <F>(onFalse: Func<F>) => T | F;
-    (condition: Func<boolean>): <T, F>(onTrue: Func<T>, onFalse: Func<F>) => T | F;
-    (condition: Func): <T>(onTrue: Func<T>) => <F>(onFalse: Func<F>) => T | F;
+    <T, F>(condition: Func<boolean>, onTrue: Func<T>, onFalse: Func<F>): Func<T | F>;
+    <T>(condition: Func<boolean>, onTrue: Func<T>): <F>(onFalse: Func<F>) => Func<T | F>;
+    (condition: Func<boolean>): {
+        <T, F>(onTrue: Func<T>, onFalse: Func<F>): Func<T | F>;
+        <T>(onTrue: Func<T>): <F>(onFalse: Func<F>) => Func<T | F>;
+    };
 }
 
 /**

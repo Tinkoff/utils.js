@@ -8,7 +8,7 @@ describe('utils/array/uniqBy', () => {
     });
 
     it('should return unique items', () => {
-        const f = jest.fn((x) => x % 2);
+        const f = jest.fn((x) => `${x % 2}`);
 
         expect(uniqBy(f, [1, 2, 2, 3, 4, 5, 5, 5])).toEqual([1, 2]);
         expect(f).toHaveBeenCalledTimes(8);

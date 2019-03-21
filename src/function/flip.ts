@@ -16,4 +16,11 @@ interface Flip {
  *
  *      flip(neg)(3, 5); //=> 2
  */
-export default (<T, U, R>(fn: (a: T, b: U) => R) => curryN(2, (a: U, b: T, ...args) => fn(b, a, ...args))) as Flip;
+export default (<T, U, R>(fn: (a: T, b: U) => R) =>
+    curryN(2, function(a: U, b: T) {
+        const args = Array.prototype.slice.call(arguments);
+        args[0] = b;
+        args[1] = a;
+
+        return fn.apply(this, args);
+    })) as Flip;

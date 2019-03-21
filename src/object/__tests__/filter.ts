@@ -2,7 +2,7 @@ import filter from '../filter';
 
 describe('utils/object/filter', () => {
     it('should return new object with filtered values', () => {
-        const f = jest.fn((x) => x % 2);
+        const f = jest.fn((x) => x % 2 !== 0);
         const obj = { a: 1, b: 2, c: 3, d: 4 };
 
         expect(filter(f, obj)).toEqual({ a: 1, c: 3 });

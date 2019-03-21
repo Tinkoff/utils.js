@@ -2,7 +2,7 @@ import allPass from '../anyPass';
 
 describe('utils/function/allPass', () => {
     it('should return false', () => {
-        const f1 = jest.fn(() => false);
+        const f1 = jest.fn((x) => false);
         const f2 = jest.fn(() => false);
         const f3 = jest.fn(() => false);
 
@@ -12,7 +12,7 @@ describe('utils/function/allPass', () => {
         expect(f3).toBeCalledWith(1, 2, 3);
     });
     it('should return true', () => {
-        const f1 = jest.fn(() => false);
+        const f1 = jest.fn((x) => false);
         const f2 = jest.fn(() => true);
         const f3 = jest.fn(() => false);
 
