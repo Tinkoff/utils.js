@@ -1,5 +1,5 @@
-import * as React from 'react';
 import mergeDeep from '../mergeDeep';
+const React = require('react');
 
 describe('utils/object/mergeDeep', () => {
     it('should deeply merge objects', () => {

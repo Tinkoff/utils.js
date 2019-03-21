@@ -1,5 +1,5 @@
-import { createElement } from 'react';
 import isPlainObject from '../plainObject';
+const { createElement } = require('react');
 
 describe('utils/is/plainObject', () => {
     it('test', () => {
