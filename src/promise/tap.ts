@@ -1,8 +1,9 @@
 import curryN from '../function/curryN';
+import { Void1 } from '../typings/types';
 
 interface TapPromise {
-    <T>(fn: (a: T) => any, value: T): Promise<T>;
-    <T>(fn: (a: T) => any): (value: T) => Promise<T>;
+    <T>(fn: Void1<T>, x: T): Promise<T>;
+    (fn: Void1): <T>(x: T) => Promise<T>;
 }
 
 /**
@@ -17,7 +18,7 @@ interface TapPromise {
  *      Promise.resolve(5).then(promiseTap(sayX));
  *      // logs 'x is 5'
  */
-export default curryN(2, (fn, x) =>
+export default curryN(2, <T>(fn: Void1<T>, x: T) =>
     Promise.resolve()
         .then(() => fn(x))
         .then(() => x)

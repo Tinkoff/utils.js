@@ -6,6 +6,6 @@ describe('utils/promise/resolveWith', () => {
         expect(resolveWith(toLower, 'TEST')).resolves.toBe('test');
     });
     it('should accept more than one parameter', () => {
-        expect(resolveWith((x, y) => `${x}${y}`, 'TE', 'ST')).resolves.toBe('TEST');
+        expect(resolveWith((x, y) => `${x}${y}`)('TE', 'ST')).resolves.toBe('TEST');
     });
 });

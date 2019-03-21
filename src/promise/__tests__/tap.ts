@@ -2,7 +2,7 @@ import promiseTap from '../tap';
 
 describe('promiseTap', () => {
     it('should run promise and return passed argument', () => {
-        const fn = jest.fn(x => 0);
+        const fn = jest.fn((x) => 0);
         const tapped = promiseTap(fn);
         const saveResult = jest.fn();
 

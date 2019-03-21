@@ -6,6 +6,6 @@ describe('utils/promise/rejectWith', () => {
         expect(rejectWith(toLower, 'ERROR')).rejects.toBe('error');
     });
     it('should accept more than one parameter', () => {
-        expect(rejectWith((x, y) => `${x}${y}`, 'ER', 'ROR')).rejects.toBe('ERROR');
+        expect(rejectWith((x, y) => `${x}${y}`)('ER', 'ROR')).rejects.toBe('ERROR');
     });
 });

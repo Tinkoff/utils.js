@@ -1,8 +1,12 @@
 import curryN from '../function/curryN';
+import { Func } from '../typings/types';
 
 interface RejectWith {
-    <TResult>(func: (...args) => TResult, ...payload): Promise<TResult>;
-    <TResult>(func: (...args) => TResult): (...payload) => Promise<TResult>;
+    <T1, T2, R>(func: (a: T1, b: T2, ...args) => R, a: T1, b: T2, ...args): Promise<R>;
+    <T, R>(func: (a: T) => R, a: T): Promise<R>;
+    <T1, T2, R>(func: (a: T1, b: T2, ...payload) => R): (a: T1, b: T2, ...payload) => Promise<R>;
+    <T, R>(func: (a: T) => R): (a: T) => Promise<R>;
+    <R>(func: Func<R>): (...payload) => Promise<R>;
 }
 
 /**
@@ -15,6 +19,6 @@ interface RejectWith {
  * @example
  *      rejectWith(toLowerCase, 'Error').catch( err => console.error(err) );// => 'error'
  */
-export default curryN(2, (func, ...payload) => {
+export default curryN(2, <R>(func: Func<R>, ...payload) => {
     return Promise.reject(func(...payload));
 }) as RejectWith;
