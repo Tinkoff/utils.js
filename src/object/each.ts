@@ -1,9 +1,9 @@
 import curryN from '../function/curryN';
-import { Prop, ObjVoid } from '../typings/types';
+import { ObjVoid } from '../typings/types';
 
 interface EachObj {
     <O extends Record<any, any>>(fn: ObjVoid<keyof O, O[keyof O]>, obj: O): void;
-    <K extends Prop, V>(fn: ObjVoid<K, V>): (obj: Record<K, V>) => void;
+    <K extends string, V>(fn: ObjVoid<K, V>): (obj: Record<K, V>) => void;
 }
 
 /**
@@ -20,7 +20,7 @@ interface EachObj {
  *      // logs x:1
  *      // logs y:2
  */
-export default curryN(2, <K extends Prop, V>(fn: ObjVoid<K, V>, obj: Record<K, V> = {} as any) => {
+export default curryN(2, <K extends string, V>(fn: ObjVoid<K, V>, obj: Record<K, V> = {} as any) => {
     for (const key in obj) {
         if (Object.prototype.hasOwnProperty.call(obj, key)) {
             fn(obj[key], key, obj);

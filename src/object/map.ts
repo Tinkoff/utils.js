@@ -1,9 +1,9 @@
 import curryN from '../function/curryN';
-import { Prop, ObjBaseBy, ObjBase } from '../typings/types';
+import { ObjBaseBy, ObjBase } from '../typings/types';
 
 interface MapObject {
     <O extends Record<any, any>, R>(fn: ObjBaseBy<O, R>, obj: O): Record<keyof O, R>;
-    <K extends Prop, V, R>(fn: ObjBase<K, V, R>): <O extends Record<any, any>>(obj: O) => Record<keyof O, R>;
+    <K extends string, V, R>(fn: ObjBase<K, V, R>): <O extends Record<any, any>>(obj: O) => Record<keyof O, R>;
 }
 
 /**

@@ -2,9 +2,8 @@ import isArray from '../is/array';
 import isArrayLike from '../is/arrayLike';
 
 interface ToArray {
-    <T>(v: Array<T>): T[];
     <T>(v: ArrayLike<T>): T[];
-    <T>(v: T): [T];
+    <T>(v: T): T extends Array<any> ? T : T[];
 }
 
 /**

@@ -1,9 +1,9 @@
 import curryN from '../function/curryN';
-import { ObjPred, ObjPredBy, Prop } from '../typings/types';
+import { ObjPred, ObjPredBy } from '../typings/types';
 
 interface PickBy {
     <O>(pred: ObjPredBy<O>, obj: O): Partial<O>;
-    <K extends Prop>(pred: ObjPred<K, any>): <O>(obj: O) => Partial<O>;
+    <K extends string>(pred: ObjPred<K, any>): <O>(obj: O) => Partial<O>;
 }
 
 /**

@@ -1,9 +1,9 @@
 import curryN from '../function/curryN';
-import { ObjPred, Prop } from '../typings/types';
+import { ObjPred } from '../typings/types';
 
 interface AnyObject {
-    <K extends Prop, V>(fn: ObjPred<K, V>, obj: Record<K, V>): boolean;
-    <K extends Prop, V>(fn: ObjPred<K, V>): (obj: Record<K, V>) => boolean;
+    <K extends string, V>(fn: ObjPred<K, V>, obj: Record<K, V>): boolean;
+    <K extends string, V>(fn: ObjPred<K, V>): (obj: Record<K, V>) => boolean;
 }
 
 /**
@@ -23,7 +23,7 @@ interface AnyObject {
  *      any(isBiggerThanZero)({ a: 0, b: 0, c: 0 }); //=> false
  *      any(isBiggerThanZero)({ a: 0, b: 1, c: 0 }); //=> true
  */
-export default curryN(2, <K extends Prop, V>(fn: ObjPred<K, V>, obj: Record<K, V> = {} as any) => {
+export default curryN(2, <K extends string, V>(fn: ObjPred<K, V>, obj: Record<K, V> = {} as any) => {
     for (const key in obj) {
         if (Object.prototype.hasOwnProperty.call(obj, key) && fn(obj[key], key, obj)) {
             return true;

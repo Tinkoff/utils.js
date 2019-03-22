@@ -1,9 +1,9 @@
 import curryN from '../function/curryN';
-import { Prop, ObjPred } from '../typings/types';
+import { ObjPred } from '../typings/types';
 
 interface FindKey {
     <O extends Record<any, any>>(fn: ObjPred<keyof O, O[keyof O]>, obj: O): keyof O | void;
-    <K extends Prop, V>(fn: ObjPred<K, V>): <O extends Record<K, V>>(obj: O) => keyof O | void;
+    <K extends string, V>(fn: ObjPred<K, V>): <O extends Record<K, V>>(obj: O) => keyof O | void;
 }
 
 /**

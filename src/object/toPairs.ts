@@ -2,7 +2,7 @@ import objKeys from './keys';
 import { Prop, KeyValuePairs } from '../typings/types';
 
 interface ToPairs {
-    <K extends Prop, V>(obj: Record<K, V>): KeyValuePairs<K, V>;
+    <K extends Prop, V>(obj: Record<K, V>): KeyValuePairs<K & string, V>;
 }
 
 /**

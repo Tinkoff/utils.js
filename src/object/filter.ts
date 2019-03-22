@@ -1,10 +1,10 @@
 import curryN from '../function/curryN';
 import objectKeys from './keys';
-import { Prop, ObjPred } from '../typings/types';
+import { ObjPred } from '../typings/types';
 
 interface FilterObj {
     <O extends Record<any, any>>(fn: ObjPred<keyof O, O[keyof O]>, obj: O): Partial<O>;
-    <K extends Prop, V>(fn: ObjPred<K, V>): <O extends Record<K, V>>(obj: O) => Partial<O>;
+    <K extends string, V>(fn: ObjPred<K, V>): <O extends Record<K, V>>(obj: O) => Partial<O>;
 }
 
 /**

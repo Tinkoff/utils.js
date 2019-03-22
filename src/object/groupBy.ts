@@ -1,10 +1,10 @@
 import curryN from '../function/curryN';
 import objectKeys from './keys';
-import { Prop, ObjBaseBy, ObjBase } from '../typings/types';
+import { ObjBaseBy, ObjBase } from '../typings/types';
 
 interface GroupBy {
     <O, KT extends string>(fn: ObjBaseBy<O, KT>, obj: O): Record<KT, O[keyof O][]>;
-    <K extends Prop, V, KT extends string>(fn: ObjBase<K, V, KT>): <O extends Record<K, V>>(
+    <K extends string, V, KT extends string>(fn: ObjBase<K, V, KT>): <O extends Record<K, V>>(
         obj: O
     ) => Record<KT, O[keyof O][]>;
 }

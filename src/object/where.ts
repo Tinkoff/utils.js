@@ -4,7 +4,7 @@ import { ObjPredBy, ObjPred, Prop } from '../typings/types';
 
 interface Where {
     <O>(spec: Partial<Record<keyof O, ObjPredBy<O>>>, obj: O): boolean;
-    (spec: Record<Prop, ObjPred<Prop, any>>): (obj) => boolean;
+    (spec: Record<Prop, ObjPred<string, any>>): (obj) => boolean;
 }
 
 /**

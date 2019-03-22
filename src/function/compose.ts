@@ -1,3 +1,5 @@
+import { Func } from '../typings/types';
+
 interface Compose {
     <V0, T1>(fn0: (x0: V0) => T1): (x0: V0) => T1;
     <V0, V1, T1>(fn0: (x0: V0, x1: V1) => T1): (x0: V0, x1: V1) => T1;
@@ -73,6 +75,7 @@ interface Compose {
         fn1: (x: T1) => T2,
         fn0: (x0: V0, x1: V1, x2: V2) => T1
     ): (x0: V0, x1: V1, x2: V2) => T6;
+    (...fns: Array<Func>): Func;
 }
 /**
  * Performs right-to-left function composition. The rightmost function may have
