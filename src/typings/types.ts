@@ -2,7 +2,7 @@ export type Ord = number | string | boolean;
 
 export type ArrBase<T, R> = (value: T, index: number, arr: ArrayLike<T>) => R;
 export type ObjBase<K extends Prop, V, R> = (value: V, key: K & string, obj: Record<K, V>) => R;
-export type ObjBaseBy<O extends Record<any, any>, R> = (value: O[keyof O], key: keyof O, obj: O) => R;
+export type ObjBaseBy<O extends Record<any, any>, R> = (value: O[keyof O], key: keyof O & string, obj: O) => R;
 
 export type CompareFunc<T, R extends Ord> = (a: T, b: T) => R;
 export type OrdFunc<T, R extends Ord> = (item: T) => R;

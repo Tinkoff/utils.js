@@ -1,5 +1,5 @@
 interface Length {
-    (list: ArrayLike<any>): number | void;
+    <T>(list: T): T extends ArrayLike<any> ? number : void;
 }
 
 /**
