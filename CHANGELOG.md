@@ -1,4 +1,4 @@
-## [Unreleased]
+## 2.0.0
 + add typings
 + move docs to branch gh-pages
 + add memoize functions
