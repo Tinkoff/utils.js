@@ -1,6 +1,6 @@
 import curryN from '../function/curryN';
 
-export type ReduceFunc<R, O extends Record<any, any>> = (acc: R, value: O[keyof O], key: keyof O, obj: O) => R;
+export type ReduceFunc<R, O extends Record<any, any>> = (acc: R, value: O[keyof O], key: keyof O & string, obj: O) => R;
 
 interface ReduceObj {
     <R, O extends Record<any, any>>(fn: ReduceFunc<R, O>, acc: R, obj: O): R;
