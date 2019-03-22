@@ -197,5 +197,74 @@
       "hasher",
       "function"
     ]
+  },
+  {
+    "name": "optional",
+    "filePath": "ts_temp/function/optional.js",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 2,
+        "line": " * Wraps a one-parameter function,\r"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * new function returns true if passed parameter is undefined, otherwise returns result of calling `fn`\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * @param {Function} fn function to wrap\r"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * @returns {Function}\r"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @example\r"
+      },
+      {
+        "lineNumber": 8,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 9,
+        "line": " *      const optIsString = optional(isString);\r"
+      },
+      {
+        "lineNumber": 10,
+        "line": " *      optIsString() // => true\r"
+      },
+      {
+        "lineNumber": 11,
+        "line": " *      optIsString({}) // => false\r"
+      },
+      {
+        "lineNumber": 12,
+        "line": " *      optIsString('str') // => true\r"
+      },
+      {
+        "lineNumber": 13,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 14,
+        "line": "export default curryN(2, (fn, x) => typeof x === 'undefined' || fn(x));\r"
+      }
+    ],
+    "codeParams": [
+      "fn",
+      "x"
+    ],
+    "docParams": [
+      "fn"
+    ]
   }
 ]

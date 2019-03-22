@@ -16,7 +16,7 @@
   
   <a href="identifiers.html">Reference</a>
   <a href="source.html">Source</a>
-  <a href="test.html" data-ice="testLink">Test</a>
+  
   <div class="search-box">
   <span>
     <img src="./image/search.png">
@@ -68,7 +68,6 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-range">range</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-reduce">reduce</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-reduceWhile">reduceWhile</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-reduceWhile">reduceWhile</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-reject">reject</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-remove">remove</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-repeat">repeat</a></span></span></li>
@@ -100,6 +99,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-comparator">comparator</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-complement">complement</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-compose">compose</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-composeP">composeP</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-cond">cond</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-curry">curry</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-curryN">curryN</a></span></span></li>
@@ -137,6 +137,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-promise">promise</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isReactElement">isReactElement</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-shallowEqual">shallowEqual</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-strictEqual">strictEqual</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-string">string</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-undefined">undefined</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#object">object</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-all">all</a></span></span></li>
@@ -168,6 +169,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-propApply">propApply</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-propEq">propEq</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-propOr">propOr</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-propSet">propSet</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-reduce">reduce</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-size">size</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-toPairs">toPairs</a></span></span></li>
@@ -201,10 +203,16 @@
     return (...args) =&gt; a(...args).then(b);
 }
 function arity3(c, b, a) {
-    return (...args) =&gt; a(...args).then(b).then(c);
+    return (...args) =&gt; a(...args)
+        .then(b)
+        .then(c);
 }
 function arity4(d, c, b, a) {
-    return (...args) =&gt; a(...args).then(b).then(c).then(d);
+    // eslint-disable-line max-params
+    return (...args) =&gt; a(...args)
+        .then(b)
+        .then(c)
+        .then(d);
 }
 /**
  * Performs right-to-left composition of Promise-returning functions.
@@ -218,19 +226,26 @@ function arity4(d, c, b, a) {
  * @return {Function}
  * @example
  *      var res = x =&gt; Promise.resolve(x);
- *      var f = composeP(x =&gt; res(-x), (x, y) =&gt; res(Math.pow(x, y))); *
+ *      var f = composeP(x =&gt; res(-x), (x, y) =&gt; res(Math.pow(x, y)));
  *      f(3, 4).then(console.log); // -(3^4)
  */
-export default (function composeP(...chain) {
+function composeP(...chain) {
     switch (chain.length) {
-        case 0: throw new Error(&apos;composeP requires at least one argument&apos;);
-        case 1: return chain[0];
-        case 2: return arity2(chain[0], chain[1]);
-        case 3: return arity3(chain[0], chain[1], chain[2]);
-        case 4: return arity4(chain[0], chain[1], chain[2], chain[3]);
-        default: return composeP(composeP(...chain.slice(0, 4)), composeP(...chain.slice(4)));
+        case 0:
+            throw new Error(&apos;composeP requires at least one argument&apos;);
+        case 1:
+            return chain[0];
+        case 2:
+            return arity2(chain[0], chain[1]);
+        case 3:
+            return arity3(chain[0], chain[1], chain[2]);
+        case 4:
+            return arity4(chain[0], chain[1], chain[2], chain[3]);
+        default:
+            return composeP(composeP(...chain.slice(0, 4)), composeP(...chain.slice(4)));
     }
-});
+}
+export default composeP;
 </code></pre>
 
 </div>
