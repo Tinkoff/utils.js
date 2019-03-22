@@ -22,7 +22,7 @@ const withSpinner = (promise, text) => {
     });
     return promise;
 };
-const cleanBuildPath = () => Promise.all([fsExtra.remove(pkgBuildPath), fsExtra.remove(tsTemp)]);
+const cleanBuildPath = () => Promise.all([fsExtra.remove(pkgBuildPath), fsExtra.remove(path.join(pkgRoot, tsTemp))]);
 const updateVersionInPkg = version => {
     const prevPkgData = require(pkgJSONPath);
 
