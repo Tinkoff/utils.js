@@ -1,5 +1,5 @@
 {
-    "source": "./src",
+    "source": "./ts_temp",
     "destination": "docs/",
     "excludes": [
         "node_modules",
@@ -20,6 +20,10 @@
                     },
                     {
                         "from": "\\.js$",
+                        "to": ""
+                    },
+                    {
+                        "from": "^ts_temp/",
                         "to": ""
                     }
                 ]

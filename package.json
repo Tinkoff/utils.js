@@ -1,12 +1,12 @@
 {
   "name": "@tinkoff/utils",
-  "version": "1.0.2",
+  "version": "2.0.0-alpha.6",
   "author": "Tinkoff team",
   "scripts": {
     "release": "node ./releaseUtils/index.js",
-    "benchmark": "node runBenchmark.js",
-    "prebenchmark": "npm install --no-save lodash ramda lazy.js underscore",
-    "docs": "esdoc",
+    "benchmark": "ts-node --skip-project runBenchmark.ts",
+    "prebenchmark": "npm install --no-save ts-node lodash ramda lazy.js underscore",
+    "docs": "node ./generate/docs/index.js",
     "test": "jest --coverage",
     "test:ci": "npm run test -- --maxWorkers=4 && cat ./coverage/lcov.info | coveralls"
   },
@@ -19,14 +19,20 @@
     "ramda",
     "lodash",
     "curry",
-    "perfomance"
+    "performance"
   ],
+  "sideEffects": false,
   "license": "Apache-2.0",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@types/jest": "^23.3.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "babel-plugin-transform-es2015-modules-simple-commonjs": "^0.3.0",
     "benchmark": "^2.1.4",
     "chalk": "^2.4.1",
     "coveralls": "^3.0.1",
@@ -36,10 +42,17 @@
     "esdoc-standard-plugin": "^1.0.0",
     "execa": "^0.10.0",
     "fs-extra": "^6.0.1",
+    "gh-pages": "^1.2.0",
     "inquirer": "^5.2.0",
     "jest": "^23.0.0",
+    "jsdom": "^11.12.0",
     "ora": "^2.1.0",
+    "prettier": "^1.16.4",
     "react": "^16.4.1",
+    "recursive-readdir-sync": "^1.0.6",
+    "ts-jest": "^23.1.3",
+    "typescript": "^3.0.1",
     "walker": "^1.0.7"
-  }
+  },
+  "dependencies": {}
 }
