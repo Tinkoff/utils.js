@@ -10,7 +10,7 @@ interface Complement {
  * @return {Function}
  * @example
  *
- *      var isNotNil = omplement(isNil);
+ *      var isNotNil = complement(isNil);
  *      isNil(null); //=> true
  *      isNotNil(null); //=> false
  *      isNil(7); //=> false
