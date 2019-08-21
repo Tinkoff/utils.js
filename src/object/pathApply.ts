@@ -1,19 +1,19 @@
-import { Paths, Prop } from '../typings/types';
+import { Paths, Prop, ObjBase } from '../typings/types';
 import curryN from '../function/curryN';
 import path from './path';
 
 interface PathApply {
-    <K extends Prop, O extends Record<K, any>, R>(path: [K], fn: (x: O[K]) => R, obj: O): R;
-    <K extends Prop, R>(path: [K], fn: (x) => R): (obj) => R;
+    <K extends Prop, O extends Record<K, any>, R>(path: [K], fn: ObjBase<K, O[K], R>, obj: O): R;
+    <K extends Prop, V, R>(path: [K], fn: ObjBase<K, V, R>): (obj) => R;
     <K extends Prop>(path: [K]): {
-        <R>(fn: (x) => R, obj): R;
-        <R>(fn: (x) => R): (obj) => R;
+        <O extends Record<K, any>, R>(fn: ObjBase<K, O[K], R>, obj: O): R;
+        <V, R>(fn: ObjBase<K, V, R>): (obj) => R;
     };
-    <R>(path: Paths, fn: (x) => R, obj): R | undefined;
-    <R>(path: Paths, fn: (x) => R): (obj) => R | undefined;
+    <V, R>(path: Paths, fn: ObjBase<Paths, V, R>, obj): R;
+    <V, R>(path: Paths, fn: ObjBase<Paths, V, R>): (obj) => R;
     (path: Paths): {
-        <R>(fn: (x) => R, obj): R | undefined;
-        <R>(fn: (x) => R): (obj) => R | undefined;
+        <V, R>(fn: ObjBase<Paths, V, R>, obj): R;
+        <V, R>(fn: ObjBase<Paths, V, R>): (obj) => R;
     };
 }
 
@@ -30,4 +30,6 @@ interface PathApply {
  *      pathApply(['a', 'b'], x => 'is ' + x, {a: {b: 2}}); //=> is 2
  *      pathApply(['a', 'b'], x => x > 0, {a: {b: 2}}); //=> true
  */
-export default curryN(3, <R>(paths: Paths = [], fn: (x) => R, obj = {}) => fn(path(paths, obj))) as PathApply;
+export default curryN(3, <R>(paths: Paths = [], fn: ObjBase<Paths, any, any>, obj = {}) =>
+    fn(path(paths, obj), paths, obj)
+) as PathApply;

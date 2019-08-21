@@ -10,7 +10,7 @@ interface SplitEvery {
     };
 }
 
-/*
+/**
  * Splits a collection into slices of the specified length
  *
  * @param {Number} length desired length of slices
