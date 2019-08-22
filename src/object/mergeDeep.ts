@@ -1,8 +1,8 @@
 import curryN from '../function/curryN';
 import isPlainObject from '../is/plainObject';
-import isArray from '../is/array';
 import objectKeys from './keys';
 import { Merge } from './merge';
+import assign from '../assign';
 
 /**
  * Create a new object with the own properties of the first object deeply merged with
@@ -16,7 +16,7 @@ import { Merge } from './merge';
  * mergeDeep({ 'name': 'fred', 'info': { 'age': 10, 'sex': 'm' } }, { 'info': { 'age': 40 }); //=> { 'name': 'fred', 'info': { 'age': 40, 'sex': 'm' } }
  */
 const mergeDeep = (...sources: Record<any, any>[]) => {
-    const result = Object.assign(isArray(sources[0]) ? [] : {}, sources[0] || {});
+    const result = assign(sources[0] || {});
 
     for (let i = 1; i < sources.length; i++) {
         const src = sources[i];

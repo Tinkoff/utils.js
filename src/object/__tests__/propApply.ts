@@ -6,9 +6,9 @@ describe('utils/object/propApply', () => {
         const f = jest.fn(identity);
 
         expect(propApply('a', f, { a: 5 })).toBe(5);
-        expect(f).toBeCalledWith(5);
+        expect(f).toBeCalledWith(5, 'a', { a: 5 });
 
         expect(propApply('a', f, {})).toBeUndefined();
-        expect(f).toBeCalledWith(undefined);
+        expect(f).toBeCalledWith(undefined, 'a', {});
     });
 });
