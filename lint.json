@@ -1,5 +1,75 @@
 [
   {
+    "name": "groupBy",
+    "filePath": "ts_temp/array/groupBy.js",
+    "lines": [
+      {
+        "lineNumber": 2,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 3,
+        "line": " * Creates an array of arrays generated from the results of running\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": " * each element of list thru each `fn`. The corresponding\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * value of each index is an array of elements satisfies to function with that index, and\r"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * the last array is elements with no satisfied function\r"
+      },
+      {
+        "lineNumber": 7,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 8,
+        "line": " * @param {Array<Function>} fns The functions to check values in a list.\r"
+      },
+      {
+        "lineNumber": 9,
+        "line": " * @param {Array} list The list to iterate over.\r"
+      },
+      {
+        "lineNumber": 10,
+        "line": " * @returns {Array} Returns the composed array.\r"
+      },
+      {
+        "lineNumber": 11,
+        "line": " * @example\r"
+      },
+      {
+        "lineNumber": 12,
+        "line": " *\r"
+      },
+      {
+        "lineNumber": 13,
+        "line": " * groupBy([isPositive, isZero, isNegative], [0, -3, 2, 'str', 4, -1]);// => [[2,4], [0], [-3, -1], ['str']]\r"
+      },
+      {
+        "lineNumber": 14,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 15,
+        "line": "export default curryN(2, (fns, arr = []) => {\r"
+      }
+    ],
+    "codeParams": [
+      "fns",
+      "arr"
+    ],
+    "docParams": [
+      "fns",
+      "list"
+    ]
+  },
+  {
     "name": "deepSizeLimit",
     "filePath": "ts_temp/function/memoize/deepSizeLimit.js",
     "lines": [

@@ -84,6 +84,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "@tinkoff/utils/assign~assign",
+    "function/index.html#static-function-assign",
+    "<span>assign</span> <span class=\"search-result-import-path\">@tinkoff/utils/assign</span>",
+    "function"
+  ],
+  [
     "@tinkoff/utils/object/assoc~assoc",
     "function/index.html#static-function-assoc",
     "<span>assoc</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/assoc</span>",
@@ -327,6 +333,12 @@ window.esdocSearchIndex = [
     "@tinkoff/utils/is/function~function",
     "function/index.html#static-function-function",
     "<span>function</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/function</span>",
+    "function"
+  ],
+  [
+    "@tinkoff/utils/array/groupby~groupby",
+    "function/index.html#static-function-groupBy",
+    "<span>groupBy</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/groupBy</span>",
     "function"
   ],
   [
@@ -594,6 +606,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "@tinkoff/utils/object/pathsetby~pathsetby",
+    "function/index.html#static-function-pathSetBy",
+    "<span>pathSetBy</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/pathSetBy</span>",
+    "function"
+  ],
+  [
     "@tinkoff/utils/object/pick~pick",
     "function/index.html#static-function-pick",
     "<span>pick</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/pick</span>",
@@ -645,6 +663,12 @@ window.esdocSearchIndex = [
     "@tinkoff/utils/object/propset~propset",
     "function/index.html#static-function-propSet",
     "<span>propSet</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/propSet</span>",
+    "function"
+  ],
+  [
+    "@tinkoff/utils/object/propsetby~propsetby",
+    "function/index.html#static-function-propSetBy",
+    "<span>propSetBy</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/propSetBy</span>",
     "function"
   ],
   [
@@ -1362,6 +1386,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "ts_temp/array/groupby.js",
+    "file/ts_temp/array/groupBy.js.html",
+    "ts_temp/array/groupBy.js",
+    "file"
+  ],
+  [
     "ts_temp/array/head.js",
     "file/ts_temp/array/head.js.html",
     "ts_temp/array/head.js",
@@ -1587,6 +1617,12 @@ window.esdocSearchIndex = [
     "ts_temp/array/zipwith.js",
     "file/ts_temp/array/zipWith.js.html",
     "ts_temp/array/zipWith.js",
+    "file"
+  ],
+  [
+    "ts_temp/assign.js",
+    "file/ts_temp/assign.js.html",
+    "ts_temp/assign.js",
     "file"
   ],
   [
@@ -2082,6 +2118,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "ts_temp/object/pathsetby.js",
+    "file/ts_temp/object/pathSetBy.js.html",
+    "ts_temp/object/pathSetBy.js",
+    "file"
+  ],
+  [
     "ts_temp/object/pick.js",
     "file/ts_temp/object/pick.js.html",
     "ts_temp/object/pick.js",
@@ -2121,6 +2163,12 @@ window.esdocSearchIndex = [
     "ts_temp/object/propset.js",
     "file/ts_temp/object/propSet.js.html",
     "ts_temp/object/propSet.js",
+    "file"
+  ],
+  [
+    "ts_temp/object/propsetby.js",
+    "file/ts_temp/object/propSetBy.js.html",
+    "ts_temp/object/propSetBy.js",
     "file"
   ],
   [
