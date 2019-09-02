@@ -1,3 +1,9 @@
+## 2.1.1
++ add is/reactComponent
++ is/reactElement now using `react-is` package if available
++ is/plainObject returns false for react components
++ clone will only copy the plain objects instead of copying any object with prototype or react components
+
 ## 2.1.0
 + add array/groupBy to group values in array by the list of predicates
 + add object/propSetBy and object/pathSetBy functions to allow setting values based on the result of function call
