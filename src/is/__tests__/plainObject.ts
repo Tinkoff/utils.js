@@ -1,5 +1,5 @@
 import isPlainObject from '../plainObject';
-const { createElement } = require('react');
+const { createElement, memo } = require('react');
 
 describe('utils/is/plainObject', () => {
     it('test', () => {
@@ -7,6 +7,7 @@ describe('utils/is/plainObject', () => {
         expect(isPlainObject({})).toBe(true);
         expect(isPlainObject(new Date())).toBe(false);
         expect(isPlainObject(createElement('span'))).toBe(false);
+        expect(isPlainObject(memo('span'))).toBe(false);
         expect(isPlainObject(5)).toBe(false);
         expect(isPlainObject('')).toBe(false);
         expect(isPlainObject(null)).toBe(false);

@@ -1,4 +1,5 @@
 import clone from '../clone';
+const { createElement, memo } = require('react');
 
 describe('utils/clone', () => {
     it('should return copy of all nested objects', () => {
@@ -31,5 +32,19 @@ describe('utils/clone', () => {
 
         expect(result.regex2).not.toBe(regex2);
         expect(result.regex2).toEqual(regex2);
+    });
+
+    it('should not copy react elements', () => {
+        const elem = createElement('i');
+        const memElem = memo(() => createElement('i'));
+
+        const obj = { elem, memElem };
+        const result = clone(obj);
+
+        expect(result).toEqual(obj);
+        expect(result).not.toBe(obj);
+
+        expect(result.elem).toBe(elem);
+        expect(result.memElem).toBe(memElem);
     });
 });

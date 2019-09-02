@@ -1,6 +1,7 @@
 import type from './type';
 import mapObj from './object/map';
 import mapArr from './array/map';
+import isPlainObject from './is/plainObject';
 
 interface Clone {
     <T>(x: T): T;
@@ -32,16 +33,19 @@ const cloneRegExp = (pattern: RegExp) =>
 const clone = (x) => {
     switch (type(x)) {
         case 'Object':
-            return mapObj(clone, x);
+            if (isPlainObject(x)) {
+                return mapObj(clone, x);
+            }
+            break;
         case 'Array':
             return mapArr(clone, x);
         case 'Date':
             return new Date(x.valueOf());
         case 'RegExp':
             return cloneRegExp(x);
-        default:
-            return x;
     }
+
+    return x;
 };
 
 export default clone as Clone;

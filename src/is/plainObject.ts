@@ -1,11 +1,12 @@
 import isReactElement from './reactElement';
+import isReactComponent from './reactComponent';
 import isObject from './object';
 
 /**
  * Returns whether a value is a plain object
  * (an object that is created using an object literal, Object.create(null) or similar).
  * Rejects anything with a custom prototype or a non-object ECMAScript type.
- * Also rejects React elements
+ * Also rejects React elements and components
  *
  * **Note:** if the host environment does not support Symbol, any object with a $$typeof
  * property is considered a React element
@@ -38,7 +39,7 @@ export default function isPlainObject(test): test is Record<any, any> {
         return false;
     }
 
-    if (isReactElement(test)) {
+    if (isReactElement(test) || isReactComponent(test)) {
         // react elements _are_ plain objects, but we don't treat them like that
         // (e.g. in recursive merges)
         return false;
