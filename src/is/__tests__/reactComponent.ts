@@ -1,19 +1,19 @@
-const { createElement, PureComponent, memo, lazy } = require('react');
-
-let mockReactIs;
-
-jest.mock('react-is', () => mockReactIs);
-
-class Component extends PureComponent {}
-
 describe('utils/is/reactComponent', () => {
+    const { createElement, PureComponent, memo, lazy } = require('react');
+
+    let mockReactIs;
+
+    jest.mock('react-is', () => mockReactIs);
+
+    class Component extends PureComponent { }
+
     beforeEach(() => {
         jest.resetModules();
     });
 
     it('test', () => {
         mockReactIs = require.requireActual('react-is');
-        const isReactComponent = require('../reactComponent');
+        const isReactComponent = require('../reactComponent').default;
 
         expect(isReactComponent({ test: 'i' })).toBe(false);
         expect(isReactComponent(createElement('i'))).toBe(false);
@@ -27,7 +27,7 @@ describe('utils/is/reactComponent', () => {
 
     it('test when react-is not defined', () => {
         mockReactIs = null;
-        const isReactComponent = require('../reactComponent');
+        const isReactComponent = require('../reactComponent').default;
 
         expect(isReactComponent({ test: 'i' })).toBe(false);
         expect(isReactComponent(createElement('i'))).toBe(true);

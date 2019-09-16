@@ -1,23 +1,17 @@
 // eslint-disable-next-line import/no-commonjs
+
 module.exports = {
     timers: 'fake',
+    preset: 'ts-jest',
     testURL: 'http://localhost/',
-    transform: {
-        '^.+\\.tsx?$': 'ts-jest',
-        '^.+\\.jsx?$': 'babel-jest'
-    },
     globals: {
         'ts-jest': {
-            useBabelrc: true,
-            tsConfigFile: 'tsconfig.json'
+            tsConfig: {
+                esModuleInterop: true
+            }
         }
     },
     testMatch: [
-        '**/__tests__/*.+(ts|tsx|js|jsx)'
-    ],
-    moduleFileExtensions: [
-        'ts',
-        'tsx',
-        'js'
+        '**/__tests__/*.+(ts|tsx|js|jsx)',
     ]
-};
+}

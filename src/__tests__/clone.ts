@@ -47,4 +47,16 @@ describe('utils/clone', () => {
         expect(result.elem).toBe(elem);
         expect(result.memElem).toBe(memElem);
     });
+
+    it('should copy class', () => {
+        class User {
+            constructor(public firstName: string, public lastName: string) { }
+        }
+
+        const obj = { user: new User('Tom', 'John') }
+        const result = clone(obj);
+
+        expect(result).toEqual(obj);
+        expect(result.user).not.toBe(obj.user);
+    })
 });
