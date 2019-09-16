@@ -1,7 +1,8 @@
 import type from './type';
 import mapObj from './object/map';
 import mapArr from './array/map';
-import isPlainObject from './is/plainObject';
+import isReactElement from './is/reactElement';
+import isReactComponent from './is/reactComponent';
 
 interface Clone {
     <T>(x: T): T;
@@ -33,10 +34,12 @@ const cloneRegExp = (pattern: RegExp) =>
 const clone = (x) => {
     switch (type(x)) {
         case 'Object':
-            if (isPlainObject(x)) {
+            // Skip clone react object
+            if (isReactComponent(x) || isReactElement(x)) {
+                break;
+            } else {
                 return mapObj(clone, x);
             }
-            break;
         case 'Array':
             return mapArr(clone, x);
         case 'Date':
