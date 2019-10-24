@@ -59,7 +59,7 @@ class EsdocCurry {
 
                 if (node._curryN) {
                     doc.export = true;
-                    doc.description = `*Autocarry for ${node._curryN} arguments*<br><br>${doc.description}`;
+                    doc.description = `*Autocurry for ${node._curryN} arguments*<br><br>${doc.description}`;
                 }
             }
         }
