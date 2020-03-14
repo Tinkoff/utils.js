@@ -1,3 +1,5 @@
+import isArray from './array';
+
 /**
  * Checks if `test` is object.
  *
@@ -7,5 +9,6 @@
  *
  * isObject({ a: 'test' }); // => true
  * isObject(null); // => false
+ * isObject([]); // => false
  */
-export default (test): test is Record<any, any> => test !== null && typeof test === 'object';
+export default (test): test is Record<any, any> => test !== null && !isArray(test) && typeof test === 'object';

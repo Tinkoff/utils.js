@@ -8,6 +8,7 @@ describe('utils/is/object', () => {
         expect(isObject(5)).toBe(false);
         expect(isObject('')).toBe(false);
         expect(isObject(null)).toBe(false);
+        expect(isObject([])).toBe(false);
     });
 
     it('test type guard', () => {
