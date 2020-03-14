@@ -1,5 +1,6 @@
 import curryN from '../function/curryN';
 import isObject from '../is/object';
+import isArray from '../is/array';
 import isNumber from '../is/number';
 import has from './has';
 import assign from '../assign';
@@ -44,7 +45,7 @@ export default curryN(3, (paths: Paths = [], value, obj = {}) => {
 
     for (let i = 0; i < n; i++) {
         v = val[paths[i]];
-        if (isObject(v)) {
+        if (isObject(v) || isArray(v)) {
             v = assign(v);
         } else {
             v = isNumber(paths[i + 1]) ? [] : {};
