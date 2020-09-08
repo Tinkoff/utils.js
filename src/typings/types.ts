@@ -35,6 +35,11 @@ export type Pattern = RegExp | string;
 
 export type ReplaceType<O, K extends Prop, V> = Pick<O, Exclude<keyof O, K>> & { [p in K]: V };
 
+/**
+ * Obtain the values type of a array
+ */
+export type ArrayType<A extends any[]> = A extends Array<infer V> ? V : any;
+
 // @see https://gist.github.com/donnut/fd56232da58d25ceecf1, comment by @albrow
 export interface CurriedTypeGuard2<T1, T2, R extends T2> {
     (t1: T1): (t2: T2) => t2 is R;

@@ -13,4 +13,11 @@ describe('utils/object/groupBy', () => {
         expect(fn).toBeCalledWith({ b: 3 }, 'b', obj);
         expect(fn).toBeCalledWith({ b: 1, d: 5 }, 'c', obj);
     });
+
+    it('group array values by function', () => {
+        expect(groupBy((x) => x.b, [{ b: 1, c: 2 }, { b: 3 }, { b: 1, d: 5 }])).toEqual({
+            1: [{ b: 1, c: 2 }, { b: 1, d: 5 }],
+            3: [{ b: 3 }],
+        })
+    });
 });

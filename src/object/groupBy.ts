@@ -1,9 +1,13 @@
 import curryN from '../function/curryN';
 import objectKeys from './keys';
-import { ObjBaseBy, ObjBase } from '../typings/types';
+import { ObjBaseBy, ObjBase, ArrayType } from '../typings/types';
+
+// Don't use ArrBase from types.ts, because it inconsistent with Record<any, any>
+type ArrBase<T, R> = (value: T, index: number, arr: Record<number, T>) => R;
 
 interface GroupBy {
-    <O, KT extends string>(fn: ObjBaseBy<O, KT>, obj: O): Record<KT, O[keyof O][]>;
+    <A extends any[], KT extends keyof any>(fn: ArrBase<ArrayType<A>, KT>, obj: A): Record<KT, ArrayType<A>[]>;
+    <O extends Record<any, any>, KT extends keyof any>(fn: ObjBaseBy<O, KT>, obj: O): Record<KT, O[keyof O][]>;
     <K extends string, V, KT extends string>(fn: ObjBase<K, V, KT>): <O extends Record<K, V>>(
         obj: O
     ) => Record<KT, O[keyof O][]>;
