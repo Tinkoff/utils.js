@@ -1,16 +1,18 @@
 import curryN from '../function/curryN';
 import objectKeys from './keys';
-import { ObjBaseBy, ObjBase, ArrayType } from '../typings/types';
+import { ObjBaseBy, ObjBase, ArrayType, Prop } from '../typings/types';
 
 // Don't use ArrBase from types.ts, because it inconsistent with Record<any, any>
 type ArrBase<T, R> = (value: T, index: number, arr: Record<number, T>) => R;
 
 interface GroupBy {
-    <A extends any[], KT extends keyof any>(fn: ArrBase<ArrayType<A>, KT>, obj: A): Record<KT, ArrayType<A>[]>;
-    <O extends Record<any, any>, KT extends keyof any>(fn: ObjBaseBy<O, KT>, obj: O): Record<KT, O[keyof O][]>;
-    <K extends string, V, KT extends string>(fn: ObjBase<K, V, KT>): <O extends Record<K, V>>(
-        obj: O
-    ) => Record<KT, O[keyof O][]>;
+    <Fn extends (ArrBase<any, any> | ObjBaseBy<Record<any, any>, any>)>(fn: Fn):
+        <Input extends (any[] | Record<any, any>)>(obj: Input) => Input extends any[]
+            ? Record<ReturnType<Fn>, Input>
+            : Record<ReturnType<Fn>, Input[keyof Input][]>;
+
+    <Arr extends any[], Fn extends ArrBase<ArrayType<Arr>, any>>(fn: Fn, obj: Arr): Record<ReturnType<Fn>, Arr>;
+    <Obj extends Record<any, any>, Fn extends ObjBaseBy<Obj, any>>(fn: Fn, obj: Obj): Record<ReturnType<Fn>, Obj[keyof Obj][]>;
 }
 
 /**

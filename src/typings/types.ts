@@ -38,7 +38,12 @@ export type ReplaceType<O, K extends Prop, V> = Pick<O, Exclude<keyof O, K>> & {
 /**
  * Obtain the values type of a array
  */
-export type ArrayType<A extends any[]> = A extends Array<infer V> ? V : any;
+export type ArrayType<A extends any[]> = A extends Array<infer V> ? V : never;
+
+/**
+ * Obtain the values type of a object
+ */
+export type ObjValues<O extends Record<any, any>> = O[keyof O];
 
 // @see https://gist.github.com/donnut/fd56232da58d25ceecf1, comment by @albrow
 export interface CurriedTypeGuard2<T1, T2, R extends T2> {
