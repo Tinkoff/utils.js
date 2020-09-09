@@ -1,8 +1,11 @@
 export type Ord = number | string | boolean;
+export type ObjOrArr = Record<any, any> | any[];
 
 export type ArrBase<T, R> = (value: T, index: number, arr: ArrayLike<T>) => R;
 export type ObjBase<K extends Prop | Paths, V, R> = (value: V, key: K, obj: Record<K extends Prop ? K : any, V>) => R;
-export type ObjBaseBy<O extends Record<any, any>, R> = (value: O[keyof O], key: keyof O & string, obj: O) => R;
+export type ObjBaseBy<Input extends ObjOrArr, R> = Input extends any[]
+    ? (value: ArrValues<Input>, key: number, obj: Input) => R
+    : (value: ObjValues<Input>, key: keyof Input, obj: Input) => R;
 
 export type CompareFunc<T, R extends Ord> = (a: T, b: T) => R;
 export type OrdFunc<T, R extends Ord> = (item: T) => R;
@@ -38,7 +41,7 @@ export type ReplaceType<O, K extends Prop, V> = Pick<O, Exclude<keyof O, K>> & {
 /**
  * Obtain the values type of a array
  */
-export type ArrayType<A extends any[]> = A extends Array<infer V> ? V : never;
+export type ArrValues<A extends Array<any>> = A extends Array<infer V> ? V : never;
 
 /**
  * Obtain the values type of a object

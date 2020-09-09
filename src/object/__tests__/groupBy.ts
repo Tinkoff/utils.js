@@ -1,7 +1,7 @@
 import groupBy from '../groupBy';
-import { ArrayType, ObjValues } from '../../typings/types';
+import { ArrValues, ObjValues } from '../../typings/types';
 
-describe.only('utils/object/groupBy', () => {
+describe('utils/object/groupBy', () => {
     it('group object values by function', () => {
         const obj = { a: { b: 1, c: 2 }, b: { b: 3 }, c: { b: 1, d: 5 } };
 
@@ -32,7 +32,7 @@ describe.only('utils/object/groupBy', () => {
     it('group array values by function through currying', () => {
         const arr = [{ b: 1, c: 2 }, { b: 3 }, { b: 1, d: 5 }];
 
-        expect(groupBy((x: ArrayType<typeof arr>) => x.b)(arr)).toEqual({
+        expect(groupBy((x: ArrValues<typeof arr>) => x.b)(arr)).toEqual({
             1: [{ b: 1, c: 2 }, { b: 1, d: 5 }],
             3: [{ b: 3 }],
         })
