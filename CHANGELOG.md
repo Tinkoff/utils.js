@@ -1,3 +1,6 @@
+## 2.1.3
++ fix typings for object/groupBy
+
 ## 2.1.1
 + add is/reactComponent
 + is/reactElement now using `react-is` package if available
