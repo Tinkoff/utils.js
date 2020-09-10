@@ -1,8 +1,15 @@
 export type Ord = number | string | boolean;
 
+export type AnyObj = Record<any, any>;
+export type AnyArr = any[] | readonly any[];
+export type AnyObjOrArr = AnyObj | AnyArr;
+
 export type ArrBase<T, R> = (value: T, index: number, arr: ArrayLike<T>) => R;
 export type ObjBase<K extends Prop | Paths, V, R> = (value: V, key: K, obj: Record<K extends Prop ? K : any, V>) => R;
 export type ObjBaseBy<O extends Record<any, any>, R> = (value: O[keyof O], key: keyof O & string, obj: O) => R;
+export type ObjOrArrBaseBy<Input extends AnyObjOrArr, R> = Input extends AnyArr
+    ? (value: ArrValues<Input>, key: number, obj: Input) => R
+    : (value: ObjValues<Input>, key: keyof Input, obj: Input) => R;
 
 export type CompareFunc<T, R extends Ord> = (a: T, b: T) => R;
 export type OrdFunc<T, R extends Ord> = (item: T) => R;
@@ -34,6 +41,16 @@ export type Paths = ReadonlyArray<Prop>;
 export type Pattern = RegExp | string;
 
 export type ReplaceType<O, K extends Prop, V> = Pick<O, Exclude<keyof O, K>> & { [p in K]: V };
+
+/**
+ * Obtain the values type of a array
+ */
+export type ArrValues<A extends AnyArr> = A[number];
+
+/**
+ * Obtain the values type of a object
+ */
+export type ObjValues<O extends AnyObj> = O[keyof O];
 
 // @see https://gist.github.com/donnut/fd56232da58d25ceecf1, comment by @albrow
 export interface CurriedTypeGuard2<T1, T2, R extends T2> {

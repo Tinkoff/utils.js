@@ -1,12 +1,16 @@
 import curryN from '../function/curryN';
 import objectKeys from './keys';
-import { ObjBaseBy, ObjBase } from '../typings/types';
+import { ObjBaseBy, ObjOrArrBaseBy, ObjValues, AnyObjOrArr, AnyArr } from '../typings/types';
 
 interface GroupBy {
-    <O, KT extends string>(fn: ObjBaseBy<O, KT>, obj: O): Record<KT, O[keyof O][]>;
-    <K extends string, V, KT extends string>(fn: ObjBase<K, V, KT>): <O extends Record<K, V>>(
-        obj: O
-    ) => Record<KT, O[keyof O][]>;
+    <Fn extends ObjOrArrBaseBy<AnyObjOrArr, any>>(fn: Fn):
+        <Input extends AnyObjOrArr>(obj: Input) => Input extends AnyArr
+            ? Record<ReturnType<Fn>, Input>
+            : Record<ReturnType<Fn>, ObjValues<Input>[]>;
+
+    <Input extends AnyObjOrArr, Fn extends ObjOrArrBaseBy<Input, any>>(fn: Fn, obj: Input): Input extends AnyArr
+        ? Record<ReturnType<Fn>, Input>
+        : Record<ReturnType<Fn>, ObjValues<Input>[]>;
 }
 
 /**
