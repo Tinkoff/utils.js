@@ -4,7 +4,7 @@
   "author": "Tinkoff team",
   "scripts": {
     "release": "node ./releaseUtils/index.js",
-    "benchmark": "ts-node --skip-project runBenchmark.ts",
+    "benchmark": "ts-node --project tsconfig.benchmark.json runBenchmark.ts",
     "prebenchmark": "npm install --no-save ts-node lodash ramda lazy.js underscore",
     "docs": "node ./generate/docs/index.js",
     "test": "jest --coverage",
