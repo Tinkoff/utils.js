@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 866,
+  "end": 846,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 866,
+    "end": 846,
     "loc": {
       "start": {
         "line": 1,
@@ -99,8 +99,8 @@
       },
       {
         "type": "ImportDeclaration",
-        "start": 42,
-        "end": 68,
+        "start": 41,
+        "end": 67,
         "loc": {
           "start": {
             "line": 2,
@@ -114,8 +114,8 @@
         "specifiers": [
           {
             "type": "ImportDefaultSpecifier",
-            "start": 49,
-            "end": 53,
+            "start": 48,
+            "end": 52,
             "loc": {
               "start": {
                 "line": 2,
@@ -128,8 +128,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 49,
-              "end": 53,
+              "start": 48,
+              "end": 52,
               "loc": {
                 "start": {
                   "line": 2,
@@ -147,8 +147,8 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 59,
-          "end": 67,
+          "start": 58,
+          "end": 66,
           "loc": {
             "start": {
               "line": 2,
@@ -168,9 +168,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Determines whether a nested path on an object has a specific value\r\n *\r\n * @param {Array} paths The path of the nested property to use\r\n * @param {*} value The value to compare the nested property with\r\n * @param {Object} obj The object to check the nested property in\r\n * @return {Boolean} `true` if the value is the nested object property,\r\n *         `false` otherwise.\r\n * @example\r\n *\r\n *      var user1 = { address: { zipCode: 90210 } };\r\n *      var user2 = { address: { zipCode: 55555 } };\r\n *      var user3 = { name: 'Bob' };\r\n *      var users = [ user1, user2, user3 ];\r\n *      var isFamous = pathEq(['address', 'zipCode'], 90210);\r\n *      filter(isFamous, users); //=> [ user1 ]\r\n ",
-            "start": 70,
-            "end": 776,
+            "value": "*\n * Determines whether a nested path on an object has a specific value\n *\n * @param {Array} paths The path of the nested property to use\n * @param {*} value The value to compare the nested property with\n * @param {Object} obj The object to check the nested property in\n * @return {Boolean} `true` if the value is the nested object property,\n *         `false` otherwise.\n * @example\n *\n *      var user1 = { address: { zipCode: 90210 } };\n *      var user2 = { address: { zipCode: 55555 } };\n *      var user3 = { name: 'Bob' };\n *      var users = [ user1, user2, user3 ];\n *      var isFamous = pathEq(['address', 'zipCode'], 90210);\n *      filter(isFamous, users); //=> [ user1 ]\n ",
+            "start": 68,
+            "end": 758,
             "loc": {
               "start": {
                 "line": 3,
@@ -186,8 +186,8 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 778,
-        "end": 864,
+        "start": 759,
+        "end": 845,
         "loc": {
           "start": {
             "line": 20,
@@ -200,8 +200,8 @@
         },
         "declaration": {
           "type": "ArrowFunctionExpression",
-          "start": 803,
-          "end": 862,
+          "start": 784,
+          "end": 843,
           "loc": {
             "start": {
               "line": 20,
@@ -219,8 +219,8 @@
           "params": [
             {
               "type": "AssignmentPattern",
-              "start": 804,
-              "end": 814,
+              "start": 785,
+              "end": 795,
               "loc": {
                 "start": {
                   "line": 20,
@@ -233,8 +233,8 @@
               },
               "left": {
                 "type": "Identifier",
-                "start": 804,
-                "end": 809,
+                "start": 785,
+                "end": 790,
                 "loc": {
                   "start": {
                     "line": 20,
@@ -250,8 +250,8 @@
               },
               "right": {
                 "type": "ArrayExpression",
-                "start": 812,
-                "end": 814,
+                "start": 793,
+                "end": 795,
                 "loc": {
                   "start": {
                     "line": 20,
@@ -267,8 +267,8 @@
             },
             {
               "type": "Identifier",
-              "start": 816,
-              "end": 821,
+              "start": 797,
+              "end": 802,
               "loc": {
                 "start": {
                   "line": 20,
@@ -284,8 +284,8 @@
             },
             {
               "type": "AssignmentPattern",
-              "start": 823,
-              "end": 831,
+              "start": 804,
+              "end": 812,
               "loc": {
                 "start": {
                   "line": 20,
@@ -298,8 +298,8 @@
               },
               "left": {
                 "type": "Identifier",
-                "start": 823,
-                "end": 826,
+                "start": 804,
+                "end": 807,
                 "loc": {
                   "start": {
                     "line": 20,
@@ -315,8 +315,8 @@
               },
               "right": {
                 "type": "ObjectExpression",
-                "start": 829,
-                "end": 831,
+                "start": 810,
+                "end": 812,
                 "loc": {
                   "start": {
                     "line": 20,
@@ -333,8 +333,8 @@
           ],
           "body": {
             "type": "BinaryExpression",
-            "start": 836,
-            "end": 862,
+            "start": 817,
+            "end": 843,
             "loc": {
               "start": {
                 "line": 20,
@@ -347,8 +347,8 @@
             },
             "left": {
               "type": "CallExpression",
-              "start": 836,
-              "end": 852,
+              "start": 817,
+              "end": 833,
               "loc": {
                 "start": {
                   "line": 20,
@@ -361,8 +361,8 @@
               },
               "callee": {
                 "type": "Identifier",
-                "start": 836,
-                "end": 840,
+                "start": 817,
+                "end": 821,
                 "loc": {
                   "start": {
                     "line": 20,
@@ -379,8 +379,8 @@
               "arguments": [
                 {
                   "type": "Identifier",
-                  "start": 841,
-                  "end": 846,
+                  "start": 822,
+                  "end": 827,
                   "loc": {
                     "start": {
                       "line": 20,
@@ -396,8 +396,8 @@
                 },
                 {
                   "type": "Identifier",
-                  "start": 848,
-                  "end": 851,
+                  "start": 829,
+                  "end": 832,
                   "loc": {
                     "start": {
                       "line": 20,
@@ -416,8 +416,8 @@
             "operator": "===",
             "right": {
               "type": "Identifier",
-              "start": 857,
-              "end": 862,
+              "start": 838,
+              "end": 843,
               "loc": {
                 "start": {
                   "line": 20,
@@ -436,9 +436,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\r\n * Determines whether a nested path on an object has a specific value\r\n *\r\n * @param {Array} paths The path of the nested property to use\r\n * @param {*} value The value to compare the nested property with\r\n * @param {Object} obj The object to check the nested property in\r\n * @return {Boolean} `true` if the value is the nested object property,\r\n *         `false` otherwise.\r\n * @example\r\n *\r\n *      var user1 = { address: { zipCode: 90210 } };\r\n *      var user2 = { address: { zipCode: 55555 } };\r\n *      var user3 = { name: 'Bob' };\r\n *      var users = [ user1, user2, user3 ];\r\n *      var isFamous = pathEq(['address', 'zipCode'], 90210);\r\n *      filter(isFamous, users); //=> [ user1 ]\r\n ",
-              "start": 70,
-              "end": 776,
+              "value": "*\n * Determines whether a nested path on an object has a specific value\n *\n * @param {Array} paths The path of the nested property to use\n * @param {*} value The value to compare the nested property with\n * @param {Object} obj The object to check the nested property in\n * @return {Boolean} `true` if the value is the nested object property,\n *         `false` otherwise.\n * @example\n *\n *      var user1 = { address: { zipCode: 90210 } };\n *      var user2 = { address: { zipCode: 55555 } };\n *      var user3 = { name: 'Bob' };\n *      var users = [ user1, user2, user3 ];\n *      var isFamous = pathEq(['address', 'zipCode'], 90210);\n *      filter(isFamous, users); //=> [ user1 ]\n ",
+              "start": 68,
+              "end": 758,
               "loc": {
                 "start": {
                   "line": 3,
@@ -456,9 +456,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Determines whether a nested path on an object has a specific value\r\n *\r\n * @param {Array} paths The path of the nested property to use\r\n * @param {*} value The value to compare the nested property with\r\n * @param {Object} obj The object to check the nested property in\r\n * @return {Boolean} `true` if the value is the nested object property,\r\n *         `false` otherwise.\r\n * @example\r\n *\r\n *      var user1 = { address: { zipCode: 90210 } };\r\n *      var user2 = { address: { zipCode: 55555 } };\r\n *      var user3 = { name: 'Bob' };\r\n *      var users = [ user1, user2, user3 ];\r\n *      var isFamous = pathEq(['address', 'zipCode'], 90210);\r\n *      filter(isFamous, users); //=> [ user1 ]\r\n ",
-            "start": 70,
-            "end": 776,
+            "value": "*\n * Determines whether a nested path on an object has a specific value\n *\n * @param {Array} paths The path of the nested property to use\n * @param {*} value The value to compare the nested property with\n * @param {Object} obj The object to check the nested property in\n * @return {Boolean} `true` if the value is the nested object property,\n *         `false` otherwise.\n * @example\n *\n *      var user1 = { address: { zipCode: 90210 } };\n *      var user2 = { address: { zipCode: 55555 } };\n *      var user3 = { name: 'Bob' };\n *      var users = [ user1, user2, user3 ];\n *      var isFamous = pathEq(['address', 'zipCode'], 90210);\n *      filter(isFamous, users); //=> [ user1 ]\n ",
+            "start": 68,
+            "end": 758,
             "loc": {
               "start": {
                 "line": 3,
@@ -478,9 +478,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Determines whether a nested path on an object has a specific value\r\n *\r\n * @param {Array} paths The path of the nested property to use\r\n * @param {*} value The value to compare the nested property with\r\n * @param {Object} obj The object to check the nested property in\r\n * @return {Boolean} `true` if the value is the nested object property,\r\n *         `false` otherwise.\r\n * @example\r\n *\r\n *      var user1 = { address: { zipCode: 90210 } };\r\n *      var user2 = { address: { zipCode: 55555 } };\r\n *      var user3 = { name: 'Bob' };\r\n *      var users = [ user1, user2, user3 ];\r\n *      var isFamous = pathEq(['address', 'zipCode'], 90210);\r\n *      filter(isFamous, users); //=> [ user1 ]\r\n ",
-      "start": 70,
-      "end": 776,
+      "value": "*\n * Determines whether a nested path on an object has a specific value\n *\n * @param {Array} paths The path of the nested property to use\n * @param {*} value The value to compare the nested property with\n * @param {Object} obj The object to check the nested property in\n * @return {Boolean} `true` if the value is the nested object property,\n *         `false` otherwise.\n * @example\n *\n *      var user1 = { address: { zipCode: 90210 } };\n *      var user2 = { address: { zipCode: 55555 } };\n *      var user3 = { name: 'Bob' };\n *      var users = [ user1, user2, user3 ];\n *      var isFamous = pathEq(['address', 'zipCode'], 90210);\n *      filter(isFamous, users); //=> [ user1 ]\n ",
+      "start": 68,
+      "end": 758,
       "loc": {
         "start": {
           "line": 3,
@@ -642,8 +642,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 42,
-      "end": 48,
+      "start": 41,
+      "end": 47,
       "loc": {
         "start": {
           "line": 2,
@@ -668,8 +668,8 @@
         "binop": null
       },
       "value": "path",
-      "start": 49,
-      "end": 53,
+      "start": 48,
+      "end": 52,
       "loc": {
         "start": {
           "line": 2,
@@ -694,8 +694,8 @@
         "binop": null
       },
       "value": "from",
-      "start": 54,
-      "end": 58,
+      "start": 53,
+      "end": 57,
       "loc": {
         "start": {
           "line": 2,
@@ -721,8 +721,8 @@
         "updateContext": null
       },
       "value": "./path",
-      "start": 59,
-      "end": 67,
+      "start": 58,
+      "end": 66,
       "loc": {
         "start": {
           "line": 2,
@@ -747,8 +747,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 67,
-      "end": 68,
+      "start": 66,
+      "end": 67,
       "loc": {
         "start": {
           "line": 2,
@@ -762,9 +762,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Determines whether a nested path on an object has a specific value\r\n *\r\n * @param {Array} paths The path of the nested property to use\r\n * @param {*} value The value to compare the nested property with\r\n * @param {Object} obj The object to check the nested property in\r\n * @return {Boolean} `true` if the value is the nested object property,\r\n *         `false` otherwise.\r\n * @example\r\n *\r\n *      var user1 = { address: { zipCode: 90210 } };\r\n *      var user2 = { address: { zipCode: 55555 } };\r\n *      var user3 = { name: 'Bob' };\r\n *      var users = [ user1, user2, user3 ];\r\n *      var isFamous = pathEq(['address', 'zipCode'], 90210);\r\n *      filter(isFamous, users); //=> [ user1 ]\r\n ",
-      "start": 70,
-      "end": 776,
+      "value": "*\n * Determines whether a nested path on an object has a specific value\n *\n * @param {Array} paths The path of the nested property to use\n * @param {*} value The value to compare the nested property with\n * @param {Object} obj The object to check the nested property in\n * @return {Boolean} `true` if the value is the nested object property,\n *         `false` otherwise.\n * @example\n *\n *      var user1 = { address: { zipCode: 90210 } };\n *      var user2 = { address: { zipCode: 55555 } };\n *      var user3 = { name: 'Bob' };\n *      var users = [ user1, user2, user3 ];\n *      var isFamous = pathEq(['address', 'zipCode'], 90210);\n *      filter(isFamous, users); //=> [ user1 ]\n ",
+      "start": 68,
+      "end": 758,
       "loc": {
         "start": {
           "line": 3,
@@ -791,8 +791,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 778,
-      "end": 784,
+      "start": 759,
+      "end": 765,
       "loc": {
         "start": {
           "line": 20,
@@ -819,8 +819,8 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 785,
-      "end": 792,
+      "start": 766,
+      "end": 773,
       "loc": {
         "start": {
           "line": 20,
@@ -845,8 +845,8 @@
         "binop": null
       },
       "value": "curryN",
-      "start": 793,
-      "end": 799,
+      "start": 774,
+      "end": 780,
       "loc": {
         "start": {
           "line": 20,
@@ -870,8 +870,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 799,
-      "end": 800,
+      "start": 780,
+      "end": 781,
       "loc": {
         "start": {
           "line": 20,
@@ -897,8 +897,8 @@
         "updateContext": null
       },
       "value": 3,
-      "start": 800,
-      "end": 801,
+      "start": 781,
+      "end": 782,
       "loc": {
         "start": {
           "line": 20,
@@ -923,8 +923,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 801,
-      "end": 802,
+      "start": 782,
+      "end": 783,
       "loc": {
         "start": {
           "line": 20,
@@ -948,8 +948,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 803,
-      "end": 804,
+      "start": 784,
+      "end": 785,
       "loc": {
         "start": {
           "line": 20,
@@ -974,8 +974,8 @@
         "binop": null
       },
       "value": "paths",
-      "start": 804,
-      "end": 809,
+      "start": 785,
+      "end": 790,
       "loc": {
         "start": {
           "line": 20,
@@ -1001,8 +1001,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 810,
-      "end": 811,
+      "start": 791,
+      "end": 792,
       "loc": {
         "start": {
           "line": 20,
@@ -1027,8 +1027,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 812,
-      "end": 813,
+      "start": 793,
+      "end": 794,
       "loc": {
         "start": {
           "line": 20,
@@ -1053,8 +1053,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 813,
-      "end": 814,
+      "start": 794,
+      "end": 795,
       "loc": {
         "start": {
           "line": 20,
@@ -1079,8 +1079,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 814,
-      "end": 815,
+      "start": 795,
+      "end": 796,
       "loc": {
         "start": {
           "line": 20,
@@ -1105,8 +1105,8 @@
         "binop": null
       },
       "value": "value",
-      "start": 816,
-      "end": 821,
+      "start": 797,
+      "end": 802,
       "loc": {
         "start": {
           "line": 20,
@@ -1131,8 +1131,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 821,
-      "end": 822,
+      "start": 802,
+      "end": 803,
       "loc": {
         "start": {
           "line": 20,
@@ -1157,8 +1157,8 @@
         "binop": null
       },
       "value": "obj",
-      "start": 823,
-      "end": 826,
+      "start": 804,
+      "end": 807,
       "loc": {
         "start": {
           "line": 20,
@@ -1184,8 +1184,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 827,
-      "end": 828,
+      "start": 808,
+      "end": 809,
       "loc": {
         "start": {
           "line": 20,
@@ -1209,8 +1209,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 829,
-      "end": 830,
+      "start": 810,
+      "end": 811,
       "loc": {
         "start": {
           "line": 20,
@@ -1234,8 +1234,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 830,
-      "end": 831,
+      "start": 811,
+      "end": 812,
       "loc": {
         "start": {
           "line": 20,
@@ -1259,8 +1259,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 831,
-      "end": 832,
+      "start": 812,
+      "end": 813,
       "loc": {
         "start": {
           "line": 20,
@@ -1285,8 +1285,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 833,
-      "end": 835,
+      "start": 814,
+      "end": 816,
       "loc": {
         "start": {
           "line": 20,
@@ -1311,8 +1311,8 @@
         "binop": null
       },
       "value": "path",
-      "start": 836,
-      "end": 840,
+      "start": 817,
+      "end": 821,
       "loc": {
         "start": {
           "line": 20,
@@ -1336,8 +1336,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 840,
-      "end": 841,
+      "start": 821,
+      "end": 822,
       "loc": {
         "start": {
           "line": 20,
@@ -1362,8 +1362,8 @@
         "binop": null
       },
       "value": "paths",
-      "start": 841,
-      "end": 846,
+      "start": 822,
+      "end": 827,
       "loc": {
         "start": {
           "line": 20,
@@ -1388,8 +1388,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 846,
-      "end": 847,
+      "start": 827,
+      "end": 828,
       "loc": {
         "start": {
           "line": 20,
@@ -1414,8 +1414,8 @@
         "binop": null
       },
       "value": "obj",
-      "start": 848,
-      "end": 851,
+      "start": 829,
+      "end": 832,
       "loc": {
         "start": {
           "line": 20,
@@ -1439,8 +1439,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 851,
-      "end": 852,
+      "start": 832,
+      "end": 833,
       "loc": {
         "start": {
           "line": 20,
@@ -1466,8 +1466,8 @@
         "updateContext": null
       },
       "value": "===",
-      "start": 853,
-      "end": 856,
+      "start": 834,
+      "end": 837,
       "loc": {
         "start": {
           "line": 20,
@@ -1492,8 +1492,8 @@
         "binop": null
       },
       "value": "value",
-      "start": 857,
-      "end": 862,
+      "start": 838,
+      "end": 843,
       "loc": {
         "start": {
           "line": 20,
@@ -1517,8 +1517,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 862,
-      "end": 863,
+      "start": 843,
+      "end": 844,
       "loc": {
         "start": {
           "line": 20,
@@ -1543,8 +1543,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 863,
-      "end": 864,
+      "start": 844,
+      "end": 845,
       "loc": {
         "start": {
           "line": 20,
@@ -1569,8 +1569,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 866,
-      "end": 866,
+      "start": 846,
+      "end": 846,
       "loc": {
         "start": {
           "line": 21,

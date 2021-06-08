@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 662,
+  "end": 641,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 662,
+    "end": 641,
     "loc": {
       "start": {
         "line": 1,
@@ -99,9 +99,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Create a new object/array with the own properties of the first entry merged with\r\n * the own properties of the others objects. If a key exists in several objects,\r\n * the value from the last object will be used.\r\n *\r\n * **Note** if first argument is array then result of function is array,\r\n * otherwise it is an object.\r\n *\r\n * @param sources\r\n * @example\r\n *\r\n * assign({a:1}, {b:2}) // => {a:1, b:2}\r\n * assign([1,2,3], [4,5]) // => [4,5,3]\r\n ",
-            "start": 35,
-            "end": 491,
+            "value": "*\n * Create a new object/array with the own properties of the first entry merged with\n * the own properties of the others objects. If a key exists in several objects,\n * the value from the last object will be used.\n *\n * **Note** if first argument is array then result of function is array,\n * otherwise it is an object.\n *\n * @param sources\n * @example\n *\n * assign({a:1}, {b:2}) // => {a:1, b:2}\n * assign([1,2,3], [4,5]) // => [4,5,3]\n ",
+            "start": 34,
+            "end": 477,
             "loc": {
               "start": {
                 "line": 2,
@@ -117,8 +117,8 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 493,
-        "end": 660,
+        "start": 478,
+        "end": 640,
         "loc": {
           "start": {
             "line": 16,
@@ -131,8 +131,8 @@
         },
         "declaration": {
           "type": "ArrowFunctionExpression",
-          "start": 509,
-          "end": 658,
+          "start": 494,
+          "end": 638,
           "loc": {
             "start": {
               "line": 16,
@@ -150,8 +150,8 @@
           "params": [
             {
               "type": "RestElement",
-              "start": 510,
-              "end": 520,
+              "start": 495,
+              "end": 505,
               "loc": {
                 "start": {
                   "line": 16,
@@ -164,8 +164,8 @@
               },
               "argument": {
                 "type": "Identifier",
-                "start": 513,
-                "end": 520,
+                "start": 498,
+                "end": 505,
                 "loc": {
                   "start": {
                     "line": 16,
@@ -185,8 +185,8 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 525,
-            "end": 658,
+            "start": 510,
+            "end": 638,
             "loc": {
               "start": {
                 "line": 16,
@@ -200,8 +200,8 @@
             "body": [
               {
                 "type": "IfStatement",
-                "start": 532,
-                "end": 612,
+                "start": 516,
+                "end": 594,
                 "loc": {
                   "start": {
                     "line": 17,
@@ -214,8 +214,8 @@
                 },
                 "test": {
                   "type": "CallExpression",
-                  "start": 536,
-                  "end": 555,
+                  "start": 520,
+                  "end": 539,
                   "loc": {
                     "start": {
                       "line": 17,
@@ -228,8 +228,8 @@
                   },
                   "callee": {
                     "type": "Identifier",
-                    "start": 536,
-                    "end": 543,
+                    "start": 520,
+                    "end": 527,
                     "loc": {
                       "start": {
                         "line": 17,
@@ -246,8 +246,8 @@
                   "arguments": [
                     {
                       "type": "MemberExpression",
-                      "start": 544,
-                      "end": 554,
+                      "start": 528,
+                      "end": 538,
                       "loc": {
                         "start": {
                           "line": 17,
@@ -260,8 +260,8 @@
                       },
                       "object": {
                         "type": "Identifier",
-                        "start": 544,
-                        "end": 551,
+                        "start": 528,
+                        "end": 535,
                         "loc": {
                           "start": {
                             "line": 17,
@@ -277,8 +277,8 @@
                       },
                       "property": {
                         "type": "NumericLiteral",
-                        "start": 552,
-                        "end": 553,
+                        "start": 536,
+                        "end": 537,
                         "loc": {
                           "start": {
                             "line": 17,
@@ -301,8 +301,8 @@
                 },
                 "consequent": {
                   "type": "BlockStatement",
-                  "start": 557,
-                  "end": 612,
+                  "start": 541,
+                  "end": 594,
                   "loc": {
                     "start": {
                       "line": 17,
@@ -316,8 +316,8 @@
                   "body": [
                     {
                       "type": "ReturnStatement",
-                      "start": 568,
-                      "end": 605,
+                      "start": 551,
+                      "end": 588,
                       "loc": {
                         "start": {
                           "line": 18,
@@ -330,8 +330,8 @@
                       },
                       "argument": {
                         "type": "CallExpression",
-                        "start": 575,
-                        "end": 604,
+                        "start": 558,
+                        "end": 587,
                         "loc": {
                           "start": {
                             "line": 18,
@@ -344,8 +344,8 @@
                         },
                         "callee": {
                           "type": "MemberExpression",
-                          "start": 575,
-                          "end": 588,
+                          "start": 558,
+                          "end": 571,
                           "loc": {
                             "start": {
                               "line": 18,
@@ -358,8 +358,8 @@
                           },
                           "object": {
                             "type": "Identifier",
-                            "start": 575,
-                            "end": 581,
+                            "start": 558,
+                            "end": 564,
                             "loc": {
                               "start": {
                                 "line": 18,
@@ -375,8 +375,8 @@
                           },
                           "property": {
                             "type": "Identifier",
-                            "start": 582,
-                            "end": 588,
+                            "start": 565,
+                            "end": 571,
                             "loc": {
                               "start": {
                                 "line": 18,
@@ -395,8 +395,8 @@
                         "arguments": [
                           {
                             "type": "ArrayExpression",
-                            "start": 589,
-                            "end": 591,
+                            "start": 572,
+                            "end": 574,
                             "loc": {
                               "start": {
                                 "line": 18,
@@ -411,8 +411,8 @@
                           },
                           {
                             "type": "SpreadElement",
-                            "start": 593,
-                            "end": 603,
+                            "start": 576,
+                            "end": 586,
                             "loc": {
                               "start": {
                                 "line": 18,
@@ -425,8 +425,8 @@
                             },
                             "argument": {
                               "type": "Identifier",
-                              "start": 596,
-                              "end": 603,
+                              "start": 579,
+                              "end": 586,
                               "loc": {
                                 "start": {
                                   "line": 18,
@@ -451,8 +451,8 @@
               },
               {
                 "type": "ReturnStatement",
-                "start": 618,
-                "end": 655,
+                "start": 599,
+                "end": 636,
                 "loc": {
                   "start": {
                     "line": 20,
@@ -465,8 +465,8 @@
                 },
                 "argument": {
                   "type": "CallExpression",
-                  "start": 625,
-                  "end": 654,
+                  "start": 606,
+                  "end": 635,
                   "loc": {
                     "start": {
                       "line": 20,
@@ -479,8 +479,8 @@
                   },
                   "callee": {
                     "type": "MemberExpression",
-                    "start": 625,
-                    "end": 638,
+                    "start": 606,
+                    "end": 619,
                     "loc": {
                       "start": {
                         "line": 20,
@@ -493,8 +493,8 @@
                     },
                     "object": {
                       "type": "Identifier",
-                      "start": 625,
-                      "end": 631,
+                      "start": 606,
+                      "end": 612,
                       "loc": {
                         "start": {
                           "line": 20,
@@ -510,8 +510,8 @@
                     },
                     "property": {
                       "type": "Identifier",
-                      "start": 632,
-                      "end": 638,
+                      "start": 613,
+                      "end": 619,
                       "loc": {
                         "start": {
                           "line": 20,
@@ -530,8 +530,8 @@
                   "arguments": [
                     {
                       "type": "ObjectExpression",
-                      "start": 639,
-                      "end": 641,
+                      "start": 620,
+                      "end": 622,
                       "loc": {
                         "start": {
                           "line": 20,
@@ -546,8 +546,8 @@
                     },
                     {
                       "type": "SpreadElement",
-                      "start": 643,
-                      "end": 653,
+                      "start": 624,
+                      "end": 634,
                       "loc": {
                         "start": {
                           "line": 20,
@@ -560,8 +560,8 @@
                       },
                       "argument": {
                         "type": "Identifier",
-                        "start": 646,
-                        "end": 653,
+                        "start": 627,
+                        "end": 634,
                         "loc": {
                           "start": {
                             "line": 20,
@@ -585,9 +585,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\r\n * Create a new object/array with the own properties of the first entry merged with\r\n * the own properties of the others objects. If a key exists in several objects,\r\n * the value from the last object will be used.\r\n *\r\n * **Note** if first argument is array then result of function is array,\r\n * otherwise it is an object.\r\n *\r\n * @param sources\r\n * @example\r\n *\r\n * assign({a:1}, {b:2}) // => {a:1, b:2}\r\n * assign([1,2,3], [4,5]) // => [4,5,3]\r\n ",
-              "start": 35,
-              "end": 491,
+              "value": "*\n * Create a new object/array with the own properties of the first entry merged with\n * the own properties of the others objects. If a key exists in several objects,\n * the value from the last object will be used.\n *\n * **Note** if first argument is array then result of function is array,\n * otherwise it is an object.\n *\n * @param sources\n * @example\n *\n * assign({a:1}, {b:2}) // => {a:1, b:2}\n * assign([1,2,3], [4,5]) // => [4,5,3]\n ",
+              "start": 34,
+              "end": 477,
               "loc": {
                 "start": {
                   "line": 2,
@@ -602,16 +602,16 @@
           ],
           "extra": {
             "parenthesized": true,
-            "parenStart": 508
+            "parenStart": 493
           },
           "trailingComments": []
         },
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Create a new object/array with the own properties of the first entry merged with\r\n * the own properties of the others objects. If a key exists in several objects,\r\n * the value from the last object will be used.\r\n *\r\n * **Note** if first argument is array then result of function is array,\r\n * otherwise it is an object.\r\n *\r\n * @param sources\r\n * @example\r\n *\r\n * assign({a:1}, {b:2}) // => {a:1, b:2}\r\n * assign([1,2,3], [4,5]) // => [4,5,3]\r\n ",
-            "start": 35,
-            "end": 491,
+            "value": "*\n * Create a new object/array with the own properties of the first entry merged with\n * the own properties of the others objects. If a key exists in several objects,\n * the value from the last object will be used.\n *\n * **Note** if first argument is array then result of function is array,\n * otherwise it is an object.\n *\n * @param sources\n * @example\n *\n * assign({a:1}, {b:2}) // => {a:1, b:2}\n * assign([1,2,3], [4,5]) // => [4,5,3]\n ",
+            "start": 34,
+            "end": 477,
             "loc": {
               "start": {
                 "line": 2,
@@ -631,9 +631,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Create a new object/array with the own properties of the first entry merged with\r\n * the own properties of the others objects. If a key exists in several objects,\r\n * the value from the last object will be used.\r\n *\r\n * **Note** if first argument is array then result of function is array,\r\n * otherwise it is an object.\r\n *\r\n * @param sources\r\n * @example\r\n *\r\n * assign({a:1}, {b:2}) // => {a:1, b:2}\r\n * assign([1,2,3], [4,5]) // => [4,5,3]\r\n ",
-      "start": 35,
-      "end": 491,
+      "value": "*\n * Create a new object/array with the own properties of the first entry merged with\n * the own properties of the others objects. If a key exists in several objects,\n * the value from the last object will be used.\n *\n * **Note** if first argument is array then result of function is array,\n * otherwise it is an object.\n *\n * @param sources\n * @example\n *\n * assign({a:1}, {b:2}) // => {a:1, b:2}\n * assign([1,2,3], [4,5]) // => [4,5,3]\n ",
+      "start": 34,
+      "end": 477,
       "loc": {
         "start": {
           "line": 2,
@@ -782,9 +782,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Create a new object/array with the own properties of the first entry merged with\r\n * the own properties of the others objects. If a key exists in several objects,\r\n * the value from the last object will be used.\r\n *\r\n * **Note** if first argument is array then result of function is array,\r\n * otherwise it is an object.\r\n *\r\n * @param sources\r\n * @example\r\n *\r\n * assign({a:1}, {b:2}) // => {a:1, b:2}\r\n * assign([1,2,3], [4,5]) // => [4,5,3]\r\n ",
-      "start": 35,
-      "end": 491,
+      "value": "*\n * Create a new object/array with the own properties of the first entry merged with\n * the own properties of the others objects. If a key exists in several objects,\n * the value from the last object will be used.\n *\n * **Note** if first argument is array then result of function is array,\n * otherwise it is an object.\n *\n * @param sources\n * @example\n *\n * assign({a:1}, {b:2}) // => {a:1, b:2}\n * assign([1,2,3], [4,5]) // => [4,5,3]\n ",
+      "start": 34,
+      "end": 477,
       "loc": {
         "start": {
           "line": 2,
@@ -811,8 +811,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 493,
-      "end": 499,
+      "start": 478,
+      "end": 484,
       "loc": {
         "start": {
           "line": 16,
@@ -839,8 +839,8 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 500,
-      "end": 507,
+      "start": 485,
+      "end": 492,
       "loc": {
         "start": {
           "line": 16,
@@ -864,8 +864,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 508,
-      "end": 509,
+      "start": 493,
+      "end": 494,
       "loc": {
         "start": {
           "line": 16,
@@ -889,8 +889,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 509,
-      "end": 510,
+      "start": 494,
+      "end": 495,
       "loc": {
         "start": {
           "line": 16,
@@ -915,8 +915,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 510,
-      "end": 513,
+      "start": 495,
+      "end": 498,
       "loc": {
         "start": {
           "line": 16,
@@ -941,8 +941,8 @@
         "binop": null
       },
       "value": "sources",
-      "start": 513,
-      "end": 520,
+      "start": 498,
+      "end": 505,
       "loc": {
         "start": {
           "line": 16,
@@ -966,8 +966,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 520,
-      "end": 521,
+      "start": 505,
+      "end": 506,
       "loc": {
         "start": {
           "line": 16,
@@ -992,8 +992,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 522,
-      "end": 524,
+      "start": 507,
+      "end": 509,
       "loc": {
         "start": {
           "line": 16,
@@ -1017,8 +1017,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 525,
-      "end": 526,
+      "start": 510,
+      "end": 511,
       "loc": {
         "start": {
           "line": 16,
@@ -1045,8 +1045,8 @@
         "updateContext": null
       },
       "value": "if",
-      "start": 532,
-      "end": 534,
+      "start": 516,
+      "end": 518,
       "loc": {
         "start": {
           "line": 17,
@@ -1070,8 +1070,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 535,
-      "end": 536,
+      "start": 519,
+      "end": 520,
       "loc": {
         "start": {
           "line": 17,
@@ -1096,8 +1096,8 @@
         "binop": null
       },
       "value": "isArray",
-      "start": 536,
-      "end": 543,
+      "start": 520,
+      "end": 527,
       "loc": {
         "start": {
           "line": 17,
@@ -1121,8 +1121,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 543,
-      "end": 544,
+      "start": 527,
+      "end": 528,
       "loc": {
         "start": {
           "line": 17,
@@ -1147,8 +1147,8 @@
         "binop": null
       },
       "value": "sources",
-      "start": 544,
-      "end": 551,
+      "start": 528,
+      "end": 535,
       "loc": {
         "start": {
           "line": 17,
@@ -1173,8 +1173,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 551,
-      "end": 552,
+      "start": 535,
+      "end": 536,
       "loc": {
         "start": {
           "line": 17,
@@ -1200,8 +1200,8 @@
         "updateContext": null
       },
       "value": 0,
-      "start": 552,
-      "end": 553,
+      "start": 536,
+      "end": 537,
       "loc": {
         "start": {
           "line": 17,
@@ -1226,8 +1226,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 553,
-      "end": 554,
+      "start": 537,
+      "end": 538,
       "loc": {
         "start": {
           "line": 17,
@@ -1251,8 +1251,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 554,
-      "end": 555,
+      "start": 538,
+      "end": 539,
       "loc": {
         "start": {
           "line": 17,
@@ -1276,8 +1276,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 555,
-      "end": 556,
+      "start": 539,
+      "end": 540,
       "loc": {
         "start": {
           "line": 17,
@@ -1301,8 +1301,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 557,
-      "end": 558,
+      "start": 541,
+      "end": 542,
       "loc": {
         "start": {
           "line": 17,
@@ -1329,8 +1329,8 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 568,
-      "end": 574,
+      "start": 551,
+      "end": 557,
       "loc": {
         "start": {
           "line": 18,
@@ -1355,8 +1355,8 @@
         "binop": null
       },
       "value": "Object",
-      "start": 575,
-      "end": 581,
+      "start": 558,
+      "end": 564,
       "loc": {
         "start": {
           "line": 18,
@@ -1381,8 +1381,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 581,
-      "end": 582,
+      "start": 564,
+      "end": 565,
       "loc": {
         "start": {
           "line": 18,
@@ -1407,8 +1407,8 @@
         "binop": null
       },
       "value": "assign",
-      "start": 582,
-      "end": 588,
+      "start": 565,
+      "end": 571,
       "loc": {
         "start": {
           "line": 18,
@@ -1432,8 +1432,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 588,
-      "end": 589,
+      "start": 571,
+      "end": 572,
       "loc": {
         "start": {
           "line": 18,
@@ -1458,8 +1458,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 589,
-      "end": 590,
+      "start": 572,
+      "end": 573,
       "loc": {
         "start": {
           "line": 18,
@@ -1484,8 +1484,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 590,
-      "end": 591,
+      "start": 573,
+      "end": 574,
       "loc": {
         "start": {
           "line": 18,
@@ -1510,8 +1510,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 591,
-      "end": 592,
+      "start": 574,
+      "end": 575,
       "loc": {
         "start": {
           "line": 18,
@@ -1536,8 +1536,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 593,
-      "end": 596,
+      "start": 576,
+      "end": 579,
       "loc": {
         "start": {
           "line": 18,
@@ -1562,8 +1562,8 @@
         "binop": null
       },
       "value": "sources",
-      "start": 596,
-      "end": 603,
+      "start": 579,
+      "end": 586,
       "loc": {
         "start": {
           "line": 18,
@@ -1587,8 +1587,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 603,
-      "end": 604,
+      "start": 586,
+      "end": 587,
       "loc": {
         "start": {
           "line": 18,
@@ -1613,8 +1613,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 604,
-      "end": 605,
+      "start": 587,
+      "end": 588,
       "loc": {
         "start": {
           "line": 18,
@@ -1638,8 +1638,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 611,
-      "end": 612,
+      "start": 593,
+      "end": 594,
       "loc": {
         "start": {
           "line": 19,
@@ -1666,8 +1666,8 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 618,
-      "end": 624,
+      "start": 599,
+      "end": 605,
       "loc": {
         "start": {
           "line": 20,
@@ -1692,8 +1692,8 @@
         "binop": null
       },
       "value": "Object",
-      "start": 625,
-      "end": 631,
+      "start": 606,
+      "end": 612,
       "loc": {
         "start": {
           "line": 20,
@@ -1718,8 +1718,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 631,
-      "end": 632,
+      "start": 612,
+      "end": 613,
       "loc": {
         "start": {
           "line": 20,
@@ -1744,8 +1744,8 @@
         "binop": null
       },
       "value": "assign",
-      "start": 632,
-      "end": 638,
+      "start": 613,
+      "end": 619,
       "loc": {
         "start": {
           "line": 20,
@@ -1769,8 +1769,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 638,
-      "end": 639,
+      "start": 619,
+      "end": 620,
       "loc": {
         "start": {
           "line": 20,
@@ -1794,8 +1794,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 639,
-      "end": 640,
+      "start": 620,
+      "end": 621,
       "loc": {
         "start": {
           "line": 20,
@@ -1819,8 +1819,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 640,
-      "end": 641,
+      "start": 621,
+      "end": 622,
       "loc": {
         "start": {
           "line": 20,
@@ -1845,8 +1845,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 641,
-      "end": 642,
+      "start": 622,
+      "end": 623,
       "loc": {
         "start": {
           "line": 20,
@@ -1871,8 +1871,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 643,
-      "end": 646,
+      "start": 624,
+      "end": 627,
       "loc": {
         "start": {
           "line": 20,
@@ -1897,8 +1897,8 @@
         "binop": null
       },
       "value": "sources",
-      "start": 646,
-      "end": 653,
+      "start": 627,
+      "end": 634,
       "loc": {
         "start": {
           "line": 20,
@@ -1922,8 +1922,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 653,
-      "end": 654,
+      "start": 634,
+      "end": 635,
       "loc": {
         "start": {
           "line": 20,
@@ -1948,8 +1948,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 654,
-      "end": 655,
+      "start": 635,
+      "end": 636,
       "loc": {
         "start": {
           "line": 20,
@@ -1973,8 +1973,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 657,
-      "end": 658,
+      "start": 637,
+      "end": 638,
       "loc": {
         "start": {
           "line": 21,
@@ -1998,8 +1998,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 658,
-      "end": 659,
+      "start": 638,
+      "end": 639,
       "loc": {
         "start": {
           "line": 21,
@@ -2024,8 +2024,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 659,
-      "end": 660,
+      "start": 639,
+      "end": 640,
       "loc": {
         "start": {
           "line": 21,
@@ -2050,8 +2050,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 662,
-      "end": 662,
+      "start": 641,
+      "end": 641,
       "loc": {
         "start": {
           "line": 22,

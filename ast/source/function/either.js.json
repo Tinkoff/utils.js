@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 837,
+  "end": 816,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 837,
+    "end": 816,
     "loc": {
       "start": {
         "line": 1,
@@ -99,9 +99,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * A function wrapping calls to the two functions in an `||` operation,\r\n * returning the result of the first function if it is truth-y and the result\r\n * of the second function otherwise. Note that this is short-circuited,\r\n * meaning that the second function will not be invoked if the first returns a\r\n * truth-y value.\r\n *\r\n * @param {Function} f a predicate\r\n * @param {Function} g another predicate\r\n * @return {Function} a function that applies its arguments to `f` and `g` and `||`s their outputs together.\r\n * @example\r\n *\r\n *      var gt10 = x => x > 10;\r\n *      var even = x => x % 2 === 0;\r\n *      var f = either(gt10, even);\r\n *      f(101); //=> true\r\n *      f(8); //=> true\r\n *      f(3); //=> false\r\n ",
-            "start": 32,
-            "end": 759,
+            "value": "*\n * A function wrapping calls to the two functions in an `||` operation,\n * returning the result of the first function if it is truth-y and the result\n * of the second function otherwise. Note that this is short-circuited,\n * meaning that the second function will not be invoked if the first returns a\n * truth-y value.\n *\n * @param {Function} f a predicate\n * @param {Function} g another predicate\n * @return {Function} a function that applies its arguments to `f` and `g` and `||`s their outputs together.\n * @example\n *\n *      var gt10 = x => x > 10;\n *      var even = x => x % 2 === 0;\n *      var f = either(gt10, even);\n *      f(101); //=> true\n *      f(8); //=> true\n *      f(3); //=> false\n ",
+            "start": 31,
+            "end": 740,
             "loc": {
               "start": {
                 "line": 2,
@@ -117,8 +117,8 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 761,
-        "end": 835,
+        "start": 741,
+        "end": 815,
         "loc": {
           "start": {
             "line": 21,
@@ -131,8 +131,8 @@
         },
         "declaration": {
           "type": "ArrowFunctionExpression",
-          "start": 786,
-          "end": 833,
+          "start": 766,
+          "end": 813,
           "loc": {
             "start": {
               "line": 21,
@@ -150,8 +150,8 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 787,
-              "end": 788,
+              "start": 767,
+              "end": 768,
               "loc": {
                 "start": {
                   "line": 21,
@@ -167,8 +167,8 @@
             },
             {
               "type": "Identifier",
-              "start": 790,
-              "end": 791,
+              "start": 770,
+              "end": 771,
               "loc": {
                 "start": {
                   "line": 21,
@@ -185,8 +185,8 @@
           ],
           "body": {
             "type": "ArrowFunctionExpression",
-            "start": 796,
-            "end": 833,
+            "start": 776,
+            "end": 813,
             "loc": {
               "start": {
                 "line": 21,
@@ -204,8 +204,8 @@
             "params": [
               {
                 "type": "RestElement",
-                "start": 797,
-                "end": 804,
+                "start": 777,
+                "end": 784,
                 "loc": {
                   "start": {
                     "line": 21,
@@ -218,8 +218,8 @@
                 },
                 "argument": {
                   "type": "Identifier",
-                  "start": 800,
-                  "end": 804,
+                  "start": 780,
+                  "end": 784,
                   "loc": {
                     "start": {
                       "line": 21,
@@ -237,8 +237,8 @@
             ],
             "body": {
               "type": "LogicalExpression",
-              "start": 809,
-              "end": 833,
+              "start": 789,
+              "end": 813,
               "loc": {
                 "start": {
                   "line": 21,
@@ -251,8 +251,8 @@
               },
               "left": {
                 "type": "CallExpression",
-                "start": 809,
-                "end": 819,
+                "start": 789,
+                "end": 799,
                 "loc": {
                   "start": {
                     "line": 21,
@@ -265,8 +265,8 @@
                 },
                 "callee": {
                   "type": "Identifier",
-                  "start": 809,
-                  "end": 810,
+                  "start": 789,
+                  "end": 790,
                   "loc": {
                     "start": {
                       "line": 21,
@@ -283,8 +283,8 @@
                 "arguments": [
                   {
                     "type": "SpreadElement",
-                    "start": 811,
-                    "end": 818,
+                    "start": 791,
+                    "end": 798,
                     "loc": {
                       "start": {
                         "line": 21,
@@ -297,8 +297,8 @@
                     },
                     "argument": {
                       "type": "Identifier",
-                      "start": 814,
-                      "end": 818,
+                      "start": 794,
+                      "end": 798,
                       "loc": {
                         "start": {
                           "line": 21,
@@ -318,8 +318,8 @@
               "operator": "||",
               "right": {
                 "type": "CallExpression",
-                "start": 823,
-                "end": 833,
+                "start": 803,
+                "end": 813,
                 "loc": {
                   "start": {
                     "line": 21,
@@ -332,8 +332,8 @@
                 },
                 "callee": {
                   "type": "Identifier",
-                  "start": 823,
-                  "end": 824,
+                  "start": 803,
+                  "end": 804,
                   "loc": {
                     "start": {
                       "line": 21,
@@ -350,8 +350,8 @@
                 "arguments": [
                   {
                     "type": "SpreadElement",
-                    "start": 825,
-                    "end": 832,
+                    "start": 805,
+                    "end": 812,
                     "loc": {
                       "start": {
                         "line": 21,
@@ -364,8 +364,8 @@
                     },
                     "argument": {
                       "type": "Identifier",
-                      "start": 828,
-                      "end": 832,
+                      "start": 808,
+                      "end": 812,
                       "loc": {
                         "start": {
                           "line": 21,
@@ -388,9 +388,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\r\n * A function wrapping calls to the two functions in an `||` operation,\r\n * returning the result of the first function if it is truth-y and the result\r\n * of the second function otherwise. Note that this is short-circuited,\r\n * meaning that the second function will not be invoked if the first returns a\r\n * truth-y value.\r\n *\r\n * @param {Function} f a predicate\r\n * @param {Function} g another predicate\r\n * @return {Function} a function that applies its arguments to `f` and `g` and `||`s their outputs together.\r\n * @example\r\n *\r\n *      var gt10 = x => x > 10;\r\n *      var even = x => x % 2 === 0;\r\n *      var f = either(gt10, even);\r\n *      f(101); //=> true\r\n *      f(8); //=> true\r\n *      f(3); //=> false\r\n ",
-              "start": 32,
-              "end": 759,
+              "value": "*\n * A function wrapping calls to the two functions in an `||` operation,\n * returning the result of the first function if it is truth-y and the result\n * of the second function otherwise. Note that this is short-circuited,\n * meaning that the second function will not be invoked if the first returns a\n * truth-y value.\n *\n * @param {Function} f a predicate\n * @param {Function} g another predicate\n * @return {Function} a function that applies its arguments to `f` and `g` and `||`s their outputs together.\n * @example\n *\n *      var gt10 = x => x > 10;\n *      var even = x => x % 2 === 0;\n *      var f = either(gt10, even);\n *      f(101); //=> true\n *      f(8); //=> true\n *      f(3); //=> false\n ",
+              "start": 31,
+              "end": 740,
               "loc": {
                 "start": {
                   "line": 2,
@@ -408,9 +408,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * A function wrapping calls to the two functions in an `||` operation,\r\n * returning the result of the first function if it is truth-y and the result\r\n * of the second function otherwise. Note that this is short-circuited,\r\n * meaning that the second function will not be invoked if the first returns a\r\n * truth-y value.\r\n *\r\n * @param {Function} f a predicate\r\n * @param {Function} g another predicate\r\n * @return {Function} a function that applies its arguments to `f` and `g` and `||`s their outputs together.\r\n * @example\r\n *\r\n *      var gt10 = x => x > 10;\r\n *      var even = x => x % 2 === 0;\r\n *      var f = either(gt10, even);\r\n *      f(101); //=> true\r\n *      f(8); //=> true\r\n *      f(3); //=> false\r\n ",
-            "start": 32,
-            "end": 759,
+            "value": "*\n * A function wrapping calls to the two functions in an `||` operation,\n * returning the result of the first function if it is truth-y and the result\n * of the second function otherwise. Note that this is short-circuited,\n * meaning that the second function will not be invoked if the first returns a\n * truth-y value.\n *\n * @param {Function} f a predicate\n * @param {Function} g another predicate\n * @return {Function} a function that applies its arguments to `f` and `g` and `||`s their outputs together.\n * @example\n *\n *      var gt10 = x => x > 10;\n *      var even = x => x % 2 === 0;\n *      var f = either(gt10, even);\n *      f(101); //=> true\n *      f(8); //=> true\n *      f(3); //=> false\n ",
+            "start": 31,
+            "end": 740,
             "loc": {
               "start": {
                 "line": 2,
@@ -430,9 +430,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\r\n * A function wrapping calls to the two functions in an `||` operation,\r\n * returning the result of the first function if it is truth-y and the result\r\n * of the second function otherwise. Note that this is short-circuited,\r\n * meaning that the second function will not be invoked if the first returns a\r\n * truth-y value.\r\n *\r\n * @param {Function} f a predicate\r\n * @param {Function} g another predicate\r\n * @return {Function} a function that applies its arguments to `f` and `g` and `||`s their outputs together.\r\n * @example\r\n *\r\n *      var gt10 = x => x > 10;\r\n *      var even = x => x % 2 === 0;\r\n *      var f = either(gt10, even);\r\n *      f(101); //=> true\r\n *      f(8); //=> true\r\n *      f(3); //=> false\r\n ",
-      "start": 32,
-      "end": 759,
+      "value": "*\n * A function wrapping calls to the two functions in an `||` operation,\n * returning the result of the first function if it is truth-y and the result\n * of the second function otherwise. Note that this is short-circuited,\n * meaning that the second function will not be invoked if the first returns a\n * truth-y value.\n *\n * @param {Function} f a predicate\n * @param {Function} g another predicate\n * @return {Function} a function that applies its arguments to `f` and `g` and `||`s their outputs together.\n * @example\n *\n *      var gt10 = x => x > 10;\n *      var even = x => x % 2 === 0;\n *      var f = either(gt10, even);\n *      f(101); //=> true\n *      f(8); //=> true\n *      f(3); //=> false\n ",
+      "start": 31,
+      "end": 740,
       "loc": {
         "start": {
           "line": 2,
@@ -581,9 +581,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\r\n * A function wrapping calls to the two functions in an `||` operation,\r\n * returning the result of the first function if it is truth-y and the result\r\n * of the second function otherwise. Note that this is short-circuited,\r\n * meaning that the second function will not be invoked if the first returns a\r\n * truth-y value.\r\n *\r\n * @param {Function} f a predicate\r\n * @param {Function} g another predicate\r\n * @return {Function} a function that applies its arguments to `f` and `g` and `||`s their outputs together.\r\n * @example\r\n *\r\n *      var gt10 = x => x > 10;\r\n *      var even = x => x % 2 === 0;\r\n *      var f = either(gt10, even);\r\n *      f(101); //=> true\r\n *      f(8); //=> true\r\n *      f(3); //=> false\r\n ",
-      "start": 32,
-      "end": 759,
+      "value": "*\n * A function wrapping calls to the two functions in an `||` operation,\n * returning the result of the first function if it is truth-y and the result\n * of the second function otherwise. Note that this is short-circuited,\n * meaning that the second function will not be invoked if the first returns a\n * truth-y value.\n *\n * @param {Function} f a predicate\n * @param {Function} g another predicate\n * @return {Function} a function that applies its arguments to `f` and `g` and `||`s their outputs together.\n * @example\n *\n *      var gt10 = x => x > 10;\n *      var even = x => x % 2 === 0;\n *      var f = either(gt10, even);\n *      f(101); //=> true\n *      f(8); //=> true\n *      f(3); //=> false\n ",
+      "start": 31,
+      "end": 740,
       "loc": {
         "start": {
           "line": 2,
@@ -610,8 +610,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 761,
-      "end": 767,
+      "start": 741,
+      "end": 747,
       "loc": {
         "start": {
           "line": 21,
@@ -638,8 +638,8 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 768,
-      "end": 775,
+      "start": 748,
+      "end": 755,
       "loc": {
         "start": {
           "line": 21,
@@ -664,8 +664,8 @@
         "binop": null
       },
       "value": "curryN",
-      "start": 776,
-      "end": 782,
+      "start": 756,
+      "end": 762,
       "loc": {
         "start": {
           "line": 21,
@@ -689,8 +689,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 782,
-      "end": 783,
+      "start": 762,
+      "end": 763,
       "loc": {
         "start": {
           "line": 21,
@@ -716,8 +716,8 @@
         "updateContext": null
       },
       "value": 2,
-      "start": 783,
-      "end": 784,
+      "start": 763,
+      "end": 764,
       "loc": {
         "start": {
           "line": 21,
@@ -742,8 +742,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 784,
-      "end": 785,
+      "start": 764,
+      "end": 765,
       "loc": {
         "start": {
           "line": 21,
@@ -767,8 +767,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 786,
-      "end": 787,
+      "start": 766,
+      "end": 767,
       "loc": {
         "start": {
           "line": 21,
@@ -793,8 +793,8 @@
         "binop": null
       },
       "value": "f",
-      "start": 787,
-      "end": 788,
+      "start": 767,
+      "end": 768,
       "loc": {
         "start": {
           "line": 21,
@@ -819,8 +819,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 788,
-      "end": 789,
+      "start": 768,
+      "end": 769,
       "loc": {
         "start": {
           "line": 21,
@@ -845,8 +845,8 @@
         "binop": null
       },
       "value": "g",
-      "start": 790,
-      "end": 791,
+      "start": 770,
+      "end": 771,
       "loc": {
         "start": {
           "line": 21,
@@ -870,8 +870,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 791,
-      "end": 792,
+      "start": 771,
+      "end": 772,
       "loc": {
         "start": {
           "line": 21,
@@ -896,8 +896,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 793,
-      "end": 795,
+      "start": 773,
+      "end": 775,
       "loc": {
         "start": {
           "line": 21,
@@ -921,8 +921,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 796,
-      "end": 797,
+      "start": 776,
+      "end": 777,
       "loc": {
         "start": {
           "line": 21,
@@ -947,8 +947,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 797,
-      "end": 800,
+      "start": 777,
+      "end": 780,
       "loc": {
         "start": {
           "line": 21,
@@ -973,8 +973,8 @@
         "binop": null
       },
       "value": "args",
-      "start": 800,
-      "end": 804,
+      "start": 780,
+      "end": 784,
       "loc": {
         "start": {
           "line": 21,
@@ -998,8 +998,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 804,
-      "end": 805,
+      "start": 784,
+      "end": 785,
       "loc": {
         "start": {
           "line": 21,
@@ -1024,8 +1024,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 806,
-      "end": 808,
+      "start": 786,
+      "end": 788,
       "loc": {
         "start": {
           "line": 21,
@@ -1050,8 +1050,8 @@
         "binop": null
       },
       "value": "f",
-      "start": 809,
-      "end": 810,
+      "start": 789,
+      "end": 790,
       "loc": {
         "start": {
           "line": 21,
@@ -1075,8 +1075,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 810,
-      "end": 811,
+      "start": 790,
+      "end": 791,
       "loc": {
         "start": {
           "line": 21,
@@ -1101,8 +1101,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 811,
-      "end": 814,
+      "start": 791,
+      "end": 794,
       "loc": {
         "start": {
           "line": 21,
@@ -1127,8 +1127,8 @@
         "binop": null
       },
       "value": "args",
-      "start": 814,
-      "end": 818,
+      "start": 794,
+      "end": 798,
       "loc": {
         "start": {
           "line": 21,
@@ -1152,8 +1152,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 818,
-      "end": 819,
+      "start": 798,
+      "end": 799,
       "loc": {
         "start": {
           "line": 21,
@@ -1179,8 +1179,8 @@
         "updateContext": null
       },
       "value": "||",
-      "start": 820,
-      "end": 822,
+      "start": 800,
+      "end": 802,
       "loc": {
         "start": {
           "line": 21,
@@ -1205,8 +1205,8 @@
         "binop": null
       },
       "value": "g",
-      "start": 823,
-      "end": 824,
+      "start": 803,
+      "end": 804,
       "loc": {
         "start": {
           "line": 21,
@@ -1230,8 +1230,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 824,
-      "end": 825,
+      "start": 804,
+      "end": 805,
       "loc": {
         "start": {
           "line": 21,
@@ -1256,8 +1256,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 825,
-      "end": 828,
+      "start": 805,
+      "end": 808,
       "loc": {
         "start": {
           "line": 21,
@@ -1282,8 +1282,8 @@
         "binop": null
       },
       "value": "args",
-      "start": 828,
-      "end": 832,
+      "start": 808,
+      "end": 812,
       "loc": {
         "start": {
           "line": 21,
@@ -1307,8 +1307,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 832,
-      "end": 833,
+      "start": 812,
+      "end": 813,
       "loc": {
         "start": {
           "line": 21,
@@ -1332,8 +1332,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 833,
-      "end": 834,
+      "start": 813,
+      "end": 814,
       "loc": {
         "start": {
           "line": 21,
@@ -1358,8 +1358,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 834,
-      "end": 835,
+      "start": 814,
+      "end": 815,
       "loc": {
         "start": {
           "line": 21,
@@ -1384,8 +1384,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 837,
-      "end": 837,
+      "start": 816,
+      "end": 816,
       "loc": {
         "start": {
           "line": 22,

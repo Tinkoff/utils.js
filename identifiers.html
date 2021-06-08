@@ -137,7 +137,6 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-object">object</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isPlainObject">isPlainObject</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-promise">promise</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isReactElement">isReactElement</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-shallowEqual">shallowEqual</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-strictEqual">strictEqual</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-string">string</a></span></span></li>
@@ -182,12 +181,15 @@
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#promise">promise</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-rejectWith">rejectWith</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-resolveWith">resolveWith</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tap">tap</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#string">string</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-capitalize">capitalize</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#string">string</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-camelCaseName">camelCaseName</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-capitalize">capitalize</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-endsWith">endsWith</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-escape">escape</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-escapeRegExp">escapeRegExp</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-kebabCaseName">kebabCaseName</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-repeat">repeat</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-replace">replace</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-snakeCaseName">snakeCaseName</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-split">split</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-startsWith">startsWith</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-template">template</a></span></span></li>
@@ -198,6 +200,8 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-trim">trim</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-trimLeft">trimLeft</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-unescape">unescape</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-upperFirst">upperFirst</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-words">words</a></span></span></li>
 </ul>
 </div>
 </nav>
@@ -293,7 +297,7 @@ the own properties of the others objects.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns the second argument if it is not <code>null</code>, <code>undefined</code> or <code>NaN</code>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns the second argument if it is not <code>null</code>, <code>undefined</code> or <code>NaN</code>
 otherwise the first argument is returned.</p>
 </div>
       </div>
@@ -479,7 +483,7 @@ returning such answers as &apos;Object&apos;, &apos;Number&apos;, &apos;Array&ap
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Applies a function to the value at the given index of an array, returning a
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Applies a function to the value at the given index of an array, returning a
 new copy of the array with the element at the given index replaced with the
 result of the function application.</p>
 </div>
@@ -510,7 +514,7 @@ result of the function application.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns <code>true</code> if all the elements of the array match the predicate,
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns <code>true</code> if all the elements of the array match the predicate,
 <code>false</code> otherwise.</p>
 </div>
       </div>
@@ -540,7 +544,7 @@ result of the function application.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns <code>true</code> if at least one of elements of the list match the predicate,
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns <code>true</code> if at least one of elements of the list match the predicate,
 <code>false</code> otherwise.</p>
 </div>
       </div>
@@ -570,7 +574,7 @@ result of the function application.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns a new list containing the contents of the given list, followed by
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns a new list containing the contents of the given list, followed by
 the given element.</p>
 </div>
       </div>
@@ -600,7 +604,7 @@ the given element.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns the result of concatenating the given arrays or strings.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns the result of concatenating the given arrays or strings.</p>
 </div>
       </div>
     </td>
@@ -629,7 +633,7 @@ the given element.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns the array of all elements in the first array not
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns the array of all elements in the first array not
 contained in the second array.</p>
 </div>
       </div>
@@ -659,7 +663,7 @@ contained in the second array.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns all but the first <code>n</code> elements of the given list, string.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns all but the first <code>n</code> elements of the given list, string.</p>
 </div>
       </div>
     </td>
@@ -688,7 +692,7 @@ contained in the second array.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns a list containing all but the last <code>n</code> elements of the given <code>list</code>.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns a list containing all but the last <code>n</code> elements of the given <code>list</code>.</p>
 </div>
       </div>
     </td>
@@ -717,7 +721,7 @@ contained in the second array.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns a new list excluding the leading elements of a given list which
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns a new list excluding the leading elements of a given list which
 satisfy the supplied predicate function.</p>
 </div>
       </div>
@@ -747,7 +751,7 @@ satisfy the supplied predicate function.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Iterate over an input <code>list</code>, calling a provided function <code>fn</code> for each
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Iterate over an input <code>list</code>, calling a provided function <code>fn</code> for each
 element in the list.</p>
 </div>
       </div>
@@ -777,7 +781,7 @@ element in the list.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Takes a predicate and a &quot;arr&quot;, and returns a new array of the
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Takes a predicate and a &quot;arr&quot;, and returns a new array of the
 same type containing the members of the given arr which satisfy the
 given predicate.</p>
 </div>
@@ -808,7 +812,7 @@ given predicate.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns the first element of the list which matches the predicate, or
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns the first element of the list which matches the predicate, or
 <code>undefined</code> if no element matches.</p>
 </div>
       </div>
@@ -838,7 +842,7 @@ given predicate.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns the index of the first element of the list which matches the
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns the index of the first element of the list which matches the
 predicate, or <code>-1</code> if no element matches.</p>
 </div>
       </div>
@@ -868,7 +872,7 @@ predicate, or <code>-1</code> if no element matches.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns the last element of the list which matches the predicate, or
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns the last element of the list which matches the predicate, or
 <code>undefined</code> if no element matches.</p>
 </div>
       </div>
@@ -928,7 +932,7 @@ and putting them in a new array, depth-first.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Creates an array of arrays generated from the results of running
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Creates an array of arrays generated from the results of running
 each element of list thru each <code>fn</code>.</p>
 </div>
       </div>
@@ -987,7 +991,7 @@ each element of list thru each <code>fn</code>.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Dispatches call to arr.indexOf, returns true if arr is array and value in the array or
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Dispatches call to arr.indexOf, returns true if arr is array and value in the array or
 if arr is string and value is substring of arr</p>
 </div>
       </div>
@@ -1017,7 +1021,7 @@ if arr is string and value is substring of arr</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Given a function that generates a key, turns a list of objects into an
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Given a function that generates a key, turns a list of objects into an
 object indexing the objects by the given key.</p>
 </div>
       </div>
@@ -1047,7 +1051,7 @@ object indexing the objects by the given key.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns the position of the first occurrence of an item in an array, or -1
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns the position of the first occurrence of an item in an array, or -1
 if the item is not included in the array.</p>
 </div>
       </div>
@@ -1106,7 +1110,7 @@ if the item is not included in the array.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Combines two array into a set (i.e.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Combines two array into a set (i.e.</p>
 </div>
       </div>
     </td>
@@ -1135,7 +1139,7 @@ if the item is not included in the array.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns a string made by inserting the <code>separator</code> between each element and
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns a string made by inserting the <code>separator</code> between each element and
 concatenating all the elements into a single string.</p>
 </div>
       </div>
@@ -1223,7 +1227,7 @@ concatenating all the elements into a single string.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Creates an array of values by running each element in list through fn.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Creates an array of values by running each element in list through fn.</p>
 </div>
       </div>
     </td>
@@ -1252,7 +1256,7 @@ concatenating all the elements into a single string.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Return max value in array, depending on result of calling <code>fn</code></p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Return max value in array, depending on result of calling <code>fn</code></p>
 </div>
       </div>
     </td>
@@ -1281,7 +1285,7 @@ concatenating all the elements into a single string.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns the nth element of the given array.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns the nth element of the given array.</p>
 </div>
       </div>
     </td>
@@ -1310,7 +1314,7 @@ concatenating all the elements into a single string.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Takes a predicate and a array and returns the
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Takes a predicate and a array and returns the
 pair of arrays of the same type of elements which do and do not
 satisfy, the predicate, respectively.</p>
 </div>
@@ -1341,7 +1345,7 @@ satisfy, the predicate, respectively.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns a new list by plucking the same named property off all objects in the list supplied.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns a new list by plucking the same named property off all objects in the list supplied.</p>
 </div>
       </div>
     </td>
@@ -1400,7 +1404,7 @@ satisfy, the predicate, respectively.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Returns a single item by iterating through the list, successively calling
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Returns a single item by iterating through the list, successively calling
 the iterator function and passing it an accumulator value and the current
 value from the array, and then passing the result to the next call.</p>
 </div>
@@ -1431,7 +1435,7 @@ value from the array, and then passing the result to the next call.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 4 arguments</em><br><br>Returns a single item by iterating through the list, successively calling
+        <div data-ice="description"><p><em>Autocurry for 4 arguments</em><br><br>Returns a single item by iterating through the list, successively calling
 the iterator function.</p>
 </div>
       </div>
@@ -1461,7 +1465,7 @@ the iterator function.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Takes a predicate and a &quot;arr&quot;, and returns a new array of the
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Takes a predicate and a &quot;arr&quot;, and returns a new array of the
 same type containing the members of the given arr which do not satisfy the
 given predicate.</p>
 </div>
@@ -1492,7 +1496,7 @@ given predicate.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Removes the sub-list of <code>list</code> starting at index <code>start</code> and containing
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Removes the sub-list of <code>list</code> starting at index <code>start</code> and containing
 <code>count</code> elements.</p>
 </div>
       </div>
@@ -1522,7 +1526,7 @@ given predicate.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns a fixed list of size <code>n</code> containing a specified identical value.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns a fixed list of size <code>n</code> containing a specified identical value.</p>
 </div>
       </div>
     </td>
@@ -1610,7 +1614,7 @@ order.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Returns the elements of the given list or string (or object with a <code>slice</code>
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Returns the elements of the given list or string (or object with a <code>slice</code>
 method) from <code>fromIndex</code> (inclusive) to <code>toIndex</code> (exclusive).</p>
 </div>
       </div>
@@ -1640,7 +1644,7 @@ method) from <code>fromIndex</code> (inclusive) to <code>toIndex</code> (exclusi
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns a copy of the array, sorted according to the comparator function,
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns a copy of the array, sorted according to the comparator function,
 which should accept two values at a time and return a negative number if the
 first value is smaller, a positive number if it&apos;s larger, and zero if they
 are equal. Please note that this is a <strong>copy</strong> of the list. It does not
@@ -1673,7 +1677,7 @@ modify the original.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Sorts the array according to the supplied function.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Sorts the array according to the supplied function.</p>
 </div>
       </div>
     </td>
@@ -1702,7 +1706,7 @@ modify the original.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Splits a collection into slices of the specified length</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Splits a collection into slices of the specified length</p>
 </div>
       </div>
     </td>
@@ -1731,7 +1735,7 @@ modify the original.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Sorts the array according to the supplied function and keeping the order of elements.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Sorts the array according to the supplied function and keeping the order of elements.</p>
 </div>
       </div>
     </td>
@@ -1818,7 +1822,7 @@ modify the original.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns the first <code>n</code> elements of the given array or string</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns the first <code>n</code> elements of the given array or string</p>
 </div>
       </div>
     </td>
@@ -1847,7 +1851,7 @@ modify the original.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns a new array|string containing the last <code>n</code> elements of a given array|string, passing
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns a new array|string containing the last <code>n</code> elements of a given array|string, passing
 each value to the supplied predicate function, and terminating when the
 predicate function returns <code>false</code>.</p>
 </div>
@@ -1936,7 +1940,7 @@ predicate function returns <code>false</code>.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns unique items in array.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns unique items in array.</p>
 </div>
       </div>
     </td>
@@ -1965,7 +1969,7 @@ predicate function returns <code>false</code>.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Returns a new copy of the array with the element at the provided index
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Returns a new copy of the array with the element at the provided index
 replaced with the given value.</p>
 </div>
       </div>
@@ -1995,7 +1999,7 @@ replaced with the given value.</p>
       <div>
         <div class="deprecated" data-ice="deprecated">this function was deprecated. use array/difference instead</div>
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns a new list without values in the first argument.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns a new list without values in the first argument.</p>
 </div>
       </div>
     </td>
@@ -2024,7 +2028,7 @@ replaced with the given value.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Creates a new list out of the two supplied by pairing up equally-positioned
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Creates a new list out of the two supplied by pairing up equally-positioned
 items from both lists.</p>
 </div>
       </div>
@@ -2054,7 +2058,7 @@ items from both lists.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Creates a new list out of the two supplied by applying the function to each
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Creates a new list out of the two supplied by applying the function to each
 equally-positioned pair in the lists.</p>
 </div>
       </div>
@@ -2152,7 +2156,7 @@ equally-positioned pair in the lists.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Takes a list of predicates and returns a predicate that returns true for a
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Takes a list of predicates and returns a predicate that returns true for a
 given list of arguments if every one of the provided predicates is satisfied
 by those arguments.</p>
 </div>
@@ -2212,7 +2216,7 @@ by those arguments.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Takes a list of predicates and returns a predicate that returns true for a
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Takes a list of predicates and returns a predicate that returns true for a
 given list of arguments if at least one of the provided predicates is satisfied
 by those arguments.</p>
 </div>
@@ -2243,7 +2247,7 @@ by those arguments.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>If <code>test</code> is function it calls with applied first argument, otherwise just returns <code>test</code></p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>If <code>test</code> is function it calls with applied first argument, otherwise just returns <code>test</code></p>
 </div>
       </div>
     </td>
@@ -2272,7 +2276,7 @@ by those arguments.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>A function wrapping calls to the two functions in an <code>&amp;&amp;</code> operation,
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>A function wrapping calls to the two functions in an <code>&amp;&amp;</code> operation,
 returning the result of the first function if it is false-y and the result
 of the second function otherwise.</p>
 </div>
@@ -2509,7 +2513,7 @@ arity.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Creates a debounced function that delays invoking <code>func</code> until after <code>wait</code>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Creates a debounced function that delays invoking <code>func</code> until after <code>wait</code>
 milliseconds have elapsed since the last time the debounced function was
 invoked.</p>
 </div>
@@ -2540,7 +2544,7 @@ invoked.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>A function wrapping calls to the two functions in an <code>||</code> operation,
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>A function wrapping calls to the two functions in an <code>||</code> operation,
 returning the result of the first function if it is truth-y and the result
 of the second function otherwise.</p>
 </div>
@@ -2630,7 +2634,7 @@ arguments&apos; order is reversed.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Creates a function that will process either the <code>onTrue</code> or the <code>onFalse</code>
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Creates a function that will process either the <code>onTrue</code> or the <code>onFalse</code>
 function depending upon the result of the <code>condition</code> predicate.</p>
 </div>
       </div>
@@ -2749,7 +2753,7 @@ the returned function is invoked.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Wraps a one-parameter function,
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Wraps a one-parameter function,
 new function returns true if passed parameter is undefined, otherwise returns result of calling <code>fn</code></p>
 </div>
       </div>
@@ -2779,7 +2783,7 @@ new function returns true if passed parameter is undefined, otherwise returns re
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Runs the given function with the supplied argument, then returns the argument.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Runs the given function with the supplied argument, then returns the argument.</p>
 </div>
       </div>
     </td>
@@ -2808,7 +2812,7 @@ new function returns true if passed parameter is undefined, otherwise returns re
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Creates a throttled function that only invokes <code>fn</code> at most once per
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Creates a throttled function that only invokes <code>fn</code> at most once per
 every <code>wait</code> milliseconds.</p>
 </div>
       </div>
@@ -2838,7 +2842,7 @@ every <code>wait</code> milliseconds.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Creates a throttled function that only invokes <code>fn</code> at most once per
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Creates a throttled function that only invokes <code>fn</code> at most once per
 every <code>wait</code> milliseconds.</p>
 </div>
       </div>
@@ -2868,7 +2872,7 @@ every <code>wait</code> milliseconds.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Takes two functions, tryer and catcher.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Takes two functions, tryer and catcher.</p>
 </div>
       </div>
     </td>
@@ -2897,7 +2901,7 @@ every <code>wait</code> milliseconds.</p>
       <div>
         <div class="deprecated" data-ice="deprecated">this function was deprecated. use propSet instead</div>
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>A function to change value by property name in object.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>A function to change value by property name in object.</p>
 </div>
       </div>
     </td>
@@ -2926,7 +2930,7 @@ every <code>wait</code> milliseconds.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Tests the final argument by passing it to the given predicate function.</p>
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Tests the final argument by passing it to the given predicate function.</p>
 </div>
       </div>
     </td>
@@ -2994,7 +2998,7 @@ every <code>wait</code> milliseconds.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Memoize function with multiply arguments of any type, but it
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Memoize function with multiply arguments of any type, but it
 clears cache every time it reaches the limit.</p>
 </div>
       </div>
@@ -3053,7 +3057,7 @@ clears cache every time it reaches the limit.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br><code>memoizeWith</code> is a memoize function fabric.</p>
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br><code>memoizeWith</code> is a memoize function fabric.</p>
 </div>
       </div>
     </td>
@@ -3237,7 +3241,7 @@ clears cache every time it reaches the limit.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns <code>true</code> if its arguments are equivalent, <code>false</code> otherwise.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns <code>true</code> if its arguments are equivalent, <code>false</code> otherwise.</p>
 </div>
       </div>
     </td>
@@ -3464,35 +3468,6 @@ clears cache every time it reaches the limit.</p>
           <span data-ice="kind-icon" class="kind-function">F</span>
           
           
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-isReactElement">isReactElement</a></span></span><span class="code" data-ice="signature">(test: <span>*</span>): <span>*</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Returns whether a value is a valid React element</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          <span data-ice="kind-icon" class="kind-function">F</span>
-          
-          
           <span class="code" data-ice="name"><span><a href="function/index.html#static-function-shallowEqual">shallowEqual</a></span></span><span class="code" data-ice="signature">(test1: <span>*</span>, test2: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></span>
         </p>
       </div>
@@ -3625,7 +3600,7 @@ clears cache every time it reaches the limit.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Tests whether every [key, value] pair in the object passes the test implemented by the provided function.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Tests whether every [key, value] pair in the object passes the test implemented by the provided function.</p>
 </div>
       </div>
     </td>
@@ -3654,7 +3629,7 @@ clears cache every time it reaches the limit.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Tests whether at least one [key, value] pair in the object passes the test implemented by the provided function.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Tests whether at least one [key, value] pair in the object passes the test implemented by the provided function.</p>
 </div>
       </div>
     </td>
@@ -3683,7 +3658,7 @@ clears cache every time it reaches the limit.</p>
       <div>
         <div class="deprecated" data-ice="deprecated">this function was deprecated. use object/propSet instead</div>
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Makes a shallow clone of an object, setting or overriding the specified
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Makes a shallow clone of an object, setting or overriding the specified
 property with the given value.</p>
 </div>
       </div>
@@ -3713,7 +3688,7 @@ property with the given value.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Iterate over an input <code>object</code>, calling a provided function <code>fn</code> for each
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Iterate over an input <code>object</code>, calling a provided function <code>fn</code> for each
 key and value in the object.</p>
 </div>
       </div>
@@ -3743,7 +3718,7 @@ key and value in the object.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Reports whether two objects have the same value, in equal
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Reports whether two objects have the same value, in equal
 terms, for the specified property.</p>
 </div>
       </div>
@@ -3773,7 +3748,7 @@ terms, for the specified property.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Takes a predicate and a object, and returns a new object
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Takes a predicate and a object, and returns a new object
 containing only members which satisfy the
 given predicate.</p>
 </div>
@@ -3804,7 +3779,7 @@ given predicate.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns first key in <code>obj</code> satisfied to <code>fn</code>, or undefined if there is no such keys</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns first key in <code>obj</code> satisfied to <code>fn</code>, or undefined if there is no such keys</p>
 </div>
       </div>
     </td>
@@ -3862,7 +3837,7 @@ given predicate.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Creates an object composed of keys generated from the results of running
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Creates an object composed of keys generated from the results of running
 each element of object thru <code>fn</code>.</p>
 </div>
       </div>
@@ -3892,7 +3867,7 @@ each element of object thru <code>fn</code>.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns whether or not an object has an own property with the specified name</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns whether or not an object has an own property with the specified name</p>
 </div>
       </div>
     </td>
@@ -3921,7 +3896,7 @@ each element of object thru <code>fn</code>.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Creates an object composed of keys generated from the results of running
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Creates an object composed of keys generated from the results of running
 each element of object thru <code>fn</code>.</p>
 </div>
       </div>
@@ -3981,7 +3956,7 @@ the supplied object.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Applies <code>fn</code> to each of the <code>obj</code> values, and returns new object.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Applies <code>fn</code> to each of the <code>obj</code> values, and returns new object.</p>
 </div>
       </div>
     </td>
@@ -4010,7 +3985,7 @@ the supplied object.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Create a new object with the own properties of the first object merged with
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Create a new object with the own properties of the first object merged with
 the own properties of the others objects.</p>
 </div>
       </div>
@@ -4040,7 +4015,7 @@ the own properties of the others objects.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Create a new object with the own properties of the first object deeply merged with
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Create a new object with the own properties of the first object deeply merged with
 the own properties of the other objects.</p>
 </div>
       </div>
@@ -4070,7 +4045,7 @@ the own properties of the other objects.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Create a new object with the own properties of the first object merged with
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Create a new object with the own properties of the first object merged with
 the own properties of the others objects.</p>
 </div>
       </div>
@@ -4100,7 +4075,7 @@ the own properties of the others objects.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Creates an object containing a single key:value pair.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Creates an object containing a single key:value pair.</p>
 </div>
       </div>
     </td>
@@ -4129,7 +4104,7 @@ the own properties of the others objects.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns a partial copy of an object omitting the keys specified.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns a partial copy of an object omitting the keys specified.</p>
 </div>
       </div>
     </td>
@@ -4158,7 +4133,7 @@ the own properties of the others objects.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Retrieve the value at a given path.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Retrieve the value at a given path.</p>
 </div>
       </div>
     </td>
@@ -4187,7 +4162,7 @@ the own properties of the others objects.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Returns the result of <code>fn</code> with given value at <code>path</code>.</p>
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Returns the result of <code>fn</code> with given value at <code>path</code>.</p>
 </div>
       </div>
     </td>
@@ -4216,7 +4191,7 @@ the own properties of the others objects.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Determines whether a nested path on an object has a specific value</p>
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Determines whether a nested path on an object has a specific value</p>
 </div>
       </div>
     </td>
@@ -4245,7 +4220,7 @@ the own properties of the others objects.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>If the given, non-null object has a value at the given path, returns the
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>If the given, non-null object has a value at the given path, returns the
 value at that path.</p>
 </div>
       </div>
@@ -4275,7 +4250,7 @@ value at that path.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Returns the result of &quot;setting&quot; the portion of the given data structure
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Returns the result of &quot;setting&quot; the portion of the given data structure
 focused by the given paths to the given value.</p>
 </div>
       </div>
@@ -4305,7 +4280,7 @@ focused by the given paths to the given value.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Returns the result of &quot;setting&quot; the portion of the given data structure
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Returns the result of &quot;setting&quot; the portion of the given data structure
 focused by the given paths to the result of <code>fn</code> call.</p>
 </div>
       </div>
@@ -4335,7 +4310,7 @@ focused by the given paths to the result of <code>fn</code> call.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns a partial copy of an object containing only the keys specified.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns a partial copy of an object containing only the keys specified.</p>
 </div>
       </div>
     </td>
@@ -4364,7 +4339,7 @@ focused by the given paths to the result of <code>fn</code> call.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns a partial copy of an object containing only the keys with <code>fn</code> predicate returns true</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns a partial copy of an object containing only the keys with <code>fn</code> predicate returns true</p>
 </div>
       </div>
     </td>
@@ -4393,7 +4368,7 @@ focused by the given paths to the result of <code>fn</code> call.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns a function that when supplied an object returns the indicated
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns a function that when supplied an object returns the indicated
 property of that object, if it exists.</p>
 </div>
       </div>
@@ -4423,7 +4398,7 @@ property of that object, if it exists.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Returns the result of <code>fn</code> with value of property in <code>obj</code>.</p>
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Returns the result of <code>fn</code> with value of property in <code>obj</code>.</p>
 </div>
       </div>
     </td>
@@ -4452,7 +4427,7 @@ property of that object, if it exists.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Returns <code>true</code> if the specified object property is equal to the given value; <code>false</code> otherwise.</p>
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Returns <code>true</code> if the specified object property is equal to the given value; <code>false</code> otherwise.</p>
 </div>
       </div>
     </td>
@@ -4481,7 +4456,7 @@ property of that object, if it exists.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>If the given, non-null object has an own property with the specified name,
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>If the given, non-null object has an own property with the specified name,
 returns the value of that property.</p>
 </div>
       </div>
@@ -4511,7 +4486,7 @@ returns the value of that property.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Makes a shallow clone of an object, setting or overriding the specified
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Makes a shallow clone of an object, setting or overriding the specified
 property with the given value.</p>
 </div>
       </div>
@@ -4541,7 +4516,7 @@ property with the given value.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Makes a shallow clone of an object, setting or overriding the specified
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Makes a shallow clone of an object, setting or overriding the specified
 property with the result of <code>fn</code> call.</p>
 </div>
       </div>
@@ -4571,7 +4546,7 @@ property with the result of <code>fn</code> call.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Returns a single item by iterating through the obj, successively calling
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Returns a single item by iterating through the obj, successively calling
 the iterator function and passing it an accumulator value, current
 value and current key from the obj, and then passing the result to the next call.</p>
 </div>
@@ -4689,7 +4664,7 @@ value and current key from the obj, and then passing the result to the next call
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Takes a spec object and a test object; returns true if the test satisfies
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Takes a spec object and a test object; returns true if the test satisfies
 the spec.</p>
 </div>
       </div>
@@ -4729,7 +4704,7 @@ the spec.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns a promise that rejects with a value returned
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns a promise that rejects with a value returned
 by the supplied function when passed the supplied payload</p>
 </div>
       </div>
@@ -4759,7 +4734,7 @@ by the supplied function when passed the supplied payload</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns a promise that resolves with a value returned
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns a promise that resolves with a value returned
 by the supplied function when passed the supplied payload</p>
 </div>
       </div>
@@ -4789,7 +4764,7 @@ by the supplied function when passed the supplied payload</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Runs the given promise with the supplied argument.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Runs the given promise with the supplied argument.</p>
 </div>
       </div>
     </td>
@@ -4809,6 +4784,35 @@ by the supplied function when passed the supplied payload</p>
   <tbody>
   
   <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-function">F</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-camelCaseName">camelCaseName</a></span></span><span class="code" data-ice="signature">(str: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Converts string to camel case.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
     <td>
       <span class="access" data-ice="access">public</span>
       
@@ -4857,7 +4861,7 @@ by the supplied function when passed the supplied payload</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Checks if a string ends with the provided postfix</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Checks if a string ends with the provided postfix</p>
 </div>
       </div>
     </td>
@@ -4940,13 +4944,42 @@ corresponding HTML entities.</p>
           <span data-ice="kind-icon" class="kind-function">F</span>
           
           
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-kebabCaseName">kebabCaseName</a></span></span><span class="code" data-ice="signature">(str: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Converts string to kebab case.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-function">F</span>
+          
+          
           <span class="code" data-ice="name"><span><a href="function/index.html#static-function-repeat">repeat</a></span></span><span class="code" data-ice="signature">(n: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span>, value: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Returns a string containing a repeated identical value.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Returns a string containing a repeated identical value.</p>
 </div>
       </div>
     </td>
@@ -4975,7 +5008,36 @@ corresponding HTML entities.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 3 arguments</em><br><br>Replace a substring or regex match in a string with a replacement.</p>
+        <div data-ice="description"><p><em>Autocurry for 3 arguments</em><br><br>Replace a substring or regex match in a string with a replacement.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-function">F</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-snakeCaseName">snakeCaseName</a></span></span><span class="code" data-ice="signature">(str: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Returns the snake case version of a string.</p>
 </div>
       </div>
     </td>
@@ -5004,7 +5066,7 @@ corresponding HTML entities.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Splits a string into an array of strings based on the given
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Splits a string into an array of strings based on the given
 separator.</p>
 </div>
       </div>
@@ -5034,7 +5096,7 @@ separator.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Checks if a string starts with the provided prefix</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Checks if a string starts with the provided prefix</p>
 </div>
       </div>
     </td>
@@ -5063,7 +5125,7 @@ separator.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Replaces string keywords with provided values</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Replaces string keywords with provided values</p>
 </div>
       </div>
     </td>
@@ -5092,7 +5154,7 @@ separator.</p>
       <div>
         
         
-        <div data-ice="description"><p><em>Autocarry for 2 arguments</em><br><br>Determines whether a given string matches a given regular expression.</p>
+        <div data-ice="description"><p><em>Autocurry for 2 arguments</em><br><br>Determines whether a given string matches a given regular expression.</p>
 </div>
       </div>
     </td>
@@ -5269,6 +5331,64 @@ separator.</p>
         <div data-ice="description"><p>The inverse of <code>escape</code>; this method converts the HTML entities
 <code>&amp;amp;</code>, <code>&amp;lt;</code>, <code>&amp;gt;</code>, <code>&amp;quot;</code>, and <code>&amp;#39;</code> in <code>string</code> to
 their corresponding characters.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-function">F</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-upperFirst">upperFirst</a></span></span><span class="code" data-ice="signature">(str: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Converts the first character of string to upper case and returns the new string.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-function">F</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-words">words</a></span></span><span class="code" data-ice="signature">(str: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Splits string into an array of its words.</p>
 </div>
       </div>
     </td>

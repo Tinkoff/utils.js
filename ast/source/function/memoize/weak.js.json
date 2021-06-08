@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 588,
+  "end": 571,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 588,
+    "end": 571,
     "loc": {
       "start": {
         "line": 1,
@@ -99,8 +99,8 @@
       },
       {
         "type": "ImportDeclaration",
-        "start": 35,
-        "end": 70,
+        "start": 34,
+        "end": 69,
         "loc": {
           "start": {
             "line": 2,
@@ -114,8 +114,8 @@
         "specifiers": [
           {
             "type": "ImportDefaultSpecifier",
-            "start": 42,
-            "end": 50,
+            "start": 41,
+            "end": 49,
             "loc": {
               "start": {
                 "line": 2,
@@ -128,8 +128,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 42,
-              "end": 50,
+              "start": 41,
+              "end": 49,
               "loc": {
                 "start": {
                   "line": 2,
@@ -147,8 +147,8 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 56,
-          "end": 69,
+          "start": 55,
+          "end": 68,
           "loc": {
             "start": {
               "line": 2,
@@ -168,9 +168,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Simple memoization using WeakMap.\r\n * Only suitable for functions with single argument of non-primitive type.\r\n *\r\n * @param {Function} fn\r\n * @returns {Function}\r\n * @example\r\n *     const addFlag = obj => ({...obj, flag: true });\r\n *     const memoize = memoizeWeak(addFlag));\r\n *     const test = {test: 1};\r\n *     memoize(test); // from addFlag call\r\n *     memoize({test: 1}); // from addFlag call;\r\n *     memoize(test); // from cache\r\n ",
-            "start": 72,
-            "end": 526,
+            "value": "*\n * Simple memoization using WeakMap.\n * Only suitable for functions with single argument of non-primitive type.\n *\n * @param {Function} fn\n * @returns {Function}\n * @example\n *     const addFlag = obj => ({...obj, flag: true });\n *     const memoize = memoizeWeak(addFlag));\n *     const test = {test: 1};\n *     memoize(test); // from addFlag call\n *     memoize({test: 1}); // from addFlag call;\n *     memoize(test); // from cache\n ",
+            "start": 70,
+            "end": 511,
             "loc": {
               "start": {
                 "line": 3,
@@ -186,8 +186,8 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 528,
-        "end": 586,
+        "start": 512,
+        "end": 570,
         "loc": {
           "start": {
             "line": 17,
@@ -200,8 +200,8 @@
         },
         "declaration": {
           "type": "CallExpression",
-          "start": 543,
-          "end": 585,
+          "start": 527,
+          "end": 569,
           "loc": {
             "start": {
               "line": 17,
@@ -214,8 +214,8 @@
           },
           "callee": {
             "type": "Identifier",
-            "start": 543,
-            "end": 554,
+            "start": 527,
+            "end": 538,
             "loc": {
               "start": {
                 "line": 17,
@@ -233,8 +233,8 @@
           "arguments": [
             {
               "type": "ArrowFunctionExpression",
-              "start": 555,
-              "end": 574,
+              "start": 539,
+              "end": 558,
               "loc": {
                 "start": {
                   "line": 17,
@@ -252,8 +252,8 @@
               "params": [],
               "body": {
                 "type": "NewExpression",
-                "start": 561,
-                "end": 574,
+                "start": 545,
+                "end": 558,
                 "loc": {
                   "start": {
                     "line": 17,
@@ -266,8 +266,8 @@
                 },
                 "callee": {
                   "type": "Identifier",
-                  "start": 565,
-                  "end": 572,
+                  "start": 549,
+                  "end": 556,
                   "loc": {
                     "start": {
                       "line": 17,
@@ -286,8 +286,8 @@
             },
             {
               "type": "Identifier",
-              "start": 576,
-              "end": 584,
+              "start": 560,
+              "end": 568,
               "loc": {
                 "start": {
                   "line": 17,
@@ -305,9 +305,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\r\n * Simple memoization using WeakMap.\r\n * Only suitable for functions with single argument of non-primitive type.\r\n *\r\n * @param {Function} fn\r\n * @returns {Function}\r\n * @example\r\n *     const addFlag = obj => ({...obj, flag: true });\r\n *     const memoize = memoizeWeak(addFlag));\r\n *     const test = {test: 1};\r\n *     memoize(test); // from addFlag call\r\n *     memoize({test: 1}); // from addFlag call;\r\n *     memoize(test); // from cache\r\n ",
-              "start": 72,
-              "end": 526,
+              "value": "*\n * Simple memoization using WeakMap.\n * Only suitable for functions with single argument of non-primitive type.\n *\n * @param {Function} fn\n * @returns {Function}\n * @example\n *     const addFlag = obj => ({...obj, flag: true });\n *     const memoize = memoizeWeak(addFlag));\n *     const test = {test: 1};\n *     memoize(test); // from addFlag call\n *     memoize({test: 1}); // from addFlag call;\n *     memoize(test); // from cache\n ",
+              "start": 70,
+              "end": 511,
               "loc": {
                 "start": {
                   "line": 3,
@@ -325,9 +325,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Simple memoization using WeakMap.\r\n * Only suitable for functions with single argument of non-primitive type.\r\n *\r\n * @param {Function} fn\r\n * @returns {Function}\r\n * @example\r\n *     const addFlag = obj => ({...obj, flag: true });\r\n *     const memoize = memoizeWeak(addFlag));\r\n *     const test = {test: 1};\r\n *     memoize(test); // from addFlag call\r\n *     memoize({test: 1}); // from addFlag call;\r\n *     memoize(test); // from cache\r\n ",
-            "start": 72,
-            "end": 526,
+            "value": "*\n * Simple memoization using WeakMap.\n * Only suitable for functions with single argument of non-primitive type.\n *\n * @param {Function} fn\n * @returns {Function}\n * @example\n *     const addFlag = obj => ({...obj, flag: true });\n *     const memoize = memoizeWeak(addFlag));\n *     const test = {test: 1};\n *     memoize(test); // from addFlag call\n *     memoize({test: 1}); // from addFlag call;\n *     memoize(test); // from cache\n ",
+            "start": 70,
+            "end": 511,
             "loc": {
               "start": {
                 "line": 3,
@@ -347,9 +347,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Simple memoization using WeakMap.\r\n * Only suitable for functions with single argument of non-primitive type.\r\n *\r\n * @param {Function} fn\r\n * @returns {Function}\r\n * @example\r\n *     const addFlag = obj => ({...obj, flag: true });\r\n *     const memoize = memoizeWeak(addFlag));\r\n *     const test = {test: 1};\r\n *     memoize(test); // from addFlag call\r\n *     memoize({test: 1}); // from addFlag call;\r\n *     memoize(test); // from cache\r\n ",
-      "start": 72,
-      "end": 526,
+      "value": "*\n * Simple memoization using WeakMap.\n * Only suitable for functions with single argument of non-primitive type.\n *\n * @param {Function} fn\n * @returns {Function}\n * @example\n *     const addFlag = obj => ({...obj, flag: true });\n *     const memoize = memoizeWeak(addFlag));\n *     const test = {test: 1};\n *     memoize(test); // from addFlag call\n *     memoize({test: 1}); // from addFlag call;\n *     memoize(test); // from cache\n ",
+      "start": 70,
+      "end": 511,
       "loc": {
         "start": {
           "line": 3,
@@ -511,8 +511,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 35,
-      "end": 41,
+      "start": 34,
+      "end": 40,
       "loc": {
         "start": {
           "line": 2,
@@ -537,8 +537,8 @@
         "binop": null
       },
       "value": "identity",
-      "start": 42,
-      "end": 50,
+      "start": 41,
+      "end": 49,
       "loc": {
         "start": {
           "line": 2,
@@ -563,8 +563,8 @@
         "binop": null
       },
       "value": "from",
-      "start": 51,
-      "end": 55,
+      "start": 50,
+      "end": 54,
       "loc": {
         "start": {
           "line": 2,
@@ -590,8 +590,8 @@
         "updateContext": null
       },
       "value": "../identity",
-      "start": 56,
-      "end": 69,
+      "start": 55,
+      "end": 68,
       "loc": {
         "start": {
           "line": 2,
@@ -616,8 +616,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 69,
-      "end": 70,
+      "start": 68,
+      "end": 69,
       "loc": {
         "start": {
           "line": 2,
@@ -631,9 +631,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Simple memoization using WeakMap.\r\n * Only suitable for functions with single argument of non-primitive type.\r\n *\r\n * @param {Function} fn\r\n * @returns {Function}\r\n * @example\r\n *     const addFlag = obj => ({...obj, flag: true });\r\n *     const memoize = memoizeWeak(addFlag));\r\n *     const test = {test: 1};\r\n *     memoize(test); // from addFlag call\r\n *     memoize({test: 1}); // from addFlag call;\r\n *     memoize(test); // from cache\r\n ",
-      "start": 72,
-      "end": 526,
+      "value": "*\n * Simple memoization using WeakMap.\n * Only suitable for functions with single argument of non-primitive type.\n *\n * @param {Function} fn\n * @returns {Function}\n * @example\n *     const addFlag = obj => ({...obj, flag: true });\n *     const memoize = memoizeWeak(addFlag));\n *     const test = {test: 1};\n *     memoize(test); // from addFlag call\n *     memoize({test: 1}); // from addFlag call;\n *     memoize(test); // from cache\n ",
+      "start": 70,
+      "end": 511,
       "loc": {
         "start": {
           "line": 3,
@@ -660,8 +660,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 528,
-      "end": 534,
+      "start": 512,
+      "end": 518,
       "loc": {
         "start": {
           "line": 17,
@@ -688,8 +688,8 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 535,
-      "end": 542,
+      "start": 519,
+      "end": 526,
       "loc": {
         "start": {
           "line": 17,
@@ -714,8 +714,8 @@
         "binop": null
       },
       "value": "memoizeWith",
-      "start": 543,
-      "end": 554,
+      "start": 527,
+      "end": 538,
       "loc": {
         "start": {
           "line": 17,
@@ -739,8 +739,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 554,
-      "end": 555,
+      "start": 538,
+      "end": 539,
       "loc": {
         "start": {
           "line": 17,
@@ -764,8 +764,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 555,
-      "end": 556,
+      "start": 539,
+      "end": 540,
       "loc": {
         "start": {
           "line": 17,
@@ -789,8 +789,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 556,
-      "end": 557,
+      "start": 540,
+      "end": 541,
       "loc": {
         "start": {
           "line": 17,
@@ -815,8 +815,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 558,
-      "end": 560,
+      "start": 542,
+      "end": 544,
       "loc": {
         "start": {
           "line": 17,
@@ -843,8 +843,8 @@
         "updateContext": null
       },
       "value": "new",
-      "start": 561,
-      "end": 564,
+      "start": 545,
+      "end": 548,
       "loc": {
         "start": {
           "line": 17,
@@ -869,8 +869,8 @@
         "binop": null
       },
       "value": "WeakMap",
-      "start": 565,
-      "end": 572,
+      "start": 549,
+      "end": 556,
       "loc": {
         "start": {
           "line": 17,
@@ -894,8 +894,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 572,
-      "end": 573,
+      "start": 556,
+      "end": 557,
       "loc": {
         "start": {
           "line": 17,
@@ -919,8 +919,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 573,
-      "end": 574,
+      "start": 557,
+      "end": 558,
       "loc": {
         "start": {
           "line": 17,
@@ -945,8 +945,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 574,
-      "end": 575,
+      "start": 558,
+      "end": 559,
       "loc": {
         "start": {
           "line": 17,
@@ -971,8 +971,8 @@
         "binop": null
       },
       "value": "identity",
-      "start": 576,
-      "end": 584,
+      "start": 560,
+      "end": 568,
       "loc": {
         "start": {
           "line": 17,
@@ -996,8 +996,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 584,
-      "end": 585,
+      "start": 568,
+      "end": 569,
       "loc": {
         "start": {
           "line": 17,
@@ -1022,8 +1022,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 585,
-      "end": 586,
+      "start": 569,
+      "end": 570,
       "loc": {
         "start": {
           "line": 17,
@@ -1048,8 +1048,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 588,
-      "end": 588,
+      "start": 571,
+      "end": 571,
       "loc": {
         "start": {
           "line": 18,

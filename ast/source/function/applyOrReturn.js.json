@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 571,
+  "end": 553,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 571,
+    "end": 553,
     "loc": {
       "start": {
         "line": 1,
@@ -99,9 +99,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * If `test` is function it calls with applied first argument, otherwise just returns `test`\r\n *\r\n * @param {Array} args Arguments passed to `test` if it's a function\r\n * @param {*} test if `test` is function it's called with `args`\r\n * @return {*}\r\n * @example\r\n *\r\n *      applyOrReturn([1,2,3], (...args) => args) // => [1,2,3]\r\n *      applyOrReturn([1,2,3], 'test') // => 'test'\r\n ",
-            "start": 32,
-            "end": 425,
+            "value": "*\n * If `test` is function it calls with applied first argument, otherwise just returns `test`\n *\n * @param {Array} args Arguments passed to `test` if it's a function\n * @param {*} test if `test` is function it's called with `args`\n * @return {*}\n * @example\n *\n *      applyOrReturn([1,2,3], (...args) => args) // => [1,2,3]\n *      applyOrReturn([1,2,3], 'test') // => 'test'\n ",
+            "start": 31,
+            "end": 414,
             "loc": {
               "start": {
                 "line": 2,
@@ -117,8 +117,8 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 427,
-        "end": 569,
+        "start": 415,
+        "end": 552,
         "loc": {
           "start": {
             "line": 13,
@@ -131,8 +131,8 @@
         },
         "declaration": {
           "type": "ArrowFunctionExpression",
-          "start": 452,
-          "end": 567,
+          "start": 440,
+          "end": 550,
           "loc": {
             "start": {
               "line": 13,
@@ -150,8 +150,8 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 453,
-              "end": 457,
+              "start": 441,
+              "end": 445,
               "loc": {
                 "start": {
                   "line": 13,
@@ -167,8 +167,8 @@
             },
             {
               "type": "Identifier",
-              "start": 459,
-              "end": 463,
+              "start": 447,
+              "end": 451,
               "loc": {
                 "start": {
                   "line": 13,
@@ -185,8 +185,8 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 468,
-            "end": 567,
+            "start": 456,
+            "end": 550,
             "loc": {
               "start": {
                 "line": 13,
@@ -200,8 +200,8 @@
             "body": [
               {
                 "type": "IfStatement",
-                "start": 475,
-                "end": 546,
+                "start": 462,
+                "end": 531,
                 "loc": {
                   "start": {
                     "line": 14,
@@ -214,8 +214,8 @@
                 },
                 "test": {
                   "type": "BinaryExpression",
-                  "start": 479,
-                  "end": 505,
+                  "start": 466,
+                  "end": 492,
                   "loc": {
                     "start": {
                       "line": 14,
@@ -228,8 +228,8 @@
                   },
                   "left": {
                     "type": "UnaryExpression",
-                    "start": 479,
-                    "end": 490,
+                    "start": 466,
+                    "end": 477,
                     "loc": {
                       "start": {
                         "line": 14,
@@ -244,8 +244,8 @@
                     "prefix": true,
                     "argument": {
                       "type": "Identifier",
-                      "start": 486,
-                      "end": 490,
+                      "start": 473,
+                      "end": 477,
                       "loc": {
                         "start": {
                           "line": 14,
@@ -266,8 +266,8 @@
                   "operator": "===",
                   "right": {
                     "type": "StringLiteral",
-                    "start": 495,
-                    "end": 505,
+                    "start": 482,
+                    "end": 492,
                     "loc": {
                       "start": {
                         "line": 14,
@@ -287,8 +287,8 @@
                 },
                 "consequent": {
                   "type": "BlockStatement",
-                  "start": 507,
-                  "end": 546,
+                  "start": 494,
+                  "end": 531,
                   "loc": {
                     "start": {
                       "line": 14,
@@ -302,8 +302,8 @@
                   "body": [
                     {
                       "type": "ReturnStatement",
-                      "start": 518,
-                      "end": 539,
+                      "start": 504,
+                      "end": 525,
                       "loc": {
                         "start": {
                           "line": 15,
@@ -316,8 +316,8 @@
                       },
                       "argument": {
                         "type": "CallExpression",
-                        "start": 525,
-                        "end": 538,
+                        "start": 511,
+                        "end": 524,
                         "loc": {
                           "start": {
                             "line": 15,
@@ -330,8 +330,8 @@
                         },
                         "callee": {
                           "type": "Identifier",
-                          "start": 525,
-                          "end": 529,
+                          "start": 511,
+                          "end": 515,
                           "loc": {
                             "start": {
                               "line": 15,
@@ -348,8 +348,8 @@
                         "arguments": [
                           {
                             "type": "SpreadElement",
-                            "start": 530,
-                            "end": 537,
+                            "start": 516,
+                            "end": 523,
                             "loc": {
                               "start": {
                                 "line": 15,
@@ -362,8 +362,8 @@
                             },
                             "argument": {
                               "type": "Identifier",
-                              "start": 533,
-                              "end": 537,
+                              "start": 519,
+                              "end": 523,
                               "loc": {
                                 "start": {
                                   "line": 15,
@@ -388,8 +388,8 @@
               },
               {
                 "type": "ReturnStatement",
-                "start": 552,
-                "end": 564,
+                "start": 536,
+                "end": 548,
                 "loc": {
                   "start": {
                     "line": 17,
@@ -402,8 +402,8 @@
                 },
                 "argument": {
                   "type": "Identifier",
-                  "start": 559,
-                  "end": 563,
+                  "start": 543,
+                  "end": 547,
                   "loc": {
                     "start": {
                       "line": 17,
@@ -425,9 +425,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\r\n * If `test` is function it calls with applied first argument, otherwise just returns `test`\r\n *\r\n * @param {Array} args Arguments passed to `test` if it's a function\r\n * @param {*} test if `test` is function it's called with `args`\r\n * @return {*}\r\n * @example\r\n *\r\n *      applyOrReturn([1,2,3], (...args) => args) // => [1,2,3]\r\n *      applyOrReturn([1,2,3], 'test') // => 'test'\r\n ",
-              "start": 32,
-              "end": 425,
+              "value": "*\n * If `test` is function it calls with applied first argument, otherwise just returns `test`\n *\n * @param {Array} args Arguments passed to `test` if it's a function\n * @param {*} test if `test` is function it's called with `args`\n * @return {*}\n * @example\n *\n *      applyOrReturn([1,2,3], (...args) => args) // => [1,2,3]\n *      applyOrReturn([1,2,3], 'test') // => 'test'\n ",
+              "start": 31,
+              "end": 414,
               "loc": {
                 "start": {
                   "line": 2,
@@ -445,9 +445,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * If `test` is function it calls with applied first argument, otherwise just returns `test`\r\n *\r\n * @param {Array} args Arguments passed to `test` if it's a function\r\n * @param {*} test if `test` is function it's called with `args`\r\n * @return {*}\r\n * @example\r\n *\r\n *      applyOrReturn([1,2,3], (...args) => args) // => [1,2,3]\r\n *      applyOrReturn([1,2,3], 'test') // => 'test'\r\n ",
-            "start": 32,
-            "end": 425,
+            "value": "*\n * If `test` is function it calls with applied first argument, otherwise just returns `test`\n *\n * @param {Array} args Arguments passed to `test` if it's a function\n * @param {*} test if `test` is function it's called with `args`\n * @return {*}\n * @example\n *\n *      applyOrReturn([1,2,3], (...args) => args) // => [1,2,3]\n *      applyOrReturn([1,2,3], 'test') // => 'test'\n ",
+            "start": 31,
+            "end": 414,
             "loc": {
               "start": {
                 "line": 2,
@@ -467,9 +467,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\r\n * If `test` is function it calls with applied first argument, otherwise just returns `test`\r\n *\r\n * @param {Array} args Arguments passed to `test` if it's a function\r\n * @param {*} test if `test` is function it's called with `args`\r\n * @return {*}\r\n * @example\r\n *\r\n *      applyOrReturn([1,2,3], (...args) => args) // => [1,2,3]\r\n *      applyOrReturn([1,2,3], 'test') // => 'test'\r\n ",
-      "start": 32,
-      "end": 425,
+      "value": "*\n * If `test` is function it calls with applied first argument, otherwise just returns `test`\n *\n * @param {Array} args Arguments passed to `test` if it's a function\n * @param {*} test if `test` is function it's called with `args`\n * @return {*}\n * @example\n *\n *      applyOrReturn([1,2,3], (...args) => args) // => [1,2,3]\n *      applyOrReturn([1,2,3], 'test') // => 'test'\n ",
+      "start": 31,
+      "end": 414,
       "loc": {
         "start": {
           "line": 2,
@@ -618,9 +618,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\r\n * If `test` is function it calls with applied first argument, otherwise just returns `test`\r\n *\r\n * @param {Array} args Arguments passed to `test` if it's a function\r\n * @param {*} test if `test` is function it's called with `args`\r\n * @return {*}\r\n * @example\r\n *\r\n *      applyOrReturn([1,2,3], (...args) => args) // => [1,2,3]\r\n *      applyOrReturn([1,2,3], 'test') // => 'test'\r\n ",
-      "start": 32,
-      "end": 425,
+      "value": "*\n * If `test` is function it calls with applied first argument, otherwise just returns `test`\n *\n * @param {Array} args Arguments passed to `test` if it's a function\n * @param {*} test if `test` is function it's called with `args`\n * @return {*}\n * @example\n *\n *      applyOrReturn([1,2,3], (...args) => args) // => [1,2,3]\n *      applyOrReturn([1,2,3], 'test') // => 'test'\n ",
+      "start": 31,
+      "end": 414,
       "loc": {
         "start": {
           "line": 2,
@@ -647,8 +647,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 427,
-      "end": 433,
+      "start": 415,
+      "end": 421,
       "loc": {
         "start": {
           "line": 13,
@@ -675,8 +675,8 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 434,
-      "end": 441,
+      "start": 422,
+      "end": 429,
       "loc": {
         "start": {
           "line": 13,
@@ -701,8 +701,8 @@
         "binop": null
       },
       "value": "curryN",
-      "start": 442,
-      "end": 448,
+      "start": 430,
+      "end": 436,
       "loc": {
         "start": {
           "line": 13,
@@ -726,8 +726,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 448,
-      "end": 449,
+      "start": 436,
+      "end": 437,
       "loc": {
         "start": {
           "line": 13,
@@ -753,8 +753,8 @@
         "updateContext": null
       },
       "value": 2,
-      "start": 449,
-      "end": 450,
+      "start": 437,
+      "end": 438,
       "loc": {
         "start": {
           "line": 13,
@@ -779,8 +779,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 450,
-      "end": 451,
+      "start": 438,
+      "end": 439,
       "loc": {
         "start": {
           "line": 13,
@@ -804,8 +804,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 452,
-      "end": 453,
+      "start": 440,
+      "end": 441,
       "loc": {
         "start": {
           "line": 13,
@@ -830,8 +830,8 @@
         "binop": null
       },
       "value": "args",
-      "start": 453,
-      "end": 457,
+      "start": 441,
+      "end": 445,
       "loc": {
         "start": {
           "line": 13,
@@ -856,8 +856,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 457,
-      "end": 458,
+      "start": 445,
+      "end": 446,
       "loc": {
         "start": {
           "line": 13,
@@ -882,8 +882,8 @@
         "binop": null
       },
       "value": "test",
-      "start": 459,
-      "end": 463,
+      "start": 447,
+      "end": 451,
       "loc": {
         "start": {
           "line": 13,
@@ -907,8 +907,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 463,
-      "end": 464,
+      "start": 451,
+      "end": 452,
       "loc": {
         "start": {
           "line": 13,
@@ -933,8 +933,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 465,
-      "end": 467,
+      "start": 453,
+      "end": 455,
       "loc": {
         "start": {
           "line": 13,
@@ -958,8 +958,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 468,
-      "end": 469,
+      "start": 456,
+      "end": 457,
       "loc": {
         "start": {
           "line": 13,
@@ -986,8 +986,8 @@
         "updateContext": null
       },
       "value": "if",
-      "start": 475,
-      "end": 477,
+      "start": 462,
+      "end": 464,
       "loc": {
         "start": {
           "line": 14,
@@ -1011,8 +1011,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 478,
-      "end": 479,
+      "start": 465,
+      "end": 466,
       "loc": {
         "start": {
           "line": 14,
@@ -1039,8 +1039,8 @@
         "updateContext": null
       },
       "value": "typeof",
-      "start": 479,
-      "end": 485,
+      "start": 466,
+      "end": 472,
       "loc": {
         "start": {
           "line": 14,
@@ -1065,8 +1065,8 @@
         "binop": null
       },
       "value": "test",
-      "start": 486,
-      "end": 490,
+      "start": 473,
+      "end": 477,
       "loc": {
         "start": {
           "line": 14,
@@ -1092,8 +1092,8 @@
         "updateContext": null
       },
       "value": "===",
-      "start": 491,
-      "end": 494,
+      "start": 478,
+      "end": 481,
       "loc": {
         "start": {
           "line": 14,
@@ -1119,8 +1119,8 @@
         "updateContext": null
       },
       "value": "function",
-      "start": 495,
-      "end": 505,
+      "start": 482,
+      "end": 492,
       "loc": {
         "start": {
           "line": 14,
@@ -1144,8 +1144,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 505,
-      "end": 506,
+      "start": 492,
+      "end": 493,
       "loc": {
         "start": {
           "line": 14,
@@ -1169,8 +1169,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 507,
-      "end": 508,
+      "start": 494,
+      "end": 495,
       "loc": {
         "start": {
           "line": 14,
@@ -1197,8 +1197,8 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 518,
-      "end": 524,
+      "start": 504,
+      "end": 510,
       "loc": {
         "start": {
           "line": 15,
@@ -1223,8 +1223,8 @@
         "binop": null
       },
       "value": "test",
-      "start": 525,
-      "end": 529,
+      "start": 511,
+      "end": 515,
       "loc": {
         "start": {
           "line": 15,
@@ -1248,8 +1248,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 529,
-      "end": 530,
+      "start": 515,
+      "end": 516,
       "loc": {
         "start": {
           "line": 15,
@@ -1274,8 +1274,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 530,
-      "end": 533,
+      "start": 516,
+      "end": 519,
       "loc": {
         "start": {
           "line": 15,
@@ -1300,8 +1300,8 @@
         "binop": null
       },
       "value": "args",
-      "start": 533,
-      "end": 537,
+      "start": 519,
+      "end": 523,
       "loc": {
         "start": {
           "line": 15,
@@ -1325,8 +1325,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 537,
-      "end": 538,
+      "start": 523,
+      "end": 524,
       "loc": {
         "start": {
           "line": 15,
@@ -1351,8 +1351,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 538,
-      "end": 539,
+      "start": 524,
+      "end": 525,
       "loc": {
         "start": {
           "line": 15,
@@ -1376,8 +1376,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 545,
-      "end": 546,
+      "start": 530,
+      "end": 531,
       "loc": {
         "start": {
           "line": 16,
@@ -1404,8 +1404,8 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 552,
-      "end": 558,
+      "start": 536,
+      "end": 542,
       "loc": {
         "start": {
           "line": 17,
@@ -1430,8 +1430,8 @@
         "binop": null
       },
       "value": "test",
-      "start": 559,
-      "end": 563,
+      "start": 543,
+      "end": 547,
       "loc": {
         "start": {
           "line": 17,
@@ -1456,8 +1456,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 563,
-      "end": 564,
+      "start": 547,
+      "end": 548,
       "loc": {
         "start": {
           "line": 17,
@@ -1481,8 +1481,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 566,
-      "end": 567,
+      "start": 549,
+      "end": 550,
       "loc": {
         "start": {
           "line": 18,
@@ -1506,8 +1506,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 567,
-      "end": 568,
+      "start": 550,
+      "end": 551,
       "loc": {
         "start": {
           "line": 18,
@@ -1532,8 +1532,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 568,
-      "end": 569,
+      "start": 551,
+      "end": 552,
       "loc": {
         "start": {
           "line": 18,
@@ -1558,8 +1558,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 571,
-      "end": 571,
+      "start": 553,
+      "end": 553,
       "loc": {
         "start": {
           "line": 19,

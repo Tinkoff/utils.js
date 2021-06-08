@@ -5,59 +5,59 @@
     "lines": [
       {
         "lineNumber": 2,
-        "line": "/**\r"
+        "line": "/**"
       },
       {
         "lineNumber": 3,
-        "line": " * Creates an array of arrays generated from the results of running\r"
+        "line": " * Creates an array of arrays generated from the results of running"
       },
       {
         "lineNumber": 4,
-        "line": " * each element of list thru each `fn`. The corresponding\r"
+        "line": " * each element of list thru each `fn`. The corresponding"
       },
       {
         "lineNumber": 5,
-        "line": " * value of each index is an array of elements satisfies to function with that index, and\r"
+        "line": " * value of each index is an array of elements satisfies to function with that index, and"
       },
       {
         "lineNumber": 6,
-        "line": " * the last array is elements with no satisfied function\r"
+        "line": " * the last array is elements with no satisfied function"
       },
       {
         "lineNumber": 7,
-        "line": " *\r"
+        "line": " *"
       },
       {
         "lineNumber": 8,
-        "line": " * @param {Array<Function>} fns The functions to check values in a list.\r"
+        "line": " * @param {Array<Function>} fns The functions to check values in a list."
       },
       {
         "lineNumber": 9,
-        "line": " * @param {Array} list The list to iterate over.\r"
+        "line": " * @param {Array} list The list to iterate over."
       },
       {
         "lineNumber": 10,
-        "line": " * @returns {Array} Returns the composed array.\r"
+        "line": " * @returns {Array} Returns the composed array."
       },
       {
         "lineNumber": 11,
-        "line": " * @example\r"
+        "line": " * @example"
       },
       {
         "lineNumber": 12,
-        "line": " *\r"
+        "line": " *"
       },
       {
         "lineNumber": 13,
-        "line": " * groupBy([isPositive, isZero, isNegative], [0, -3, 2, 'str', 4, -1]);// => [[2,4], [0], [-3, -1], ['str']]\r"
+        "line": " * groupBy([isPositive, isZero, isNegative], [0, -3, 2, 'str', 4, -1]);// => [[2,4], [0], [-3, -1], ['str']]"
       },
       {
         "lineNumber": 14,
-        "line": " */\r"
+        "line": " */"
       },
       {
         "lineNumber": 15,
-        "line": "export default curryN(2, (fns, arr = []) => {\r"
+        "line": "export default curryN(2, (fns, arr = []) => {"
       }
     ],
     "codeParams": [
@@ -75,71 +75,71 @@
     "lines": [
       {
         "lineNumber": 2,
-        "line": "/**\r"
+        "line": "/**"
       },
       {
         "lineNumber": 3,
-        "line": " * Memoize function with multiply arguments of any type, but it\r"
+        "line": " * Memoize function with multiply arguments of any type, but it"
       },
       {
         "lineNumber": 4,
-        "line": " * clears cache every time it reaches the limit. Use it when you need\r"
+        "line": " * clears cache every time it reaches the limit. Use it when you need"
       },
       {
         "lineNumber": 5,
-        "line": " * deep equality for cache lookup and afraid of memory leak.\r"
+        "line": " * deep equality for cache lookup and afraid of memory leak."
       },
       {
         "lineNumber": 6,
-        "line": " *\r"
+        "line": " *"
       },
       {
         "lineNumber": 7,
-        "line": " * @param {Number} sizeLimit. Cache size limit\r"
+        "line": " * @param {Number} sizeLimit. Cache size limit"
       },
       {
         "lineNumber": 8,
-        "line": " * @returns {Function} fn\r"
+        "line": " * @returns {Function} fn"
       },
       {
         "lineNumber": 9,
-        "line": " * @example\r"
+        "line": " * @example"
       },
       {
         "lineNumber": 10,
-        "line": " *     const addFlag = obj => ({...obj, flag: true });\r"
+        "line": " *     const addFlag = obj => ({...obj, flag: true });"
       },
       {
         "lineNumber": 11,
-        "line": " *     const memoize = memoizeDeepSizeLimit(2, addFlag));\r"
+        "line": " *     const memoize = memoizeDeepSizeLimit(2, addFlag));"
       },
       {
         "lineNumber": 12,
-        "line": " *     memoize({test: 2}); // from addFlag call\r"
+        "line": " *     memoize({test: 2}); // from addFlag call"
       },
       {
         "lineNumber": 13,
-        "line": " *     memoize({test: 2}); // from cache\r"
+        "line": " *     memoize({test: 2}); // from cache"
       },
       {
         "lineNumber": 14,
-        "line": " *     memoize({test: 3}); //from addFlag call\r"
+        "line": " *     memoize({test: 3}); //from addFlag call"
       },
       {
         "lineNumber": 15,
-        "line": " *     memoize({test: 4}); // from addFlag call\r"
+        "line": " *     memoize({test: 4}); // from addFlag call"
       },
       {
         "lineNumber": 16,
-        "line": " *     memoize({test: 2}); // from addFlag call (memory was cleared)\r"
+        "line": " *     memoize({test: 2}); // from addFlag call (memory was cleared)"
       },
       {
         "lineNumber": 17,
-        "line": " */\r"
+        "line": " */"
       },
       {
         "lineNumber": 18,
-        "line": "export default curryN(2, (maxSize, fn) => memoizeWith(() => createSizedCache(maxSize), (...args) => JSON.stringify(args), fn));\r"
+        "line": "export default curryN(2, (maxSize, fn) => memoizeWith(() => createSizedCache(maxSize), (...args) => JSON.stringify(args), fn));"
       }
     ],
     "codeParams": [
@@ -154,107 +154,107 @@
     "lines": [
       {
         "lineNumber": 1,
-        "line": "/**\r"
+        "line": "/**"
       },
       {
         "lineNumber": 2,
-        "line": " * `memoizeWith` is a memoize function fabric. It has simple classic memoization signature.\r"
+        "line": " * `memoizeWith` is a memoize function fabric. It has simple classic memoization signature."
       },
       {
         "lineNumber": 3,
-        "line": " * Use it to build your own memoization function.\r"
+        "line": " * Use it to build your own memoization function."
       },
       {
         "lineNumber": 4,
-        "line": " *\r"
+        "line": " *"
       },
       {
         "lineNumber": 5,
-        "line": " * It takes  three params:\r"
+        "line": " * It takes  three params:"
       },
       {
         "lineNumber": 6,
-        "line": " * 1) function that will be used to create cache object.\r"
+        "line": " * 1) function that will be used to create cache object."
       },
       {
         "lineNumber": 7,
-        "line": " * Cache must have three methods - get, has, set. So it's compatible with Map, WeakMap, LRU (https://www.npmjs.com/package/lru-cache) instances.\r"
+        "line": " * Cache must have three methods - get, has, set. So it's compatible with Map, WeakMap, LRU (https://www.npmjs.com/package/lru-cache) instances."
       },
       {
         "lineNumber": 8,
-        "line": " * 2) function that will be used to create hash key for cache lookup. It is invoked with arguments for result function.\r"
+        "line": " * 2) function that will be used to create hash key for cache lookup. It is invoked with arguments for result function."
       },
       {
         "lineNumber": 9,
-        "line": " * 3) function, that will be memoized.\r"
+        "line": " * 3) function, that will be memoized."
       },
       {
         "lineNumber": 10,
-        "line": " * *\r"
+        "line": " * *"
       },
       {
         "lineNumber": 11,
-        "line": " * @param {Function} createCache - creates cache object\r"
+        "line": " * @param {Function} createCache - creates cache object"
       },
       {
         "lineNumber": 12,
-        "line": " * @param {Function} hasher - creates hash for given arguments\r"
+        "line": " * @param {Function} hasher - creates hash for given arguments"
       },
       {
         "lineNumber": 13,
-        "line": " * @param {Function} function that will be memoized\r"
+        "line": " * @param {Function} function that will be memoized"
       },
       {
         "lineNumber": 14,
-        "line": " * @return {Function}\r"
+        "line": " * @return {Function}"
       },
       {
         "lineNumber": 15,
-        "line": " * @example\r"
+        "line": " * @example"
       },
       {
         "lineNumber": 16,
-        "line": " *      const createCache = () => new Map();\r"
+        "line": " *      const createCache = () => new Map();"
       },
       {
         "lineNumber": 17,
-        "line": " *      const hasher = (...args) => JSON.stringify(args);\r"
+        "line": " *      const hasher = (...args) => JSON.stringify(args);"
       },
       {
         "lineNumber": 18,
-        "line": " *      const memoize = memoizeWith(createCache, hasher);\r"
+        "line": " *      const memoize = memoizeWith(createCache, hasher);"
       },
       {
         "lineNumber": 19,
-        "line": " *\r"
+        "line": " *"
       },
       {
         "lineNumber": 20,
-        "line": " *      const add = (a,b) => a + b;\r"
+        "line": " *      const add = (a,b) => a + b;"
       },
       {
         "lineNumber": 21,
-        "line": " *      const memoizeAdd = memoize(add);\r"
+        "line": " *      const memoizeAdd = memoize(add);"
       },
       {
         "lineNumber": 22,
-        "line": " *      const sum = add(1,3); // from original add call\r"
+        "line": " *      const sum = add(1,3); // from original add call"
       },
       {
         "lineNumber": 23,
-        "line": " *      const sum = add(1,4); // from original add call\r"
+        "line": " *      const sum = add(1,4); // from original add call"
       },
       {
         "lineNumber": 24,
-        "line": " *      const sum = add(1,3); // from cache\r"
+        "line": " *      const sum = add(1,3); // from cache"
       },
       {
         "lineNumber": 25,
-        "line": " */\r"
+        "line": " */"
       },
       {
         "lineNumber": 26,
-        "line": "export default curryN(3, (getCache, hasher, fn) => {\r"
+        "line": "export default curryN(3, (getCache, hasher, fn) => {"
       }
     ],
     "codeParams": [
@@ -274,59 +274,59 @@
     "lines": [
       {
         "lineNumber": 1,
-        "line": "/**\r"
+        "line": "/**"
       },
       {
         "lineNumber": 2,
-        "line": " * Wraps a one-parameter function,\r"
+        "line": " * Wraps a one-parameter function,"
       },
       {
         "lineNumber": 3,
-        "line": " * new function returns true if passed parameter is undefined, otherwise returns result of calling `fn`\r"
+        "line": " * new function returns true if passed parameter is undefined, otherwise returns result of calling `fn`"
       },
       {
         "lineNumber": 4,
-        "line": " *\r"
+        "line": " *"
       },
       {
         "lineNumber": 5,
-        "line": " * @param {Function} fn function to wrap\r"
+        "line": " * @param {Function} fn function to wrap"
       },
       {
         "lineNumber": 6,
-        "line": " * @returns {Function}\r"
+        "line": " * @returns {Function}"
       },
       {
         "lineNumber": 7,
-        "line": " * @example\r"
+        "line": " * @example"
       },
       {
         "lineNumber": 8,
-        "line": " *\r"
+        "line": " *"
       },
       {
         "lineNumber": 9,
-        "line": " *      const optIsString = optional(isString);\r"
+        "line": " *      const optIsString = optional(isString);"
       },
       {
         "lineNumber": 10,
-        "line": " *      optIsString() // => true\r"
+        "line": " *      optIsString() // => true"
       },
       {
         "lineNumber": 11,
-        "line": " *      optIsString({}) // => false\r"
+        "line": " *      optIsString({}) // => false"
       },
       {
         "lineNumber": 12,
-        "line": " *      optIsString('str') // => true\r"
+        "line": " *      optIsString('str') // => true"
       },
       {
         "lineNumber": 13,
-        "line": " */\r"
+        "line": " */"
       },
       {
         "lineNumber": 14,
-        "line": "export default curryN(2, (fn, x) => typeof x === 'undefined' || fn(x));\r"
+        "line": "export default curryN(2, (fn, x) => typeof x === 'undefined' || fn(x));"
       }
     ],
     "codeParams": [

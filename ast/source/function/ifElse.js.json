@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 972,
+  "end": 951,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 972,
+    "end": 951,
     "loc": {
       "start": {
         "line": 1,
@@ -99,9 +99,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Creates a function that will process either the `onTrue` or the `onFalse`\r\n * function depending upon the result of the `condition` predicate.\r\n *\r\n * @param {Function} condition A predicate function\r\n * @param {Function} onTrue A function to invoke when the `condition` evaluates to a truthy value.\r\n * @param {Function} onFalse A function to invoke when the `condition` evaluates to a falsy value.\r\n * @return {Function} A new unary function that will process either the `onTrue` or the `onFalse`\r\n *                    function depending upon the result of the `condition` predicate.\r\n * @example\r\n *\r\n *      const prop = ifElse(\r\n *        x => x.a,\r\n *        x => x.b,\r\n *        x => x.c\r\n *      );\r\n *      prop({ a: false, c: 2 }); //=> 2\r\n *      prop({ a: true, b: 1, c: 2 }); //=> 1\r\n ",
-            "start": 32,
-            "end": 841,
+            "value": "*\n * Creates a function that will process either the `onTrue` or the `onFalse`\n * function depending upon the result of the `condition` predicate.\n *\n * @param {Function} condition A predicate function\n * @param {Function} onTrue A function to invoke when the `condition` evaluates to a truthy value.\n * @param {Function} onFalse A function to invoke when the `condition` evaluates to a falsy value.\n * @return {Function} A new unary function that will process either the `onTrue` or the `onFalse`\n *                    function depending upon the result of the `condition` predicate.\n * @example\n *\n *      const prop = ifElse(\n *        x => x.a,\n *        x => x.b,\n *        x => x.c\n *      );\n *      prop({ a: false, c: 2 }); //=> 2\n *      prop({ a: true, b: 1, c: 2 }); //=> 1\n ",
+            "start": 31,
+            "end": 822,
             "loc": {
               "start": {
                 "line": 2,
@@ -117,8 +117,8 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 843,
-        "end": 970,
+        "start": 823,
+        "end": 950,
         "loc": {
           "start": {
             "line": 21,
@@ -131,8 +131,8 @@
         },
         "declaration": {
           "type": "ArrowFunctionExpression",
-          "start": 868,
-          "end": 968,
+          "start": 848,
+          "end": 948,
           "loc": {
             "start": {
               "line": 21,
@@ -150,8 +150,8 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 869,
-              "end": 878,
+              "start": 849,
+              "end": 858,
               "loc": {
                 "start": {
                   "line": 21,
@@ -167,8 +167,8 @@
             },
             {
               "type": "Identifier",
-              "start": 880,
-              "end": 886,
+              "start": 860,
+              "end": 866,
               "loc": {
                 "start": {
                   "line": 21,
@@ -184,8 +184,8 @@
             },
             {
               "type": "Identifier",
-              "start": 888,
-              "end": 895,
+              "start": 868,
+              "end": 875,
               "loc": {
                 "start": {
                   "line": 21,
@@ -202,8 +202,8 @@
           ],
           "body": {
             "type": "ArrowFunctionExpression",
-            "start": 900,
-            "end": 968,
+            "start": 880,
+            "end": 948,
             "loc": {
               "start": {
                 "line": 21,
@@ -221,8 +221,8 @@
             "params": [
               {
                 "type": "RestElement",
-                "start": 901,
-                "end": 908,
+                "start": 881,
+                "end": 888,
                 "loc": {
                   "start": {
                     "line": 21,
@@ -235,8 +235,8 @@
                 },
                 "argument": {
                   "type": "Identifier",
-                  "start": 904,
-                  "end": 908,
+                  "start": 884,
+                  "end": 888,
                   "loc": {
                     "start": {
                       "line": 21,
@@ -254,8 +254,8 @@
             ],
             "body": {
               "type": "ConditionalExpression",
-              "start": 913,
-              "end": 968,
+              "start": 893,
+              "end": 948,
               "loc": {
                 "start": {
                   "line": 21,
@@ -268,8 +268,8 @@
               },
               "test": {
                 "type": "CallExpression",
-                "start": 913,
-                "end": 931,
+                "start": 893,
+                "end": 911,
                 "loc": {
                   "start": {
                     "line": 21,
@@ -282,8 +282,8 @@
                 },
                 "callee": {
                   "type": "Identifier",
-                  "start": 913,
-                  "end": 922,
+                  "start": 893,
+                  "end": 902,
                   "loc": {
                     "start": {
                       "line": 21,
@@ -300,8 +300,8 @@
                 "arguments": [
                   {
                     "type": "SpreadElement",
-                    "start": 923,
-                    "end": 930,
+                    "start": 903,
+                    "end": 910,
                     "loc": {
                       "start": {
                         "line": 21,
@@ -314,8 +314,8 @@
                     },
                     "argument": {
                       "type": "Identifier",
-                      "start": 926,
-                      "end": 930,
+                      "start": 906,
+                      "end": 910,
                       "loc": {
                         "start": {
                           "line": 21,
@@ -334,8 +334,8 @@
               },
               "consequent": {
                 "type": "CallExpression",
-                "start": 934,
-                "end": 949,
+                "start": 914,
+                "end": 929,
                 "loc": {
                   "start": {
                     "line": 21,
@@ -348,8 +348,8 @@
                 },
                 "callee": {
                   "type": "Identifier",
-                  "start": 934,
-                  "end": 940,
+                  "start": 914,
+                  "end": 920,
                   "loc": {
                     "start": {
                       "line": 21,
@@ -366,8 +366,8 @@
                 "arguments": [
                   {
                     "type": "SpreadElement",
-                    "start": 941,
-                    "end": 948,
+                    "start": 921,
+                    "end": 928,
                     "loc": {
                       "start": {
                         "line": 21,
@@ -380,8 +380,8 @@
                     },
                     "argument": {
                       "type": "Identifier",
-                      "start": 944,
-                      "end": 948,
+                      "start": 924,
+                      "end": 928,
                       "loc": {
                         "start": {
                           "line": 21,
@@ -400,8 +400,8 @@
               },
               "alternate": {
                 "type": "CallExpression",
-                "start": 952,
-                "end": 968,
+                "start": 932,
+                "end": 948,
                 "loc": {
                   "start": {
                     "line": 21,
@@ -414,8 +414,8 @@
                 },
                 "callee": {
                   "type": "Identifier",
-                  "start": 952,
-                  "end": 959,
+                  "start": 932,
+                  "end": 939,
                   "loc": {
                     "start": {
                       "line": 21,
@@ -432,8 +432,8 @@
                 "arguments": [
                   {
                     "type": "SpreadElement",
-                    "start": 960,
-                    "end": 967,
+                    "start": 940,
+                    "end": 947,
                     "loc": {
                       "start": {
                         "line": 21,
@@ -446,8 +446,8 @@
                     },
                     "argument": {
                       "type": "Identifier",
-                      "start": 963,
-                      "end": 967,
+                      "start": 943,
+                      "end": 947,
                       "loc": {
                         "start": {
                           "line": 21,
@@ -470,9 +470,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\r\n * Creates a function that will process either the `onTrue` or the `onFalse`\r\n * function depending upon the result of the `condition` predicate.\r\n *\r\n * @param {Function} condition A predicate function\r\n * @param {Function} onTrue A function to invoke when the `condition` evaluates to a truthy value.\r\n * @param {Function} onFalse A function to invoke when the `condition` evaluates to a falsy value.\r\n * @return {Function} A new unary function that will process either the `onTrue` or the `onFalse`\r\n *                    function depending upon the result of the `condition` predicate.\r\n * @example\r\n *\r\n *      const prop = ifElse(\r\n *        x => x.a,\r\n *        x => x.b,\r\n *        x => x.c\r\n *      );\r\n *      prop({ a: false, c: 2 }); //=> 2\r\n *      prop({ a: true, b: 1, c: 2 }); //=> 1\r\n ",
-              "start": 32,
-              "end": 841,
+              "value": "*\n * Creates a function that will process either the `onTrue` or the `onFalse`\n * function depending upon the result of the `condition` predicate.\n *\n * @param {Function} condition A predicate function\n * @param {Function} onTrue A function to invoke when the `condition` evaluates to a truthy value.\n * @param {Function} onFalse A function to invoke when the `condition` evaluates to a falsy value.\n * @return {Function} A new unary function that will process either the `onTrue` or the `onFalse`\n *                    function depending upon the result of the `condition` predicate.\n * @example\n *\n *      const prop = ifElse(\n *        x => x.a,\n *        x => x.b,\n *        x => x.c\n *      );\n *      prop({ a: false, c: 2 }); //=> 2\n *      prop({ a: true, b: 1, c: 2 }); //=> 1\n ",
+              "start": 31,
+              "end": 822,
               "loc": {
                 "start": {
                   "line": 2,
@@ -490,9 +490,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Creates a function that will process either the `onTrue` or the `onFalse`\r\n * function depending upon the result of the `condition` predicate.\r\n *\r\n * @param {Function} condition A predicate function\r\n * @param {Function} onTrue A function to invoke when the `condition` evaluates to a truthy value.\r\n * @param {Function} onFalse A function to invoke when the `condition` evaluates to a falsy value.\r\n * @return {Function} A new unary function that will process either the `onTrue` or the `onFalse`\r\n *                    function depending upon the result of the `condition` predicate.\r\n * @example\r\n *\r\n *      const prop = ifElse(\r\n *        x => x.a,\r\n *        x => x.b,\r\n *        x => x.c\r\n *      );\r\n *      prop({ a: false, c: 2 }); //=> 2\r\n *      prop({ a: true, b: 1, c: 2 }); //=> 1\r\n ",
-            "start": 32,
-            "end": 841,
+            "value": "*\n * Creates a function that will process either the `onTrue` or the `onFalse`\n * function depending upon the result of the `condition` predicate.\n *\n * @param {Function} condition A predicate function\n * @param {Function} onTrue A function to invoke when the `condition` evaluates to a truthy value.\n * @param {Function} onFalse A function to invoke when the `condition` evaluates to a falsy value.\n * @return {Function} A new unary function that will process either the `onTrue` or the `onFalse`\n *                    function depending upon the result of the `condition` predicate.\n * @example\n *\n *      const prop = ifElse(\n *        x => x.a,\n *        x => x.b,\n *        x => x.c\n *      );\n *      prop({ a: false, c: 2 }); //=> 2\n *      prop({ a: true, b: 1, c: 2 }); //=> 1\n ",
+            "start": 31,
+            "end": 822,
             "loc": {
               "start": {
                 "line": 2,
@@ -512,9 +512,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Creates a function that will process either the `onTrue` or the `onFalse`\r\n * function depending upon the result of the `condition` predicate.\r\n *\r\n * @param {Function} condition A predicate function\r\n * @param {Function} onTrue A function to invoke when the `condition` evaluates to a truthy value.\r\n * @param {Function} onFalse A function to invoke when the `condition` evaluates to a falsy value.\r\n * @return {Function} A new unary function that will process either the `onTrue` or the `onFalse`\r\n *                    function depending upon the result of the `condition` predicate.\r\n * @example\r\n *\r\n *      const prop = ifElse(\r\n *        x => x.a,\r\n *        x => x.b,\r\n *        x => x.c\r\n *      );\r\n *      prop({ a: false, c: 2 }); //=> 2\r\n *      prop({ a: true, b: 1, c: 2 }); //=> 1\r\n ",
-      "start": 32,
-      "end": 841,
+      "value": "*\n * Creates a function that will process either the `onTrue` or the `onFalse`\n * function depending upon the result of the `condition` predicate.\n *\n * @param {Function} condition A predicate function\n * @param {Function} onTrue A function to invoke when the `condition` evaluates to a truthy value.\n * @param {Function} onFalse A function to invoke when the `condition` evaluates to a falsy value.\n * @return {Function} A new unary function that will process either the `onTrue` or the `onFalse`\n *                    function depending upon the result of the `condition` predicate.\n * @example\n *\n *      const prop = ifElse(\n *        x => x.a,\n *        x => x.b,\n *        x => x.c\n *      );\n *      prop({ a: false, c: 2 }); //=> 2\n *      prop({ a: true, b: 1, c: 2 }); //=> 1\n ",
+      "start": 31,
+      "end": 822,
       "loc": {
         "start": {
           "line": 2,
@@ -663,9 +663,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Creates a function that will process either the `onTrue` or the `onFalse`\r\n * function depending upon the result of the `condition` predicate.\r\n *\r\n * @param {Function} condition A predicate function\r\n * @param {Function} onTrue A function to invoke when the `condition` evaluates to a truthy value.\r\n * @param {Function} onFalse A function to invoke when the `condition` evaluates to a falsy value.\r\n * @return {Function} A new unary function that will process either the `onTrue` or the `onFalse`\r\n *                    function depending upon the result of the `condition` predicate.\r\n * @example\r\n *\r\n *      const prop = ifElse(\r\n *        x => x.a,\r\n *        x => x.b,\r\n *        x => x.c\r\n *      );\r\n *      prop({ a: false, c: 2 }); //=> 2\r\n *      prop({ a: true, b: 1, c: 2 }); //=> 1\r\n ",
-      "start": 32,
-      "end": 841,
+      "value": "*\n * Creates a function that will process either the `onTrue` or the `onFalse`\n * function depending upon the result of the `condition` predicate.\n *\n * @param {Function} condition A predicate function\n * @param {Function} onTrue A function to invoke when the `condition` evaluates to a truthy value.\n * @param {Function} onFalse A function to invoke when the `condition` evaluates to a falsy value.\n * @return {Function} A new unary function that will process either the `onTrue` or the `onFalse`\n *                    function depending upon the result of the `condition` predicate.\n * @example\n *\n *      const prop = ifElse(\n *        x => x.a,\n *        x => x.b,\n *        x => x.c\n *      );\n *      prop({ a: false, c: 2 }); //=> 2\n *      prop({ a: true, b: 1, c: 2 }); //=> 1\n ",
+      "start": 31,
+      "end": 822,
       "loc": {
         "start": {
           "line": 2,
@@ -692,8 +692,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 843,
-      "end": 849,
+      "start": 823,
+      "end": 829,
       "loc": {
         "start": {
           "line": 21,
@@ -720,8 +720,8 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 850,
-      "end": 857,
+      "start": 830,
+      "end": 837,
       "loc": {
         "start": {
           "line": 21,
@@ -746,8 +746,8 @@
         "binop": null
       },
       "value": "curryN",
-      "start": 858,
-      "end": 864,
+      "start": 838,
+      "end": 844,
       "loc": {
         "start": {
           "line": 21,
@@ -771,8 +771,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 864,
-      "end": 865,
+      "start": 844,
+      "end": 845,
       "loc": {
         "start": {
           "line": 21,
@@ -798,8 +798,8 @@
         "updateContext": null
       },
       "value": 3,
-      "start": 865,
-      "end": 866,
+      "start": 845,
+      "end": 846,
       "loc": {
         "start": {
           "line": 21,
@@ -824,8 +824,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 866,
-      "end": 867,
+      "start": 846,
+      "end": 847,
       "loc": {
         "start": {
           "line": 21,
@@ -849,8 +849,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 868,
-      "end": 869,
+      "start": 848,
+      "end": 849,
       "loc": {
         "start": {
           "line": 21,
@@ -875,8 +875,8 @@
         "binop": null
       },
       "value": "condition",
-      "start": 869,
-      "end": 878,
+      "start": 849,
+      "end": 858,
       "loc": {
         "start": {
           "line": 21,
@@ -901,8 +901,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 878,
-      "end": 879,
+      "start": 858,
+      "end": 859,
       "loc": {
         "start": {
           "line": 21,
@@ -927,8 +927,8 @@
         "binop": null
       },
       "value": "onTrue",
-      "start": 880,
-      "end": 886,
+      "start": 860,
+      "end": 866,
       "loc": {
         "start": {
           "line": 21,
@@ -953,8 +953,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 886,
-      "end": 887,
+      "start": 866,
+      "end": 867,
       "loc": {
         "start": {
           "line": 21,
@@ -979,8 +979,8 @@
         "binop": null
       },
       "value": "onFalse",
-      "start": 888,
-      "end": 895,
+      "start": 868,
+      "end": 875,
       "loc": {
         "start": {
           "line": 21,
@@ -1004,8 +1004,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 895,
-      "end": 896,
+      "start": 875,
+      "end": 876,
       "loc": {
         "start": {
           "line": 21,
@@ -1030,8 +1030,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 897,
-      "end": 899,
+      "start": 877,
+      "end": 879,
       "loc": {
         "start": {
           "line": 21,
@@ -1055,8 +1055,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 900,
-      "end": 901,
+      "start": 880,
+      "end": 881,
       "loc": {
         "start": {
           "line": 21,
@@ -1081,8 +1081,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 901,
-      "end": 904,
+      "start": 881,
+      "end": 884,
       "loc": {
         "start": {
           "line": 21,
@@ -1107,8 +1107,8 @@
         "binop": null
       },
       "value": "args",
-      "start": 904,
-      "end": 908,
+      "start": 884,
+      "end": 888,
       "loc": {
         "start": {
           "line": 21,
@@ -1132,8 +1132,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 908,
-      "end": 909,
+      "start": 888,
+      "end": 889,
       "loc": {
         "start": {
           "line": 21,
@@ -1158,8 +1158,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 910,
-      "end": 912,
+      "start": 890,
+      "end": 892,
       "loc": {
         "start": {
           "line": 21,
@@ -1184,8 +1184,8 @@
         "binop": null
       },
       "value": "condition",
-      "start": 913,
-      "end": 922,
+      "start": 893,
+      "end": 902,
       "loc": {
         "start": {
           "line": 21,
@@ -1209,8 +1209,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 922,
-      "end": 923,
+      "start": 902,
+      "end": 903,
       "loc": {
         "start": {
           "line": 21,
@@ -1235,8 +1235,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 923,
-      "end": 926,
+      "start": 903,
+      "end": 906,
       "loc": {
         "start": {
           "line": 21,
@@ -1261,8 +1261,8 @@
         "binop": null
       },
       "value": "args",
-      "start": 926,
-      "end": 930,
+      "start": 906,
+      "end": 910,
       "loc": {
         "start": {
           "line": 21,
@@ -1286,8 +1286,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 930,
-      "end": 931,
+      "start": 910,
+      "end": 911,
       "loc": {
         "start": {
           "line": 21,
@@ -1312,8 +1312,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 932,
-      "end": 933,
+      "start": 912,
+      "end": 913,
       "loc": {
         "start": {
           "line": 21,
@@ -1338,8 +1338,8 @@
         "binop": null
       },
       "value": "onTrue",
-      "start": 934,
-      "end": 940,
+      "start": 914,
+      "end": 920,
       "loc": {
         "start": {
           "line": 21,
@@ -1363,8 +1363,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 940,
-      "end": 941,
+      "start": 920,
+      "end": 921,
       "loc": {
         "start": {
           "line": 21,
@@ -1389,8 +1389,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 941,
-      "end": 944,
+      "start": 921,
+      "end": 924,
       "loc": {
         "start": {
           "line": 21,
@@ -1415,8 +1415,8 @@
         "binop": null
       },
       "value": "args",
-      "start": 944,
-      "end": 948,
+      "start": 924,
+      "end": 928,
       "loc": {
         "start": {
           "line": 21,
@@ -1440,8 +1440,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 948,
-      "end": 949,
+      "start": 928,
+      "end": 929,
       "loc": {
         "start": {
           "line": 21,
@@ -1466,8 +1466,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 950,
-      "end": 951,
+      "start": 930,
+      "end": 931,
       "loc": {
         "start": {
           "line": 21,
@@ -1492,8 +1492,8 @@
         "binop": null
       },
       "value": "onFalse",
-      "start": 952,
-      "end": 959,
+      "start": 932,
+      "end": 939,
       "loc": {
         "start": {
           "line": 21,
@@ -1517,8 +1517,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 959,
-      "end": 960,
+      "start": 939,
+      "end": 940,
       "loc": {
         "start": {
           "line": 21,
@@ -1543,8 +1543,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 960,
-      "end": 963,
+      "start": 940,
+      "end": 943,
       "loc": {
         "start": {
           "line": 21,
@@ -1569,8 +1569,8 @@
         "binop": null
       },
       "value": "args",
-      "start": 963,
-      "end": 967,
+      "start": 943,
+      "end": 947,
       "loc": {
         "start": {
           "line": 21,
@@ -1594,8 +1594,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 967,
-      "end": 968,
+      "start": 947,
+      "end": 948,
       "loc": {
         "start": {
           "line": 21,
@@ -1619,8 +1619,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 968,
-      "end": 969,
+      "start": 948,
+      "end": 949,
       "loc": {
         "start": {
           "line": 21,
@@ -1645,8 +1645,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 969,
-      "end": 970,
+      "start": 949,
+      "end": 950,
       "loc": {
         "start": {
           "line": 21,
@@ -1671,8 +1671,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 972,
-      "end": 972,
+      "start": 951,
+      "end": 951,
       "loc": {
         "start": {
           "line": 22,

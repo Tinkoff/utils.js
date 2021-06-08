@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 731,
+  "end": 708,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 731,
+    "end": 708,
     "loc": {
       "start": {
         "line": 1,
@@ -99,9 +99,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Returns a curried equivalent of the provided function. The arguments of curried function\r\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\r\n * following are equivalent:\r\n *\r\n *   - `g(1)(2)(3)`\r\n *   - `g(1)(2, 3)`\r\n *   - `g(1, 2)(3)`\r\n *   - `g(1, 2, 3)`\r\n *\r\n * @param {Function} fn The function to curry.\r\n * @return {Function} A new, curried function.\r\n * @example\r\n *\r\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\r\n *\r\n *      var curriedAddFourNumbers = curry(addFourNumbers);\r\n *      var f = curriedAddFourNumbers(1, 2);\r\n *      var g = f(3);\r\n *      g(4); //=> 10\r\n ",
-            "start": 32,
-            "end": 680,
+            "value": "*\n * Returns a curried equivalent of the provided function. The arguments of curried function\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\n * following are equivalent:\n *\n *   - `g(1)(2)(3)`\n *   - `g(1)(2, 3)`\n *   - `g(1, 2)(3)`\n *   - `g(1, 2, 3)`\n *\n * @param {Function} fn The function to curry.\n * @return {Function} A new, curried function.\n * @example\n *\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\n *\n *      var curriedAddFourNumbers = curry(addFourNumbers);\n *      var f = curriedAddFourNumbers(1, 2);\n *      var g = f(3);\n *      g(4); //=> 10\n ",
+            "start": 31,
+            "end": 659,
             "loc": {
               "start": {
                 "line": 2,
@@ -117,8 +117,8 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 682,
-        "end": 729,
+        "start": 660,
+        "end": 707,
         "loc": {
           "start": {
             "line": 23,
@@ -131,8 +131,8 @@
         },
         "declaration": {
           "type": "ArrowFunctionExpression",
-          "start": 698,
-          "end": 727,
+          "start": 676,
+          "end": 705,
           "loc": {
             "start": {
               "line": 23,
@@ -150,8 +150,8 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 699,
-              "end": 701,
+              "start": 677,
+              "end": 679,
               "loc": {
                 "start": {
                   "line": 23,
@@ -169,8 +169,8 @@
           ],
           "body": {
             "type": "CallExpression",
-            "start": 706,
-            "end": 727,
+            "start": 684,
+            "end": 705,
             "loc": {
               "start": {
                 "line": 23,
@@ -183,8 +183,8 @@
             },
             "callee": {
               "type": "Identifier",
-              "start": 706,
-              "end": 712,
+              "start": 684,
+              "end": 690,
               "loc": {
                 "start": {
                   "line": 23,
@@ -201,8 +201,8 @@
             "arguments": [
               {
                 "type": "MemberExpression",
-                "start": 713,
-                "end": 722,
+                "start": 691,
+                "end": 700,
                 "loc": {
                   "start": {
                     "line": 23,
@@ -215,8 +215,8 @@
                 },
                 "object": {
                   "type": "Identifier",
-                  "start": 713,
-                  "end": 715,
+                  "start": 691,
+                  "end": 693,
                   "loc": {
                     "start": {
                       "line": 23,
@@ -232,8 +232,8 @@
                 },
                 "property": {
                   "type": "Identifier",
-                  "start": 716,
-                  "end": 722,
+                  "start": 694,
+                  "end": 700,
                   "loc": {
                     "start": {
                       "line": 23,
@@ -251,8 +251,8 @@
               },
               {
                 "type": "Identifier",
-                "start": 724,
-                "end": 726,
+                "start": 702,
+                "end": 704,
                 "loc": {
                   "start": {
                     "line": 23,
@@ -271,9 +271,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\r\n * Returns a curried equivalent of the provided function. The arguments of curried function\r\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\r\n * following are equivalent:\r\n *\r\n *   - `g(1)(2)(3)`\r\n *   - `g(1)(2, 3)`\r\n *   - `g(1, 2)(3)`\r\n *   - `g(1, 2, 3)`\r\n *\r\n * @param {Function} fn The function to curry.\r\n * @return {Function} A new, curried function.\r\n * @example\r\n *\r\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\r\n *\r\n *      var curriedAddFourNumbers = curry(addFourNumbers);\r\n *      var f = curriedAddFourNumbers(1, 2);\r\n *      var g = f(3);\r\n *      g(4); //=> 10\r\n ",
-              "start": 32,
-              "end": 680,
+              "value": "*\n * Returns a curried equivalent of the provided function. The arguments of curried function\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\n * following are equivalent:\n *\n *   - `g(1)(2)(3)`\n *   - `g(1)(2, 3)`\n *   - `g(1, 2)(3)`\n *   - `g(1, 2, 3)`\n *\n * @param {Function} fn The function to curry.\n * @return {Function} A new, curried function.\n * @example\n *\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\n *\n *      var curriedAddFourNumbers = curry(addFourNumbers);\n *      var f = curriedAddFourNumbers(1, 2);\n *      var g = f(3);\n *      g(4); //=> 10\n ",
+              "start": 31,
+              "end": 659,
               "loc": {
                 "start": {
                   "line": 2,
@@ -288,16 +288,16 @@
           ],
           "extra": {
             "parenthesized": true,
-            "parenStart": 697
+            "parenStart": 675
           },
           "trailingComments": []
         },
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Returns a curried equivalent of the provided function. The arguments of curried function\r\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\r\n * following are equivalent:\r\n *\r\n *   - `g(1)(2)(3)`\r\n *   - `g(1)(2, 3)`\r\n *   - `g(1, 2)(3)`\r\n *   - `g(1, 2, 3)`\r\n *\r\n * @param {Function} fn The function to curry.\r\n * @return {Function} A new, curried function.\r\n * @example\r\n *\r\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\r\n *\r\n *      var curriedAddFourNumbers = curry(addFourNumbers);\r\n *      var f = curriedAddFourNumbers(1, 2);\r\n *      var g = f(3);\r\n *      g(4); //=> 10\r\n ",
-            "start": 32,
-            "end": 680,
+            "value": "*\n * Returns a curried equivalent of the provided function. The arguments of curried function\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\n * following are equivalent:\n *\n *   - `g(1)(2)(3)`\n *   - `g(1)(2, 3)`\n *   - `g(1, 2)(3)`\n *   - `g(1, 2, 3)`\n *\n * @param {Function} fn The function to curry.\n * @return {Function} A new, curried function.\n * @example\n *\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\n *\n *      var curriedAddFourNumbers = curry(addFourNumbers);\n *      var f = curriedAddFourNumbers(1, 2);\n *      var g = f(3);\n *      g(4); //=> 10\n ",
+            "start": 31,
+            "end": 659,
             "loc": {
               "start": {
                 "line": 2,
@@ -317,9 +317,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Returns a curried equivalent of the provided function. The arguments of curried function\r\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\r\n * following are equivalent:\r\n *\r\n *   - `g(1)(2)(3)`\r\n *   - `g(1)(2, 3)`\r\n *   - `g(1, 2)(3)`\r\n *   - `g(1, 2, 3)`\r\n *\r\n * @param {Function} fn The function to curry.\r\n * @return {Function} A new, curried function.\r\n * @example\r\n *\r\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\r\n *\r\n *      var curriedAddFourNumbers = curry(addFourNumbers);\r\n *      var f = curriedAddFourNumbers(1, 2);\r\n *      var g = f(3);\r\n *      g(4); //=> 10\r\n ",
-      "start": 32,
-      "end": 680,
+      "value": "*\n * Returns a curried equivalent of the provided function. The arguments of curried function\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\n * following are equivalent:\n *\n *   - `g(1)(2)(3)`\n *   - `g(1)(2, 3)`\n *   - `g(1, 2)(3)`\n *   - `g(1, 2, 3)`\n *\n * @param {Function} fn The function to curry.\n * @return {Function} A new, curried function.\n * @example\n *\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\n *\n *      var curriedAddFourNumbers = curry(addFourNumbers);\n *      var f = curriedAddFourNumbers(1, 2);\n *      var g = f(3);\n *      g(4); //=> 10\n ",
+      "start": 31,
+      "end": 659,
       "loc": {
         "start": {
           "line": 2,
@@ -468,9 +468,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Returns a curried equivalent of the provided function. The arguments of curried function\r\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\r\n * following are equivalent:\r\n *\r\n *   - `g(1)(2)(3)`\r\n *   - `g(1)(2, 3)`\r\n *   - `g(1, 2)(3)`\r\n *   - `g(1, 2, 3)`\r\n *\r\n * @param {Function} fn The function to curry.\r\n * @return {Function} A new, curried function.\r\n * @example\r\n *\r\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\r\n *\r\n *      var curriedAddFourNumbers = curry(addFourNumbers);\r\n *      var f = curriedAddFourNumbers(1, 2);\r\n *      var g = f(3);\r\n *      g(4); //=> 10\r\n ",
-      "start": 32,
-      "end": 680,
+      "value": "*\n * Returns a curried equivalent of the provided function. The arguments of curried function\n * needn't be provided one at a time. If `f` is a ternary function and `g` is `curry(f)`, the\n * following are equivalent:\n *\n *   - `g(1)(2)(3)`\n *   - `g(1)(2, 3)`\n *   - `g(1, 2)(3)`\n *   - `g(1, 2, 3)`\n *\n * @param {Function} fn The function to curry.\n * @return {Function} A new, curried function.\n * @example\n *\n *      var addFourNumbers = (a, b, c, d) => a + b + c + d;\n *\n *      var curriedAddFourNumbers = curry(addFourNumbers);\n *      var f = curriedAddFourNumbers(1, 2);\n *      var g = f(3);\n *      g(4); //=> 10\n ",
+      "start": 31,
+      "end": 659,
       "loc": {
         "start": {
           "line": 2,
@@ -497,8 +497,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 682,
-      "end": 688,
+      "start": 660,
+      "end": 666,
       "loc": {
         "start": {
           "line": 23,
@@ -525,8 +525,8 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 689,
-      "end": 696,
+      "start": 667,
+      "end": 674,
       "loc": {
         "start": {
           "line": 23,
@@ -550,8 +550,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 697,
-      "end": 698,
+      "start": 675,
+      "end": 676,
       "loc": {
         "start": {
           "line": 23,
@@ -575,8 +575,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 698,
-      "end": 699,
+      "start": 676,
+      "end": 677,
       "loc": {
         "start": {
           "line": 23,
@@ -601,8 +601,8 @@
         "binop": null
       },
       "value": "fn",
-      "start": 699,
-      "end": 701,
+      "start": 677,
+      "end": 679,
       "loc": {
         "start": {
           "line": 23,
@@ -626,8 +626,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 701,
-      "end": 702,
+      "start": 679,
+      "end": 680,
       "loc": {
         "start": {
           "line": 23,
@@ -652,8 +652,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 703,
-      "end": 705,
+      "start": 681,
+      "end": 683,
       "loc": {
         "start": {
           "line": 23,
@@ -678,8 +678,8 @@
         "binop": null
       },
       "value": "curryN",
-      "start": 706,
-      "end": 712,
+      "start": 684,
+      "end": 690,
       "loc": {
         "start": {
           "line": 23,
@@ -703,8 +703,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 712,
-      "end": 713,
+      "start": 690,
+      "end": 691,
       "loc": {
         "start": {
           "line": 23,
@@ -729,8 +729,8 @@
         "binop": null
       },
       "value": "fn",
-      "start": 713,
-      "end": 715,
+      "start": 691,
+      "end": 693,
       "loc": {
         "start": {
           "line": 23,
@@ -755,8 +755,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 715,
-      "end": 716,
+      "start": 693,
+      "end": 694,
       "loc": {
         "start": {
           "line": 23,
@@ -781,8 +781,8 @@
         "binop": null
       },
       "value": "length",
-      "start": 716,
-      "end": 722,
+      "start": 694,
+      "end": 700,
       "loc": {
         "start": {
           "line": 23,
@@ -807,8 +807,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 722,
-      "end": 723,
+      "start": 700,
+      "end": 701,
       "loc": {
         "start": {
           "line": 23,
@@ -833,8 +833,8 @@
         "binop": null
       },
       "value": "fn",
-      "start": 724,
-      "end": 726,
+      "start": 702,
+      "end": 704,
       "loc": {
         "start": {
           "line": 23,
@@ -858,8 +858,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 726,
-      "end": 727,
+      "start": 704,
+      "end": 705,
       "loc": {
         "start": {
           "line": 23,
@@ -883,8 +883,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 727,
-      "end": 728,
+      "start": 705,
+      "end": 706,
       "loc": {
         "start": {
           "line": 23,
@@ -909,8 +909,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 728,
-      "end": 729,
+      "start": 706,
+      "end": 707,
       "loc": {
         "start": {
           "line": 23,
@@ -935,8 +935,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 731,
-      "end": 731,
+      "start": 708,
+      "end": 708,
       "loc": {
         "start": {
           "line": 24,

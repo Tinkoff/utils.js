@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 752,
+  "end": 728,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 752,
+    "end": 728,
     "loc": {
       "start": {
         "line": 1,
@@ -99,9 +99,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Returns the second argument if it is not `null`, `undefined` or `NaN`\r\n * otherwise the first argument is returned.\r\n *\r\n * @param {a} dflt The default value.\r\n * @param {b} x The value to return if it is not null or undefined\r\n * @return {*} The the second value or the default value\r\n * @example\r\n *\r\n *      var defaultTo42 = defaultTo(42);\r\n *\r\n *      defaultTo42(null);  //=> 42\r\n *      defaultTo42(undefined);  //=> 42\r\n *      defaultTo42('Example');  //=> 'Example'\r\n *      defaultTo42(parseInt('string')); //=> 42\r\n ",
-            "start": 41,
-            "end": 579,
+            "value": "*\n * Returns the second argument if it is not `null`, `undefined` or `NaN`\n * otherwise the first argument is returned.\n *\n * @param {a} dflt The default value.\n * @param {b} x The value to return if it is not null or undefined\n * @return {*} The the second value or the default value\n * @example\n *\n *      var defaultTo42 = defaultTo(42);\n *\n *      defaultTo42(null);  //=> 42\n *      defaultTo42(undefined);  //=> 42\n *      defaultTo42('Example');  //=> 'Example'\n *      defaultTo42(parseInt('string')); //=> 42\n ",
+            "start": 40,
+            "end": 563,
             "loc": {
               "start": {
                 "line": 2,
@@ -117,8 +117,8 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 581,
-        "end": 750,
+        "start": 564,
+        "end": 727,
         "loc": {
           "start": {
             "line": 18,
@@ -131,8 +131,8 @@
         },
         "declaration": {
           "type": "ArrowFunctionExpression",
-          "start": 606,
-          "end": 748,
+          "start": 589,
+          "end": 725,
           "loc": {
             "start": {
               "line": 18,
@@ -150,8 +150,8 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 607,
-              "end": 611,
+              "start": 590,
+              "end": 594,
               "loc": {
                 "start": {
                   "line": 18,
@@ -167,8 +167,8 @@
             },
             {
               "type": "Identifier",
-              "start": 613,
-              "end": 614,
+              "start": 596,
+              "end": 597,
               "loc": {
                 "start": {
                   "line": 18,
@@ -185,8 +185,8 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 619,
-            "end": 748,
+            "start": 602,
+            "end": 725,
             "loc": {
               "start": {
                 "line": 18,
@@ -200,8 +200,8 @@
             "body": [
               {
                 "type": "IfStatement",
-                "start": 626,
-                "end": 730,
+                "start": 608,
+                "end": 709,
                 "loc": {
                   "start": {
                     "line": 19,
@@ -214,8 +214,8 @@
                 },
                 "test": {
                   "type": "LogicalExpression",
-                  "start": 630,
-                  "end": 650,
+                  "start": 612,
+                  "end": 632,
                   "loc": {
                     "start": {
                       "line": 19,
@@ -228,8 +228,8 @@
                   },
                   "left": {
                     "type": "BinaryExpression",
-                    "start": 630,
-                    "end": 639,
+                    "start": 612,
+                    "end": 621,
                     "loc": {
                       "start": {
                         "line": 19,
@@ -242,8 +242,8 @@
                     },
                     "left": {
                       "type": "Identifier",
-                      "start": 630,
-                      "end": 631,
+                      "start": 612,
+                      "end": 613,
                       "loc": {
                         "start": {
                           "line": 19,
@@ -260,8 +260,8 @@
                     "operator": "==",
                     "right": {
                       "type": "NullLiteral",
-                      "start": 635,
-                      "end": 639,
+                      "start": 617,
+                      "end": 621,
                       "loc": {
                         "start": {
                           "line": 19,
@@ -277,8 +277,8 @@
                   "operator": "||",
                   "right": {
                     "type": "BinaryExpression",
-                    "start": 643,
-                    "end": 650,
+                    "start": 625,
+                    "end": 632,
                     "loc": {
                       "start": {
                         "line": 19,
@@ -291,8 +291,8 @@
                     },
                     "left": {
                       "type": "Identifier",
-                      "start": 643,
-                      "end": 644,
+                      "start": 625,
+                      "end": 626,
                       "loc": {
                         "start": {
                           "line": 19,
@@ -309,8 +309,8 @@
                     "operator": "!==",
                     "right": {
                       "type": "Identifier",
-                      "start": 649,
-                      "end": 650,
+                      "start": 631,
+                      "end": 632,
                       "loc": {
                         "start": {
                           "line": 19,
@@ -328,8 +328,8 @@
                 },
                 "consequent": {
                   "type": "BlockStatement",
-                  "start": 652,
-                  "end": 730,
+                  "start": 634,
+                  "end": 709,
                   "loc": {
                     "start": {
                       "line": 19,
@@ -343,8 +343,8 @@
                   "body": [
                     {
                       "type": "ReturnStatement",
-                      "start": 711,
-                      "end": 723,
+                      "start": 691,
+                      "end": 703,
                       "loc": {
                         "start": {
                           "line": 21,
@@ -357,8 +357,8 @@
                       },
                       "argument": {
                         "type": "Identifier",
-                        "start": 718,
-                        "end": 722,
+                        "start": 698,
+                        "end": 702,
                         "loc": {
                           "start": {
                             "line": 21,
@@ -377,8 +377,8 @@
                         {
                           "type": "CommentLine",
                           "value": " eslint-disable-line no-self-compare",
-                          "start": 663,
-                          "end": 701,
+                          "start": 644,
+                          "end": 682,
                           "loc": {
                             "start": {
                               "line": 20,
@@ -399,8 +399,8 @@
               },
               {
                 "type": "ReturnStatement",
-                "start": 736,
-                "end": 745,
+                "start": 714,
+                "end": 723,
                 "loc": {
                   "start": {
                     "line": 23,
@@ -413,8 +413,8 @@
                 },
                 "argument": {
                   "type": "Identifier",
-                  "start": 743,
-                  "end": 744,
+                  "start": 721,
+                  "end": 722,
                   "loc": {
                     "start": {
                       "line": 23,
@@ -436,9 +436,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\r\n * Returns the second argument if it is not `null`, `undefined` or `NaN`\r\n * otherwise the first argument is returned.\r\n *\r\n * @param {a} dflt The default value.\r\n * @param {b} x The value to return if it is not null or undefined\r\n * @return {*} The the second value or the default value\r\n * @example\r\n *\r\n *      var defaultTo42 = defaultTo(42);\r\n *\r\n *      defaultTo42(null);  //=> 42\r\n *      defaultTo42(undefined);  //=> 42\r\n *      defaultTo42('Example');  //=> 'Example'\r\n *      defaultTo42(parseInt('string')); //=> 42\r\n ",
-              "start": 41,
-              "end": 579,
+              "value": "*\n * Returns the second argument if it is not `null`, `undefined` or `NaN`\n * otherwise the first argument is returned.\n *\n * @param {a} dflt The default value.\n * @param {b} x The value to return if it is not null or undefined\n * @return {*} The the second value or the default value\n * @example\n *\n *      var defaultTo42 = defaultTo(42);\n *\n *      defaultTo42(null);  //=> 42\n *      defaultTo42(undefined);  //=> 42\n *      defaultTo42('Example');  //=> 'Example'\n *      defaultTo42(parseInt('string')); //=> 42\n ",
+              "start": 40,
+              "end": 563,
               "loc": {
                 "start": {
                   "line": 2,
@@ -456,9 +456,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Returns the second argument if it is not `null`, `undefined` or `NaN`\r\n * otherwise the first argument is returned.\r\n *\r\n * @param {a} dflt The default value.\r\n * @param {b} x The value to return if it is not null or undefined\r\n * @return {*} The the second value or the default value\r\n * @example\r\n *\r\n *      var defaultTo42 = defaultTo(42);\r\n *\r\n *      defaultTo42(null);  //=> 42\r\n *      defaultTo42(undefined);  //=> 42\r\n *      defaultTo42('Example');  //=> 'Example'\r\n *      defaultTo42(parseInt('string')); //=> 42\r\n ",
-            "start": 41,
-            "end": 579,
+            "value": "*\n * Returns the second argument if it is not `null`, `undefined` or `NaN`\n * otherwise the first argument is returned.\n *\n * @param {a} dflt The default value.\n * @param {b} x The value to return if it is not null or undefined\n * @return {*} The the second value or the default value\n * @example\n *\n *      var defaultTo42 = defaultTo(42);\n *\n *      defaultTo42(null);  //=> 42\n *      defaultTo42(undefined);  //=> 42\n *      defaultTo42('Example');  //=> 'Example'\n *      defaultTo42(parseInt('string')); //=> 42\n ",
+            "start": 40,
+            "end": 563,
             "loc": {
               "start": {
                 "line": 2,
@@ -478,9 +478,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Returns the second argument if it is not `null`, `undefined` or `NaN`\r\n * otherwise the first argument is returned.\r\n *\r\n * @param {a} dflt The default value.\r\n * @param {b} x The value to return if it is not null or undefined\r\n * @return {*} The the second value or the default value\r\n * @example\r\n *\r\n *      var defaultTo42 = defaultTo(42);\r\n *\r\n *      defaultTo42(null);  //=> 42\r\n *      defaultTo42(undefined);  //=> 42\r\n *      defaultTo42('Example');  //=> 'Example'\r\n *      defaultTo42(parseInt('string')); //=> 42\r\n ",
-      "start": 41,
-      "end": 579,
+      "value": "*\n * Returns the second argument if it is not `null`, `undefined` or `NaN`\n * otherwise the first argument is returned.\n *\n * @param {a} dflt The default value.\n * @param {b} x The value to return if it is not null or undefined\n * @return {*} The the second value or the default value\n * @example\n *\n *      var defaultTo42 = defaultTo(42);\n *\n *      defaultTo42(null);  //=> 42\n *      defaultTo42(undefined);  //=> 42\n *      defaultTo42('Example');  //=> 'Example'\n *      defaultTo42(parseInt('string')); //=> 42\n ",
+      "start": 40,
+      "end": 563,
       "loc": {
         "start": {
           "line": 2,
@@ -495,8 +495,8 @@
     {
       "type": "CommentLine",
       "value": " eslint-disable-line no-self-compare",
-      "start": 663,
-      "end": 701,
+      "start": 644,
+      "end": 682,
       "loc": {
         "start": {
           "line": 20,
@@ -645,9 +645,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Returns the second argument if it is not `null`, `undefined` or `NaN`\r\n * otherwise the first argument is returned.\r\n *\r\n * @param {a} dflt The default value.\r\n * @param {b} x The value to return if it is not null or undefined\r\n * @return {*} The the second value or the default value\r\n * @example\r\n *\r\n *      var defaultTo42 = defaultTo(42);\r\n *\r\n *      defaultTo42(null);  //=> 42\r\n *      defaultTo42(undefined);  //=> 42\r\n *      defaultTo42('Example');  //=> 'Example'\r\n *      defaultTo42(parseInt('string')); //=> 42\r\n ",
-      "start": 41,
-      "end": 579,
+      "value": "*\n * Returns the second argument if it is not `null`, `undefined` or `NaN`\n * otherwise the first argument is returned.\n *\n * @param {a} dflt The default value.\n * @param {b} x The value to return if it is not null or undefined\n * @return {*} The the second value or the default value\n * @example\n *\n *      var defaultTo42 = defaultTo(42);\n *\n *      defaultTo42(null);  //=> 42\n *      defaultTo42(undefined);  //=> 42\n *      defaultTo42('Example');  //=> 'Example'\n *      defaultTo42(parseInt('string')); //=> 42\n ",
+      "start": 40,
+      "end": 563,
       "loc": {
         "start": {
           "line": 2,
@@ -674,8 +674,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 581,
-      "end": 587,
+      "start": 564,
+      "end": 570,
       "loc": {
         "start": {
           "line": 18,
@@ -702,8 +702,8 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 588,
-      "end": 595,
+      "start": 571,
+      "end": 578,
       "loc": {
         "start": {
           "line": 18,
@@ -728,8 +728,8 @@
         "binop": null
       },
       "value": "curryN",
-      "start": 596,
-      "end": 602,
+      "start": 579,
+      "end": 585,
       "loc": {
         "start": {
           "line": 18,
@@ -753,8 +753,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 602,
-      "end": 603,
+      "start": 585,
+      "end": 586,
       "loc": {
         "start": {
           "line": 18,
@@ -780,8 +780,8 @@
         "updateContext": null
       },
       "value": 2,
-      "start": 603,
-      "end": 604,
+      "start": 586,
+      "end": 587,
       "loc": {
         "start": {
           "line": 18,
@@ -806,8 +806,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 604,
-      "end": 605,
+      "start": 587,
+      "end": 588,
       "loc": {
         "start": {
           "line": 18,
@@ -831,8 +831,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 606,
-      "end": 607,
+      "start": 589,
+      "end": 590,
       "loc": {
         "start": {
           "line": 18,
@@ -857,8 +857,8 @@
         "binop": null
       },
       "value": "dflt",
-      "start": 607,
-      "end": 611,
+      "start": 590,
+      "end": 594,
       "loc": {
         "start": {
           "line": 18,
@@ -883,8 +883,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 611,
-      "end": 612,
+      "start": 594,
+      "end": 595,
       "loc": {
         "start": {
           "line": 18,
@@ -909,8 +909,8 @@
         "binop": null
       },
       "value": "x",
-      "start": 613,
-      "end": 614,
+      "start": 596,
+      "end": 597,
       "loc": {
         "start": {
           "line": 18,
@@ -934,8 +934,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 614,
-      "end": 615,
+      "start": 597,
+      "end": 598,
       "loc": {
         "start": {
           "line": 18,
@@ -960,8 +960,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 616,
-      "end": 618,
+      "start": 599,
+      "end": 601,
       "loc": {
         "start": {
           "line": 18,
@@ -985,8 +985,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 619,
-      "end": 620,
+      "start": 602,
+      "end": 603,
       "loc": {
         "start": {
           "line": 18,
@@ -1013,8 +1013,8 @@
         "updateContext": null
       },
       "value": "if",
-      "start": 626,
-      "end": 628,
+      "start": 608,
+      "end": 610,
       "loc": {
         "start": {
           "line": 19,
@@ -1038,8 +1038,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 629,
-      "end": 630,
+      "start": 611,
+      "end": 612,
       "loc": {
         "start": {
           "line": 19,
@@ -1064,8 +1064,8 @@
         "binop": null
       },
       "value": "x",
-      "start": 630,
-      "end": 631,
+      "start": 612,
+      "end": 613,
       "loc": {
         "start": {
           "line": 19,
@@ -1091,8 +1091,8 @@
         "updateContext": null
       },
       "value": "==",
-      "start": 632,
-      "end": 634,
+      "start": 614,
+      "end": 616,
       "loc": {
         "start": {
           "line": 19,
@@ -1119,8 +1119,8 @@
         "updateContext": null
       },
       "value": "null",
-      "start": 635,
-      "end": 639,
+      "start": 617,
+      "end": 621,
       "loc": {
         "start": {
           "line": 19,
@@ -1146,8 +1146,8 @@
         "updateContext": null
       },
       "value": "||",
-      "start": 640,
-      "end": 642,
+      "start": 622,
+      "end": 624,
       "loc": {
         "start": {
           "line": 19,
@@ -1172,8 +1172,8 @@
         "binop": null
       },
       "value": "x",
-      "start": 643,
-      "end": 644,
+      "start": 625,
+      "end": 626,
       "loc": {
         "start": {
           "line": 19,
@@ -1199,8 +1199,8 @@
         "updateContext": null
       },
       "value": "!==",
-      "start": 645,
-      "end": 648,
+      "start": 627,
+      "end": 630,
       "loc": {
         "start": {
           "line": 19,
@@ -1225,8 +1225,8 @@
         "binop": null
       },
       "value": "x",
-      "start": 649,
-      "end": 650,
+      "start": 631,
+      "end": 632,
       "loc": {
         "start": {
           "line": 19,
@@ -1250,8 +1250,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 650,
-      "end": 651,
+      "start": 632,
+      "end": 633,
       "loc": {
         "start": {
           "line": 19,
@@ -1275,8 +1275,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 652,
-      "end": 653,
+      "start": 634,
+      "end": 635,
       "loc": {
         "start": {
           "line": 19,
@@ -1291,8 +1291,8 @@
     {
       "type": "CommentLine",
       "value": " eslint-disable-line no-self-compare",
-      "start": 663,
-      "end": 701,
+      "start": 644,
+      "end": 682,
       "loc": {
         "start": {
           "line": 20,
@@ -1319,8 +1319,8 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 711,
-      "end": 717,
+      "start": 691,
+      "end": 697,
       "loc": {
         "start": {
           "line": 21,
@@ -1345,8 +1345,8 @@
         "binop": null
       },
       "value": "dflt",
-      "start": 718,
-      "end": 722,
+      "start": 698,
+      "end": 702,
       "loc": {
         "start": {
           "line": 21,
@@ -1371,8 +1371,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 722,
-      "end": 723,
+      "start": 702,
+      "end": 703,
       "loc": {
         "start": {
           "line": 21,
@@ -1396,8 +1396,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 729,
-      "end": 730,
+      "start": 708,
+      "end": 709,
       "loc": {
         "start": {
           "line": 22,
@@ -1424,8 +1424,8 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 736,
-      "end": 742,
+      "start": 714,
+      "end": 720,
       "loc": {
         "start": {
           "line": 23,
@@ -1450,8 +1450,8 @@
         "binop": null
       },
       "value": "x",
-      "start": 743,
-      "end": 744,
+      "start": 721,
+      "end": 722,
       "loc": {
         "start": {
           "line": 23,
@@ -1476,8 +1476,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 744,
-      "end": 745,
+      "start": 722,
+      "end": 723,
       "loc": {
         "start": {
           "line": 23,
@@ -1501,8 +1501,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 747,
-      "end": 748,
+      "start": 724,
+      "end": 725,
       "loc": {
         "start": {
           "line": 24,
@@ -1526,8 +1526,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 748,
-      "end": 749,
+      "start": 725,
+      "end": 726,
       "loc": {
         "start": {
           "line": 24,
@@ -1552,8 +1552,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 749,
-      "end": 750,
+      "start": 726,
+      "end": 727,
       "loc": {
         "start": {
           "line": 24,
@@ -1578,8 +1578,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 752,
-      "end": 752,
+      "start": 728,
+      "end": 728,
       "loc": {
         "start": {
           "line": 25,

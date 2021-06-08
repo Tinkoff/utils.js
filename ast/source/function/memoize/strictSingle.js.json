@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 760,
+  "end": 741,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 760,
+    "end": 741,
     "loc": {
       "start": {
         "line": 1,
@@ -99,8 +99,8 @@
       },
       {
         "type": "ImportDeclaration",
-        "start": 35,
-        "end": 70,
+        "start": 34,
+        "end": 69,
         "loc": {
           "start": {
             "line": 2,
@@ -114,8 +114,8 @@
         "specifiers": [
           {
             "type": "ImportDefaultSpecifier",
-            "start": 42,
-            "end": 50,
+            "start": 41,
+            "end": 49,
             "loc": {
               "start": {
                 "line": 2,
@@ -128,8 +128,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 42,
-              "end": 50,
+              "start": 41,
+              "end": 49,
               "loc": {
                 "start": {
                   "line": 2,
@@ -147,8 +147,8 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 56,
-          "end": 69,
+          "start": 55,
+          "end": 68,
           "loc": {
             "start": {
               "line": 2,
@@ -168,9 +168,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Memoize functions with single argument of non-primitive argument.\r\n * Uses Map instance for cache, because it's keys can be non-primitive.\r\n * Use it when strict equality (===) for cache lookup is enough.\r\n * It suitable for functions with single argument of primitive type too.\r\n *\r\n * @param {Function} fn\r\n * @returns {Function}\r\n * @example\r\n *     const addFlag = obj => ({...obj, flag: true });\r\n *     const memoize = memoizeStrictSingle(addFlag));\r\n *     const test = {test: 1};\r\n *     memoize(test); // from addFlag call\r\n *     memoize({test: 1}); // from addFlag call\r\n *     memoize(test); // from cache\r\n ",
-            "start": 72,
-            "end": 702,
+            "value": "*\n * Memoize functions with single argument of non-primitive argument.\n * Uses Map instance for cache, because it's keys can be non-primitive.\n * Use it when strict equality (===) for cache lookup is enough.\n * It suitable for functions with single argument of primitive type too.\n *\n * @param {Function} fn\n * @returns {Function}\n * @example\n *     const addFlag = obj => ({...obj, flag: true });\n *     const memoize = memoizeStrictSingle(addFlag));\n *     const test = {test: 1};\n *     memoize(test); // from addFlag call\n *     memoize({test: 1}); // from addFlag call\n *     memoize(test); // from cache\n ",
+            "start": 70,
+            "end": 685,
             "loc": {
               "start": {
                 "line": 3,
@@ -186,8 +186,8 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 704,
-        "end": 758,
+        "start": 686,
+        "end": 740,
         "loc": {
           "start": {
             "line": 19,
@@ -200,8 +200,8 @@
         },
         "declaration": {
           "type": "CallExpression",
-          "start": 719,
-          "end": 757,
+          "start": 701,
+          "end": 739,
           "loc": {
             "start": {
               "line": 19,
@@ -214,8 +214,8 @@
           },
           "callee": {
             "type": "Identifier",
-            "start": 719,
-            "end": 730,
+            "start": 701,
+            "end": 712,
             "loc": {
               "start": {
                 "line": 19,
@@ -233,8 +233,8 @@
           "arguments": [
             {
               "type": "ArrowFunctionExpression",
-              "start": 731,
-              "end": 746,
+              "start": 713,
+              "end": 728,
               "loc": {
                 "start": {
                   "line": 19,
@@ -252,8 +252,8 @@
               "params": [],
               "body": {
                 "type": "NewExpression",
-                "start": 737,
-                "end": 746,
+                "start": 719,
+                "end": 728,
                 "loc": {
                   "start": {
                     "line": 19,
@@ -266,8 +266,8 @@
                 },
                 "callee": {
                   "type": "Identifier",
-                  "start": 741,
-                  "end": 744,
+                  "start": 723,
+                  "end": 726,
                   "loc": {
                     "start": {
                       "line": 19,
@@ -286,8 +286,8 @@
             },
             {
               "type": "Identifier",
-              "start": 748,
-              "end": 756,
+              "start": 730,
+              "end": 738,
               "loc": {
                 "start": {
                   "line": 19,
@@ -305,9 +305,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\r\n * Memoize functions with single argument of non-primitive argument.\r\n * Uses Map instance for cache, because it's keys can be non-primitive.\r\n * Use it when strict equality (===) for cache lookup is enough.\r\n * It suitable for functions with single argument of primitive type too.\r\n *\r\n * @param {Function} fn\r\n * @returns {Function}\r\n * @example\r\n *     const addFlag = obj => ({...obj, flag: true });\r\n *     const memoize = memoizeStrictSingle(addFlag));\r\n *     const test = {test: 1};\r\n *     memoize(test); // from addFlag call\r\n *     memoize({test: 1}); // from addFlag call\r\n *     memoize(test); // from cache\r\n ",
-              "start": 72,
-              "end": 702,
+              "value": "*\n * Memoize functions with single argument of non-primitive argument.\n * Uses Map instance for cache, because it's keys can be non-primitive.\n * Use it when strict equality (===) for cache lookup is enough.\n * It suitable for functions with single argument of primitive type too.\n *\n * @param {Function} fn\n * @returns {Function}\n * @example\n *     const addFlag = obj => ({...obj, flag: true });\n *     const memoize = memoizeStrictSingle(addFlag));\n *     const test = {test: 1};\n *     memoize(test); // from addFlag call\n *     memoize({test: 1}); // from addFlag call\n *     memoize(test); // from cache\n ",
+              "start": 70,
+              "end": 685,
               "loc": {
                 "start": {
                   "line": 3,
@@ -325,9 +325,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Memoize functions with single argument of non-primitive argument.\r\n * Uses Map instance for cache, because it's keys can be non-primitive.\r\n * Use it when strict equality (===) for cache lookup is enough.\r\n * It suitable for functions with single argument of primitive type too.\r\n *\r\n * @param {Function} fn\r\n * @returns {Function}\r\n * @example\r\n *     const addFlag = obj => ({...obj, flag: true });\r\n *     const memoize = memoizeStrictSingle(addFlag));\r\n *     const test = {test: 1};\r\n *     memoize(test); // from addFlag call\r\n *     memoize({test: 1}); // from addFlag call\r\n *     memoize(test); // from cache\r\n ",
-            "start": 72,
-            "end": 702,
+            "value": "*\n * Memoize functions with single argument of non-primitive argument.\n * Uses Map instance for cache, because it's keys can be non-primitive.\n * Use it when strict equality (===) for cache lookup is enough.\n * It suitable for functions with single argument of primitive type too.\n *\n * @param {Function} fn\n * @returns {Function}\n * @example\n *     const addFlag = obj => ({...obj, flag: true });\n *     const memoize = memoizeStrictSingle(addFlag));\n *     const test = {test: 1};\n *     memoize(test); // from addFlag call\n *     memoize({test: 1}); // from addFlag call\n *     memoize(test); // from cache\n ",
+            "start": 70,
+            "end": 685,
             "loc": {
               "start": {
                 "line": 3,
@@ -347,9 +347,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Memoize functions with single argument of non-primitive argument.\r\n * Uses Map instance for cache, because it's keys can be non-primitive.\r\n * Use it when strict equality (===) for cache lookup is enough.\r\n * It suitable for functions with single argument of primitive type too.\r\n *\r\n * @param {Function} fn\r\n * @returns {Function}\r\n * @example\r\n *     const addFlag = obj => ({...obj, flag: true });\r\n *     const memoize = memoizeStrictSingle(addFlag));\r\n *     const test = {test: 1};\r\n *     memoize(test); // from addFlag call\r\n *     memoize({test: 1}); // from addFlag call\r\n *     memoize(test); // from cache\r\n ",
-      "start": 72,
-      "end": 702,
+      "value": "*\n * Memoize functions with single argument of non-primitive argument.\n * Uses Map instance for cache, because it's keys can be non-primitive.\n * Use it when strict equality (===) for cache lookup is enough.\n * It suitable for functions with single argument of primitive type too.\n *\n * @param {Function} fn\n * @returns {Function}\n * @example\n *     const addFlag = obj => ({...obj, flag: true });\n *     const memoize = memoizeStrictSingle(addFlag));\n *     const test = {test: 1};\n *     memoize(test); // from addFlag call\n *     memoize({test: 1}); // from addFlag call\n *     memoize(test); // from cache\n ",
+      "start": 70,
+      "end": 685,
       "loc": {
         "start": {
           "line": 3,
@@ -511,8 +511,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 35,
-      "end": 41,
+      "start": 34,
+      "end": 40,
       "loc": {
         "start": {
           "line": 2,
@@ -537,8 +537,8 @@
         "binop": null
       },
       "value": "identity",
-      "start": 42,
-      "end": 50,
+      "start": 41,
+      "end": 49,
       "loc": {
         "start": {
           "line": 2,
@@ -563,8 +563,8 @@
         "binop": null
       },
       "value": "from",
-      "start": 51,
-      "end": 55,
+      "start": 50,
+      "end": 54,
       "loc": {
         "start": {
           "line": 2,
@@ -590,8 +590,8 @@
         "updateContext": null
       },
       "value": "../identity",
-      "start": 56,
-      "end": 69,
+      "start": 55,
+      "end": 68,
       "loc": {
         "start": {
           "line": 2,
@@ -616,8 +616,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 69,
-      "end": 70,
+      "start": 68,
+      "end": 69,
       "loc": {
         "start": {
           "line": 2,
@@ -631,9 +631,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Memoize functions with single argument of non-primitive argument.\r\n * Uses Map instance for cache, because it's keys can be non-primitive.\r\n * Use it when strict equality (===) for cache lookup is enough.\r\n * It suitable for functions with single argument of primitive type too.\r\n *\r\n * @param {Function} fn\r\n * @returns {Function}\r\n * @example\r\n *     const addFlag = obj => ({...obj, flag: true });\r\n *     const memoize = memoizeStrictSingle(addFlag));\r\n *     const test = {test: 1};\r\n *     memoize(test); // from addFlag call\r\n *     memoize({test: 1}); // from addFlag call\r\n *     memoize(test); // from cache\r\n ",
-      "start": 72,
-      "end": 702,
+      "value": "*\n * Memoize functions with single argument of non-primitive argument.\n * Uses Map instance for cache, because it's keys can be non-primitive.\n * Use it when strict equality (===) for cache lookup is enough.\n * It suitable for functions with single argument of primitive type too.\n *\n * @param {Function} fn\n * @returns {Function}\n * @example\n *     const addFlag = obj => ({...obj, flag: true });\n *     const memoize = memoizeStrictSingle(addFlag));\n *     const test = {test: 1};\n *     memoize(test); // from addFlag call\n *     memoize({test: 1}); // from addFlag call\n *     memoize(test); // from cache\n ",
+      "start": 70,
+      "end": 685,
       "loc": {
         "start": {
           "line": 3,
@@ -660,8 +660,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 704,
-      "end": 710,
+      "start": 686,
+      "end": 692,
       "loc": {
         "start": {
           "line": 19,
@@ -688,8 +688,8 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 711,
-      "end": 718,
+      "start": 693,
+      "end": 700,
       "loc": {
         "start": {
           "line": 19,
@@ -714,8 +714,8 @@
         "binop": null
       },
       "value": "memoizeWith",
-      "start": 719,
-      "end": 730,
+      "start": 701,
+      "end": 712,
       "loc": {
         "start": {
           "line": 19,
@@ -739,8 +739,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 730,
-      "end": 731,
+      "start": 712,
+      "end": 713,
       "loc": {
         "start": {
           "line": 19,
@@ -764,8 +764,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 731,
-      "end": 732,
+      "start": 713,
+      "end": 714,
       "loc": {
         "start": {
           "line": 19,
@@ -789,8 +789,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 732,
-      "end": 733,
+      "start": 714,
+      "end": 715,
       "loc": {
         "start": {
           "line": 19,
@@ -815,8 +815,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 734,
-      "end": 736,
+      "start": 716,
+      "end": 718,
       "loc": {
         "start": {
           "line": 19,
@@ -843,8 +843,8 @@
         "updateContext": null
       },
       "value": "new",
-      "start": 737,
-      "end": 740,
+      "start": 719,
+      "end": 722,
       "loc": {
         "start": {
           "line": 19,
@@ -869,8 +869,8 @@
         "binop": null
       },
       "value": "Map",
-      "start": 741,
-      "end": 744,
+      "start": 723,
+      "end": 726,
       "loc": {
         "start": {
           "line": 19,
@@ -894,8 +894,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 744,
-      "end": 745,
+      "start": 726,
+      "end": 727,
       "loc": {
         "start": {
           "line": 19,
@@ -919,8 +919,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 745,
-      "end": 746,
+      "start": 727,
+      "end": 728,
       "loc": {
         "start": {
           "line": 19,
@@ -945,8 +945,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 746,
-      "end": 747,
+      "start": 728,
+      "end": 729,
       "loc": {
         "start": {
           "line": 19,
@@ -971,8 +971,8 @@
         "binop": null
       },
       "value": "identity",
-      "start": 748,
-      "end": 756,
+      "start": 730,
+      "end": 738,
       "loc": {
         "start": {
           "line": 19,
@@ -996,8 +996,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 756,
-      "end": 757,
+      "start": 738,
+      "end": 739,
       "loc": {
         "start": {
           "line": 19,
@@ -1022,8 +1022,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 757,
-      "end": 758,
+      "start": 739,
+      "end": 740,
       "loc": {
         "start": {
           "line": 19,
@@ -1048,8 +1048,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 760,
-      "end": 760,
+      "start": 741,
+      "end": 741,
       "loc": {
         "start": {
           "line": 20,

@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 449,
+  "end": 435,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 449,
+    "end": 435,
     "loc": {
       "start": {
         "line": 1,
@@ -99,9 +99,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Returns a promise that resolves with a value returned\r\n * by the supplied function when passed the supplied payload\r\n *\r\n * @param {Function} func\r\n * @param {*[]} payload\r\n * @returns {Promise}\r\n * @example\r\n *      rejectWith(toLowerCase, 'OK').then( res => console.info(res) );// => 'ok'\r\n ",
-            "start": 42,
-            "end": 345,
+            "value": "*\n * Returns a promise that resolves with a value returned\n * by the supplied function when passed the supplied payload\n *\n * @param {Function} func\n * @param {*[]} payload\n * @returns {Promise}\n * @example\n *      rejectWith(toLowerCase, 'OK').then( res => console.info(res) );// => 'ok'\n ",
+            "start": 41,
+            "end": 335,
             "loc": {
               "start": {
                 "line": 2,
@@ -117,8 +117,8 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 347,
-        "end": 447,
+        "start": 336,
+        "end": 434,
         "loc": {
           "start": {
             "line": 12,
@@ -131,8 +131,8 @@
         },
         "declaration": {
           "type": "ArrowFunctionExpression",
-          "start": 372,
-          "end": 445,
+          "start": 361,
+          "end": 432,
           "loc": {
             "start": {
               "line": 12,
@@ -150,8 +150,8 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 373,
-              "end": 377,
+              "start": 362,
+              "end": 366,
               "loc": {
                 "start": {
                   "line": 12,
@@ -167,8 +167,8 @@
             },
             {
               "type": "RestElement",
-              "start": 379,
-              "end": 389,
+              "start": 368,
+              "end": 378,
               "loc": {
                 "start": {
                   "line": 12,
@@ -181,8 +181,8 @@
               },
               "argument": {
                 "type": "Identifier",
-                "start": 382,
-                "end": 389,
+                "start": 371,
+                "end": 378,
                 "loc": {
                   "start": {
                     "line": 12,
@@ -200,8 +200,8 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 394,
-            "end": 445,
+            "start": 383,
+            "end": 432,
             "loc": {
               "start": {
                 "line": 12,
@@ -215,8 +215,8 @@
             "body": [
               {
                 "type": "ReturnStatement",
-                "start": 401,
-                "end": 442,
+                "start": 389,
+                "end": 430,
                 "loc": {
                   "start": {
                     "line": 13,
@@ -229,8 +229,8 @@
                 },
                 "argument": {
                   "type": "CallExpression",
-                  "start": 408,
-                  "end": 441,
+                  "start": 396,
+                  "end": 429,
                   "loc": {
                     "start": {
                       "line": 13,
@@ -243,8 +243,8 @@
                   },
                   "callee": {
                     "type": "MemberExpression",
-                    "start": 408,
-                    "end": 423,
+                    "start": 396,
+                    "end": 411,
                     "loc": {
                       "start": {
                         "line": 13,
@@ -257,8 +257,8 @@
                     },
                     "object": {
                       "type": "Identifier",
-                      "start": 408,
-                      "end": 415,
+                      "start": 396,
+                      "end": 403,
                       "loc": {
                         "start": {
                           "line": 13,
@@ -274,8 +274,8 @@
                     },
                     "property": {
                       "type": "Identifier",
-                      "start": 416,
-                      "end": 423,
+                      "start": 404,
+                      "end": 411,
                       "loc": {
                         "start": {
                           "line": 13,
@@ -294,8 +294,8 @@
                   "arguments": [
                     {
                       "type": "CallExpression",
-                      "start": 424,
-                      "end": 440,
+                      "start": 412,
+                      "end": 428,
                       "loc": {
                         "start": {
                           "line": 13,
@@ -308,8 +308,8 @@
                       },
                       "callee": {
                         "type": "Identifier",
-                        "start": 424,
-                        "end": 428,
+                        "start": 412,
+                        "end": 416,
                         "loc": {
                           "start": {
                             "line": 13,
@@ -326,8 +326,8 @@
                       "arguments": [
                         {
                           "type": "SpreadElement",
-                          "start": 429,
-                          "end": 439,
+                          "start": 417,
+                          "end": 427,
                           "loc": {
                             "start": {
                               "line": 13,
@@ -340,8 +340,8 @@
                           },
                           "argument": {
                             "type": "Identifier",
-                            "start": 432,
-                            "end": 439,
+                            "start": 420,
+                            "end": 427,
                             "loc": {
                               "start": {
                                 "line": 13,
@@ -368,9 +368,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\r\n * Returns a promise that resolves with a value returned\r\n * by the supplied function when passed the supplied payload\r\n *\r\n * @param {Function} func\r\n * @param {*[]} payload\r\n * @returns {Promise}\r\n * @example\r\n *      rejectWith(toLowerCase, 'OK').then( res => console.info(res) );// => 'ok'\r\n ",
-              "start": 42,
-              "end": 345,
+              "value": "*\n * Returns a promise that resolves with a value returned\n * by the supplied function when passed the supplied payload\n *\n * @param {Function} func\n * @param {*[]} payload\n * @returns {Promise}\n * @example\n *      rejectWith(toLowerCase, 'OK').then( res => console.info(res) );// => 'ok'\n ",
+              "start": 41,
+              "end": 335,
               "loc": {
                 "start": {
                   "line": 2,
@@ -388,9 +388,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Returns a promise that resolves with a value returned\r\n * by the supplied function when passed the supplied payload\r\n *\r\n * @param {Function} func\r\n * @param {*[]} payload\r\n * @returns {Promise}\r\n * @example\r\n *      rejectWith(toLowerCase, 'OK').then( res => console.info(res) );// => 'ok'\r\n ",
-            "start": 42,
-            "end": 345,
+            "value": "*\n * Returns a promise that resolves with a value returned\n * by the supplied function when passed the supplied payload\n *\n * @param {Function} func\n * @param {*[]} payload\n * @returns {Promise}\n * @example\n *      rejectWith(toLowerCase, 'OK').then( res => console.info(res) );// => 'ok'\n ",
+            "start": 41,
+            "end": 335,
             "loc": {
               "start": {
                 "line": 2,
@@ -410,9 +410,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Returns a promise that resolves with a value returned\r\n * by the supplied function when passed the supplied payload\r\n *\r\n * @param {Function} func\r\n * @param {*[]} payload\r\n * @returns {Promise}\r\n * @example\r\n *      rejectWith(toLowerCase, 'OK').then( res => console.info(res) );// => 'ok'\r\n ",
-      "start": 42,
-      "end": 345,
+      "value": "*\n * Returns a promise that resolves with a value returned\n * by the supplied function when passed the supplied payload\n *\n * @param {Function} func\n * @param {*[]} payload\n * @returns {Promise}\n * @example\n *      rejectWith(toLowerCase, 'OK').then( res => console.info(res) );// => 'ok'\n ",
+      "start": 41,
+      "end": 335,
       "loc": {
         "start": {
           "line": 2,
@@ -561,9 +561,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Returns a promise that resolves with a value returned\r\n * by the supplied function when passed the supplied payload\r\n *\r\n * @param {Function} func\r\n * @param {*[]} payload\r\n * @returns {Promise}\r\n * @example\r\n *      rejectWith(toLowerCase, 'OK').then( res => console.info(res) );// => 'ok'\r\n ",
-      "start": 42,
-      "end": 345,
+      "value": "*\n * Returns a promise that resolves with a value returned\n * by the supplied function when passed the supplied payload\n *\n * @param {Function} func\n * @param {*[]} payload\n * @returns {Promise}\n * @example\n *      rejectWith(toLowerCase, 'OK').then( res => console.info(res) );// => 'ok'\n ",
+      "start": 41,
+      "end": 335,
       "loc": {
         "start": {
           "line": 2,
@@ -590,8 +590,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 347,
-      "end": 353,
+      "start": 336,
+      "end": 342,
       "loc": {
         "start": {
           "line": 12,
@@ -618,8 +618,8 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 354,
-      "end": 361,
+      "start": 343,
+      "end": 350,
       "loc": {
         "start": {
           "line": 12,
@@ -644,8 +644,8 @@
         "binop": null
       },
       "value": "curryN",
-      "start": 362,
-      "end": 368,
+      "start": 351,
+      "end": 357,
       "loc": {
         "start": {
           "line": 12,
@@ -669,8 +669,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 368,
-      "end": 369,
+      "start": 357,
+      "end": 358,
       "loc": {
         "start": {
           "line": 12,
@@ -696,8 +696,8 @@
         "updateContext": null
       },
       "value": 2,
-      "start": 369,
-      "end": 370,
+      "start": 358,
+      "end": 359,
       "loc": {
         "start": {
           "line": 12,
@@ -722,8 +722,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 370,
-      "end": 371,
+      "start": 359,
+      "end": 360,
       "loc": {
         "start": {
           "line": 12,
@@ -747,8 +747,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 372,
-      "end": 373,
+      "start": 361,
+      "end": 362,
       "loc": {
         "start": {
           "line": 12,
@@ -773,8 +773,8 @@
         "binop": null
       },
       "value": "func",
-      "start": 373,
-      "end": 377,
+      "start": 362,
+      "end": 366,
       "loc": {
         "start": {
           "line": 12,
@@ -799,8 +799,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 377,
-      "end": 378,
+      "start": 366,
+      "end": 367,
       "loc": {
         "start": {
           "line": 12,
@@ -825,8 +825,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 379,
-      "end": 382,
+      "start": 368,
+      "end": 371,
       "loc": {
         "start": {
           "line": 12,
@@ -851,8 +851,8 @@
         "binop": null
       },
       "value": "payload",
-      "start": 382,
-      "end": 389,
+      "start": 371,
+      "end": 378,
       "loc": {
         "start": {
           "line": 12,
@@ -876,8 +876,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 389,
-      "end": 390,
+      "start": 378,
+      "end": 379,
       "loc": {
         "start": {
           "line": 12,
@@ -902,8 +902,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 391,
-      "end": 393,
+      "start": 380,
+      "end": 382,
       "loc": {
         "start": {
           "line": 12,
@@ -927,8 +927,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 394,
-      "end": 395,
+      "start": 383,
+      "end": 384,
       "loc": {
         "start": {
           "line": 12,
@@ -955,8 +955,8 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 401,
-      "end": 407,
+      "start": 389,
+      "end": 395,
       "loc": {
         "start": {
           "line": 13,
@@ -981,8 +981,8 @@
         "binop": null
       },
       "value": "Promise",
-      "start": 408,
-      "end": 415,
+      "start": 396,
+      "end": 403,
       "loc": {
         "start": {
           "line": 13,
@@ -1007,8 +1007,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 415,
-      "end": 416,
+      "start": 403,
+      "end": 404,
       "loc": {
         "start": {
           "line": 13,
@@ -1033,8 +1033,8 @@
         "binop": null
       },
       "value": "resolve",
-      "start": 416,
-      "end": 423,
+      "start": 404,
+      "end": 411,
       "loc": {
         "start": {
           "line": 13,
@@ -1058,8 +1058,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 423,
-      "end": 424,
+      "start": 411,
+      "end": 412,
       "loc": {
         "start": {
           "line": 13,
@@ -1084,8 +1084,8 @@
         "binop": null
       },
       "value": "func",
-      "start": 424,
-      "end": 428,
+      "start": 412,
+      "end": 416,
       "loc": {
         "start": {
           "line": 13,
@@ -1109,8 +1109,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 428,
-      "end": 429,
+      "start": 416,
+      "end": 417,
       "loc": {
         "start": {
           "line": 13,
@@ -1135,8 +1135,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 429,
-      "end": 432,
+      "start": 417,
+      "end": 420,
       "loc": {
         "start": {
           "line": 13,
@@ -1161,8 +1161,8 @@
         "binop": null
       },
       "value": "payload",
-      "start": 432,
-      "end": 439,
+      "start": 420,
+      "end": 427,
       "loc": {
         "start": {
           "line": 13,
@@ -1186,8 +1186,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 439,
-      "end": 440,
+      "start": 427,
+      "end": 428,
       "loc": {
         "start": {
           "line": 13,
@@ -1211,8 +1211,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 440,
-      "end": 441,
+      "start": 428,
+      "end": 429,
       "loc": {
         "start": {
           "line": 13,
@@ -1237,8 +1237,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 441,
-      "end": 442,
+      "start": 429,
+      "end": 430,
       "loc": {
         "start": {
           "line": 13,
@@ -1262,8 +1262,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 444,
-      "end": 445,
+      "start": 431,
+      "end": 432,
       "loc": {
         "start": {
           "line": 14,
@@ -1287,8 +1287,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 445,
-      "end": 446,
+      "start": 432,
+      "end": 433,
       "loc": {
         "start": {
           "line": 14,
@@ -1313,8 +1313,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 446,
-      "end": 447,
+      "start": 433,
+      "end": 434,
       "loc": {
         "start": {
           "line": 14,
@@ -1339,8 +1339,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 449,
-      "end": 449,
+      "start": 435,
+      "end": 435,
       "loc": {
         "start": {
           "line": 15,

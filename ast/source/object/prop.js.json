@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 478,
+  "end": 463,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 478,
+    "end": 463,
     "loc": {
       "start": {
         "line": 1,
@@ -99,9 +99,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Returns a function that when supplied an object returns the indicated\r\n * property of that object, if it exists.\r\n *\r\n * @param {String} prop The property name\r\n * @param {Object} obj The object to query\r\n * @return {*} The value at `obj.p`.\r\n *\r\n * @example\r\n *\r\n *      prop('x', {x: 100}); //=> 100\r\n *      prop('x', {}); //=> undefined\r\n ",
-            "start": 42,
-            "end": 395,
+            "value": "*\n * Returns a function that when supplied an object returns the indicated\n * property of that object, if it exists.\n *\n * @param {String} prop The property name\n * @param {Object} obj The object to query\n * @return {*} The value at `obj.p`.\n *\n * @example\n *\n *      prop('x', {x: 100}); //=> 100\n *      prop('x', {}); //=> undefined\n ",
+            "start": 41,
+            "end": 382,
             "loc": {
               "start": {
                 "line": 2,
@@ -117,8 +117,8 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 397,
-        "end": 476,
+        "start": 383,
+        "end": 462,
         "loc": {
           "start": {
             "line": 15,
@@ -131,8 +131,8 @@
         },
         "declaration": {
           "type": "ArrowFunctionExpression",
-          "start": 422,
-          "end": 474,
+          "start": 408,
+          "end": 460,
           "loc": {
             "start": {
               "line": 15,
@@ -150,8 +150,8 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 423,
-              "end": 427,
+              "start": 409,
+              "end": 413,
               "loc": {
                 "start": {
                   "line": 15,
@@ -167,8 +167,8 @@
             },
             {
               "type": "Identifier",
-              "start": 429,
-              "end": 432,
+              "start": 415,
+              "end": 418,
               "loc": {
                 "start": {
                   "line": 15,
@@ -185,8 +185,8 @@
           ],
           "body": {
             "type": "ConditionalExpression",
-            "start": 438,
-            "end": 473,
+            "start": 424,
+            "end": 459,
             "loc": {
               "start": {
                 "line": 15,
@@ -199,8 +199,8 @@
             },
             "test": {
               "type": "BinaryExpression",
-              "start": 438,
-              "end": 449,
+              "start": 424,
+              "end": 435,
               "loc": {
                 "start": {
                   "line": 15,
@@ -213,8 +213,8 @@
               },
               "left": {
                 "type": "Identifier",
-                "start": 438,
-                "end": 441,
+                "start": 424,
+                "end": 427,
                 "loc": {
                   "start": {
                     "line": 15,
@@ -231,8 +231,8 @@
               "operator": "!=",
               "right": {
                 "type": "NullLiteral",
-                "start": 445,
-                "end": 449,
+                "start": 431,
+                "end": 435,
                 "loc": {
                   "start": {
                     "line": 15,
@@ -247,8 +247,8 @@
             },
             "consequent": {
               "type": "MemberExpression",
-              "start": 452,
-              "end": 461,
+              "start": 438,
+              "end": 447,
               "loc": {
                 "start": {
                   "line": 15,
@@ -261,8 +261,8 @@
               },
               "object": {
                 "type": "Identifier",
-                "start": 452,
-                "end": 455,
+                "start": 438,
+                "end": 441,
                 "loc": {
                   "start": {
                     "line": 15,
@@ -278,8 +278,8 @@
               },
               "property": {
                 "type": "Identifier",
-                "start": 456,
-                "end": 460,
+                "start": 442,
+                "end": 446,
                 "loc": {
                   "start": {
                     "line": 15,
@@ -297,8 +297,8 @@
             },
             "alternate": {
               "type": "Identifier",
-              "start": 464,
-              "end": 473,
+              "start": 450,
+              "end": 459,
               "loc": {
                 "start": {
                   "line": 15,
@@ -314,16 +314,16 @@
             },
             "extra": {
               "parenthesized": true,
-              "parenStart": 437
+              "parenStart": 423
             }
           },
           "_curryN": 2,
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\r\n * Returns a function that when supplied an object returns the indicated\r\n * property of that object, if it exists.\r\n *\r\n * @param {String} prop The property name\r\n * @param {Object} obj The object to query\r\n * @return {*} The value at `obj.p`.\r\n *\r\n * @example\r\n *\r\n *      prop('x', {x: 100}); //=> 100\r\n *      prop('x', {}); //=> undefined\r\n ",
-              "start": 42,
-              "end": 395,
+              "value": "*\n * Returns a function that when supplied an object returns the indicated\n * property of that object, if it exists.\n *\n * @param {String} prop The property name\n * @param {Object} obj The object to query\n * @return {*} The value at `obj.p`.\n *\n * @example\n *\n *      prop('x', {x: 100}); //=> 100\n *      prop('x', {}); //=> undefined\n ",
+              "start": 41,
+              "end": 382,
               "loc": {
                 "start": {
                   "line": 2,
@@ -341,9 +341,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Returns a function that when supplied an object returns the indicated\r\n * property of that object, if it exists.\r\n *\r\n * @param {String} prop The property name\r\n * @param {Object} obj The object to query\r\n * @return {*} The value at `obj.p`.\r\n *\r\n * @example\r\n *\r\n *      prop('x', {x: 100}); //=> 100\r\n *      prop('x', {}); //=> undefined\r\n ",
-            "start": 42,
-            "end": 395,
+            "value": "*\n * Returns a function that when supplied an object returns the indicated\n * property of that object, if it exists.\n *\n * @param {String} prop The property name\n * @param {Object} obj The object to query\n * @return {*} The value at `obj.p`.\n *\n * @example\n *\n *      prop('x', {x: 100}); //=> 100\n *      prop('x', {}); //=> undefined\n ",
+            "start": 41,
+            "end": 382,
             "loc": {
               "start": {
                 "line": 2,
@@ -363,9 +363,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Returns a function that when supplied an object returns the indicated\r\n * property of that object, if it exists.\r\n *\r\n * @param {String} prop The property name\r\n * @param {Object} obj The object to query\r\n * @return {*} The value at `obj.p`.\r\n *\r\n * @example\r\n *\r\n *      prop('x', {x: 100}); //=> 100\r\n *      prop('x', {}); //=> undefined\r\n ",
-      "start": 42,
-      "end": 395,
+      "value": "*\n * Returns a function that when supplied an object returns the indicated\n * property of that object, if it exists.\n *\n * @param {String} prop The property name\n * @param {Object} obj The object to query\n * @return {*} The value at `obj.p`.\n *\n * @example\n *\n *      prop('x', {x: 100}); //=> 100\n *      prop('x', {}); //=> undefined\n ",
+      "start": 41,
+      "end": 382,
       "loc": {
         "start": {
           "line": 2,
@@ -514,9 +514,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Returns a function that when supplied an object returns the indicated\r\n * property of that object, if it exists.\r\n *\r\n * @param {String} prop The property name\r\n * @param {Object} obj The object to query\r\n * @return {*} The value at `obj.p`.\r\n *\r\n * @example\r\n *\r\n *      prop('x', {x: 100}); //=> 100\r\n *      prop('x', {}); //=> undefined\r\n ",
-      "start": 42,
-      "end": 395,
+      "value": "*\n * Returns a function that when supplied an object returns the indicated\n * property of that object, if it exists.\n *\n * @param {String} prop The property name\n * @param {Object} obj The object to query\n * @return {*} The value at `obj.p`.\n *\n * @example\n *\n *      prop('x', {x: 100}); //=> 100\n *      prop('x', {}); //=> undefined\n ",
+      "start": 41,
+      "end": 382,
       "loc": {
         "start": {
           "line": 2,
@@ -543,8 +543,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 397,
-      "end": 403,
+      "start": 383,
+      "end": 389,
       "loc": {
         "start": {
           "line": 15,
@@ -571,8 +571,8 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 404,
-      "end": 411,
+      "start": 390,
+      "end": 397,
       "loc": {
         "start": {
           "line": 15,
@@ -597,8 +597,8 @@
         "binop": null
       },
       "value": "curryN",
-      "start": 412,
-      "end": 418,
+      "start": 398,
+      "end": 404,
       "loc": {
         "start": {
           "line": 15,
@@ -622,8 +622,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 418,
-      "end": 419,
+      "start": 404,
+      "end": 405,
       "loc": {
         "start": {
           "line": 15,
@@ -649,8 +649,8 @@
         "updateContext": null
       },
       "value": 2,
-      "start": 419,
-      "end": 420,
+      "start": 405,
+      "end": 406,
       "loc": {
         "start": {
           "line": 15,
@@ -675,8 +675,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 420,
-      "end": 421,
+      "start": 406,
+      "end": 407,
       "loc": {
         "start": {
           "line": 15,
@@ -700,8 +700,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 422,
-      "end": 423,
+      "start": 408,
+      "end": 409,
       "loc": {
         "start": {
           "line": 15,
@@ -726,8 +726,8 @@
         "binop": null
       },
       "value": "prop",
-      "start": 423,
-      "end": 427,
+      "start": 409,
+      "end": 413,
       "loc": {
         "start": {
           "line": 15,
@@ -752,8 +752,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 427,
-      "end": 428,
+      "start": 413,
+      "end": 414,
       "loc": {
         "start": {
           "line": 15,
@@ -778,8 +778,8 @@
         "binop": null
       },
       "value": "obj",
-      "start": 429,
-      "end": 432,
+      "start": 415,
+      "end": 418,
       "loc": {
         "start": {
           "line": 15,
@@ -803,8 +803,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 432,
-      "end": 433,
+      "start": 418,
+      "end": 419,
       "loc": {
         "start": {
           "line": 15,
@@ -829,8 +829,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 434,
-      "end": 436,
+      "start": 420,
+      "end": 422,
       "loc": {
         "start": {
           "line": 15,
@@ -854,8 +854,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 437,
-      "end": 438,
+      "start": 423,
+      "end": 424,
       "loc": {
         "start": {
           "line": 15,
@@ -880,8 +880,8 @@
         "binop": null
       },
       "value": "obj",
-      "start": 438,
-      "end": 441,
+      "start": 424,
+      "end": 427,
       "loc": {
         "start": {
           "line": 15,
@@ -907,8 +907,8 @@
         "updateContext": null
       },
       "value": "!=",
-      "start": 442,
-      "end": 444,
+      "start": 428,
+      "end": 430,
       "loc": {
         "start": {
           "line": 15,
@@ -935,8 +935,8 @@
         "updateContext": null
       },
       "value": "null",
-      "start": 445,
-      "end": 449,
+      "start": 431,
+      "end": 435,
       "loc": {
         "start": {
           "line": 15,
@@ -961,8 +961,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 450,
-      "end": 451,
+      "start": 436,
+      "end": 437,
       "loc": {
         "start": {
           "line": 15,
@@ -987,8 +987,8 @@
         "binop": null
       },
       "value": "obj",
-      "start": 452,
-      "end": 455,
+      "start": 438,
+      "end": 441,
       "loc": {
         "start": {
           "line": 15,
@@ -1013,8 +1013,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 455,
-      "end": 456,
+      "start": 441,
+      "end": 442,
       "loc": {
         "start": {
           "line": 15,
@@ -1039,8 +1039,8 @@
         "binop": null
       },
       "value": "prop",
-      "start": 456,
-      "end": 460,
+      "start": 442,
+      "end": 446,
       "loc": {
         "start": {
           "line": 15,
@@ -1065,8 +1065,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 460,
-      "end": 461,
+      "start": 446,
+      "end": 447,
       "loc": {
         "start": {
           "line": 15,
@@ -1091,8 +1091,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 462,
-      "end": 463,
+      "start": 448,
+      "end": 449,
       "loc": {
         "start": {
           "line": 15,
@@ -1117,8 +1117,8 @@
         "binop": null
       },
       "value": "undefined",
-      "start": 464,
-      "end": 473,
+      "start": 450,
+      "end": 459,
       "loc": {
         "start": {
           "line": 15,
@@ -1142,8 +1142,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 473,
-      "end": 474,
+      "start": 459,
+      "end": 460,
       "loc": {
         "start": {
           "line": 15,
@@ -1167,8 +1167,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 474,
-      "end": 475,
+      "start": 460,
+      "end": 461,
       "loc": {
         "start": {
           "line": 15,
@@ -1193,8 +1193,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 475,
-      "end": 476,
+      "start": 461,
+      "end": 462,
       "loc": {
         "start": {
           "line": 15,
@@ -1219,8 +1219,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 478,
-      "end": 478,
+      "start": 463,
+      "end": 463,
       "loc": {
         "start": {
           "line": 16,

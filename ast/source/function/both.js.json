@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 812,
+  "end": 792,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 812,
+    "end": 792,
     "loc": {
       "start": {
         "line": 1,
@@ -99,9 +99,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * A function wrapping calls to the two functions in an `&&` operation,\r\n * returning the result of the first function if it is false-y and the result\r\n * of the second function otherwise. Note that this is short-circuited,\r\n * meaning that the second function will not be invoked if the first returns a\r\n * false-y value.\r\n *\r\n * @param {Function} f a predicate\r\n * @param {Function} g another predicate\r\n * @return {Function} a function that applies its arguments to `f` and `g` and `&&`s their outputs together.\r\n * @example\r\n *\r\n *      var gt10 = x => x > 10;\r\n *      var even = x => x % 2 === 0;\r\n *      var f = both(gt10, even);\r\n *      f(100); //=> true\r\n *      f(101); //=> false\r\n ",
-            "start": 32,
-            "end": 734,
+            "value": "*\n * A function wrapping calls to the two functions in an `&&` operation,\n * returning the result of the first function if it is false-y and the result\n * of the second function otherwise. Note that this is short-circuited,\n * meaning that the second function will not be invoked if the first returns a\n * false-y value.\n *\n * @param {Function} f a predicate\n * @param {Function} g another predicate\n * @return {Function} a function that applies its arguments to `f` and `g` and `&&`s their outputs together.\n * @example\n *\n *      var gt10 = x => x > 10;\n *      var even = x => x % 2 === 0;\n *      var f = both(gt10, even);\n *      f(100); //=> true\n *      f(101); //=> false\n ",
+            "start": 31,
+            "end": 716,
             "loc": {
               "start": {
                 "line": 2,
@@ -117,8 +117,8 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 736,
-        "end": 810,
+        "start": 717,
+        "end": 791,
         "loc": {
           "start": {
             "line": 20,
@@ -131,8 +131,8 @@
         },
         "declaration": {
           "type": "ArrowFunctionExpression",
-          "start": 761,
-          "end": 808,
+          "start": 742,
+          "end": 789,
           "loc": {
             "start": {
               "line": 20,
@@ -150,8 +150,8 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 762,
-              "end": 763,
+              "start": 743,
+              "end": 744,
               "loc": {
                 "start": {
                   "line": 20,
@@ -167,8 +167,8 @@
             },
             {
               "type": "Identifier",
-              "start": 765,
-              "end": 766,
+              "start": 746,
+              "end": 747,
               "loc": {
                 "start": {
                   "line": 20,
@@ -185,8 +185,8 @@
           ],
           "body": {
             "type": "ArrowFunctionExpression",
-            "start": 771,
-            "end": 808,
+            "start": 752,
+            "end": 789,
             "loc": {
               "start": {
                 "line": 20,
@@ -204,8 +204,8 @@
             "params": [
               {
                 "type": "RestElement",
-                "start": 772,
-                "end": 779,
+                "start": 753,
+                "end": 760,
                 "loc": {
                   "start": {
                     "line": 20,
@@ -218,8 +218,8 @@
                 },
                 "argument": {
                   "type": "Identifier",
-                  "start": 775,
-                  "end": 779,
+                  "start": 756,
+                  "end": 760,
                   "loc": {
                     "start": {
                       "line": 20,
@@ -237,8 +237,8 @@
             ],
             "body": {
               "type": "LogicalExpression",
-              "start": 784,
-              "end": 808,
+              "start": 765,
+              "end": 789,
               "loc": {
                 "start": {
                   "line": 20,
@@ -251,8 +251,8 @@
               },
               "left": {
                 "type": "CallExpression",
-                "start": 784,
-                "end": 794,
+                "start": 765,
+                "end": 775,
                 "loc": {
                   "start": {
                     "line": 20,
@@ -265,8 +265,8 @@
                 },
                 "callee": {
                   "type": "Identifier",
-                  "start": 784,
-                  "end": 785,
+                  "start": 765,
+                  "end": 766,
                   "loc": {
                     "start": {
                       "line": 20,
@@ -283,8 +283,8 @@
                 "arguments": [
                   {
                     "type": "SpreadElement",
-                    "start": 786,
-                    "end": 793,
+                    "start": 767,
+                    "end": 774,
                     "loc": {
                       "start": {
                         "line": 20,
@@ -297,8 +297,8 @@
                     },
                     "argument": {
                       "type": "Identifier",
-                      "start": 789,
-                      "end": 793,
+                      "start": 770,
+                      "end": 774,
                       "loc": {
                         "start": {
                           "line": 20,
@@ -318,8 +318,8 @@
               "operator": "&&",
               "right": {
                 "type": "CallExpression",
-                "start": 798,
-                "end": 808,
+                "start": 779,
+                "end": 789,
                 "loc": {
                   "start": {
                     "line": 20,
@@ -332,8 +332,8 @@
                 },
                 "callee": {
                   "type": "Identifier",
-                  "start": 798,
-                  "end": 799,
+                  "start": 779,
+                  "end": 780,
                   "loc": {
                     "start": {
                       "line": 20,
@@ -350,8 +350,8 @@
                 "arguments": [
                   {
                     "type": "SpreadElement",
-                    "start": 800,
-                    "end": 807,
+                    "start": 781,
+                    "end": 788,
                     "loc": {
                       "start": {
                         "line": 20,
@@ -364,8 +364,8 @@
                     },
                     "argument": {
                       "type": "Identifier",
-                      "start": 803,
-                      "end": 807,
+                      "start": 784,
+                      "end": 788,
                       "loc": {
                         "start": {
                           "line": 20,
@@ -388,9 +388,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\r\n * A function wrapping calls to the two functions in an `&&` operation,\r\n * returning the result of the first function if it is false-y and the result\r\n * of the second function otherwise. Note that this is short-circuited,\r\n * meaning that the second function will not be invoked if the first returns a\r\n * false-y value.\r\n *\r\n * @param {Function} f a predicate\r\n * @param {Function} g another predicate\r\n * @return {Function} a function that applies its arguments to `f` and `g` and `&&`s their outputs together.\r\n * @example\r\n *\r\n *      var gt10 = x => x > 10;\r\n *      var even = x => x % 2 === 0;\r\n *      var f = both(gt10, even);\r\n *      f(100); //=> true\r\n *      f(101); //=> false\r\n ",
-              "start": 32,
-              "end": 734,
+              "value": "*\n * A function wrapping calls to the two functions in an `&&` operation,\n * returning the result of the first function if it is false-y and the result\n * of the second function otherwise. Note that this is short-circuited,\n * meaning that the second function will not be invoked if the first returns a\n * false-y value.\n *\n * @param {Function} f a predicate\n * @param {Function} g another predicate\n * @return {Function} a function that applies its arguments to `f` and `g` and `&&`s their outputs together.\n * @example\n *\n *      var gt10 = x => x > 10;\n *      var even = x => x % 2 === 0;\n *      var f = both(gt10, even);\n *      f(100); //=> true\n *      f(101); //=> false\n ",
+              "start": 31,
+              "end": 716,
               "loc": {
                 "start": {
                   "line": 2,
@@ -408,9 +408,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * A function wrapping calls to the two functions in an `&&` operation,\r\n * returning the result of the first function if it is false-y and the result\r\n * of the second function otherwise. Note that this is short-circuited,\r\n * meaning that the second function will not be invoked if the first returns a\r\n * false-y value.\r\n *\r\n * @param {Function} f a predicate\r\n * @param {Function} g another predicate\r\n * @return {Function} a function that applies its arguments to `f` and `g` and `&&`s their outputs together.\r\n * @example\r\n *\r\n *      var gt10 = x => x > 10;\r\n *      var even = x => x % 2 === 0;\r\n *      var f = both(gt10, even);\r\n *      f(100); //=> true\r\n *      f(101); //=> false\r\n ",
-            "start": 32,
-            "end": 734,
+            "value": "*\n * A function wrapping calls to the two functions in an `&&` operation,\n * returning the result of the first function if it is false-y and the result\n * of the second function otherwise. Note that this is short-circuited,\n * meaning that the second function will not be invoked if the first returns a\n * false-y value.\n *\n * @param {Function} f a predicate\n * @param {Function} g another predicate\n * @return {Function} a function that applies its arguments to `f` and `g` and `&&`s their outputs together.\n * @example\n *\n *      var gt10 = x => x > 10;\n *      var even = x => x % 2 === 0;\n *      var f = both(gt10, even);\n *      f(100); //=> true\n *      f(101); //=> false\n ",
+            "start": 31,
+            "end": 716,
             "loc": {
               "start": {
                 "line": 2,
@@ -430,9 +430,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\r\n * A function wrapping calls to the two functions in an `&&` operation,\r\n * returning the result of the first function if it is false-y and the result\r\n * of the second function otherwise. Note that this is short-circuited,\r\n * meaning that the second function will not be invoked if the first returns a\r\n * false-y value.\r\n *\r\n * @param {Function} f a predicate\r\n * @param {Function} g another predicate\r\n * @return {Function} a function that applies its arguments to `f` and `g` and `&&`s their outputs together.\r\n * @example\r\n *\r\n *      var gt10 = x => x > 10;\r\n *      var even = x => x % 2 === 0;\r\n *      var f = both(gt10, even);\r\n *      f(100); //=> true\r\n *      f(101); //=> false\r\n ",
-      "start": 32,
-      "end": 734,
+      "value": "*\n * A function wrapping calls to the two functions in an `&&` operation,\n * returning the result of the first function if it is false-y and the result\n * of the second function otherwise. Note that this is short-circuited,\n * meaning that the second function will not be invoked if the first returns a\n * false-y value.\n *\n * @param {Function} f a predicate\n * @param {Function} g another predicate\n * @return {Function} a function that applies its arguments to `f` and `g` and `&&`s their outputs together.\n * @example\n *\n *      var gt10 = x => x > 10;\n *      var even = x => x % 2 === 0;\n *      var f = both(gt10, even);\n *      f(100); //=> true\n *      f(101); //=> false\n ",
+      "start": 31,
+      "end": 716,
       "loc": {
         "start": {
           "line": 2,
@@ -581,9 +581,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\r\n * A function wrapping calls to the two functions in an `&&` operation,\r\n * returning the result of the first function if it is false-y and the result\r\n * of the second function otherwise. Note that this is short-circuited,\r\n * meaning that the second function will not be invoked if the first returns a\r\n * false-y value.\r\n *\r\n * @param {Function} f a predicate\r\n * @param {Function} g another predicate\r\n * @return {Function} a function that applies its arguments to `f` and `g` and `&&`s their outputs together.\r\n * @example\r\n *\r\n *      var gt10 = x => x > 10;\r\n *      var even = x => x % 2 === 0;\r\n *      var f = both(gt10, even);\r\n *      f(100); //=> true\r\n *      f(101); //=> false\r\n ",
-      "start": 32,
-      "end": 734,
+      "value": "*\n * A function wrapping calls to the two functions in an `&&` operation,\n * returning the result of the first function if it is false-y and the result\n * of the second function otherwise. Note that this is short-circuited,\n * meaning that the second function will not be invoked if the first returns a\n * false-y value.\n *\n * @param {Function} f a predicate\n * @param {Function} g another predicate\n * @return {Function} a function that applies its arguments to `f` and `g` and `&&`s their outputs together.\n * @example\n *\n *      var gt10 = x => x > 10;\n *      var even = x => x % 2 === 0;\n *      var f = both(gt10, even);\n *      f(100); //=> true\n *      f(101); //=> false\n ",
+      "start": 31,
+      "end": 716,
       "loc": {
         "start": {
           "line": 2,
@@ -610,8 +610,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 736,
-      "end": 742,
+      "start": 717,
+      "end": 723,
       "loc": {
         "start": {
           "line": 20,
@@ -638,8 +638,8 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 743,
-      "end": 750,
+      "start": 724,
+      "end": 731,
       "loc": {
         "start": {
           "line": 20,
@@ -664,8 +664,8 @@
         "binop": null
       },
       "value": "curryN",
-      "start": 751,
-      "end": 757,
+      "start": 732,
+      "end": 738,
       "loc": {
         "start": {
           "line": 20,
@@ -689,8 +689,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 757,
-      "end": 758,
+      "start": 738,
+      "end": 739,
       "loc": {
         "start": {
           "line": 20,
@@ -716,8 +716,8 @@
         "updateContext": null
       },
       "value": 2,
-      "start": 758,
-      "end": 759,
+      "start": 739,
+      "end": 740,
       "loc": {
         "start": {
           "line": 20,
@@ -742,8 +742,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 759,
-      "end": 760,
+      "start": 740,
+      "end": 741,
       "loc": {
         "start": {
           "line": 20,
@@ -767,8 +767,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 761,
-      "end": 762,
+      "start": 742,
+      "end": 743,
       "loc": {
         "start": {
           "line": 20,
@@ -793,8 +793,8 @@
         "binop": null
       },
       "value": "f",
-      "start": 762,
-      "end": 763,
+      "start": 743,
+      "end": 744,
       "loc": {
         "start": {
           "line": 20,
@@ -819,8 +819,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 763,
-      "end": 764,
+      "start": 744,
+      "end": 745,
       "loc": {
         "start": {
           "line": 20,
@@ -845,8 +845,8 @@
         "binop": null
       },
       "value": "g",
-      "start": 765,
-      "end": 766,
+      "start": 746,
+      "end": 747,
       "loc": {
         "start": {
           "line": 20,
@@ -870,8 +870,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 766,
-      "end": 767,
+      "start": 747,
+      "end": 748,
       "loc": {
         "start": {
           "line": 20,
@@ -896,8 +896,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 768,
-      "end": 770,
+      "start": 749,
+      "end": 751,
       "loc": {
         "start": {
           "line": 20,
@@ -921,8 +921,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 771,
-      "end": 772,
+      "start": 752,
+      "end": 753,
       "loc": {
         "start": {
           "line": 20,
@@ -947,8 +947,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 772,
-      "end": 775,
+      "start": 753,
+      "end": 756,
       "loc": {
         "start": {
           "line": 20,
@@ -973,8 +973,8 @@
         "binop": null
       },
       "value": "args",
-      "start": 775,
-      "end": 779,
+      "start": 756,
+      "end": 760,
       "loc": {
         "start": {
           "line": 20,
@@ -998,8 +998,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 779,
-      "end": 780,
+      "start": 760,
+      "end": 761,
       "loc": {
         "start": {
           "line": 20,
@@ -1024,8 +1024,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 781,
-      "end": 783,
+      "start": 762,
+      "end": 764,
       "loc": {
         "start": {
           "line": 20,
@@ -1050,8 +1050,8 @@
         "binop": null
       },
       "value": "f",
-      "start": 784,
-      "end": 785,
+      "start": 765,
+      "end": 766,
       "loc": {
         "start": {
           "line": 20,
@@ -1075,8 +1075,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 785,
-      "end": 786,
+      "start": 766,
+      "end": 767,
       "loc": {
         "start": {
           "line": 20,
@@ -1101,8 +1101,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 786,
-      "end": 789,
+      "start": 767,
+      "end": 770,
       "loc": {
         "start": {
           "line": 20,
@@ -1127,8 +1127,8 @@
         "binop": null
       },
       "value": "args",
-      "start": 789,
-      "end": 793,
+      "start": 770,
+      "end": 774,
       "loc": {
         "start": {
           "line": 20,
@@ -1152,8 +1152,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 793,
-      "end": 794,
+      "start": 774,
+      "end": 775,
       "loc": {
         "start": {
           "line": 20,
@@ -1179,8 +1179,8 @@
         "updateContext": null
       },
       "value": "&&",
-      "start": 795,
-      "end": 797,
+      "start": 776,
+      "end": 778,
       "loc": {
         "start": {
           "line": 20,
@@ -1205,8 +1205,8 @@
         "binop": null
       },
       "value": "g",
-      "start": 798,
-      "end": 799,
+      "start": 779,
+      "end": 780,
       "loc": {
         "start": {
           "line": 20,
@@ -1230,8 +1230,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 799,
-      "end": 800,
+      "start": 780,
+      "end": 781,
       "loc": {
         "start": {
           "line": 20,
@@ -1256,8 +1256,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 800,
-      "end": 803,
+      "start": 781,
+      "end": 784,
       "loc": {
         "start": {
           "line": 20,
@@ -1282,8 +1282,8 @@
         "binop": null
       },
       "value": "args",
-      "start": 803,
-      "end": 807,
+      "start": 784,
+      "end": 788,
       "loc": {
         "start": {
           "line": 20,
@@ -1307,8 +1307,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 807,
-      "end": 808,
+      "start": 788,
+      "end": 789,
       "loc": {
         "start": {
           "line": 20,
@@ -1332,8 +1332,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 808,
-      "end": 809,
+      "start": 789,
+      "end": 790,
       "loc": {
         "start": {
           "line": 20,
@@ -1358,8 +1358,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 809,
-      "end": 810,
+      "start": 790,
+      "end": 791,
       "loc": {
         "start": {
           "line": 20,
@@ -1384,8 +1384,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 812,
-      "end": 812,
+      "start": 792,
+      "end": 792,
       "loc": {
         "start": {
           "line": 21,

@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 512,
+  "end": 497,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 512,
+    "end": 497,
     "loc": {
       "start": {
         "line": 1,
@@ -99,9 +99,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Wraps a one-parameter function,\r\n * new function returns true if passed parameter is undefined, otherwise returns result of calling `fn`\r\n *\r\n * @param {Function} fn function to wrap\r\n * @returns {Function}\r\n * @example\r\n *\r\n *      const optIsString = optional(isString);\r\n *      optIsString() // => true\r\n *      optIsString({}) // => false\r\n *      optIsString('str') // => true\r\n ",
-            "start": 42,
-            "end": 437,
+            "value": "*\n * Wraps a one-parameter function,\n * new function returns true if passed parameter is undefined, otherwise returns result of calling `fn`\n *\n * @param {Function} fn function to wrap\n * @returns {Function}\n * @example\n *\n *      const optIsString = optional(isString);\n *      optIsString() // => true\n *      optIsString({}) // => false\n *      optIsString('str') // => true\n ",
+            "start": 41,
+            "end": 424,
             "loc": {
               "start": {
                 "line": 2,
@@ -117,8 +117,8 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 439,
-        "end": 510,
+        "start": 425,
+        "end": 496,
         "loc": {
           "start": {
             "line": 15,
@@ -131,8 +131,8 @@
         },
         "declaration": {
           "type": "ArrowFunctionExpression",
-          "start": 464,
-          "end": 508,
+          "start": 450,
+          "end": 494,
           "loc": {
             "start": {
               "line": 15,
@@ -150,8 +150,8 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 465,
-              "end": 467,
+              "start": 451,
+              "end": 453,
               "loc": {
                 "start": {
                   "line": 15,
@@ -167,8 +167,8 @@
             },
             {
               "type": "Identifier",
-              "start": 469,
-              "end": 470,
+              "start": 455,
+              "end": 456,
               "loc": {
                 "start": {
                   "line": 15,
@@ -185,8 +185,8 @@
           ],
           "body": {
             "type": "LogicalExpression",
-            "start": 475,
-            "end": 508,
+            "start": 461,
+            "end": 494,
             "loc": {
               "start": {
                 "line": 15,
@@ -199,8 +199,8 @@
             },
             "left": {
               "type": "BinaryExpression",
-              "start": 475,
-              "end": 499,
+              "start": 461,
+              "end": 485,
               "loc": {
                 "start": {
                   "line": 15,
@@ -213,8 +213,8 @@
               },
               "left": {
                 "type": "UnaryExpression",
-                "start": 475,
-                "end": 483,
+                "start": 461,
+                "end": 469,
                 "loc": {
                   "start": {
                     "line": 15,
@@ -229,8 +229,8 @@
                 "prefix": true,
                 "argument": {
                   "type": "Identifier",
-                  "start": 482,
-                  "end": 483,
+                  "start": 468,
+                  "end": 469,
                   "loc": {
                     "start": {
                       "line": 15,
@@ -251,8 +251,8 @@
               "operator": "===",
               "right": {
                 "type": "StringLiteral",
-                "start": 488,
-                "end": 499,
+                "start": 474,
+                "end": 485,
                 "loc": {
                   "start": {
                     "line": 15,
@@ -273,8 +273,8 @@
             "operator": "||",
             "right": {
               "type": "CallExpression",
-              "start": 503,
-              "end": 508,
+              "start": 489,
+              "end": 494,
               "loc": {
                 "start": {
                   "line": 15,
@@ -287,8 +287,8 @@
               },
               "callee": {
                 "type": "Identifier",
-                "start": 503,
-                "end": 505,
+                "start": 489,
+                "end": 491,
                 "loc": {
                   "start": {
                     "line": 15,
@@ -305,8 +305,8 @@
               "arguments": [
                 {
                   "type": "Identifier",
-                  "start": 506,
-                  "end": 507,
+                  "start": 492,
+                  "end": 493,
                   "loc": {
                     "start": {
                       "line": 15,
@@ -327,9 +327,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\r\n * Wraps a one-parameter function,\r\n * new function returns true if passed parameter is undefined, otherwise returns result of calling `fn`\r\n *\r\n * @param {Function} fn function to wrap\r\n * @returns {Function}\r\n * @example\r\n *\r\n *      const optIsString = optional(isString);\r\n *      optIsString() // => true\r\n *      optIsString({}) // => false\r\n *      optIsString('str') // => true\r\n ",
-              "start": 42,
-              "end": 437,
+              "value": "*\n * Wraps a one-parameter function,\n * new function returns true if passed parameter is undefined, otherwise returns result of calling `fn`\n *\n * @param {Function} fn function to wrap\n * @returns {Function}\n * @example\n *\n *      const optIsString = optional(isString);\n *      optIsString() // => true\n *      optIsString({}) // => false\n *      optIsString('str') // => true\n ",
+              "start": 41,
+              "end": 424,
               "loc": {
                 "start": {
                   "line": 2,
@@ -347,9 +347,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Wraps a one-parameter function,\r\n * new function returns true if passed parameter is undefined, otherwise returns result of calling `fn`\r\n *\r\n * @param {Function} fn function to wrap\r\n * @returns {Function}\r\n * @example\r\n *\r\n *      const optIsString = optional(isString);\r\n *      optIsString() // => true\r\n *      optIsString({}) // => false\r\n *      optIsString('str') // => true\r\n ",
-            "start": 42,
-            "end": 437,
+            "value": "*\n * Wraps a one-parameter function,\n * new function returns true if passed parameter is undefined, otherwise returns result of calling `fn`\n *\n * @param {Function} fn function to wrap\n * @returns {Function}\n * @example\n *\n *      const optIsString = optional(isString);\n *      optIsString() // => true\n *      optIsString({}) // => false\n *      optIsString('str') // => true\n ",
+            "start": 41,
+            "end": 424,
             "loc": {
               "start": {
                 "line": 2,
@@ -369,9 +369,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Wraps a one-parameter function,\r\n * new function returns true if passed parameter is undefined, otherwise returns result of calling `fn`\r\n *\r\n * @param {Function} fn function to wrap\r\n * @returns {Function}\r\n * @example\r\n *\r\n *      const optIsString = optional(isString);\r\n *      optIsString() // => true\r\n *      optIsString({}) // => false\r\n *      optIsString('str') // => true\r\n ",
-      "start": 42,
-      "end": 437,
+      "value": "*\n * Wraps a one-parameter function,\n * new function returns true if passed parameter is undefined, otherwise returns result of calling `fn`\n *\n * @param {Function} fn function to wrap\n * @returns {Function}\n * @example\n *\n *      const optIsString = optional(isString);\n *      optIsString() // => true\n *      optIsString({}) // => false\n *      optIsString('str') // => true\n ",
+      "start": 41,
+      "end": 424,
       "loc": {
         "start": {
           "line": 2,
@@ -520,9 +520,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Wraps a one-parameter function,\r\n * new function returns true if passed parameter is undefined, otherwise returns result of calling `fn`\r\n *\r\n * @param {Function} fn function to wrap\r\n * @returns {Function}\r\n * @example\r\n *\r\n *      const optIsString = optional(isString);\r\n *      optIsString() // => true\r\n *      optIsString({}) // => false\r\n *      optIsString('str') // => true\r\n ",
-      "start": 42,
-      "end": 437,
+      "value": "*\n * Wraps a one-parameter function,\n * new function returns true if passed parameter is undefined, otherwise returns result of calling `fn`\n *\n * @param {Function} fn function to wrap\n * @returns {Function}\n * @example\n *\n *      const optIsString = optional(isString);\n *      optIsString() // => true\n *      optIsString({}) // => false\n *      optIsString('str') // => true\n ",
+      "start": 41,
+      "end": 424,
       "loc": {
         "start": {
           "line": 2,
@@ -549,8 +549,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 439,
-      "end": 445,
+      "start": 425,
+      "end": 431,
       "loc": {
         "start": {
           "line": 15,
@@ -577,8 +577,8 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 446,
-      "end": 453,
+      "start": 432,
+      "end": 439,
       "loc": {
         "start": {
           "line": 15,
@@ -603,8 +603,8 @@
         "binop": null
       },
       "value": "curryN",
-      "start": 454,
-      "end": 460,
+      "start": 440,
+      "end": 446,
       "loc": {
         "start": {
           "line": 15,
@@ -628,8 +628,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 460,
-      "end": 461,
+      "start": 446,
+      "end": 447,
       "loc": {
         "start": {
           "line": 15,
@@ -655,8 +655,8 @@
         "updateContext": null
       },
       "value": 2,
-      "start": 461,
-      "end": 462,
+      "start": 447,
+      "end": 448,
       "loc": {
         "start": {
           "line": 15,
@@ -681,8 +681,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 462,
-      "end": 463,
+      "start": 448,
+      "end": 449,
       "loc": {
         "start": {
           "line": 15,
@@ -706,8 +706,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 464,
-      "end": 465,
+      "start": 450,
+      "end": 451,
       "loc": {
         "start": {
           "line": 15,
@@ -732,8 +732,8 @@
         "binop": null
       },
       "value": "fn",
-      "start": 465,
-      "end": 467,
+      "start": 451,
+      "end": 453,
       "loc": {
         "start": {
           "line": 15,
@@ -758,8 +758,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 467,
-      "end": 468,
+      "start": 453,
+      "end": 454,
       "loc": {
         "start": {
           "line": 15,
@@ -784,8 +784,8 @@
         "binop": null
       },
       "value": "x",
-      "start": 469,
-      "end": 470,
+      "start": 455,
+      "end": 456,
       "loc": {
         "start": {
           "line": 15,
@@ -809,8 +809,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 470,
-      "end": 471,
+      "start": 456,
+      "end": 457,
       "loc": {
         "start": {
           "line": 15,
@@ -835,8 +835,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 472,
-      "end": 474,
+      "start": 458,
+      "end": 460,
       "loc": {
         "start": {
           "line": 15,
@@ -863,8 +863,8 @@
         "updateContext": null
       },
       "value": "typeof",
-      "start": 475,
-      "end": 481,
+      "start": 461,
+      "end": 467,
       "loc": {
         "start": {
           "line": 15,
@@ -889,8 +889,8 @@
         "binop": null
       },
       "value": "x",
-      "start": 482,
-      "end": 483,
+      "start": 468,
+      "end": 469,
       "loc": {
         "start": {
           "line": 15,
@@ -916,8 +916,8 @@
         "updateContext": null
       },
       "value": "===",
-      "start": 484,
-      "end": 487,
+      "start": 470,
+      "end": 473,
       "loc": {
         "start": {
           "line": 15,
@@ -943,8 +943,8 @@
         "updateContext": null
       },
       "value": "undefined",
-      "start": 488,
-      "end": 499,
+      "start": 474,
+      "end": 485,
       "loc": {
         "start": {
           "line": 15,
@@ -970,8 +970,8 @@
         "updateContext": null
       },
       "value": "||",
-      "start": 500,
-      "end": 502,
+      "start": 486,
+      "end": 488,
       "loc": {
         "start": {
           "line": 15,
@@ -996,8 +996,8 @@
         "binop": null
       },
       "value": "fn",
-      "start": 503,
-      "end": 505,
+      "start": 489,
+      "end": 491,
       "loc": {
         "start": {
           "line": 15,
@@ -1021,8 +1021,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 505,
-      "end": 506,
+      "start": 491,
+      "end": 492,
       "loc": {
         "start": {
           "line": 15,
@@ -1047,8 +1047,8 @@
         "binop": null
       },
       "value": "x",
-      "start": 506,
-      "end": 507,
+      "start": 492,
+      "end": 493,
       "loc": {
         "start": {
           "line": 15,
@@ -1072,8 +1072,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 507,
-      "end": 508,
+      "start": 493,
+      "end": 494,
       "loc": {
         "start": {
           "line": 15,
@@ -1097,8 +1097,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 508,
-      "end": 509,
+      "start": 494,
+      "end": 495,
       "loc": {
         "start": {
           "line": 15,
@@ -1123,8 +1123,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 509,
-      "end": 510,
+      "start": 495,
+      "end": 496,
       "loc": {
         "start": {
           "line": 15,
@@ -1149,8 +1149,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 512,
-      "end": 512,
+      "start": 497,
+      "end": 497,
       "loc": {
         "start": {
           "line": 16,

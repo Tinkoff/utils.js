@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 877,
+  "end": 850,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 877,
+    "end": 850,
     "loc": {
       "start": {
         "line": 1,
@@ -99,8 +99,8 @@
       },
       {
         "type": "ImportDeclaration",
-        "start": 42,
-        "end": 66,
+        "start": 41,
+        "end": 65,
         "loc": {
           "start": {
             "line": 2,
@@ -114,8 +114,8 @@
         "specifiers": [
           {
             "type": "ImportDefaultSpecifier",
-            "start": 49,
-            "end": 52,
+            "start": 48,
+            "end": 51,
             "loc": {
               "start": {
                 "line": 2,
@@ -128,8 +128,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 49,
-              "end": 52,
+              "start": 48,
+              "end": 51,
               "loc": {
                 "start": {
                   "line": 2,
@@ -147,8 +147,8 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 58,
-          "end": 65,
+          "start": 57,
+          "end": 64,
           "loc": {
             "start": {
               "line": 2,
@@ -168,9 +168,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Makes a shallow clone of an object, setting or overriding the specified\r\n * property with the given value. All non-primitive properties are\r\n * copied by reference.\r\n *\r\n * **Note:** If property in the object is equal to value by reference then function\r\n * just returns object without changes\r\n *\r\n * @param {String} prop The property name to set\r\n * @param {*} val The new value\r\n * @param {Object} obj The object to clone\r\n * @return {Object} A new object equivalent to the original except for the changed property.\r\n * @example\r\n *\r\n *      propSet('c', 3, {a: 1, b: 2}); //=> {a: 1, b: 2, c: 3}\r\n ",
-            "start": 68,
-            "end": 680,
+            "value": "*\n * Makes a shallow clone of an object, setting or overriding the specified\n * property with the given value. All non-primitive properties are\n * copied by reference.\n *\n * **Note:** If property in the object is equal to value by reference then function\n * just returns object without changes\n *\n * @param {String} prop The property name to set\n * @param {*} val The new value\n * @param {Object} obj The object to clone\n * @return {Object} A new object equivalent to the original except for the changed property.\n * @example\n *\n *      propSet('c', 3, {a: 1, b: 2}); //=> {a: 1, b: 2, c: 3}\n ",
+            "start": 66,
+            "end": 663,
             "loc": {
               "start": {
                 "line": 3,
@@ -186,8 +186,8 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 682,
-        "end": 875,
+        "start": 664,
+        "end": 849,
         "loc": {
           "start": {
             "line": 19,
@@ -200,8 +200,8 @@
         },
         "declaration": {
           "type": "ArrowFunctionExpression",
-          "start": 707,
-          "end": 873,
+          "start": 689,
+          "end": 847,
           "loc": {
             "start": {
               "line": 19,
@@ -219,8 +219,8 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 708,
-              "end": 712,
+              "start": 690,
+              "end": 694,
               "loc": {
                 "start": {
                   "line": 19,
@@ -236,8 +236,8 @@
             },
             {
               "type": "Identifier",
-              "start": 714,
-              "end": 717,
+              "start": 696,
+              "end": 699,
               "loc": {
                 "start": {
                   "line": 19,
@@ -253,8 +253,8 @@
             },
             {
               "type": "AssignmentPattern",
-              "start": 719,
-              "end": 727,
+              "start": 701,
+              "end": 709,
               "loc": {
                 "start": {
                   "line": 19,
@@ -267,8 +267,8 @@
               },
               "left": {
                 "type": "Identifier",
-                "start": 719,
-                "end": 722,
+                "start": 701,
+                "end": 704,
                 "loc": {
                   "start": {
                     "line": 19,
@@ -284,8 +284,8 @@
               },
               "right": {
                 "type": "ObjectExpression",
-                "start": 725,
-                "end": 727,
+                "start": 707,
+                "end": 709,
                 "loc": {
                   "start": {
                     "line": 19,
@@ -302,8 +302,8 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 732,
-            "end": 873,
+            "start": 714,
+            "end": 847,
             "loc": {
               "start": {
                 "line": 19,
@@ -317,8 +317,8 @@
             "body": [
               {
                 "type": "IfStatement",
-                "start": 739,
-                "end": 809,
+                "start": 720,
+                "end": 788,
                 "loc": {
                   "start": {
                     "line": 20,
@@ -331,8 +331,8 @@
                 },
                 "test": {
                   "type": "LogicalExpression",
-                  "start": 743,
-                  "end": 778,
+                  "start": 724,
+                  "end": 759,
                   "loc": {
                     "start": {
                       "line": 20,
@@ -345,8 +345,8 @@
                   },
                   "left": {
                     "type": "CallExpression",
-                    "start": 743,
-                    "end": 757,
+                    "start": 724,
+                    "end": 738,
                     "loc": {
                       "start": {
                         "line": 20,
@@ -359,8 +359,8 @@
                     },
                     "callee": {
                       "type": "Identifier",
-                      "start": 743,
-                      "end": 746,
+                      "start": 724,
+                      "end": 727,
                       "loc": {
                         "start": {
                           "line": 20,
@@ -377,8 +377,8 @@
                     "arguments": [
                       {
                         "type": "Identifier",
-                        "start": 747,
-                        "end": 751,
+                        "start": 728,
+                        "end": 732,
                         "loc": {
                           "start": {
                             "line": 20,
@@ -394,8 +394,8 @@
                       },
                       {
                         "type": "Identifier",
-                        "start": 753,
-                        "end": 756,
+                        "start": 734,
+                        "end": 737,
                         "loc": {
                           "start": {
                             "line": 20,
@@ -414,8 +414,8 @@
                   "operator": "&&",
                   "right": {
                     "type": "BinaryExpression",
-                    "start": 761,
-                    "end": 778,
+                    "start": 742,
+                    "end": 759,
                     "loc": {
                       "start": {
                         "line": 20,
@@ -428,8 +428,8 @@
                     },
                     "left": {
                       "type": "MemberExpression",
-                      "start": 761,
-                      "end": 770,
+                      "start": 742,
+                      "end": 751,
                       "loc": {
                         "start": {
                           "line": 20,
@@ -442,8 +442,8 @@
                       },
                       "object": {
                         "type": "Identifier",
-                        "start": 761,
-                        "end": 764,
+                        "start": 742,
+                        "end": 745,
                         "loc": {
                           "start": {
                             "line": 20,
@@ -459,8 +459,8 @@
                       },
                       "property": {
                         "type": "Identifier",
-                        "start": 765,
-                        "end": 769,
+                        "start": 746,
+                        "end": 750,
                         "loc": {
                           "start": {
                             "line": 20,
@@ -479,8 +479,8 @@
                     "operator": "===",
                     "right": {
                       "type": "Identifier",
-                      "start": 775,
-                      "end": 778,
+                      "start": 756,
+                      "end": 759,
                       "loc": {
                         "start": {
                           "line": 20,
@@ -498,8 +498,8 @@
                 },
                 "consequent": {
                   "type": "BlockStatement",
-                  "start": 780,
-                  "end": 809,
+                  "start": 761,
+                  "end": 788,
                   "loc": {
                     "start": {
                       "line": 20,
@@ -513,8 +513,8 @@
                   "body": [
                     {
                       "type": "ReturnStatement",
-                      "start": 791,
-                      "end": 802,
+                      "start": 771,
+                      "end": 782,
                       "loc": {
                         "start": {
                           "line": 21,
@@ -527,8 +527,8 @@
                       },
                       "argument": {
                         "type": "Identifier",
-                        "start": 798,
-                        "end": 801,
+                        "start": 778,
+                        "end": 781,
                         "loc": {
                           "start": {
                             "line": 21,
@@ -550,8 +550,8 @@
               },
               {
                 "type": "ReturnStatement",
-                "start": 815,
-                "end": 870,
+                "start": 793,
+                "end": 845,
                 "loc": {
                   "start": {
                     "line": 23,
@@ -564,8 +564,8 @@
                 },
                 "argument": {
                   "type": "ObjectExpression",
-                  "start": 822,
-                  "end": 869,
+                  "start": 800,
+                  "end": 844,
                   "loc": {
                     "start": {
                       "line": 23,
@@ -579,8 +579,8 @@
                   "properties": [
                     {
                       "type": "SpreadProperty",
-                      "start": 833,
-                      "end": 839,
+                      "start": 810,
+                      "end": 816,
                       "loc": {
                         "start": {
                           "line": 24,
@@ -593,8 +593,8 @@
                       },
                       "argument": {
                         "type": "Identifier",
-                        "start": 836,
-                        "end": 839,
+                        "start": 813,
+                        "end": 816,
                         "loc": {
                           "start": {
                             "line": 24,
@@ -611,8 +611,8 @@
                     },
                     {
                       "type": "ObjectProperty",
-                      "start": 850,
-                      "end": 861,
+                      "start": 826,
+                      "end": 837,
                       "loc": {
                         "start": {
                           "line": 25,
@@ -628,8 +628,8 @@
                       "computed": true,
                       "key": {
                         "type": "Identifier",
-                        "start": 851,
-                        "end": 855,
+                        "start": 827,
+                        "end": 831,
                         "loc": {
                           "start": {
                             "line": 25,
@@ -645,8 +645,8 @@
                       },
                       "value": {
                         "type": "Identifier",
-                        "start": 858,
-                        "end": 861,
+                        "start": 834,
+                        "end": 837,
                         "loc": {
                           "start": {
                             "line": 25,
@@ -671,9 +671,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\r\n * Makes a shallow clone of an object, setting or overriding the specified\r\n * property with the given value. All non-primitive properties are\r\n * copied by reference.\r\n *\r\n * **Note:** If property in the object is equal to value by reference then function\r\n * just returns object without changes\r\n *\r\n * @param {String} prop The property name to set\r\n * @param {*} val The new value\r\n * @param {Object} obj The object to clone\r\n * @return {Object} A new object equivalent to the original except for the changed property.\r\n * @example\r\n *\r\n *      propSet('c', 3, {a: 1, b: 2}); //=> {a: 1, b: 2, c: 3}\r\n ",
-              "start": 68,
-              "end": 680,
+              "value": "*\n * Makes a shallow clone of an object, setting or overriding the specified\n * property with the given value. All non-primitive properties are\n * copied by reference.\n *\n * **Note:** If property in the object is equal to value by reference then function\n * just returns object without changes\n *\n * @param {String} prop The property name to set\n * @param {*} val The new value\n * @param {Object} obj The object to clone\n * @return {Object} A new object equivalent to the original except for the changed property.\n * @example\n *\n *      propSet('c', 3, {a: 1, b: 2}); //=> {a: 1, b: 2, c: 3}\n ",
+              "start": 66,
+              "end": 663,
               "loc": {
                 "start": {
                   "line": 3,
@@ -691,9 +691,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Makes a shallow clone of an object, setting or overriding the specified\r\n * property with the given value. All non-primitive properties are\r\n * copied by reference.\r\n *\r\n * **Note:** If property in the object is equal to value by reference then function\r\n * just returns object without changes\r\n *\r\n * @param {String} prop The property name to set\r\n * @param {*} val The new value\r\n * @param {Object} obj The object to clone\r\n * @return {Object} A new object equivalent to the original except for the changed property.\r\n * @example\r\n *\r\n *      propSet('c', 3, {a: 1, b: 2}); //=> {a: 1, b: 2, c: 3}\r\n ",
-            "start": 68,
-            "end": 680,
+            "value": "*\n * Makes a shallow clone of an object, setting or overriding the specified\n * property with the given value. All non-primitive properties are\n * copied by reference.\n *\n * **Note:** If property in the object is equal to value by reference then function\n * just returns object without changes\n *\n * @param {String} prop The property name to set\n * @param {*} val The new value\n * @param {Object} obj The object to clone\n * @return {Object} A new object equivalent to the original except for the changed property.\n * @example\n *\n *      propSet('c', 3, {a: 1, b: 2}); //=> {a: 1, b: 2, c: 3}\n ",
+            "start": 66,
+            "end": 663,
             "loc": {
               "start": {
                 "line": 3,
@@ -713,9 +713,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Makes a shallow clone of an object, setting or overriding the specified\r\n * property with the given value. All non-primitive properties are\r\n * copied by reference.\r\n *\r\n * **Note:** If property in the object is equal to value by reference then function\r\n * just returns object without changes\r\n *\r\n * @param {String} prop The property name to set\r\n * @param {*} val The new value\r\n * @param {Object} obj The object to clone\r\n * @return {Object} A new object equivalent to the original except for the changed property.\r\n * @example\r\n *\r\n *      propSet('c', 3, {a: 1, b: 2}); //=> {a: 1, b: 2, c: 3}\r\n ",
-      "start": 68,
-      "end": 680,
+      "value": "*\n * Makes a shallow clone of an object, setting or overriding the specified\n * property with the given value. All non-primitive properties are\n * copied by reference.\n *\n * **Note:** If property in the object is equal to value by reference then function\n * just returns object without changes\n *\n * @param {String} prop The property name to set\n * @param {*} val The new value\n * @param {Object} obj The object to clone\n * @return {Object} A new object equivalent to the original except for the changed property.\n * @example\n *\n *      propSet('c', 3, {a: 1, b: 2}); //=> {a: 1, b: 2, c: 3}\n ",
+      "start": 66,
+      "end": 663,
       "loc": {
         "start": {
           "line": 3,
@@ -877,8 +877,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 42,
-      "end": 48,
+      "start": 41,
+      "end": 47,
       "loc": {
         "start": {
           "line": 2,
@@ -903,8 +903,8 @@
         "binop": null
       },
       "value": "has",
-      "start": 49,
-      "end": 52,
+      "start": 48,
+      "end": 51,
       "loc": {
         "start": {
           "line": 2,
@@ -929,8 +929,8 @@
         "binop": null
       },
       "value": "from",
-      "start": 53,
-      "end": 57,
+      "start": 52,
+      "end": 56,
       "loc": {
         "start": {
           "line": 2,
@@ -956,8 +956,8 @@
         "updateContext": null
       },
       "value": "./has",
-      "start": 58,
-      "end": 65,
+      "start": 57,
+      "end": 64,
       "loc": {
         "start": {
           "line": 2,
@@ -982,8 +982,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 65,
-      "end": 66,
+      "start": 64,
+      "end": 65,
       "loc": {
         "start": {
           "line": 2,
@@ -997,9 +997,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Makes a shallow clone of an object, setting or overriding the specified\r\n * property with the given value. All non-primitive properties are\r\n * copied by reference.\r\n *\r\n * **Note:** If property in the object is equal to value by reference then function\r\n * just returns object without changes\r\n *\r\n * @param {String} prop The property name to set\r\n * @param {*} val The new value\r\n * @param {Object} obj The object to clone\r\n * @return {Object} A new object equivalent to the original except for the changed property.\r\n * @example\r\n *\r\n *      propSet('c', 3, {a: 1, b: 2}); //=> {a: 1, b: 2, c: 3}\r\n ",
-      "start": 68,
-      "end": 680,
+      "value": "*\n * Makes a shallow clone of an object, setting or overriding the specified\n * property with the given value. All non-primitive properties are\n * copied by reference.\n *\n * **Note:** If property in the object is equal to value by reference then function\n * just returns object without changes\n *\n * @param {String} prop The property name to set\n * @param {*} val The new value\n * @param {Object} obj The object to clone\n * @return {Object} A new object equivalent to the original except for the changed property.\n * @example\n *\n *      propSet('c', 3, {a: 1, b: 2}); //=> {a: 1, b: 2, c: 3}\n ",
+      "start": 66,
+      "end": 663,
       "loc": {
         "start": {
           "line": 3,
@@ -1026,8 +1026,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 682,
-      "end": 688,
+      "start": 664,
+      "end": 670,
       "loc": {
         "start": {
           "line": 19,
@@ -1054,8 +1054,8 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 689,
-      "end": 696,
+      "start": 671,
+      "end": 678,
       "loc": {
         "start": {
           "line": 19,
@@ -1080,8 +1080,8 @@
         "binop": null
       },
       "value": "curryN",
-      "start": 697,
-      "end": 703,
+      "start": 679,
+      "end": 685,
       "loc": {
         "start": {
           "line": 19,
@@ -1105,8 +1105,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 703,
-      "end": 704,
+      "start": 685,
+      "end": 686,
       "loc": {
         "start": {
           "line": 19,
@@ -1132,8 +1132,8 @@
         "updateContext": null
       },
       "value": 3,
-      "start": 704,
-      "end": 705,
+      "start": 686,
+      "end": 687,
       "loc": {
         "start": {
           "line": 19,
@@ -1158,8 +1158,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 705,
-      "end": 706,
+      "start": 687,
+      "end": 688,
       "loc": {
         "start": {
           "line": 19,
@@ -1183,8 +1183,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 707,
-      "end": 708,
+      "start": 689,
+      "end": 690,
       "loc": {
         "start": {
           "line": 19,
@@ -1209,8 +1209,8 @@
         "binop": null
       },
       "value": "prop",
-      "start": 708,
-      "end": 712,
+      "start": 690,
+      "end": 694,
       "loc": {
         "start": {
           "line": 19,
@@ -1235,8 +1235,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 712,
-      "end": 713,
+      "start": 694,
+      "end": 695,
       "loc": {
         "start": {
           "line": 19,
@@ -1261,8 +1261,8 @@
         "binop": null
       },
       "value": "val",
-      "start": 714,
-      "end": 717,
+      "start": 696,
+      "end": 699,
       "loc": {
         "start": {
           "line": 19,
@@ -1287,8 +1287,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 717,
-      "end": 718,
+      "start": 699,
+      "end": 700,
       "loc": {
         "start": {
           "line": 19,
@@ -1313,8 +1313,8 @@
         "binop": null
       },
       "value": "obj",
-      "start": 719,
-      "end": 722,
+      "start": 701,
+      "end": 704,
       "loc": {
         "start": {
           "line": 19,
@@ -1340,8 +1340,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 723,
-      "end": 724,
+      "start": 705,
+      "end": 706,
       "loc": {
         "start": {
           "line": 19,
@@ -1365,8 +1365,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 725,
-      "end": 726,
+      "start": 707,
+      "end": 708,
       "loc": {
         "start": {
           "line": 19,
@@ -1390,8 +1390,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 726,
-      "end": 727,
+      "start": 708,
+      "end": 709,
       "loc": {
         "start": {
           "line": 19,
@@ -1415,8 +1415,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 727,
-      "end": 728,
+      "start": 709,
+      "end": 710,
       "loc": {
         "start": {
           "line": 19,
@@ -1441,8 +1441,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 729,
-      "end": 731,
+      "start": 711,
+      "end": 713,
       "loc": {
         "start": {
           "line": 19,
@@ -1466,8 +1466,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 732,
-      "end": 733,
+      "start": 714,
+      "end": 715,
       "loc": {
         "start": {
           "line": 19,
@@ -1494,8 +1494,8 @@
         "updateContext": null
       },
       "value": "if",
-      "start": 739,
-      "end": 741,
+      "start": 720,
+      "end": 722,
       "loc": {
         "start": {
           "line": 20,
@@ -1519,8 +1519,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 742,
-      "end": 743,
+      "start": 723,
+      "end": 724,
       "loc": {
         "start": {
           "line": 20,
@@ -1545,8 +1545,8 @@
         "binop": null
       },
       "value": "has",
-      "start": 743,
-      "end": 746,
+      "start": 724,
+      "end": 727,
       "loc": {
         "start": {
           "line": 20,
@@ -1570,8 +1570,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 746,
-      "end": 747,
+      "start": 727,
+      "end": 728,
       "loc": {
         "start": {
           "line": 20,
@@ -1596,8 +1596,8 @@
         "binop": null
       },
       "value": "prop",
-      "start": 747,
-      "end": 751,
+      "start": 728,
+      "end": 732,
       "loc": {
         "start": {
           "line": 20,
@@ -1622,8 +1622,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 751,
-      "end": 752,
+      "start": 732,
+      "end": 733,
       "loc": {
         "start": {
           "line": 20,
@@ -1648,8 +1648,8 @@
         "binop": null
       },
       "value": "obj",
-      "start": 753,
-      "end": 756,
+      "start": 734,
+      "end": 737,
       "loc": {
         "start": {
           "line": 20,
@@ -1673,8 +1673,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 756,
-      "end": 757,
+      "start": 737,
+      "end": 738,
       "loc": {
         "start": {
           "line": 20,
@@ -1700,8 +1700,8 @@
         "updateContext": null
       },
       "value": "&&",
-      "start": 758,
-      "end": 760,
+      "start": 739,
+      "end": 741,
       "loc": {
         "start": {
           "line": 20,
@@ -1726,8 +1726,8 @@
         "binop": null
       },
       "value": "obj",
-      "start": 761,
-      "end": 764,
+      "start": 742,
+      "end": 745,
       "loc": {
         "start": {
           "line": 20,
@@ -1752,8 +1752,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 764,
-      "end": 765,
+      "start": 745,
+      "end": 746,
       "loc": {
         "start": {
           "line": 20,
@@ -1778,8 +1778,8 @@
         "binop": null
       },
       "value": "prop",
-      "start": 765,
-      "end": 769,
+      "start": 746,
+      "end": 750,
       "loc": {
         "start": {
           "line": 20,
@@ -1804,8 +1804,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 769,
-      "end": 770,
+      "start": 750,
+      "end": 751,
       "loc": {
         "start": {
           "line": 20,
@@ -1831,8 +1831,8 @@
         "updateContext": null
       },
       "value": "===",
-      "start": 771,
-      "end": 774,
+      "start": 752,
+      "end": 755,
       "loc": {
         "start": {
           "line": 20,
@@ -1857,8 +1857,8 @@
         "binop": null
       },
       "value": "val",
-      "start": 775,
-      "end": 778,
+      "start": 756,
+      "end": 759,
       "loc": {
         "start": {
           "line": 20,
@@ -1882,8 +1882,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 778,
-      "end": 779,
+      "start": 759,
+      "end": 760,
       "loc": {
         "start": {
           "line": 20,
@@ -1907,8 +1907,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 780,
-      "end": 781,
+      "start": 761,
+      "end": 762,
       "loc": {
         "start": {
           "line": 20,
@@ -1935,8 +1935,8 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 791,
-      "end": 797,
+      "start": 771,
+      "end": 777,
       "loc": {
         "start": {
           "line": 21,
@@ -1961,8 +1961,8 @@
         "binop": null
       },
       "value": "obj",
-      "start": 798,
-      "end": 801,
+      "start": 778,
+      "end": 781,
       "loc": {
         "start": {
           "line": 21,
@@ -1987,8 +1987,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 801,
-      "end": 802,
+      "start": 781,
+      "end": 782,
       "loc": {
         "start": {
           "line": 21,
@@ -2012,8 +2012,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 808,
-      "end": 809,
+      "start": 787,
+      "end": 788,
       "loc": {
         "start": {
           "line": 22,
@@ -2040,8 +2040,8 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 815,
-      "end": 821,
+      "start": 793,
+      "end": 799,
       "loc": {
         "start": {
           "line": 23,
@@ -2065,8 +2065,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 822,
-      "end": 823,
+      "start": 800,
+      "end": 801,
       "loc": {
         "start": {
           "line": 23,
@@ -2091,8 +2091,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 833,
-      "end": 836,
+      "start": 810,
+      "end": 813,
       "loc": {
         "start": {
           "line": 24,
@@ -2117,8 +2117,8 @@
         "binop": null
       },
       "value": "obj",
-      "start": 836,
-      "end": 839,
+      "start": 813,
+      "end": 816,
       "loc": {
         "start": {
           "line": 24,
@@ -2143,8 +2143,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 839,
-      "end": 840,
+      "start": 816,
+      "end": 817,
       "loc": {
         "start": {
           "line": 24,
@@ -2169,8 +2169,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 850,
-      "end": 851,
+      "start": 826,
+      "end": 827,
       "loc": {
         "start": {
           "line": 25,
@@ -2195,8 +2195,8 @@
         "binop": null
       },
       "value": "prop",
-      "start": 851,
-      "end": 855,
+      "start": 827,
+      "end": 831,
       "loc": {
         "start": {
           "line": 25,
@@ -2221,8 +2221,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 855,
-      "end": 856,
+      "start": 831,
+      "end": 832,
       "loc": {
         "start": {
           "line": 25,
@@ -2247,8 +2247,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 856,
-      "end": 857,
+      "start": 832,
+      "end": 833,
       "loc": {
         "start": {
           "line": 25,
@@ -2273,8 +2273,8 @@
         "binop": null
       },
       "value": "val",
-      "start": 858,
-      "end": 861,
+      "start": 834,
+      "end": 837,
       "loc": {
         "start": {
           "line": 25,
@@ -2299,8 +2299,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 861,
-      "end": 862,
+      "start": 837,
+      "end": 838,
       "loc": {
         "start": {
           "line": 25,
@@ -2324,8 +2324,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 868,
-      "end": 869,
+      "start": 843,
+      "end": 844,
       "loc": {
         "start": {
           "line": 26,
@@ -2350,8 +2350,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 869,
-      "end": 870,
+      "start": 844,
+      "end": 845,
       "loc": {
         "start": {
           "line": 26,
@@ -2375,8 +2375,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 872,
-      "end": 873,
+      "start": 846,
+      "end": 847,
       "loc": {
         "start": {
           "line": 27,
@@ -2400,8 +2400,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 873,
-      "end": 874,
+      "start": 847,
+      "end": 848,
       "loc": {
         "start": {
           "line": 27,
@@ -2426,8 +2426,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 874,
-      "end": 875,
+      "start": 848,
+      "end": 849,
       "loc": {
         "start": {
           "line": 27,
@@ -2452,8 +2452,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 877,
-      "end": 877,
+      "start": 850,
+      "end": 850,
       "loc": {
         "start": {
           "line": 28,

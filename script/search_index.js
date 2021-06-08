@@ -108,6 +108,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "@tinkoff/utils/string/camelcasename~camelcasename",
+    "function/index.html#static-function-camelCaseName",
+    "<span>camelCaseName</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/camelCaseName</span>",
+    "function"
+  ],
+  [
     "@tinkoff/utils/string/capitalize~capitalize",
     "function/index.html#static-function-capitalize",
     "<span>capitalize</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/capitalize</span>",
@@ -414,12 +420,6 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "@tinkoff/utils/is/reactelement~isreactelement",
-    "function/index.html#static-function-isReactElement",
-    "<span>isReactElement</span> <span class=\"search-result-import-path\">@tinkoff/utils/is/reactElement</span>",
-    "function"
-  ],
-  [
     "@tinkoff/utils/istrue~istrue",
     "function/index.html#static-function-isTrue",
     "<span>isTrue</span> <span class=\"search-result-import-path\">@tinkoff/utils/isTrue</span>",
@@ -429,6 +429,12 @@ window.esdocSearchIndex = [
     "@tinkoff/utils/array/join~join",
     "function/index.html#static-function-join",
     "<span>join</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/join</span>",
+    "function"
+  ],
+  [
+    "@tinkoff/utils/string/kebabcasename~kebabcasename",
+    "function/index.html#static-function-kebabCaseName",
+    "<span>kebabCaseName</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/kebabCaseName</span>",
     "function"
   ],
   [
@@ -768,6 +774,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "@tinkoff/utils/string/snakecasename~snakecasename",
+    "function/index.html#static-function-snakeCaseName",
+    "<span>snakeCaseName</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/snakeCaseName</span>",
+    "function"
+  ],
+  [
     "@tinkoff/utils/array/sort~sort",
     "function/index.html#static-function-sort",
     "<span>sort</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/sort</span>",
@@ -972,6 +984,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "@tinkoff/utils/string/upperfirst~upperfirst",
+    "function/index.html#static-function-upperFirst",
+    "<span>upperFirst</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/upperFirst</span>",
+    "function"
+  ],
+  [
     "@tinkoff/utils/object/values~values",
     "function/index.html#static-function-values",
     "<span>values</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/values</span>",
@@ -999,6 +1017,12 @@ window.esdocSearchIndex = [
     "@tinkoff/utils/array/without~without",
     "function/index.html#static-function-without",
     "<span>without</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/without</span>",
+    "function"
+  ],
+  [
+    "@tinkoff/utils/string/words~words",
+    "function/index.html#static-function-words",
+    "<span>words</span> <span class=\"search-result-import-path\">@tinkoff/utils/string/words</span>",
     "function"
   ],
   [
@@ -1932,6 +1956,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "ts_temp/is/reactcomponent.js",
+    "file/ts_temp/is/reactComponent.js.html",
+    "ts_temp/is/reactComponent.js",
+    "file"
+  ],
+  [
     "ts_temp/is/reactelement.js",
     "file/ts_temp/is/reactElement.js.html",
     "ts_temp/is/reactElement.js",
@@ -2220,6 +2250,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "ts_temp/string/camelcasename.js",
+    "file/ts_temp/string/camelCaseName.js.html",
+    "ts_temp/string/camelCaseName.js",
+    "file"
+  ],
+  [
     "ts_temp/string/capitalize.js",
     "file/ts_temp/string/capitalize.js.html",
     "ts_temp/string/capitalize.js",
@@ -2244,6 +2280,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "ts_temp/string/kebabcasename.js",
+    "file/ts_temp/string/kebabCaseName.js.html",
+    "ts_temp/string/kebabCaseName.js",
+    "file"
+  ],
+  [
     "ts_temp/string/repeat.js",
     "file/ts_temp/string/repeat.js.html",
     "ts_temp/string/repeat.js",
@@ -2253,6 +2295,12 @@ window.esdocSearchIndex = [
     "ts_temp/string/replace.js",
     "file/ts_temp/string/replace.js.html",
     "ts_temp/string/replace.js",
+    "file"
+  ],
+  [
+    "ts_temp/string/snakecasename.js",
+    "file/ts_temp/string/snakeCaseName.js.html",
+    "ts_temp/string/snakeCaseName.js",
     "file"
   ],
   [
@@ -2313,6 +2361,18 @@ window.esdocSearchIndex = [
     "ts_temp/string/unescape.js",
     "file/ts_temp/string/unescape.js.html",
     "ts_temp/string/unescape.js",
+    "file"
+  ],
+  [
+    "ts_temp/string/upperfirst.js",
+    "file/ts_temp/string/upperFirst.js.html",
+    "ts_temp/string/upperFirst.js",
+    "file"
+  ],
+  [
+    "ts_temp/string/words.js",
+    "file/ts_temp/string/words.js.html",
+    "ts_temp/string/words.js",
     "file"
   ],
   [

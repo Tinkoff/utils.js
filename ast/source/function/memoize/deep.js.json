@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 651,
+  "end": 633,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 651,
+    "end": 633,
     "loc": {
       "start": {
         "line": 1,
@@ -99,8 +99,8 @@
       },
       {
         "type": "ImportDeclaration",
-        "start": 35,
-        "end": 79,
+        "start": 34,
+        "end": 78,
         "loc": {
           "start": {
             "line": 2,
@@ -114,8 +114,8 @@
         "specifiers": [
           {
             "type": "ImportDefaultSpecifier",
-            "start": 42,
-            "end": 57,
+            "start": 41,
+            "end": 56,
             "loc": {
               "start": {
                 "line": 2,
@@ -128,8 +128,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 42,
-              "end": 57,
+              "start": 41,
+              "end": 56,
               "loc": {
                 "start": {
                   "line": 2,
@@ -147,8 +147,8 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 63,
-          "end": 78,
+          "start": 62,
+          "end": 77,
           "loc": {
             "start": {
               "line": 2,
@@ -168,9 +168,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Memoize function with multiply arguments of any type.\r\n * Use it when you need deep equality for cache lookup.\r\n *\r\n * @param {Function} fn\r\n * @returns {Function}\r\n * @example\r\n *     const addFlag = obj => ({...obj, flag: true });\r\n *     const memoize = memoizeDeep(addFlag));\r\n *     const test = {};\r\n *     memoize(test, {test: 2}); // from addFlag call\r\n *     memoize(test, {test: 2}); // from cache\r\n *     test.id = 123;\r\n *     memoize(test); // from addFlag call\r\n ",
-            "start": 81,
-            "end": 568,
+            "value": "*\n * Memoize function with multiply arguments of any type.\n * Use it when you need deep equality for cache lookup.\n *\n * @param {Function} fn\n * @returns {Function}\n * @example\n *     const addFlag = obj => ({...obj, flag: true });\n *     const memoize = memoizeDeep(addFlag));\n *     const test = {};\n *     memoize(test, {test: 2}); // from addFlag call\n *     memoize(test, {test: 2}); // from cache\n *     test.id = 123;\n *     memoize(test); // from addFlag call\n ",
+            "start": 79,
+            "end": 552,
             "loc": {
               "start": {
                 "line": 3,
@@ -186,8 +186,8 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 570,
-        "end": 649,
+        "start": 553,
+        "end": 632,
         "loc": {
           "start": {
             "line": 18,
@@ -200,8 +200,8 @@
         },
         "declaration": {
           "type": "CallExpression",
-          "start": 585,
-          "end": 648,
+          "start": 568,
+          "end": 631,
           "loc": {
             "start": {
               "line": 18,
@@ -214,8 +214,8 @@
           },
           "callee": {
             "type": "Identifier",
-            "start": 585,
-            "end": 596,
+            "start": 568,
+            "end": 579,
             "loc": {
               "start": {
                 "line": 18,
@@ -233,8 +233,8 @@
           "arguments": [
             {
               "type": "Identifier",
-              "start": 597,
-              "end": 612,
+              "start": 580,
+              "end": 595,
               "loc": {
                 "start": {
                   "line": 18,
@@ -250,8 +250,8 @@
             },
             {
               "type": "ArrowFunctionExpression",
-              "start": 614,
-              "end": 647,
+              "start": 597,
+              "end": 630,
               "loc": {
                 "start": {
                   "line": 18,
@@ -269,8 +269,8 @@
               "params": [
                 {
                   "type": "RestElement",
-                  "start": 615,
-                  "end": 622,
+                  "start": 598,
+                  "end": 605,
                   "loc": {
                     "start": {
                       "line": 18,
@@ -283,8 +283,8 @@
                   },
                   "argument": {
                     "type": "Identifier",
-                    "start": 618,
-                    "end": 622,
+                    "start": 601,
+                    "end": 605,
                     "loc": {
                       "start": {
                         "line": 18,
@@ -302,8 +302,8 @@
               ],
               "body": {
                 "type": "CallExpression",
-                "start": 627,
-                "end": 647,
+                "start": 610,
+                "end": 630,
                 "loc": {
                   "start": {
                     "line": 18,
@@ -316,8 +316,8 @@
                 },
                 "callee": {
                   "type": "MemberExpression",
-                  "start": 627,
-                  "end": 641,
+                  "start": 610,
+                  "end": 624,
                   "loc": {
                     "start": {
                       "line": 18,
@@ -330,8 +330,8 @@
                   },
                   "object": {
                     "type": "Identifier",
-                    "start": 627,
-                    "end": 631,
+                    "start": 610,
+                    "end": 614,
                     "loc": {
                       "start": {
                         "line": 18,
@@ -347,8 +347,8 @@
                   },
                   "property": {
                     "type": "Identifier",
-                    "start": 632,
-                    "end": 641,
+                    "start": 615,
+                    "end": 624,
                     "loc": {
                       "start": {
                         "line": 18,
@@ -367,8 +367,8 @@
                 "arguments": [
                   {
                     "type": "Identifier",
-                    "start": 642,
-                    "end": 646,
+                    "start": 625,
+                    "end": 629,
                     "loc": {
                       "start": {
                         "line": 18,
@@ -389,9 +389,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\r\n * Memoize function with multiply arguments of any type.\r\n * Use it when you need deep equality for cache lookup.\r\n *\r\n * @param {Function} fn\r\n * @returns {Function}\r\n * @example\r\n *     const addFlag = obj => ({...obj, flag: true });\r\n *     const memoize = memoizeDeep(addFlag));\r\n *     const test = {};\r\n *     memoize(test, {test: 2}); // from addFlag call\r\n *     memoize(test, {test: 2}); // from cache\r\n *     test.id = 123;\r\n *     memoize(test); // from addFlag call\r\n ",
-              "start": 81,
-              "end": 568,
+              "value": "*\n * Memoize function with multiply arguments of any type.\n * Use it when you need deep equality for cache lookup.\n *\n * @param {Function} fn\n * @returns {Function}\n * @example\n *     const addFlag = obj => ({...obj, flag: true });\n *     const memoize = memoizeDeep(addFlag));\n *     const test = {};\n *     memoize(test, {test: 2}); // from addFlag call\n *     memoize(test, {test: 2}); // from cache\n *     test.id = 123;\n *     memoize(test); // from addFlag call\n ",
+              "start": 79,
+              "end": 552,
               "loc": {
                 "start": {
                   "line": 3,
@@ -409,9 +409,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * Memoize function with multiply arguments of any type.\r\n * Use it when you need deep equality for cache lookup.\r\n *\r\n * @param {Function} fn\r\n * @returns {Function}\r\n * @example\r\n *     const addFlag = obj => ({...obj, flag: true });\r\n *     const memoize = memoizeDeep(addFlag));\r\n *     const test = {};\r\n *     memoize(test, {test: 2}); // from addFlag call\r\n *     memoize(test, {test: 2}); // from cache\r\n *     test.id = 123;\r\n *     memoize(test); // from addFlag call\r\n ",
-            "start": 81,
-            "end": 568,
+            "value": "*\n * Memoize function with multiply arguments of any type.\n * Use it when you need deep equality for cache lookup.\n *\n * @param {Function} fn\n * @returns {Function}\n * @example\n *     const addFlag = obj => ({...obj, flag: true });\n *     const memoize = memoizeDeep(addFlag));\n *     const test = {};\n *     memoize(test, {test: 2}); // from addFlag call\n *     memoize(test, {test: 2}); // from cache\n *     test.id = 123;\n *     memoize(test); // from addFlag call\n ",
+            "start": 79,
+            "end": 552,
             "loc": {
               "start": {
                 "line": 3,
@@ -431,9 +431,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Memoize function with multiply arguments of any type.\r\n * Use it when you need deep equality for cache lookup.\r\n *\r\n * @param {Function} fn\r\n * @returns {Function}\r\n * @example\r\n *     const addFlag = obj => ({...obj, flag: true });\r\n *     const memoize = memoizeDeep(addFlag));\r\n *     const test = {};\r\n *     memoize(test, {test: 2}); // from addFlag call\r\n *     memoize(test, {test: 2}); // from cache\r\n *     test.id = 123;\r\n *     memoize(test); // from addFlag call\r\n ",
-      "start": 81,
-      "end": 568,
+      "value": "*\n * Memoize function with multiply arguments of any type.\n * Use it when you need deep equality for cache lookup.\n *\n * @param {Function} fn\n * @returns {Function}\n * @example\n *     const addFlag = obj => ({...obj, flag: true });\n *     const memoize = memoizeDeep(addFlag));\n *     const test = {};\n *     memoize(test, {test: 2}); // from addFlag call\n *     memoize(test, {test: 2}); // from cache\n *     test.id = 123;\n *     memoize(test); // from addFlag call\n ",
+      "start": 79,
+      "end": 552,
       "loc": {
         "start": {
           "line": 3,
@@ -595,8 +595,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 35,
-      "end": 41,
+      "start": 34,
+      "end": 40,
       "loc": {
         "start": {
           "line": 2,
@@ -621,8 +621,8 @@
         "binop": null
       },
       "value": "createCacheFrom",
-      "start": 42,
-      "end": 57,
+      "start": 41,
+      "end": 56,
       "loc": {
         "start": {
           "line": 2,
@@ -647,8 +647,8 @@
         "binop": null
       },
       "value": "from",
-      "start": 58,
-      "end": 62,
+      "start": 57,
+      "end": 61,
       "loc": {
         "start": {
           "line": 2,
@@ -674,8 +674,8 @@
         "updateContext": null
       },
       "value": "./createCache",
-      "start": 63,
-      "end": 78,
+      "start": 62,
+      "end": 77,
       "loc": {
         "start": {
           "line": 2,
@@ -700,8 +700,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 78,
-      "end": 79,
+      "start": 77,
+      "end": 78,
       "loc": {
         "start": {
           "line": 2,
@@ -715,9 +715,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\r\n * Memoize function with multiply arguments of any type.\r\n * Use it when you need deep equality for cache lookup.\r\n *\r\n * @param {Function} fn\r\n * @returns {Function}\r\n * @example\r\n *     const addFlag = obj => ({...obj, flag: true });\r\n *     const memoize = memoizeDeep(addFlag));\r\n *     const test = {};\r\n *     memoize(test, {test: 2}); // from addFlag call\r\n *     memoize(test, {test: 2}); // from cache\r\n *     test.id = 123;\r\n *     memoize(test); // from addFlag call\r\n ",
-      "start": 81,
-      "end": 568,
+      "value": "*\n * Memoize function with multiply arguments of any type.\n * Use it when you need deep equality for cache lookup.\n *\n * @param {Function} fn\n * @returns {Function}\n * @example\n *     const addFlag = obj => ({...obj, flag: true });\n *     const memoize = memoizeDeep(addFlag));\n *     const test = {};\n *     memoize(test, {test: 2}); // from addFlag call\n *     memoize(test, {test: 2}); // from cache\n *     test.id = 123;\n *     memoize(test); // from addFlag call\n ",
+      "start": 79,
+      "end": 552,
       "loc": {
         "start": {
           "line": 3,
@@ -744,8 +744,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 570,
-      "end": 576,
+      "start": 553,
+      "end": 559,
       "loc": {
         "start": {
           "line": 18,
@@ -772,8 +772,8 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 577,
-      "end": 584,
+      "start": 560,
+      "end": 567,
       "loc": {
         "start": {
           "line": 18,
@@ -798,8 +798,8 @@
         "binop": null
       },
       "value": "memoizeWith",
-      "start": 585,
-      "end": 596,
+      "start": 568,
+      "end": 579,
       "loc": {
         "start": {
           "line": 18,
@@ -823,8 +823,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 596,
-      "end": 597,
+      "start": 579,
+      "end": 580,
       "loc": {
         "start": {
           "line": 18,
@@ -849,8 +849,8 @@
         "binop": null
       },
       "value": "createCacheFrom",
-      "start": 597,
-      "end": 612,
+      "start": 580,
+      "end": 595,
       "loc": {
         "start": {
           "line": 18,
@@ -875,8 +875,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 612,
-      "end": 613,
+      "start": 595,
+      "end": 596,
       "loc": {
         "start": {
           "line": 18,
@@ -900,8 +900,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 614,
-      "end": 615,
+      "start": 597,
+      "end": 598,
       "loc": {
         "start": {
           "line": 18,
@@ -926,8 +926,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 615,
-      "end": 618,
+      "start": 598,
+      "end": 601,
       "loc": {
         "start": {
           "line": 18,
@@ -952,8 +952,8 @@
         "binop": null
       },
       "value": "args",
-      "start": 618,
-      "end": 622,
+      "start": 601,
+      "end": 605,
       "loc": {
         "start": {
           "line": 18,
@@ -977,8 +977,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 622,
-      "end": 623,
+      "start": 605,
+      "end": 606,
       "loc": {
         "start": {
           "line": 18,
@@ -1003,8 +1003,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 624,
-      "end": 626,
+      "start": 607,
+      "end": 609,
       "loc": {
         "start": {
           "line": 18,
@@ -1029,8 +1029,8 @@
         "binop": null
       },
       "value": "JSON",
-      "start": 627,
-      "end": 631,
+      "start": 610,
+      "end": 614,
       "loc": {
         "start": {
           "line": 18,
@@ -1055,8 +1055,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 631,
-      "end": 632,
+      "start": 614,
+      "end": 615,
       "loc": {
         "start": {
           "line": 18,
@@ -1081,8 +1081,8 @@
         "binop": null
       },
       "value": "stringify",
-      "start": 632,
-      "end": 641,
+      "start": 615,
+      "end": 624,
       "loc": {
         "start": {
           "line": 18,
@@ -1106,8 +1106,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 641,
-      "end": 642,
+      "start": 624,
+      "end": 625,
       "loc": {
         "start": {
           "line": 18,
@@ -1132,8 +1132,8 @@
         "binop": null
       },
       "value": "args",
-      "start": 642,
-      "end": 646,
+      "start": 625,
+      "end": 629,
       "loc": {
         "start": {
           "line": 18,
@@ -1157,8 +1157,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 646,
-      "end": 647,
+      "start": 629,
+      "end": 630,
       "loc": {
         "start": {
           "line": 18,
@@ -1182,8 +1182,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 647,
-      "end": 648,
+      "start": 630,
+      "end": 631,
       "loc": {
         "start": {
           "line": 18,
@@ -1208,8 +1208,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 648,
-      "end": 649,
+      "start": 631,
+      "end": 632,
       "loc": {
         "start": {
           "line": 18,
@@ -1234,8 +1234,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 651,
-      "end": 651,
+      "start": 633,
+      "end": 633,
       "loc": {
         "start": {
           "line": 19,
