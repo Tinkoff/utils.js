@@ -29,7 +29,16 @@ describe('utils/is/equal', () => {
     });
 
     it('equal objects', () => {
+        const obj = {
+            f: () => {}
+        };
+        const obj2 = {
+            f: () => {}
+        }
         expect(isEqual({}, {})).toBe(true);
+        expect(isEqual(obj, obj)).toBe(true);
+        expect(isEqual(obj, obj2)).toBe(false);
+        expect(isEqual({ f: () => {} }, { f: () => {} })).toBe(false);
         expect(isEqual({ a: 1 }, { a: 1 })).toBe(true);
         expect(isEqual({ a: 1 }, { a: 2 })).toBe(false);
         expect(isEqual({ a: 1, b: [1, 2, { c: 3 }] }, { a: 1, b: [1, 2, { c: 3 }] })).toBe(true);
@@ -44,5 +53,15 @@ describe('utils/is/equal', () => {
         expect(isEqual({}, /23/)).toBe(false);
         expect(isEqual({}, 5)).toBe(false);
         expect(isEqual(3, 'test')).toBe(false);
+    });
+
+    it('equal function', () => {
+        const f = () => {};
+        const f2 = () => {};
+
+        expect(isEqual(f, f)).toBe(true);
+        expect(isEqual(f, f2)).toBe(false);
+        expect(isEqual(() => {}, () => {})).toBe(false);
+        expect(isEqual(() => {}, function () {})).toBe(false);
     });
 });
