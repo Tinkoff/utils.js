@@ -1,3 +1,7 @@
+# 2.2.1
+
++ add check into the utility isEqual for comparision of functions by reference (#63)
+
 ## 2.1.3
 + fix typings for object/groupBy
 
