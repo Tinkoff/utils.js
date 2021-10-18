@@ -70,6 +70,10 @@ const isEqual = (test1, test2): boolean => {
         return isEqualObjects(test1, test2);
     }
 
+    if (typeof test1 === 'function') {
+        return test1 === test2;
+    }
+
     return isEqualNativeTypes(test1, test2);
 };
 
