@@ -11,7 +11,7 @@ $ npm install @tinkoff/utils
 - [Fast](#benchmarks)
 - [Small](#bundle-size)
 - [Fully tested](https://coveralls.io/github/TinkoffCreditSystems/utils.js)
-- [Documented](https://tinkoffcreditsystems.github.io/utils.js)
+- [Documented](https://tinkoff.github.io/utils.js/)
 - Purely functional
 - Modern codebase
 
