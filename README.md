@@ -1,4 +1,4 @@
-# Tinkoff Utils [![Build](https://travis-ci.org/TinkoffCreditSystems/utils.js.svg?branch=master)](https://travis-ci.org/TinkoffCreditSystems/utils.js) [![Coverage Status](https://coveralls.io/repos/github/TinkoffCreditSystems/utils.js/badge.svg?branch=master&t=CdowK8)](https://coveralls.io/github/TinkoffCreditSystems/utils.js?branch=master)
+# Tinkoff Utils [![Build](https://travis-ci.org/Tinkoff/utils.js.svg?branch=master)](https://travis-ci.org/Tinkoff/utils.js) [![Coverage Status](https://coveralls.io/repos/github/Tinkoff/utils.js/badge.svg?branch=master&t=CdowK8)](https://coveralls.io/github/Tinkoff/utils.js?branch=master)
 
 > Fast, small and purely functional utility library
 
@@ -10,19 +10,19 @@ $ npm install @tinkoff/utils
 ## Features
 - [Fast](#benchmarks)
 - [Small](#bundle-size)
-- [Fully tested](https://coveralls.io/github/TinkoffCreditSystems/utils.js)
-- [Documented](https://tinkoffcreditsystems.github.io/utils.js)
+- [Fully tested](https://coveralls.io/github/Tinkoff/utils.js)
+- [Documented](https://Tinkoff.github.io/utils.js)
 - Purely functional
 - Modern codebase
 
 ## Structure of the library
-* [`/object`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src/object) – for objects
-* [`/string`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src/string) – for strings
-* [`/promise`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src/promise) – for promises
-* [`/array`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src/array) – for arrays or array-like objects
-* [`/function`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src/function) – for functions – composition, currying and so on, also a set of simple functions (noop, T, F)
-* [`/is`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src/is) – set of type checking methods
-* [`/`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src) – root contains utilities which don't satisfy any of the above categories or are universal
+* [`/object`](https://github.com/Tinkoff/utils.js/tree/master/src/object) – for objects
+* [`/string`](https://github.com/Tinkoff/utils.js/tree/master/src/string) – for strings
+* [`/promise`](https://github.com/Tinkoff/utils.js/tree/master/src/promise) – for promises
+* [`/array`](https://github.com/Tinkoff/utils.js/tree/master/src/array) – for arrays or array-like objects
+* [`/function`](https://github.com/Tinkoff/utils.js/tree/master/src/function) – for functions – composition, currying and so on, also a set of simple functions (noop, T, F)
+* [`/is`](https://github.com/Tinkoff/utils.js/tree/master/src/is) – set of type checking methods
+* [`/`](https://github.com/Tinkoff/utils.js/tree/master/src) – root contains utilities which don't satisfy any of the above categories or are universal
 
 ## Usage
 ```js
@@ -74,4 +74,4 @@ $ npm run benchmark
 | import ... from 'ramda/src/...' | 10 kb |
 | import ... from '@tinkoff/utils/...' | 2.32 kb |
 
-For detailed comparison with specific libraries see [COMPARE.md](https://github.com/TinkoffCreditSystems/utils.js/tree/master/COMPARE.md)
+For detailed comparison with specific libraries see [COMPARE.md](https://github.com/Tinkoff/utils.js/tree/master/COMPARE.md)
