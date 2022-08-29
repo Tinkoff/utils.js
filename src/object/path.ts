@@ -46,7 +46,7 @@ type ValueByPath<P, O, U = false> = P extends readonly [infer F, ...(infer R)]
 export interface Path {
     /**
      * Retrieve the value at a given path.
-     * Use `as const` cast on the `paths` for type inference.
+     * **Note:** Use `as const` cast on the `paths` for type inference.
      *
      * @param {[String]} paths The path to use.
      * @param {Object} obj The object to retrieve the nested property from.
@@ -59,7 +59,7 @@ export interface Path {
     (pathToProp: Prop[], obj: object): unknown;
     /**
      * Retrieve the value at a given path.
-     * Use `as const` cast on the `paths` for type inference.
+     * **Note:** Use `as const` cast on the `paths` for type inference.
      *
      * @param {[String]} paths The path to use.
      * @return {*} function to get data at `path` for a given object
