@@ -6315,7 +6315,7 @@
     "__docId__": 247,
     "kind": "file",
     "name": "ts_temp/is/equal.js",
-    "content": "import curry from '../function/curry';\nimport isArray from './array';\nconst isEqualNativeTypes = (test1, test2) => test1.toString() === test2.toString();\nconst isEqualArrays = (test1, test2) => {\n    const len = test1.length;\n    if (len !== test2.length) {\n        return false;\n    }\n    for (let i = 0; i < len; i++) {\n        if (!isEqual(test1[i], test2[i])) {\n            return false;\n        }\n    }\n    return true;\n};\nconst isEqualObjects = (test1, test2) => {\n    const keys = Object.keys(test1);\n    const len = keys.length;\n    if (len !== Object.keys(test2).length) {\n        return false;\n    }\n    for (let i = 0; i < len; i++) {\n        const key = keys[i];\n        if (!(Object.prototype.hasOwnProperty.call(test2, key) && isEqual(test1[key], test2[key]))) {\n            return false;\n        }\n    }\n    return true;\n};\n/**\n * Returns `true` if its arguments are equivalent, `false` otherwise.\n *\n * @param {*} test1\n * @param {*} test2\n * @return {Boolean}\n * @example\n *\n *      isEqual(1, 1); //=> true\n *      isEqual(1, '1'); //=> false\n *      isEqual([1, 2, 3], [1, 2, 3]); //=> true\n *      isEqual({ a: { b: 1 }}, { a: { b: 1 }}); //=> true\n */\nconst isEqual = (test1, test2) => {\n    if (test1 === test2) {\n        return true;\n    }\n    if (typeof test1 !== typeof test2 || test1 !== Object(test1) || !test1 || !test2) {\n        return false;\n    }\n    if (isArray(test1) && isArray(test2)) {\n        return isEqualArrays(test1, test2);\n    }\n    const test1ToString = Object.prototype.toString.call(test1);\n    if (test1ToString === '[object Object]' && Object.prototype.toString.call(test2) === test1ToString) {\n        return isEqualObjects(test1, test2);\n    }\n    return isEqualNativeTypes(test1, test2);\n};\nexport default curry(isEqual);\n",
+    "content": "import curry from '../function/curry';\nimport isArray from './array';\nconst isEqualNativeTypes = (test1, test2) => test1.toString() === test2.toString();\nconst isEqualArrays = (test1, test2) => {\n    const len = test1.length;\n    if (len !== test2.length) {\n        return false;\n    }\n    for (let i = 0; i < len; i++) {\n        if (!isEqual(test1[i], test2[i])) {\n            return false;\n        }\n    }\n    return true;\n};\nconst isEqualObjects = (test1, test2) => {\n    const keys = Object.keys(test1);\n    const len = keys.length;\n    if (len !== Object.keys(test2).length) {\n        return false;\n    }\n    for (let i = 0; i < len; i++) {\n        const key = keys[i];\n        if (!(Object.prototype.hasOwnProperty.call(test2, key) && isEqual(test1[key], test2[key]))) {\n            return false;\n        }\n    }\n    return true;\n};\n/**\n * Returns `true` if its arguments are equivalent, `false` otherwise.\n *\n * @param {*} test1\n * @param {*} test2\n * @return {Boolean}\n * @example\n *\n *      isEqual(1, 1); //=> true\n *      isEqual(1, '1'); //=> false\n *      isEqual([1, 2, 3], [1, 2, 3]); //=> true\n *      isEqual({ a: { b: 1 }}, { a: { b: 1 }}); //=> true\n */\nconst isEqual = (test1, test2) => {\n    if (test1 === test2) {\n        return true;\n    }\n    if (typeof test1 !== typeof test2 || test1 !== Object(test1) || !test1 || !test2) {\n        return false;\n    }\n    if (isArray(test1) && isArray(test2)) {\n        return isEqualArrays(test1, test2);\n    }\n    const test1ToString = Object.prototype.toString.call(test1);\n    if (test1ToString === '[object Object]' && Object.prototype.toString.call(test2) === test1ToString) {\n        return isEqualObjects(test1, test2);\n    }\n    if (typeof test1 === 'function') {\n        return test1 === test2;\n    }\n    return isEqualNativeTypes(test1, test2);\n};\nexport default curry(isEqual);\n",
     "static": true,
     "longname": "/workspaces/js-ts/utils.js/ts_temp/is/equal.js",
     "access": "public",
@@ -8385,7 +8385,7 @@
     "__docId__": 319,
     "kind": "file",
     "name": "ts_temp/object/path.js",
-    "content": "import curryN from '../function/curryN';\n/**\n * Retrieve the value at a given path.\n *\n * @param {[String]} paths The path to use.\n * @param {Object} obj The object to retrieve the nested property from.\n * @return {*} The data at `path`.\n * @example\n *\n *      path(['a', 'b'], {a: {b: 2}}); //=> 2\n *      path(['a', 'b'], {c: {b: 2}}); //=> undefined\n */\nexport default curryN(2, (paths = [], obj = {}) => {\n    let val = obj;\n    for (let i = 0; i < paths.length; i++) {\n        if (val == null) {\n            return;\n        }\n        val = val[paths[i]];\n    }\n    return val;\n});\n",
+    "content": ";\nimport curryN from \"../function/curryN\";\nconst _path = (paths = [], obj = {}) => {\n    let val = obj;\n    for (let i = 0; i < paths.length; i++) {\n        if (val == null) {\n            return undefined;\n        }\n        val = val[paths[i]];\n    }\n    return val;\n};\nexport default curryN(2, _path);\n",
     "static": true,
     "longname": "/workspaces/js-ts/utils.js/ts_temp/object/path.js",
     "access": "public",
@@ -8395,50 +8395,43 @@
   {
     "__docId__": 320,
     "kind": "function",
-    "name": "path",
+    "name": "_path",
     "memberof": "ts_temp/object/path.js",
     "generator": false,
     "async": false,
     "static": true,
-    "longname": "ts_temp/object/path.js~path",
-    "access": "public",
+    "longname": "ts_temp/object/path.js~_path",
+    "access": "private",
     "export": true,
     "importPath": "@tinkoff/utils/object/path",
-    "importStyle": "path",
-    "description": "*Autocurry for 2 arguments*<br><br>Retrieve the value at a given path.",
-    "examples": [
-      "\n     path(['a', 'b'], {a: {b: 2}}); //=> 2\n     path(['a', 'b'], {c: {b: 2}}); //=> undefined"
-    ],
-    "lineNumber": 13,
+    "importStyle": null,
+    "description": "*Autocurry for 2 arguments*<br><br>null",
+    "lineNumber": 3,
+    "undocument": true,
     "params": [
       {
-        "nullable": null,
-        "types": [
-          "[String]"
-        ],
-        "spread": false,
-        "optional": false,
         "name": "paths",
-        "description": "The path to use."
+        "optional": true,
+        "types": [
+          "*[]"
+        ],
+        "defaultRaw": [],
+        "defaultValue": "[]"
       },
       {
-        "nullable": null,
-        "types": [
-          "Object"
-        ],
-        "spread": false,
-        "optional": false,
         "name": "obj",
-        "description": "The object to retrieve the nested property from."
+        "optional": true,
+        "types": [
+          "{}"
+        ],
+        "defaultRaw": {},
+        "defaultValue": "{}"
       }
     ],
     "return": {
-      "nullable": null,
       "types": [
         "*"
-      ],
-      "spread": false,
-      "description": "The data at `path`."
+      ]
     }
   },
   {
@@ -11219,7 +11212,7 @@
     "__docId__": 416,
     "kind": "file",
     "name": "ts_temp/typings/types.js",
-    "content": "",
+    "content": "export {};\n",
     "static": true,
     "longname": "/workspaces/js-ts/utils.js/ts_temp/typings/types.js",
     "access": "public",
@@ -11291,7 +11284,7 @@
   },
   {
     "kind": "index",
-    "content": "# Tinkoff Utils [![Build](https://travis-ci.org/TinkoffCreditSystems/utils.js.svg?branch=master)](https://travis-ci.org/TinkoffCreditSystems/utils.js) [![Coverage Status](https://coveralls.io/repos/github/TinkoffCreditSystems/utils.js/badge.svg?branch=master&t=CdowK8)](https://coveralls.io/github/TinkoffCreditSystems/utils.js?branch=master)\n\n> Fast, small and purely functional utility library\n\n## Install\n```\n$ npm install @tinkoff/utils\n```\n\n## Features\n- [Fast](#benchmarks)\n- [Small](#bundle-size)\n- [Fully tested](https://coveralls.io/github/TinkoffCreditSystems/utils.js)\n- [Documented](https://tinkoffcreditsystems.github.io/utils.js)\n- Purely functional\n- Modern codebase\n\n## Structure of the library\n* [`/object`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src/object) – for objects\n* [`/string`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src/string) – for strings\n* [`/promise`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src/promise) – for promises\n* [`/array`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src/array) – for arrays or array-like objects\n* [`/function`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src/function) – for functions – composition, currying and so on, also a set of simple functions (noop, T, F)\n* [`/is`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src/is) – set of type checking methods\n* [`/`](https://github.com/TinkoffCreditSystems/utils.js/tree/master/src) – root contains utilities which don't satisfy any of the above categories or are universal\n\n## Usage\n```js\nimport pathOr from '@tinkoff/utils/object/pathOr';\nimport compose from '@tinkoff/utils/function/compose';\nimport toLower from '@tinkoff/utils/string/toLower';\nimport map from '@tinkoff/utils/array/map'\n\nconst toLowerName = compose(\n    toLower,\n    pathOr(['name'], '')\n);\nconst result = map(toLowerName)([{name: 'testA'}, {name: 'testb'}])\n```\n\n## Benchmarks\n```bash\n$ npm run benchmark\n```\n\n| Utility | Lodash | Ramda | Utils |\n| --- | --- | --- | --- |\n| clone | 120,807 ops/sec | 112,053 ops/sec | 293,572 ops/sec |\n| array/filter | 2,080,728 ops/sec | 1,849,633 ops/sec | 2,046,113 ops/sec |\n| is/empty | 1,506,963 ops/sec | 474,177 ops/sec | 3,731,564 ops/sec |\n| function/flip | 7,528,745 ops/sec | 3,735,143 ops/sec | 3,490,207 ops/sec |\n| object/path | 12,023,128 ops/sec | 8,894,639 ops/sec | 7,587,076 ops/sec |\n| string/trim | 4,215,928 ops/sec | 1,034,655 ops/sec | 6,029,794 ops/sec |\n\n## Browser support\n\n- Chrome >= 40\n- Firefox >= 52\n- Edge >= 14\n- IE >= 11\n- Safari >= 10\n- iOS >= 10\n- Android >= 4.4\n\n## Node support\n- 6.4.0 and higher\n\n## Bundle size\n| Library | Bundle size |\n| --- | --- |\n| import _ from 'lodash' | 70.1 kb |\n| import ... from 'lodash/...' | 21.8 kb |\n| import R from 'ramda' | 41.3 kb |\n| import ... from 'ramda/src/...' | 10 kb |\n| import ... from '@tinkoff/utils/...' | 2.32 kb |\n\nFor detailed comparison with specific libraries see [COMPARE.md](https://github.com/TinkoffCreditSystems/utils.js/tree/master/COMPARE.md)\n",
+    "content": "# Tinkoff Utils [![Build](https://travis-ci.org/Tinkoff/utils.js.svg?branch=master)](https://travis-ci.org/Tinkoff/utils.js) [![Coverage Status](https://coveralls.io/repos/github/Tinkoff/utils.js/badge.svg?branch=master&t=CdowK8)](https://coveralls.io/github/Tinkoff/utils.js?branch=master)\n\n> Fast, small and purely functional utility library\n\n## Install\n```\n$ npm install @tinkoff/utils\n```\n\n## Features\n- [Fast](#benchmarks)\n- [Small](#bundle-size)\n- [Fully tested](https://coveralls.io/github/Tinkoff/utils.js)\n- [Documented](https://Tinkoff.github.io/utils.js)\n- Purely functional\n- Modern codebase\n\n## Structure of the library\n* [`/object`](https://github.com/Tinkoff/utils.js/tree/master/src/object) – for objects\n* [`/string`](https://github.com/Tinkoff/utils.js/tree/master/src/string) – for strings\n* [`/promise`](https://github.com/Tinkoff/utils.js/tree/master/src/promise) – for promises\n* [`/array`](https://github.com/Tinkoff/utils.js/tree/master/src/array) – for arrays or array-like objects\n* [`/function`](https://github.com/Tinkoff/utils.js/tree/master/src/function) – for functions – composition, currying and so on, also a set of simple functions (noop, T, F)\n* [`/is`](https://github.com/Tinkoff/utils.js/tree/master/src/is) – set of type checking methods\n* [`/`](https://github.com/Tinkoff/utils.js/tree/master/src) – root contains utilities which don't satisfy any of the above categories or are universal\n\n## Usage\n```js\nimport pathOr from '@tinkoff/utils/object/pathOr';\nimport compose from '@tinkoff/utils/function/compose';\nimport toLower from '@tinkoff/utils/string/toLower';\nimport map from '@tinkoff/utils/array/map'\n\nconst toLowerName = compose(\n    toLower,\n    pathOr(['name'], '')\n);\nconst result = map(toLowerName)([{name: 'testA'}, {name: 'testb'}])\n```\n\n## Benchmarks\n```bash\n$ npm run benchmark\n```\n\n| Utility | Lodash | Ramda | Utils |\n| --- | --- | --- | --- |\n| clone | 120,807 ops/sec | 112,053 ops/sec | 293,572 ops/sec |\n| array/filter | 2,080,728 ops/sec | 1,849,633 ops/sec | 2,046,113 ops/sec |\n| is/empty | 1,506,963 ops/sec | 474,177 ops/sec | 3,731,564 ops/sec |\n| function/flip | 7,528,745 ops/sec | 3,735,143 ops/sec | 3,490,207 ops/sec |\n| object/path | 12,023,128 ops/sec | 8,894,639 ops/sec | 7,587,076 ops/sec |\n| string/trim | 4,215,928 ops/sec | 1,034,655 ops/sec | 6,029,794 ops/sec |\n\n## Browser support\n\n- Chrome >= 40\n- Firefox >= 52\n- Edge >= 14\n- IE >= 11\n- Safari >= 10\n- iOS >= 10\n- Android >= 4.4\n\n## Node support\n- 6.4.0 and higher\n\n## Bundle size\n| Library | Bundle size |\n| --- | --- |\n| import _ from 'lodash' | 70.1 kb |\n| import ... from 'lodash/...' | 21.8 kb |\n| import R from 'ramda' | 41.3 kb |\n| import ... from 'ramda/src/...' | 10 kb |\n| import ... from '@tinkoff/utils/...' | 2.32 kb |\n\nFor detailed comparison with specific libraries see [COMPARE.md](https://github.com/Tinkoff/utils.js/tree/master/COMPARE.md)\n",
     "longname": "/workspaces/js-ts/utils.js/README.md",
     "name": "./README.md",
     "static": true,
@@ -11299,7 +11292,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"@tinkoff/utils\",\n  \"version\": \"2.2.0\",\n  \"author\": \"Tinkoff team\",\n  \"scripts\": {\n    \"release\": \"node ./releaseUtils/index.js\",\n    \"benchmark\": \"ts-node --project tsconfig.benchmark.json runBenchmark.ts\",\n    \"prebenchmark\": \"npm install --no-save ts-node lodash ramda lazy.js underscore\",\n    \"docs\": \"node ./generate/docs/index.js\",\n    \"test\": \"jest --coverage\",\n    \"test:ci\": \"npm run test -- --maxWorkers=4 && cat ./coverage/lcov.info | coveralls\"\n  },\n  \"description\": \"Fast, small and purely functional utility library\",\n  \"repository\": \"https://github.com/TinkoffCreditSystems/utils.js\",\n  \"bugs\": \"https://github.com/TinkoffCreditSystems/utils.js/issues\",\n  \"keywords\": [\n    \"tinkoff\",\n    \"utils\",\n    \"ramda\",\n    \"lodash\",\n    \"curry\",\n    \"performance\"\n  ],\n  \"sideEffects\": false,\n  \"license\": \"Apache-2.0\",\n  \"devDependencies\": {\n    \"@babel/cli\": \"^7.0.0\",\n    \"@babel/core\": \"^7.0.0\",\n    \"@babel/plugin-proposal-object-rest-spread\": \"^7.0.0\",\n    \"@babel/preset-env\": \"^7.0.0\",\n    \"@babel/preset-react\": \"^7.0.0\",\n    \"@types/jest\": \"^24.0.18\",\n    \"babel-core\": \"^7.0.0-bridge.0\",\n    \"babel-plugin-transform-es2015-modules-simple-commonjs\": \"^0.3.0\",\n    \"benchmark\": \"^2.1.4\",\n    \"chalk\": \"^2.4.1\",\n    \"coveralls\": \"^3.0.1\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-importpath-plugin\": \"^1.0.2\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"execa\": \"^0.10.0\",\n    \"fs-extra\": \"^6.0.1\",\n    \"gh-pages\": \"^3.2.0\",\n    \"inquirer\": \"^5.2.0\",\n    \"jest\": \"^24.9.0\",\n    \"jsdom\": \"^15.1.1\",\n    \"ora\": \"^2.1.0\",\n    \"prettier\": \"^1.16.4\",\n    \"react\": \"^16.9.0\",\n    \"react-is\": \"^16.9.0\",\n    \"recursive-readdir-sync\": \"^1.0.6\",\n    \"ts-expect\": \"^1.1.0\",\n    \"ts-jest\": \"^24.1.0\",\n    \"typescript\": \"^3.6.3\",\n    \"walker\": \"^1.0.7\"\n  },\n  \"peerDependencies\": {\n    \"react-is\": \"*\"\n  }\n}\n",
+    "content": "{\n  \"name\": \"@tinkoff/utils\",\n  \"version\": \"2.3.0\",\n  \"author\": \"Tinkoff team\",\n  \"scripts\": {\n    \"release\": \"node ./releaseUtils/index.js\",\n    \"benchmark\": \"ts-node --project tsconfig.benchmark.json runBenchmark.ts\",\n    \"prebenchmark\": \"npm install --no-save ts-node lodash ramda lazy.js underscore\",\n    \"docs\": \"node ./generate/docs/index.js\",\n    \"test\": \"jest --coverage\",\n    \"test:ci\": \"npm run test -- --maxWorkers=4 && cat ./coverage/lcov.info | coveralls\"\n  },\n  \"description\": \"Fast, small and purely functional utility library\",\n  \"repository\": \"https://github.com/Tinkoff/utils.js\",\n  \"bugs\": \"https://github.com/Tinkoff/utils.js/issues\",\n  \"keywords\": [\n    \"tinkoff\",\n    \"utils\",\n    \"ramda\",\n    \"lodash\",\n    \"curry\",\n    \"performance\"\n  ],\n  \"sideEffects\": false,\n  \"license\": \"Apache-2.0\",\n  \"devDependencies\": {\n    \"@babel/cli\": \"^7.0.0\",\n    \"@babel/core\": \"^7.0.0\",\n    \"@babel/plugin-proposal-object-rest-spread\": \"^7.0.0\",\n    \"@babel/preset-env\": \"^7.0.0\",\n    \"@babel/preset-react\": \"^7.0.0\",\n    \"@types/jest\": \"^24.0.18\",\n    \"babel-core\": \"^7.0.0-bridge.0\",\n    \"babel-plugin-transform-es2015-modules-simple-commonjs\": \"^0.3.0\",\n    \"benchmark\": \"^2.1.4\",\n    \"chalk\": \"^2.4.1\",\n    \"coveralls\": \"^3.0.1\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-importpath-plugin\": \"^1.0.2\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"execa\": \"^0.10.0\",\n    \"fs-extra\": \"^6.0.1\",\n    \"gh-pages\": \"^3.2.0\",\n    \"inquirer\": \"^5.2.0\",\n    \"jest\": \"^24.9.0\",\n    \"jsdom\": \"^15.1.1\",\n    \"ora\": \"^2.1.0\",\n    \"prettier\": \"^1.16.4\",\n    \"react\": \"^16.9.0\",\n    \"react-is\": \"^16.9.0\",\n    \"recursive-readdir-sync\": \"^1.0.6\",\n    \"ts-expect\": \"^1.1.0\",\n    \"ts-jest\": \"^24.1.0\",\n    \"typescript\": \"^4.1.6\",\n    \"walker\": \"^1.0.7\"\n  },\n  \"peerDependencies\": {\n    \"react-is\": \"*\"\n  }\n}\n",
     "longname": "/workspaces/js-ts/utils.js/package.json",
     "name": "package.json",
     "static": true,

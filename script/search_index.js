@@ -12,6 +12,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "@tinkoff/utils/object/path~_path",
+    "function/index.html#static-function-_path",
+    "<span>_path</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/path</span>",
+    "function"
+  ],
+  [
     "@tinkoff/utils/array/adjust~adjust",
     "function/index.html#static-function-adjust",
     "<span>adjust</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/adjust</span>",
@@ -579,12 +585,6 @@ window.esdocSearchIndex = [
     "@tinkoff/utils/array/partition~partition",
     "function/index.html#static-function-partition",
     "<span>partition</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/partition</span>",
-    "function"
-  ],
-  [
-    "@tinkoff/utils/object/path~path",
-    "function/index.html#static-function-path",
-    "<span>path</span> <span class=\"search-result-import-path\">@tinkoff/utils/object/path</span>",
     "function"
   ],
   [

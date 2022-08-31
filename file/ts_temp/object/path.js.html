@@ -24,7 +24,7 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-<a style="position:relative; top:3px;" href="https://github.com/TinkoffCreditSystems/utils.js"><img width="20px" src="./image/github.png"></a></header>
+<a style="position:relative; top:3px;" href="https://github.com/Tinkoff/utils.js"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div>
   <ul>
@@ -159,7 +159,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mergeWith">mergeWith</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-objOf">objOf</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-omit">omit</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-path">path</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_path">_path</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-pathApply">pathApply</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-pathEq">pathEq</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-pathOr">pathOr</a></span></span></li>
@@ -207,28 +207,19 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">ts_temp/object/path.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import curryN from &apos;../function/curryN&apos;;
-/**
- * Retrieve the value at a given path.
- *
- * @param {[String]} paths The path to use.
- * @param {Object} obj The object to retrieve the nested property from.
- * @return {*} The data at `path`.
- * @example
- *
- *      path([&apos;a&apos;, &apos;b&apos;], {a: {b: 2}}); //=&gt; 2
- *      path([&apos;a&apos;, &apos;b&apos;], {c: {b: 2}}); //=&gt; undefined
- */
-export default curryN(2, (paths = [], obj = {}) =&gt; {
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">;
+import curryN from &quot;../function/curryN&quot;;
+const _path = (paths = [], obj = {}) =&gt; {
     let val = obj;
     for (let i = 0; i &lt; paths.length; i++) {
         if (val == null) {
-            return;
+            return undefined;
         }
         val = val[paths[i]];
     }
     return val;
-});
+};
+export default curryN(2, _path);
 </code></pre>
 
 </div>
