@@ -24,7 +24,7 @@ describe('utils/is/equal', () => {
         expect(isEqual(new Date(), new Date(123))).toBe(false);
         expect(isEqual(/123/, /123/)).toBe(true);
         expect(isEqual(/123/, /1234/)).toBe(false);
-        expect(isEqual(() => 3, () => 3)).toBe(true);
+        expect(isEqual(() => 3, () => 3)).toBe(false);
         expect(isEqual(() => 3, () => 4)).toBe(false);
     });
 
