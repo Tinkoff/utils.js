@@ -1,9 +1,17 @@
 import curryN from '../function/curryN';
 import { Prop } from '../typings/types';
 
+interface HasPredicate<P extends Prop> {
+    (obj: undefined | null): false;
+    <T extends { [K in P]: unknown }, U>(obj: U | T): obj is T;
+    <T extends object>(obj: T): obj is T & Record<P, unknown>;
+}
+
 interface Has {
-    <K extends Prop>(s: K, obj): boolean;
-    <K extends Prop>(s: K): (obj) => boolean;
+    <P extends Prop>(prop: P): HasPredicate<P>
+    (prop: Prop, obj: undefined | null): false;
+    <P extends Prop, T extends { [K in P]: unknown }, U>(prop: P, obj: U | T): obj is T;
+    <P extends Prop, T extends object>(prop: P, obj: T): obj is T & Record<P, unknown>;
 }
 
 /**
