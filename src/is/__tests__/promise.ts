@@ -8,7 +8,7 @@ describe('utils/is/promise', () => {
         expect(isPromise('fwafwf')).toBe(false);
         expect(isPromise(() => {})).toBe(false);
         expect(isPromise(Promise.resolve())).toBe(true);
-        expect(isPromise(Promise.reject())).toBe(true);
+        expect(isPromise(Promise.reject().catch(() => {}))).toBe(true);
         expect(isPromise(new Promise<void>((res) => res()))).toBe(true);
         const f = () => {};
 
