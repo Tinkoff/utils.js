@@ -1,4 +1,4 @@
-# Tinkoff Utils [![Build](https://travis-ci.org/Tinkoff/utils.js.svg?branch=master)](https://travis-ci.org/Tinkoff/utils.js) [![Coverage Status](https://coveralls.io/repos/github/Tinkoff/utils.js/badge.svg?branch=master&t=CdowK8)](https://coveralls.io/github/Tinkoff/utils.js?branch=master)
+# Tinkoff Utils [![Build status](https://img.shields.io/github/actions/workflow/status/Tinkoff/utils.js/build.yml?branch=master)](https://img.shields.io/github/actions/workflow/status/Tinkoff/utils.js/build.yml?branch=master) [![Coverage Status](https://coveralls.io/repos/github/Tinkoff/utils.js/badge.svg?branch=master&t=CdowK8)](https://coveralls.io/github/Tinkoff/utils.js?branch=master)
 
 > Fast, small and purely functional utility library
 
