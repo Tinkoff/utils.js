@@ -32,6 +32,8 @@ export type ArrPred<T = any> = ArrBase<T, boolean>;
 export type ObjPred<K extends Prop, V> = ObjBase<K, V, boolean>;
 export type ObjPredBy<O> = ObjBaseBy<O, boolean>;
 
+export type MapFunc<T, R> = (item: T, i: number, arr: ArrayLike<T>) => R;
+
 export type Func<R = any> = (...args) => R;
 export type Func1<R = any> = (arg) => R;
 
