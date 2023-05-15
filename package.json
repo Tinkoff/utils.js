@@ -3,12 +3,13 @@
   "version": "2.3.2",
   "author": "Tinkoff team",
   "scripts": {
+    "build": "tsc && babel ./ts_temp -d build",
     "release": "node ./releaseUtils/index.js",
     "benchmark": "ts-node --project tsconfig.benchmark.json runBenchmark.ts",
     "prebenchmark": "npm install --no-save ts-node lodash ramda lazy.js underscore",
     "docs": "node ./generate/docs/index.js",
     "test": "jest --coverage",
-    "test:ci": "npm run test -- --maxWorkers=4 && cat ./coverage/lcov.info | coveralls"
+    "test:ci": "npm run test -- --maxWorkers=50%"
   },
   "description": "Fast, small and purely functional utility library",
   "repository": "https://github.com/Tinkoff/utils.js",
@@ -34,7 +35,6 @@
     "babel-plugin-transform-es2015-modules-simple-commonjs": "^0.3.0",
     "benchmark": "^2.1.4",
     "chalk": "^2.4.1",
-    "coveralls": "^3.0.1",
     "esdoc": "^1.1.0",
     "esdoc-ecmascript-proposal-plugin": "^1.0.0",
     "esdoc-importpath-plugin": "^1.0.2",
