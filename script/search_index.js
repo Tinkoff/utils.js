@@ -294,6 +294,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "@tinkoff/utils/array/filtermap~filtermap",
+    "function/index.html#static-function-filterMap",
+    "<span>filterMap</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/filterMap</span>",
+    "function"
+  ],
+  [
     "@tinkoff/utils/array/find~find",
     "function/index.html#static-function-find",
     "<span>find</span> <span class=\"search-result-import-path\">@tinkoff/utils/array/find</span>",
@@ -1383,6 +1389,12 @@ window.esdocSearchIndex = [
     "ts_temp/array/filter.js",
     "file/ts_temp/array/filter.js.html",
     "ts_temp/array/filter.js",
+    "file"
+  ],
+  [
+    "ts_temp/array/filtermap.js",
+    "file/ts_temp/array/filterMap.js.html",
+    "ts_temp/array/filterMap.js",
     "file"
   ],
   [
