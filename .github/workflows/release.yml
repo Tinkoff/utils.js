@@ -1,0 +1,44 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    if: "!contains(github.event.head_commit.message, 'chore(release)')"
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo 'Test'
+#      - uses: actions/checkout@v2
+#        with:
+#          token: ${{ secrets.TINKOFF_BOT_PAT }}
+#          fetch-depth: 0
+#
+#      - name: Git Identity
+#        run: |
+#          git config --global user.name 'tinkoff-bot'
+#          git config --global user.email 'tinkoff-bot@users.noreply.github.com'
+#
+#      - uses: actions/setup-node@v2
+#        with:
+#          node-version: '14.x'
+#          registry-url: 'https://registry.npmjs.org'
+#
+#      - name: Clean install
+#        run: npm ci
+#
+#      - name: Create release commit and tag
+#        run: |
+#          npm run version -- --no-push
+#
+#      - name: Push release commit and tag
+#        run: git push --follow-tags
+#
+#      - name: Publish packages
+#        run: npm run publish:ci
+#        env:
+#          NODE_AUTH_TOKEN: ${{ secrets.TINKOFF_NPM_AUTH_TOKEN }}
