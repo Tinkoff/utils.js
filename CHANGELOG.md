@@ -1,28 +1,3 @@
-
-
-## [2.5.6](https://github.com/Tinkoff/utils.js/compare/2.5.4...2.5.6) (2023-07-31)
-
-
-### Bug Fixes
-
-* remove `files` property from package.json ([541ee12](https://github.com/Tinkoff/utils.js/commit/541ee12a41721534b120049f98aae178553a0edb))
-
-## [2.5.4](https://github.com/Tinkoff/utils.js/compare/2.5.3...2.5.4) (2023-07-31)
-
-
-### Bug Fixes
-
-* add files to publishing ([49c0b80](https://github.com/Tinkoff/utils.js/commit/49c0b80a35085a143f7d017b15b7657f5b0fbfd6))
-
-## [2.5.3](https://github.com/Tinkoff/utils.js/compare/2.5.2...2.5.3) (2023-07-31)
-
-
-### Bug Fixes
-
-* fix publishing files ([3c24d4b](https://github.com/Tinkoff/utils.js/commit/3c24d4b51a3cbd15fa135d56feeccffc0f32c633))
-
-## 2.5.2 (2023-07-31)
-
 ## 2.2.1
 
 + add check into the utility isEqual for comparision of functions by reference (#63)

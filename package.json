@@ -4,7 +4,7 @@
   "author": "Tinkoff team",
   "scripts": {
     "build": "tsc && babel ./ts_temp -d build",
-    "release": "release-it",
+    "release": "release-it --increment=2.6.1 -VV",
     "release:dry": "release-it --dry-run",
     "benchmark": "ts-node --project tsconfig.benchmark.json runBenchmark.ts",
     "prebenchmark": "npm install --no-save ts-node lodash ramda lazy.js underscore",
@@ -26,9 +26,6 @@
   ],
   "sideEffects": false,
   "license": "Apache-2.0",
-  "publishConfig": {
-    "access": "public"
-  },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
