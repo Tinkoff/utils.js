@@ -1,3 +1,7 @@
+
+
+## 2.5.2 (2023-07-31)
+
 ## 2.2.1
 
 + add check into the utility isEqual for comparision of functions by reference (#63)
