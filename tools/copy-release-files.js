@@ -18,7 +18,7 @@ const copyReleaseFiles = async () => {
     );
 
     await Promise.all(
-        ['package.json', '.npmignore', 'README.md', 'LICENSE', 'CHANGELOG.md'].map(fileName =>
+        ['package.json', 'README.md', 'LICENSE', 'CHANGELOG.md'].map(fileName =>
             fsExtra.copy(
                 path.join(ROOT_PATH, fileName),
                 path.join(BUILD_PATH, fileName)
