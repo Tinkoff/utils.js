@@ -6,7 +6,6 @@ on:
       - master
 
 env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -23,6 +22,8 @@ jobs:
           git config --global user.email 'tinkoff-bot@users.noreply.github.com'
 
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.TINKOFF_BOT_PAT }}
 
       - uses: actions/setup-node@v3
         with:
@@ -37,3 +38,5 @@ jobs:
 
       - name: Release
         run: npm run release
+        env:
+          GITHUB_TOKEN: ${{ secrets.TINKOFF_BOT_PAT }}
