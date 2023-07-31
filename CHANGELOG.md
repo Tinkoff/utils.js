@@ -1,5 +1,12 @@
 
 
+## [2.5.3](https://github.com/Tinkoff/utils.js/compare/2.5.2...2.5.3) (2023-07-31)
+
+
+### Bug Fixes
+
+* fix publishing files ([3c24d4b](https://github.com/Tinkoff/utils.js/commit/3c24d4b51a3cbd15fa135d56feeccffc0f32c633))
+
 ## 2.5.2 (2023-07-31)
 
 ## 2.2.1
