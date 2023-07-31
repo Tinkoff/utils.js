@@ -11,7 +11,7 @@
     "docs": "node ./generate/docs/index.js",
     "test": "jest --coverage",
     "test:ci": "npm run test -- --maxWorkers=50%",
-    "copy-declaration-files": "node tools/copy-declaration-files.js"
+    "copy-release-files": "node tools/copy-release-files.js"
   },
   "description": "Fast, small and purely functional utility library",
   "repository": "https://github.com/Tinkoff/utils.js",
@@ -24,13 +24,11 @@
     "curry",
     "performance"
   ],
-  "files": [
-    "build",
-    ".npmignore",
-    "CHANGELOG.md"
-  ],
   "sideEffects": false,
   "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
