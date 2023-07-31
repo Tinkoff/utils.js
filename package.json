@@ -10,7 +10,8 @@
     "prebenchmark": "npm install --no-save ts-node lodash ramda lazy.js underscore",
     "docs": "node ./generate/docs/index.js",
     "test": "jest --coverage",
-    "test:ci": "npm run test -- --maxWorkers=50%"
+    "test:ci": "npm run test -- --maxWorkers=50%",
+    "copy-declaration-files": "node tools/copy-declaration-files.js"
   },
   "description": "Fast, small and purely functional utility library",
   "repository": "https://github.com/Tinkoff/utils.js",
@@ -22,6 +23,11 @@
     "lodash",
     "curry",
     "performance"
+  ],
+  "files": [
+    "build",
+    ".npmignore",
+    "CHANGELOG.md"
   ],
   "sideEffects": false,
   "license": "Apache-2.0",
