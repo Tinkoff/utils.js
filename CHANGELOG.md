@@ -1,5 +1,12 @@
 
 
+## [2.5.4](https://github.com/Tinkoff/utils.js/compare/2.5.3...2.5.4) (2023-07-31)
+
+
+### Bug Fixes
+
+* add files to publishing ([49c0b80](https://github.com/Tinkoff/utils.js/commit/49c0b80a35085a143f7d017b15b7657f5b0fbfd6))
+
 ## [2.5.3](https://github.com/Tinkoff/utils.js/compare/2.5.2...2.5.3) (2023-07-31)
 
 
