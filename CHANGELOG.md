@@ -1,5 +1,7 @@
 
 
+## [2.6.2](https://github.com/Tinkoff/utils.js/compare/v2.6.1...v2.6.2) (2023-08-01)
+
 ## [2.6.1](https://github.com/Tinkoff/utils.js/compare/v2.5.0...v2.6.1) (2023-08-01)
 
 
