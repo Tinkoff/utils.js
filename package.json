@@ -4,7 +4,7 @@
   "author": "Tinkoff team",
   "scripts": {
     "build": "tsc && babel ./ts_temp -d build",
-    "release": "release-it --increment=2.6.1 -VV",
+    "release": "release-it",
     "release:dry": "release-it --dry-run",
     "benchmark": "ts-node --project tsconfig.benchmark.json runBenchmark.ts",
     "prebenchmark": "npm install --no-save ts-node lodash ramda lazy.js underscore",
